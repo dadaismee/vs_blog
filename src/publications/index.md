@@ -10,13 +10,13 @@
 | Название | Журнал | Год |
 | -- | -- | -- |
 | [**A Framework for More-than-human Placemaking with Data Storytelling** (2024)](https://doi.org/10.14627/537752023) | *Journal of Digital Landscape Architecture, 235-252* | 2024 |
-| | | |
-| | | |
+| | | 
+| | | 
 | [**Coordination as naturalistic social ontology: constraints and explanation** (2023)](https://doi.org/10.1177/00483931221150486) | *Philosophy of the Social Sciences, 53(2), 103-121* | 2023 |
-| | | |
-| | | |
+| | | 
+| | | 
 | [**Вывод к наилучшему объяснению как методология социальной онтологии** (2023)](https://doi.org/10.22394/2074-0492-2023-4-122-140)| Социология власти, 35 (4), 122-140 | 2023 |
-| | | |
+| | | 
 </div>
 
 • **Cognitive Basis of Focal Points: Evolution and Correlated Equilibrium Emergence** (**2021\)***. Logical and philosophical studies, 19(2), 131-135.*  

@@ -37,11 +37,6 @@
   for relevant information.
   Beep Boop. As you were. -->
 
-  <!--<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono&display=swap" rel="stylesheet">-->
-  <!--<link rel="stylesheet" type="text/css" href="service/console.css" />-->
-  <!--<link rel="stylesheet" type="text/css" href="service/animate-4.1.1.min.css" />-->
-  <!--<link rel="stylesheet" type="text/css" href="service/terminal-0.7.4.min.css" />-->
-
   <style>
     $styles.html()$
     :root {
@@ -55,10 +50,12 @@
       margin-left: 80px;
     }
     h1,h2,h3,h4,h5,h6 {text-align:left; font-family: monospace;}
+
     p {
       width: 50vw;
       font-size: 16px;
     }
+
     code {font-family: monospace;}
     .sourceCode {font-family: monospace;}
     .navbar {
@@ -66,14 +63,7 @@
       font-size: 1.5em;
       color: white;
     }
-    /*.navbar a {color: white;}*/
-    /*.footer {*/
-    /*  font-family: monospace; */
-    /*  background-color: #003E74; */
-    /*  font-size: 1em;*/
-    /*  color: white;*/
-    /*}*/
-    /*.footer a {color: white;}*/
+
     nav{
       font-family: monospace; 
       font-size: 0.8em;
@@ -99,27 +89,6 @@
         background-color: var(--color); /* Cursor color */
         animation: blink 1s cubic-bezier(0.19, 1, 0.22, 1) infinite; /* Animation for blinking effect */
     }
-
-    /* Sidenotes, margin notes, figures, captions */
-    img {
-        max-width: 100%;
-        border-radius: 15px;
-        /*box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);*/
-    }
-
-    /*.sidenote,*/
-    /*.marginnote {*/
-    /*    float: right;*/
-    /*    clear: right;*/
-    /*    margin-right: -60%;*/
-    /*    width: 50%;*/
-    /*    margin-top: 0.3rem;*/
-    /*    margin-bottom: 0;*/
-    /*    font-size: 12px;*/
-    /*    line-height: 1.3;*/
-    /*    vertical-align: baseline;*/
-    /*    position: relative;*/
-    /*}*/
 
     @keyframes blink {
         0%, 100% {
@@ -153,10 +122,6 @@
     <a href="https://vsdesigner.netlify.app/">портфолио↗</a>
   </header>
 
-<!--<body>-->
-<!--  <div class="navbar">-->
-<!--    | <a href="/">Главная</a> | <a href="/blog">Тексты</a> |-->
-<!--  </div>-->
   $if(title)$
     <h1 class="title">$title$</h1>
     $if(subtitle)$
@@ -165,30 +130,24 @@
     </p>
     $endif$
   $endif$
-$if(generate_toc)$
-$if(toc)$
-<nav id="$idprefix$TOC" role="doc-toc">
-  <strong>Содержание</strong>
-  $table-of-contents$
-</nav>
-$endif$
-$endif$
-  <main>
-    <div style="display: flex;">
-      $if(date)$
-      <p class="date"><i>$date$</i></p>
-      $endif$
-      $if(word_count)$
-      <p class="word_count"><i>$word_count$</i></p>
-      $endif$
-    </div>
-    $body$
-  </main>
-  <!--<div class="footer">-->
-  <!--  &nbsp; Contact: <a href="https://github.com/dadaismee">[GitHub]</a> -->
-  <!--  <a href="https://scholar.google.com/citations?user=4PLajkUAAAAJ&hl=en">[Scholar]</a>-->
-  <!--  <a href="https://www.linkedin.com/in/charles-jones1917/">[LinkedIn]</a>-->
-  <!--  <a href="mailto:valerii.s.shevchenko@gmail.com">[Mail]</a>-->
-  <!--</div>-->
-</body>
+  $if(generate_toc)$
+  $if(toc)$
+  <nav id="$idprefix$TOC" role="doc-toc">
+    <strong>Содержание</strong>
+    $table-of-contents$
+  </nav>
+  $endif$
+  $endif$
+    <main>
+      <div style="display: flex;">
+        $if(date)$
+        <p class="date"><i>$date$</i></p>
+        $endif$
+        $if(word_count)$
+        <p class="word_count"><i>$word_count$</i></p>
+        $endif$
+      </div>
+      $body$
+    </main>
+  </body>
 </html>

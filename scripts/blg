@@ -98,9 +98,9 @@ for page in "${pages[@]}"; do
     pandoc --toc "$page" -o "$BUILD_DIR/$new_page" \
       --citeproc \
       --bibliography=/Users/valerii/Obsidian/Service/zotero-library.json \
-      --csl=service/chicago.csl \
+      --csl=/Users/valerii/Obsidian/Service/apa-5th-edition.csl \
       --katex \
-      --template=service/default.html \
+      --template=default.html \
       --embed-resources \
       --number-sections \
       # --filter pandoc-sidenote \
