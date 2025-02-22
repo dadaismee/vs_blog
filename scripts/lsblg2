@@ -51,7 +51,7 @@ process_blog_posts() {
     metadata=$(extract_metadata "$page")
 
     if [ -n "$metadata" ]; then
-      date=$(echo "$metadata" | ggrep -oP 'date:\s*\K.+')
+      date=$(echo "$metadata" | grep -oP 'date:\s*\K.+')
       if [ -n "$date" ]; then
         # Use the file path as the key and date as the value in the hashmap
         posts_by_date["$page"]="$date"
@@ -71,10 +71,10 @@ process_blog_posts() {
       for page in "${!posts_by_date[@]}"; do
         if [ "${posts_by_date[$page]}" = "$date" ]; then
           metadata=$(extract_metadata "$page")
-          title=$(echo "$metadata" | ggrep -E 'title' | grep -Ev 'subtitle' | sed 's/title: //')
-          subtitle=$(echo "$metadata" | ggrep -E 'subtitle' | sed 's/subtitle: //')
-          date=$(echo "$metadata" | ggrep -E 'date' | sed 's/date: //')
-          word_count=$(echo "$metadata" | ggrep -E 'word_count' | sed 's/word_count: //')
+          title=$(echo "$metadata" | grep -E 'title' | grep -Ev 'subtitle' | sed 's/title: //')
+          subtitle=$(echo "$metadata" | grep -E 'subtitle' | sed 's/subtitle: //')
+          date=$(echo "$metadata" | grep -E 'date' | sed 's/date: //')
+          word_count=$(echo "$metadata" | grep -E 'word_count' | sed 's/word_count: //')
           
           page=${page#src/blog/} # strip src/blog prefix
           page=${page%/index.md}
