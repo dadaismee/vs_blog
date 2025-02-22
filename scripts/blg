@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
-
-# !/opt/homebrew/bin/bash
+#!/opt/homebrew/bin/bash
 # !/bin/bash
 
 # blg is for building, serving, and managing my personal blog
@@ -99,12 +97,12 @@ for page in "${pages[@]}"; do
     # --katex looks nicest, but you can use --mathjax for a faster build
     pandoc --toc "$page" -o "$BUILD_DIR/$new_page" \
       --citeproc \
-      --bibliography=service/zotero-library.json \
+      --bibliography=/Users/valerii/Obsidian/Service/zotero-library.json \
       --csl=service/chicago.csl \
       --katex \
       --template=service/default.html \
       --embed-resources \
-      # --number-sections \
+      --number-sections \
       # --filter pandoc-sidenote \
       # --section-divs \
       # --metadata-file=service/metadata.yaml \

@@ -87,11 +87,6 @@
       text-align: left;
     }
 
-    /*.terminal {*/
-    /*    display: inline-block;*/
-    /*    position: relative;*/
-    /*}*/
-
     .text {
         font-family: monospace;
     }
@@ -164,9 +159,11 @@
 <!--  </div>-->
   $if(title)$
     <h1 class="title">$title$</h1>
-    <!--$if(subtitle)$-->
-    <!--<p class="subtitle">$subtitle$</p>-->
-    <!--$endif$-->
+    $if(subtitle)$
+    <p style="font-size: 14px;">
+      <strong>Abstract:</strong> $subtitle$
+    </p>
+    $endif$
   $endif$
 $if(generate_toc)$
 $if(toc)$
@@ -177,12 +174,14 @@ $if(toc)$
 $endif$
 $endif$
   <main>
-    $if(date)$
-    <p class="date"><i>$date$</i></p>
-    $endif$
-    $if(word_count)$
-    <p class="word_count"><i>$word_count$</i></p>
-    $endif$
+    <div style="display: flex;">
+      $if(date)$
+      <p class="date"><i>$date$</i></p>
+      $endif$
+      $if(word_count)$
+      <p class="word_count"><i>$word_count$</i></p>
+      $endif$
+    </div>
     $body$
   </main>
   <!--<div class="footer">-->

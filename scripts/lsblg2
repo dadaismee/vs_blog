@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
-
-# !/opt/homebrew/bin/bash
+#!/opt/homebrew/bin/bash
 
 # lsblg is for listing all blog posts in a directory
 
@@ -51,7 +49,7 @@ process_blog_posts() {
     metadata=$(extract_metadata "$page")
 
     if [ -n "$metadata" ]; then
-      date=$(echo "$metadata" | grep -oP 'date:\s*\K.+')
+      date=$(echo "$metadata" | ggrep -oP 'date:\s*\K.+')
       if [ -n "$date" ]; then
         # Use the file path as the key and date as the value in the hashmap
         posts_by_date["$page"]="$date"
@@ -63,18 +61,16 @@ process_blog_posts() {
     sorted_dates=($(for date in "${posts_by_date[@]}"; do echo "$date"; done | sort -r))
 
     num_entries=${#pages_found[@]}
-    echo "Привет! Меня зовут Валерий Шевченко. Я философ науки, дизайнер взаимодействия и основатель <a href='https://konspekt.io'>школы «Конспект»</a>. Исследую устойчивое взаимодействие человека и информации с точки зрения HCI (human-computer interaction) и эпистемологические основания социологии."
-    echo ""
-
+    echo "---"
     # Loop through the sorted dates and print metadata accordingly
     for date in "${sorted_dates[@]}"; do
       for page in "${!posts_by_date[@]}"; do
         if [ "${posts_by_date[$page]}" = "$date" ]; then
           metadata=$(extract_metadata "$page")
-          title=$(echo "$metadata" | grep -E 'title' | grep -Ev 'subtitle' | sed 's/title: //')
-          subtitle=$(echo "$metadata" | grep -E 'subtitle' | sed 's/subtitle: //')
-          date=$(echo "$metadata" | grep -E 'date' | sed 's/date: //')
-          word_count=$(echo "$metadata" | grep -E 'word_count' | sed 's/word_count: //')
+          title=$(echo "$metadata" | ggrep -E 'title' | grep -Ev 'subtitle' | sed 's/title: //')
+          subtitle=$(echo "$metadata" | ggrep -E 'subtitle' | sed 's/subtitle: //')
+          date=$(echo "$metadata" | ggrep -E 'date' | sed 's/date: //')
+          word_count=$(echo "$metadata" | ggrep -E 'word_count' | sed 's/word_count: //')
           
           page=${page#src/blog/} # strip src/blog prefix
           page=${page%/index.md}
