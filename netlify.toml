@@ -1,0 +1,3 @@
+[build]
+  command = "./scripts/blg"
+  publish = "build"
