@@ -1,4 +1,6 @@
-#!/opt/homebrew/bin/bash
+#!/usr/bin/env bash
+
+# !/opt/homebrew/bin/bash
 
 # lsblg is for listing all blog posts in a directory
 

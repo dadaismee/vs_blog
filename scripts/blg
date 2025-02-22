@@ -1,5 +1,6 @@
-#!/opt/homebrew/bin/bash
-#
+#!/usr/bin/env bash
+
+# !/opt/homebrew/bin/bash
 # !/bin/bash
 
 # blg is for building, serving, and managing my personal blog
