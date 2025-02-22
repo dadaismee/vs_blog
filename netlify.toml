@@ -1,3 +1,0 @@
-[build]
-  command = "./scripts/lsblg2 > src/blog/index.md && ./scripts/blg -b"
-  publish = "build"
