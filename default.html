@@ -55,6 +55,9 @@
       width: 50vw;
       font-size: 16px;
     }
+    h1 {
+      width: 50vw;
+    }
 
     code {font-family: monospace;}
     .sourceCode {font-family: monospace;}
@@ -122,21 +125,23 @@
     <a href="https://vsdesigner.netlify.app/">портфолио↗</a>
   </header>
 
+
   $if(title)$
     <h1 class="title">$title$</h1>
+    $if(generate_toc)$
+    $if(toc)$
+    <nav id="$idprefix$TOC" role="doc-toc">
+      <strong>Содержание</strong>
+      $table-of-contents$
+    </nav>
+    $endif$
+    $endif$
     $if(subtitle)$
     <p style="font-size: 14px;">
-      <strong>Abstract:</strong> $subtitle$
+      <!--<strong>Abstract:</strong> $subtitle$-->
+      $subtitle$
     </p>
     $endif$
-  $endif$
-  $if(generate_toc)$
-  $if(toc)$
-  <nav id="$idprefix$TOC" role="doc-toc">
-    <strong>Содержание</strong>
-    $table-of-contents$
-  </nav>
-  $endif$
   $endif$
     <main>
       <div style="display: flex;">

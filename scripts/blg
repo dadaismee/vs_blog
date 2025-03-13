@@ -102,7 +102,7 @@ for page in "${pages[@]}"; do
       --katex \
       --template=default.html \
       --embed-resources \
-      --number-sections \
+      # --number-sections \
       # --filter pandoc-sidenote \
       # --section-divs \
       # --metadata-file=service/metadata.yaml \

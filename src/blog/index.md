@@ -15,3 +15,35 @@ A major problem in arriving at a non-contradictory theoretical core in sociology
 
 *20.02.2025 *
 
+---
+
+## ["Evolvability of conventions: emergence of social institutions from animal conventions with complex signaling"](phd-draft)
+
+phd thesis work-in-progress
+
+*"13.03.2025" *
+
+---
+
+## [Evolutionary stable correlation as a core problem of social ontology](correlation-evolution)
+
+
+
+*"13.03.2025" *
+
+---
+
+## ["Evolvability of conventions: emergence of social institutions from animal conventions with complex signaling"](phd-draft)
+
+phd thesis work-in-progress
+
+*"13.03.2025" *
+
+---
+
+## [Evolutionary stable correlation as a core problem of social ontology](correlation-evolution)
+
+
+
+*"13.03.2025" *
+
