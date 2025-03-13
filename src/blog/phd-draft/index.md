@@ -30,6 +30,7 @@ The tradition of understanding coordination as a source of social order is histo
     - ESS (Maynard Smith)
 
 ## Lewis's "Convention" and its limitations
+- [SEP](https://plato.stanford.edu/entries/convention/)
 - [[10.1a1_Conventions-minght-not-be-necessary-for-solution-of-coordination-problems.md]]
 <!--The study of convention gained particular momentum with Lewis's seminal book “Convention” [-@lewis2008 [1969]], which, according to Guala [-@guala2007] was the first attempt to apply rational choice analysis to the domain of social ontology. Lewis saw conventions as solutions to coordination problems in game-theoretic sense, a basic element of social ontology. But what are conventions and what relation do they bear to coordination?-->
 <!---->
@@ -128,6 +129,10 @@ The tradition of understanding coordination as a source of social order is histo
 
 # Chapter 3. Evolvability of conventions as a problem of scope of actionable signals: from functionality to normativity
 - [[evolutionary-stable-correlation]]
+    - https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0136032
+    - https://www.frontiersin.org/journals/ecology-and-evolution/articles/10.3389/fevo.2023.1229093/full#B24
+    - https://mpra.ub.uni-muenchen.de/16926/
+    - https://philpapers.org/rec/TSACE
 - [[📝-(conf)-Formal-analysis-of-the-'scope-of-actionable-signals'-argument-in-rules-in-equilibria-theory-of-social-institutions]]
 - [[📝-Emergence-of-norm-driven-coordination-from-basic-signaling-games]]
 - [[10.2_Sender–reciever-systems-represent-both-within--and-between-organism-coordination.md]]
