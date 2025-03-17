@@ -50,7 +50,6 @@
       margin-left: 80px;
     }
     h1,h2,h3,h4,h5,h6 {text-align:left; font-family: monospace;}
-
     p {
       width: 50vw;
       font-size: 16px;
@@ -84,6 +83,7 @@
         font-family: monospace;
     }
 
+    /*Animation*/
     .text::after {
         content: '';
         display: inline-block;
@@ -105,6 +105,23 @@
     nav {
       display: none;
     }
+  }
+
+  /*Latex tables*/
+  .katex-table {
+    margin: 2em auto;
+    text-align: center;
+  }
+
+  .katex-table .caption {
+    font-weight: bold;
+    margin-bottom: 0.8em;
+    font-family: "Latin Modern", serif;
+    counter-increment: table;
+  }
+
+  .katex-table .caption::before {
+    content: "Table " counter(table) ": ";
   }
   </style>
 
