@@ -9,35 +9,11 @@ A major problem in arriving at a non-contradictory theoretical core in sociology
 
 ---
 
-## [Как будут устроены устойчивые деревни в 2045 году](future-societies_project)
-
-
-
-*20.02.2025 *
-
----
-
-## ["Evolvability of conventions: emergence of social institutions from animal conventions with complex signaling"](phd-draft)
+## [Evolution of social institutions from "animal conventions" with complex signaling](phd-draft)
 
 phd thesis work-in-progress
 
-*"13.03.2025" *
-
----
-
-## [Evolutionary stable correlation as a core problem of social ontology](correlation-evolution)
-
-
-
-*"13.03.2025" *
-
----
-
-## ["Evolvability of conventions: emergence of social institutions from animal conventions with complex signaling"](phd-draft)
-
-phd thesis work-in-progress
-
-*"13.03.2025" *
+*"24.03.2025" *
 
 ---
 
