@@ -9,17 +9,17 @@ A major problem in arriving at a non-contradictory theoretical core in sociology
 
 ---
 
-## [Evolution of social institutions from "animal conventions" with complex signaling](phd-draft)
-
-phd thesis work-in-progress
-
-*"24.03.2025" *
-
----
-
 ## [Evolutionary stable correlation as a core problem of social ontology](correlation-evolution)
 
 
 
 *"13.03.2025" *
+
+---
+
+## [Evolution of social institutions from "animal conventions" with complex signaling](phd-draft)
+
+phd thesis work-in-progress
+
+*"03.04.2025" *
 
