@@ -5,7 +5,15 @@
 
 A major problem in arriving at a non-contradictory theoretical core in sociology is the *lack of ontological constraints on concepts*. It implies insufficient empirical data substantiation, as well as a lack of commitment criteria for evaluating whether a concept is adequately substantiated or not.
 
-*22.02.2025  ~18 минут*
+*22.02.2025 ~18 минут*
+
+---
+
+## [Как будут устроены устойчивые деревни в 2045 году](future-societies_project)
+
+
+
+*2025-03-12 *
 
 ---
 
@@ -13,7 +21,7 @@ A major problem in arriving at a non-contradictory theoretical core in sociology
 
 
 
-*"13.03.2025" *
+*12.03.2025 *
 
 ---
 
@@ -21,5 +29,5 @@ A major problem in arriving at a non-contradictory theoretical core in sociology
 
 phd thesis work-in-progress
 
-*"07.04.2025" *
+*07.04.2025 *
 

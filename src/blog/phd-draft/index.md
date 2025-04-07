@@ -1,12 +1,8 @@
 ---
-id: index
-aliases: []
-tags: []
-author: Valerii Shevchenko
-date: "07.04.2025"
-generate_toc: true
-subtitle: phd thesis work-in-progress
 title: Evolution of social institutions from "animal conventions" with complex signaling
+subtitle: phd thesis work-in-progress
+date: 07.04.2025
+generate_toc: true
 ---
 
 <!--# Introduction-->
@@ -364,15 +360,24 @@ O'Connor proposes to layer these dimensions onto evolutionary models, namely tho
 
 - [ ] написать определение replcator dynamics и кратко критику от стерельного и хармса
 
-\begin{figure}[htb]
-\centering
-\begin{tabular}{c|cc}
- &A&B\\ \hline
+<!--\begin{figure}[htb]-->
+<!--\centering-->
+<!--\begin{tabular}{c|cc}-->
+<!-- &A&B\\ \hline-->
+<!--A & (1,1) & (0,0) \\ \hline-->
+<!--B & (0,0) & (x,x)-->
+<!--\end{tabular}-->
+<!--\caption{A coordination game where B equilibrium is more favorable given $x > 1$}-->
+<!--\end{figure}-->
+
+$$
+\begin{array}{c|cc}
+ & A & B \\ \hline
 A & (1,1) & (0,0) \\ \hline
 B & (0,0) & (x,x)
-\end{tabular}
-\caption{A coordination game where B equilibrium is more favorable given $x > 1$}
-\end{figure}
+\end{array}
+$$
+**A coordination game where B equilibrium is more favorable given $x > 1$**
 
 Modelled as replicator dynamics, the game on the figure above has B equilibrium as more “natural” in the sense (1) — that of a higher payoff. The corollary of this is a larger basin of attraction. Given $x = 50$, the phase diagram for this game will look like this:
 
@@ -394,120 +399,120 @@ A similar line of criticism comes from @burge1975, who notes that Lewisian requi
 
 # ОСТАНОВИЛСЯ ЗДЕСЬ
 
-### Refinements and extensions
-The next aspect of criticism is unnecessary character of conventions for solving coordination problems. In a broader sense, it is *unrelatedness* of those. As @millikan2005 argues,
-
-- [[10.1a1_Conventions-minght-not-be-necessary-for-solution-of-coordination-problems.md]]
-
-- https://plato.stanford.edu/entries/convention/#CritReacLewi
-- https://link.springer.com/article/10.1007/s11098-023-01957-z?fromPaywallRec=false#Sec5
-
-### 3. **Epistemic Overreach: Common Knowledge and Rationality**  
-Lewis’s requirement of **common knowledge**—that all parties know the convention and know that others know it—faces skepticism. Giacomo Sillari notes that evolutionary game theory demonstrates conventions can emerge *without* common knowledge, via trial-and-error learning or imitation[3]. Robert Sugden and others argue that Lewis conflates *common knowledge* with *common reason to believe*, which is less cognitively demanding[3]. Additionally, Burge and Gilbert highlight that Lewis overstates human rationality: conventions often persist through unconscious habit or social inertia, not deliberate equilibrium selection[5][4].
-
-### 4. **Empirical Limitations**  
-Francesco Guala questions whether “Lewis Conventions” exist in the real world. While Lewis’s model elegantly explains *some* conventions (e.g., driving sides), many real-world practices (e.g., gender roles) involve **normative enforcement** (e.g., sanctions) absent from his theory[4]. Guala argues that Lewis’s non-normative, game-theoretic framework struggles to explain why deviations from conventions provoke moral criticism rather than mere coordination failures[4].
-
-### Conclusion  
-Lewis’s theory remains foundational for analyzing conventions through game theory, but its critics highlight key gaps:  
-- **Unnecessary cognitive demands**: Common knowledge and explicit recognition of alternatives are often unrealistic[1][3][5].  
-- **Missing normativity**: Conventions often entail obligations, not just equilibrium strategies[2][4].  
-- **Empirical mismatch**: Real-world conventions frequently involve normative enforcement and social power dynamics[4].  
-These critiques suggest that while Lewis’s model is useful for idealized cases, it requires supplementation—particularly from theories of collective intentionality and social norms—to fully capture the complexity of human conventions.
-
-Citations:
-[1] https://www3.nd.edu/~jspeaks/courses/2007-8/93914/_HANDOUTS/lewis-conventions.pdf
-[2] https://www.academia.edu/11751093/The_normativity_of_Lewis_conventions
-[3] https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=721639bf619791b913dc730aac57df4baa726483
-[4] https://philsci-archive.pitt.edu/5398/1/Lewis%20conventions%203.pdf
-[5] https://philosophy.ucla.edu/wp-content/uploads/2018/08/Burge-1975-On-Knowledge-and-Convention.pdf
-[6] https://sites.pitt.edu/~strather/Gilbert%20Lewis%20Review%20Forum.pdf
-[7] https://www.analyse-und-kritik.net/Dateien/56c1c37df3e5a_ak_gilbert_2008.pdf
-[8] https://www.cambridge.org/core/journals/economics-and-philosophy/article/frames-reasoning-and-the-emergence-of-conventions/E7989577CBDC4D969EB5D2E456B6AB33
-[9] http://ruccs.rutgers.edu/images/personal-ernest-lepore/Lewis%20on%20convention2.pdf
-[10] https://www.degruyter.com/document/doi/10.1515/9780691214627/html
-[11] https://ruccs.rutgers.edu/images/personal-ernest-lepore/Lewis%20on%20convention2.pdf
-[12] https://philarchive.org/archive/AMANAI
-[13] https://dokumen.pub/on-social-facts-9780691214627.html
-[14] http://www.diva-portal.org/smash/get/diva2:609909/FULLTEXT01.pdf
-[15] https://www.monmouth.edu/department-of-english/documents/wyndham-lewiss-theory-of-mass-culture.pdf/
-[16] https://drops.dagstuhl.de/storage/16dagstuhl-seminar-proceedings/dsp-vol09121/DagSemProc.09121.4/DagSemProc.09121.4.pdf
-
----
-Answer from Perplexity: pplx.ai/share
-
-***
-
-- common knowledge requirement (Binmore, Moore)
-- overestimation of arbitrariness (Miller, Burge, Gilbert)
-- imprecise equilibrium concept (Sugden ESS, Vanderschraaf + Skyrms CE)
-- coordination problems are soluble without conventions (Sugden, Marmor's constitutive conventions)
-
-
-
-
-***
-
-Another significant area of criticism surrounds Lewis's conceptualization of common knowledge . While Lewis is often credited with introducing the concept of common knowledge, his definition as an infinite hierarchy of "reasons to believe" diverges significantly from the more standard modern understanding, which typically involves actual knowledge and its iterative nature . This weaker form of common knowledge, where individuals have reasons to believe that others have reasons to believe, and so on, might not provide a sufficiently robust foundation for the stability and predictability of conventions. For many conventions, especially those with important consequences for non-compliance, a stronger sense of shared understanding and expectation seems necessary. For instance, in the convention of driving on a particular side of the road, it appears more crucial that individuals largely know that others will adhere to the convention, rather than merely having a reason to believe they will. Lewis himself acknowledged that the term "common knowledge" might be a misnomer for his concept, suggesting "common reason to believe" as a more accurate description . Furthermore, if common knowledge is based on reasons to believe rather than actual knowledge, it raises concerns about the potential for widespread error and the justification of actions based on conventions . If everyone in a population has a reason to believe something false, and a convention is built upon this shared but incorrect belief, the resulting actions might be misguided or ineffective.   
-
-Critics also argue that Lewis's theory primarily offers a static account of conventions and struggles to explain their emergence and evolution over time . While Lewis describes the conditions under which a convention exists, his framework provides less insight into the dynamic processes through which conventions initially arise, how they adapt to changing circumstances, or why some conventions eventually dissolve. The emergence of conventions likely involves more than just individuals independently stumbling into mutually beneficial regularities. Factors such as learning, adaptation, social influence, and explicit communication seem to play crucial roles in shaping and maintaining conventions, aspects that are not fully captured by Lewis's model . While Lewis acknowledges the importance of precedence and salience in the selection of one equilibrium over others in a coordination problem , these concepts primarily explain the maintenance of an existing convention rather than its initial genesis. For example, the fact that a convention has been followed in the past (precedence) can explain why it continues to be followed, but it does not fully account for why that particular convention arose in the first place among multiple equally viable alternatives. The "first driver" problem illustrates this: Lewis's theory explains why people in Britain drive on the left because everyone else has done so historically and is expected to continue , but it doesn't fully explain why the initial decision to drive on the left was made.   
-
-A significant critique of Lewis’s theory is its focus on purely self-interested motivations and non-normative expectations, which many argue fails to capture the normative force often associated with conventions . Many real-world conventions seem to carry a sense of obligation or a reason to conform that extends beyond mere personal benefit in coordinating with others. Consider conventions like queuing or basic etiquette; while there is a coordination aspect to these practices, there also appears to be a social expectation that one should adhere to them. Lewis's theory distinguishes between conventions and social norms, with social norms typically involving normative expectations and often being backed by sanctions . Critics argue that this sharp separation might not accurately reflect the reality of many social conventions, where normative considerations are often intertwined with the self-interested motivations for coordination. While Lewis acknowledges that conventions might be supported by external normative considerations and sanctions , treating these as separate from the convention itself might obscure the fact that the normative aspect is often integral to why people follow certain conventions. The fear of social disapproval or even sanctions can be a powerful motivator for conforming to a convention, suggesting that normativity is not just an external layer but a fundamental component of many social practices.   
-
-Furthermore, the applicability of Lewis's model, which is primarily based on coordination problems with shared interests, to all types of social conventions has been questioned . Lewis’s framework seems best suited for situations where individuals have a common goal and multiple ways of achieving it, where any coordinated action is better than no coordination. However, many social conventions, including moral norms and conventions around resource distribution, involve conflicting interests or may not have clearly defined coordination benefits for all participants . For instance, conventions related to social hierarchy or power dynamics might benefit some groups more than others, making it difficult to model them solely as solutions to coordination problems with mutual benefits. Additionally, Lewis's condition that "almost everyone conforms" to a convention might be too stringent, as some conventions can exist even with relatively low levels of compliance . Moreover, the assumption that alternative conventions are equally beneficial might not always hold in reality; some conventions might be objectively more efficient, fair, or desirable than others .   
-
-Several alternative philosophical theories of convention have emerged that attempt to address some of the limitations of Lewis's account . Some theories emphasize the role of rules rather than just behavioral regularities, arguing that conventions often involve an understanding and acceptance of underlying rules that guide behavior . Theories focusing on collective intentions and "plural subjects" suggest that conventions are maintained through shared intentions and a sense of acting together as a group, potentially offering a way to address the initial agreement problem and the normative aspects of conventions . Evolutionary game theory provides a framework for understanding how conventions can emerge and become stable over time through repeated interactions and evolutionary pressures . Other approaches directly incorporate the role of normative expectations and sanctions in the definition and maintenance of social norms and conventions . The concept of tacit agreement, as emphasized by Locke, offers an alternative to explicit agreement in explaining the origins of some conventions . The constraint view of conventionality argues that while conventions might seem arbitrary, they are often constrained by non-conventional concerns such as welfare, which can help explain the applicability of conventions to diverse situations . The following table summarizes some of these alternative perspectives:   
-
-Overall, Lewis's account of conventions raised several key topics within the study of conventions: salience, common knowledge, arbitrariness and normativity, which we will discuss in the next section.
-
-### Extensions of Lewis's Theory
-As Lewis's theory laid the groundwork for the formal study of conventions and signaling, it has been used to build upon by many scholars. There are many refinements, but we will consider only most important for the topic of emergence of social institutions from animal conventions.
-
-***
-
-Peter Vanderschraaf has significantly refined and extended Lewis's theory of convention by defining it as a correlated equilibrium that satisfies a public intentions criterion 32. This approach aims to provide a more general and formally rigorous account of convention, addressing some of the limitations of Lewis's original formulation 32.
-
----
-
-The concept of correlated equilibrium, introduced by Robert Aumann, is a generalization of Nash equilibrium 23. In a correlated equilibrium, players coordinate their strategies based on a shared observation of a random signal or some other common information 23. For example, in the classic game of "Battle of the Sexes," where one player prefers going to the opera and the other prefers going to a boxing match, a correlated strategy could be to go to the opera if a coin flip lands heads and to the boxing match if it lands tails. If both players observe the same outcome of the coin flip, they can coordinate their actions to achieve a preferred outcome over the undesirable outcomes of going to different events 23. Vanderschraaf argues that many real-world conventions can be better understood as correlated equilibria rather than just Nash equilibria 32.
-
-In addition to the concept of correlated equilibrium, Vanderschraaf introduces the public intentions criterion, which states that every agent wants their intended action to be common knowledge 32. This criterion formalizes the idea that for a convention to be established and maintained, individuals must not only coordinate their actions but also have a shared understanding of each other's intentions to conform to the convention 32.
-
-Vanderschraaf also focuses on the emergence of conventions, suggesting that the selection of a particular correlated equilibrium as a convention requires a theory of equilibrium selection that goes beyond Lewis's work 32. He proposes modeling agents as a dynamical system of inductive deliberators who adjust their beliefs about each other recursively, eventually converging to a correlated equilibrium 33.
-
-Vanderschraaf's refinements offer a more sophisticated game-theoretic framework for understanding conventions. By incorporating correlated equilibrium and the public intentions criterion, his theory can potentially capture a wider range of conventional behaviors, including those where coordination relies on shared information beyond just individual expectations of others' actions.
-
-Brian Skyrms
-Brian Skyrms has approached the study of convention through the lens of evolutionary game theory, focusing on how conventions emerge and are sustained over time through processes of learning and adaptation 2. Unlike Lewis's primarily rationalistic account, Skyrms emphasizes the dynamic aspects of convention, exploring how repeated interactions and evolutionary pressures can lead to the establishment of stable behavioral patterns 12.
-
-Skyrms utilizes models of learning and evolution, such as replicator dynamics, to understand how certain strategies or behaviors become more prevalent in a population over time 36. These models show how strategies that yield higher payoffs or fitness tend to spread, while less successful strategies decline 39. In the context of convention, Skyrms demonstrates how cooperative strategies in coordination games can evolve and become stable within a population through repeated interactions, even without the need for strong common knowledge in the Lewisian sense 12.
-
-Skyrms has also made significant contributions to the understanding of signaling games and the evolution of communication 17. Signaling games model situations where one agent (the sender) has private information and sends a signal to another agent (the receiver), who then takes an action based on the signal 17. Skyrms's work explores how meaningful communication, which is a form of convention, can emerge spontaneously through evolutionary processes in these games 31.
-
-Furthermore, Skyrms has investigated the concept of correlated conventions, where agents use an asymmetry to coordinate their behavior 38. He explores how such conventions can evolve and the role of arbitrary asymmetries in their formation 40.
-
-Skyrms's work offers a valuable evolutionary perspective on convention, highlighting how stable and coordinated behavior can arise through dynamic processes of learning and adaptation, providing an alternative and complementary approach to Lewis's more static and rationality-focused theory.
-
-Herbert Gintis
-Herbert Gintis offers a perspective on convention that integrates game theory with social norms and moral commitments 26. Gintis argues that human behavior cannot be fully explained by rational self-interest alone and that internalized social norms play a crucial role in shaping our preferences and actions, particularly in strategic interactions 37.
-
-Gintis critiques the assumption of common knowledge of rationality in standard game theory, arguing that it is often unrealistic and fails to account for the observed patterns of human behavior 37. He suggests that social norms act as correlation devices that help agents coordinate on particular equilibria in games, often leading to outcomes that are more cooperative or socially desirable than those predicted by purely self-interested rationality 53.
-
-For Gintis, social norms are often internalized, meaning individuals feel a moral obligation to follow them, even when doing so might not maximize their immediate material self-interest 37. This internalization of norms can explain why people cooperate in situations like the Prisoner's Dilemma, where rational self-interest would dictate defection 10.
-
-Gintis's broader aim is to unify the behavioral sciences by integrating insights from game theory, sociology, and psychology to develop a more comprehensive model of human decision-making 37. He argues that understanding social norms and their influence on individual preferences is essential for explaining the emergence and maintenance of conventions and social order 37.
-
-Gintis's work extends the analysis of convention by emphasizing the critical role of social norms and moral commitments in shaping human behavior and facilitating coordination, offering a richer and more behaviorally grounded perspective than purely rationalistic accounts.
-
-This table highlights a progression in the theory of convention. Lewis's work laid the groundwork by focusing on rational coordination under conditions of common knowledge. Vanderschraaf built upon this by introducing the more general game-theoretic concept of correlated equilibrium and emphasizing public intentions. Skyrms shifted the focus to the evolutionary dynamics of convention, exploring how stable patterns of behavior can emerge through repeated interactions and adaptation. Finally, Gintis integrated the role of social norms and moral commitments, arguing that these factors are essential for a complete understanding of human behavior and coordination in the context of conventions.
-
-Conclusion
-The study of social conventions has evolved significantly since David Lewis's foundational work. Lewis provided a rigorous analysis of convention rooted in game theory, emphasizing the role of coordination problems, common knowledge, and rationality. His theory offered a powerful framework for understanding how shared patterns of behavior can emerge and persist in the absence of explicit agreements, and it had a profound influence on the philosophy of language.
-
-Ongoing debates in the field include the precise role and necessity of common knowledge, the mechanisms by which social norms are internalized and influence behavior, and the best way to integrate rational choice and evolutionary perspectives in the study of convention. Future research could further explore the cognitive and psychological foundations of convention, the influence of culture and institutions in shaping conventional behavior, and the application of these theories to address contemporary social issues.
-
-In conclusion, the study of convention remains a vital area of inquiry in social philosophy, offering critical insights into the foundations of social order, cooperation, and communication. The progression from Lewis's seminal work to the nuanced perspectives of later scholars like Vanderschraaf, Skyrms, and Gintis demonstrates the ongoing effort to develop a comprehensive and accurate understanding of this fundamental aspect of social life.
-
+<!--### Refinements and extensions-->
+<!--The next aspect of criticism is unnecessary character of conventions for solving coordination problems. In a broader sense, it is *unrelatedness* of those. As @millikan2005 argues,-->
+<!---->
+<!--- [[10.1a1_Conventions-minght-not-be-necessary-for-solution-of-coordination-problems.md]]-->
+<!---->
+<!--- https://plato.stanford.edu/entries/convention/#CritReacLewi-->
+<!--- https://link.springer.com/article/10.1007/s11098-023-01957-z?fromPaywallRec=false#Sec5-->
+<!---->
+<!--### 3. **Epistemic Overreach: Common Knowledge and Rationality**  -->
+<!--Lewis’s requirement of **common knowledge**—that all parties know the convention and know that others know it—faces skepticism. Giacomo Sillari notes that evolutionary game theory demonstrates conventions can emerge *without* common knowledge, via trial-and-error learning or imitation[3]. Robert Sugden and others argue that Lewis conflates *common knowledge* with *common reason to believe*, which is less cognitively demanding[3]. Additionally, Burge and Gilbert highlight that Lewis overstates human rationality: conventions often persist through unconscious habit or social inertia, not deliberate equilibrium selection[5][4].-->
+<!---->
+<!--### 4. **Empirical Limitations**  -->
+<!--Francesco Guala questions whether “Lewis Conventions” exist in the real world. While Lewis’s model elegantly explains *some* conventions (e.g., driving sides), many real-world practices (e.g., gender roles) involve **normative enforcement** (e.g., sanctions) absent from his theory[4]. Guala argues that Lewis’s non-normative, game-theoretic framework struggles to explain why deviations from conventions provoke moral criticism rather than mere coordination failures[4].-->
+<!---->
+<!--### Conclusion  -->
+<!--Lewis’s theory remains foundational for analyzing conventions through game theory, but its critics highlight key gaps:  -->
+<!--- **Unnecessary cognitive demands**: Common knowledge and explicit recognition of alternatives are often unrealistic[1][3][5].  -->
+<!--- **Missing normativity**: Conventions often entail obligations, not just equilibrium strategies[2][4].  -->
+<!--- **Empirical mismatch**: Real-world conventions frequently involve normative enforcement and social power dynamics[4].  -->
+<!--These critiques suggest that while Lewis’s model is useful for idealized cases, it requires supplementation—particularly from theories of collective intentionality and social norms—to fully capture the complexity of human conventions.-->
+<!---->
+<!--Citations:-->
+<!--[1] https://www3.nd.edu/~jspeaks/courses/2007-8/93914/_HANDOUTS/lewis-conventions.pdf-->
+<!--[2] https://www.academia.edu/11751093/The_normativity_of_Lewis_conventions-->
+<!--[3] https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=721639bf619791b913dc730aac57df4baa726483-->
+<!--[4] https://philsci-archive.pitt.edu/5398/1/Lewis%20conventions%203.pdf-->
+<!--[5] https://philosophy.ucla.edu/wp-content/uploads/2018/08/Burge-1975-On-Knowledge-and-Convention.pdf-->
+<!--[6] https://sites.pitt.edu/~strather/Gilbert%20Lewis%20Review%20Forum.pdf-->
+<!--[7] https://www.analyse-und-kritik.net/Dateien/56c1c37df3e5a_ak_gilbert_2008.pdf-->
+<!--[8] https://www.cambridge.org/core/journals/economics-and-philosophy/article/frames-reasoning-and-the-emergence-of-conventions/E7989577CBDC4D969EB5D2E456B6AB33-->
+<!--[9] http://ruccs.rutgers.edu/images/personal-ernest-lepore/Lewis%20on%20convention2.pdf-->
+<!--[10] https://www.degruyter.com/document/doi/10.1515/9780691214627/html-->
+<!--[11] https://ruccs.rutgers.edu/images/personal-ernest-lepore/Lewis%20on%20convention2.pdf-->
+<!--[12] https://philarchive.org/archive/AMANAI-->
+<!--[13] https://dokumen.pub/on-social-facts-9780691214627.html-->
+<!--[14] http://www.diva-portal.org/smash/get/diva2:609909/FULLTEXT01.pdf-->
+<!--[15] https://www.monmouth.edu/department-of-english/documents/wyndham-lewiss-theory-of-mass-culture.pdf/-->
+<!--[16] https://drops.dagstuhl.de/storage/16dagstuhl-seminar-proceedings/dsp-vol09121/DagSemProc.09121.4/DagSemProc.09121.4.pdf-->
+<!---->
+<!------->
+<!--Answer from Perplexity: pplx.ai/share-->
+<!---->
+<!--***-->
+<!---->
+<!--- common knowledge requirement (Binmore, Moore)-->
+<!--- overestimation of arbitrariness (Miller, Burge, Gilbert)-->
+<!--- imprecise equilibrium concept (Sugden ESS, Vanderschraaf + Skyrms CE)-->
+<!--- coordination problems are soluble without conventions (Sugden, Marmor's constitutive conventions)-->
+<!---->
+<!---->
+<!---->
+<!---->
+<!--***-->
+<!---->
+<!--Another significant area of criticism surrounds Lewis's conceptualization of common knowledge . While Lewis is often credited with introducing the concept of common knowledge, his definition as an infinite hierarchy of "reasons to believe" diverges significantly from the more standard modern understanding, which typically involves actual knowledge and its iterative nature . This weaker form of common knowledge, where individuals have reasons to believe that others have reasons to believe, and so on, might not provide a sufficiently robust foundation for the stability and predictability of conventions. For many conventions, especially those with important consequences for non-compliance, a stronger sense of shared understanding and expectation seems necessary. For instance, in the convention of driving on a particular side of the road, it appears more crucial that individuals largely know that others will adhere to the convention, rather than merely having a reason to believe they will. Lewis himself acknowledged that the term "common knowledge" might be a misnomer for his concept, suggesting "common reason to believe" as a more accurate description . Furthermore, if common knowledge is based on reasons to believe rather than actual knowledge, it raises concerns about the potential for widespread error and the justification of actions based on conventions . If everyone in a population has a reason to believe something false, and a convention is built upon this shared but incorrect belief, the resulting actions might be misguided or ineffective.   -->
+<!---->
+<!--Critics also argue that Lewis's theory primarily offers a static account of conventions and struggles to explain their emergence and evolution over time . While Lewis describes the conditions under which a convention exists, his framework provides less insight into the dynamic processes through which conventions initially arise, how they adapt to changing circumstances, or why some conventions eventually dissolve. The emergence of conventions likely involves more than just individuals independently stumbling into mutually beneficial regularities. Factors such as learning, adaptation, social influence, and explicit communication seem to play crucial roles in shaping and maintaining conventions, aspects that are not fully captured by Lewis's model . While Lewis acknowledges the importance of precedence and salience in the selection of one equilibrium over others in a coordination problem , these concepts primarily explain the maintenance of an existing convention rather than its initial genesis. For example, the fact that a convention has been followed in the past (precedence) can explain why it continues to be followed, but it does not fully account for why that particular convention arose in the first place among multiple equally viable alternatives. The "first driver" problem illustrates this: Lewis's theory explains why people in Britain drive on the left because everyone else has done so historically and is expected to continue , but it doesn't fully explain why the initial decision to drive on the left was made.   -->
+<!---->
+<!--A significant critique of Lewis’s theory is its focus on purely self-interested motivations and non-normative expectations, which many argue fails to capture the normative force often associated with conventions . Many real-world conventions seem to carry a sense of obligation or a reason to conform that extends beyond mere personal benefit in coordinating with others. Consider conventions like queuing or basic etiquette; while there is a coordination aspect to these practices, there also appears to be a social expectation that one should adhere to them. Lewis's theory distinguishes between conventions and social norms, with social norms typically involving normative expectations and often being backed by sanctions . Critics argue that this sharp separation might not accurately reflect the reality of many social conventions, where normative considerations are often intertwined with the self-interested motivations for coordination. While Lewis acknowledges that conventions might be supported by external normative considerations and sanctions , treating these as separate from the convention itself might obscure the fact that the normative aspect is often integral to why people follow certain conventions. The fear of social disapproval or even sanctions can be a powerful motivator for conforming to a convention, suggesting that normativity is not just an external layer but a fundamental component of many social practices.   -->
+<!---->
+<!--Furthermore, the applicability of Lewis's model, which is primarily based on coordination problems with shared interests, to all types of social conventions has been questioned . Lewis’s framework seems best suited for situations where individuals have a common goal and multiple ways of achieving it, where any coordinated action is better than no coordination. However, many social conventions, including moral norms and conventions around resource distribution, involve conflicting interests or may not have clearly defined coordination benefits for all participants . For instance, conventions related to social hierarchy or power dynamics might benefit some groups more than others, making it difficult to model them solely as solutions to coordination problems with mutual benefits. Additionally, Lewis's condition that "almost everyone conforms" to a convention might be too stringent, as some conventions can exist even with relatively low levels of compliance . Moreover, the assumption that alternative conventions are equally beneficial might not always hold in reality; some conventions might be objectively more efficient, fair, or desirable than others .   -->
+<!---->
+<!--Several alternative philosophical theories of convention have emerged that attempt to address some of the limitations of Lewis's account . Some theories emphasize the role of rules rather than just behavioral regularities, arguing that conventions often involve an understanding and acceptance of underlying rules that guide behavior . Theories focusing on collective intentions and "plural subjects" suggest that conventions are maintained through shared intentions and a sense of acting together as a group, potentially offering a way to address the initial agreement problem and the normative aspects of conventions . Evolutionary game theory provides a framework for understanding how conventions can emerge and become stable over time through repeated interactions and evolutionary pressures . Other approaches directly incorporate the role of normative expectations and sanctions in the definition and maintenance of social norms and conventions . The concept of tacit agreement, as emphasized by Locke, offers an alternative to explicit agreement in explaining the origins of some conventions . The constraint view of conventionality argues that while conventions might seem arbitrary, they are often constrained by non-conventional concerns such as welfare, which can help explain the applicability of conventions to diverse situations . The following table summarizes some of these alternative perspectives:   -->
+<!---->
+<!--Overall, Lewis's account of conventions raised several key topics within the study of conventions: salience, common knowledge, arbitrariness and normativity, which we will discuss in the next section.-->
+<!---->
+<!--### Extensions of Lewis's Theory-->
+<!--As Lewis's theory laid the groundwork for the formal study of conventions and signaling, it has been used to build upon by many scholars. There are many refinements, but we will consider only most important for the topic of emergence of social institutions from animal conventions.-->
+<!---->
+<!--***-->
+<!---->
+<!--Peter Vanderschraaf has significantly refined and extended Lewis's theory of convention by defining it as a correlated equilibrium that satisfies a public intentions criterion 32. This approach aims to provide a more general and formally rigorous account of convention, addressing some of the limitations of Lewis's original formulation 32.-->
+<!---->
+<!------->
+<!---->
+<!--The concept of correlated equilibrium, introduced by Robert Aumann, is a generalization of Nash equilibrium 23. In a correlated equilibrium, players coordinate their strategies based on a shared observation of a random signal or some other common information 23. For example, in the classic game of "Battle of the Sexes," where one player prefers going to the opera and the other prefers going to a boxing match, a correlated strategy could be to go to the opera if a coin flip lands heads and to the boxing match if it lands tails. If both players observe the same outcome of the coin flip, they can coordinate their actions to achieve a preferred outcome over the undesirable outcomes of going to different events 23. Vanderschraaf argues that many real-world conventions can be better understood as correlated equilibria rather than just Nash equilibria 32.-->
+<!---->
+<!--In addition to the concept of correlated equilibrium, Vanderschraaf introduces the public intentions criterion, which states that every agent wants their intended action to be common knowledge 32. This criterion formalizes the idea that for a convention to be established and maintained, individuals must not only coordinate their actions but also have a shared understanding of each other's intentions to conform to the convention 32.-->
+<!---->
+<!--Vanderschraaf also focuses on the emergence of conventions, suggesting that the selection of a particular correlated equilibrium as a convention requires a theory of equilibrium selection that goes beyond Lewis's work 32. He proposes modeling agents as a dynamical system of inductive deliberators who adjust their beliefs about each other recursively, eventually converging to a correlated equilibrium 33.-->
+<!---->
+<!--Vanderschraaf's refinements offer a more sophisticated game-theoretic framework for understanding conventions. By incorporating correlated equilibrium and the public intentions criterion, his theory can potentially capture a wider range of conventional behaviors, including those where coordination relies on shared information beyond just individual expectations of others' actions.-->
+<!---->
+<!--Brian Skyrms-->
+<!--Brian Skyrms has approached the study of convention through the lens of evolutionary game theory, focusing on how conventions emerge and are sustained over time through processes of learning and adaptation 2. Unlike Lewis's primarily rationalistic account, Skyrms emphasizes the dynamic aspects of convention, exploring how repeated interactions and evolutionary pressures can lead to the establishment of stable behavioral patterns 12.-->
+<!---->
+<!--Skyrms utilizes models of learning and evolution, such as replicator dynamics, to understand how certain strategies or behaviors become more prevalent in a population over time 36. These models show how strategies that yield higher payoffs or fitness tend to spread, while less successful strategies decline 39. In the context of convention, Skyrms demonstrates how cooperative strategies in coordination games can evolve and become stable within a population through repeated interactions, even without the need for strong common knowledge in the Lewisian sense 12.-->
+<!---->
+<!--Skyrms has also made significant contributions to the understanding of signaling games and the evolution of communication 17. Signaling games model situations where one agent (the sender) has private information and sends a signal to another agent (the receiver), who then takes an action based on the signal 17. Skyrms's work explores how meaningful communication, which is a form of convention, can emerge spontaneously through evolutionary processes in these games 31.-->
+<!---->
+<!--Furthermore, Skyrms has investigated the concept of correlated conventions, where agents use an asymmetry to coordinate their behavior 38. He explores how such conventions can evolve and the role of arbitrary asymmetries in their formation 40.-->
+<!---->
+<!--Skyrms's work offers a valuable evolutionary perspective on convention, highlighting how stable and coordinated behavior can arise through dynamic processes of learning and adaptation, providing an alternative and complementary approach to Lewis's more static and rationality-focused theory.-->
+<!---->
+<!--Herbert Gintis-->
+<!--Herbert Gintis offers a perspective on convention that integrates game theory with social norms and moral commitments 26. Gintis argues that human behavior cannot be fully explained by rational self-interest alone and that internalized social norms play a crucial role in shaping our preferences and actions, particularly in strategic interactions 37.-->
+<!---->
+<!--Gintis critiques the assumption of common knowledge of rationality in standard game theory, arguing that it is often unrealistic and fails to account for the observed patterns of human behavior 37. He suggests that social norms act as correlation devices that help agents coordinate on particular equilibria in games, often leading to outcomes that are more cooperative or socially desirable than those predicted by purely self-interested rationality 53.-->
+<!---->
+<!--For Gintis, social norms are often internalized, meaning individuals feel a moral obligation to follow them, even when doing so might not maximize their immediate material self-interest 37. This internalization of norms can explain why people cooperate in situations like the Prisoner's Dilemma, where rational self-interest would dictate defection 10.-->
+<!---->
+<!--Gintis's broader aim is to unify the behavioral sciences by integrating insights from game theory, sociology, and psychology to develop a more comprehensive model of human decision-making 37. He argues that understanding social norms and their influence on individual preferences is essential for explaining the emergence and maintenance of conventions and social order 37.-->
+<!---->
+<!--Gintis's work extends the analysis of convention by emphasizing the critical role of social norms and moral commitments in shaping human behavior and facilitating coordination, offering a richer and more behaviorally grounded perspective than purely rationalistic accounts.-->
+<!---->
+<!--This table highlights a progression in the theory of convention. Lewis's work laid the groundwork by focusing on rational coordination under conditions of common knowledge. Vanderschraaf built upon this by introducing the more general game-theoretic concept of correlated equilibrium and emphasizing public intentions. Skyrms shifted the focus to the evolutionary dynamics of convention, exploring how stable patterns of behavior can emerge through repeated interactions and adaptation. Finally, Gintis integrated the role of social norms and moral commitments, arguing that these factors are essential for a complete understanding of human behavior and coordination in the context of conventions.-->
+<!---->
+<!--Conclusion-->
+<!--The study of social conventions has evolved significantly since David Lewis's foundational work. Lewis provided a rigorous analysis of convention rooted in game theory, emphasizing the role of coordination problems, common knowledge, and rationality. His theory offered a powerful framework for understanding how shared patterns of behavior can emerge and persist in the absence of explicit agreements, and it had a profound influence on the philosophy of language.-->
+<!---->
+<!--Ongoing debates in the field include the precise role and necessity of common knowledge, the mechanisms by which social norms are internalized and influence behavior, and the best way to integrate rational choice and evolutionary perspectives in the study of convention. Future research could further explore the cognitive and psychological foundations of convention, the influence of culture and institutions in shaping conventional behavior, and the application of these theories to address contemporary social issues.-->
+<!---->
+<!--In conclusion, the study of convention remains a vital area of inquiry in social philosophy, offering critical insights into the foundations of social order, cooperation, and communication. The progression from Lewis's seminal work to the nuanced perspectives of later scholars like Vanderschraaf, Skyrms, and Gintis demonstrates the ongoing effort to develop a comprehensive and accurate understanding of this fundamental aspect of social life.-->
+<!---->
 
 
 
@@ -1434,40 +1439,40 @@ In conclusion, the study of convention remains a vital area of inquiry in social
 <!--    дата последнего обращения: марта 31, 2025,-->
 <!--    [[https://dash.harvard.edu/server/api/core/bitstreams/7312037d-7a26-6bd4-e053-0100007fdf3b/content]{.underline}](https://dash.harvard.edu/server/api/core/bitstreams/7312037d-7a26-6bd4-e053-0100007fdf3b/content)-->
 
-***
-
-Schiffer conceptualized common knowledge as an *infinite hierarchy of mutual knowledge*, defined recursively as follows:  
-- **Mutual knowledge₁**: Everyone knows proposition $$ p $$.  
-- **Mutual knowledge₂**: Everyone knows that everyone knows $$ p $$.  
-- **Mutual knowledgeₙ**: This recursion continues for $$ n $$ levels, where $$ n \to \infty $$.  
-
-Formally, common knowledge $C(p)$ is the infinite conjunction:  
-$$
-C(p) = \bigwedge_{n=1}^{\infty} K^n(p),
-$$  
-where $$ K^n(p) $$ denotes the $$ n $$-th level of mutual knowledge. This approach emphasizes communication as the mechanism to elevate mutual knowledge into common knowledge. For example, in the *Muddy Children Puzzle*, if two children both see mud on each other’s faces, they initially have mutual knowledge₁ (both know there’s at least one muddy face). Only after public announcements do they iteratively reach mutual knowledge₂, mutual knowledge₃, etc., converging toward common knowledge.
-
-Aumann formalized common knowledge using *information partitions* over possible states of the world. Let $$ \Omega $$ be the set of possible states, and let $$ \mathcal{P}_i $$ represent the information partition of agent $$ i $$. Aumann’s framework defines common knowledge as follows:  
-
-An event $$ E \subseteq \Omega $$ is *common knowledge* at state $$ \omega $$ if the cell of the *meet* of the agents’ partitions containing $$ \omega $$ is a subset of $E$.  
-
-A key result is Aumann’s Agreement Theorem: If two rational agents with common priors have common knowledge of their posterior probabilities about an event $E$, their probabilities must coincide. Formally, if $$ C(p_i(E) = q_i) $$ for agents $$ i = 1, 2 $$, then $$ q_1 = q_2 $$. This framework avoids explicit infinite regress by defining common knowledge as a fixed point in the agents’ information partitions.
-
----
-
-| Aspect                | Schiffer’s Model                          | Aumann’s Model                          |  
-|-----------------------|-------------------------------------------|-----------------------------------------|  
-| **Structure**         | Infinite epistemic hierarchy              | Set-theoretic partitions                |  
-| **Focus**             | Communication-driven knowledge escalation | Bayesian updating and rational agreement |  
-| **Practicality**      | Requires explicit recursive reasoning     | Avoids regress via topological closure  |  
-| **Applications**      | Explains coordination puzzles             | Underpins game-theoretic equilibrium    |  
-
-Schiffer’s model aligns with intuitive examples like the Muddy Children Puzzle, where announcements progressively deepen mutual knowledge. Aumann’s approach, by contrast, provides a mathematical foundation for strategic interactions, showing how common knowledge enforces consensus among Bayesian agents. While Schiffer’s hierarchy is often seen as philosophically intuitive, Aumann’s formalism has been more widely adopted in economics and computer science due to its technical precision. Both, however, agree that common knowledge transcends mere mutual understanding, requiring agents to account for *each other’s epistemic states* in a systematic way.
-
-The relationship between Lewis’s notion and these subsequent formalizations remains debated. Cubitt and Sugden [@cubitt2003] suggested a fundamental distinction between Lewis’s perspective and later theories, while Vanderschraaf [-@vanderschraaf1998] and Sillari [-@sillari2005] argued for continuity between them.
-
-*** 
-
+<!--***-->
+<!---->
+<!--Schiffer conceptualized common knowledge as an *infinite hierarchy of mutual knowledge*, defined recursively as follows:  -->
+<!--- **Mutual knowledge₁**: Everyone knows proposition $$ p $$.  -->
+<!--- **Mutual knowledge₂**: Everyone knows that everyone knows $$ p $$.  -->
+<!--- **Mutual knowledgeₙ**: This recursion continues for $$ n $$ levels, where $$ n \to \infty $$.  -->
+<!---->
+<!--Formally, common knowledge $C(p)$ is the infinite conjunction:  -->
+<!--$$-->
+<!--C(p) = \bigwedge_{n=1}^{\infty} K^n(p),-->
+<!--$$  -->
+<!--where $$ K^n(p) $$ denotes the $$ n $$-th level of mutual knowledge. This approach emphasizes communication as the mechanism to elevate mutual knowledge into common knowledge. For example, in the *Muddy Children Puzzle*, if two children both see mud on each other’s faces, they initially have mutual knowledge₁ (both know there’s at least one muddy face). Only after public announcements do they iteratively reach mutual knowledge₂, mutual knowledge₃, etc., converging toward common knowledge.-->
+<!---->
+<!--Aumann formalized common knowledge using *information partitions* over possible states of the world. Let $$ \Omega $$ be the set of possible states, and let $$ \mathcal{P}_i $$ represent the information partition of agent $$ i $$. Aumann’s framework defines common knowledge as follows:  -->
+<!---->
+<!--An event $$ E \subseteq \Omega $$ is *common knowledge* at state $$ \omega $$ if the cell of the *meet* of the agents’ partitions containing $$ \omega $$ is a subset of $E$.  -->
+<!---->
+<!--A key result is Aumann’s Agreement Theorem: If two rational agents with common priors have common knowledge of their posterior probabilities about an event $E$, their probabilities must coincide. Formally, if $$ C(p_i(E) = q_i) $$ for agents $$ i = 1, 2 $$, then $$ q_1 = q_2 $$. This framework avoids explicit infinite regress by defining common knowledge as a fixed point in the agents’ information partitions.-->
+<!---->
+<!------->
+<!---->
+<!--| Aspect                | Schiffer’s Model                          | Aumann’s Model                          |  -->
+<!--|-----------------------|-------------------------------------------|-----------------------------------------|  -->
+<!--| **Structure**         | Infinite epistemic hierarchy              | Set-theoretic partitions                |  -->
+<!--| **Focus**             | Communication-driven knowledge escalation | Bayesian updating and rational agreement |  -->
+<!--| **Practicality**      | Requires explicit recursive reasoning     | Avoids regress via topological closure  |  -->
+<!--| **Applications**      | Explains coordination puzzles             | Underpins game-theoretic equilibrium    |  -->
+<!---->
+<!--Schiffer’s model aligns with intuitive examples like the Muddy Children Puzzle, where announcements progressively deepen mutual knowledge. Aumann’s approach, by contrast, provides a mathematical foundation for strategic interactions, showing how common knowledge enforces consensus among Bayesian agents. While Schiffer’s hierarchy is often seen as philosophically intuitive, Aumann’s formalism has been more widely adopted in economics and computer science due to its technical precision. Both, however, agree that common knowledge transcends mere mutual understanding, requiring agents to account for *each other’s epistemic states* in a systematic way.-->
+<!---->
+<!--The relationship between Lewis’s notion and these subsequent formalizations remains debated. Cubitt and Sugden [@cubitt2003] suggested a fundamental distinction between Lewis’s perspective and later theories, while Vanderschraaf [-@vanderschraaf1998] and Sillari [-@sillari2005] argued for continuity between them.-->
+<!---->
+<!--*** -->
+<!---->
 <!--Cubitt and Sugden (2003) argue for a fundamental **discontinuity** between David Lewis’s concept of common knowledge (as outlined in *Convention*, 1969) and the formalizations of Schiffer/Aumann, rooted in differing philosophical foundations and operational assumptions. Here’s a breakdown of their critique:-->
 <!---->
 <!--### 1. **Lewis’s Notion: Coordination-Focused and Precedent-Based**  -->

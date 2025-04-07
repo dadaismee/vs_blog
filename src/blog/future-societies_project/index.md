@@ -1,10 +1,5 @@
 ---
-id: index
-aliases: []
-tags: []
-author: Valerii Shevchenko
-date: mar 12d
-draft: true
+date: 2025-03-12
 generate_toc: true
 summary: Однажды я учился на курсе по Sustainable Future Societies и в довёл концепцию «космополитического локализма» Манзини до своего логического предела.
 title: Как будут устроены устойчивые деревни в 2045 году

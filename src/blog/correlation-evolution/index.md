@@ -1,13 +1,9 @@
 ---
-id: index
-aliases: []
-tags: []
-author: Valerii Shevchenko
-date: "13.03.2025"
+title: Evolutionary stable correlation as a core problem of social ontology
+date: 12.03.2025
 generate_toc: true
 header-includes:
-  - "\usepackage{pgfplots}"
-title: Evolutionary stable correlation as a core problem of social ontology
+  - \usepackage{pgfplots}
 ---
 
 ## Evolutionary stable correlation as a core problem of social ontology
