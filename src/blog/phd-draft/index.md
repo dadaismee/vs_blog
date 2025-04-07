@@ -3,7 +3,7 @@ id: index
 aliases: []
 tags: []
 author: Valerii Shevchenko
-date: "03.04.2025"
+date: "07.04.2025"
 generate_toc: true
 subtitle: phd thesis work-in-progress
 title: Evolution of social institutions from "animal conventions" with complex signaling

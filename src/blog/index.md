@@ -21,5 +21,5 @@ A major problem in arriving at a non-contradictory theoretical core in sociology
 
 phd thesis work-in-progress
 
-*"03.04.2025" *
+*"07.04.2025" *
 
