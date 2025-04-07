@@ -1,6 +1,6 @@
 ---
 title: Evolutionary stable correlation as a core problem of social ontology
-date: 12.03.2025
+date: 2025-03-25
 generate_toc: true
 header-includes:
   - \usepackage{pgfplots}

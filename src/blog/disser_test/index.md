@@ -1,6 +1,6 @@
 ---
 title: Naturalistic ontology as a guide to unified social science (draft)
-date: 22.02.2025
+date: 2025-02-25
 subtitle: A major problem in arriving at a non-contradictory theoretical core in sociology is the *lack of ontological constraints on concepts*. It implies insufficient empirical data substantiation, as well as a lack of commitment criteria for evaluating whether a concept is adequately substantiated or not.
 word_count: ~18 минут
 generate_toc: true

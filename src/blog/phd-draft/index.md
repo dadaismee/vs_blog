@@ -1,7 +1,7 @@
 ---
 title: Evolution of social institutions from "animal conventions" with complex signaling
 subtitle: phd thesis work-in-progress
-date: 07.04.2025
+date: 2025-04-07
 generate_toc: true
 ---
 
