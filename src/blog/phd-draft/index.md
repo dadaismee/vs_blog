@@ -1,8 +1,11 @@
 ---
-title: Evolution of social institutions from "animal conventions" with complex signaling
-subtitle: phd thesis work-in-progress
-date: 2025-04-07
+id: index
+aliases: []
+tags: []
+date: "2025-04-07"
 generate_toc: true
+subtitle: phd thesis work-in-progress
+title: Evolution of social institutions from "animal conventions" with complex signaling
 ---
 
 <!--# Introduction-->
@@ -231,7 +234,7 @@ Another crucial concept Lewis adopts from Schelling is the role of expectation a
 
 Furthermore, Lewis’s notion of *common knowledge*, one of the central for his theory of conventions, owes a debt to Schelling’s insights about shared understanding in strategic interaction. While Schelling did not formalize the concept as rigorously as later game theorists, he emphasized the importance of mutual awareness in successful coordination. Lewis developed this idea more systematically, arguing that for a convention to be stable, it must not only be followed but also be recognized as the expected behavior within a group. This refinement allows Lewis to explain how conventions can be maintained across generations and within large populations.
 
- Furthermore, Lewis’s notion of *common knowledge*, foundational to his theory of conventions, derives from Schelling’s emphasis on mutual awareness within strategic interaction. Though Schelling lacked formalization, he highlighted the crucial role of shared understanding for successful coordination. Lewis expanded upon this, asserting that convention stability necessitates not just adherence, but also recognition as the expected behavior within a group, thereby enabling convention maintenance across generations and large populations.
+Furthermore, Lewis’s notion of *common knowledge*, foundational to his theory of conventions, derives from Schelling’s emphasis on mutual awareness within strategic interaction. Though Schelling lacked formalization, he highlighted the crucial role of shared understanding for successful coordination. Lewis expanded upon this, asserting that convention stability necessitates not just adherence, but also recognition as the expected behavior within a group, thereby enabling convention maintenance across generations and large populations.
 
 By drawing on Schelling’s work, Lewis was able to provide a game-theoretic foundation for the study of conventions, demonstrating how they emerge, stabilize, and persist over time. Whereas Schelling’s focus was on strategic choices in conflict and negotiation, Lewis extended these principles to the domain of language, social norms, and epistemic coordination, thus broadening the applicability of game-theoretic insights to philosophy and social science. As a result, Schelling’s *The Strategy of Conflict* remains one of the key intellectual influences behind Lewis’s *Convention* and its enduring impact on theories of social coordination.
 
@@ -312,19 +315,18 @@ One of the paradigmatic examples of signaling systems in nature is alarm calls s
 
 Although formally similar, as both behavioral and signaling conventions can be described as games with players and payoffs, they differ in that the latter have an additional "layer" of information between players. And although Lewis himself proclaimed signaling conventions a subcategory of behavioral ones, the relationship between them is not clear. For Skyrms, signals *inform* action, and signaling networks *coordinate* action, which implicitly conveys signaling conventions as underpinning behavioral ones. Skyrms further suggests that signaling is responsible for the evolution of teamwork itself [@skyrms2010], which questions Lewis's hierarchical categorization and creates a version of a chicken-and-egg problem. We will look closer at the relationship between behavioral and signaling  conventions and its role in emergence of social institutions in the third chapter.
 
-
 ### Criticisms 
 Lewis's theory has been criticized on many grounds, and, as @rescorla2024 notes, virtually every component of his theory has been under attack: from imprecise notion of equilibrium concept to the very necessity of conventions for solving coordination problems. Many criticisms have been met in refinements and extensions of Lewis's theory by later scholars. 
 
 There are five main areas of criticism of Lewis's account of conventions:
 
-1. conformity requirement / hidden normativity
+1. conformity requirement and hidden normativity
 2. overestimation of arbitrariness
 3. common knowledge requirement and source of salience
 4. connection between conventions and coordination problems
 5. imprecise equilibrium concept
 
-#### Conformity requirement / hidden normativity
+#### Conformity requirement and hidden normativity
 One of the major criticisms of Lewis's theory of conventions is unrealistic conformity requirement expressed of his 4-th clause: "each person prefers universal conformity to $R$, provided that nearly everyone else adheres to it". As some scholars points out, this strict requirement rules out such regularities as sending thank-you notes after dinner [@gilbert1992] as non-conventional, for they do not require complete conformity. Many commentators find this unintuitive as we usually call any mutually expected behavioral regularity a convention regardless of its level of conformity. 
 
 However, a possible defense of Lewis's position is to restrict a social group where convention takes place and to add that "each person *within a certain social group* prefers universal conformity to $R$…". This addition addresses Gilbert's criticism in that it supports an idea of near-complete conformity relative to the scale and size of a social group with operative convention. If sending thank-you notes after a dinner within a certain group is indeed a convention, not writing such a note would at least disappoint a dinner host. Of course, this might not impose any external sanctions on a guest not writing a thank-you note. However, conformity relative to group size highlights inherent normativity in the form close to normative expectation, which @bicchieri2005 considers an essential ingredient of social norms rather than conventions.
@@ -346,60 +348,72 @@ Overestimation of arbitrariness is another area of criticism. According to Lewis
 
 Arbitrariness was recast as a continuum between contingency and necessity, or conventionality and functionality [@oconnor2019]. Signaling between vervet monkeys might well be modeled as a convention in the Lewisian sense of repeated behavioral patterns of solving coordination problems [@harms2004; @skyrms2010]. However, this convention is not historically contingent in the sense of several possible solutions being equally profitable as Lewis supposes and as Gilbert critiques, for there are evolutionary constraints breaking the symmetry between multiple equilibria. Agents might be (and most probably are) hardwired to following certain strategies in certain environmental conditions. This distinction, as O'Connor underlines, highlights some conventions as more functional and others as more conventions. 
 
-@oconnor2021 goes further and proposes an information-theoretic measure for conventionality, or arbitrariness of a convention, applicable to both human “animal” conventions like that of vervet monkeys. As she is most interested in the emergence of cultural traits like gendered division of labor, she says that most cultural traits are both functional and arbitrary, or contingent, for they “might have been otherwise”.
-
-O'Connor notes that Lewis's notion of convention emphasizes arbitrariness, for a coordination game has at least two *proper coordination equilibria* — a state of a strategic situation where no player can deviate from a selected strategy and improve the payoff for any other player. It means that either of them might have been established equiprobably. In line with this, @simons2019 illustrate the distinction of functional and arbitrary conventions by putting it along three dimensions:
-
-1. Payoff difference — some coordination equilibria have bigger payoffs than others;
-2. Likelihood of emergence — some conventions are more likely to emerge than others;
-3. Stability — once these conventions have emerged, they are unlikely to be deviated from.
-
-O'Connor proposes to layer these dimensions onto evolutionary models, namely those of replicator dynamics[^replicator-dynamics]. It allows for specifying what Simons and Zollman mean by the likelihood of emergence (2) and stability of conventions (3).
-
-[^replicator-dynamics]: 
-
-- [ ] написать определение replcator dynamics и кратко критику от стерельного и хармса
-
-<!--\begin{figure}[htb]-->
-<!--\centering-->
-<!--\begin{tabular}{c|cc}-->
-<!-- &A&B\\ \hline-->
-<!--A & (1,1) & (0,0) \\ \hline-->
-<!--B & (0,0) & (x,x)-->
-<!--\end{tabular}-->
-<!--\caption{A coordination game where B equilibrium is more favorable given $x > 1$}-->
-<!--\end{figure}-->
-
-$$
-\begin{array}{c|cc}
- & A & B \\ \hline
-A & (1,1) & (0,0) \\ \hline
-B & (0,0) & (x,x)
-\end{array}
-$$
-**A coordination game where B equilibrium is more favorable given $x > 1$**
-
-Modelled as replicator dynamics, the game on the figure above has B equilibrium as more “natural” in the sense (1) — that of a higher payoff. The corollary of this is a larger basin of attraction. Given $x = 50$, the phase diagram for this game will look like this:
-
-The basin of attraction for A equilibrium takes up 2% of space, while 98% for B. These basins can represent the probability that each outcome evolves, given little information about the initial conditions of the population. Thus, B is more likely to emerge and is more “natural” in the sense (2).
-
-To propose a measure of conventionality, O'Connor focuses on naturalness of conventions as their probability of emergence (2). As has been shown, different equilibria might evolve with different probability, and the sizes of basins indicate the amount of information we gain from examining an evolutionary process. The amount of information in this process is a *measure of arbitrariness* of a convention. It increases with greater uncertainty about what will evolve and decreases with less.
-
-The relevant information-theoretic measure is Shannon entropy. It measures the average amount of information transmitted through a channel: $H(x) = \sum_{i} P(x_{i})I(x_{i})$. The amount of information gained from observing something is related to how much we learn or how surprised we are. It is calculated by summing the probabilities of the signals $P(x_i)$ multiplied by their information content $I(x_{i})$, with $I(x_{i})$ equal to $-\log_{2}P(x_{i})$ — the less probable a signal, the more information it carries. Overall, this weights the probability of each signal being sent by the amount of information it carries, giving a measure of average information in the channel.[^1]
-
-If other conditions hold, a channel has higher entropy when signals are more equiprobable or there are more signals. This is as opposed to a biased channel, with one signal sent 99% of the time, which has an entropy of just $0.08$. Therefore, more equiprobable signals and more signals lead to higher entropy. As probabilities $P(x_{i})$ represent the sizes of the basins of attraction, learning more from an evolutionary process increases the arbitrariness of an evolving phenomenon in question. Given more equilibria or if their basins of attraction are close to equal, the phenomenon is more arbitrary, contingent or “conventional”.
-
-It is possible to measure the naturalness of a convention similar to @simons2019 using $-\log_{2}P(x)$, which represents the information value of a particular outcome. The closer the value of $-\log_{2}P(x)$ to $0$, the more natural a convention is. This measure can be used whenever we have clear probabilities for different evolutionary outcomes. However, if there is uncertainty about the initial conditions of a population, it is possible to assign probabilities to different population starting places and not their basins of attraction, for they will not track the probability of emergence correctly. Another case is stochastic dynamics, where each starting point might lead to multiple equilibria depending on chance events. Here, $P(x_{i})$ can be defined as percentage of emergence of different equilibria in an iterated game. For example, if 10 individuals play the game in the figure above with $x=10$ 10K times, it yields 6% chance of emergence of A, and 94% for B.
-
-As O'Connor notes, one problem with a proposed conventionality measure is the source of probabilities. It means that inputs in an entropy equation can be selected quite arbitrarily depending on a case (which is ironic but predictable). As there are no actual chances, it can be hard to determine, whether a convention might have been otherwise. To address this worry, she underlines the representation-dependence of the measure. We can specify what is probability in terms of a particular model or data set, for instance, basins of attraction, emergence over multiple rounds of simulation, equilibrium time and percentage of societies adopting a behavior. This eliminates worries about probability and chance in the world. However, representations should be tailored to the intended explanatory goals. However, as representations have limitations, the proposed measure should not be taken as an absolute truth.
-
 A similar line of criticism comes from @burge1975, who notes that Lewisian requirement for convention to involve mutual knowledge of *alternative regularities*, or practices that could replace existing ones if widely adopted, is too strict. Conventions might fix without agents' knowledge of alternatives, Burge argues. He contends that conventions can stabilize with habit, custom or tradition, widely following Hume's original argument, and that knowledge of alternative conventions is not needed. Conventions, as Burge argues, are not governed by any biological, psychological or sociological law, they are historically accident. In addition, agents do not necessarily deliberate to "switch" from one convention to another. In terms of game theory, Lewis requires that agents know the structure of the game with its multiple equilibria, whereas Burge's notion does not. This leads to yet another point of criticism, overly intellectualist requirements for agents.
 
 #### Common knowledge requirement and source of salience
+Seeming epistemic overreach of Lewis's theory of conventions is based on the idea that conventions must be common knowledge to work. One of the major lines of criticism comes from evolutionary game theory, a branch of game theory pioneered by @maynardsmith1982 which assumes natural selection and evolutionary dynamics as a source of solutions for the strategic games instead of rationality of self-interested actors with complete information.
+
+@binmore2008 argues that
+
+[@gilbert1992; @binmore2008; @camerer2003; @bicchieri2005; @vanderschraaf1998]
+
+Another significant area of criticism surrounds Lewis's conceptualization of common knowledge . While Lewis is often credited with introducing the concept of common knowledge, his definition as an infinite hierarchy of "reasons to believe" diverges significantly from the more standard modern understanding, which typically involves actual knowledge and its iterative nature . This weaker form of common knowledge, where individuals have reasons to believe that others have reasons to believe, and so on, might not provide a sufficiently robust foundation for the stability and predictability of conventions. For many conventions, especially those with important consequences for non-compliance, a stronger sense of shared understanding and expectation seems necessary. For instance, in the convention of driving on a particular side of the road, it appears more crucial that individuals largely know that others will adhere to the convention, rather than merely having a reason to believe they will. Lewis himself acknowledged that the term "common knowledge" might be a misnomer for his concept, suggesting "common reason to believe" as a more accurate description . Furthermore, if common knowledge is based on reasons to believe rather than actual knowledge, it raises concerns about the potential for widespread error and the justification of actions based on conventions . If everyone in a population has a reason to believe something false, and a convention is built upon this shared but incorrect belief, the resulting actions might be misguided or ineffective.   
+
+Lewis’s requirement of common knowledge that all parties know the convention and know that others know it faces skepticism. Giacomo Sillari notes that evolutionary game theory demonstrates conventions can emerge *without* common knowledge, via trial-and-error learning or imitation[3]. Robert Sugden and others argue that Lewis conflates *common knowledge* with *common reason to believe*, which is less cognitively demanding[3]. 
+
+
 
 # ОСТАНОВИЛСЯ ЗДЕСЬ
 
 <!--### Refinements and extensions-->
+
+<!--@oconnor2021 goes further and proposes an information-theoretic measure for conventionality, or arbitrariness of a convention, applicable to both human “animal” conventions like that of vervet monkeys. As she is most interested in the emergence of cultural traits like gendered division of labor, she says that most cultural traits are both functional and arbitrary, or contingent, for they “might have been otherwise”.-->
+<!---->
+<!--O'Connor notes that Lewis's notion of convention emphasizes arbitrariness, for a coordination game has at least two *proper coordination equilibria* — a state of a strategic situation where no player can deviate from a selected strategy and improve the payoff for any other player. It means that either of them might have been established equiprobably. In line with this, @simons2019 illustrate the distinction of functional and arbitrary conventions by putting it along three dimensions:-->
+<!---->
+<!--1. Payoff difference — some coordination equilibria have bigger payoffs than others;-->
+<!--2. Likelihood of emergence — some conventions are more likely to emerge than others;-->
+<!--3. Stability — once these conventions have emerged, they are unlikely to be deviated from.-->
+<!---->
+<!--O'Connor proposes to layer these dimensions onto evolutionary models, namely those of replicator dynamics[^replicator-dynamics]. It allows for specifying what Simons and Zollman mean by the likelihood of emergence (2) and stability of conventions (3).-->
+<!---->
+<!--[^replicator-dynamics]: -->
+<!---->
+<!--- [ ] написать определение replcator dynamics и кратко критику от стерельного и хармса-->
+<!---->
+<!--<!--\begin{figure}[htb]-->-->
+<!--<!--\centering-->-->
+<!--<!--\begin{tabular}{c|cc}-->-->
+<!--<!-- &A&B\\ \hline-->-->
+<!--<!--A & (1,1) & (0,0) \\ \hline-->-->
+<!--<!--B & (0,0) & (x,x)-->-->
+<!--<!--\end{tabular}-->-->
+<!--<!--\caption{A coordination game where B equilibrium is more favorable given $x > 1$}-->-->
+<!--<!--\end{figure}-->-->
+<!---->
+<!--$$-->
+<!--\begin{array}{c|cc}-->
+<!-- & A & B \\ \hline-->
+<!--A & (1,1) & (0,0) \\ \hline-->
+<!--B & (0,0) & (x,x)-->
+<!--\end{array}-->
+<!--$$-->
+<!--**A coordination game where B equilibrium is more favorable given $x > 1$**-->
+<!---->
+<!--Modelled as replicator dynamics, the game on the figure above has B equilibrium as more “natural” in the sense (1) — that of a higher payoff. The corollary of this is a larger basin of attraction. Given $x = 50$, the phase diagram for this game will look like this:-->
+<!---->
+<!--The basin of attraction for A equilibrium takes up 2% of space, while 98% for B. These basins can represent the probability that each outcome evolves, given little information about the initial conditions of the population. Thus, B is more likely to emerge and is more “natural” in the sense (2).-->
+<!---->
+<!--To propose a measure of conventionality, O'Connor focuses on naturalness of conventions as their probability of emergence (2). As has been shown, different equilibria might evolve with different probability, and the sizes of basins indicate the amount of information we gain from examining an evolutionary process. The amount of information in this process is a *measure of arbitrariness* of a convention. It increases with greater uncertainty about what will evolve and decreases with less.-->
+<!---->
+<!--The relevant information-theoretic measure is Shannon entropy. It measures the average amount of information transmitted through a channel: $H(x) = \sum_{i} P(x_{i})I(x_{i})$. The amount of information gained from observing something is related to how much we learn or how surprised we are. It is calculated by summing the probabilities of the signals $P(x_i)$ multiplied by their information content $I(x_{i})$, with $I(x_{i})$ equal to $-\log_{2}P(x_{i})$ — the less probable a signal, the more information it carries. Overall, this weights the probability of each signal being sent by the amount of information it carries, giving a measure of average information in the channel.[^1]-->
+<!---->
+<!--If other conditions hold, a channel has higher entropy when signals are more equiprobable or there are more signals. This is as opposed to a biased channel, with one signal sent 99% of the time, which has an entropy of just $0.08$. Therefore, more equiprobable signals and more signals lead to higher entropy. As probabilities $P(x_{i})$ represent the sizes of the basins of attraction, learning more from an evolutionary process increases the arbitrariness of an evolving phenomenon in question. Given more equilibria or if their basins of attraction are close to equal, the phenomenon is more arbitrary, contingent or “conventional”.-->
+<!---->
+<!--It is possible to measure the naturalness of a convention similar to @simons2019 using $-\log_{2}P(x)$, which represents the information value of a particular outcome. The closer the value of $-\log_{2}P(x)$ to $0$, the more natural a convention is. This measure can be used whenever we have clear probabilities for different evolutionary outcomes. However, if there is uncertainty about the initial conditions of a population, it is possible to assign probabilities to different population starting places and not their basins of attraction, for they will not track the probability of emergence correctly. Another case is stochastic dynamics, where each starting point might lead to multiple equilibria depending on chance events. Here, $P(x_{i})$ can be defined as percentage of emergence of different equilibria in an iterated game. For example, if 10 individuals play the game in the figure above with $x=10$ 10K times, it yields 6% chance of emergence of A, and 94% for B.-->
+<!---->
+<!--As O'Connor notes, one problem with a proposed conventionality measure is the source of probabilities. It means that inputs in an entropy equation can be selected quite arbitrarily depending on a case (which is ironic but predictable). As there are no actual chances, it can be hard to determine, whether a convention might have been otherwise. To address this worry, she underlines the representation-dependence of the measure. We can specify what is probability in terms of a particular model or data set, for instance, basins of attraction, emergence over multiple rounds of simulation, equilibrium time and percentage of societies adopting a behavior. This eliminates worries about probability and chance in the world. However, representations should be tailored to the intended explanatory goals. However, as representations have limitations, the proposed measure should not be taken as an absolute truth.-->
+<!---->
 <!--The next aspect of criticism is unnecessary character of conventions for solving coordination problems. In a broader sense, it is *unrelatedness* of those. As @millikan2005 argues,-->
 <!---->
 <!--- [[10.1a1_Conventions-minght-not-be-necessary-for-solution-of-coordination-problems.md]]-->
@@ -407,8 +421,6 @@ A similar line of criticism comes from @burge1975, who notes that Lewisian requi
 <!--- https://plato.stanford.edu/entries/convention/#CritReacLewi-->
 <!--- https://link.springer.com/article/10.1007/s11098-023-01957-z?fromPaywallRec=false#Sec5-->
 <!---->
-<!--### 3. **Epistemic Overreach: Common Knowledge and Rationality**  -->
-<!--Lewis’s requirement of **common knowledge**—that all parties know the convention and know that others know it—faces skepticism. Giacomo Sillari notes that evolutionary game theory demonstrates conventions can emerge *without* common knowledge, via trial-and-error learning or imitation[3]. Robert Sugden and others argue that Lewis conflates *common knowledge* with *common reason to believe*, which is less cognitively demanding[3]. Additionally, Burge and Gilbert highlight that Lewis overstates human rationality: conventions often persist through unconscious habit or social inertia, not deliberate equilibrium selection[5][4].-->
 <!---->
 <!--### 4. **Empirical Limitations**  -->
 <!--Francesco Guala questions whether “Lewis Conventions” exist in the real world. While Lewis’s model elegantly explains *some* conventions (e.g., driving sides), many real-world practices (e.g., gender roles) involve **normative enforcement** (e.g., sanctions) absent from his theory[4]. Guala argues that Lewis’s non-normative, game-theoretic framework struggles to explain why deviations from conventions provoke moral criticism rather than mere coordination failures[4].-->
@@ -438,23 +450,13 @@ A similar line of criticism comes from @burge1975, who notes that Lewisian requi
 <!--[15] https://www.monmouth.edu/department-of-english/documents/wyndham-lewiss-theory-of-mass-culture.pdf/-->
 <!--[16] https://drops.dagstuhl.de/storage/16dagstuhl-seminar-proceedings/dsp-vol09121/DagSemProc.09121.4/DagSemProc.09121.4.pdf-->
 <!---->
-<!------->
-<!--Answer from Perplexity: pplx.ai/share-->
-<!---->
-<!--***-->
-<!---->
-<!--- common knowledge requirement (Binmore, Moore)-->
-<!--- overestimation of arbitrariness (Miller, Burge, Gilbert)-->
-<!--- imprecise equilibrium concept (Sugden ESS, Vanderschraaf + Skyrms CE)-->
-<!--- coordination problems are soluble without conventions (Sugden, Marmor's constitutive conventions)-->
-<!---->
-<!---->
-<!---->
-<!---->
-<!--***-->
-<!---->
-<!--Another significant area of criticism surrounds Lewis's conceptualization of common knowledge . While Lewis is often credited with introducing the concept of common knowledge, his definition as an infinite hierarchy of "reasons to believe" diverges significantly from the more standard modern understanding, which typically involves actual knowledge and its iterative nature . This weaker form of common knowledge, where individuals have reasons to believe that others have reasons to believe, and so on, might not provide a sufficiently robust foundation for the stability and predictability of conventions. For many conventions, especially those with important consequences for non-compliance, a stronger sense of shared understanding and expectation seems necessary. For instance, in the convention of driving on a particular side of the road, it appears more crucial that individuals largely know that others will adhere to the convention, rather than merely having a reason to believe they will. Lewis himself acknowledged that the term "common knowledge" might be a misnomer for his concept, suggesting "common reason to believe" as a more accurate description . Furthermore, if common knowledge is based on reasons to believe rather than actual knowledge, it raises concerns about the potential for widespread error and the justification of actions based on conventions . If everyone in a population has a reason to believe something false, and a convention is built upon this shared but incorrect belief, the resulting actions might be misguided or ineffective.   -->
-<!---->
+- common knowledge requirement (Binmore, Moore)
+- overestimation of arbitrariness (Miller, Burge, Gilbert)
+- imprecise equilibrium concept (Sugden ESS, Vanderschraaf + Skyrms CE)
+- coordination problems are soluble without conventions (Sugden, Marmor's constitutive conventions)
+
+***
+
 <!--Critics also argue that Lewis's theory primarily offers a static account of conventions and struggles to explain their emergence and evolution over time . While Lewis describes the conditions under which a convention exists, his framework provides less insight into the dynamic processes through which conventions initially arise, how they adapt to changing circumstances, or why some conventions eventually dissolve. The emergence of conventions likely involves more than just individuals independently stumbling into mutually beneficial regularities. Factors such as learning, adaptation, social influence, and explicit communication seem to play crucial roles in shaping and maintaining conventions, aspects that are not fully captured by Lewis's model . While Lewis acknowledges the importance of precedence and salience in the selection of one equilibrium over others in a coordination problem , these concepts primarily explain the maintenance of an existing convention rather than its initial genesis. For example, the fact that a convention has been followed in the past (precedence) can explain why it continues to be followed, but it does not fully account for why that particular convention arose in the first place among multiple equally viable alternatives. The "first driver" problem illustrates this: Lewis's theory explains why people in Britain drive on the left because everyone else has done so historically and is expected to continue , but it doesn't fully explain why the initial decision to drive on the left was made.   -->
 <!---->
 <!--A significant critique of Lewis’s theory is its focus on purely self-interested motivations and non-normative expectations, which many argue fails to capture the normative force often associated with conventions . Many real-world conventions seem to carry a sense of obligation or a reason to conform that extends beyond mere personal benefit in coordinating with others. Consider conventions like queuing or basic etiquette; while there is a coordination aspect to these practices, there also appears to be a social expectation that one should adhere to them. Lewis's theory distinguishes between conventions and social norms, with social norms typically involving normative expectations and often being backed by sanctions . Critics argue that this sharp separation might not accurately reflect the reality of many social conventions, where normative considerations are often intertwined with the self-interested motivations for coordination. While Lewis acknowledges that conventions might be supported by external normative considerations and sanctions , treating these as separate from the convention itself might obscure the fact that the normative aspect is often integral to why people follow certain conventions. The fear of social disapproval or even sanctions can be a powerful motivator for conforming to a convention, suggesting that normativity is not just an external layer but a fundamental component of many social practices.   -->
@@ -465,14 +467,12 @@ A similar line of criticism comes from @burge1975, who notes that Lewisian requi
 <!---->
 <!--Overall, Lewis's account of conventions raised several key topics within the study of conventions: salience, common knowledge, arbitrariness and normativity, which we will discuss in the next section.-->
 <!---->
-<!--### Extensions of Lewis's Theory-->
-<!--As Lewis's theory laid the groundwork for the formal study of conventions and signaling, it has been used to build upon by many scholars. There are many refinements, but we will consider only most important for the topic of emergence of social institutions from animal conventions.-->
-<!---->
-<!--***-->
-<!---->
+### Extensions of Lewis's Theory
+As Lewis's theory laid the groundwork for the formal study of conventions and signaling, it has been used to build upon by many scholars. There are many refinements, but we will consider only most important for the topic of emergence of social institutions from animal conventions.
+
+***
+
 <!--Peter Vanderschraaf has significantly refined and extended Lewis's theory of convention by defining it as a correlated equilibrium that satisfies a public intentions criterion 32. This approach aims to provide a more general and formally rigorous account of convention, addressing some of the limitations of Lewis's original formulation 32.-->
-<!---->
-<!------->
 <!---->
 <!--The concept of correlated equilibrium, introduced by Robert Aumann, is a generalization of Nash equilibrium 23. In a correlated equilibrium, players coordinate their strategies based on a shared observation of a random signal or some other common information 23. For example, in the classic game of "Battle of the Sexes," where one player prefers going to the opera and the other prefers going to a boxing match, a correlated strategy could be to go to the opera if a coin flip lands heads and to the boxing match if it lands tails. If both players observe the same outcome of the coin flip, they can coordinate their actions to achieve a preferred outcome over the undesirable outcomes of going to different events 23. Vanderschraaf argues that many real-world conventions can be better understood as correlated equilibria rather than just Nash equilibria 32.-->
 <!---->
@@ -514,8 +514,6 @@ A similar line of criticism comes from @burge1975, who notes that Lewisian requi
 <!--In conclusion, the study of convention remains a vital area of inquiry in social philosophy, offering critical insights into the foundations of social order, cooperation, and communication. The progression from Lewis's seminal work to the nuanced perspectives of later scholars like Vanderschraaf, Skyrms, and Gintis demonstrates the ongoing effort to develop a comprehensive and accurate understanding of this fundamental aspect of social life.-->
 <!---->
 
-
-
 ## Salience, epistemic and "natural"
 
 ### Epistemic salience
@@ -541,12 +539,8 @@ A similar line of criticism comes from @burge1975, who notes that Lewisian requi
 
 <!--**Introduction: The Concept of Common Knowledge and its-->
 <!--Interdisciplinary Significance**-->
-<!---->
-<!--The concept of common knowledge describes a particular epistemic state-->
-<!--within a group of agents. It signifies a situation where a proposition-->
-<!--*p* is not only known by every member of the group, but also where every-->
-<!--member knows that every other member knows *p*, and this knowledge-->
-<!--extends to an infinite level of iteration.^1^ This recursive nature,-->
+
+<!--The concept of common knowledge describes a particular epistemic state within a group of agents. It signifies a situation where a proposition *p* is not only known by every member of the group, but also where every member knows that every other member knows *p*, and this knowledge extends to an infinite level of iteration.^1^ This recursive nature,-->
 <!--where knowledge about knowledge is itself known and so forth,-->
 <!--distinguishes common knowledge from mere mutual knowledge, which only-->
 <!--requires that each individual knows *p*.^2^ The implications of this-->
@@ -1438,7 +1432,7 @@ A similar line of criticism comes from @burge1975, who notes that Lewisian requi
 <!--66. The psychology of coordination and common knowledge. - Harvard DASH,-->
 <!--    дата последнего обращения: марта 31, 2025,-->
 <!--    [[https://dash.harvard.edu/server/api/core/bitstreams/7312037d-7a26-6bd4-e053-0100007fdf3b/content]{.underline}](https://dash.harvard.edu/server/api/core/bitstreams/7312037d-7a26-6bd4-e053-0100007fdf3b/content)-->
-
+<!---->
 <!--***-->
 <!---->
 <!--Schiffer conceptualized common knowledge as an *infinite hierarchy of mutual knowledge*, defined recursively as follows:  -->
@@ -1686,3 +1680,42 @@ Skyrms pioneered a path towards dynamic evolutionary models of coordination and 
 <!--- There are many equilibrium-based theories in the social science literature, stemming from Lewis's (1969} seminal work on conventions. See, for example, Schotter (1981}, Calvert (1998}, Grief (2006}, Binmore (2010}. The account presented here is close in spirit to Aoki's (2001, 2011} and Grief and Kingston's (2011} "hybrid" theories. The use of the hawk-dove game to represent animal and human conflicts over contested resources goes back to Maynard Smith's (1982} work on evolutionary game theory. See also Sugden (1986} and more recently Gintis (2007}. On correlated equilibria see Aumann (1974, 1987}, as well as Vanderschraaf (1995, 1998, 2001} and Gintis (2007, 2009}. The theory of institutions as rules in equilibrium has been discussed in a symposium recently published in the Journal of Institutional Economics. The commentaries of Aoki (2015}, Binmore (2015}, Sugden (2015}, and Smith (2015}, in particular, address some of the issues discussed in this chapter. Hindriks and Guala (2015b} — location: []() ^ref-37783-->
 
 <!--Bicchieri (2001) discusses in depth the problem of belief formation in coordination games. The idea that society is a gigantic coordination game and that social institutions help people find a solution is already in Hume (1748}, but has been reformulated in gametheoretic fashion by philosophers and social scientists like Lewis (1969}, Ullmann-Margalit (1977}, Schotter (1981}, Sugden (1986}, Skyrms (1996, 2004}, Binmore (1998, 2005}. Knight (1992} discusses the coordinating function of institutions, as well as the competitive aspect of games such as battle of the sexes. The puzzle of cooperation in prisoner's dilemma experiments has generated an enormous literature, but explanations based on social norms are quite common-see for instance UllmannMargalit (1977}, Sober and Wilson (1998}, Binmore (2005}, Bicchieri (2006}, Gintis (2009}. Functional explanations have suffered from a bad press in social science as a consequence of Jon Elster's (1983} influential critique. Pettit's (1996} distinction between explanations of emergence and explanations of resilience is meant to resist this critique. On equilibrium explanations, finally, see Sober (1983 -->
+
+<!--**Core Components & Key Features:**-->
+<!---->
+<!--1. **Population Dynamics:** EGT models are typically framed as populations of individuals, each playing a specific strategy. The population’s composition changes over time according to a defined selection rule – most commonly, *replicator selection*, where strategies with higher average payoffs in a given environment become more prevalent in the population.-->
+<!---->
+<!--2. **Payoff Matrices & Fitness:** Strategies are represented by payoff matrices, analogous to those in standard game theory. However, instead of representing a single player’s payoff, the matrix represents the *fitness* of a strategy given the strategies employed by the entire population. Fitness is often interpreted as the average reproductive success or survival rate associated with that strategy.-->
+<!---->
+<!--3. **Replicator Dynamics:** The core of EGT is the replicator equation, which describes how the frequency of each strategy in the population changes over time. This equation is based on the idea that strategies with higher fitness will, on average, produce more offspring, leading to an increase in their proportion within the population. -->
+<!---->
+<!--4. **Multiple Equilibria:** A crucial characteristic of EGT is the potential for multiple evolutionary stable strategies (ESS). An ESS is a strategy that, if adopted by a majority of the population, cannot be invaded by any other strategy. This contrasts with the single Nash equilibrium often found in traditional game theory.-->
+<!---->
+<!--5. **Beyond Rationality:** EGT acknowledges that agents are not necessarily perfectly rational. Instead, it focuses on the *evolutionary* consequences of strategic interactions, recognizing that strategies can emerge and persist through selection pressures, even if they are not individually optimal.-->
+<!---->
+<!--**Distinction from Traditional Game Theory:**-->
+<!---->
+<!--| Feature           | Traditional Game Theory | Evolutionary Game Theory |-->
+<!--|--------------------|--------------------------|--------------------------|-->
+<!--| **Agent Assumption** | Rational, self-interested | Subject to evolutionary selection |-->
+<!--| **Focus**          | Static equilibrium        | Dynamic population change |-->
+<!--| **Selection**      | Not explicitly modeled    | Central to the model      |-->
+<!--| **Equilibria**     | Single Nash equilibrium    | Multiple ESS possible      |-->
+<!---->
+<!---->
+<!---->
+<!--**Applications:**-->
+<!---->
+<!--EGT has been applied to a wide range of phenomena, including:-->
+<!---->
+<!--*   Animal behavior (e.g., cooperation in social insects, mate choice)-->
+<!--*   Economic phenomena (e.g., market competition, innovation)-->
+<!--*   Social science (e.g., voting behavior, cultural evolution)-->
+<!---->
+<!---->
+<!---->
+<!--**References (for further reading - this is a starting point):**-->
+<!---->
+<!--*   Nowak, Ronald A., and John E. Smith. "Evolutionary Dynamics: Algorithms, Models, and Applications." *Princeton University Press*, 2007.-->
+<!--*   Segal, David. *Evolutionary Game Theory*. *Cambridge University Press*, 2001.-->
+<!---->
