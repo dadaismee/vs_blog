@@ -1,0 +1,154 @@
+#!/opt/homebrew/bin/bash
+# !/bin/bash
+
+# blg is for building, serving, and managing my personal blog
+# Inspired by https://ekiim.xyz/blog/entries/blog-with-pandoc-and-git/
+
+display_help(){
+  echo ""
+  echo "blg manages your personal blog"
+  echo "Depends on pandoc and python3 (for --serve)"
+  echo ""
+  echo "blg finds all *.md files in src/, converts them to html"
+  echo "and outputs them to BUILD_DIR, maintaining the same tree structure."
+  echo ""
+  echo "blg works best when your blog is structured like this:"
+  echo ""
+  echo "."
+  echo "├── README.md"
+  echo "├── blg"
+  echo "├── src"
+  echo "│   ├── blog"
+  echo "│   │   ├── entry-01"
+  echo "│   │   │   └── index.md"
+  echo "│   │   ├── example-entry"
+  echo "│   │   │   ├── assets"
+  echo "│   │   │   │   └── pattern-1.jpeg"
+  echo "│   │   │   └── index.md"
+  echo "│   │   └── index.md"
+  echo "│   └── index.md"
+  echo "├── metadata.yaml"
+  echo "└── default.html"
+  echo ""
+  echo "We assume the existence of the default.html template for styling"
+  echo "and the metadata.yaml file for default metadata (overridden by markdown header)."
+  echo "Any assets included in your markdown files are embedded into the html output."
+  echo ""
+  echo "By default the output directory for the site is set to ./build"
+  echo "You can change this by setting the environment variable BUILD_DIR"
+  echo ""
+  echo "Usage: blg [ -b | --build | -c | --clean | -s | --serve | -f | --force | -h | --help ]"
+  echo ""
+  echo "Options:"
+  echo "  -b, --build       Build the blog to BUILD_DIR (incremental by default)"
+  echo "  -c, --clean       Clean (i.e. rm -rf) the BUILD_DIR"
+  echo "  -s, --serve       Serve BUILD_DIR on localhost"
+  echo "  -f, --force       Force rebuild all pages (use with --build)"
+  echo "  -h, --help        Display this help message"
+  echo ""
+}
+
+if [[ "$1" == "-h" || "$1" == "--help" ]] || [[ $# -eq 0 ]]; then
+    display_help
+    exit 0
+fi
+
+BUILD_DIR=${BUILD_DIR:-./build}
+FORCE_REBUILD=0
+
+# Parse force flag if present
+if [[ "$1" == "-f" || "$1" == "--force" ]]; then
+  FORCE_REBUILD=1
+  shift
+fi
+
+if [[ "$1" == "-s" || "$1" == "--serve" ]]; then
+  python3 -m http.server --directory $BUILD_DIR
+  exit 0
+fi
+
+if [[ "$1" != "-b" && "$1" != "--build" && "$1" != "-c" && "$1" != "--clean" ]]; then
+  echo "Unrecognized argument: $1, see --help for usage"
+  exit 1
+fi
+
+if [[ "$1" == "-c" || "$1" == "--clean" ]]; then
+  echo "Cleaning $BUILD_DIR"
+  rm -rf $BUILD_DIR
+  exit 0
+fi
+
+# Only clean if forcing rebuild
+if [[ $FORCE_REBUILD -eq 1 ]]; then
+  echo "Force cleaning $BUILD_DIR"
+  rm -rf $BUILD_DIR
+fi
+
+# Create build directory if it doesn't exist
+mkdir -p $BUILD_DIR
+
+# Find all markdown and HTML files in src
+readarray -d '' pages_found < <(find "src" -maxdepth 3 -type f \( -name "*.md" -o -name "*.html" \) -print0)
+pages+=("${pages_found[@]}")
+
+num_entries=${#pages_found[@]}
+echo "Found $num_entries pages in src/"
+
+for page in "${pages[@]}"; do
+  (
+  # Determine the file extension
+  extension="${page##*.}"
+
+  # If it's a markdown file, convert to HTML
+  if [ "$extension" = "md" ]; then
+    # Output file has an HTML extension and no src/ prefix
+    new_page="${page%.md}.html"
+    new_page="${new_page#src/}"
+    
+    # Skip if destination exists and is newer than source (unless force rebuild)
+    if [[ $FORCE_REBUILD -eq 0 && -f "$BUILD_DIR/$new_page" && "$BUILD_DIR/$new_page" -nt "$page" ]]; then
+      echo "Skipping up-to-date: $page"
+      exit 0
+    fi
+
+    directory=$(dirname -- "$new_page")
+    mkdir -p "$BUILD_DIR/$directory"
+
+    # Build the page 
+    pandoc --toc "$page" -o "$BUILD_DIR/$new_page" \
+      --citeproc \
+      --bibliography=/Users/valerii/Obsidian/Service/zotero-library.json \
+      --csl=/Users/valerii/Obsidian/Service/apa-5th-edition.csl \
+      --katex \
+      --template=default.html \
+      --embed-resources
+
+    echo "Built $page"
+  else
+    # If it's an HTML file, simply copy it to the destination
+    new_page="${page#src/}"
+    
+    # Skip if destination exists and is newer than source (unless force rebuild)
+    if [[ $FORCE_REBUILD -eq 0 && -f "$BUILD_DIR/$new_page" && "$BUILD_DIR/$new_page" -nt "$page" ]]; then
+      echo "Skipping up-to-date: $page"
+      exit 0
+    fi
+
+    directory=$(dirname -- "$new_page")
+    mkdir -p "$BUILD_DIR/$directory"
+    cp "$page" "$BUILD_DIR/$new_page"
+    echo "Copied $page"
+  fi
+  ) & # Process all pages in parallel
+done
+wait # Wait for all pages to be processed
+
+# copy google site verification file into final build
+for file in google*.html; do
+  if [[ -f "$file" ]]; then
+    echo "Found google site verification file, copying $file into $BUILD_DIR"
+    cp "$file" "$BUILD_DIR"
+  fi
+done
+
+exit 0
