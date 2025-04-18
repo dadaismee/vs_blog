@@ -584,133 +584,141 @@ Overall, Vanderschraaf's contribution is formalization of salience, hence he use
 Another significant extension of Lewis's theory is related to redefining conventions as ESS and is due mostly to Skyrms.
 
 ### Skyrms's evolutionary approach to conventions
-Skyrms integrated Lewis’s theory of conventions into an evolutionary framework. He showed how signaling systems can emerge naturally with adaptive processes like replicator dynamics[^replicator] and reinforcement learnin[g[^RL] in agents with limited cognitive sophistication which overcomes Lewis's reliance on common knowledge [@skyrms2010]. 
+Skyrms integrated Lewis’s theory of conventions into an evolutionary framework. He showed how signaling conventions can emerge naturally with adaptive processes like evolution and learning in agents with limited cognitive sophistication which overcomes Lewis's reliance on common knowledge [@skyrms2010]. 
 
-Although Skyrms is often credited only for that, I suggest he would not have done it without his less-known contribution to game theory. He generalized the ESS solution concept by showing that the traditional ESS concept does not generate stable strategies when pairings[^pairing] are correlated in any way — by kin selection, signaling, spatial structure or other [@skyrms1994]. This led him to the notion of "correlated convention" [@skyrms2014], but as we will see in the second chapter of the thesis, it is not correlated as in Vanferschraaf.
+Although Skyrms has almost established an entire fruitful research program with many followers [@huttegger2007a; @huttegger2007; @oconnor2020; @lacroix2020; @franke2014] and we will take a closer look at his generalization of Lewis's signaling models later in this section, I suggest he would not have done it without his earlier and less-known contribution to game theory which has to do with generalization of the ESS solution concept.
 
-[^replicator]: replicator dynamics
-
-[^RL]: reinforcement learning
+The ESS, or evolutionary stable strategy, being a foundational solution concept in evolutionary game theory formulated by @smith1973 is a strategy that, if adopted by majority of population, cannot be invaded by any mutant strategy. Crucially, this concept implies random matching[^pairing], where individuals are paired for strategic interactions independently of their types, such that the probability of encountering any strategy is only proportional to its overall population frequency. While this assumption simplifies analysis and yields elegant theoretical results, it limits the applicability of ESS to well-mixed populations and fails to capture the complexity of structured or socially embedded interactions.
 
 [^pairing]: Random matching is a standard assumption in evolutionary game theory where individuals in a large, well-mixed population are paired to interact purely by chance, meaning each individual is equally likely to meet any other, regardless of their strategy. This context is important because, under random matching, the ESS depends solely on the average payoffs determined by the overall population frequencies, and strategies like cooperation typically cannot persist unless they are directly favored by the payoff structure. Deviations from random matching (assortative or structured matching) can introduce correlations between strategies, fundamentally altering which behaviors can be evolutionarily stable [@jensen2018; @izquierdo2024]. 
 
+Skyrms recognized that ESS does not generate stable strategies with non-random matching arising from mechanisms like kin selection, signaling systems, spatial or social structure. These correlations induce interactional dependencies increasing the probability of similar-strategy encounters. Such dependencies drastically alter the evolutionary dynamics and can stabilize strategies such as cooperation or signaling conventions that would be unstable or unsustainable under classical ESS assumptions [@skyrms1994].
+
+This led Skyrms to establishing "adaptive ratifiable strategy" as a generalization ESS that incorporates the endogenous structure of interactions, making it a more realistic predictor of evolutionary outcomes. A strategy is adaptive-ratifiable if it maximizes expected fitness when it is nearly fixed in the population, taking into account the conditional probabilities of interacting with other strategies. This concept ensures dynamic stability under replicator dynamics[^replcator] where correlation affects interaction frequencies [@skyrms1994].
+
+[^replcator]:
+
+The notion of adaptive ratifiable strategy made another Skyrms's concept possible. That of "correlated convention" [@skyrms2014], which is conventions as stable yet not necessary Pareto optimal behavioral patterns made possible due to interactional dependencies of any kind between agents. Skyrms explored many possibilities for such correlation like spatial interaction [@alexander1999], social structure [@skyrms2003], social networks [@skyrms2004] and finally signaling systems [@skyrms2010a]. However, as we will see in the second chapter of the thesis, Skyrms's "correlation" is different from Vanferschraaf's.
+
+Skyrms’s approach to conventions differs from Lewis’s in not relying on common knowledge and substituting it with evolutionary pressures which make conventions arise and persist. He showed that even simplest organisms like bacteria can arrive at signaling systems akin to Lewisian conventions with aid of simple adaptive mechanisms like mutation-selection or reinforcement learning [@skyrms2014].
+
+Skyrms explored various learning dynamics that enable signaling systems to emerge in populations. For example:
+
+- *Simple Reinforcement Learning* where agents adjust their strategies based on trial-and-error feedback from successful interactions. In a basic Lewis-Skyrms signaling game setup with 2 world states, 2 signals and 2 actions, senders and receivers begin with random dispositions and gradually reinforce successful pairings between states, signals, and actions.
+
+- *Win-Stay/Lose-Shift Dynamics* where agents establish conventions more rapidly than simple reinforcement learning. This dynamic involves sticking with successful strategies while shifting away from unsuccessful ones, enhancing convergence speed and stability.
+
+Skyrms's framework models conventions as stable equilibria of sender-receiver games that evolve via reinforcement learning and evolutionary dynamics rather than rational deliberation. Formally, a signaling game involves:
+
+- a set of states of the world $S = \{s_1, s_2, \ldots, s_n\}$
+- a set of signals $M = \{m_1, m_2, \ldots, m_k\}$
+- a set of acts $A = \{a_1, a_2, \ldots, a_l\}$. 
+
+The sender observes a state $s \in S$and chooses a signal $m\in M$to send. The receiver, upon receiving $m$, chooses an action $a \in A$. The payoffs $u_S(s, m, a) $and $u_R(s, m, a)$ for sender and receiver respectively depend on how well the receiver’s action matches the state. Unlike Lewis’ model, which assumes common knowledge of salience to coordinate on a unique equilibrium, Skyrms shows that conventions can emerge through adaptive processes even when initial behaviors are random and no focal points exist.
+
+A central concept in Skyrms’ analysis is the informational content of signals, which he quantifies using information-theoretic measures. Given a prior probability distribution over states $P(S_i)$ and a posterior distribution conditioned on a signal $ m $, denoted $ P(S_i \mid m) $, the information conveyed by $ m $ can be expressed as the vector of log-likelihood ratios:
+
+$$
+\left( \log_2 \frac{P(S_1 \mid m)}{P(S_1)}, \log_2 \frac{P(S_2 \mid m)}{P(S_2)}, \ldots, \log_2 \frac{P(S_n \mid m)}{P(S_n)} \right).
+$$
+
+where $P(S_i)$ represents prior probabilities of states and $P(S_i \mid m)$ denotes posterior probabilities conditioned on a signal $m$. This formalization bridges Lewis’s conceptual framework with mathematical models of communication.
+
+This measure captures how a signal updates the receiver’s conditional strategy choice given the state of the world, thereby guiding action selection [@skyrms2010].
+
+Skyrms further explores signaling equilibria under conditions of partial alignment or conflict of interests between sender and receiver. In such cases, the equilibrium strategies may involve deceptive or partially informative signals. Formally, if the sender’s payoff function $u_S$ differs from the receiver’s $u_R$, the equilibrium concept extends to signaling equilibria where strategies $\sigma_S: S \to \Delta(M)$ and $\sigma_R: M \to \Delta(A)$ satisfy mutual best responses:
+
+$$
+\sigma_S(s) \in \arg\max_{m \in M} \mathbb{E}_{a \sim \sigma_R(m)}[u_S(s, m, a)], \quad \sigma_R(m) \in \arg\max_{a \in A} \mathbb{E}_{s \sim P(\cdot \mid m)}[u_R(s, m, a)],
+$$
+
+where $\Delta(X)$ denotes the set of probability distributions over $X$ [@skyrms1996].
+
+The evolutionary dynamics driving the emergence of conventions are often modeled through reinforcement learning algorithms such as the Roth-Erev model [@erev1998]. Agents maintain propensities $q_{i}(x)$ for choosing actions $x$ (signals or responses), which are updated iteratively according to received payoffs:
+
+$$
+q_{i}^{t+1}(x) = q_{i}^t(x) + \alpha \cdot \left( r_i^t(x) - q_i^t(x) \right),
+$$
+
+where $\alpha$ is a learning rate and $r_i^t(x)$ is the reward at time $t$ for action $x$ [@skyrms2010]. Over repeated interactions, these learning dynamics lead to convergence on stable signaling conventions without requiring explicit coordination or rational foresight.
+
+Transmission of information in signals and emphasis on *informational content* of a signal beget an lively response from philosophers of biology critiquing Skyrms for the lack of causation [@shea2018a; @godfrey-smith2020; @harms2004] which we will survey in Chapter 3. 
+
+An interesting part of Skyrms's extension of Lewis signaling game is it's implicit reliance on epistemic language of "observing" states of of the world and "interpreting" signals for "updating beliefs". Although Skyrms utterly rejects any Bayesian interpretation of his signaling games [@lacroix2020a], he is sometimes interpreted as a incurring epistemology to his agents, especially when his theory is discussed side-by-side with natural theories of mental content [@millikan1987; @millikan2004; @baraghith2019; @harms2004]: that senders "represent" world states and transmit this public representation to a receiver who then "interprets" it with its own mental states. Consider vervet monkeys' alarm calls. They can easily be described as involving mental states of "representing" an eagle and sending a certain signal to fellows monkeys who "decode" that public representation and map it onto suitable action. While plausible and the case for most natural theories of mental content like @millikan2004, it is not the case for Skyrms. 
+
+Although the structure of Lewis-Skyrms game mirrors the flow of information in epistemic contexts (state-signal-action pairings) and it is tempting to treat senders and receivers as Bayesian-rational, the Skyrmsian agents update their behavioral dispositions rather than beliefs as they do not possess any inference and can only adjust their mappings according to failure rates [@skyrms2012]. 
+
+Skyrms's sender-receiver system is an *information channel* focusing on how effective codes (signal-meaning pairings) arise and stabilize, not on agents’ beliefs or intention. His signaling games are mechanistic as Maynard Smith's, for they take into account only objective, or "ontic", features of agents like strategy frequency across population or, in case of signaling game, *mappings* from state to signal and from signal to action in accordance to the rate of coordination failures. Compare Lewis-Skyrms game 
+
+$$
+\begin{array}{ccccc}
+World & \xrightarrow{state} & Sender & \xrightarrow{Message} & Receiver & \xrightarrow{act} & {} \\
+\end{array} \\
+$$
+
+with Shannon's information channel:
+
+$$
+\begin{array}{ccccc}
+Source & \xrightarrow{original \quad message} & Encoder &\xrightarrow{signal} & Channel & \xrightarrow{signal} & Decoder & \xrightarrow{decoded \quad message} & {} \\
+\end{array}
+$$
+
+As @martinez2019 proposes a "channel-first" view on signaling games and argues, the central behavioral unit of Lewis-Skyrms games is not strategies, but the *encoding-decoding pair* which is similar to *mappings* from above. 
+
+# ОСТАНОВИЛСЯ ЗДЕСЬ
+- [ ] вставить описание и критику скрирмса из @martinez2019
+
+#### 1. **Correlation is a fundamental factor that alters evolutionary game dynamics**  
+Skyrms argues that the standard assumption of random pairing in evolutionary game theory is often unrealistic because biological and social interactions tend to be correlated. This correlation changes the expected payoffs and thus the evolutionary trajectories of strategies, leading to outcomes that differ markedly from classical models. By incorporating correlation, evolutionary models better capture real-world phenomena such as kin selection and spatial structure.  
+
+ > *“Where we have correlation, being an evolutionarily stable strategy in Maynard Smith’s sense is neither necessary nor sufficient for being a dynamically stable equilibrium.”* (p. 2)
+
+#### 2. **Adaptive-ratifiability is the appropriate stability criterion in correlated evolutionary games**  
+Skyrms introduces adaptive-ratifiability as a refinement of the classical Evolutionarily Stable Strategy (ESS) concept. A strategy is adaptive-ratifiable if it maximizes expected fitness when it is nearly fixed in the population, taking into account the conditional probabilities of interacting with other strategies. This concept ensures dynamic stability under replicator dynamics where correlation affects interaction frequencies.  
+ > *“A pure strategy is ratifiable if it maximizes expected fitness when it is on the brink of fixation.”* (p. 3)  
+Annotation: Adaptive-ratifiability generalizes ESS by incorporating the endogenous structure of interactions, making it a more realistic predictor of evolutionary outcomes.
+
+#### 3. **Jeffrey’s decision theory framework is isomorphic to correlated evolutionary game theory**  
+Skyrms adapts Richard Jeffrey’s logic of decision, which allows acts to influence the probabilities of states, to evolutionary contexts. This adaptation shows that expected fitness calculations in correlated games correspond to Jeffrey’s expected utility framework, establishing a deep conceptual link between rational decision-making and evolutionary processes.  
+ > *“Three characteristic features of Jeffrey’s discussion—expected utility, status quo utility, and ratifiability—play important parts in correlated evolutionary game theory.”* (p. 4)  
+Annotation: This unification enables importing decision-theoretic insights into evolutionary biology, enriching both fields.
+
+#### 4. **Correlation can lead to the selection of strictly dominated strategies**  
+Contrary to classical evolutionary theory where dominated strategies are eliminated, Skyrms shows that under certain correlated interaction structures, strictly dominated strategies may persist or even be selected. This challenges the assumption that dominance relations alone determine evolutionary stability.  
+ > *“A strictly dominated strategy may be selected under conditions of correlation.”* (p. 5)  
+Annotation: This result highlights the nuanced effects of interaction patterns, emphasizing that strategic dominance is context-dependent.
+
+#### 5. **Perfect correlation enforces the selection of strictly efficient strategies**  
+When interactions are perfectly correlated, populations evolve toward strictly efficient strategies that maximize collective payoffs. This outcome contrasts with uncorrelated settings where suboptimal equilibria often persist.  
+ > *“Under conditions of perfect correlation, a strictly efficient strategy must be selected.”* (p. 6)  
+Annotation: Perfect correlation aligns individual incentives, effectively solving coordination problems by eliminating inefficient equilibria.
+
+#### 6. **Correlation unifies diverse biological mechanisms promoting cooperation**  
+Skyrms’s framework provides a unified theoretical treatment of various biological and social mechanisms—such as kin selection, population viscosity, signaling, and reciprocal altruism—that generate correlation in interactions and thereby facilitate cooperative behavior.  
+ > *“The resulting theory unifies the treatment of correlation due to kin, population viscosity, detection, signaling, reciprocal altruism, and behavior-dependent contexts.”* (p. 7)  
+Annotation: This synthesis advances understanding of how different evolutionary forces converge to produce similar cooperative outcomes.
+
+#### 7. **Classical ESS is insufficient to guarantee dynamic stability in correlated games**  
+Skyrms demonstrates that Maynard Smith’s ESS criterion fails to ensure that a strategy will be an attractor under replicator dynamics when correlation is present. Adaptive-ratifiability better captures the notion of evolutionary stability in these more complex settings.  
+ > *“Being an evolutionarily stable strategy in Maynard Smith’s sense is neither necessary nor sufficient for being a dynamically stable equilibrium.”* (p. 8)  
+Annotation: This insight calls for a re-evaluation of evolutionary stability concepts in light of realistic interaction structures.
+
+#### 8. **Correlation enables cooperation in social dilemmas like the Prisoner’s Dilemma**  
+In the classical Prisoner’s Dilemma with random pairing, defection dominates. Skyrms shows that introducing correlation—through mechanisms like signaling or kinship—can stabilize cooperative strategies by structuring interactions so cooperators preferentially meet cooperators.  
+ > *“Starting from any mixed population, the replicator dynamics with random pairing converges to a population of 100% defectors... but correlation can stabilize cooperative strategies.”* (p. 9)  
+Annotation: This result provides a formal explanation for the evolution of cooperation in nature despite incentives to defect.
+
+#### 9. **Incorporating mutation transforms deterministic replicator dynamics into stochastic processes**  
+Skyrms notes that adding mutation to replicator models yields stochastic dynamics that better reflect biological realities. These stochastic models capture the probabilistic nature of strategy changes and the influence of correlation on evolutionary trajectories.  
+ > *“The desirable step of incorporating mutation into the model leads from deterministic dynamics to stochastic process models.”* (p. 10)  
+Annotation: This extension allows modeling of evolutionary stability in fluctuating environments and finite populations.
 
 
-<!--# ОСТАНОВИЛСЯ ЗДЕСЬ-->
-<!---->
-<!--Skyrms has approached the study of convention through the lens of evolutionary game theory, focusing on how conventions emerge and are sustained over time through processes of learning and adaptation [@skyrms2014; @skyrms2014a; @skyrms2003; @skyrms2010]. Unlike Lewis's rationalistic account relying on common knowledge, Skyrms emphasized the dynamic aspects of convention, exploring how repeated interactions and evolutionary pressures can lead to the establishment of stable behavioral patterns.-->
-<!---->
-<!--David Lewis’s *Convention* (1969) posited conventions as equilibria within signaling games: senders, observing world states, transmit signals received and interpreted by receivers enacting actions aligned with shared preferences for each state. Maintenance relies on rational agents utilizing salience and mutual expectations to coordinate behavior, presupposing advanced cognitive abilities and intentionality, thereby restricting applicability to systems lacking such capacities.-->
-<!---->
-<!--Skyrms extended Lewis’s model by removing the reliance on rationality and salience, instead grounding signaling conventions in evolutionary dynamics. In his 1996 book *Evolution of the Social Contract*, Skyrms demonstrated that signaling systems akin to Lewisian conventions could emerge through natural selection. He showed that agents need not possess sophisticated reasoning abilities; instead, simple adaptive mechanisms like reinforcement learning or mutation-selection processes can lead to stable signaling equilibria over time[2][3].-->
-<!---->
-<!--In his subsequent works, including *Signals: Evolution, Learning, and Information* (2010), Skyrms placed the Lewis model at the center of a broader investigation into how sender-receiver behaviors evolve naturally. He integrated Shannon’s information theory into the analysis, emphasizing how signals reduce uncertainty about states of the world and thereby facilitate coordination. For instance, Skyrms quantified the informational content of signals using measures such as log-likelihood ratios:-->
-<!---->
-<!--$$-->
-<!--\left( \log_2 \frac{P(S_1 \mid m)}{P(S_1)}, \log_2 \frac{P(S_2 \mid m)}{P(S_2)}, \ldots, \log_2 \frac{P(S_n \mid m)}{P(S_n)} \right),-->
-<!--$$-->
-<!---->
-<!--where $$ P(S_i) $$ represents prior probabilities of states and $$ P(S_i \mid m) $$ denotes posterior probabilities conditioned on a signal $$ m $$ [2]. This formalization bridges Lewis’s conceptual framework with mathematical models of communication.-->
-<!---->
-<!---->
-<!--### Adaptive Processes in Signaling Games-->
-<!--Skyrms explored various learning dynamics that enable signaling systems to emerge in populations. For example:-->
-<!--- **Simple Reinforcement Learning**: Agents adjust their strategies based on trial-and-error feedback from successful interactions. In a basic Lewis-Skyrms signaling game setup (e.g., a 2×2×2 game), senders and receivers begin with random dispositions and gradually reinforce successful pairings between states, signals, and actions[3].-->
-<!--- **Win-Stay/Lose-Shift Dynamics**: Experimental evidence suggests human learners often use this strategy to establish conventions more rapidly than simple reinforcement learning. This dynamic involves sticking with successful strategies while shifting away from unsuccessful ones, enhancing convergence speed and stability[3].-->
-<!---->
-<!--These adaptive processes demonstrate how signaling conventions can emerge even among low-rationality agents without access to pre-existing saliences or focal points.-->
-<!---->
-<!--### Mixed Interests and Stability-->
-<!--Skyrms also extended Lewis’s model by addressing scenarios where sender and receiver interests are partially aligned or even conflicting. While Lewis assumed shared preferences for actions in each state of the world, Skyrms showed that informative signaling can still emerge under mixed-interest conditions. However, equilibrium strategies may involve partial truthfulness or manipulation depending on the degree of alignment between sender and receiver payoffs[2]. This extension broadens the scope of signaling theory to include more realistic social and biological contexts.-->
-<!---->
-<!--### Broader Contributions-->
-<!--By embedding Lewisian conventions within evolutionary game theory, Skyrms provided a naturalistic account of how signaling systems evolve across diverse domains—from animal communication to human linguistic conventions. His work integrates decision theory, information theory, and evolutionary dynamics into a unified framework that explains not only how conventions arise but also how they stabilize over time. This synthesis has profoundly influenced philosophy, biology, economics, and cognitive science[2][3].-->
-<!---->
-<!--In summary, Brian Skyrms expanded David Lewis’s theory by demonstrating that signaling conventions can emerge naturally through evolutionary processes rather than relying solely on rational choice or salience. By incorporating learning dynamics and information-theoretic insights into his models, Skyrms provided a robust framework for understanding how coordination evolves in both simple and complex systems.-->
-<!---->
-<!--***-->
-<!---->
-<!--Skyrms’s approach to conventions centers on the evolutionary emergence of signaling systems through dynamic game-theoretic models. Building on David Lewis’ seminal work on signaling games, Skyrms relaxes the assumption of shared salience and common knowledge, thereby providing a more general and naturalistic account of how communication conventions arise in populations [@Skyrms1996; @Skyrms2010]. His framework models conventions as stable equilibria of sender-receiver games that evolve via reinforcement learning and evolutionary dynamics rather than rational deliberation.-->
-<!---->
-<!--Formally, a signaling game involves a set of states of the world $$ S = \{s_1, s_2, \ldots, s_n\} $$, a set of signals $$ M = \{m_1, m_2, \ldots, m_k\} $$, and a set of acts $$ A = \{a_1, a_2, \ldots, a_l\} $$. The sender observes a state $$ s \in S $$ and chooses a signal $$ m \in M $$ to send. The receiver, upon receiving $$ m $$, chooses an action $$ a \in A $$. The payoffs $$ u_S(s, m, a) $$ and $$ u_R(s, m, a) $$ for sender and receiver respectively depend on how well the receiver’s action matches the state. Unlike Lewis’ model, which assumes common knowledge of salience to coordinate on a unique equilibrium, Skyrms shows that conventions can emerge through adaptive processes even when initial behaviors are random and no focal points exist.-->
-<!---->
-<!--A central concept in Skyrms’ analysis is the informational content of signals, which he quantifies using information-theoretic measures. Given a prior probability distribution over states $$ P(S_i) $$ and a posterior distribution conditioned on a signal $$ m $$, denoted $$ P(S_i \mid m) $$, the information conveyed by $$ m $$ can be expressed as the vector of log-likelihood ratios:-->
-<!---->
-<!--$$-->
-<!--\left( \log_2 \frac{P(S_1 \mid m)}{P(S_1)}, \log_2 \frac{P(S_2 \mid m)}{P(S_2)}, \ldots, \log_2 \frac{P(S_n \mid m)}{P(S_n)} \right).-->
-<!--$$-->
-<!---->
-<!--This measure captures how a signal updates the receiver’s beliefs about the state of the world, thereby guiding action selection [@skyrms2010].-->
-<!---->
-<!--Skyrms further explores signaling equilibria under conditions of partial alignment or conflict of interests between sender and receiver. In such cases, the equilibrium strategies may involve deceptive or partially informative signals. Formally, if the sender’s payoff function $$ u_S $$ differs from the receiver’s $$ u_R $$, the equilibrium concept extends to signaling equilibria where strategies $$ \sigma_S: S \to \Delta(M) $$ and $$ \sigma_R: M \to \Delta(A) $$ satisfy mutual best responses:-->
-<!---->
-<!--$$-->
-<!--\sigma_S(s) \in \arg\max_{m \in M} \mathbb{E}_{a \sim \sigma_R(m)}[u_S(s, m, a)], \quad \sigma_R(m) \in \arg\max_{a \in A} \mathbb{E}_{s \sim P(\cdot \mid m)}[u_R(s, m, a)],-->
-<!--$$-->
-<!---->
-<!--where $$ \Delta(X) $$ denotes the set of probability distributions over $$ X $$ [@Skyrms1996].-->
-<!---->
-<!--The evolutionary dynamics driving the emergence of conventions are often modeled through reinforcement learning algorithms such as the Roth-Erev model. Agents maintain propensities $$ q_{i}(x) $$ for choosing actions $$ x $$ (signals or responses), which are updated iteratively according to received payoffs:-->
-<!---->
-<!--$$-->
-<!--q_{i}^{t+1}(x) = q_{i}^t(x) + \alpha \cdot \left( r_i^t(x) - q_i^t(x) \right),-->
-<!--$$-->
-<!---->
-<!--where $$ \alpha $$ is a learning rate and $$ r_i^t(x) $$ is the reward at time $$ t $$ for action $$ x $$ [@Skyrms2010]. Over repeated interactions, these learning dynamics lead to convergence on stable signaling conventions without requiring explicit coordination or rational foresight.-->
-<!---->
-<!--Skyrms’ approach provides a rigorous, mathematically grounded explanation of how communication conventions can evolve naturally from populations of boundedly rational agents. By combining evolutionary game theory with information-theoretic analysis, his framework elucidates the conditions under which signaling systems become stable and informative, even in the absence of shared salience or perfect alignment of interests. This work has significant implications for understanding the origins of language, social norms, and cooperative behavior in both human and animal societies [@Skyrms1996; @Skyrms2010].-->
-<!---->
-<!--***-->
-<!--#### 1. **Correlation is a fundamental factor that alters evolutionary game dynamics**  -->
-<!--Skyrms argues that the standard assumption of random pairing in evolutionary game theory is often unrealistic because biological and social interactions tend to be correlated. This correlation changes the expected payoffs and thus the evolutionary trajectories of strategies, leading to outcomes that differ markedly from classical models. By incorporating correlation, evolutionary models better capture real-world phenomena such as kin selection and spatial structure.  -->
+### Summary  
+Skyrms’s *Darwin Meets the Logic of Decision* fundamentally reshapes evolutionary game theory by incorporating correlation into interaction structures and linking evolutionary stability to decision-theoretic concepts. His introduction of adaptive-ratifiability replaces classical ESS in correlated settings, providing a more accurate criterion for dynamic stability. The paper unifies diverse biological mechanisms under a single theoretical umbrella and explains how correlation facilitates cooperation and efficient outcomes. This work bridges evolutionary biology and decision theory, enriching both disciplines with new conceptual tools.
 
-<!-- > *“Where we have correlation, being an evolutionarily stable strategy in Maynard Smith’s sense is neither necessary nor sufficient for being a dynamically stable equilibrium.”* (p. 2)-->
-<!---->
-<!--#### 2. **Adaptive-ratifiability is the appropriate stability criterion in correlated evolutionary games**  -->
-<!--Skyrms introduces adaptive-ratifiability as a refinement of the classical Evolutionarily Stable Strategy (ESS) concept. A strategy is adaptive-ratifiable if it maximizes expected fitness when it is nearly fixed in the population, taking into account the conditional probabilities of interacting with other strategies. This concept ensures dynamic stability under replicator dynamics where correlation affects interaction frequencies.  -->
-<!-- > *“A pure strategy is ratifiable if it maximizes expected fitness when it is on the brink of fixation.”* (p. 3)  -->
-<!--Annotation: Adaptive-ratifiability generalizes ESS by incorporating the endogenous structure of interactions, making it a more realistic predictor of evolutionary outcomes.-->
-<!---->
-<!--#### 3. **Jeffrey’s decision theory framework is isomorphic to correlated evolutionary game theory**  -->
-<!--Skyrms adapts Richard Jeffrey’s logic of decision, which allows acts to influence the probabilities of states, to evolutionary contexts. This adaptation shows that expected fitness calculations in correlated games correspond to Jeffrey’s expected utility framework, establishing a deep conceptual link between rational decision-making and evolutionary processes.  -->
-<!-- > *“Three characteristic features of Jeffrey’s discussion—expected utility, status quo utility, and ratifiability—play important parts in correlated evolutionary game theory.”* (p. 4)  -->
-<!--Annotation: This unification enables importing decision-theoretic insights into evolutionary biology, enriching both fields.-->
-<!---->
-<!--#### 4. **Correlation can lead to the selection of strictly dominated strategies**  -->
-<!--Contrary to classical evolutionary theory where dominated strategies are eliminated, Skyrms shows that under certain correlated interaction structures, strictly dominated strategies may persist or even be selected. This challenges the assumption that dominance relations alone determine evolutionary stability.  -->
-<!-- > *“A strictly dominated strategy may be selected under conditions of correlation.”* (p. 5)  -->
-<!--Annotation: This result highlights the nuanced effects of interaction patterns, emphasizing that strategic dominance is context-dependent.-->
-<!---->
-<!--#### 5. **Perfect correlation enforces the selection of strictly efficient strategies**  -->
-<!--When interactions are perfectly correlated, populations evolve toward strictly efficient strategies that maximize collective payoffs. This outcome contrasts with uncorrelated settings where suboptimal equilibria often persist.  -->
-<!-- > *“Under conditions of perfect correlation, a strictly efficient strategy must be selected.”* (p. 6)  -->
-<!--Annotation: Perfect correlation aligns individual incentives, effectively solving coordination problems by eliminating inefficient equilibria.-->
-<!---->
-<!--#### 6. **Correlation unifies diverse biological mechanisms promoting cooperation**  -->
-<!--Skyrms’s framework provides a unified theoretical treatment of various biological and social mechanisms—such as kin selection, population viscosity, signaling, and reciprocal altruism—that generate correlation in interactions and thereby facilitate cooperative behavior.  -->
-<!-- > *“The resulting theory unifies the treatment of correlation due to kin, population viscosity, detection, signaling, reciprocal altruism, and behavior-dependent contexts.”* (p. 7)  -->
-<!--Annotation: This synthesis advances understanding of how different evolutionary forces converge to produce similar cooperative outcomes.-->
-<!---->
-<!--#### 7. **Classical ESS is insufficient to guarantee dynamic stability in correlated games**  -->
-<!--Skyrms demonstrates that Maynard Smith’s ESS criterion fails to ensure that a strategy will be an attractor under replicator dynamics when correlation is present. Adaptive-ratifiability better captures the notion of evolutionary stability in these more complex settings.  -->
-<!-- > *“Being an evolutionarily stable strategy in Maynard Smith’s sense is neither necessary nor sufficient for being a dynamically stable equilibrium.”* (p. 8)  -->
-<!--Annotation: This insight calls for a re-evaluation of evolutionary stability concepts in light of realistic interaction structures.-->
-<!---->
-<!--#### 8. **Correlation enables cooperation in social dilemmas like the Prisoner’s Dilemma**  -->
-<!--In the classical Prisoner’s Dilemma with random pairing, defection dominates. Skyrms shows that introducing correlation—through mechanisms like signaling or kinship—can stabilize cooperative strategies by structuring interactions so cooperators preferentially meet cooperators.  -->
-<!-- > *“Starting from any mixed population, the replicator dynamics with random pairing converges to a population of 100% defectors... but correlation can stabilize cooperative strategies.”* (p. 9)  -->
-<!--Annotation: This result provides a formal explanation for the evolution of cooperation in nature despite incentives to defect.-->
-<!---->
-<!--#### 9. **Incorporating mutation transforms deterministic replicator dynamics into stochastic processes**  -->
-<!--Skyrms notes that adding mutation to replicator models yields stochastic dynamics that better reflect biological realities. These stochastic models capture the probabilistic nature of strategy changes and the influence of correlation on evolutionary trajectories.  -->
-<!-- > *“The desirable step of incorporating mutation into the model leads from deterministic dynamics to stochastic process models.”* (p. 10)  -->
-<!--Annotation: This extension allows modeling of evolutionary stability in fluctuating environments and finite populations.-->
-<!---->
 
-<!--### Summary  -->
-<!--Skyrms’s *Darwin Meets the Logic of Decision* fundamentally reshapes evolutionary game theory by incorporating correlation into interaction structures and linking evolutionary stability to decision-theoretic concepts. His introduction of adaptive-ratifiability replaces classical ESS in correlated settings, providing a more accurate criterion for dynamic stability. The paper unifies diverse biological mechanisms under a single theoretical umbrella and explains how correlation facilitates cooperation and efficient outcomes. This work bridges evolutionary biology and decision theory, enriching both disciplines with new conceptual tools.-->
-<!---->
-<!---->
 <!--### Gintis's -->
 
 <!--Herbert Gintis-->
@@ -1090,6 +1098,8 @@ Although Skyrms is often credited only for that, I suggest he would not have don
 <!--    - [[11.2b_Norms-both-make-behaviour-more-stable-and-predictable-and-introduce-new-behaviour-by-changing-game-payoffs.md]]-->
 <!--- Criticism-->
 <!--    - @hedoin2021-->
+<!--- https://www.annalsfondazioneluigieinaudi.it/images/LII/R28201801_E-4284-Tieffenbach_Review.pdf-->
+<!--- https://ndpr.nd.edu/reviews/understanding-institutions-the-philosophy-and-science-of-living-together/-->
 <!--- Problem with correlation — [[003_correlation_as_core_problem]]-->
 <!--- Problem with representation — [[006_problem-with-representation]]-->
 <!--- Discussion and interim results-->
