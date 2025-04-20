@@ -367,7 +367,7 @@ conventions” with complex signaling</h1>
       </ul></li>
       <li><a href="#остановился-здесь" id="toc-остановился-здесь">ОСТАНОВИЛСЯ ЗДЕСЬ</a>
       <ul>
-      <li><a href="#summary" id="toc-summary">Summary</a></li>
+      <li><a href="#gintiss" id="toc-gintiss">Gintis’s</a></li>
       </ul></li>
       <li><a href="#references" id="toc-references">References</a></li>
       </ul>
@@ -2166,8 +2166,9 @@ conventions” with complex signaling</h1>
       relying on common knowledge and substituting it with evolutionary
       pressures which make conventions arise and persist. He showed that
       even simplest organisms like bacteria can arrive at signaling
-      systems akin to Lewisian conventions with aid of simple adaptive
-      mechanisms like mutation-selection or reinforcement learning <span class="citation" data-cites="skyrms2014">(Skyrms,
+      systems akin to Lewisian conventions with the aid of simple
+      adaptive mechanisms like mutation-selection or reinforcement
+      learning <span class="citation" data-cites="skyrms2014">(Skyrms,
       2014)</span>.</p>
       <p>Skyrms explored various learning dynamics that enable signaling
       systems to emerge in populations. For example:</p>
@@ -2262,7 +2263,7 @@ conventions” with complex signaling</h1>
       stable signaling conventions without requiring explicit
       coordination or rational foresight.</p>
       <p>Transmission of information in signals and emphasis on
-      <em>informational content</em> of a signal beget an lively
+      <em>informational content</em> of a signal ignited a lively
       response from philosophers of biology critiquing Skyrms for the
       lack of causation <span class="citation" data-cites="shea2018a godfrey-smith2020 harms2004">(Godfrey-Smith,
       2020; Harms, 2004; Shea et al., 2018)</span> which we will survey
@@ -2325,175 +2326,126 @@ conventions” with complex signaling</h1>
       and argues, the central behavioral unit of Lewis-Skyrms games is
       not strategies, but the <em>encoding-decoding pair</em> which is
       similar to <em>mappings</em> from above.</p>
+      <p>In this framework, world states, signals and actions can be
+      represented as <em>random variables</em> <span class="math inline">S</span>, <span class="math inline">M</span>
+      and <span class="math inline">A</span>, each of which is a set of
+      discrete units like states, messages and actions like <span class="math inline">[S_1, \dots, S_s]</span> together with a
+      probability distribution <span class="math inline">[Pr(S_1), \dots
+      Pr(S_s)]</span> over them. The same applies to messages and
+      actions.</p>
+      <p>A sender observes the current state and transmits a signal –
+      one of <span class="math inline">m</span> possible signals. The
+      receiver detects this signal and chooses an action, <span class="math inline">A_i</span>, from a set of available actions.
+      Both the signal sent and the action chosen are random
+      variables.</p>
+      <p>The probabilities for the random variables are linked through
+      the sender’s and receiver’s strategies which are a probability
+      matrices of signals given world states of acts given signals
+      respectively.</p>
+      <p><span class="math display">
+      \left[\begin{array}{ccc}
+      \operatorname{Pr}\left(M_1 \mid S_1\right) &amp; \ldots &amp;
+      \operatorname{Pr}\left(M_m \mid S_1\right) \\
+      \vdots &amp; \ddots &amp; \vdots \\
+      \operatorname{Pr}\left(M_1 \mid S_s\right) &amp; \ldots &amp;
+      \operatorname{Pr}\left(M_m \mid S_s\right)
+      \end{array}\right]\left[\begin{array}{ccc}
+      \operatorname{Pr}\left(A_1 \mid M_1\right) &amp; \ldots &amp;
+      \operatorname{Pr}\left(A_a \mid M_1\right) \\
+      \vdots &amp; \ddots &amp; \vdots \\
+      \operatorname{Pr}\left(A_1 \mid M_m\right) &amp; \ldots &amp;
+      \operatorname{Pr}\left(A_a \mid M_m\right)
+      \end{array}\right]
+      </span></p>
+      <p>As per criticisms of Skyrms’s approach to Lewisian signaling
+      games, <span class="citation" data-cites="martinez2019">Martínez
+      (2019)</span> argues that Skyrms did not go far enough into
+      information theory and allowed informational analysis only
+      <em>after</em> sender and reciever adopted the strategies they
+      will be using which does not explain how they arrived at them.
+      Martinez suggests using Shannon’s rate-distortion function <span class="citation" data-cites="shannon1948">(Shannon, 1948)</span>
+      to show minimum mutual information between states and acts with
+      minimum rate of distortion. I allows him to recast payoffs as
+      distortion indicators in the channel. Seen with this lens, a
+      coordination game of signaling as an information channel looks
+      more cooperative.</p>
+      <p>Overall, Skyrms’s extension of Lewis’s theory of conventions
+      has dropped rationality requirements and introduced a more
+      naturalistic account of signaling systems in a broader
+      context.</p>
       <h1 id="остановился-здесь">ОСТАНОВИЛСЯ ЗДЕСЬ</h1>
-      <ul class="task-list">
-      <li><label><input type="checkbox"></input>вставить описание и критику
-      скрирмса из <span class="citation" data-cites="martinez2019">Martínez (2019)</span></label></li>
-      </ul>
-      <h4 id="correlation-is-a-fundamental-factor-that-alters-evolutionary-game-dynamics">1.
-      <strong>Correlation is a fundamental factor that alters
-      evolutionary game dynamics</strong></h4>
-      <p>Skyrms argues that the standard assumption of random pairing in
-      evolutionary game theory is often unrealistic because biological
-      and social interactions tend to be correlated. This correlation
-      changes the expected payoffs and thus the evolutionary
-      trajectories of strategies, leading to outcomes that differ
-      markedly from classical models. By incorporating correlation,
-      evolutionary models better capture real-world phenomena such as
-      kin selection and spatial structure.</p>
-      <blockquote>
-      <p><em>“Where we have correlation, being an evolutionarily stable
-      strategy in Maynard Smith’s sense is neither necessary nor
-      sufficient for being a dynamically stable equilibrium.”</em>
-      (p. 2)</p>
-      </blockquote>
-      <h4 id="adaptive-ratifiability-is-the-appropriate-stability-criterion-in-correlated-evolutionary-games">2.
-      <strong>Adaptive-ratifiability is the appropriate stability
-      criterion in correlated evolutionary games</strong></h4>
-      <p>Skyrms introduces adaptive-ratifiability as a refinement of the
-      classical Evolutionarily Stable Strategy (ESS) concept. A strategy
-      is adaptive-ratifiable if it maximizes expected fitness when it is
-      nearly fixed in the population, taking into account the
-      conditional probabilities of interacting with other strategies.
-      This concept ensures dynamic stability under replicator dynamics
-      where correlation affects interaction frequencies.<br />
-      &gt; <em>“A pure strategy is ratifiable if it maximizes expected
-      fitness when it is on the brink of fixation.”</em> (p. 3)<br />
-      Annotation: Adaptive-ratifiability generalizes ESS by
-      incorporating the endogenous structure of interactions, making it
-      a more realistic predictor of evolutionary outcomes.</p>
-      <h4 id="jeffreys-decision-theory-framework-is-isomorphic-to-correlated-evolutionary-game-theory">3.
-      <strong>Jeffrey’s decision theory framework is isomorphic to
-      correlated evolutionary game theory</strong></h4>
-      <p>Skyrms adapts Richard Jeffrey’s logic of decision, which allows
-      acts to influence the probabilities of states, to evolutionary
-      contexts. This adaptation shows that expected fitness calculations
-      in correlated games correspond to Jeffrey’s expected utility
-      framework, establishing a deep conceptual link between rational
-      decision-making and evolutionary processes.<br />
-      &gt; <em>“Three characteristic features of Jeffrey’s
-      discussion—expected utility, status quo utility, and
-      ratifiability—play important parts in correlated evolutionary game
-      theory.”</em> (p. 4)<br />
-      Annotation: This unification enables importing decision-theoretic
-      insights into evolutionary biology, enriching both fields.</p>
-      <h4 id="correlation-can-lead-to-the-selection-of-strictly-dominated-strategies">4.
-      <strong>Correlation can lead to the selection of strictly
-      dominated strategies</strong></h4>
-      <p>Contrary to classical evolutionary theory where dominated
-      strategies are eliminated, Skyrms shows that under certain
-      correlated interaction structures, strictly dominated strategies
-      may persist or even be selected. This challenges the assumption
-      that dominance relations alone determine evolutionary
-      stability.<br />
-      &gt; <em>“A strictly dominated strategy may be selected under
-      conditions of correlation.”</em> (p. 5)<br />
-      Annotation: This result highlights the nuanced effects of
-      interaction patterns, emphasizing that strategic dominance is
-      context-dependent.</p>
-      <h4 id="perfect-correlation-enforces-the-selection-of-strictly-efficient-strategies">5.
-      <strong>Perfect correlation enforces the selection of strictly
-      efficient strategies</strong></h4>
-      <p>When interactions are perfectly correlated, populations evolve
-      toward strictly efficient strategies that maximize collective
-      payoffs. This outcome contrasts with uncorrelated settings where
-      suboptimal equilibria often persist.<br />
-      &gt; <em>“Under conditions of perfect correlation, a strictly
-      efficient strategy must be selected.”</em> (p. 6)<br />
-      Annotation: Perfect correlation aligns individual incentives,
-      effectively solving coordination problems by eliminating
-      inefficient equilibria.</p>
-      <h4 id="correlation-unifies-diverse-biological-mechanisms-promoting-cooperation">6.
-      <strong>Correlation unifies diverse biological mechanisms
-      promoting cooperation</strong></h4>
-      <p>Skyrms’s framework provides a unified theoretical treatment of
-      various biological and social mechanisms—such as kin selection,
-      population viscosity, signaling, and reciprocal altruism—that
-      generate correlation in interactions and thereby facilitate
-      cooperative behavior.<br />
-      &gt; <em>“The resulting theory unifies the treatment of
-      correlation due to kin, population viscosity, detection,
-      signaling, reciprocal altruism, and behavior-dependent
-      contexts.”</em> (p. 7)<br />
-      Annotation: This synthesis advances understanding of how different
-      evolutionary forces converge to produce similar cooperative
-      outcomes.</p>
-      <h4 id="classical-ess-is-insufficient-to-guarantee-dynamic-stability-in-correlated-games">7.
-      <strong>Classical ESS is insufficient to guarantee dynamic
-      stability in correlated games</strong></h4>
-      <p>Skyrms demonstrates that Maynard Smith’s ESS criterion fails to
-      ensure that a strategy will be an attractor under replicator
-      dynamics when correlation is present. Adaptive-ratifiability
-      better captures the notion of evolutionary stability in these more
-      complex settings.<br />
-      &gt; <em>“Being an evolutionarily stable strategy in Maynard
-      Smith’s sense is neither necessary nor sufficient for being a
-      dynamically stable equilibrium.”</em> (p. 8)<br />
-      Annotation: This insight calls for a re-evaluation of evolutionary
-      stability concepts in light of realistic interaction
-      structures.</p>
-      <h4 id="correlation-enables-cooperation-in-social-dilemmas-like-the-prisoners-dilemma">8.
-      <strong>Correlation enables cooperation in social dilemmas like
-      the Prisoner’s Dilemma</strong></h4>
-      <p>In the classical Prisoner’s Dilemma with random pairing,
-      defection dominates. Skyrms shows that introducing
-      correlation—through mechanisms like signaling or kinship—can
-      stabilize cooperative strategies by structuring interactions so
-      cooperators preferentially meet cooperators.<br />
-      &gt; <em>“Starting from any mixed population, the replicator
-      dynamics with random pairing converges to a population of 100%
-      defectors… but correlation can stabilize cooperative
-      strategies.”</em> (p. 9)<br />
-      Annotation: This result provides a formal explanation for the
-      evolution of cooperation in nature despite incentives to
-      defect.</p>
-      <h4 id="incorporating-mutation-transforms-deterministic-replicator-dynamics-into-stochastic-processes">9.
-      <strong>Incorporating mutation transforms deterministic replicator
-      dynamics into stochastic processes</strong></h4>
-      <p>Skyrms notes that adding mutation to replicator models yields
-      stochastic dynamics that better reflect biological realities.
-      These stochastic models capture the probabilistic nature of
-      strategy changes and the influence of correlation on evolutionary
-      trajectories.<br />
-      &gt; <em>“The desirable step of incorporating mutation into the
-      model leads from deterministic dynamics to stochastic process
-      models.”</em> (p. 10)<br />
-      Annotation: This extension allows modeling of evolutionary
-      stability in fluctuating environments and finite populations.</p>
-      <h3 id="summary">Summary</h3>
-      <p>Skyrms’s <em>Darwin Meets the Logic of Decision</em>
-      fundamentally reshapes evolutionary game theory by incorporating
-      correlation into interaction structures and linking evolutionary
-      stability to decision-theoretic concepts. His introduction of
-      adaptive-ratifiability replaces classical ESS in correlated
-      settings, providing a more accurate criterion for dynamic
-      stability. The paper unifies diverse biological mechanisms under a
-      single theoretical umbrella and explains how correlation
-      facilitates cooperation and efficient outcomes. This work bridges
-      evolutionary biology and decision theory, enriching both
-      disciplines with new conceptual tools.</p>
-      <!--### Gintis's -->
-      <!--Herbert Gintis-->
-      <!--Herbert Gintis offers a perspective on convention that integrates game theory with social norms and moral commitments 26. Gintis argues that human behavior cannot be fully explained by rational self-interest alone and that internalized social norms play a crucial role in shaping our preferences and actions, particularly in strategic interactions 37.-->
-      <!---->
-      <!--Gintis critiques the assumption of common knowledge of rationality in standard game theory, arguing that it is often unrealistic and fails to account for the observed patterns of human behavior 37. He suggests that social norms act as correlation devices that help agents coordinate on particular equilibria in games, often leading to outcomes that are more cooperative or socially desirable than those predicted by purely self-interested rationality 53.-->
-      <!---->
-      <!--For Gintis, social norms are often internalized, meaning individuals feel a moral obligation to follow them, even when doing so might not maximize their immediate material self-interest 37. This internalization of norms can explain why people cooperate in situations like the Prisoner's Dilemma, where rational self-interest would dictate defection 10.-->
-      <!---->
-      <!--Gintis's broader aim is to unify the behavioral sciences by integrating insights from game theory, sociology, and psychology to develop a more comprehensive model of human decision-making 37. He argues that understanding social norms and their influence on individual preferences is essential for explaining the emergence and maintenance of conventions and social order 37.-->
-      <!---->
-      <!--Gintis's work extends the analysis of convention by emphasizing the critical role of social norms and moral commitments in shaping human behavior and facilitating coordination, offering a richer and more behaviorally grounded perspective than purely rationalistic accounts.-->
-      <!---->
-      <!--This table highlights a progression in the theory of convention. Lewis's work laid the groundwork by focusing on rational coordination under conditions of common knowledge. Vanderschraaf built upon this by introducing the more general game-theoretic concept of correlated equilibrium and emphasizing public intentions. Skyrms shifted the focus to the evolutionary dynamics of convention, exploring how stable patterns of behavior can emerge through repeated interactions and adaptation. Finally, Gintis integrated the role of social norms and moral commitments, arguing that these factors are essential for a complete understanding of human behavior and coordination in the context of conventions.-->
-      <!---->
-      <!--Conclusion-->
-      <!--The study of social conventions has evolved significantly since David Lewis's foundational work. Lewis provided a rigorous analysis of convention rooted in game theory, emphasizing the role of coordination problems, common knowledge, and rationality. His theory offered a powerful framework for understanding how shared patterns of behavior can emerge and persist in the absence of explicit agreements, and it had a profound influence on the philosophy of language.-->
-      <!---->
-      <!--Ongoing debates in the field include the precise role and necessity of common knowledge, the mechanisms by which social norms are internalized and influence behavior, and the best way to integrate rational choice and evolutionary perspectives in the study of convention. Future research could further explore the cognitive and psychological foundations of convention, the influence of culture and institutions in shaping conventional behavior, and the application of these theories to address contemporary social issues.-->
-      <!---->
-      <!--In conclusion, the study of convention remains a vital area of inquiry in social philosophy, offering critical insights into the foundations of social order, cooperation, and communication. The progression from Lewis's seminal work to the nuanced perspectives of later scholars like Vanderschraaf, Skyrms, and Gintis demonstrates the ongoing effort to develop a comprehensive and accurate understanding of this fundamental aspect of social life.-->
-      <!--- [[Private-property-equilibrium-generalizes-Bourgeois-equilibrium-by-endogenizing-costs|Private property equilibrium generalizes Bourgeois equilibrium by endogenizing costs]]-->
-      <!---->
+      <h3 id="gintiss">Gintis’s</h3>
+      <p>Herbert Gintis offers a perspective on convention that
+      integrates game theory with social norms and moral commitments 26.
+      Gintis argues that human behavior cannot be fully explained by
+      rational self-interest alone and that internalized social norms
+      play a crucial role in shaping our preferences and actions,
+      particularly in strategic interactions 37.</p>
+      <p>Gintis critiques the assumption of common knowledge of
+      rationality in standard game theory, arguing that it is often
+      unrealistic and fails to account for the observed patterns of
+      human behavior 37. He suggests that social norms act as
+      correlation devices that help agents coordinate on particular
+      equilibria in games, often leading to outcomes that are more
+      cooperative or socially desirable than those predicted by purely
+      self-interested rationality 53.</p>
+      <p>For Gintis, social norms are often internalized, meaning
+      individuals feel a moral obligation to follow them, even when
+      doing so might not maximize their immediate material self-interest
+      37. This internalization of norms can explain why people cooperate
+      in situations like the Prisoner’s Dilemma, where rational
+      self-interest would dictate defection 10.</p>
+      <p>Gintis’s broader aim is to unify the behavioral sciences by
+      integrating insights from game theory, sociology, and psychology
+      to develop a more comprehensive model of human decision-making 37.
+      He argues that understanding social norms and their influence on
+      individual preferences is essential for explaining the emergence
+      and maintenance of conventions and social order 37.</p>
+      <p>Gintis’s work extends the analysis of convention by emphasizing
+      the critical role of social norms and moral commitments in shaping
+      human behavior and facilitating coordination, offering a richer
+      and more behaviorally grounded perspective than purely
+      rationalistic accounts.</p>
+      <p>This table highlights a progression in the theory of
+      convention. Lewis’s work laid the groundwork by focusing on
+      rational coordination under conditions of common knowledge.
+      Vanderschraaf built upon this by introducing the more general
+      game-theoretic concept of correlated equilibrium and emphasizing
+      public intentions. Skyrms shifted the focus to the evolutionary
+      dynamics of convention, exploring how stable patterns of behavior
+      can emerge through repeated interactions and adaptation. Finally,
+      Gintis integrated the role of social norms and moral commitments,
+      arguing that these factors are essential for a complete
+      understanding of human behavior and coordination in the context of
+      conventions.</p>
+      <p>Conclusion The study of social conventions has evolved
+      significantly since David Lewis’s foundational work. Lewis
+      provided a rigorous analysis of convention rooted in game theory,
+      emphasizing the role of coordination problems, common knowledge,
+      and rationality. His theory offered a powerful framework for
+      understanding how shared patterns of behavior can emerge and
+      persist in the absence of explicit agreements, and it had a
+      profound influence on the philosophy of language.</p>
+      <p>Ongoing debates in the field include the precise role and
+      necessity of common knowledge, the mechanisms by which social
+      norms are internalized and influence behavior, and the best way to
+      integrate rational choice and evolutionary perspectives in the
+      study of convention. Future research could further explore the
+      cognitive and psychological foundations of convention, the
+      influence of culture and institutions in shaping conventional
+      behavior, and the application of these theories to address
+      contemporary social issues.</p>
+      <p>In conclusion, the study of convention remains a vital area of
+      inquiry in social philosophy, offering critical insights into the
+      foundations of social order, cooperation, and communication. The
+      progression from Lewis’s seminal work to the nuanced perspectives
+      of later scholars like Vanderschraaf, Skyrms, and Gintis
+      demonstrates the ongoing effort to develop a comprehensive and
+      accurate understanding of this fundamental aspect of social life.
+      -
+      [[Private-property-equilibrium-generalizes-Bourgeois-equilibrium-by-endogenizing-costs|Private
+      property equilibrium generalizes Bourgeois equilibrium by
+      endogenizing costs]]</p>
       <!---->
       <!--Refinements and Game Theory Applications**  Robert Aumann\'s 1976 paper \"Agreeing to Disagree\" stands as a landmark contribution that brought the concept of common knowledge into the formal realm of game theory and economics.^1^ Aumann provided a rigorous, set-theoretic definition of common knowledge based on partitions of the state space, offering a powerful mathematical tool for analyzing strategic interactions. His formalization defined an event as common knowledge at a particular state if that event includes all states that any player considers possible, all states that any player considers possible for any other player, and so on, ad infinitum.^43^ This rigorous definition enabled the formal analysis of how information is shared and understood among rational agents.  One of the most significant results stemming from Aumann\'s formalization is the \"agreeing to disagree\" theorem.^40^ This theorem demonstrates that if two or more rational agents share a common prior probability distribution over the states of the world, and if their posterior probabilities about a particular event become common knowledge among them, then these posterior probabilities must be equal. This result has profound implications for understanding belief revision, information aggregation, and the potential for consensus among rational agents. The very fact that a disagreement in probabilities becomes common knowledge implies that the agents should revise their beliefs until they converge, assuming they started with the same underlying beliefs and are reasoning rationally based on their information.  -->
       <!---->
@@ -3252,6 +3204,11 @@ conventions” with complex signaling</h1>
       monkeys of their own and another species’ alarm calls. <em>Animal
       Behaviour</em>, <em>40</em>(4), 754–764. Retrieved March 22, 2023,
       from <a href="https://www.sciencedirect.com/science/article/pii/S0003347205807043">https://www.sciencedirect.com/science/article/pii/S0003347205807043</a>
+      </div>
+      <div id="ref-shannon1948" class="csl-entry" role="listitem">
+      Shannon, C. E. (1948). A mathematical theory of communication.
+      <em>The Bell system technical journal</em>, <em>27</em>(3),
+      379–423. Nokia Bell Labs.
       </div>
       <div id="ref-shea2018a" class="csl-entry" role="listitem">
       Shea, N., Godfrey-Smith, P., &amp; Cao, R. (2018). Content in
