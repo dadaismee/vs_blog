@@ -1,4 +1,7 @@
 ---
+id: index
+aliases: []
+tags: []
 date: "15.04.2025"
 generate_toc: true
 subtitle: phd thesis work-in-progress
@@ -217,8 +220,8 @@ The strategy profile of $(FS, FS)$ represents a Nash equilibrium because neither
 
 Getting back to coordination problems, @oconnor2019 distinguishes two classes of them:
 
-* correlative problems (same choice to coordinate)
-* complementary problems (different choices to coordinate)
+* correlative problems (same choice to coordinate, classic coordination games like "Matching pennies")
+* complementary problems (different choices to coordinate, "anti-coordination" games like Haw-Dove""
 
 In correlative coordination problems, agents need to converge on the same choice to coordinate successfully. For example, consider a driving game, where two players drive towards each other and each can choose the left or right side to drive on. If they both are on the same side and no one swerves, they might crash, and if each of them chooses a different side, they will stay safe. One important feature of this and other coordination problems is arbitrariness, meaning that it does not matter on what side both players would converge. Instead, what matters is that they either coordinate by choosing the same action, for example, swerving to the right. On the game matrix, it is represented as two non-unique equilibria. It means that either of them solves the coordination problem.
 
@@ -405,7 +408,7 @@ In a similar vein, @hindriks2019 claims that instrumental rationality cannot mot
 
 In a broader context, the problem of normativity of Lewis conventions ignited a lively debate in philosophy regarding the relationship between conventions and social norms. They share a foundation in regularities and mutual expectations, but diverge in normative force, enforcement mechanisms, and social functions. Lewis’s model offers a minimalist, rationalist account of coordination, whereas social norms represent a richer, more complex landscape of social regulation, deeply shaped by values, sanctions, and cultural meanings. Thus, norms are seen as conventions whcich acquire enforcement capacity beyond pure coordination with repeated play.
 
-@ullmann-margalit1977 gave on of the first game-theoretic conceptualizations of social norms. She argued that, as groups interact repeatedly, they develop expectations based on both obligation and the threat of social sanctions. These expectations go beyond simple conventions, relying on individuals’ internalized sense of duty and the potential for consequences like disapproval or ostracism. According to Ullmann-Margalit, this represents a move from coordinating behavior solely through rational self-interest to one where compliance is motivated by a deeply held conviction.
+@ullmann-margalit1977 gave one of the first game-theoretic conceptualizations of social norms. She argued that, as groups interact repeatedly, they develop expectations based on both obligation and the threat of social sanctions. These expectations go beyond simple conventions, relying on individuals’ internalized sense of duty and the potential for consequences like disapproval or ostracism. According to Ullmann-Margalit, this represents a move from coordinating behavior solely through rational self-interest to one where compliance is motivated by a deeply held conviction.
 
 More precisely, Ullmann-Margalit emphasized normative authority as a mechanism of norm emergence, where theya rise as informal solutions to coordination, cooperation, and mixed-motive problems—situations characterized by divergent individual and collective interests. She conceptualizes a *history space* $\mathcal{H}$ as sequences of past interactions, where each history $h = [(a^1, s^1), (a^2, s^2), \dots, (a^t, s^t)]$ pairs joint action profiles $a^k\in A^n$ with observed sanction signals $s^k\in \{-1,0,1\}^n$ (negative, neutral, positive). A *normative choice function*
 
@@ -435,155 +438,236 @@ $$u(a'\mid h) - u(a^*\mid h) < \beta\bigl[I(a^*\mid h) - I(a'\mid h)\bigr] \quad
 
 then $N(h)$ places all weight on $a^*$, the *normatively prescribed* action, regardless of smaller material gains from deviation.
 
-This model suggests path-dependence as early interaction profiles and sanction signals can lock a community into a particular normative equilibrium, making norm shifts resistant to modest perturbations. In addition, in public goods or trust games, where $u(a)$ favors free‑riding, a sufficiently high $I(a)$ can sustain cooperation via internalized guilt and peer sanctions. @crawford1995 later modeled a similar situation of cooperation problems with $\delta$-parameters seen as additionally incurred costs in the form of potential sanctions, which, being sufficiently high, can transform a cooperation game into a coordination game effectively eliminating equilibria. Ullmann‑Margalit also acknowledges multiple channels like formal penalties, gossip and emotional costs that feed into $s_t(a)$, allowing norms to persist even when formal institutions are weak. Through these mechanisms, Ullmann‑Margalit transforms Lewis’s static, expectation-based model into a dynamic framework that accounts for the emergence, stability, and transformations of social norms with genuine normative force.
+This model suggests path-dependence as early interaction profiles and sanction signals can lock a community into a particular normative equilibrium, making norm shifts resistant to modest perturbations. In addition, in public goods or trust games, where $u(a)$ favors free‑riding, a sufficiently high $I(a)$ can sustain cooperation via internalized guilt and peer sanctions. @crawford1995 later modeled a similar situation of cooperation problems with $\delta$-parameters seen as additionally incurred costs in the form of potential sanctions, which, being sufficiently high, can transform a cooperation game into a coordination game effectively eliminating equilibria. For instance, given a Prisoner's dilemma with a high delta parameter representing a cost for norm violation, the game becomes that of coordination with two equilibria — “Cooperate, cooperate” and “Defect, defect” (CC, DD) instead of only one — DD. This shows that normative rules can be coordination devices, or “choreographers”, as Gintis puts it [@gintis2009a].
 
+Ullmann‑Margalit also acknowledges multiple channels like formal penalties, gossip and emotional costs that feed into $s_t(a)$, allowing norms to persist even when formal institutions are weak. Through these mechanisms, Ullmann‑Margalit transforms Lewis’s static, expectation-based model into a dynamic framework that accounts for the emergence, stability, and transformations of social norms with genuine normative force.
 
-Jon Elster’s scholarship marries rational choice theory with psychological realism to explain how norms function as commitments within individuals’ strategic calculus. In works such as *The Cement of Society* (1989) and *Explaining Social Behavior* (2007), Elster introduces the notion of *self‑command*, wherein agents willingly bind themselves to future course of action—echoing the metaphor of Ulysses and the Sirens—to overcome short‑term temptations. He further refines the discussion by distinguishing between first‑order expectations (what I think you will do) and second‑order expectations (what I think you think I ought to do). While Lewisian conventions require only the former, sophisticated social norms depend on *second‑order normative expectations* that reinforce an agent’s sense of duty. Moreover, Elster analyzes how norms can resolve *mixed‑motive dilemmas* by aligning long‑term interests with communal standards, thus embedding normative force within a rational choice framework.
+# ОСТАНОВИЛСЯ ЗДЕСЬ
 
-Jon Elster’s contributions integrate psychological realism into rational choice by modeling norms as strategic commitments and belief‑dependent preferences. His analysis unfolds in two interrelated strands:
+Elster [@elster1989] synthesizes rational choice theory with psychological realism to elucidate the function of norms as commitments within individual strategic calculations. He introduced the concept of "self-command", an agent's voluntary binding to future actions to resist immediate impulses. Elster distinguished between *first-order expectations* (anticipated behavior) and *second-order expectations* (anticipated normative judgments), recognizing that sophisticated social norms necessitate the latter to reinforce an agent’s sense of duty. He analyzed how norms resolve mixed-motive dilemmas by aligning long-term interests with communal standards, thereby integrating normative force within a rational choice framework.
 
-1. Self‑Binding Commitments and Dynamic Choice.Elster models norm adherence as the outcome of a two‑stage game. Agents first choose a commitment set C (subset of full action set A) to maximize the worst‑case long‑run payoff:
+Elster modeled norm adherence as the outcome of a two‑stage game. Agents first choose a commitment set $$C \subseteq A$$ (a subset of the full action set $$A$$) to maximize the worst‑case long‑run payoff:
 
-V(C) = min_{a in C} U(a) - kappa * |C|
+$$
+V(C) = \min_{a \in C} U(a) - \kappa \cdot |C|
+$$
 
-where U(a) represents long‑run utility and kappa>0 is the cost of restricting options. In the action stage, agents choose a* in C to maximize the immediate payoff u(a). This formalism captures how moral vows or binding contracts prune future options to enforce norm compliance.
+where $$U(a)$$ represents long‑run utility and $$\kappa > 0$$ is the cost of restricting options. In the action stage, agents choose $$a^* \in C$$ to maximize the immediate payoff $$u(a)$$. This formalism captures how moral vows or binding contracts prune future options to enforce norm compliance.
 
-2. Belief‑Dependent Preferences and Second‑Order Expectations.Elster formalizes utility that depends on both empirical expectations about others’ actions and normative expectations about what others think is appropriate. Let P(S) denote beliefs over opponents’ strategy profiles. Then:
+Elster also formalized utility that depends on both empirical expectations about others’ actions and normative expectations about what others think is appropriate. Let $$P(S)$$ denote beliefs over opponents’ strategy profiles. Then:
 
-U_emp(a) = E_{S~P}[u(a,S)]
-U_norm(a) = E_{S~P}[Indicator(a is approved by others)]
-U*(a) = U_emp(a) + lambda * U_norm(a) - c * D(a)
+$$
+\begin{aligned}
+U_{\text{emp}}(a) &= \mathbb{E}_{S \sim P}[u(a,S)] \\\\
+U_{\text{norm}}(a) &= \mathbb{E}_{S \sim P}[\mathbb{I}(a \text{ is approved by others})] \\\\
+U^*(a) &= U_{\text{emp}}(a) + \lambda \cdot U_{\text{norm}}(a) - c \cdot D(a)
+\end{aligned}
+$$
 
-where lambda>0 weights normative approval, and D(a) is 1 if a deviates from the norm (0 otherwise), with c capturing sanction cost or psychological guilt. A normative equilibrium occurs when every agent's action maximizes U*(a), beliefs are correct, and normative expectations are self‑fulfilling.
+where $$\lambda > 0$$ weights normative approval, and $$D(a) = 1$$ if $$a$$ deviates from the norm (0 otherwise), with $$c$$ capturing sanction cost or psychological guilt. A *normative equilibrium* occurs when every agent's action maximizes $$U^*(a)$$, beliefs are correct, and normative expectations are self‑fulfilling.
 
-Illustrative Example:In a trust game with actions C (cooperate) and D (defect), material payoffs satisfy u(D,C) > u(C,C) > u(D,D) > u(C,D). Let p = Prob(other cooperates) and q = Prob(other approves cooperation). Then:
+As an example, in a Prisoner's Dilemma with actions $$C$$ (cooperate) and $$D$$ (defect), material payoffs satisfy:
 
-U*(C) = p*u(C,C) + (1-p)*u(C,D) + lambda * q - c
-U*(D) = p*u(D,C) + (1-p)*u(D,D)
+$$
+u(D,C) > u(C,C) > u(D,D) > u(C,D)
+$$
 
-Even if p is low, a sufficiently large (lambda*q - c) term can make cooperation strictly optimal. This illustrates how normative expectations and sanctions sustain cooperative norms beyond pure coordination.
+Let $$p = \Pr(\text{other cooperates})$$ and $$q = \Pr(\text{other approves cooperation})$$. Then:
 
-Through these mechanisms, Elster bridges game‑theoretic precision with psychological realism, demonstrating how internal commitments and belief‑dependent utilities generate stable social norms.
+$$
+\begin{aligned}
+U^*(C) &= p \cdot u(C,C) + (1-p) \cdot u(C,D) + \lambda q - c \\\\
+U^*(D) &= p \cdot u(D,C) + (1-p) \cdot u(D,D)
+\end{aligned}
+$$
+
+Even if $$p$$ is low, a sufficiently large $$(\lambda q - c)$$ term can make cooperation strictly optimal. This illustrates how normative expectations and sanctions sustain cooperative norms beyond pure coordination.
+
+The pioneering work of @epstein1996 in generative social science employs agent-based modeling to investigate the spontaneous emergence of social conventions and norms, driven by endogenous norm formation without centralized enforcement. Rooted in agent-based computational economics and evolutionary game theory, Epstein’s models utilize bounded rationality, with agents operating under simple rules and limited information. This rejects traditional assumptions of perfect rationality or equilibrium. System-level behavior is analytically intractable, necessitating simulation as a primary tool. This framework aligns with game theory, specifically repeated and evolutionary games, where payoffs are contingent on frequent population-level strategies, and norms emerge as persistent patterns of behavior sustained by costly deviation or social punishment.
+
+Epstein’s models, utilizing ‘Sugarscape’ simulations, employ heterogeneous agents governed by dynamic, simple behavioral rules, independently generating both global conventions and localized norms without centralized coordination. These models highlight the critical roles of path dependence – the influence of past decisions on future behavior – and network topology in shaping social pattern stability. Translating Lewis’s coordination concept into a computational framework, Epstein demonstrated how agent diversity, stochastic processes, and adaptive learning mechanisms can produce durable social regularities exhibiting normative implications.
+
+In Epstein’s canonical model, agents occupy a grid and interact locally. Each agent follows a simple rule-based strategy and can observe the behavior of its neighbors. Over time, they update their behavior based on local observations and possibly some payoff structure.
+
+The theoretical core of Epstein's model can be expressed using a **game-theoretic payoff matrix**, where agents derive utility from conforming to or deviating from a local behavioral pattern:
+
+Let the strategy set be $(S = \{C, D\})$, representing **conforming** $C$ and **deviating** $D$. The payoff matrix for an agent may be:
+
+$$
+\begin{array}{c|cc}
+& C & D \\
+\hline
+C & R & S \\
+D & T & P \\
+\end{array}
+$$
+
+Where:
+- $R$: reward for mutual conformity
+- $S$: sucker’s payoff (you conform, others don’t)
+- $T$: temptation to deviate
+- $P$: punishment for mutual deviation
+
+Agents update their strategy based on *success-based imitation* (copying the strategy of the most successful neighbor), or using rules akin to *replicator dynamics* in evolutionary game theory:
+
+$$
+\dot{x}_i = x_i \left[ (A \vec{x})_i - \vec{x}^T A \vec{x} \right]
+$$
+
+Where:
+- $x_i$: proportion of agents using strategy $i$
+- $A$: payoff matrix
+- $\vec{x}$: strategy distribution vector
+
+However, in Epstein’s ABM, this is implemented *discretely and locally*: agents switch strategies probabilistically based on their relative payoffs and observed neighborhood norms.
+
+Over time, consistent behavioral patterns like norms may emerge. These norms are not imposed but *self-organized* through repeated interactions and adaptation. A key insight from Epstein’s work is that *norms can be sustained through decentralized enforcement*, such as local peer pressure or reputation systems. For instance, agents might adopt a punishment rule: if a neighbor deviates from a prevailing norm, the agent may impose a cost on them (e.g., by refusing to cooperate in future interactions). This introduces *meta-norms* (norms about enforcing norms), which further stabilize the system.
+
+Several important insights emerged from Epstein’s simulations:
+
+- *Multiple equilibria*: Different regions of the simulation space can stabilize on different norms, illustrating the *path-dependence* of social systems.
+- *Robustness*: Norms are robust to noise and perturbations, depending on enforcement mechanisms.
+- *Phase transitions*: Under certain conditions, the system exhibits critical behavior where small changes in parameters (e.g., punishment cost) can lead to large-scale shifts in norm adoption.
+
+Joshua Epstein’s work bridges the gap between micro-level behavioral rules and macro-level social patterns. By embedding game-theoretic interactions in a spatially explicit agent-based model, he demonstrated how complex social norms can emerge from simple local interactions. His simulations provide a powerful tool for exploring the dynamics of social norm formation, challenging the view that norms require centralized design or enforcement. Instead, they may be the natural outcome of decentralized, strategic adaptation in social environments.
+
+***
+Young’s theory of social norms represents a major step in formalizing how collective behavioral patterns arise and stabilize in decentralized populations. His key contribution lies in drawing a conceptual and mathematical distinction between *conventions* and *social norms*, and in showing how norms can emerge and persist even when they are not individually payoff-maximizing. While conventions are defined as self-enforcing equilibria of coordination games, social norms in Young’s account involve a deeper layer of *prescriptive expectations* and *enforcement structures*, including social punishment for deviation [@young1998, pp. 83–85]. This distinction allows him to move beyond the Lewisian model of convention [@lewis1969] and more closely approximate real-world practices like tipping, queuing, or property respect, which often persist even in the absence of external enforcement or explicit payoff dominance.
+
+Young models social behavior as an evolutionary process grounded in *adaptive learning*. Agents are situated in a population and repeatedly engage in *local interaction games*, where strategies are updated according to boundedly rational rules such as *myopic best response* focusing on the present payoff possibilities. Importantly, agents are assumed to make occasional errors, either due to experimentation or misperception which introduces *stochasticity*, or non-deterministic randomness, into the learning process. This leads to a Markov chain[^Markov=chain] over the space of population states, where each state corresponds to a configuration of strategies across individuals.
+
+[^Markov-chain]: A Markov process is a stochastic process that satisfies the *Markov property* (also known as the "memoryless property"):  the future state of the process depends only on the present state and not on the sequence of events that preceded it.  In simpler terms, the past doesn't influence the future, given the present. A stochastic process $\{X_t, t \geq 0\}$ is a Markov process if for any $t \geq 0$ and any $s < t$, the conditional probability of $X_t$ given $X_s$ is equal to the unconditional probability of $X_t$ given $X_s$: $P(X_t \in A | X_s \in B, s < t) = P(X_t \in A | X_s \in B)$, where $X_t$ is the state of the process at time $t$, $A$ and $B$ are events in the state space, the state space is denoted by $\mathcal{S}$.
+
+To analyze the long-run behavior of such systems, Young introduces the concept of *stochastic stability*. Let $\mathcal{S}$ be the finite set of population states, and let $P^\varepsilon$ be a transition probability matrix parameterized by a noise level $\varepsilon$. Then the *stationary distribution* $\pi^\varepsilon$ satisfies:
+
+$$
+\pi^\varepsilon P^\varepsilon = \pi^\varepsilon,
+$$
+
+and the set of *stochastically stable states* $S^* \subseteq \mathcal{S}$ is defined as:
+
+$$
+S^* = \left\{ s \in \mathcal{S} \ \middle| \ \lim_{\varepsilon \to 0} \pi^\varepsilon(s) > 0 \right\}.
+$$
+
+To compute $S^*$, Young uses the *resistance tree method. Each transition between states is assigned a *resistance* based on how improbable it is (i.e., how many agents must err simultaneously), and stochastically stable states are those with the *lowest total resistance* across spanning trees rooted at those states [@young1998, pp. 103–107].
+
+This framework has several far-reaching implications. First, it provides a *selection principle* for equilibrium in games with multiple Nash equilibria. Unlike refinements based on rationality assumptions, Young’s selection is *behavioral and dynamic*, requiring only minimal cognition. Second, it allows the modeling of *social enforcement*: norms can be represented as equilibria of games with endogenous punishment strategies, wherein agents prefer to punish norm violations even at a personal cost [@young1998, pp. 90–92]. These punishment mechanisms can themselves be stochastically stable, giving rise to *self-enforcing normative structures* without assuming rational foresight or institutional backing.
+
+Young's framework in also richly connected to other theoretical frameworks. Young’s approach aligns in spirit with Skyrms’s view of *local interaction as a source of correlation* in the emergence of conventions [@skyrms1996], but differs in emphasis. While Skyrms treats conventions as emerging from *evolutionary dynamics with minimal structure*, Young introduces *explicit sanctioning mechanisms and social expectations*, making norms qualitatively distinct from conventions. Moreover, Young’s stochastic stability framework offers a *non-epistemic interpretation* of equilibrium selection that contrasts with the *Bayesian rationality* underlying correlated equilibrium in Aumann’s model [@aumann1974]. In Aumann’s framework, a *correlation device* (e.g., a public signal) coordinates beliefs to yield a correlated equilibrium, relying on agents’ rational Bayesian updating. Young’s framework, by contrast, explains the emergence of coordination *without any epistemic content*, driven instead by population-level statistical stability.
+
+In sum, Young's theory provides a mathematically rigorous account of how *prescriptive social norms*, backed by informal sanctions, emerge and persist in large populations through *local adaptation and noise-driven selection*. His work not only bridges the gap between evolutionary game theory and institutional analysis, but also supplies tools for identifying which norms are likely to prevail under given interaction structures and stochastic conditions.
 
 ***
 
-Elinor Ostrom’s work on the governance of common‑pool resources (*Governing the Commons*, 1990) demonstrates how communities craft and sustain norms as part of a broader institutional ecology. Observing diverse case studies—from irrigation systems in Nepal to fisheries in Turkey—Ostrom identified design principles that underlie effective self‑organized governance. Among these are clear boundary definitions, collective choice arrangements, monitoring, graduated sanctions, and conflict‑resolution mechanisms. Unlike Lewis’s static model, Ostrom emphasizes the *evolutionary dynamics* of institutional development, where norms operate in concert with formal rules and organizational structures. In her view, norms endure not merely because of mutual expectation but because they are embedded in an adaptive system of shared understanding, enforcement, and local stewardship. This situates norms as *informal institutions* integral to sustaining cooperation in resource management and beyond.
+@bicchieri2005 offered a distinct and now mainstream epistemic and psychological approach to social norms departing from traditional game-theoretic, functionalist, and purely behavioral models. She distinguished conventions from social norms based on *conditional preference*. According to her, individuals follow a rule if they:
 
-Jon Elster: Rational Choice, Self‑Binding, and Second‑Order Expectations
+(a) expect sufficiently many others to follow it (empirical expectation) and 
+(b) believe sufficiently many others think they ought to follow it (normative expectation). 
 
+In Lewis’s conventions, only empirical expectations matter while normative expectations and potential sanctions are absent. By contrast, true norms depend on both layers of expectation and are upheld through social sanctions, external (punishments) or internal (guilt) [@bicchieri2006, pp. 11–13]. Bicchieri’s framework highlights that modifying agents’ beliefs about others’ attitudes can transform a convention into a norm, offering actionable insights for policy and institutional design.
 
-Joshua Epstein and Agent‑Based Models of Norm Formation
+Bicchieri posits that a behavioral rule $R$ is a social norm in a population $P$ with respect to a situation $S$ if:
 
-The computational turn in social science, represented by Joshua M. Epstein and Robert Axtell’s *Growing Artificial Societies* (1996), offers a dynamic perspective on how conventions and norms evolve from the bottom up. Through agent‑based models—so‑called Sugarscape simulations—heterogeneous agents endowed with simple behavioral rules interact over time. Epstein’s experiments reveal that both global conventions (uniform behaviors across the population) and localized norms (behaviors contingent on neighbor interactions) can emerge spontaneously, without centralized coordination. These models underscore the roles of *path dependence* and *network topology* in determining which patterns solidify. By operationalizing Lewisian coordination in silico, Epstein bridges abstract theory and empirical complexity, illustrating that the interplay of agent diversity, stochasticity, and adaptive learning can give rise to durable social regularities with normative overtones.
+1. The rule $R$ is *recognized* to apply in situation $S$.
+2. A sufficiently large subset of $P$ conforms to $R$ in $S$, and each individual $i \in P$ has the *empirical expectation* that others conform to $R$ in $S$.
+3. Each $i \in P$ believes that others think she ought to conform to $R$ in $S$ (i.e., has *normative expectations*).
+4. Each $i \in P$ has a preference to conform to $R$ *on condition* that:
+   - (a) she believes others conform to $R$ in $S$;
+   - (b) she believes others believe she ought to conform to $R$ in $S$.
 
-Peyton Young: Evolutionary Stability and Norm Cascades
+This is often expressed via a *preference conditional on expectations*:
 
-Peyton Young has contributed significantly to our understanding of convention and norm adoption through *stochastic evolutionary game theory*. In *Individual Strategy and Social Structure* (1998) and subsequent articles, Young introduces the concept of *stochastically stable states*—equilibria that persist under small random perturbations in agents’ behavior. While Lewisian conventions represent equilibria in coordination games, Young shows how these equilibria can shift when the underlying payoff structures are altered by social sanctions, transforming conventions into *institutionalized norms*. His work on *norm cascades* describes how once normative expectations and sanctioning thresholds cross a critical mass, societies can rapidly tip from one equilibrium to another. Thus, evolutionary dynamics and minimal levels of enforcement suffice to stabilize or overturn established conventions.
+$$
+i \text{ prefers to do } R \text{ in } S \iff EE_i(R) \land NE_i(R)
+$$
 
-Cristina Bicchieri: Expectations, Conditional Preferences, and Sanctions
+where:
+- $EE_i(R)$ = empirical expectation: “Others will do $R$ in $S$,”  
+- $NE_i(R)$ = normative expectation: “Others expect me to do $R$ in $S$.”
 
-Cristina Bicchieri’s *The Grammar of Society* (2006) provides a rigorous formalism distinguishing conventions from norms based on *conditional preferences*. According to Bicchieri, individuals follow a rule if (a) they expect sufficiently many others to follow it (empirical expectation) and (b) they believe sufficiently many others think they ought to follow it (normative expectation). In Lewis’s conventions, only empirical expectations matter; normative expectations and potential sanctions are absent. By contrast, true norms depend on both layers of expectation and are upheld through social sanctions—whether external (punishments) or internal (guilt). Bicchieri’s framework highlights that modifying agents’ beliefs about others’ attitudes—through information campaigns or framing—can transform a convention into a norm, offering actionable insights for policy and institutional design.
+This conditionality sets Bicchieri apart from rational choice or equilibrium-based models. For her, compliance with norms depends not on fixed utility functions but on *context-sensitive preference shifts* driven by belief structures.
 
-Herbert Gintis: Strong Reciprocity and Cultural Group Selection
+Contra Lewis, Bicchieri insists that *norms are not reducible to equilibrium strategies* or to mutually expected behavior. They involve a prescriptive layer comprised of what others think one *ought* to do. Moreover, unlike Lewis, she does not require common knowledge of the regularity. Instead, norms can exist in mixed populations, be locally activated [@bicchieri2006, pp. 41–45].
 
-Herbert Gintis extends the analysis of norms by appealing to *strong reciprocity* and *cultural evolution*. In *Game Theory Evolving* (2000) and *Individuality and Entanglement* (2011), Gintis argues that humans possess an innate proclivity to punish norm violators at personal cost, even in one-shot anonymous interactions. This disposition, coupled with *cultural group selection*, explains how cooperative norms proliferate: groups adhering to strong reciprocal norms outcompete less cohesive groups. Gintis embeds Lewisian coordination games within a broader evolutionary narrative, where cultural transmission and selection pressures endow conventions with moral and sanctioning dimensions that transcend individual strategic calculation.
+Although having similarities with Elster’s work on norms, Bicchieri argues that norm compliance is largely situational and dependent on expectation structures, not internalized values or long-term moral training like *self-command*. Her experimental evidence suggests that many individuals are *conditional cooperators*, responsive to perceived expectations, and prone to *strategic norm evasion* when the normative context is weak [@bicchieri2006, pp. 153–156]. Norms, for her, do not require full internalization but highly contextual and can be followed instrumentally in appropriate contexts.
 
-Conclusion
+Compared to @ullmann-margalit1977, who conceptualized norms primarily as solutions to recurrent social problems like coordination, cooperation and avoidance of conflict with norms as functional entities, Bicchieri’s view departs in two ways: first, she decouples norm emergence from functional necessity meaning that not all norms solve problems, and some persist even when suboptimal. Second, she builds a *bottom-up epistemic model*: a norm exists not because it solves a coordination problem, but because agents *believe* it exists, and condition their preferences accordingly. The existence of a norm is thus a *psychological fact about belief networks*, not merely a systemic solution.
 
-The dialogue between Lewisian conventions and social norms reflects a trajectory from **descriptive equilibria** towards **normatively rich institutions**. While Lewisian theory captures the elegance of coordination through common knowledge, the subsequent scholarship—spanning Ullmann‑Margalit’s norm genesis, Ostrom’s institutional ecologies, Elster’s self‑binding rationality, Epstein’s simulation models, Young’s evolutionary stability, Bicchieri’s conditional preferences, and Gintis’s cultural evolution—reveals the layered complexity of societal regulation. Together, these perspectives elucidate how conventions can acquire prescriptive force, how norms are institutionalized and enforced, and how the interplay of rational choice, psychology, and evolutionary dynamics shapes the fabric of social life.
+Bicchieri thus has offered a model of norms as *contextually activated scripts*, grounded in micro-level epistemic structures, and capable of explaining variability, fragility, and rapid change in social behavior. It is also important to note that Bicchier's agents are wholeheartedly Bayesian-rational, meaning they form, have and update explicit beliefs and have *cognitive schemata* sufficient for processing these beliefs.
 
-***
+One more influential conceptualization of social norms is due to Gintis who offered a *multi-level evolutionary account* of social norms that integrates insights from game theory, behavioral economics, evolutionary biology, and complex systems theory. Unlike approaches that treat norms either as equilibrium strategies (Lewis) or as epistemic constructs (Bicchieri), Gintis argued that *norms are a form of socially transmitted rule-based behavior* that co-evolves with the human capacity for cooperation and punishment, and whose persistence is explained through *gene–culture coevolution* [@gintis2003; @gintis2009].
 
-The constructs of **social norms** and **conventions** serve to explain how individuals coordinate their behavior and maintain cooperation within societies. David Lewis’s game-theoretic model of **conventions** provides a baseline descriptive framework: conventions are equilibria of coordination games supported by common knowledge. However, subsequent scholarship has introduced additional layers of **normative force**, **sanctioning**, and **institutional structure**. Many theorists have employed formal tools—game theory, evolutionary dynamics, agent-based modeling, and decision-theoretic formalisms—to rigorously characterize these phenomena. This essay revisits the relationship between Lewisian conventions and social norms, integrating formal definitions and equations where used by Edna Ullmann‑Margalit, Elinor Ostrom, Jon Elster, Joshua Epstein, Peyton Young, Cristina Bicchieri, and Herbert Gintis.
+Gintis defines a **norm** as a rule of behavior that is:
 
-David Lewis and the Logic of Convention
+1. *Universally shared* within a reference group,
+2. *Individually internalized*, so that deviation provokes negative emotions like guilt or shame,
+3. *Enforced through third-party punishment*, and
+4. *Costly to individuals*, yet *adaptive* at the group level [@gintis2003, pp. 259–260].
 
-In *Convention: A Philosophical Study* (1969), Lewis formalizes conventions as **Nash equilibria** in symmetric coordination games. Let $G = (I, S, u)$ be a game with players $i\in I$, identical strategy sets $S_i = S$, and payoff function $u_i(s_i,s_{-i}) = u(s_i,s_{-i})$. A strategy profile $s^* = (s^*,\dots,s^*)$ is a convention if for every $i$:
+The evolutionary viability of such norms arises from the interplay between individual fitness and group selection: although norm-followers may incur costs, groups with strong norm adherence—especially norms of cooperation, fairness, or punishment—outperform less cohesive groups in intergroup competition. This is formalized in models of *multi-level selection*, where within-group dynamics favor selfishness, but *between-group dynamics favor cooperation* mediated by norms. As Vlerick [-@vlerick2019] suggests, solutions to coordination problems emerge from within-group dynamics, while solutions to competition ones are largely selected through between-group competition. Within-group dynamics explain why salient coordination rules emerge. When it comes to solving competition problems, however, between-group dynamics play a major role. They select *game changing norms* that affect the payoff related to the available strategies through punishment or reward to solve free-rider problems which create better equilibria than the ones originally available. It mean that social arrangements with norms alter payoff matrices to ensure that self-interested strategies align with group interests, without requiring self-sacrifice. They are shaped by interactions between individuals and between groups, the latter selecting efficient equilibria and the former leading to salient ones. Sanctions are imposed to solve competition problems.
 
-$$u(s^*,s^*) \ge u(s',s^*) \quad \forall s' \in S, $$
-and (common knowledge) each player expects others to play $s^*$. Lewis emphasizes the role of **common knowledge** of the game structure and mutual rationality, but he refrains from attributing any moral obligation to $s^*$—it is a purely descriptive equilibrium.
+Gintis models norm enforcement and stability through *replicator dynamics* and public goods games. Suppose $x_i$ is the share of individuals using strategy $i$ (e.g., cooperating, defecting, punishing). Let $f_i$ be the fitness (expected payoff) of strategy $i$. The replicator equation is:
 
-Ullmann‑Margalit and the Emergence of Normative Force
+$$
+\dot{x}_i = x_i(f_i - \bar{f}),
+$$
 
-Edna Ullmann‑Margalit’s *The Emergence of Norms* (1977) does not present a fully axiomatized model, but she sketches a **normative choice function** $N: \mathcal{H} \to A$ mapping histories $h \in \mathcal{H}$ of repeated interactions to actions $A$, such that:
+where $\bar{f} = \sum_j x_j f_j$ is the population average fitness. A norm is stable when the strategy it encodes becomes evolutionarily stable (resists invasion by mutants) due to its *adaptive advantage in group-level performance*.
 
-1. If $h$ exhibits repeated coordination outcomes, $N(h)$ coincides with the Lewisian equilibrium strategy.
-2. When $h$ involves mixed-motive dilemmas, $N(h)$ maximizes a **utility function** $U(a\,|\,h) = u(a\,|\,h) + \beta I(a,h)$, where $u$ represents material payoffs and $I$ an *internalized norm* component weighted by $
-obreak\beta>0$.
+What makes norms distinctive in Gintis’s account is the incorporation of *strong reciprocity*, a behavioral trait characterized by *cooperation with others and punishment of non-cooperators*, even at personal cost. Strong reciprocity is empirically observed in cross-cultural behavioral experiments like ultimatum, trust, and public goods games and contradicts the predictions of purely self-interested models [@gintis2005]. Gintis treats this trait not as an anomaly but as an *evolutionary stable behavioral phenotype*, sustained through norm-based socialization and group selection.
 
-Her emphasis on **felt obligation** and **social sanctions** corresponds to endogenizing $I(a,h)$: deviations from the expected pattern incur negative disutility (guilt) or external penalties.
+A central and innovative concept in Gintis’s theory of social norms is the idea that norms transform not just preferences but the *structure of the strategic interaction itself*, by modifying agents’ *subjective representations of payoffs and actions*. This transformation is encoded in what he calls a *belief matrix*, a mapping of how agents perceive and evaluate their strategic options based on the presence of social norms [@gintis2009, ch. 12; @gintis2003, pp. 266–268].
 
-Elinor Ostrom: Institutional Principles without Equations
+In classical game theory, a game is defined by:
 
-While Ostrom’s *Governing the Commons* (1990) is primarily empirical, she identifies **design principles** that can be formalized in repeated-public-good games. For instance, one can define a protocol $P$ with strategies $s_i^{(t)}$ updated via:
+- A set of players $N$,
+- A set of strategies $S_i$ for each player $i \in N$,
+- A utility function $u_i: S \to \mathbb{R}$ assigning payoffs.
 
-$$s_i^{(t+1)} = \begin{cases} s_i^{(t)} & \text{if payoffs and sanctions under } P \text{ keep expected utility above threshold},\\ s_i^{(t)}' & \text{otherwise}, \end{cases}$$
+Gintis argues that this framework is incomplete for modeling *norm-governed behavior*, because it assumes that agents evaluate strategies based on static utility functions. However, *norms induce endogenous changes* in the utility functions themselves, via socially learned expectations, emotions like guilt or shame, and reputational incentives. These are captured through a *modified payoff function*:
 
-where graduated sanctions are functions $\sigma_i(s_i^{(t)},g)$ depending on individual’s action and group monitoring signals $g$. Though Ostrom does not specify these equations, her principles imply such an iterative adjustment process.
+$$
+u'_i(s) = u_i(s) + n_i(s),
+$$
 
-Jon Elster: Self‑Binding and Second‑Order Expectations
+where $u'_i$ is the *norm-adjusted utility*, and $n_i(s)$ encodes *normative valuations* of strategy profile $s$. The function $n_i$ depends on agent $i$’s *beliefs* about what is expected, appropriate, or punishable—thus forming part of a *belief matrix*.
 
-Elster introduces a two-stage model where an agent chooses a **commitment device** before playing a game. Formally, let $C \subseteq A$ be a set of permissible actions after commitment. The agent solves:
+The *belief matrix* is not merely a list of beliefs but a *second-order cognitive structure*: it encodes how players *transform the base game* into a normatively laden one. For example, in a Prisoner’s Dilemma, if both players believe that mutual defection is morally wrong and likely to incur reputational loss, their payoff matrix is *endogenously transformed* into a coordination game or even a Stag Hunt, depending on the intensity of normative beliefs. Again, this resembles Crawford's and Ostrom's cooperation games  $\delta$-parametrized with incurred sanctions and Elster's second-order expectations.
 
-1. **Commitment stage**: choose $C$ to maximize $V(C) = \min_{a\in C} U(a)$
-2. **Action stage**: pick $a\in C$ to maximize $u(a)$
+To formalize this, let $M$ be the original payoff matrix, and $B$ be the *belief matrix* that maps social expectations, punishments, and rewards into numerical modifiers. Then:
 
-Here, $U(a)$ reflects long-run utility, while $u(a)$ captures immediate payoff. Norms arise when agents choose $C$ to exclude self-harming deviations. He also distinguishes **first-order expectations** $E_1[s_{-i}]$ and **second-order expectations** $E_2[\text{ought}(s_{-i})]$, requiring norms be supported by both.
+$$
+M' = M + B,
+$$
 
-Joshua Epstein: Agent‑Based Simulation Rules
+where $M'$ is the *norm-governed game* actually perceived and enacted by players.
 
-In *Growing Artificial Societies* (1996), Epstein and Axtell define a discrete-time agent-based model on a lattice. Agents follow rule sets:
+This idea closely parallels Gintis's general theory of *“strongly endogenous games”* [@gintis2009, pp. 187–189], in which preferences and payoffs are not fixed but shaped by cultural and institutional context. Here, *social norms act as priors or filters* that reshape the game. The belief matrix $B$ may itself evolve over time, via cultural transmission, education, or feedback from repeated play.
 
-1. **Move**: to neighboring cell maximizing resource $R$. 
-2. **Metabolize**: consume $m$ units. 
-3. **Trade**: exchange surplus according to price $p$. 
-4. **Reproduce**: if $E > E_0$. 
+Gintis thus provides a *mechanism for the cognitive embedding of norms* in strategic behavior, bridging the rationalist structure of game theory with *evolutionary and cultural psychology*. This contrasts sharply with static or exogenous models of norms like Lewis’s conventions or Elster’s moral drives, and aligns Gintis with *constructivist and dynamic modeling traditions* in behavioral economics.
 
-Though not conventional game-theoretic equations, these **algorithmic formalisms** produce emergent conventions (uniform trading prices) and localized norms (spatial clustering of behavior) through repeated iteration.
+Like Elster, Gintis attributes a motivational role to internal sanctions like shame or guilt. However, Elster’s account is more sociological and introspective, focusing on the irrational or pre-rational nature of norm-guided action. Gintis gives these same internal mechanisms a formal evolutionary explanation: they persist because they enhance group-level fitness and individual reputational benefits within structured populations. Where Elster tends to be skeptical of rational-choice models, Gintis integrates bounded rationality into a dynamic evolutionary framework.
 
-Peyton Young: Stochastic Stability
+Gintis and Peyton Young share an interest in the emergence and stability of social norms. Young explains norm stability via stochastic evolutionary dynamics and local interaction, using resistance trees and Markov chains to model convergence to norms. Gintis, by contrast, provides a biocultural account in which norms co-evolve with cognition, social learning, and enforcement institutions. Moreover, while Young focuses on punishment as a strategy, Gintis integrates it as an evolved emotional mechanism, part of the human behavioral repertoire.
 
-Young’s stochastic evolutionary model formalizes conventions as **stochastically stable states** of a perturbed Markov process. Let $X^\epsilon_t$ be a finite-state Markov chain over population configurations, where with probability $1-\epsilon$ agents best-respond, and with $\epsilon$ make random mistakes. A state $x$ is stochastically stable if:
+Herbert Gintis’s theory positions norms as culturally transmitted and biologically grounded mechanisms for sustaining large-scale cooperation. Unlike equilibrium or expectation-based theories, his model embeds norm-following in the coevolution of genes and culture, and explains persistence through multi-level selection. Norms, in his view, are:
 
-$$\lim_{\epsilon\to0} \mu_\epsilon(x) > 0,$$
+- Emotionally regulated,
+- Costly but group-beneficial,
+- Transmitted via imitation and enforcement, and
+- Fundamental to the evolution of human societies.
 
-where $\mu_\epsilon$ is the chain’s stationary distribution. Introducing sanction-based payoffs alters the best-response rule, tipping conventions into normative equilibria when punishment changes payoff matrices.
+Overall, the dialogue between Lewisian conventions and social norms reflects a trajectory from descriptive equilibria towards normatively rich institutions. While Lewisian theory captures the elegance of coordination through common knowledge, the subsequent scholarship spanning Ullmann‑Margalit’s norm genesis, Elster’s self‑binding rationality, Epstein’s simulation models, Young’s evolutionary stability, Bicchieri’s conditional preferences, and Gintis’s cultural evolution reveals the layered complexity of societal regulation. Together, these perspectives elucidate how conventions can acquire prescriptive force, how norms are institutionalized and enforced, and how the interplay of rational choice, psychology, and evolutionary dynamics shapes the fabric of social life.
 
-Cristina Bicchieri: Conditional Preference Logic
+What has emerged as a pattern through the mentioned works is the continual relationship between conventions and norms. To make it more vivid, @oconnor2019 draws two important distinctions: 
 
-Bicchieri’s formalism specifies that an individual follows a rule $r$ in context $C$ if both:
+- conventions and social norms, 
+- functional and arbitrary conventions. 
 
-1. **Empirical expectation**: $EE(r,C) = P(\text{others follow }r\,|\,C) \ge p^*$
-2. **Normative expectation**: $NE(r,C) = P(\text{others think one should follow }r\,|\,C) \ge n^*$
+First distinction means that, as we have seen, not all behavioral regularities have normative force in the sense of added layer of normativity. Friends having a convention of meeting each Friday evening at a bar, would barely be upset if someone has not showed up, because they do not possess a normative expectation or any other added layer of normativity. On the contrary, if two cars are driving on the same side of the road towards each other, the drivers are forced to swerve, for otherwise they might crash. They ought to swerve, for not only might one of them be fined but they might cause an accident. As @bicchieri2005 points out, conventions are different from social norms in the relationship between self-interest and common interest. They coincide in the former and do not necessarily coincide in the latter. In the case of friends at a bar, there is no or little tension between self-interest and common interest, while in the case of driving cars there is. O'Connor stresses that conventions and norms are the *poles of a continuum* along which the former acquire normative force.
 
-with thresholds $p^*,n^*\in(0,1)$. This conditional preference model distinguishes conventions ($NE$ irrelevant) from norms ($NE$ binding).
-
-Herbert Gintis: Strong Reciprocity Games
-
-Gintis formulates **strong reciprocity** using modified public-goods games. For players $i,j$, action contributes $c$ to a public pool and can punish defectors at personal cost $k$. Payoffs:
-
-$$\pi_i = b\cdot \frac{\sum_j a_j}{N} - a_i - k \sum_{j\in D_i},$$
-
-where $a_j$ is j’s contribution and $D_i$ those punished by $i$. Strong reciprocity equilibria arise when punishment cost $k$ is offset by group-level benefits $b$, embedding norms in the payoff structure.
-
-Conclusion
-
-Across these frameworks, formal tools elucidate how **descriptive equilibria** (Lewisian conventions) transform into **prescriptive norms** through the introduction of internalized utilities, sanction structures, evolutionary perturbations, and expectation thresholds. By tracing these mathematical and computational formalisms, we gain a deeper understanding of the mechanisms sustaining coordination and cooperation in human societies.
-
-***
- @young1998 showed how investigated the emergence of social norms and conventions via stochastic evolution within populations of boundedly rational agents. His models depicted individuals learning and adapting strategies through limited information and simple learning rules, absent common knowledge of the game or other players’ intentions. Conventions arose as stochastically stable equilibria resulting from adaptive play, where agents adjusted strategies based on past interactions and occasional random experimentation, leading to the selection of specific conventions. This analysis suggested that perceived common knowledge often associated with established institutions stemmed from the long-run stability of these equilibria, rather than a prerequisite for their formation or maintenance in a world characterized by bounded rationality. As conventions solidified through adaptive play, individuals developed expectations and reliance, fostering predictable social interactions despite lacking sophisticated reasoning about others’ knowledge states. Consequently, aggregate individual adaptive behavior, devoid of perfect rationality or complete information, could generate complex social structures and conventions mirroring rational strategic outcomes.
-
-* how norms and conventions relate
-* game-theoretic views on norms
-    * [[⏳-Bicchieri-et-al.-2018|bicchieri et al. 2018]]
-    * [[Conventions-acquire-additional-normativity-through-repeated-play]]
-    * [[11.1a_Normative-rules-can-transform-cooperation-problem-into-coordination-problem-by-increasing-delta-parameter]]
-    * [[11.2b_Norms-both-make-behaviour-more-stable-and-predictable-and-introduce-new-behaviour-by-changing-game-payoffs]]
-    * [[Social-norm-conformity-is-due-not-only-to-costs-of-violation,-but-normative-expectations-and-beliefs]]
-* [[10.1-equilibrium-emergence-can-be-at-cognitive-and-evolutionary-scales.md]]
-
-***
-
+The second distinction O'Connor draws concerns the arbitrary and historically contingent nature of conventions that they “might have been otherwise”, which we will now consider.
 
 ### Overestimation of arbitrariness
 Overestimation of arbitrariness is another area of criticism. According to Lewis, arbitrariness is one of the key distinguishing aspects of conventions. However, as @gilbert1992 points out, not all possible solutions to a coordination problem are equally profitable for players. In cases where one way of coordinating is more preferred than another, convention will not be that arbitrary. In other words, alternative conventions are logically justified, but pragmatically implausible as there is almost always a slight "preference" of one convention over the other due to different factors like historical accident and history of play. Later scholars talked about this in terms of symmetry-breaking by stochastic events [@skyrms2010; @skyrms2010a] and salience of conventions amplified by the history of iteratively playing a certain coordination game [@korbak2021a]. 
@@ -592,7 +676,63 @@ Arbitrariness was recast as a continuum between contingency and necessity, or co
 
 A similar line of criticism comes from @burge1975, who notes that Lewisian requirement for convention to involve mutual knowledge of *alternative regularities*, or practices that could replace existing ones if widely adopted, is too strict. Conventions might fix without agents' knowledge of alternatives, Burge argues. He contends that conventions can stabilize with habit, custom or tradition, widely following Hume's original argument, and that knowledge of alternative conventions is not needed. Conventions, as Burge argues, are not governed by any biological, psychological or sociological law, they are historically accident. In addition, agents do not necessarily deliberate to "switch" from one convention to another. In terms of game theory, Lewis requires that agents know the structure of the game with its multiple equilibria, whereas Burge's notion does not. This leads to yet another point of criticism, overly intellectualist requirements for agents.
 
-* [[10.1a1c_Conventionality-can-be-measured-by-the-entropy-H(x)-of-a-convention.md]]
+@oconnor2021 proposes an information-theoretic measure of arbitrariness applicable to both “animal” and human conventions. It helps to break the distinction of functional and arbitrary conventions that she herself pinpoints [@oconnor2019]. As she is most interested in the emergence of cultural traits like gendered division of labor, she says that most cultural traits are both functional and arbitrary, or contingent, for they “might have been otherwise”.
+
+O'Connor notes that Lewis's notion of convention emphasizes arbitrariness, for a coordination game has at least two *proper coordination equilibria* — a state of a strategic situation where no player can deviate from a selected strategy and improve the payoff for any other player. It means that either of them might have been established equiprobably. @gilbert1992 critiques this notion of arbitrariness and suggests that some equilibria are more favorable than others. In line with this, @simons2019 illustrate the distinction of functional and arbitrary conventions by putting it along three dimensions:
+
+1. Payoff difference — some coordination equilibria have bigger payoffs than others;
+2. Likelihood of emergence — some conventions are more likely to emerge than others;
+3. Stability — once these conventions have emerged, they are unlikely to be deviated from.
+
+O'Connor proposes to layer these dimensions onto evolutionary models, namely those of replicator dynamics. It allows for specifying what Simons and Zollman mean by the likelihood of emergence (2) and stability of conventions (3).
+
+$$
+\begin{figure}[htb]
+\centering
+\begin{tabular}{c|cc}
+ &A&B\\ \hline
+A & (1,1) & (0,0) \\ \hline
+B & (0,0) & (x,x)
+\end{tabular}
+\caption{A coordination game where B equilibrium is more favorable given $x > 1$}
+\end{figure}
+$$
+
+Modelled as replicator dynamics, the game on the figure above has B equilibrium as more “natural” in the sense (1) — that of a higher payoff. The corollary of this is a larger basin of attraction. Given $x = 50$, the phase diagram for this game will look like this:
+
+<!--\begin{tikzpicture}[x = 1cm, y = 1cm]-->
+<!--\draw[->, >=latex] (0,0) -- (5.5, 0);-->
+<!--\draw[->, >=latex] (0,0) -- (0, 5.5);-->
+<!--\node at (5.5,-0.2) {$P_1$};-->
+<!--\node at (-0.2,5.5) {$P_2$};-->
+<!--\fill [fill=black!60] (4,4) rectangle (4.9, 4.9);-->
+<!--\node at (4.45 , 4.45) {98\%};-->
+<!--\fill [fill=white] (1 ,1 ) rectangle (1.9 , 1.9);-->
+<!--\node at (1.45 , 1.45) {2 \%};-->
+<!-- \draw[->, >=latex, very thick] (3,-2) -- (-2,-3);-->
+<!-- \draw[->, >=latex, very thick] (-3,-3)--(-3,-2);-->
+<!-- \end{tikzpicture}-->
+
+The basin of attraction for A equilibrium takes up 2% of space, while 98% for B. These basins can represent the probability that each outcome evolves, given little information about the initial conditions of the population. Thus, B is more likely to emerge and is more “natural” in the sense (2).
+
+To propose a measure of conventionality, O'Connor focuses on naturalness of conventions as their probability of emergence (2). As has been shown, different equilibria might evolve with different probability, and the sizes of basins indicate the amount of information we gain from examining an evolutionary process. The amount of information in this process is measaure of arbitrariness of a convention. It increases with greater uncertainty about what will evolve and decreases with less.
+
+The relevant information-theoretic measure is Shannon entropy. It measures the average amount of information transmitted through a channel: $$H(x) = \sum_{i} P(x_{i})I(x_{i})$$
+
+The amount of information gained from observing something is related to how much we learn or how surprised we are. It is calculated by summing the probabilities of the signals $P(x_i)$ multiplied by their information content $I(x_{i})$, with $I(x_{i})$ equal to $-\log_{2}P(x_{i})$ — the less probable a signal, the more information it carries. Overall, this weights the probability of each signal being sent by the amount of information it carries, giving a measure of average information in the channel.
+
+If other conditions hold, a channel has higher entropy when signals are more equiprobable or there are more signals. This is as opposed to a biased channel, with one signal sent 99% of the time, which has an entropy of just $0.08$. Therefore, more equiprobable signals and more signals lead to higher entropy. As probabilities $P(x_{i})$ represent the sizes of the basins of attraction, learning more from an evolutionary process increases the arbitrariness of an evolving phenomenon in question. Given more equilibria or if their basins of attraction are close to equal, the phenomenon is more arbitrary, contingent or “conventional”.
+
+It is possible to measure the naturalness of a convention similar to @simons2019 using $-\log_{2}P(x)$, which represents the information value of a particular outcome. The closer the value of $-\log_{2}P(x)$ to $0$, the more natural a convention. This measure can be used whenever we have clear probabilities for different evolutionary outcomes. However, if there is uncertainty about the initial conditions of a population, it is possible to assign probabilities to different population starting places and not their basins of attraction, for they will not track the probability of emergence correctly. Another case is stochastic dynamics, where each starting point might lead to multiple equilibria depending on chance events. Here, $P(x_{i})$ can be defined as percentage of emergence of different equilibria in an iterated game. For example, if 10 individuals play the game in the figure above with $x=10$ 10K times, it yields 6% chance of emergence of A, and 94% for B.
+
+As O'Connor notes, one problem with a proposed conventionality measure is the source of probabilities. It means that inputs in an entropy equation can be selected quite arbitrarily depending on a case. As there are no actual chances, it can be hard to determine, whether a convention might have been otherwise. To address this worry, she underlines the representatioin-dependence of the measure. It means that we can specify what is probability in terms of a particular model or data set, for instance, basins of attraction, emergence over multiple rounds of simulation, equilibrium time and percentage of societies adopting a behaviour. This eliminates worries about probability and chance in the world. However, representations should be tailored to the intended explanatory goals. However, as representations have limitations, the proposed measure should not be taken as an absolute truth.
+
+# ОСТАНОВИЛСЯ ЗДЕСЬ
+- Harms's functional naturalisic account conventions
+    - [[@harms2004]]
+    - [[10.2a_Natural-signs-are-structured-world-affairs-that-convey-information-through-their-structure]]
+
+***
 
 ### Epistemic overreach of common knowledge requirement
 Common knowledge denotes an epistemic state within a group wherein a proposition *p* is known by all members, and each member knows that every other member knows *p*, recursively extending to an infinite level of iterated knowledge. This recursive nature differentiates it from mere mutual knowledge, which necessitates only that each individual knows *p*. Consequently, common knowledge represents an idealized, stringent condition profoundly impacting coordination and strategic interaction, prompting investigation into its feasibility and real-world relevance.
@@ -611,6 +751,126 @@ For example, @binmore2008 challenged the infinite levels of common knowledge pos
 
 @guala2020 put forward a similar argument about "belief-less" coordination where most everyday conventions do not require iterated beliefs and hence cognitive capacities for meta-representation. Means-ends rationality and cheap heuristics are said to be sufficient.
 
+ @schiffer1972 conceptualized common knowledge as an *infinite hierarchy of mutual knowledge*, defined recursively as follows:
+
+- Everyone knows proposition $p$:
+- Everyone knows that everyone knows $p$:
+- This recursion continues for $n$ levels, where $n \to \infty$:
+
+Formally, common knowledge $C(p)$ is the infinite conjunction:
+
+$$
+C(p) = \bigwedge_{n=1}^{\infty} K^n(p)
+$$
+
+where $K^n(p)$ denotes the $n$-th level of mutual knowledge. This approach emphasizes *communication* as the mechanism to elevate mutual knowledge into common knowledge. For example, if two children both see mud on each other’s faces, they initially have mutual knowledge as both know there’s at least one muddy face. Only after public announcements do they iteratively reach mutual knowledge₂, mutual knowledge₃, etc., converging toward common knowledge.
+
+Aumann formalized common knowledge using *information partitions* over possible states of the world. If $\Omega$ is the set of possible states, and $\mathcal{P}_i$ represents the information partition of agent $i$, common knowledge is:
+
+An event $E \subseteq \Omega$ at state $\omega$ if the cell of the *meet* of the agents’ partitions containing $\omega$ is a subset of $E$:
+
+A key result is Aumann’s Agreement Theorem: If two rational agents with common priors have common knowledge of their posterior probabilities about an event $E$, their probabilities must coincide. Formally, if $C(p_i(E) = q_i)$ for agents $i = 1, 2$, then $q_1 = q_2$. This framework avoids explicit infinite regress by defining common knowledge as a fixed point in the agents’ information partitions.
+
+Schiffer’s model aligns with intuitive examples like the muddy children puzzle, where announcements progressively deepen mutual knowledge. Aumann’s approach, by contrast, provides a mathematical foundation for strategic interactions, showing how common knowledge enforces consensus among Bayesian agents. While Schiffer’s hierarchy is often seen as philosophically intuitive, Aumann’s formalism has been more widely adopted in economics and computer science due to its technical precision. Both, however, agree that common knowledge transcends mere mutual understanding, requiring agents to account for *each other’s epistemic states* in a systematic way.
+
+The relationship between Lewis’s notion and these subsequent formalizations remains debated. Cubitt and Sugden [@cubitt2003] suggested a fundamental distinction between Lewis’s perspective and later theories, while Vanderschraaf [-@vanderschraaf1998] and Sillari [-@sillari2005] argued for continuity between them.
+
+Cubitt and Sugden (2003) argue for a fundamental *discontinuity* between David Lewis’s concept of common knowledge (as outlined in *Convention*, 1969) and the formalizations of Schiffer/Aumann, rooted in differing philosophical foundations and operational assumptions. Here’s a breakdown of their critique:
+
+For Lewis, common knowledge is a *social construct* tied to conventions. Agents coordinate because they recognize a shared basis for action, not because they explicitly compute infinite epistemic hierarchies. Schiffer formalizes common knowledge as an infinite tower of mutual knowledge $C(p) = \bigwedge_{n=1}^\infty K^n(p)$. Aumann models it via information partitions, common knowledge as the meet of agents’ partitions in $\Omega$. Both frameworks presuppose agents with unbounded logical capacity to process infinite iterations or partition intersections which contrasts woth Lewis’s emphasis on pragmatic nature of coordination.
+
+To substantiate the sharp distinction between Lewis's and Shiffman/Aumann notions of common knowledge, @cubitt2003 highlight five key areas of divergence: 
+
+- Epistemic and practical foundations
+    - Lewis’s common knowledge is action-oriented and rooted in conventions (e.g., stopping at red lights)
+    - Schiffer/Aumann treat it as a logical property of agents’ knowledge structures, decoupled from real-world coordination.  
+
+- Role of salience
+    - Lewis requires salient cues (e.g., focal points) to bootstrap common knowledge.  
+    - Schiffer/Aumann exclude salience, relying instead on axiomatic mutual reasoning.  
+
+- Bounded and unbounded rationality  
+    - Lewis’s agents operate under bounded rationality—common knowledge emerges from practical precedents, not recursive deductions.  
+    - Schiffer/Aumann assume agents can process infinite hierarchies or partition operations, implying unbounded cognitive capacity.  
+
+- Necessity of publicity  
+    - Lewis emphasizes public events (e.g., a fire alarm) as triggers for common knowledge.  
+    - Schiffer/Aumann reduce publicity to abstract logical or set-theoretic constructs (e.g., public announcements as partition refinements).  
+
+Cubitt and Sugden contend that Schiffer/Aumann’s formalisms fail to capture the pragmatic nature of common knowledge which involves culture and history in Lewis’s work. This disconnect, according to Cubitt and Sugden, renders Schiffer/Aumann models ill-suited for explaining real-world scenarios Lewis sought to address, such as language conventions or social norms. Their critique underscores that Lewis’s common knowledge is *procedural* and rooted in coordination practices, while Schiffer/Aumann’s is *declarative*, being a static property of knowledge structures. This philosophical and operational gap explains why formal models struggle to replicate the dynamism of Lewis’s convention-based framework.
+
+@vanderschraaf2023 argue for *continuity* between Lewis’s convention-based notion of common knowledge and the formalizations of Schiffer/Aumann, positing that these frameworks share foundational goals and can be reconciled through careful interpretation. Their analysis emphasizes complementary perspectives rather than irreconcilable differences.
+
+To start, both accounts (Lewis's and Shiffer/Aumann's) share a goal of explaining coordination.  Vanderschraaf and Sillari contend that Schiffer/Aumann’s models *operationalize* the abstract conditions Lewis presupposes in his conventions. For example, Aumann’s partitions can encode the "publicity" of events central to Lewis’s conventions, while Schiffer’s hierarchy mirrors the iterative reasoning agents use to infer shared expectations.
+
+Lewis’s emphasis on *public events* like fire alarm as triggers for common knowledge aligns with Schiffer/Aumann’s focus on *public announcements* or *partition refinements*:
+
+- In Aumann’s model, a public event $$ E $$ corresponds to a partition cell known to all agents, which becomes common knowledge after observation
+- Schiffer’s hierarchy similarly requires public communication to escalate mutual knowledge.  
+
+This bridges Lewis’s pragmatic notion of salience like a red traffic light with formal models’ requirement of shared information structures.
+
+Next, Vanderschraaf and Sillari argue that Schiffer’s infinite hierarchy and Aumann’s partitions can accommodate *bounded rationality* in practice:  
+
+- Agents in real-world scenarios need not compute infinite recursions explicitly. Instead, established conventions act as *focal points* that *approximate* common knowledge after a few iterations
+- For example, drivers stopping at a red light rely on a convention that implicitly assumes mutual knowledge up to a pragmatically sufficient level like $K^2(p)$ or $K^3(p)$, bypassing infinite regress. This interpretation aligns closely with cognitive realism of *relevance theory* [@wilson1999; @sperber2002], where individuals arrive at mutual understanding having found the minimally interpretable meaning of a signal which aligns with context. It is also sometimes called *fast and frugal* heuristics, which optimizes cognitive resources by using simple rules like "stop searching if found minimally adequate meaning" [@gigerenzer1999; @gigerenzer2002]. This aligns with experimental evidence using "cognitive hierarchy theory" showing that humans rarely reason beyond 2–3 levels of mutual knowledge in coordination games [@bardsley2010]
+
+As Vanderschraaf and Sillari continue, Lewis’s conventions can be mapped to **fixed points** in Aumann’s partition framework:  
+
+- A convention like corresponds to a *stable equilibrium* where agents’ knowledge partitions align with shared social rules
+- Similarly, Schiffer’s hierarchy converges to a fixed point $C(p)$ as mutual knowledge deepens through repeated interactions.  
+
+Thus, conventions are not merely cultural artifacts but *emergent properties* of epistemic structures formalized by Schiffer/Aumann.
+
+Vanderschraaf and Sillari reinterpret Lewis’s “salience” as a mechanism for *partition refinement* or *hierarchy truncation*:  
+
+- A salient event publicly signals a shared context, allowing agents to coordinate without infinite reasoning
+- This can be modeled in Aumann’s framework by restricting the state space $\Omega$ to a subset where salience is common knowledge.  
+
+Both Lewis's and Schiffer/Aumann frameworks implicitly treat common knowledge as a *dynamic process* rather than a static state:  
+
+- *Lewis*: Conventions evolve through precedent and reinforcement
+- *Schiffer/Aumann*: Mutual knowledge escalates via announcements (Schiffer) or Bayesian updating (Aumann).  
+
+This shared emphasis on iterative learning undermines Cubitt and Sugden’s “discontinuity” claim, as both traditions acknowledge that common knowledge is *constructed* through interaction.
+
+Overall, Vanderschraaf and Sillari’s continuity thesis hinges on three claims:  
+
+1. Schiffer/Aumann’s formalisms generalize Lewis’s conventions by specifying their epistemic preconditions.  
+2. Bounded rationality in practice truncates infinite hierarchies to match Lewis’s emphasis on pragmatic coordination.  
+3. Salience and publicity act as bridges between abstract formal models and real-world conventions.  
+
+By framing Lewis’s work as a *procedural instantiation* of Schiffer/Aumann’s declarative structures, they argue that the frameworks are complementary, not contradictory.
+
+***
+# ОСТАНОВИЛСЯ ЗДЕСЬ
+## Salience, epistemic and "natural"
+
+## Arbitrariness and normativity
+* Convention space: mapping conventions theories across two dimensions ↓
+* [When and why Conventions cannot Be Social Institutions | Philosophia](https://link.springer.com/article/10.1007/s11406-019-00125-0) — 5 dimensions of conventions
+
+
+### Functionality vs. arbitrariness: "choosing" conventions
+* [CEEOL - Article Detail](https://www.ceeol.com/search/article-detail?id=694410)
+* [CEEOL - Article Detail](https://www.ceeol.com/search/article-detail?id=1007657)
+
+## Evolution of social conventions
+Skyrms pioneered a path towards dynamic evolutionary models of coordination and convention
+
+- 🔥 @lutz2023
+
+- gintis's view of social norms as correlation + ess
+    - [[private-property-equilibrium-generalizes-Bourgeois-equilibrium-by-endogenizing-costs]]
+- Guala's social institutions as evolved normatively-driven conventions
+    - [[11.1-Institutions-are-rules-in-equilibria-represented-symbolically-by-theoretical-terms.md]]
+        - [[11.1a_Normative-rules-can-transform-cooperation-problem-into-coordination-problem-by-increasing-delta-parameter.md]]
+            - [[11.1a1_Norm-triggering-signals-(cues)-might-differ-in-distinct-cultures.md]]
+            - [[11.1a2_Social-norms-might-be-supported-by-a-variety-of-different-mechanisms.md]]
+- the problem: 🔥 [[10.1b_Human-and-animal-conventions-differ-in-scope-of-actionable-signals.md]]
+- Naturalization of social conventions: connecting evolution and deliberation
+
+***
 ### Connection between conventions and coordination problems
 Some scholars argue that conventions are not necessary for solving coordination problems, undermining Lewis's theory. @sugden2005 and @vanderschraaf1998 argue that conventions need not necessarily be solutions for coordination problems—fashion or property conventions are not like this, for example[^coordination-fading]. Both of them have developed generalized accounts which do not require conventions to solve coordination problems. @davis2003, Marmor [-@marmor1996; -@marmor2009], @miller2001, Sugden [-@sugden1986; -@sugden2004] have argued that conventions need not be coordination equilibria.
 
@@ -655,9 +915,9 @@ Millikan’s biological perspective frames conventions as analogous to evolution
 The notion of function will be important later as it is used in contemporary theories of social institutions as strategic equilibria [@guala2015] which try to smuggle biological functions and generate major controversy over the very notion and its relation to convention.
 
 ## Extensions and refinements
-Lewis's theory of conventions became a starting point for formal research on conventions and later scholars refined his theory, sometimes to an unrecognizable extent. There are many refinements, but we will consider only most important for the topic of emergence of social institutions from animal conventions. In this section, we survey theories explicitly citing Lewis as a baseline. 
+Lewis's theory of conventions became a starting point for formal research on conventions and later scholars refined his theory, sometimes to an unrecognizable extent. There are many refinements, but we will consider only most important for the topic of emergence of social institutions from animal conventions. We will cover equilibria concept refinements by Vanderschraaf and Skyrms and the notion of salience in its relation to arbitrariness/functionality of conventions. As we will see, all these aspects will come together in shaping the notion of naturalistic account of social institutions.
 
-As I mentioned in the previous section, imprecise equilibrium concept was among the popular criticisms of Lewis's theory, and this component has been actively worked and elaborated on. Two notable reformulations of conventions are as *correlated equilibria* (CE) and *evolutionary stable strategies* (ESS). 
+As I mentioned in the previous section, imprecise equilibrium concept was among the popular criticisms of Lewis's theory, and this component has been actively worked and elaborated on. Two notable reformulations of conventions are as *correlated equilibria* (CE) and *evolutionary stable strategies* (ESS). We start by studying those.
 
 ### Vanderschraaf's *inductive deliberation* as a source of salience
 Vanderschraaf [-@vanderschraaf1995; -@vanderschraaf1998; -@vanderschraaf2001] redefined social conventions as CE through *inductive learning*, positioning conventions as foundational to achieving justice as mutual advantage. He formalized the notion of salience (or focal points) as information partitions and employed the *Dirichlet rule*[^dirichlet] to show how agents sequentially update their beliefs about others' strategies to gradually arrive at an equilibrium.
@@ -867,557 +1127,104 @@ As per criticisms of Skyrms's approach to Lewisian signaling games, @martinez201
 
 Overall, Skyrms's extension of Lewis's theory of conventions has dropped rationality requirements and introduced a more naturalistic account of signaling systems in a broader context.
 
+
+### Salience in coordination games: epistemic and natural 
+Although both Vanderschraaf's and Skyrms's refinements of Lewis's theory might seem concerned  only with its formal details, they essentially tackle a wider problem of *salience* or *focality* of strategies which is tightly connected with "common knowledge" problem: how and why some strategies (and profiles thereof) "stand out" in the face of other arbitrary arrangements for potential conventions.  Vanderschraaf formalizes salience as information partition of agents' joint probability distribution and Skyrms formalizes it as emergent property of interactional asymmetry of agents' or environment's properties in evolutionary rather than Bayesian "update". Here we briefly review approaches to the problem of salience of strategies as they will be relevant in the next chapters.
+
+We can distinguish between two types of salience: epistemic [@zachnik2021; @mehta2021] and natural [@vandrunen2023]. Broadly speaking, epistemic salience has to do with beliefs of agents, whereas natural salience arises from interactional asymmetries of agents an environment.
+
+For Lewis, as he wanted to build upon Schelling's concept of "focal point", salience was unquestionable, but its very notion generated problems as to why and how certain features of environment, history and culture become relevant as cues external to coordination games in the first place? Schelling pointed out that to look for and *recognize patterns* might be an essential feature of human nature [@schelling1980, 104]. Observable patterns, he argued, presuppose their observability, hence it is rational to expect an opponent to behave according to such patterns and thus deduce intentions of another opponent [@schelling1980, 104]. The notion of "public signals". Consider an example from @guala2015.
+
+Dinka and Nuer tribes graze their cattle on two sides of the river Sobat. After the river dried up, its physical barrier disappeared, creating a hawk-dove conflict over grazing lands where both tribes risked costly clashes if they chose the same territory. The dry riverbed, however, remained a salient and mutually recognized landmark, providing a natural coordination device that allowed the tribes to condition their grazing strategies on its location, thereby avoiding conflict without direct communication. This focal point effectively transformed the game by correlating strategies and expectations, stabilizing a peaceful equilibrium. The game matrix below has strategies "Graze", "Not graze", "Graze if North" and "Graze if South".
+
+<!--\begin{table}[h]-->
+<!--\centering-->
+<!--\begin{tabular}{|c|c|c|c|}-->
+<!--\hline-->
+<!--& $G$ & $NG$ & $GIS$ \\-->
+<!--\hline-->
+<!--$G$ &$-1$ &$2$ &$0.5$\\-->
+<!--\hline-->
+<!--$NG$ &$0$ &$1$ &$0.5$ \\-->
+<!--\hline-->
+<!--$GIN$ &$-0.5$ &$1.5$ &$1.0$ \\-->
+<!--\hline-->
+<!--\end{tabular}-->
+<!--\caption{\small Grazing game: the player strategies are Graze, Not Graze and Graze if North / Graze if South}-->
+<!--\end{table}-->
+
+$$
+\begin{array}{|c|c|c|c|}
+\hline
+& $G$ & $NG$ & $GIS$ \\
+\hline
+$G$ &$-1$ &$2$ &$0.5$\\
+\hline
+$NG$ &$0$ &$1$ &$0.5$ \\
+\hline
+$GIN$ &$-0.5$ &$1.5$ &$1.0$ \\
+\hline
+\end{array}
+$$
+
+This notion of observability was interpreted by @sugden2006 as focal points being underpinned not by instrumental but *pragmatic rationality* which is induced from its empirical success. Schelling stressed the "perceptual and suggestive element in the formation of mutually consistent expectations" [@schelling1980, 83-84] which is essential for focal points, as the authors note. It means that there are no logical restrictions on converging for expectations between players. @herrmann2022 give a vivid example: 
+
+> In a signalling game, when a sender sends a signal to her partner, the partner responds to that signal in a specific way. But in the real world, her partner might not know what part of the act the sender performs is meant to be the signal. Suppose she signals by waving a red flag. What is the signal here? Is it the colour? The fact that it is a flag? The pattern in which she waves it? Where she stands when she is waving it? [@herrmann2022, 2].
+
 # ОСТАНОВИЛСЯ ЗДЕСЬ
 
-### Gintis
+Sugden and Zamarrón suggest three features of Schelling's focal point analysis: 
 
-Gintis addressed key epistemic and conceptual gaps in Lewis’s original framework. He contended that achieving coordination as in Lewisian game requires agents to have mutually consistent beliefs based on shared inductive standards. It means there must be some guarantee that agents have the same rationality. Lewis implied this and did not question, but this is a strong assumption which needs substantiation, according to Gintis. He critiqued Lewis's theory for not fully explaining how shared beliefs responsible for converging on an equilibrium arise. According to him [@gintis2009a] Lewis’s ‘indication’ relies on shared knowledge but lacks a formal explanation of the cognitive and social processes involved.
+- the players' presumption of the solvability of coordination problems, which is based on empirical success of real agents;
+- players' reasoning in finding focal points is not guided by principles of truth and validity essential for deductive systems;
+- players reason fully rationally in finding focal points. 
 
-<!--***-->
-<!--Herbert Gintis’s refinement of David Lewis’s theory of conventions addresses key epistemic and conceptual gaps in Lewis’s original framework, enhancing its explanatory power and applicability within game theory and the behavioral sciences.-->
-<!---->
-<!--## Background: Lewis’s Theory of Conventions-->
-<!---->
-<!--David Lewis (1969) defined a *convention* as a regularity $$ R $$ in the behavior of members of a population $$ P $$ in a recurring situation $$ S $$ that satisfies three conditions:-->
-<!---->
-<!--1. Everyone conforms to $$ R $$.-->
-<!--2. Everyone expects everyone else to conform to $$ R $$.-->
-<!--3. Everyone prefers to conform to $$ R $$ on the condition that others do so, making $$ R $$ a coordination equilibrium in $$ S $$.-->
-<!---->
-<!--Lewis emphasized that conventions solve coordination problems by selecting among multiple equilibria in coordination games. Crucially, Lewis introduced the concept of *common knowledge* as an epistemic foundation for conventions: a proposition $$ p $$ is common knowledge among a group $$ G $$ if everyone knows $$ p $$, everyone knows that everyone knows $$ p $$, and so on ad infinitum. This infinite hierarchy of mutual knowledge ensures stable expectations and coordination[2][5].-->
-<!---->
-<!--## Limitations in Lewis’s Account-->
-<!---->
-<!--While Lewis’s theory is seminal, it assumes without fully explaining how common knowledge and shared expectations arise. The key epistemic challenge is explaining the *mechanism* by which agents come to share beliefs and coordinate on a particular equilibrium. Lewis’s notion of “indication” (how an event $$ A $$ indicates a proposition $$ p $$ to agents) relies on inductive reasoning and shared background but lacks formalization of the cognitive or social processes involved[2][5].-->
-<!---->
-<!--## Gintis’s Refinement: Epistemic and Normative Foundations-->
-<!---->
-<!--Herbert Gintis refines Lewis’s theory by explicitly integrating epistemic game theory and social norm theory to explain the emergence and stability of conventions beyond mere payoff considerations. His refinement can be understood through the following points:-->
-<!---->
-<!--### 1. Explicit Modeling of Epistemic Conditions-->
-<!---->
-<!--Gintis stresses that conventions require *not only* that agents have preferences aligned with coordination equilibria but also that they share *common knowledge* or at least *common reason to believe* the relevant facts. He highlights that:-->
-<!---->
-<!--- Common knowledge is a strong condition and often unrealistic; instead, *common reason to believe* or *mutual awareness* may suffice.-->
-<!--- Agents must have *awareness structures* that allow them to recognize the relevance of others’ beliefs and expectations.-->
-<!--- Coordination depends on *higher-order beliefs*—beliefs about others’ beliefs—and on the capacity for *symmetric reasoning* (agents reason similarly about the situation).-->
-<!---->
-<!--Formally, if $$ K_i(p) $$ denotes “agent $$ i $$ knows $$ p $$,” then common knowledge of $$ p $$ means:-->
-<!---->
-<!--$$-->
-<!--p \wedge \bigwedge_{n=1}^\infty \bigwedge_{i_1, \ldots, i_n \in G} K_{i_1} K_{i_2} \cdots K_{i_n} (p)-->
-<!--$$-->
-<!---->
-<!--Gintis underlines how this infinite chain is necessary for stable coordination but also explores weaker epistemic states that can sustain conventions in practice[2][5].-->
-<!---->
-<!--### 2. Role of Salience and Symmetric Reasoning-->
-<!---->
-<!--Gintis builds on Lewis’s insight that *salience*—the obviousness or naturalness of a solution—helps agents coordinate by making certain equilibria focal. He formalizes how salience depends on:-->
-<!---->
-<!--- The *symmetry* of agents’ reasoning processes.-->
-<!--- The *shared background* and *inductive standards* that make certain signals or behaviors stand out as coordination devices.-->
-<!--- The *precedent* or history of repeated interactions that create expectations about what others will do.-->
-<!---->
-<!--Thus, conventions are not just equilibria but *socially constructed focal points* sustained by shared cognitive frameworks[5].-->
-<!---->
-<!--### 3. Integration of Social Norms and Institutional Structures-->
-<!---->
-<!--Gintis argues that conventions are embedded in a larger normative and institutional context. He emphasizes:-->
-<!---->
-<!--- Conventions as *correlated equilibria* supported by social norms, signaling, and enforcement mechanisms.-->
-<!--- The insufficiency of purely individualistic rationality: conventions emerge from *collective mental constructs* and *social epistemology*.-->
-<!--- The role of *constitutive rules* that define social practices and make certain behaviors meaningful and expected.-->
-<!---->
-<!--This moves beyond Lewis’s model by incorporating the social and institutional scaffolding that sustains conventions over time[4][5].-->
-<!---->
-<!--### 4. Formal and Evolutionary Extensions-->
-<!---->
-<!--Gintis supplements Lewis’s static equilibrium concept with:-->
-<!---->
-<!--- **Epistemic game theory**, modeling agents’ knowledge and belief dynamics explicitly.-->
-<!--- **Evolutionary game theory**, explaining how conventions evolve through learning, imitation, and adaptation in populations.-->
-<!---->
-<!--This dual approach captures both the rational deliberation and the adaptive processes behind conventions[1][2].-->
-<!---->
-<!--## Summary of Gintis’s Refinement in Formal Terms-->
-<!---->
-<!--- Lewis’s coordination equilibrium $$ R $$ solves the game $$ G $$ with multiple equilibria.-->
-<!--- Gintis adds epistemic conditions: For each agent $$ i $$, there exists a state $$ \omega $$ such that-->
-<!---->
-<!--$$-->
-<!--\omega \in K_i \bigcap_{j \in P} K_j (R) \quad \text{and} \quad \omega \in K_i K_j (R) \quad \text{for all } j,-->
-<!--$$-->
-<!---->
-<!--ensuring mutual knowledge or reason to believe $$ R $$.-->
-<!---->
-<!--- Salience $$ S $$ acts as a coordination device making $$ R $$ focal:-->
-<!---->
-<!--$$-->
-<!--S: \Omega \to \{0,1\}, \quad S(\omega) = 1 \iff \text{R is salient at } \omega,-->
-<!--$$-->
-<!---->
-<!--where $$ \Omega $$ is the state space.-->
-<!---->
-<!--- Social norms $$ N $$ and institutional rules $$ I $$ provide correlated signals that sustain $$ R $$:-->
-<!---->
-<!--$$-->
-<!--N, I: \Omega \to \text{Signals}, \quad \text{such that } \Pr(R | N, I) \text{ is high}.-->
-<!--$$-->
-<!---->
-<!--## Conclusion-->
-<!---->
-<!--Herbert Gintis’s refinement of Lewis’s theory of conventions advances the original framework by rigorously incorporating epistemic conditions—common knowledge and mutual awareness—and emphasizing the social, normative, and institutional underpinnings of conventions. He situates Lewis-style coordination games within a richer model where shared beliefs, salience, and social norms jointly sustain stable conventions, bridging the gap between abstract equilibrium concepts and real-world social phenomena. This refinement forms a cornerstone of Gintis’s broader project to unify behavioral sciences through game-theoretic and epistemic analysis.-->
-<!---->
-<!--***-->
-<!---->
-<!--Gintis argues this framework fails to explain how such shared mental constructs arise in practice[^3][^4]. Specifically:-->
-<!---->
-<!--1. **Unrealistic Epistemic Demands**: The infinite recursion of mutual knowledge is computationally intractable for real-world agents. Lewis assumes but does not model the cognitive or social processes enabling agents to approximate common knowledge[^3][^5].-->
-<!--2. **Lack of Emergent Social Properties**: Lewis treats conventions as equilibria sustained by individual rationality alone, ignoring the role of **social norms**, **institutional signals**, and **cultural evolution** in shaping shared expectations[^1][^3]. For example, driving on the right or left is not merely a coordination equilibrium but a norm enforced by law and social sanction[^1].-->
-<!--3. **No Account of Symmetric Reasoning**: Lewis’s agents lack a mechanism for **symmetric reasoning**—the ability to infer others’ beliefs from one’s own. Gintis stresses that shared mental constructs require agents to reason analogously, guided by common cultural frameworks or norms[^3][^5].-->
-<!---->
-<!--In short, Lewis’s theory lacks a *generative mechanism* for the shared mental states it presupposes. Gintis concludes that conventions cannot be reduced to individual rationality but depend on **emergent social properties** that coordinate beliefs[^3][^4].-->
-<!---->
-<!------->
-<!---->
-<!--## Gintis’s Epistemic Game Theory Intervention-->
-<!---->
-<!--### Source and Logic-->
-<!---->
-<!--Gintis’s intervention arises from synthesizing **Bayesian rationality** with **sociological theories of norms** and **evolutionary game theory**[^2][^3]. He argues that classical game theory’s failure to explain coordination stems from its neglect of:-->
-<!---->
-<!--- **Correlated equilibria**: Strategies guided by external signals (e.g., social norms).-->
-<!--- **Epistemic conditions**: How agents acquire and update beliefs about others’ knowledge.-->
-<!---->
-<!---->
-<!--### Key Components-->
-<!---->
-<!--1. **Correlated Equilibria as Social Norms**:-->
-<!--   Social norms act as **correlation devices**, directing agents to strategies that form equilibria. For example, a norm \$ N \$ partitions the strategy space \$ S \$ into subsets, with agents choosing \$ s_i \in S_i \$ conditional on \$ N \$. This creates a correlated equilibrium:-->
-<!---->
-<!--$$-->
-<!--\Pr(s_i, s_{-i} | N) = \Pr(s_i | N) \Pr(s_{-i} | N),-->
-<!--$$-->
-<!---->
-<!--where \$ s_{-i} \$ denotes others’ strategies[^3][^5].-->
-<!---->
-<!--2. **Symmetric Reasoning and Common Priors**:-->
-<!--   Agents achieve coordination via **symmetric reasoning**—a cognitive capacity to infer others’ beliefs from shared norms or cultural frameworks. Formally, if agents are symmetric reasoners, mutual knowledge of a norm \$ N \$ implies:-->
-<!---->
-<!--$$-->
-<!--K_i(N) \Rightarrow K_i K_j(N) \quad \forall i,j,-->
-<!--$$-->
-<!---->
-<!--reducing the epistemic burden of common knowledge[^3][^5].-->
-<!---->
-<!--3. **Evolutionary Foundations**:-->
-<!--   Gintis integrates evolutionary game theory to explain how norms and symmetric reasoning emerge. Populations evolve **prosocial traits** (e.g., honesty) and **punishment mechanisms** that stabilize cooperative equilibria[^1][^3].-->
-<!---->
-<!--### Implications-->
-<!---->
-<!--- **Rejection of Methodological Individualism**: Social norms and common priors are emergent properties irreducible to individual rationality[^2][^4].-->
-<!--- **Unification of Behavioral Sciences**: Game theory becomes a bridge between economics (rationality), sociology (norms), and biology (evolution)[^2][^3].-->
-<!---->
-<!--By formalizing the epistemic and social foundations of coordination, Gintis’s framework explains how shared mental constructs arise—a mechanism absent in Lewis’s original theory[^3][^5].-->
-<!--***-->
-<!--Herbert Gintis critiques David Lewis’s theory of conventions primarily on the grounds that it assumes rather than explains the emergence of shared mental constructs necessary for coordination. Lewis’s framework relies on the concept of *common reason to believe* (CRtB), which requires that members of a population have mutual and higher-order beliefs about certain propositions relevant to coordination. Formally, Lewis defines CRtB as follows: there exists a state of affairs \$ A \$ such that-->
-<!---->
-<!--1. Everyone in the population \$ P \$ has reason to believe that \$ A \$ holds;-->
-<!--2. \$ A \$ indicates to everyone in \$ P \$ that everyone in \$ P \$ has reason to believe that \$ A \$ holds;-->
-<!--3. \$ A \$ indicates to everyone in \$ P \$ that a proposition \$ x \$ (such as a convention) holds.-->
-<!---->
-<!--This structure is designed to generate an infinite hierarchy of mutual beliefs, enabling coordination[^1].-->
-<!---->
-<!--However, Gintis points out that Lewis’s theory does not provide a *mechanism* by which agents come to share these mental constructs or inductive standards. In particular:-->
-<!---->
-<!--- The assumption that agents share *symmetric reasoning*—meaning that if a proposition \$ A \$ indicates \$ x \$ to one agent, it does so to all others—is strong and often unrealistic. Agents may have different perceptions or interpret the same information differently, undermining the symmetry condition[^1].-->
-<!--- Lewis’s framework does not explain how agents develop *common background information* or *shared inductive standards* that allow them to interpret signals and coordinate expectations. The theory presupposes these shared cognitive frameworks rather than modeling their emergence or maintenance.-->
-<!--- The infinite regress of mutual knowledge or reason to believe is epistemically demanding and lacks a plausible cognitive or social process to realize it in practice.-->
-<!---->
-<!--Consequently, Gintis argues that Lewis’s theory is incomplete because it treats conventions as equilibria sustained by shared mental states without explaining how those states arise or are sustained. This gap highlights the need for a richer account of the social and epistemic processes that generate and stabilize shared mental constructs necessary for coordination[^1].-->
-<!---->
-<!------->
-<!---->
-<!--## Gintis’s Epistemic Game Theory Intervention: Source, Logic, and Explanation-->
-<!---->
-<!--To address the shortcomings in Lewis’s account, Gintis introduces an epistemic game theory framework that explicitly models the knowledge and belief structures underlying coordination and conventions. This intervention draws on the intersection of game theory, epistemic logic, and social norm theory.-->
-<!---->
-<!--### Source and Motivation-->
-<!---->
-<!--Gintis’s epistemic game theory builds on the recognition that classical game theory’s solution concepts, such as Nash equilibria, assume agents have common knowledge of the game structure and rationality but do not explain how such knowledge arises. The motivation is to provide a formal apparatus that captures *higher-order beliefs*—beliefs about others’ beliefs—and the cognitive processes agents use to coordinate in the absence of perfect common knowledge[^1].-->
-<!---->
-<!--### Logical Structure-->
-<!---->
-<!--The epistemic approach formalizes agents’ reasoning through modal operators representing knowledge and reason to believe. For agent \$ i \$, \$ K_i(x) \$ denotes “agent \$ i \$ knows proposition \$ x \$,” and \$ R_i(x) \$ denotes “agent \$ i \$ has reason to believe \$ x \$.” The framework includes axioms such as:-->
-<!---->
-<!--- **Closure under indication**: If \$ x \$ indicates \$ y \$ to agent \$ i \$, then \$ R_i(x) \$ implies \$ R_i(y) \$:-->
-<!---->
-<!--$$-->
-<!--[R_i(x) \cap (x \text{ indi } y)] \subseteq R_i(y)-->
-<!--$$-->
-<!---->
-<!--- **Transitivity of indication**: If \$ x \$ indicates \$ y \$ and \$ y \$ indicates \$ z \$, then \$ x \$ indicates \$ z \$:-->
-<!---->
-<!--$$-->
-<!--[(x \text{ indi } y) \cap (y \text{ indi } z)] \subseteq (x \text{ indi } z)-->
-<!--$$-->
-<!---->
-<!--- **Higher-order indication**: If \$ x \$ indicates to \$ i \$ that \$ j \$ has reason to believe \$ y \$, and \$ i \$ has reason to believe that \$ y \$ indicates \$ z \$ to \$ j \$, then \$ x \$ indicates to \$ i \$ that \$ j \$ has reason to believe \$ z \$:-->
-<!---->
-<!--$$-->
-<!--[(x \text{ indi } R_j(y)) \cap R_i(y \text{ ind}_j z)] \subseteq [x \text{ indi } R_j(z)]-->
-<!--$$-->
-<!---->
-<!--These axioms formalize how agents propagate and update their beliefs and reason about others’ reasoning, enabling the emergence of mutual expectations necessary for coordination[^1].-->
-<!---->
-<!--### Explanation and Implications-->
-<!---->
-<!--Gintis’s epistemic game theory explains coordination as a process where agents use *indication relations* and *reason to believe* to build up mutual expectations without requiring full common knowledge. It recognizes that:-->
-<!---->
-<!--- Agents may rely on *correlated signals* or social norms as coordination devices that reduce epistemic demands.-->
-<!--- Symmetric reasoning is a strong but sometimes approximated condition; agents may hold *distributed reason to believe* where beliefs are consistent but not identical.-->
-<!--- The framework bridges individual reasoning and social structure by showing how shared mental constructs can emerge from the interaction of agents’ beliefs and signaling mechanisms.-->
-<!---->
-<!--This intervention thus provides the missing mechanism in Lewis’s theory by modeling how shared mental constructs—common reason to believe and expectations—can be generated and sustained through epistemic processes formalized within game theory[^1].-->
+As Schelling writes, "most situations - perhaps every situation for people who are practiced at this kind of game - provides some clue for coordinating behavior, some focal point for each person's expectation of what the other expects him to expect to be expected to do" [@schelling1980, 57].
 
-- [[Private-property-equilibrium-generalizes-Bourgeois-equilibrium-by-endogenizing-costs|Private property equilibrium generalizes Bourgeois equilibrium by endogenizing costs]]
+The inherent difficulty with formalizing the idea of focal points consists of the "unstructured and unbounded set of possible coordination devices" [@sugden2006, 616], which @herrmann2022 illustrate with their red flag example. It means that any source of focality might present a theory in itself.
 
-<!---->
-<!--Refinements and Game Theory Applications**  Robert Aumann\'s 1976 paper \"Agreeing to Disagree\" stands as a landmark contribution that brought the concept of common knowledge into the formal realm of game theory and economics.^1^ Aumann provided a rigorous, set-theoretic definition of common knowledge based on partitions of the state space, offering a powerful mathematical tool for analyzing strategic interactions. His formalization defined an event as common knowledge at a particular state if that event includes all states that any player considers possible, all states that any player considers possible for any other player, and so on, ad infinitum.^43^ This rigorous definition enabled the formal analysis of how information is shared and understood among rational agents.  One of the most significant results stemming from Aumann\'s formalization is the \"agreeing to disagree\" theorem.^40^ This theorem demonstrates that if two or more rational agents share a common prior probability distribution over the states of the world, and if their posterior probabilities about a particular event become common knowledge among them, then these posterior probabilities must be equal. This result has profound implications for understanding belief revision, information aggregation, and the potential for consensus among rational agents. The very fact that a disagreement in probabilities becomes common knowledge implies that the agents should revise their beliefs until they converge, assuming they started with the same underlying beliefs and are reasoning rationally based on their information.  -->
-<!---->
-<!--Robert Aumann’s 1976 paper “Agreeing to Disagree” established a landmark formalization of common knowledge within game theory and economics.^1^ Aumann’s rigorous, set-theoretic definition defined an event as common knowledge at a particular state if it encompasses all states considered possible by every player, recursively extending to all players’ considerations of other players’ possibilities ad infinitum.^43^ This enabled the formal analysis of information sharing and understanding among rational agents. The resulting “agreeing to disagree” theorem.^40^ posits that if two or more rational agents share a common prior probability distribution and their posterior probabilities about an event become common knowledge, those posterior probabilities must converge. This fundamentally demonstrates belief revision, information aggregation, and the potential for consensus among rational agents, implying that agents should iteratively adjust their beliefs towards convergence given a shared prior and rational, information-based reasoning.-->
+[@mussweiler2012] note that cognitive selectivity is an evolved characteristic of human cognitive system that plays a major role in individuals' successful coping with such inherently complex tasks as coordination. It is a fundamental mechanism of sense-making and navigating social worlds. 
 
-<!--***-->
-<!---->
-<!--***-->
-<!---->
-<!--The concept of common knowledge finds a significant parallel and connection in cognitive science with the development of Theory of Mind (ToM), which refers to the ability to attribute mental states -- such as beliefs, intentions, desires, and knowledge -- to oneself and to others.^1^ The foundational work of David Premack and Guy Woodruff in 1978 explored whether non-human primates possess a ToM, raising critical questions about the cognitive prerequisites for understanding others\' mental states.^56^ Their research suggested that attributing mental states to others is a fundamental aspect of social cognition, and arguably a necessary stepping stone towards grasping the more complex, recursive nature of common knowledge. To understand \"I know that you know,\" one must first have the capacity to represent that \"you know\" something.  Michael Tomasello\'s extensive work on the evolution of human cognition, particularly his 2014 contributions, emphasizes the uniquely human ability to engage in \"shared intentionality\".^58^ This involves the capacity to participate with others in collaborative activities that have shared goals and intentions, requiring a sophisticated understanding of one\'s own and others\' mental states, as well as the ability to engage in joint attention. Shared intentionality, with its focus on mutual understanding and shared goals in cooperative contexts, bears a close relationship to the concept of common knowledge. Engaging in a collaborative task effectively often requires a level of shared understanding about the objective, the roles of the participants, and each other\'s intentions and expectations, which can be seen as a functional form of common knowledge within that specific context. Tomasello\'s research suggests that the development of shared intentionality is a key factor differentiating human cognition from that of other primates and underpins our complex social interactions and cultural practices.  -->
-<!---->
-<!--Experimental studies have provided valuable insights into how humans reason about and utilize common knowledge in various strategic and social situations. Michael Suk-Young Chwe\'s 2001 work, \"Rational Ritual,\" offered an analysis of how public rituals and ceremonies serve as mechanisms for creating common knowledge within a group.^1^ Chwe argued that by making information simultaneously available to a large number of people, rituals ensure that participants not only receive the information but also become aware that others have received the same information, and that those others are aware of this as well, creating a shared epistemic state that is crucial for solving coordination problems and fostering shared cultural understandings.^60^ From Super Bowl commercials to political inaugurations, these public events function to establish common knowledge by providing a shared experience and a simultaneous broadcast of information.  Cristina Bicchieri and Erte Xiao\'s 2009 experimental research focused on the role of expectations in individuals\' compliance with social norms.^18^ Their studies explored how individuals\' normative expectations (what they believe others think they should do) and empirical expectations (what they believe others will actually do) influence their decisions in social interactions. These expectations are closely related to the concept of common knowledge, as they involve beliefs about others\' beliefs and behaviors. Bicchieri and Xiao\'s work highlighted the complex interplay between these different types of expectations in guiding behavior, providing empirical evidence for the importance of shared understandings -- a key component of common knowledge -- in the context of social norms. By manipulating information about others\' expectations, their experiments shed light on the cognitive processes involved in reasoning about shared knowledge and its impact on individual choices within social contexts.  -->
-<!---->
-<!--Recognizing the stringent requirements and potential limitations of common knowledge, particularly the infinite regress, alternative frameworks have been proposed to better capture the epistemic states underlying coordination and social interaction. One such framework is the concept of common belief, introduced by Dov Monderer and Dov Samet in 1989.^1^ Common belief relaxes the absolute certainty of common knowledge by focusing on a state where the probability of a proposition being believed by all agents, and this belief being iterated at higher levels, approaches one.^40^ This notion acknowledges that in many real-world situations, individuals might act based on a very high degree of confidence that others share certain beliefs, even if they cannot be absolutely certain of this at every level of iteration. Common belief provides a more flexible and potentially more realistic lens through which to analyze scenarios where strong mutual expectations drive behavior without necessarily meeting the strict criteria of common knowledge.  -->
-<!---->
-<!--**Pragmatic Approaches to Shared Understanding:**  Pragmatic perspectives on shared understanding offer yet another way to think about the epistemic foundations of communication and interaction, moving beyond the purely logical or probabilistic frameworks of common knowledge and common belief. Herbert Clark\'s 1996 work on language use emphasized the collaborative nature of communication, where participants actively work to establish and maintain \"common ground\" -- the shared knowledge, beliefs, and assumptions that are necessary for successful understanding and coordination.^1^ Clark highlighted that communication is a dynamic process where individuals constantly monitor each other\'s understanding and adjust their contributions to ensure they are on the same page. This perspective suggests that shared understanding is often achieved through active collaboration and the ongoing management of common ground in real-time interactions.  Dan Sperber and Deirdre Wilson\'s 1986 relevance theory proposed that human communication is fundamentally driven by the principle of relevance.^1^ According to this theory, communicators aim to provide information that is most relevant to their audience in a given context, and audiences interpret utterances by selecting the most relevant interpretation. This process often relies heavily on shared background knowledge and inferential processes to achieve understanding efficiently. Relevance theory suggests that individuals do not need to explicitly state everything they know; instead, they rely on their audience to infer the intended meaning by selecting the interpretation that is most relevant given the context and their shared assumptions. This pragmatic approach underscores how shared understanding in communication is often achieved efficiently through inference and the exploitation of shared contextual assumptions, rather than requiring explicit common knowledge of every detail.  -->
-<!---->
-<!--**Conclusion: Synthesis and Future Directions in Common Knowledge Research**  The concept of common knowledge, first systematically explored by David Lewis, has proven to be a remarkably influential and multifaceted idea across a range of disciplines. From its philosophical roots in understanding conventions and coordination, it has been formally integrated into game theory and economics, providing powerful tools for analyzing strategic interactions and information asymmetry. Evolutionary game theory has offered a perspective on how shared understandings, akin to common knowledge, can emerge and stabilize through dynamic processes without requiring fully rational agents or infinite levels of iterated knowledge. Cognitive science has linked common knowledge to fundamental aspects of social cognition, such as theory of mind and shared intentionality, and experimental studies have provided empirical insights into how humans reason about and utilize shared knowledge in various contexts.  Despite its theoretical significance, the standard definition of common knowledge, with its requirement of infinite recursion, has faced critiques regarding its psychological plausibility and practical attainability, particularly in dynamic real-world scenarios. This has led to the development of alternative frameworks, such as common belief, which relaxes the certainty requirement, and pragmatic approaches that focus on the active construction of shared understanding in communication. These alternative perspectives highlight the complexity of shared knowledge and the need for models that better reflect the cognitive limitations of agents and the imperfections of information in real-world interactions.  Future research on common knowledge and shared understanding could fruitfully explore several directions. Further investigation into the cognitive mechanisms underlying how humans actually reason about others\' knowledge and beliefs, and how these processes relate to the theoretical concept of common knowledge, is warranted. The development of more realistic models of strategic interaction that incorporate bounded rationality, imperfect information, and the dynamics of belief formation and revision remains a crucial area. Additionally, the application of common knowledge concepts and related frameworks to understand emerging technologies and social phenomena, such as the dynamics of information sharing on social media platforms and the challenges of coordination in artificial intelligence systems, presents exciting new avenues for exploration. Understanding the nuances of how shared knowledge and expectations are formed, maintained, and utilized in these evolving contexts will be increasingly important in the years to come.  **Bibliography**-->
-<!---->
-<!--***-->
-<!---->
-<!--Schiffer conceptualized common knowledge as an *infinite hierarchy of mutual knowledge*, defined recursively as follows:  -->
-<!--- **Mutual knowledge₁**: Everyone knows proposition $p$.  -->
-<!--- **Mutual knowledge₂**: Everyone knows that everyone knows $p$.  -->
-<!--- **Mutual knowledgeₙ**: This recursion continues for $n$ levels, where $n \to \infty$.  -->
-<!---->
-<!--Formally, common knowledge $C(p)$ is the infinite conjunction:  -->
-<!--$C(p) = \bigwedge_{n=1}^{\infty} K^n(p),$  -->
-<!--where $K^n(p)$ denotes the $n$-th level of mutual knowledge. This approach emphasizes communication as the mechanism to elevate mutual knowledge into common knowledge. For example, in the *Muddy Children Puzzle*, if two children both see mud on each other’s faces, they initially have mutual knowledge₁ (both know there’s at least one muddy face). Only after public announcements do they iteratively reach mutual knowledge₂, mutual knowledge₃, etc., converging toward common knowledge.-->
-<!---->
-<!--Aumann formalized common knowledge using *information partitions* over possible states of the world. Let $ \Omega $ be the set of possible states, and let $ \mathcal{P}_i $ represent the information partition of agent $ i $. Aumann’s framework defines common knowledge as follows:  -->
-<!---->
-<!--An event $ E \subseteq \Omega $ is *common knowledge* at state $ \omega $ if the cell of the *meet* of the agents’ partitions containing $ \omega $ is a subset of $E$.  -->
-<!---->
-<!--A key result is Aumann’s Agreement Theorem: If two rational agents with common priors have common knowledge of their posterior probabilities about an event $E$, their probabilities must coincide. Formally, if $ C(p_i(E) = q_i) $ for agents $ i = 1, 2 $, then $ q_1 = q_2 $. This framework avoids explicit infinite regress by defining common knowledge as a fixed point in the agents’ information partitions.-->
-<!---->
-<!------->
-<!---->
-<!--| Aspect                | Schiffer’s Model                          | Aumann’s Model                          |  -->
-<!--|-----------------------|-------------------------------------------|-----------------------------------------|  -->
-<!--| **Structure**         | Infinite epistemic hierarchy              | Set-theoretic partitions                |  -->
-<!--| **Focus**             | Communication-driven knowledge escalation | Bayesian updating and rational agreement |  -->
-<!--| **Practicality**      | Requires explicit recursive reasoning     | Avoids regress via topological closure  |  -->
-<!--| **Applications**      | Explains coordination puzzles             | Underpins game-theoretic equilibrium    |  -->
-<!---->
-<!--Schiffer’s model aligns with intuitive examples like the Muddy Children Puzzle, where announcements progressively deepen mutual knowledge. Aumann’s approach, by contrast, provides a mathematical foundation for strategic interactions, showing how common knowledge enforces consensus among Bayesian agents. While Schiffer’s hierarchy is often seen as philosophically intuitive, Aumann’s formalism has been more widely adopted in economics and computer science due to its technical precision. Both, however, agree that common knowledge transcends mere mutual understanding, requiring agents to account for *each other’s epistemic states* in a systematic way.-->
-<!---->
-<!--The relationship between Lewis’s notion and these subsequent formalizations remains debated. Cubitt and Sugden [@cubitt2003] suggested a fundamental distinction between Lewis’s perspective and later theories, while Vanderschraaf [-@vanderschraaf1998] and Sillari [-@sillari2005] argued for continuity between them.-->
-<!---->
-<!--*** -->
-<!---->
-<!--Cubitt and Sugden (2003) argue for a fundamental **discontinuity** between David Lewis’s concept of common knowledge (as outlined in *Convention*, 1969) and the formalizations of Schiffer/Aumann, rooted in differing philosophical foundations and operational assumptions. Here’s a breakdown of their critique:-->
-<!---->
-<!--### 1. **Lewis’s Notion: Coordination-Focused and Precedent-Based**  -->
-<!--Lewis defines common knowledge as arising from **salient precedents** or **coordination equilibria**, where agents:  -->
-<!--- Share mutual expectations grounded in a *publicly recognized signal* (e.g., a traffic light).  -->
-<!--- Do not require infinite recursion in practice; instead, common knowledge emerges from pragmatic, context-dependent reasoning.  -->
-<!---->
-<!--For Lewis, common knowledge is a *social construct* tied to conventions—agents coordinate because they recognize a shared basis for action, not because they explicitly compute infinite epistemic hierarchies.-->
-<!---->
-<!--### 2. **Schiffer/Aumann: Infinite Hierarchies vs. Partitions**  -->
-<!--- **Schiffer** formalizes common knowledge as an **infinite tower** of mutual knowledge ($$ C(p) = \bigwedge_{n=1}^\infty K^n(p) $$).  -->
-<!--- **Aumann** models it via **information partitions** (common knowledge as the meet of agents’ partitions in $$ \Omega $$).  -->
-<!---->
-<!--Both frameworks presuppose agents with unbounded logical capacity to process infinite iterations or partition intersections—a stark contrast to Lewis’s emphasis on pragmatic, bounded coordination.-->
-<!---->
-<!--### 3. **Key Discontinuities Highlighted by Cubitt & Sugden**  -->
-<!--**(a) Epistemic vs. Practical Foundations**  -->
-<!--- Lewis’s common knowledge is *action-oriented* and rooted in **conventions** (e.g., stopping at red lights).  -->
-<!--- Schiffer/Aumann treat it as a *logical property* of agents’ knowledge structures, decoupled from real-world coordination.  -->
-<!---->
-<!--**(b) Role of Salience**  -->
-<!--- Lewis requires **salient cues** (e.g., focal points) to bootstrap common knowledge.  -->
-<!--- Schiffer/Aumann exclude salience, relying instead on axiomatic mutual reasoning.  -->
-<!---->
-<!--**(c) Bounded vs. Unbounded Rationality**  -->
-<!--- Lewis’s agents operate under **bounded rationality**—common knowledge emerges from practical precedents, not recursive deductions.  -->
-<!--- Schiffer/Aumann assume agents can process infinite hierarchies or partition operations, implying **unbounded cognitive capacity**.  -->
-<!---->
-<!--**(d) Necessity of Publicity**  -->
-<!--- Lewis emphasizes **public events** (e.g., a fire alarm) as triggers for common knowledge.  -->
-<!--- Schiffer/Aumann reduce publicity to abstract logical or set-theoretic constructs (e.g., public announcements as partition refinements).  -->
-<!---->
-<!--### 4. Implications of the Discontinuity  -->
-<!--Cubitt and Sugden contend that Schiffer/Aumann’s formalisms fail to capture the **pragmatic, evolutionary nature** of common knowledge in Lewis’s work. By treating it as a fixed logical property, they neglect:  -->
-<!--- The role of **culture** and **history** in establishing conventions.  -->
-<!--- How agents with limited reasoning capacity *actually* achieve coordination (e.g., via salience rather than infinite deliberation).  -->
-<!---->
-<!--This disconnect renders Schiffer/Aumann’s models ill-suited for explaining real-world scenarios Lewis sought to address, such as language conventions or social norms.-->
-<!---->
-<!--### Example: The Traffic Light Puzzle  -->
-<!--- **Lewis**: Drivers stop at red lights because they recognize a *salient convention* reinforced by precedent. Common knowledge arises from shared social practice, not mutual knowledge hierarchies.  -->
-<!--- **Schiffer/Aumann**: Common knowledge would require drivers to know that others know they know the light is red, ad infinitum—an unrealistic demand for real-time coordination.  -->
-<!---->
-<!--### Conclusion  -->
-<!--Cubitt and Sugden’s critique underscores that Lewis’s common knowledge is **procedural** (rooted in coordination practices), while Schiffer/Aumann’s is **declarative** (a static property of knowledge structures). This philosophical and operational gap explains why formal models struggle to replicate the dynamism of Lewis’s convention-based framework.-->
-<!---->
-<!--***-->
-<!---->
-<!--Vanderschraaf and Sillari (2009) argue for **continuity** between David Lewis’s convention-based notion of common knowledge and the formalizations of Schiffer/Aumann, positing that these frameworks share foundational goals and can be reconciled through careful interpretation. Their analysis emphasizes complementary perspectives rather than irreconcilable differences. Here’s their reasoning:-->
-<!---->
-<!------->
-<!---->
-<!--### 1. **Shared Foundational Goal: Explaining Coordination**  -->
-<!--Both Lewis and the Schiffer/Aumann frameworks aim to explain how agents achieve **coordinated behavior** in strategic interactions.  -->
-<!--- **Lewis**: Common knowledge arises from *conventions* (e.g., traffic rules) that stabilize expectations.  -->
-<!--- **Schiffer/Aumann**: Formalize the epistemic conditions necessary for coordination (e.g., infinite mutual knowledge or partition intersections).  -->
-<!---->
-<!--Vanderschraaf and Sillari contend that Schiffer/Aumann’s models *operationalize* the abstract conditions Lewis presupposes in his conventions. For example, Aumann’s partitions can encode the "publicity" of events central to Lewis’s conventions, while Schiffer’s hierarchy mirrors the iterative reasoning agents use to infer shared expectations.-->
-<!---->
-<!------->
-<!---->
-<!--### 2. **Publicity as a Bridge**  -->
-<!--Lewis’s emphasis on **public events** (e.g., a fire alarm) as triggers for common knowledge aligns with Schiffer/Aumann’s focus on *public announcements* or *partition refinements*:  -->
-<!--- In Aumann’s model, a public event $$ E $$ corresponds to a partition cell known to all agents, which becomes common knowledge after observation.  -->
-<!--- Schiffer’s hierarchy similarly requires public communication to escalate mutual knowledge.  -->
-<!---->
-<!--This bridges Lewis’s pragmatic notion of salience (e.g., a red traffic light) with formal models’ requirement of shared information structures.-->
-<!---->
-<!------->
-<!---->
-<!--### 3. **Bounded Rationality as Truncated Hierarchies**  -->
-<!--Vanderschraaf and Sillari argue that Schiffer’s infinite hierarchy and Aumann’s partitions can accommodate **bounded rationality** in practice:  -->
-<!--- Agents in real-world scenarios (e.g., Lewis’s conventions) need not compute infinite recursions explicitly. Instead, established conventions act as **focal points** that *approximate* common knowledge after a few iterations.  -->
-<!--- For example, drivers stopping at a red light rely on a convention that implicitly assumes mutual knowledge up to a pragmatically sufficient level (e.g., $$ K^2(p) $$ or $$ K^3(p) $$), bypassing infinite regress.  -->
-<!---->
-<!--This aligns with experimental evidence showing that humans rarely reason beyond 2–3 levels of mutual knowledge in coordination games.-->
-<!---->
-<!------->
-<!---->
-<!--### 4. **Conventions as Fixed Points**  -->
-<!--Lewis’s conventions can be mapped to **fixed points** in Aumann’s partition framework:  -->
-<!--- A convention (e.g., “drive on the right”) corresponds to a *stable equilibrium* where agents’ knowledge partitions align with shared social rules.  -->
-<!--- Similarly, Schiffer’s hierarchy converges to a fixed point ($$ C(p) $$) as mutual knowledge deepens through repeated interactions.  -->
-<!---->
-<!--Thus, conventions are not merely cultural artifacts but *emergent properties* of the epistemic structures formalized by Schiffer/Aumann.-->
-<!---->
-<!------->
-<!---->
-<!--### 5. **Reconciling Salience with Formal Models**  -->
-<!--Vanderschraaf and Sillari reinterpret Lewis’s “salience” as a mechanism for **partition refinement** or **hierarchy truncation**:  -->
-<!--- A salient event (e.g., a fireworks display) publicly signals a shared context, allowing agents to coordinate without infinite reasoning.  -->
-<!--- This can be modeled in Aumann’s framework by restricting the state space $$ \Omega $$ to a subset where salience is common knowledge.  -->
-<!---->
-<!--For instance, in Lewis’s “phone call breakdown” example, agents coordinate on a default meeting time because salience (e.g., noon) acts as a partition-refining public signal.-->
-<!---->
-<!------->
-<!---->
-<!--### 6. **Common Knowledge as a Dynamic Process**  -->
-<!--Both frameworks implicitly treat common knowledge as a **dynamic process** rather than a static state:  -->
-<!--- **Lewis**: Conventions evolve through precedent and reinforcement.  -->
-<!--- **Schiffer/Aumann**: Mutual knowledge escalates via announcements (Schiffer) or Bayesian updating (Aumann).  -->
-<!---->
-<!--This shared emphasis on iterative learning undermines Cubitt and Sugden’s “discontinuity” claim, as both traditions acknowledge that common knowledge is *constructed* through interaction.-->
-<!---->
-<!------->
-<!---->
-<!--### Example: The Repeated Traffic Light  -->
-<!--- **Lewis**: Drivers stop at red lights because repeated precedent creates a convention.  -->
-<!--- **Schiffer/Aumann**: Each successful coordination (stopping at red) refines drivers’ partitions or mutual knowledge, reinforcing the convention as common knowledge.  -->
-<!---->
-<!------->
-<!---->
-<!--### Conclusion  -->
-<!--Vanderschraaf and Sillari’s continuity thesis hinges on three claims:  -->
-<!--1. Schiffer/Aumann’s formalisms **generalize** Lewis’s conventions by specifying their epistemic preconditions.  -->
-<!--2. Bounded rationality in practice **truncates** infinite hierarchies to match Lewis’s emphasis on pragmatic coordination.  -->
-<!--3. Salience and publicity act as **bridges** between abstract formal models and real-world conventions.  -->
-<!---->
-<!--By framing Lewis’s work as a *procedural instantiation* of Schiffer/Aumann’s declarative structures, they argue that the frameworks are complementary, not contradictory.-->
-<!---->
-<!--***-->
-<!---->
-<!--@vanderschraaf1998 critiques Lewis’ theory for being overly restrictive in its reliance on Nash equilibria and common knowledge. He argues that conventions need not solve pure coordination problems or require universal conformity. Instead, Vanderschraaf broadens the scope of conventions by introducing *correlated equilibria* and focusing on inductive learning processes.-->
-<!---->
-<!--In correlated equilibria players coordinate actions through external signals rather than mutual payoff alignment. His model accommodates conventions in asymmetric situations like fashion, where participants follow trends through *observational inductive learning* rather than explicit coordination. This explains property conventions as self-reinforcing patterns where people respect ownership claims based on observed precedents, not because it solves a mutual coordination problem.-->
-<!---->
-<!--***-->
-<!---->
-<!--Correlated Equilibria-->
-<!--While Lewis relies on Nash equilibria—where players independently choose strategies that are mutual best responses—Vanderschraaf adopts Robert Aumann’s concept of correlated equilibria. In correlated equilibria:-->
-<!---->
-<!--Players coordinate their actions based on external signals or shared expectations, rather than purely independent reasoning.-->
-<!---->
-<!--Conventions can emerge even in asymmetric or competitive situations where individuals have divergent preferences (e.g., bargaining scenarios).-->
-<!---->
-<!--For example, Vanderschraaf shows how property conventions stabilize through historical precedents rather than explicit coordination or universal agreement. These conventions function as correlated equilibria, aligning expectations without requiring identical preferences among participants.-->
-<!---->
-<!--Inductive Learning-->
-<!--Vanderschraaf introduces inductive learning as a mechanism for convention formation. Unlike Lewis’ assumption of common knowledge, Vanderschraaf emphasizes how agents learn behavioral regularities through repeated interactions:-->
-<!---->
-<!--Agents observe others’ actions over time and adjust their strategies accordingly.-->
-<!---->
-<!--Behavioral patterns become self-reinforcing as individuals develop expectations based on past observations.-->
-<!---->
-<!--Conventions emerge organically as focal points—solutions perceived as natural or salient due to historical or social prominence.-->
-<!---->
-<!--This inductive process allows conventions to form even when common knowledge is absent or imperfect, addressing one of the key criticisms of Lewis’ model.-->
-<!---->
-<!--Key Differences Between Vanderschraaf and Lewis-->
-<!--Aspect	Lewis	Vanderschraaf-->
-<!--Equilibrium Type	Nash equilibrium	Correlated equilibrium-->
-<!--Knowledge Requirement	Common knowledge	Inductive learning-->
-<!--Problem Type	Pure coordination problems	Broader, including asymmetric situations-->
-<!--Preference Alignment	Aligned preferences	Divergent preferences-->
-<!--Implications of Vanderschraaf’s Theory-->
-<!--Vanderschraaf’s revisions expand the applicability of convention theory beyond the narrow scope defined by Lewis. His framework explains how conventions can arise in complex social contexts, such as bargaining or property systems, where interests may conflict rather than align perfectly. By incorporating correlated equilibria and inductive learning, Vanderschraaf provides a more flexible account of how conventions stabilize behavior.-->
-<!---->
-<!--For instance:-->
-<!---->
-<!--In bargaining scenarios, agents may converge on egalitarian solutions through inductive learning rather than relying on common knowledge.-->
-<!---->
-<!--Property rights systems emerge as conventions through historical precedent, functioning as correlated equilibria rather than Nash equilibria.-->
-<!---->
-<!--Conclusion-->
-<!--Peter Vanderschraaf’s theory builds upon David Lewis’ foundational work while addressing its limitations. By introducing correlated equilibria and emphasizing inductive learning processes, Vanderschraaf broadens the scope of convention theory to include competitive and asymmetric situations. His framework provides a more dynamic understanding of how conventions emerge and persist in diverse social contexts.-->
-<!---->
-<!--@oconnor2021 goes further and proposes an information-theoretic measure for conventionality, or arbitrariness of a convention, applicable to both human “animal” conventions like that of vervet monkeys. As she is most interested in the emergence of cultural traits like gendered division of labor, she says that most cultural traits are both functional and arbitrary, or contingent, for they “might have been otherwise”.-->
-<!---->
-<!--O'Connor notes that Lewis's notion of convention emphasizes arbitrariness, for a coordination game has at least two *proper coordination equilibria* — a state of a strategic situation where no player can deviate from a selected strategy and improve the payoff for any other player. It means that either of them might have been established equiprobably. In line with this, @simons2019 illustrate the distinction of functional and arbitrary conventions by putting it along three dimensions:-->
-<!---->
-<!--1. Payoff difference — some coordination equilibria have bigger payoffs than others;-->
-<!--2. Likelihood of emergence — some conventions are more likely to emerge than others;-->
-<!--3. Stability — once these conventions have emerged, they are unlikely to be deviated from.-->
-<!---->
-<!--O'Connor proposes to layer these dimensions onto evolutionary models, namely those of replicator dynamics[^replicator-dynamics]. It allows for specifying what Simons and Zollman mean by the likelihood of emergence (2) and stability of conventions (3).-->
-<!---->
-<!--[^replicator-dynamics]: -->
-<!---->
-<!--- [ ] написать определение replcator dynamics и кратко критику от стерельного и хармса-->
-<!---->
-<!--\begin{figure}[htb]-->
-<!--\centering-->
-<!--\begin{tabular}{c|cc}-->
-<!-- &A&B\\ \hline-->
-<!--A & (1,1) & (0,0) \\ \hline-->
-<!--B & (0,0) & (x,x)-->
-<!--\end{tabular}-->
-<!--\caption{A coordination game where B equilibrium is more favorable given $x > 1$}-->
-<!--\end{figure}-->
+Selectivity is a feature of social information processing happening on three distinct stages: 
 
-%$$
-%\begin{array}{c|cc}
-% & A & B \\ \hline
-%A & (1,1) & (0,0) \\ \hline
-%B & (0,0) & (x,x)
-%\end{array}
-%$$
-<!--**A coordination game where B equilibrium is more favorable given $x > 1$**-->
-<!---->
-<!--Modelled as replicator dynamics, the game on the figure above has B equilibrium as more “natural” in the sense (1) — that of a higher payoff. The corollary of this is a larger basin of attraction. Given $x = 50$, the phase diagram for this game will look like this:-->
-<!---->
-<!--The basin of attraction for A equilibrium takes up 2% of space, while 98% for B. These basins can represent the probability that each outcome evolves, given little information about the initial conditions of the population. Thus, B is more likely to emerge and is more “natural” in the sense (2).-->
-<!---->
-<!--To propose a measure of conventionality, O'Connor focuses on naturalness of conventions as their probability of emergence (2). As has been shown, different equilibria might evolve with different probability, and the sizes of basins indicate the amount of information we gain from examining an evolutionary process. The amount of information in this process is a *measure of arbitrariness* of a convention. It increases with greater uncertainty about what will evolve and decreases with less.-->
-<!---->
-<!--The relevant information-theoretic measure is Shannon entropy. It measures the average amount of information transmitted through a channel: $H(x) = \sum_{i} P(x_{i})I(x_{i})$. The amount of information gained from observing something is related to how much we learn or how surprised we are. It is calculated by summing the probabilities of the signals $P(x_i)$ multiplied by their information content $I(x_{i})$, with $I(x_{i})$ equal to $-\log_{2}P(x_{i})$ — the less probable a signal, the more information it carries. Overall, this weights the probability of each signal being sent by the amount of information it carries, giving a measure of average information in the channel.[^1]-->
-<!---->
-<!--If other conditions hold, a channel has higher entropy when signals are more equiprobable or there are more signals. This is as opposed to a biased channel, with one signal sent 99% of the time, which has an entropy of just $0.08$. Therefore, more equiprobable signals and more signals lead to higher entropy. As probabilities $P(x_{i})$ represent the sizes of the basins of attraction, learning more from an evolutionary process increases the arbitrariness of an evolving phenomenon in question. Given more equilibria or if their basins of attraction are close to equal, the phenomenon is more arbitrary, contingent or “conventional”.-->
-<!---->
-<!--It is possible to measure the naturalness of a convention similar to @simons2019 using $-\log_{2}P(x)$, which represents the information value of a particular outcome. The closer the value of $-\log_{2}P(x)$ to $0$, the more natural a convention is. This measure can be used whenever we have clear probabilities for different evolutionary outcomes. However, if there is uncertainty about the initial conditions of a population, it is possible to assign probabilities to different population starting places and not their basins of attraction, for they will not track the probability of emergence correctly. Another case is stochastic dynamics, where each starting point might lead to multiple equilibria depending on chance events. Here, $P(x_{i})$ can be defined as percentage of emergence of different equilibria in an iterated game. For example, if 10 individuals play the game in the figure above with $x=10$ 10K times, it yields 6% chance of emergence of A, and 94% for B.-->
-<!---->
-<!--As O'Connor notes, one problem with a proposed conventionality measure is the source of probabilities. It means that inputs in an entropy equation can be selected quite arbitrarily depending on a case (which is ironic but predictable). As there are no actual chances, it can be hard to determine, whether a convention might have been otherwise. To address this worry, she underlines the representation-dependence of the measure. We can specify what is probability in terms of a particular model or data set, for instance, basins of attraction, emergence over multiple rounds of simulation, equilibrium time and percentage of societies adopting a behavior. This eliminates worries about probability and chance in the world. However, representations should be tailored to the intended explanatory goals. However, as representations have limitations, the proposed measure should not be taken as an absolute truth.-->
-<!---->
+- attention determines what information comes into the cognitive system, 
+- then this information is related to the already stored one
+- and then a behavioral response is produced.
 
-<!--## Salience, epistemic and "natural"-->
-<!---->
-<!--Although these criticisms are fair enough, there are hints of not purely rational and logical nature of "common knowledge" already in Lewis. He elaborated on Schelling's notion of "focal points", and focal points serve as a source of public signals which produce common knowledge [@defreitas2019]. As Schelling noted, observable patterns presuppose their observability, hence it is rational to expect an opponent to behave according to such patterns and thus deduce intentions of another opponent [@schelling1980, 104]. -->
-<!---->
-<!--As @sugden2006 note that focal points are underpinned not by instrumental rationality of standard game theory, but by *pragmatic rationality* which is induced from its empirical success. Schelling stressed the "perceptual and suggestive element in the formation of mutually consistent expectations" [@schelling1980, 83-84] which is essential for focal points, as the authors note. It means that there are no logical restrictions on converging for expectations between players.  -->
-<!---->
-<!--To illustrate this point, Sugden and Zamarrón three features of Schelling's focal point analysis: the players' presumption of the solvability of coordination problems, which is based on empirical success of real agents; players' reasoning in finding focal points is not guided by principles of truth and validity essential for deductive systems; players reason fully rationally in finding focal points. As Schelling writes, "most situations - perhaps every situation for people who are practiced at this kind of game - provides some clue for coordinating behavior, some focal point for each person's expectation of what the other expects him to expect to be expected to do" [[@schelling1980, 57]]. ^69e3d6-->
-<!---->
-<!--To underline the pragmatic nature of focality, authors note Schelling's insistence that players use neither an individualistic best-response strategy nor any team reasoning implying shared agency.  ^59c366-->
-<!---->
-<!--The inherent difficulty with formalizing the idea of focal points consists of the the "unstructured and unbounded set of possible coordination devices" [[@sugden2006, 616]]. It means that any source of focality might present a theory in itself, be it the primary salience from psychological factors or team reasoning aimed at joint optimality.     -->
-<!---->
-<!--As Sugden and Zamarrón suppose, for Schelling, a decision in finding focal points is rational if it helps and agent to achieve her ends. It might be connected with principles of evolutionary ecological rationalities.  -->
-<!---->
-<!--Pattern recognition is bound to contextual cues, hence [[Salience in focal points is highly context-dependent and intersubjective]]. -->
-<!---->
-<!--### Epistemic salience-->
-<!--* [[12.1_cognitive-selectivity-helps-coping-with-social-coordination-by-attention-relation-and-behavior.md]]-->
-<!--    * [[12.2_Salience-in-focal-points-is-highly-context-dependent-and-intersubjective.md]]-->
-<!--        * [[12.2a_Focal-points-work-because-of-pattern-recognition.md]]-->
-<!--        * [[12.2b_Focal-points-are-underpinned-by-pragmatic-rationality.md]]-->
-<!--* [[@lacroix2020a]]-->
-<!--* [[@zachnik2021]]-->
-<!--    * variable frame theory-->
-<!--    * cognitive hierarchy theory-->
-<!--* Vanderschraaf's formalization of salience with Bayesian updating-->
-<!--    * [[10.1a1a_Convention-is-CE,-as-salience-is-an-information-partition.md]]-->
-<!--    * [[10.1a1b_Conventions-as-CE-allows-for-"fair"-coordination-as-opposed-to-NE.md]]-->
-<!---->
-<!--### "Natural" (evolutionary) Salience-->
-<!--- Skyrms's elimination of salience with evolutionary dynamics-->
-<!--    - [[Symmetry-broken-by-chance-events-leads-to-correlated-equilibrium-in-iterated-Hawk-Dove-game]]-->
-<!--    - [[@vandrunen2023]]-->
-<!--    - [[@alberti2012]]-->
-<!---->
-<!--## Common knowledge and cognitive requirements for conventions-->
+Stimuli requiring instantaneous behavioral response and contextually distinct stimuli tend to become more relevant and attended. 
 
-<!--## Arbitrariness and normativity-->
-<!--* Convention space: mapping conventions theories across two dimensions ↓-->
-<!--* [When and why Conventions cannot Be Social Institutions | Philosophia](https://link.springer.com/article/10.1007/s11406-019-00125-0) — 5 dimensions of conventions-->
-<!---->
-<!--@oconnor2019 draws two important distinctions: between conventions and social norms, and between more and less arbitrary conventions. First distinction means that not all behavioral regularities have normative force. For example, friends have a convention of meeting each Friday evening at a bar, and showing up is not what each of them strictly ought to do, for if someone does not come, it is fine for the rest of the friends. On the contrary, if two cars are driving on the same side of the road towards each other, the drivers are forced to swerve, for otherwise they might crash. They ought to swerve, for not only might one of them be fined but they might cause an accident. To clarify, as @bicchieri2005 points out, conventions are different from social norms in the relationship between self-interest and common interest. They coincide in the former and do not necessarily coincide in the latter. In the case of friends at a bar, there is no or little tension between selfand common interest, while in the case of driving cars there is. O'Connor stresses that conventions and norms are the poles of a continuum along which the former acquire normative force. ^60075e-->
-<!---->
-<!--The second distinction concerns the arbitrary and historically contingent nature of conventions that they “might have been otherwise”. -->
-<!---->
-<!--According to Lewis, this arbitrariness is one of the key distinguishing aspects of conventions. However, as @gilbert1992 points out in her critique of Lewis's work, not all possible solutions to a coordination problem are equally profitable for players. In cases where one way of coordinating is more preferred than another, convention will not be that arbitrary. In other words, arbitrariness is a feature of conventions that is a continuum between contingency and necessity. For example, signaling between vervet monkeys might well be modeled as a convention in the Lewisian sense of repeated behavioral patterns of solving coordination problems [cf. @harms2004; @skyrms2010]. However, this convention is not historically contingent in the sense of several possible solutions being equally profitable, for there are evolutionary constraints breaking the symmetry between multiple equilibria. Agents might be hardwired to certain strategies. This distinction, as O'Connor underlines, illuminates some conventions as more functional and others as more conventional.[^4]-->
+While epistemic salience has to do with *beliefs*, natural salience has to do with attending to properties of environment and correlating strategies on them. @herrmann2022 give a model of "attention game" where 
 
-<!--### Functionality vs. arbitrariness: "choosing" conventions-->
-<!--* [CEEOL - Article Detail](https://www.ceeol.com/search/article-detail?id=694410)-->
-<!--* [CEEOL - Article Detail](https://www.ceeol.com/search/article-detail?id=1007657)-->
-<!---->
-<!--## Evolution of social conventions-->
-<!--Skyrms pioneered a path towards dynamic evolutionary models of coordination and convention-->
-<!---->
-<!--- 🔥 @lutz2023-->
-<!---->
-<!--- Harms's functional naturalisic account conventions-->
-<!--    - [[@harms2004]]-->
-<!--    - [[10.2a_Natural-signs-are-structured-world-affairs-that-convey-information-through-their-structure]]-->
-<!--- gintis's view of social norms as correlation + ess-->
-<!--    - [[private-property-equilibrium-generalizes-Bourgeois-equilibrium-by-endogenizing-costs]]-->
-<!--- Guala's social institutions as evolved normatively-driven conventions-->
-<!--    - [[11.1-Institutions-are-rules-in-equilibria-represented-symbolically-by-theoretical-terms.md]]-->
-<!--        - [[11.1a_Normative-rules-can-transform-cooperation-problem-into-coordination-problem-by-increasing-delta-parameter.md]]-->
-<!--            - [[11.1a1_Norm-triggering-signals-(cues)-might-differ-in-distinct-cultures.md]]-->
-<!--            - [[11.1a2_Social-norms-might-be-supported-by-a-variety-of-different-mechanisms.md]]-->
-<!--- the problem: 🔥 [[10.1b_Human-and-animal-conventions-differ-in-scope-of-actionable-signals.md]]-->
-<!--- Naturalization of social conventions: connecting evolution and deliberation-->
-<!--- [[@herrmann2021]]-->
-<!---->
+
+* [[@lacroix2020a]]
+
+
+### Epistemic salience
+* [[12.1_cognitive-selectivity-helps-coping-with-social-coordination-by-attention-relation-and-behavior.md]]
+    * [[12.2_Salience-in-focal-points-is-highly-context-dependent-and-intersubjective.md]]
+        * [[12.2a_Focal-points-work-because-of-pattern-recognition.md]]
+        * [[12.2b_Focal-points-are-underpinned-by-pragmatic-rationality.md]]
+* [[@lacroix2020a]]
+* [[@zachnik2021]]
+    * variable frame theory
+    * cognitive hierarchy theory
+
+### "Natural" (evolutionary) Salience
+- Skyrms's elimination of salience with evolutionary dynamics
+    - [[Symmetry-broken-by-chance-events-leads-to-correlated-equilibrium-in-iterated-Hawk-Dove-game]]
+    - [[@vandrunen2023]]
+    - [[@alberti2012]]
+
+
+# ОСТАНОВИЛСЯ ЗДЕСЬ
+## Lewis's conventions and social ontology
+
+## Interim results
+
+
+
 <!--# Chapter 2. Rules-in-equilibria theory of social institutions, which implicitly raises the problem of evolution of social conventions-->
+<!--A somewhat surprising extension of Lewis's theory is due to Guala and Hindriks [@guala2015; @hindriks2015] as they expand to the field of social ontology and, what is more, make it ontologically fundamental. They propose that social institutions like money, marriage or others can be seen as (sets of) conventions in Lewisian sense. They employ many arguments from our previous discussions like Aumann/Vanderschraaf *correlated equilibrium*, Skyrms/Maynard-Smith *ESS* and emphasize the role of *normative belief* in a similar to Bicchieri/Gintis manner. As we will pose a problem inside their theory later, it is important to carefully present and unpack it, which I will do in this section.-->
 <!--- Exposition of theory's components-->
 <!--    - [[11.1b_Guala's-explanatory-components-for-theory-of-institutions.md]]-->
 <!--    - [[10.1b1_Correlated-equilibrium-instead-of-Nash-highlights-the-variety-of-coordination-devices.md]]-->
@@ -1435,6 +1242,8 @@ Gintis addressed key epistemic and conceptual gaps in Lewis’s original framewo
 <!--    - [[10.1a_hard-to-say-coordination-problems-or-socialization-evolved-first.md]]-->
 <!---->
 <!--# Chapter 3. Evolution of conventions as a problem of scope of actionable signals-->
+- Evolution of salience as a problem of correlated conventions 
+    - [[@herrmann2021]], @herrmann2022, @vandrunen2023
 <!--- [[evolutionary-stable-correlation]]-->
 <!--    - <https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0136032>-->
 <!--    - <https://www.frontiersin.org/journals/ecology-and-evolution/articles/10.3389/fevo.2023.1229093/full#B24>-->
