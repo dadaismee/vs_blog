@@ -17,17 +17,17 @@ A major problem in arriving at a non-contradictory theoretical core in sociology
 
 ---
 
+## ["Ontic reference in formal social ontology: evolution of social institutions from \"animal conventions\" with niche construction"](phd-draft)
+
+phd thesis work-in-progress
+
+*"26.04.2025" *
+
+---
+
 ## [«Достаточность» как этический принцип](future-societies_project)
 
 
 
 *"2025-03-12" *
-
----
-
-## [Evolution of social institutions from "animal conventions" with complex signaling](phd-draft)
-
-phd thesis work-in-progress
-
-*"15.04.2025" *
 
