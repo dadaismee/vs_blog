@@ -5,13 +5,14 @@ tags: []
 date: "26.04.2025"
 generate_toc: true
 subtitle: phd thesis work-in-progress
-title: "Ontic reference in formal social ontology: evolution of social institutions from \"animal conventions\" with niche construction"
+title: Evolution of social institutions from "animal conventions" with niche construction in social ontology
 ---
 
 <!--# Introduction-->
 <!--What is a convention? As @goodman1989 notes, this term is intricately ambiguous.-->
 <!--Social conventions, the unwritten rules that govern our interactions, present a fundamental puzzle in understanding social order. How do shared patterns of behavior emerge and persist within a population when no explicit agreement dictates them? The term "convention" itself carries a dual meaning, referring both to the ordinary and expected, and to the artificial and optional, highlighting the complexity of this phenomenon 1. Philosophers have long been interested in conventions, recognizing their foundational role in various aspects of social life, including language, law, and morality 1.-->
 <!--* [[@rescorla2019] ]-->
+<!-- It is relevant, for if social institutions have emerged from 'animal conventions' with the aid of cognitive capacities like mindreading and/or mindshaping [@zawidzki2013], it constrains social ontology as the scope of possible objects of study to the logical derivatives of social institutions and social coordination in general as discussed in @shevchenko2023. -->
 
 # **Chapter 1.** Social conventions: Hume, Lewis and game theory
 The tradition of understanding social coordination as a source of social order is historically rich. Aristotle grounded social conventions in human nature and the pursuit of *eudaimonia*, or flourishing. He viewed humans as "political animals" who naturally form communities to achieve collective well-being. Justice and virtue, central to his ethics, were seen as the basis for political order. Unlike later followers of the social contract theory, Aristotle saw social organization as intrinsic to human rationality rather than a deliberate agreement [@aristotle1998].
@@ -1264,9 +1265,9 @@ We can distinguish between two types of salience: epistemic [@zachnik2021; @meht
 
 For Lewis, as he wanted to build upon Schelling's concept of "focal point", salience was unquestionable, but its very notion generated problems as to why and how certain features of environment, history and culture become relevant as cues external to coordination games in the first place. Schelling pointed out that to look for and *recognize patterns* might be an essential feature of human nature [@schelling1980, 104]. Observable patterns, he argued, presuppose their observability, hence it is rational to expect an opponent to behave according to such patterns and thus deduce intentions of another opponent [@schelling1980, 104]. A similar notion is found in "Relevance theory" [@wilson1999; @sperber1996] in cognitive science, where an signal presupposes its optimal relevance, meaning that a signal is "articulated enough" across any sensory modality it is automatically worth noticing, implying that it is a universal feature of human and possible animal cognition. Consider a game-theoretic example from @guala2015.
 
-Dinka and Nuer tribes graze their cattle on two sides of the river Sobat. After the river dried up, its physical barrier disappeared, creating a Hawk-Dove conflict[^hawk-dove] over grazing lands where both tribes risked costly clashes if they chose the same territory. The dry riverbed, however, remained a salient and mutually recognized landmark, providing a natural coordination device that allowed the tribes to condition their grazing strategies on its location, thereby avoiding conflict without direct communication. This focal point effectively transformed the game by correlating strategies and expectations, stabilizing a peaceful equilibrium. The game matrix below has strategies "Graze", "Not graze", "Graze if North" and "Graze if South".
+Dinka and Nuer tribes graze their cattle on two sides of the river Sobat. After the river dried up, its physical barrier disappeared, creating a Hawk-Dove conflict[^hawk-dove] over grazing lands where both tribes risked costly clashes if they chose the same territory. The dry riverbed, however, remained a salient and mutually recognized landmark, providing a natural coordination device that allowed the tribes to condition their grazing strategies on its location, thereby avoiding conflict without direct communication. This focal point effectively transformed the game by correlating strategies and expectations, stabilizing a peaceful equilibrium.
 
-[^hawk-dove]: In this game, two players can choose to be either a hawk (fight for resources), dove (submit and share resources), or bourgeois (submit only when opponent is also bourgeois). The payoffs are determined by the value of the resource and the cost of fighting
+[^hawk-dove]: In this game, two players can choose to be either a hawk (fight for resources), dove (submit and share resources), or bourgeois (submit only when opponent is also bourgeois). The payoffs are determined by the value of the resource and the cost of fighting.
 
 <!--\begin{table}[h]-->
 <!--\centering-->
@@ -1341,47 +1342,582 @@ Crucially, these notions contain a subtle distinction between human and non-huma
 
 In the next chapter, we will put game-theoretic notion of convention into the context of *social ontology*, especially of a naturalistic kind, which is a strand of philosophy studying what there is in the social world. We will look at the standard notions proposed by @searle1995, their refinements with game-theoretic conventions by @guala2015 and arrive at a philosophical problem of evolution of social conventions underpinned by a deeper problem of *ontic reference* or *ontic account of scientific explanation* [@craver2014]. Afterwards, in chapter 3, we will sketch a pathway towards resolving the problem of ontic reference in game-theoretically inspired social ontology by building a model of evolution of human conventions from animal ones.
 
-# Chapter 2. The problem of evolution of conventions in naturalistic social ontology: models and their ontic references
 
-<!--rules-in-equilibria theory of social institutions, which implicitly raises the problem of evolution of social conventions-->
+# Chapter 2. Evolution of conventions in naturalistic social ontology and an ontic account of its explanation
 
-<!--## Social conventions and naturalistic social ontology-->
+In this chapter, we shift gears to study the relationship between game-theoretic models of conventions, social ontology and how the former help *explain* or substantiate the latter in a viable social ontology.
+
+Social conventions are of major interest for social ontology, a philosophical study of the entities comprising the social world, as they provide a sensible source of *explanation* of how and why we live together. @guala2016 mentions that the mundane notions of "a professor", "a student" or "a husband" make no sense without conventions and, more broadly, social institutions, as central ontological units of the social world. It is because these notions are a part of a mostly hidden and taken-for-granted infrastructure of roles with duties and rights. And conventions, as Guala argues, hold those together. To put conventions into the context of social ontology, let us take a closer look at social ontology and its relation to science and explanation first.
+
+A good deal of the current social ontology is detached from actual social science [@sarkia2023]. It has mostly been developed within analytic philosophy [@baker2019; @searle1995; @epstein2015; @gilbert1992] and social scientific tradition of critical realism [@archer1995; @elder-vass2010]. There are views that social ontology is intrinsically more complex than any "natural" ontology for being "interactive", or dependent on beliefs of individuals and hence changeable [@hacking1999; @epstein2015] and that social reality is inherently normative, meaning it cannot be descriptive and hence cannot import methodologies from "natural" ontologies [@asta2024; @haslanger2012]. Such a position renders and justifies the importance of an "extra-scientific" study of the social world. To me, these are two distinct projects: a set of *mutually coherent and explanatory powerful descriptions* of social phenomena and a normative theory thereof.
+
+According to @epstein2018, the field of social ontology divides into two distinct inquiries. The first one deals with the constituents of social entities and addresses the question “what is the social world composed of?”. The second strand of research is concerned with the construction of social categories, or kinds, and with the question “how do social kinds like money, borders, marriage and others get established?”. Individual people constituting a social group exemplify the former inquiry and children playing a game where stuffed animals have a tea party exemplify the latter (as they have "set up" the conditions for something to be a tea party) [@epstein2015, 57].
+
+The difference between the strands is in the metaphysical relation of individuals and social facts. In the first case, social facts supervene on the facts about individuals, meaning that social properties cannot change without changing the individual ones. In the second case, facts about individuals *set up the conditions* for something to count as a social fact, i. e. dollar bills with a particular ink and paper and collective acceptance for money [-@epstein2015, 58].
+
+One of the most famous expressions of the latter is Searle's [-@searle1995] formula “X counts as Y in context C”. For example, “bills issued by the Bureau of Engraving and Printing (X) count as dollars (Y) in the United States (C)“ [-@searle1995, 28]. Epstein calls the former relationship (exemplified with "issued by") *grounding* and the latter one (exemplified with "counts as") *anchoring*, where grounding is responsible for *instantiation conditions* for being, for instance, money, in a particular context, and anchoring is responsible for *the mechanism of establishing instantiation conditions*. For example, in Searle's case, *collective acceptance* of the fact X is such a mechanism[^grounding]. 
+
+[^grounding]: The Searle's formula involves both relations, grounding and anchoring, but for the sake of simplicity and to illuminate collective acceptance as a necessary condition for Searle's formula I will refer to it as to anchoring.
+
+Such consideration exemplifies one of the two main views on the role of metaphysics[^metaphysics] in scientific inquiry. The first, empiricist one, renders metaphysics irrelevant and redundant or, if taken seriously, expects its constraints on models to impede the knowledge growth. The other view presupposes special metaphysical concepts beyond the vocabulary of science itself. For example, they discern grades of possibility and necessity largely unknown to science and go beyond causal dependence widely used in science [@ross2023].
+
+@ross2023 suggests the distinction of *analytic* and *scientific* social ontology, where the former is derived from conceptual analyses and the latter is based on empirical investigations. For Ross, 'naturalistic metaphysics' as he calls it, does not apply transcendental concepts except those featured in theories, models or explanations of "first-order science". Ross defends what he calls 'radically naturalistic metaphysics' which is aimed at promoting scientific progress and might involve unifying or synthesising scientific discoveries.
+
+[^metaphysics]: Metaphysics differ from ontology in that the latter is a focal set of entities in a domain which are said to exist and the former is the study of broader notions of identity, causality and the like.
+
+Physics provides a vivid contrast for comparing scientific and analytic metaphysics. Ontology of physics is formulated in mathematical terms requiring some technical proficiency. Formulating ontology of physics in an analytic way with "possible worlds" and "propositions" would be counterintuitive and unnecessarily difficult. It would require translation of already existing scientific concepts into the language of analytic metaphysics. 
+
+Social science and social ontology do not enjoy straightforfardness of methematical formulations of its concepts like physics does[^mathsoc]. Instead, it invites "folk" concepts like "beliefs", "groups" and "social facts". Further divide comes from the attitude towards this ambiguity. Some scholars argue that such "folk" ontologies are sufficient [@ruben1989, @thomassen2003] and others put an interplay of "folk" and social scientific ontologies to the fore by bridging what @sellars1962 called "manifest" and "scientific" image of phenomena within their social ontological theorizing [@asta2012; @guala2016; @haslanger2018]. The ambiguity between "folk" and scientific social ontology might indeed depend on mathematical apparatus and its underdeveloped character in social science. @ross2023 also notes that ontology construction most probably will require its formulation with mathematical frameworks sensitive to structural modeling (like hierarchical Bayesian inference[^hbi]) and not set theory and similar tools from analytic metaphysics. 
+
+ [^mathsoc]: Although not widely known, there have been such attempts. See @simon1962, @fararo1978 and, most notably, @gintis2007.
+
+[^hbi]: Hierarchical Bayes is a model with probabilistic parameters (meaning they are uncertain) which allows for hierarchical relations between random variables.
+
+As already mentioned, analytic social ontology is based on conceptual analysis and claims that it is prior to social scientific methodology [@searle1995; @epstein2016; @lauer2019]. The naturalistic camp criticizes this approach as detached from actual social science [@elder-vass2007; @sarkia2023; @kincaid2024; @ross2023; @little2020]. Their focus is meta-ontological rather than ontological as they wonder what it means to ask questions about ontology of social science and what are the ways to arrive at an ontology instead of proposing or criticizing particular ontological pictures. 
+
+Our main focus will be on Guala's "unified social ontology" [@guala2015; @hindriks2015; @guala2016] as it tries to save the "best of both worlds" from analytic and naturalistic social ontology by providing a scientifically rigorous treatment of classic analytic social ontology of Searle [-@searle1995].
+
+In its standard analytic formulations, which @guala2007 even calls the "Standard Model of Social Ontology" (SMOSO), social ontology describes the loosely constrained individualistic foundations of social phenomena and has three key elements [@tuomela2002]:
+
+- reflexivity
+- performativity 
+- collective intentionality.
+
+Reflexivity is a property of social entities to be largely comprised of beliefs about beliefs. There are I-mode and we-mode formulations of reflexive beliefs. Some philosophers say that initial and most basic beliefs comprising “the fabric“ of the social are essentially in We-mode and are not reducible to I-mode [@tuomela2002; @gilbert1992; @schmid2023]. However, there are also more individualistic accounts of reflexive beliefs based on game theory [@guala2016; @bicchieri2005]. 
+
+Performativity amounts to social entities needing to be continuously maintained, performed or recreated. And collective intentionality, in its turn, refers to joint directedness of multiple individuals towards a phenomenon that contributes to its constitution. Collective intentionality tends to be presented either as a derivative of common knowledge and I-beliefs of the form “everyone knows that everyone knows that P“, where P is some social fact like social norm [@bicchieri2005], or as a primitive notion which makes common knowledge redundant. Moreover, there are attempts to naturalize collective intentionality by showing its irreducibility to individual intentionality [@rakoczy2007; @gallotti2012]. 
+
+A prominent example is Searle [-@searle1995] who asks whether it is possible to be epistemologically objective about ontologically subjective issues. How can we know the truths about things whose existence depends on our representations or feelings, for example, about money, property and marriage? By analysing these distinctions of ontology/epistemology and objectivity/subjectivity, Searle arrived at an idea of a missing ingredient that allows for a picture of ontologically subjective entities, which is *constitutive rules* of the form “X counts as Y in C”. 
+
+Here, our classifications of the social world help establish and maintain it, whereas non-social objects are indifferent to our classifications of it, as @hacking1999 puts forward with his distinction of interactive and indifferent kinds[^kinds]. Nature's objects do not change their behaviour given these classifications of them as opposed to social objects. This idea illustrates the notions of reflexivity and performativity characteristic for the “Standard model”. If social entities are comprised of beliefs about beliefs, their nature depends on these beliefs, and if beliefs change, social entities change accordingly. If social entities depend on beliefs about them, it is needed to constantly perform those to maintain them. To do this, individuals need to have collective intentionality about these beliefs. For example, for money to be itself, a relevant community has hold a collective intention to believe that certain physical entities can be used as a medium of exchange. 
+
+[^kinds]: This distinction mirrors the classic one of natural and social kinds, where the former are paradigmatically "homeostatic property clusters", sets of necessary and stable features [@boyd1991].
+
+Along with the "Standard model", @guala2007 calls game theory one of the two main approaches to social ontology. He departs from the works of @schelling1980 and @lewis1969, claiming that the latter was the first to apply rational choice analysis to social ontology and to present social conventions as systems of self-sustaining beliefs. Schelling, before Lewis, already was aware that coordination problems are unsolvable from the pure game-theoretic perspective if the existence of focal points is admitted, for the latter need a separate explanation. Schelling advocated the supplementation of an a priori approach to game theory with empirical studies of the emergence of focal points. This point was further explicated by @sugden2006, as we saw in the previous chapter.
+
+An intrinsic problem of application of game theory to social ontology is that there is no mechanism of spreading of high utility-bearing strategies across the population. Seen in terms of biological fitness, the most successful strategy derived from a long evolutionary history spreads across the population. In contrast, seen from the utility viewpoint, the very cause of spread a utility-bearing strategy begs an explanation. This is why Guala critiques application of game theory to social ontology and tries to modify it.
+
+Guala strives to overcome the shortcomings of the both "Standard model" with its utter anti-realism (due to dependence on beliefs) and game theory in his own "unified social ontology", which integrates the notions of reflexivity, performativity and intentionalty with formal accounts of social conventions as objective structures underpinning the aforementioned features of the "Standard model".
+
+ @hindriks2015 propose a theory that social institutions like money, marriage or others can be seen as (sets of) conventions in Lewisian sense with added normaivity. They employ many arguments from our previous discussions like Aumann/Vanderschraaf *CE*, Skyrms/Maynard-Smith *ESS* and emphasize the role of *normative belief* in a manner similar to Bicchieri/Gintis. As we will pose a problem inside their theory later, it is important to carefully present and unpack it, which I will do in the next section.
+
+## Guala's and Hindriks's "rules-in-equilibria" theory
+
+@hindriks2015 present a unified theory of social institutions as rules in equilibria (RiE) represented symbolically by theoretical terms like "money" or "marriage". It bridges accounts of regulative rules, equlibria of strategic games and Searlian constitutive rules, where the former two are complementary and comprise a rules-in-equilibria account, and the latter supplements it by providing a symbolic representation. They essentially bridging Searle's account of institutional facts as rules with Lewis's theory of conventions seen through the lens of Aumann/Vanderschraaf/Gintis. They reduce constitutive rules to regulative ones [@hindriks2005], which they represent formally as conditional strategies "if X, do Y" [@guala2016]. To better understand their proposition, let us start from Searle's constitutive-rule theory of institutions.
+
+Searle’s social ontology distinguishes two kinds of rules: *regulative* rules, which govern actions that can occur independently, and *constitutive* rules, which create new kinds of social reality [@searle1995; @searle2010]. In Searle’s formulation, constitutive rules take the schematic form:
+
+$$
+X \text{ counts as } Y \text{ in context } C
+$$
+
+where $X$ is a pre‐institutional entity or action, $Y$ is a *status function*, a social role or function assigned to $X$, and $C$ is the relevant context or domain [@searle1995]. For example, “putting the ball in the net ($X$) counts as scoring a goal ($Y$) in a game of football ($C$)” [@searle1995]. Such rules do not merely regulate pre‐existing behavior; they *create* new social facts. In Searle’s own words, “institutional facts only exist within systems of constitutive rules” [@searle1995].
+
+- **Constitutive vs. Regulative.** A constitutive rule makes a novel institutional action possible, whereas a regulative rule simply prescribes behavior within an already existing framework [@searle1995]. Chess provides a classic example: the constitutive rules of chess *create* the possibility of the game, whereas a regulative rule would say, for instance, “if you touch a piece you must move it” [@searle1995].
+- **Status Functions and Deontic Powers.** Under a rule $X$ counts as $Y$ in $C$, $Y$ is a *status function* attached to $X$, and carrying this status typically confers normative powers (rights, obligations, etc.) on the bearer. Thus if a community collectively accepts that certain actions or objects bear status $Y$, those actions have deontic powers. Searle often emphasizes that constitutive rules imply deontic powers: e.g. a wedding ring ($X$) gives someone the status of “married person” ($Y$), along with associated rights and duties. In Searle’s framework, linguistic declarations often play a role: he introduces the idea of a *Status Function Declaration*, a speech act that imposes or announces status functions as binding [@searle2010].
+
+Searle identifies *institutions* with systems of constitutive rules. He writes that “an institution is any system of constitutive rules of the form $X$ counts as $Y$ in $C$” [@searle1995]. Thus, for Searle, political offices, legal entities, money, marriages, etc., exist because underlying constitutive rules assign new status functions to physical or social substrates. These rules are held in place by *collective acceptance* of the community. In Searle’s view, the syntax “$X$ counts as $Y$ in $C$” – often called the *counts-as* locution – succinctly captures the logic of institutional facts.
+
+Searle’s theory posits that social reality is built upon constitutive rules that are *creatively* implemented: they not only *regulate* behavior but *generate* the very phenomena like institutions and roles they describe [@searle1995; @searle2010].
+
+Hindriks [-@hindriks2005] has challenged several aspects of Searle’s constitutive-rule framework. His deconstruction focuses on the notions of *status functions*, *Status Function Declarations*, and the role of language. Broadly, Hindriks argued that many of Searle’s theoretical apparatus are unnecessary or misleading, and that a more streamlined account can be given by focusing on collective acceptance and normative powers.
+
+- **Status Functions as Deontic Powers.** Hindriks finds the term *status function* confusing and somewhat redundant. He suggests dropping the “function” and simply treating statuses as normative powers. In his words, “we can do without the term function while retaining the term status,” instead explicating statuses directly as the bundle of deontic powers they grant [@hindriks2009]. By equating statuses with deontic powers (rights, obligations), Hindriks makes the normative dimension of institutions explicit, rather than hiding it under the metaphor of a “function” [@hindriks2009]. Indeed, Searle himself has acknowledged that “all status functions are deontic powers,” which supports Hindriks’s move toward a more direct terminology [@hindriks2009].
+
+- **Redundancy of Status Function Declarations.** Searle’s idea of a *Status Function Declaration* – a speech act that supposedly creates or recognizes a status – is, for Hindriks, unnecessary. He argues that the two key claims Searle attributes to such declarations (that collective acceptance is necessary and sufficient for the status) are already implicit in the standard “counts-as” formulation. Once we accept that *institutional statuses require collective acceptance, and that collective acceptance alone brings them into being* (the “Collective Acceptance Principle”), the special notion of a Status Function Declaration adds nothing new [@hindriks2015]. Introducing declarations suggests without argument that only explicit speech acts can create institutions; Hindriks finds this unjustified and unhelpful. He concludes that Searle’s extra machinery (the Status Function Declaration with its “double direction of fit”) should be abandoned since it “does not add anything of value” [@hindriks2015].
+
+- **Linguistic vs. Normative Distinction.** Hindriks also questions Searle’s emphasis on language as the source of all institutional power. In his earlier work, Hindriks has argued that the regulative/constitutive distinction is mainly a grammatical one: regulative rules are phrased with explicit imperatives or deontic terms, while constitutive rules are phrased with the “counts-as” locution, but both embed the same normative content [@hindriks2009]. Normative obligations figure explicitly in regulative rules (“Do X” / “If Y do X”), whereas constitutive rules imply those obligations without stating them overtly. Thus, the locus of normativity is not really different between the two; only the linguistic presentation is. Hindriks calls for a view of institutions that centers on *collective commitment* and acceptance of standards, rather than on linguistic declarations per se [@hindriks2009].
+
+In sum, Hindriks dismantles Searle’s superstructure of status functions and declarations, proposing instead that we should “explicate statuses in terms of normative powers” and rely on a simpler collective-acceptance principle [@hindriks2009; @hindriks2015]. On this view, institutions are upheld by groups collectively endorsing certain rules, and the resulting normative powers of those rules are what really matters. His critique paves the way for unifying Searle’s approach with more analytical models, by translating constitutive claims into the language of regulative rules and equilibria.
+
+@guala2015 present a synthesis of rule-based and game-theoretic views of institutions. They argue that constitutive-rule accounts and equilibrium-based accounts common in economics can be integrated using the concept of CE. Their core idea is that *constitutive rules are not ontologically fundamental*, but can be reconstructed from systems of regulative rules under coordination equilibria in iterated games [@guala2015].
+
+As we mentioned, in a CE, each agent effectively follows a *conditional strategy* of the form “if $X$ do $Y$.” Guala & Hindriks note that this is just a regulative rule [@guala2015]. For example, two herders might adopt strategies “graze if river is north” vs. “graze if river is south,” thus solving a coordination problem. Each agent’s strategy is equivalent to a rule prescribing what to do in a given circumstance. Thus, institutions based on coordination can be viewed as *collections of regulative rules* that form a stable equilibrium.
+
+Moreover, the familiar constitutive formulation can be derived as a shorthand. Guala & Hindriks show that by introducing new institutional terms one can transform regulative conditionals into “counts-as” form. This two-part statement has a consequent identical to an institutional status. Compressing these, one obtains a constitutive rule:
+
+$$
+\text{A piece of land north of the river (}X\text{) counts as Nuer property (}Y\text{) in the context of location (}C\text{).}
+$$
+
+In this way, Guala & Hindriks interpret “$X$ counts as $Y$” rules merely as economy of description: they package together a base rule (antecedent) and a status rule (consequent) that were already implied by the equilibrium of regulative rules [@guala2015]. They argue that any regulative rule can be converted into a constitutive rule by inserting an institutional term, and conversely any constitutive rule can be expanded back into regulative form. The purported novelty of constitutive rules is thus secondary: they label what is already established by agents’ correlated strategies. Institutions “consist of regulative rules” from which constitutive formulations can be omitted without loss.
+
+Guala’s unified theory posits that institutions emerge from solving repeated coordination problems: agents arrive at a CE through a coordination device or focal point. The equilibria are characterized by mutual conditional strategies “if $X$ do $Y$”. In this picture, the content of any constitutive rule comes down to a cluster of conditional incentives and conventions that are already present in the equilibrium. Institutional terms like “dollar” or “married” are introduced for shorthand, but Guala emphasizes they are only instruments of "cognitive economy" and *do not possess any independent causality* [@guala2015].
+
+Crucially, Guala reframes Searle’s project in game-theoretic terms without surrendering its insights. He acknowledges that institutional statuses influence how we classify and act, but maintains that these statuses are always aligned with behavioral regularities expressed as CE. Thus Searle's emphasis on “counts-as” locution can be recovered as am epiphenomenon of coordination: an apparent creative *power of language*[^power-of-language], but in fact nothing more magical than the effect of correlated strategy profiles. As Guala & Hindriks put it: 
+
+> "language is one among many coordination devices, and has no more creative power than a coin toss or any other event the players may use to coordinate their decisions" [@guala2015].
+
+[^power-of-language]: Searle makes deontic powers of institutional facts dependent on language. At the same time, evidence from cognitive archaeology suggests that early hominins were able to solve coordination problems without language. @sterelny2021 argues that social institutions (or the human social contract) conceived as shared, enforceable norms regulating cooperation and reciprocity emerged *before the advent of complex language*. Archaeologically, early hominins engaged in cooperative foraging and coordinated tool use, such as the collective extraction of high-value resources, indicating mutualistic collaboration and implicit norm enforcement in small mobile bands from around 1.8 million years ago [@sterelny2021; @sterelny2016]. Comparative primate research supports the plausibility of *pre-linguistic cooperation and rudimentary norm enforcement*, highlighting that great apes exhibit forms of mutualism and social regulation that likely scaffolded early human cooperation [@birch2022]. Together, these findings support Sterelny’s model that proto-social contracts rooted in norms, reputation, and coordination were present in pre-linguistic societies, with language later enabling more abstract, scalable, and formalized norms as human social groups expanded. Although Searle did not conceive of institutions as of solutions to coordination problem, this is relevant from a naturalistic social ontology point of view. 
+
+A key task is to explain normative powers  under this account. Guala & Hindriks argue that normative aspects can be modeled as payoff-modifications of the underlying game akin to $\delta$-parameters of @crawford1995. A normative rule adds incentives or penalties that make certain actions like cooperation more attractive. In practice, this means that if agents gain a “right” or incur an “obligation,” we represent this by inserting costs or benefits into the payoff matrix. This transforms a general-sum game into a coordination game where the efficient equilibrium becomes more salient.
+
+Guala shows that adding such normative costs can create new equilibria that were not present before, or make the socially optimal outcome stable. Importantly, these modifications do not require a distinct ontological category beyond standard game-theoretic tools. Normative powers are simply part of the equilibrium framework: they enable coordination by altering incentives[^normativity-in-rie]. Guala & Hindriks illustrate that any status rule such as rights to use, transfer, or exclude can be recast as regulative rule once normative powers are included.
+
+[^normativity-in-rie]: Guala argued elsewhere that Lewisian conventions acquire normativity (or deontic force) in *repeated play*, so that history of play becomes a focal point for emergence of normaitvity [@guala2010]. This view is *dynamic*, whereas the view of payoff-modifiers as repressentations of the "built-in" normativity presuppose a static view of institutions. This, along with a couple of other inconsistencies, complicates the explanation of normativity of social institutions with RiE.
+
+In effect, Guala & Hindriks endorse a transformation view: any institution describable by a constitutive rule can equally be described by a set of regulative norms that include the necessary permissions and prohibitions. The existence of a status $Y$ simply stands for certain equilibrium relationships among agents "behind it". By shifting Searle’s status functions into equilibrium terminology, the unified ontology connects institutional “oughts” to strategic coordination, however, the proper place of "oughts" remains underdeveloped. As they conclude, institutions have a dual function in game-theoretic terms: 
+
+- etiological — causal, promoting cooperation
+- teleological — evaluative, securing values by imposing social norms [@hindriks2021].
+
+Hindriks and Guala build their account of functions of institutions on the basis of Wright's analysis of biological functions [@wright1973], which might be summarized in two main conditions. The first is that the function *F* of an entity *A* is the cause of the existence of *A*. The second condition is that *F* is a consequence of the existence of *A*, which means that *F* is non-redundant to the existence of *A*. The same logic, as the authors argue, applies to institutions. Promotion of cooperation to solve coordination problems is presumably the cause of the persistence of institutions. And securing the normativity of institutions is their purpose.
+
+## Criticisms of Guala's unified social ontology
+While innovative, Guala and Hindriks’s account has drawn critiques as reducing constitutive rules to equilibria overlooks important aspects of social reality. Key criticisms include the following:
+
+- **Irreducibility of constitutive rules**. In a direct reply, @searle2015 insists that constitutive rules cannot be eliminated. He warns that Hindriks & Guala’s project “only has a chance of success” if constitutive rules can be reduced to regulative ones and he flatly denies such a reduction. According to Searle, the core question of social ontology concerns status functions, which their account fails to capture. He argues that the equilibrium and regulative frameworks “cannot even pose” the right questions about institutions, and that only the constitutive-rule approach can supply answers. I am not convinced by this criticism, for Searle's conceptual-analytic paradigm prevents him from *dynamic* analysis of social ontology, which implies questions of emergence of certain parts of his theory. Although I partially agree with Searle that regulative framework "cannot even pose" right questions, I see its cause in *different foci* of the two theories. Searle is concerned with performative *institutional facts* which do not necessarily solve a coordination problem. It works like this due to the very formulation of Searle's position of epistemologically objective treatment of ontologically subjective reality. Social ontology is by definition dependent on representations and changes thereof by language. There is no room for "objective" ontological structures which Guala and Hindriks try to accommodate with conventions as beneficial behavioral patterns.
+
+- **Neglect of material and historical aspects**. Rabinowicz praises Guala’s broad integration but raises concerns about the equilibrium focus. He points out that treating institutions as “rules-in-equilibrium” can misrepresent their ontology by ignoring material substrates and history [@rabinowicz2018]. Many institutions like universities, currency systems, markets and traditions involve *concrete people, practices and goods*, not just abstract strategies. Material base of the games played like students and classrooms in a university, as Rabinowicz claims, is essential part of institutions and cannot be abstracted from due to disregarding "basic ontology" of the modeled phenomena. This criticism fails to convince me, as I find the notion of the "basic ontology" misleading due to implying some "folk ontology" and subscription to conceptual analysis which favors intuition of the social world as a valid starting point for ontological scrutiny. Models abstract away inessential parts of systems in question. Although I agree that there are always concrete people and practices with their material bases, including misleading "basic ontology" is inessential for explanation of the structure of social ontology, emergence and stability of its core parts. Another Rabinowicz's criticism is that the set of possible CE is larger than that of NE, thus complicating the problem of equilibrium selection instead of making it easier. IT is so for there is infinity of possible probability distributions which can create many CE arrangements. However, seen *dynamically*, as  @skyrms2014 does, for example, correlation of strategies arises in the course of evolution, thus solving the problem of equilibrium selection with symmetry-breaking with correlation by chance and stochasticity.
+
+# ОСТАНОВИЛСЯ ЗДЕСЬ
+- **Normative Content and “Reductionism”**. @roversi2021 defends the traditional importance of constitutive rules. He finds the unified account too reductionistic: treating constitutive rules as mere summaries of regulative incentives “strips away” their normative essence [@roversi2021constitutive]. From his perspective, this view fails to explain why individuals feel bound by institutional norms beyond calculative incentives. Roversi insists that one cannot capture the meaning of a status (like professor) by conditional rules alone.
+
+***
+
+Jean-François Hédoïn has offered a notable critique of Guala’s reductionist approach, especially its reliance on game-theoretic equilibrium concepts to reconstruct constitutive rules. His main concern is that Guala’s framework **underestimates the role of normativity** and **misrepresents institutional stability** by overemphasizing coordination.
+
+- **Institutions as Normative, Not Merely Coordinative.** Hédoïn argues that while coordination is often involved in institutional functioning, it does not exhaust the nature of institutions. Institutions are not just solutions to coordination problems but are also **normative frameworks** that structure agents’ preferences and behaviors over time [@hedoin2016institutions]. Reducing institutions to patterns of correlated strategies leaves out the fact that **agents internalize institutional rules**, and that these rules often shape identities, moral commitments, and obligations beyond calculative reasoning.
+
+- **Endogeneity of Preferences.** A major issue Hédoïn raises is the **endogeneity of preferences**: institutional norms do not merely reflect agents' prior preferences—they also **constitute and transform** them. This undermines the game-theoretic view that takes agents' utility functions as fixed and externally given. For example, the institution of marriage changes how individuals value relationships, not just how they coordinate behavior. This dimension is missing in Guala's payoff-matrix approach.
+
+- **Historical and Social Embedding.** Hédoïn emphasizes that institutions are **socially embedded** and historically contingent. Game-theoretic accounts, he argues, tend to abstract away from the **temporal and cultural path-dependencies** that give institutions their resilience and authority. They function not merely because of strategic equilibria but because of shared historical meanings and processes of internalization that are not reducible to payoff-based incentives [@hedoin2016institutions].
+
+- **Critique of Ontological Parsimony.** Finally, Hédoïn questions the **ontological parsimony** that Guala aims for. While economizing on categories may seem desirable, Hédoïn argues that in the case of social ontology, simplification can lead to **distortion**. Concepts like *deontic powers* and *status functions* capture the normative and symbolic depth of institutions that equilibrium models cannot easily replicate. Stripping these away risks explaining away rather than explaining institutions.
+
+In sum, Hédoïn sees Guala’s theory as an elegant but overly “thin” model of institutional ontology—one that misses the **normative bindingness** and **transformative social functions** of institutions. For Hédoïn, institutions do more than solve coordination problems; they shape what kinds of agents we are and what obligations we recognize.
+
+***
+
+These critiques highlight ongoing debates. Searle emphasizes that status functions and collective acceptance are foundational; Rabinowicz stresses the role of material practice and historically emergent coordination; Roversi underscores the normative motive behind rule-following. They caution that a social ontology should explain why institutions have binding force, not only how equilibria form.
+
+Searle’s formula “$X$ counts as $Y$ in context $C$” remains a powerful insight into how language and collective recognition create social reality [@searle1995]. Hindriks has challenged Searle to clarify and streamline this theory, recasting status functions as normative powers and eliminating extraneous speech-act machinery [@hindriks2009status]. Building on these critiques, Guala and Hindriks propose a synthesis: institutions are best understood as equilibria of regulative rules, with constitutive formulations as convenient summaries [@guala2015unified]. Their unified ontology shows how coordination mechanisms can generate the regularities we call institutions, and how normative powers enter as shifts in payoffs.
+
+Nevertheless, prominent philosophers have warned that reducing constitutive structure to equilibria risks losing the heart of institutional normativity. Critics like Searle, Rabinowicz, and Roversi emphasize that any account must ultimately explain the binding force of rules and rights, not merely their instrumental equilibrium effects. These debates continue to refine our social ontology. Guala’s contribution is to point out the deep connections between coordination theory and constitutive concepts, but the criticisms remind us that a complete theory must integrate these insights with a robust account of collective acceptance and purpose.
+
+
+## A bigger problem: structural inadequacy of RiE theory
+What is the justification for connecting rules and equilibria accounts of social institutions? According to @guala2016b, institutions as rules-in-equilibria are normatively-driven behavioral regularities comprising CE. “Rules” here are the recipes guiding and prescribing certain behavior and are used by the agents themselves, and ”equilibria” are *objective stable states* of the strategic interaction between agents. Other scholars pinpoint normative and self-sustaining nature of institutions as “humanly devised constraints that shape human interactions” [@north1990], “norm-governed social practices” [@tuomela2013] and “self-sustaining salient behavioral patterns” [@aoki2007]. Institutions combine “subjective” and “objective” components: they are driven by social norms, that might vary from one population to another, and, at the same time, constrain possible actions and sustain itself.
+
+The rule-based account conceives of social institutions as rules guiding and constraining behavior in social interaction or "humanly devised constraints" of social interactions [@north1990]. In sociology, the tradition of treating institutions as rules dates back to such classical figures as @weber1924 and @parsons2015, and it continues to thrive today. The equlibrium-based account sees institutions as behavioral regularities and, most importantly, solutions to coordination problems just like those studied in the previous chapter. The constitutive rules account sees institutions as systems assigning statuses and functions to physical entities like we saw earler in @searle1995.
+
+@guala2015 argue for the reconciliation of rules and equilibria from *explanatory insufficiency* of rules and equilibria as separate explanations of the *stability of social institutions*. The focus on stability of norm-governed mutually beneficial recurrent behavioral patterns recasts the problem of the "unification of ontology" in terms of causal efficacy of the factors influencing stability of norm-governed practices, although Guala and Hindriks do not put this explicitly. 
+
+According to @hindriks2015, the rule-based account is *insufficient*, for it cannot explain why some rules are followed and others are not. For example, they recall a French law from 1799 which forbid women to legally wear trousers and "dress like men" which was officially revoked only in 2013. The failure of this "rule" (as French women did wear the trousers despite this law) shows the fragility of the rules-only approach to social institutions.
+
+To address this issue, Hindriks and Guala use an equilibrium account to show the *strategic character of rule-followin*g. The authors compare the two paradigmatic games from game theory, prisoner's dilemma and stag hunt. Although mutual defection in the prisoner's dilemma is a NE, it is not a social institution, for it is not self-sustaining due to independence of players' strategies. In contrast, the mutual decision to hunt a stag instead of a hare, which are also both NE, is an institution, for it requires correlation of players' strategies to achieve a bigger joint payoff. The latter means that the strategy is salient and beneficial for players, which seemingly explains why some rules are followed and other not.
+
+<!--Doc representation-->
+<!--\begin{table}[h]-->
+<!--\centering-->
+<!--\begin{tabular}{|c|c|c|}-->
+<!--\hline-->
+<!--& $C$ & $D$ \\-->
+<!--\hline-->
+<!--$C$ & $-1,-1$ & $-3,0$ \\-->
+<!--\hline-->
+<!--$D$ & $0,-3$ & $-2,-2$ \\-->
+<!--\hline-->
+<!--\end{tabular}-->
+<!--\begin{tabular}{|c|c|c|}-->
+<!--\hline-->
+<!--& $S$ & $H$ \\-->
+<!--\hline-->
+<!--$S$ & $4,4$ & $1,3$\\-->
+<!--\hline-->
+<!--$H$ & $3,1$ & $2,2$ \\-->
+<!--\hline-->
+<!--\end{tabular}-->
+<!--\caption{Prisoner's dilemma (left) and Stag hunt (right)}-->
+<!--\end{table}-->
+
+<!--Web representation-->
+$$
+\begin{array}{|c|c|c|}
+\hline
+& $C$ & $D$ \\
+\hline
+$C$ & $-1,-1$ & $-3,0$ \\
+\hline
+$D$ & $0,-3$ & $-2,-2$ \\
+\hline
+\end{array}
+$$
+
+$$
+\begin{array}{|c|c|c|}
+\hline
+& $S$ & $H$ \\
+\hline
+$S$ & $4,4$ & $1,3$\\
+\hline
+$H$ & $3,1$ & $2,2$ \\
+\hline
+\end{array}
+$$
+
+**Prisoner's dilemma (left) and Stag hunt (right)**
+
+However, the notion of players' correlated strategies as an *explanans* of the stability of institutions is insufficient, as well, as the authors point out, for it is too permissive. They provide an example of non-human animals solving coordination problems without institutions. For example, male baboons, lions, swallowtails and other species exhibit a recurring behavioral pattern that can be described in terms of CE. Males patrol an area to mate with females and have ritual fights with intruders if encountered. The evolved pair of players' strategies minimizes possible damage to both parties and lets the incumbent occupy territory and mate [@maynardsmith1982]. The authors use Maynard Smith's exposition of animal territorial behavior represented as a “Hawk-Dove-Bourgeois” game to provide a simplified example of a prototypical social institution of property:
+
+<!--Doc representation-->
+<!--\begin{table}[h]-->
+<!--\centering-->
+<!--\begin{tabular}{|c|c|c|c|}-->
+<!--\hline-->
+<!--& $H$ & $D$ & $B$\\-->
+<!--\hline-->
+<!--$H$ &$-1$ &$2$ &$0.5$\\-->
+<!--\hline-->
+<!--$D$ &$0$ &$1$ &$0.5$ \\-->
+<!--\hline-->
+<!--$B$ &$-0.5$ &$1.5$ &$1.0$ \\-->
+<!--\hline-->
+<!--\end{tabular}-->
+<!--\caption{\\small "Hawk-Dove-Bourgeois" game}-->
+<!--\end{table}-->
+
+<!--Web representation-->
+$$
+\begin{array}{|c|c|c|c|}
+\hline
+& $H$ & $D$ & $B$\\
+\hline
+$H$ &$-1$ &$2$ &$0.5$\\
+\hline
+$D$ &$0$ &$1$ &$0.5$ \\
+\hline
+$B$ &$-0.5$ &$1.5$ &$1.0$ \\
+\hline
+\end{array}
+$$
+**"Hawk-Dove-Bourgeois" game**
+
+Presented with a terrestrial resource, a “Hawk” player fights over it, a “Dove” retreats and “Bourgeois” uses a conditional strategy “fight if own and retreat if do not own”. In this game, Guala and Hindriks see the “bourgeois” strategy “fight if own” as a correlated one in the sense of Aumann/Vanderschraaf, meaning that the players coordinate their actions by conditioning them on an external signal. As they say, it is a "simple pre-emption device: whoever occupied the land first has the right to use it" [@hindriks2015, 465]. In this case, the temporal order of occupation is used as a correlation device. Overall, this correlation fulfills the necessary condition of being an institution.
+
+@guala2015 illustrate the applicability of HDB to humans with a game where two tribes, spatially separated by a dry river, graze their cattle. The dry river serves as a “focal point”—a salient feature of the environment that the members of both tribes have been aware of [@schelling1980]. It also serves as a correlation device, for it is a source of a public signal that coordinated actions of different tribes without their explicit agreement. Thus, the shepherds of both tribes have three possible strategies: “Graze”, “Not graze” and “Graze if North / South of the river” according to the history of their territorial occupation. The members of one tribe might be killed by the members of another if grazing their cattle on another side of the dry river which the other tribe possesses. The stable set of strategies is grazing if on the own side of the dry river. 
+
+<!--Doc representation-->
+<!--\begin{table}[h]-->
+<!--\centering-->
+<!--\begin{tabular}{|c|c|c|c|}-->
+<!--\hline-->
+<!--& $G$ & $NG$ & $GIS$ \\-->
+<!--\hline-->
+<!--$G$ &$-1$ &$2$ &$0.5$\\-->
+<!--\hline-->
+<!--$NG$ &$0$ &$1$ &$0.5$ \\-->
+<!--\hline-->
+<!--$GIN$ &$-0.5$ &$1.5$ &$1.0$ \\-->
+<!--\hline-->
+<!--\end{tabular}-->
+<!--\caption{\small Grazing game: the player strategies are Graze, Not Graze and Graze if North / Graze if South}-->
+<!--\end{table}-->
+
+<!-- Web representation -->
+$$
+\begin{array}{|c|c|c|c|}
+\hline
+& G & NG & GiS, NGiN \\
+\hline
+G & 0,0 & 2,1 & 1,0.5\\
+\hline
+NG & 1,2 & 1,1 & 1,1.5 \\
+\hline
+GiN, NGiS & 0.5,1 & 1.5,1 & 1.5,1.5 \\
+\hline
+\end{array}
+$$
+**Grazing game: the player strategies are Graze, Not Graze and Graze if North / Graze if South**
+
+The payoff structure of the game is identical for animal and human cases, and we cannot discriminate between them solely on this basis. This invites the insufficiency of CE employed by Guala and Hindriks. However, although they mention adding payoff modifiers to the game structure to accommodate inherent normativity of conventions [@hindriks2019], they neither explain how animal conventions evolve into human payoff-modified ones nor show a payoff-modified version of the game[^payoff-modifications]. So the question is twofold: 
+
+- how payoff-modified game is connected with CE?
+- where normativity resides in the Dinka/Nuer game?
+
+[^payoff-modifications]: As Guala notes, coordination in repeated games is achieved via modifying payoffs with parameters to increase the costs of free-riding and violation which by itself creates salience in repeated games (personal communication). However, it leaves questions of where do parameters modifying payoffs come from and how correlation of strategies and payoff modification are connected. It seems that normativity is "embedded" in RiE by default without explaining it, but it might be explained if seen dynamically.
+
+These questions are hard to tackle up-front, so we will start with easier ones. As the structure of the HDB game is identical for animals and humans, and this is why equilibrium-only account of social ontology necessitates rules or a theory of normativity in general, what then distinguishes "animal conventions" like butterflies' territorial contest resolution from human social institutions like private property? 
+
+Apart from the obvious notions of "normativity" and seen purely from a formal point of view, Guala and Hidriks argue that animal and human conventions differ in the *scope of actionable signals*. Building on the work of @sterelny2003, they contend that animals may only respond to a limited genetically "wired" set of stimuli, whereas humans, with their ability to use representations and symbols to condition behavior, can *decouple response from stimulus and condition behavior on many representations* which they equate with following rules. For example, butterflies cannot coordinate on anything but who occupied the sunspot first and unable to create new equilibria. Humans, however, can go beyond this by choosing arbitrary correlation devices and expanding the number of equilibria [@guala2015]. Their argument has the following logic:
+
+1. social institutions are backed by regulative rules instead of genuinely constitutive ones
+2. regulative rules are agents' conditional strategies comprising a CE
+3. constitutive rules are linguistically transformed regulative rules with added theoretical term that represents a certain equilibrium or a set thereof
+4. at the same time, many animal species exhibit conditional behavioral patterns describable as CE
+5. despite the similarity of the matrix representation, the cases of "animal conventions" and human social institutions differ in scope of actionable signals, as humans can invent and follow new rules with the help of *representation of environment*, whereas animals are bound to genetically inherited sets of behavioral responses
+6. the arbitrariness of rules that humans can invent and follow is grounded in and ontologically depends on shared representations of a given community.
+
+Put differently, the difference in scope of actionable signals between animals and humans is due to humans having social epistemology with normative beliefs that grounds social ontology. There is a lot going on, which needs careful unpacking.
+
+### Conflation of agency models in RiE
+Guala and Hindriks argue that an *adequate* theory of institutions must have three explanatory components [@guala2015, 469]:
+
+- coordination
+- correlation
+- representation,
+
+where "adequateness" is related to the *stability of social institutions* as the main explanatory target.
+
+According to Guala and Hindriks, not all conventions are social institutions, but only those that require solving coordination problems in Lewisian sense of achieving mutually beneficial outcome with *salient* strategies. Salience comes from the normativity of strategies as extra-costs (personal communication). At the same time, salience can be based on a public signal like a dried riverbed of the Sobat river as in the example of Dinka and Nuer tribes. Normativity might, then, arise in RiE from the more "low-level" features of environment over the course of repeated play akin to Ullmann-Margalit's [-@ullmann-margalit1977] normative thresholds from the previous chapter.
+
+Institutions coordinate behavior by *correlating agents' strategies in coordination games* as in Aumann/Vanderschraaf/Gintis notion of CE, and humans are able to *devise many strategies* and hence equilibria given the same correlation device, or signal. As Guala and Hindriks stipulate, independently chosen strategies like NE in the Battle of the Sexes are not social institutions as they are neither mutually beneficial, nor self-reinforcing. Correlation of strategies shows:
+
+- that agents can coordinate upon any coordination device 
+- that coordination is mutually beneficial.
+
+As might have been noticed, there is a subtle tension within the game-theoretic part of Guala's and Hindriks's theory. While discussing HDB, they say that animals play CE and at the same time credit @maynardsmith1982 as for coming up with the very conceptualization of the HDB game. An important remark, though, is that Maynard-Smith used HDB to introduce the concept of ESS and did not use the notion of CE. An intuitive question arises about how do CE and ESS hang together in the same game-theoretic description of an animal convention, especially taking into account the Bayesian-rational natural of CE which animals supposedly lack. As we remember, CE is given by:
+
+$$
+\sum_{s_{-i} \in S_{-i}} p\left(s_i, s_{-i}\right) u_i\left(s_i, s_{-i}\right) \geq \sum_{s_{-i} \in S_{-i}} p\left(s_i, s_{-i}\right) u_i\left(s_i^{\prime}, s_{-i}\right), \quad \forall s_i, s_i^{\prime} \in S_i
+$$
+
+And ESS is given by: 
+
+$$
+P(s^*, s^*) > P(s', s^*) \quad or \quad [P(s^*, s^*) = P(s', s^*) \quad and \quad P(s^*, s') > P(s', s')].
+$$
+
+which means that, although they both are Nash equilibria, they have diverging assumptions. For RiE, it means that:
+
+- either "animal conventions" are mathematically different from human social institutions, for they represent ESS and not CE, and hence Guala's argument from insufficiency and the very reason for introduction of rules fail (for one misinterprets ESS for CE with its rationality assumptions);
+- or "animal conventions" are themselves correlated, and there comes the need of showing *in what respect these correlations are different*.
+
+Guala and Hindriks use the notion of *"bourgeois equilibrium"* introduced in the context of evolutionary game theory by @maynardsmith1982. They see the HDB game of animal territorial ownership a prototypical "animal convention". According to the authors, the so-called "bourgeois equilibrium" (BE) is essentially a CE, however Maynard Smith used BE to define ESS. It creates tension, for CE and ESS are mathematically distinct: the former is "too loose" and the latter is "too strict" in terms of the stability conditions (and RiE strives to explain the stability of social institutions), and it is unclear how they can be combined. Hence, the issue consists of clarifying the status of BE: whether it is a CE, an ESS or something else. It is due to being at the core of Guala's argument for institutions as correlation of strategies rooted in evolution. Let us look at the Maynard Smith's notion of BE captured in the HDB game.
+
+<!-- Taking into account the wealth of research on the relationship between ESS and correlation in game theory [@skyrms1994; @lee-penagos2016; @kim2017; @metzger2018; @herrmann2021], the first option in resolving the tension in Guala's argument becomes insufficient. Hence, let us explore the second option. -->
+
+### Ontic and epistemic correlation of strategies 
+@maynardsmith1982 famously has introduced the notion of ESS into game theory. A 'strategy' is a behavioral *phenotype*, a specification of what an individual will do in any situation. An ESS is a strategy that, if adopted by all members of a population, prevents the invasion of any mutant strategy by natural selection. The concept originated in the context of animal behavior, but can be applied to any phenotypic variation.
+
+He proposed a model of a 'Hawk-Dove' game that represents a *mis*coordination game between two agents. In a competition for some resource, 'Hawk' fights for it and 'Dove' displays and retreats if threatened.
+
+<!-- Doc representation -->
+<!-- \begin{table}[h] -->
+<!-- \centering -->
+<!-- \begin{tabular}{|l|c|c|c|} -->
+<!-- \hline -->
+<!-- & \textbf{Hawk} & \textbf{Dove} \\ \hline -->
+<!-- \textbf{Hawk} & $\frac{1}{2}(V-C)$, $\frac{(V-C)}{2}$ & $V$ \\ \hline -->
+<!-- \textbf{Dove} & $0$ & $\frac{V}{2}$ \\ \hline -->
+<!-- \end{tabular} -->
+<!-- \caption{\small A 'Hawk-Dove' game. The payoffs are determined by the value of the resource ($V$) and the cost of fighting ($C$). Value $V$ increases the Darwinian fitness of an individual if they obtain the resource, and cost $C$ reduces it if injured in a fight over the resource. Not gaining $V$, however, does not mean zero fitness.} -->
+<!-- \end{table} -->
 <!---->
-<!--- [[14.1_Standard-Model-of-Social-Ontology]]-->
-<!--    - [[14.1a_SMOSO-and-Evo-game-theory-as-two-major-models-of-social-ontology-lack-empirical-foundations]]-->
-<!--        - [[14.1a1_Mechanism-of-spreading-of-successful-strategies-is-needed-to-apply-evo-game-theory-to-social-ontology]]-->
-<!--            - [[14.1a1a_Individual-level-explanations-of-social-ontology-featuring-cognitive-mechanisms-are-not-exhaustive]]-->
-<!--- [[14.2_Social-ontology-should-only-assist-inferences-and-not-claim-what-there-is]]-->
-<!--- [[14.3_Social-theory-ought-to-be-physically,-computationally-and-cognitively-realistic]]-->
-<!--- [[14.4_Social-structural-relations-are-not-causal,-but-conceptual]]-->
 
-<!--A somewhat surprising extension of Lewis's theory is due to Guala and Hindriks [@guala2015; @hindriks2015] as they expand to the field of social ontology and, what is more, make it ontologically fundamental. They propose that social institutions like money, marriage or others can be seen as (sets of) conventions in Lewisian sense. They employ many arguments from our previous discussions like Aumann/Vanderschraaf *correlated equilibrium*, Skyrms/Maynard-Smith *ESS* and emphasize the role of *normative belief* in a similar to Bicchieri/Gintis manner. As we will pose a problem inside their theory later, it is important to carefully present and unpack it, which I will do in this section.-->
-<!--- Exposition of theory's components-->
-<!--    - [[11.1b_Guala's-explanatory-components-for-theory-of-institutions.md]]-->
-<!--    - [[10.1b1_Correlated-equilibrium-instead-of-Nash-highlights-the-variety-of-coordination-devices.md]]-->
-<!--    - [[11.2-Institutions-have-etiological-and-teleological-functions.md]]-->
-<!--    - [[11.2a-Institutions-are-there-for-they-incentivise-which-is-due-to-gene-culture-coevolution-and-not-only-natural-selection.md]]-->
-<!--    - [[11.2b_Norms-both-make-behaviour-more-stable-and-predictable-and-introduce-new-behaviour-by-changing-game-payoffs.md]]-->
-<!--- Criticism-->
-<!--    - @hedoin2021-->
+$$
+\begin{array}{|l|c|c|c|}
+\hline
+& \textbf{Hawk} & \textbf{Dove} \\ \hline
+\textbf{Hawk} & $\frac{1}{2}(V-C)$, $\frac{(V-C)}{2}$ & $V$ \\ \hline
+\textbf{Dove} & $0$ & $\frac{V}{2}$ \\ \hline
+\end{array}
+$$
+
+**A 'Hawk-Dove' game. The payoffs are determined by the value of the resource ($V$) and the cost of fighting ($C$). Value $V$ increases the Darwinian fitness of an individual if they obtain the resource, and cost $C$ reduces it if injured in a fight over the resource. Not gaining $V$, however, does not mean zero fitness.**
+
+This model assumes:
+
+- an *infinite population* with asexual reproduction 
+- symmetric contests between two opponents
+- random matching
+- a finite set of strategies.
+
+Defining the stability criteria for the strategies, he proposed that If a strategy $I$ is stable against $J$, it must satisfy the “standard conditions” from @smith1973: the fitness of typical members adopting $I$ must be greater than any mutant $J$, such that:
+
+- either $E(I, I)>E(J, I)$ or $E(I, I)=E(J, I)$
+- and $E(I, J)>E(J, J)$.
+
+According to these conditions, $D$ cannot be an ESS, for $E(D,D) < E(H,D)$, and $H$ is an ESS if costs of injury are less than potential gain from the resource, $V > C$. If $V < C$, neither $H$ nor $D$ is an ESS. To proceed, Maynard Smith considers the behavior of individuals who can play either strategy with a certain probability, which they pass on to their offspring. This strategy takes the form 'play $H$ with probability $P$, and $D$ with probability $(1-P)$'.
+
+A mixed strategy $I$, which randomly chooses an action from a set of possible actions, may be an ESS if the expected payoffs of the strategies composing it are equal. This follows from a theorem by @bishop1978: if a mixed ESS includes the pure strategies $A, B, C, \ldots$ with non-zero probability, then $$E(A, I)=E(B, I)=E(C, I)=\ldots=E(I, I)$$
+
+Intuitively, this means that if $E(A, I)>E(B, I)$, adopting $A$ more often and $B$ less often would be more advantageous than following strategy $I$, making it not an ESS.
+
+However, $I$ can be an ESS if probability of its adoption is $P = V/C$. In contests where the cost of injury is greater than the rewards of victory, $V < C$, mixed strategies with $P = V/C$ are evolutionarily stable.
+
+What is important, a game with two pure strategies always has an ESS, and games with three or more strategies may not have one. As we remember, both "Hawk-Dove" and "Grazing" games have three strategies.
+
+@maynardsmith1982 introduces the distinction between symmetric and asymmetric games. He illustrates them with animal contests. An asymmetric contest is one where participants have different roles, allowing them to use different strategies. Roles must be identifiable and can be based on gender, ownership, or intruder status. Circumstances which determine an individual's role are assumed to be independent of their genetic strategy. A contest with no role differentiation is 'symmetric'. @maynardsmith1982 characterizes them as follows:
+
+1. Contests are between two individuals of distinct roles (e.g., owner/intruder, larger/smaller, older/younger);
+2. Both individuals know their role;
+3. Both have the same strategies available (e.g., escalate, retaliate, display);
+4. Role may influence chances of winning or value of victory.
+
+The Hawk-Dove game is symmetrical—both players have the same choice of strategies and payoffs. However, most contests are asymmetric, with differences in size, strength, gender, age, or ownership influencing strategy choice and/or altering payoffs or success in escalation. Even when the asymmetry does not change payoffs or escalation outcomes, it may still determine the players' actions.
+
+<!-- Doc representation -->
+<!-- \begin{table}[h] -->
+<!-- \centering -->
+<!-- \begin{tabular}{|l|c|c|c|} -->
+<!-- \hline -->
+<!-- & \textbf{Hawk} & \textbf{Dove} & \textbf{Bourgeois} \\ \hline -->
+<!-- \textbf{Hawk} & $-1$ & $2$ & $0.5$ \\ \hline -->
+<!-- \textbf{Dove} & $0$ & $1$ & $0.5$ \\ \hline -->
+<!-- \textbf{Bourgeois} & $-0.5$ & $1.5$ & $1$ \\ \hline -->
+<!-- \end{tabular} -->
+<!-- \caption{\small 'Hawk-Dove-Bourgeois' game} -->
+<!-- \end{table} -->
+<!---->
+
+$$
+\begin{array}{|l|c|c|c|}
+\hline
+& \textbf{Hawk} & \textbf{Dove} & \textbf{Bourgeois} \\ \hline
+\textbf{Hawk} & $-1$ & $2$ & $0.5$ \\ \hline
+\textbf{Dove} & $0$ & $1$ & $0.5$ \\ \hline
+\textbf{Bourgeois} & $-0.5$ & $1.5$ & $1$ \\ \hline
+\end{array}
+$$
+
+In this example, the Hawk-Dove game is extended to include a third strategy, $B$ (or Bourgeois), which is defined as 'if owner, play Hawk; if intruder, play Dove'. This strategy is ESS and the only ESS of this game. It is assumed that each strategy type is owner and intruder equally frequently. Hence, even when ownership does not alter payoffs or success in fighting, an asymmetry of ownership can be used as a conventional one to settle the contest. In a way, it is a correlation of strategies.
+
+Here, the $B$ player chooses $H$ and $D$ with equal frequency, acting as an owner on half the occasions and an intruder on the other half. And when two $B$'s compete, if one chooses $H$, the other chooses $D$. If $V > C$, the ESS is $H$ as it is worth risking injury to gain the resource; if $V < C$, the ESS is $B$ as ownership settles the contest without escalation. It means that in both 'Hawk-Dove' and 'Grazing' games $V < C$.[^fitness-in-grazing].
+
+[^fitness-in-grazing]: However, it is not clear whether human players such as grazers have genuine fitness rather than utility value function. As @sterelny2012 suggests, there has been an evolutionary shift from fitness to utility correlated with the demographic explosion in the Pleistocene and subsequent significant decline in individual-level heritability of cultural traits, for offspring did not more resemble their parents informationally and ideologically due to the abundance of cultural information sources.
+
+Crucially, this assumes that *the probability of an individual occupying a role is independent of their strategy*. This holds true even for strategy $B$, wherein the individual's role is correlated with their chosen action (Hawk or Dove). The assumption is that the strategy $B$ itself is unrelated to role. In other words, If an agent is indeed an 'owner', it does not entail that she always plays a certain 'owner' strategy like 'Hawk' or 'Bourgeois'. However, according to @gintis2007a, empirical findings corroborate the existence of the 'endowment' effect, when owners value a resource more than intruders, thus making them fight harder for it. It presupposes a certain degree of correlation between role and strategy, as opposed to Maynard Smith's model.
+
+@smith1976 used the term 'uncorrelated asymmetry' to refer to payoff-irrelevant differences in an otherwise symmetric game. In asymmetric contests the value of the resource, or chance of victory, is not the same for both owner and intruder. The payoffs to owners and intruders are often not equal, so the territory may be more valuable to an owner who has already familiarized themselves with food, refuge, and other. Ownership may even offer advantages in escalated contests. Inequality of payoffs is possible due to size or age asymmetry. Even if there is no inequality, an asymmetry can still settle contests. Thus, "Grazing" game as presented by Guala, does not require a correlated device and may be solved by uncorrelated asymmetry alone, as both players recognize the asymmetry of ownership and the value of territorial gains is less than the costs of potential injury, $V < C$, for they might value their own territory more than potential one. 
+
+It is interesting that @maynardsmith1982 considers the 'social contract' game as one which humans can play but animals cannot. This game involves a group of individuals agreeing on a behavioral regularity and punishing any member who deviates from it. However, the act of punishing carries a cost, so in order to maintain stability, refusal to participate in enforcement must be considered a breach and punished as well. To ensure enforcement, a subgroup may be rewarded for carrying it out. Essentially, the 'social contract' game differs from any other coordination or cooperation game in added normativity, that can be represented by a $\delta$-parameter, for instance. Such normativity is characteristic of social institutions as defined in rules-in-equilibria theory. This renders Guala's example with 'Grazing game' problematic, for, following Maynard Smith, not only HDB and 'Grazing game' are conceptually distinct (for they presuppose different types of agents: phenotypes and beliefs as strategies correspondingly), but they must have different payoff structure due to added normativity in the human case.
+
+Guala and Hindriks put forward that coordination in social institutions, and in 'Hawk-Dove-Bourgeois' as an exemplar case of property, is due to correlation of strategies. But what is "correlation of strategies" in the first place?
+
+Correlation of strategies is a stable state of strategic interaction. It is represented by the concept of correlated equilibrium (CE) that goes beyond the Nash equilibrium and allows players to coordinate their strategies *through the use of a common randomizer*, such as a coin toss or a dice roll. This allows players to make decisions based on their beliefs about how the other players will act, which can increase the efficiency of their strategies. The concept of CE has been used to explain various phenomena in strategic decision making, including how people form coalitions, how firms cooperate and compete, and how players interact in team games.
+
+The key feature and difference of CE is randomization. As @aumann1987 points out, correlation is more general than mixing of strategies, for the latter can be formally seen as the former by considering the product probability space $\Gamma^1 \times \cdots \times \Gamma^n$, where $\Gamma^i$ is the set of outcomes corresponding to player $i$'s mixed strategy. Players make correlated, or nonindependent, choices when they observe the same random variable.
+
+Back to the HDB game, its important feature is that if $V < C$, the $B$ strategy helps to settle contests *conventionally*. Maynard Smith does not emphasize the notion of convention. What he by it is that there is shared 'understanding' of the situation between the players that helps to choose a strategy.
+
+One intrinsic problem with $BB$ as CE, however, is the source of randomization. If players are not epistemic agents (like animals are). Some scholars appeal to Nature as to a such source, calling it a *correlation device*, thus eliminating the tension between the requirement of randomization and symmetry of ESS [@cripps1991; @skyrms2014; @metzger2018]. In particular, Gintis defines CE as an NE of a game $G$ augmented by the *initial move by Nature* that who observes a random variable $\gamma$ on a probability space $(\Gamma, p)$ and issues directives $f_{i}(\gamma) \in S$ to each player $i$, such that choosing the directive is the best response given agents having a common prior $p$ and assuming other players are also following Nature's directives [@gintis2009a, 135-136]. The crucial assumption, though, is that *the game is epistemic and has common priors*. This implies that all agents agree on the probability distributions over their actions and have *joint randomized probability*. Assuming a strict CE—that each agent $i$ has a single best response $s_i(\omega)$ in every state $\omega$—each player's move is known to the others and rationality dictates that each must play a best response to the actions of the others.
+
+In their theory, Guala and Hindriks endorse this epistemic interpretation of the “Hawk-Dove”. It means that "animal conventions" are themselves correlated, but it is still confusing in regard to the diverging assumptions of evolutionary and epistemic interpretations of the game. In other words, how could animals correlate theiry strategies non-epistemically while still having ESS?
+
+According to Skyrms, the implicative nature of the $B$ strategy is genuinely correlative:  the $BB$ strategy profile is a CE *spontaneously arising* from symmetry-breaking that happens when individuals randomize the choice of their strategies and do not know whether they are “Hawkes” or “Doves” [-@skyrms2014, 78].
+
+This is where Skyrms's notion of "correlated convention" from the previous chapter shines. To reiterate, correlation in evolutionary game is achieved with the symmetry broken with interactional dependencies between agents (spatial or social structure, signaling, etc). This is possible due to a frquentist interpretation of probability in CE without beliefs instead of Bayesian-rational and with objective frequencies of strategy use.
+
+A random mutation or learning can create a CE in a Hawk-Dove game. A slight increase in resource value or fighting ability will strongly favor the bourgeois equilibrium over others. What was "uncorrelated asymmetry" for Maynard Smith, became "correlated asymmetry" for Skyrms.
+
+On Skyrms's account, $BB$ is CE *and* ESS at the same time without conflict (personal communication). More precisely, $BB$ is an *adaptive-ratifiable* strategy* (generalized ESS), for it takes into account conditional strategies emerging from endogenous structure of interactions and resulting into correlation which affects interaction frequencies and stabilizes the strategy over the population. This strategy does not assume *any* rationality in agents, let alone a Bayesian one, implied by Guala.
+
+For RiE, the notion of "correlated convention" means that an example of animal HDB can indeed be described as CE and ESS at the same time under the crucial condition of the *non-epistemic nature of the game*, whereas Guala's agents are strictly epistemic and Bayesian-rational (personal communication). 
+
+The crucial difference is that non-epistemic agents correlate on the *objective features of environment*, while epistemic agents *correlate on beliefs*, especially in the case of human HDB with added normativity, where social norms are the source of salience like Guala and Gintis put forward [@guala2015; @gintis2009a]. We might introduce the distinction of *ontic* and *epistemic* correlation. What is subtle yet crucial here and what is overlooked in RiE, is that these types of correlation have distinct real-world references. While both animal and human conventions are CE formally and can be described with a single model, both their "inner workings" and references "in the world" are different. This renders the entire argument of "scope of actionable signals" as problematic. To remind, this argument is at the backbone of RiE as it justifies the introduction of rules into equilibrium theories of social institutions. 
+
+According to Guala and Hindriks, stability of social institutions cannot base only on CE as CE is equally applicable to animals. However, as we saw, these are two distinct CEs — frequentest (ontic) and Bayesian (epistemic) ones. While rules or any notion of normativity is missing in ontic correlation by definition as it cannot be a feature of environment[^emergent-normativity], rules as salient norms can and sometimes are CE themselves. For example, @gintis2009a views social norms as "choreographers" and CE as they are essentially "second-order" conditional strategies.
+
+[^emergent-normativity]: As we will see in Chapter 3, normativity can be an emergent property of social networks, which can be considered "a feature of environment", but it would require a separate mechanism of niche construction to evolve.
+
+It means that their argument for insufficiency of CE without rules for human cases is unsubstantiated, for CE as norms already include both Bayesian rationality *and* normativity (for example, Gintis's belief matrices from the previous chapter). Consequently, explanation of stability of institutions does not require separate CE and rules as norms, as for epistemic games with Bayesian-rational agents, norms can be CE themselves. While I am not denying the effectiveness of having both rules and equilibria, I argue that the "insufficiency" argument for introducing norms as separate entities from CEs fails. Norms are smuggled into RiE practically *ex nihilo* and remain unexplained why we need them for the explanation of stability of institutuions, while having them as the central causal factor of such stability according to the insufficiency of CE argument.
+
+Instead, what remains to be explained by RiE is the gap between ontic and epistemic correlation: **how stability of human institutions evolves from stability of animal conventions**?
+
+Guala and Hindriks mention *representation* as the third component of an adequate theory of social institutions along with coordination and correlation of strategies. Their argument goes that representation helps agents to condition their strategies not on immediate features of environment like in ontic correlation, but on many representation which they, importantly, equate with following rules (which is essentially epistemic correlation). So, representation for them is a mechanism for bridging animal and human conventions and explaining emergence of normativity and hence stability of institutions. However, it is not evident how the two are causally connected.
+
+So far, we have indentified the problem of conflated agency models within RiE which influences the cohesiveness of one of its main arguments. Namely the argument that CEs are insufficient for explanation of stability of institutions, for they are applicable to animal coordination problems and hence necessitate rules as separate explanatory entities. Identification of this problem allows to view normativity as left unexplained in RiE, for animal CE are stable without rules and human CE might themselves be salient social norms as rules. If normativity is already included into CEs, how did we go from non-normative to normative CEs? A capacity for representation is responsible for transitioning from the former to the latter, which is a big bet for a theory of stability of institutions. We now turn to studying the notion of representation and its relation to normativity in RiE.
+
+### The problem with "representation" in RiE
+In this section I will argue that the notion of representation employed by Guala and Hindriks is ambiguous, which further complicates substantiation of normativity as the main causal factor of stability of social institutions. 
+
+While justifying the insufficiency of equilibria with applicability of the concept of CE to both humans and animals, Guala and Hindriks use the notion of representation in a broad sense, although appeal to @sterelny2003, who uses it in a narrower sense of an *advanced cognitive capacity*. Coordination by correlation alone is insufficient for introducing distinction between animal and human conventions with normativity, and representation is needed as mechanism for it.
+
+Correlation in RiE (which we now know is epistemic) is possible, as Guala and Hindriks put forward, due to an advanced *cognitive capacity for conditioning behavior on representation of the environment*. As RiE has “rules” and "equilibria” parts, they must be somehow connected. For this reason, rules are symbolic *representations* of strategies in a game that comprise equilibria. They not only serve as symbolic markers of the properties of equilibria, but considerably save cognitive effort. As Aoki notes [-@aoki2007, 6]:
+
+> “An institution is a self-sustaining, salient pattern of social interaction, as represented by meaningful rules that every agent knows, and incorporated as agents' shared beliefs about the ways the game is to be played”.
+
+But what are the rules Guala, Hindriks and Aoki are talking about? As they stipulate that institutions are norm-governed salient social practices, or behavioral regularities, *rules essentially are norms*. Guala, following @north1990, notes that social norms make behavior more stable and more predictable. However, as noted by Searle, they introduce new behaviors, as well, and they do it by changing game payoffs. 
+
+There are two types of rules in RiE:
+
+- *agent-rules* that agents formulate to represent and guide their behavior
+- *observer-rules* that an observer formulates to represent and summarize others' behavior.
+
+Strategies can be described as rules, but a-rules influence behavior and o-rules only describe it [@guala2016b, 54].
+
+*Institutions are composed of both subjective and objective components*: they are determined by varying social norms as rules and simultaneously restrict certain behaviors and their own perpetuation.
+
+```{.mermaid background=transparent}
+graph LR;
+	subgraph Objective
+		3(Observer rules)
+		1(Correlated equilibrium)
+		1<-.->3
+	end
+	subgraph Subjective
+		3<-.Representation.->4
+	end
+	4(Agent rules)
+```
+
+# остановился здесь
+However, it is not evident how rules *represent* strategies. To clarify this issue, the authors, drawing on @hindriks2005, propose to bridge their rules-in-equilbria account of institutions with the constitutive rules account. The latter presents institutions as systems of statuses and functions, paradigmatically proposed by @searle1995 as the formula "X counts as Y in C”. Searle draws a sharp distinction between constitutive and regulative rules, emphasizing the difference in their syntax, for that of the latter is “do X if Y”.
+
+The constitutive rules approach argues that our beliefs are essential for the existence of institutions, which involve more than just actions. This applies to objects, persons, and events too. X in "X counts as Y in C" can be replaced by predicates that refer to any ontological category [@guala2015, 470].
+
+As the authors note, constitutive rules are linguistically transformed regulative rules, aided with a new term to name an institution. Combining these accounts enables researchers to investigate Y terms like “money” used by individuals in everyday life and analyze their internal regulative and strategic character, thus *bridging explicit ontology of social science and implicit ontology of ordinary language*. The main idea of this argument, thus, is that constitutive rules can be developed at will from regulative rules or game-theoretic strategies by introducing institutional terms [@guala2015, 477].
+
+$$\text{Regulative rule (if X, do Y)} \, + \, \text{Institutional terms (e.g. "money")} = \text{Constitutive rule (X as Y in C)}$$
+
+For example, one can transform a regulative rule "if a bill is issued by the Bureau of Engraving and Printing, it can be used to pay for goods in the United States" into "Bills issued by the Bureau of Engraving and Printing count as money in the United States" by adding an institutional term “money”. 
+
+
+***
+
+However, the very notion of "representation" as used in RiE is ambiguous: a-rules as semantic constructs "inside of the heads of agents" seem to "represent" game-theoretic strategies just like the scientific concept of a "gene" represents a physically realizable macro-molecule. In other words, it is not a mental state, but correspondence between a concept and its real-world referent. At the same time authors mention terms like "stimuli", "behavior" and "representation" in one sentence, seemingly implying a narrower cognitive perspective. 
+
+From a social-scientific point of view, representation as a relation makes sense, for it allows investigation of Y-terms, or institutional terms, used by agents by observing social practices, circumscribing social norms that govern them and then trying to figure out the respective strategies in equilibrium [@guala2016b, ch. 14]. However, representation as a cognitive capacity does not have any immediate practical application, especially in sociological data. Hence, there is need to discern two notions of representation in Guala's and Hindriks' argument:
+
+- representation as relation between entities
+- representation as cognitive capacity.
+
+If, according to the authors, representation as a cognitive capacity distinguishes human conventions from animal ones, which is a crucial step in their argument from insufficiency of both rules and equilibria, it means that the representation as a relation between the rules and equilibrium might ontologically depend on representation as a cognitive capacity.
+
+As the authors base their argument on Sterelny's, the capacity for inventing and following new normative rules depends on response breadth and decoupled representation of environment accessible to humans. However, crucially, there is no explicit conceptual link between representation as a cognitive capacity that grounds rule invention and representation of strategies by a-rules. The former is a feature of agents, and the latter the feature of a theory describing the agents.
+
+When the authors introduce representation as a final condition for satisfactory theory of institutions along with coordination and correlation, they mainly mean "representation-as-relation", as they use it to clarify and justify the relationship between the two parts of the theory: rules and equilibria. Representation here means that agents are capable of representing equilibria and their salient features in symbolic form [@hindriks2015, 466]. According to the authors, this is possible due to an advanced cognitive capacity for decoupling a stimulus and behavior with the aid of representation of environment. This decoupling allows for conditioning the behavior, or strategies, on many coordination devices, and the authors take it for humans to be equivalent to "following different rules". Here rules are symbolic representations of the strategies "that ought to be followed in a given game" [@hindriks2015, 467].
+
+Here is a problem with this argument. It presupposes that behavior conditioning, and hence strategy selection, occurs already being based on existing rules. To follow a rule, it should exist. At the same time, these rules are a-rules, and they already represent existing strategies "that ought to be followed in a given game". It means that behavior is conditioned on existing strategies, and this involves a vicious circle: inventing new rules requires not only a capacity for stimulus-behavior decoupling, but existing equilbria, for here salient features of existing equilibria are used as coordination devices. In other words, the authors equate representation of salient features of the environment with representation of existing strategies, or behavioral responses, that preexist in the current game structure and "ought to be followed". It means that agents directly represent game structure with the aid of a-rules and institutional terms. Decoupled representation is used as a bridge between a-rules and o-rules, but it would mean that stimuli are themselves o-rules of the form "do X if Y". There seems to be a missing link.
+
+Would this work without representation as a cognitive capacity? No, for stimulus-behavior decoupling is key for a capacity to invent and follow new rules which distinguishes human social institutions and animal conventions. The introduction of decoupled representation as a cognitive capacity is only due to justifying this difference: although the payoff structure in both HDB games is the same, human agents are able to devise and converge on new equilibria given the same coordination device, or signal. For example, if butterflies can coordinate only on the precedence of occupying the sun spot, for they use the temporal order of territory occupation as a coordination device, humans are not genetically hardwired for using one and only coordination device for a given situation. We can interpret the same coordination device differently. As a simple example, many countries have a nod as "yes" and head shake as "no". However, it is the opposite in Bulgaria. A set of signals is the same, but the equilibrium is different. And it crashes when a foreigner tries to understand a native. Overall, the argument will not succeed without representation as a cognitive capacity, for there will still be no difference between human social institutions and animal conventions in game-theoretic terms.
+
+And would the argument work without the notion of representation as a relation between rules and equilibria? No, as well, as it is the crux of the argument and of the unification done by rules-in-equilibria theory. Representation here logically connects rules and equilibria and helps to further connect it to constitutive rules theory by the notion of institutional, or Y-terms, as in "X count as Y in C" formula.
+
+A more interesting question is whether representation as relation is possible without representation as a capacity. No, for as there is no structural difference between animal conventions and human social institutions without a human capacity for stimulus-behavior decoupling, there is no added representation of strategies with a-rules by agents. Animals seemingly cannot represent strategies with formulated normative a-rules. And if there is no decoupling, hence there is no "new rules and strategies". Apart from this, according to the authors, representation is needed to condition the behavior on the features of existing equilibria "that ought to be followed" to introduce brand new strategies and equilibria. It means that behavior conditioning, either in Sterelny's sense of salient features of immediate environment or in Guala's and Hindriks' sense of a-rules as representations of salient features of existing equilibria, requires a capacity for a decoupled representation.
+
+Thus, for the whole argument about social institution as rules-in-equilibria to succeed, Guala and Hindriks should show two things:
+
+- that correlated equilibrium is indeed supported both in human and animal conventions in the first place. It is for @maynardsmith1982, from whom they take the notion of bourgeois equilibrium, uses ESS and not correlated equilibrium;
+- that representation as a relation between rules and equilibrium is ontologically dependent on representation as a cognitive capacity.
+
+For the theory to fully work, it is needed to clarify the mechanics of decoupled representation: how it contributes to the emergence of new strategies to the extent that agents acquire an advanced capacity to represent game structure and salient features of equilibria, if they do at all. However, this is out of scope of this paper. Now we take a step back and analyze the notion of a "Hawk-Dove-Bourgeois" game as introduced by @maynardsmith1982 that plays a crucial role in the argument of Guala and Hindriks.
+
+## RiE with ontic account of scientific explanation 
+- [[Craver's-lecture-"Ontic-basis-of-network-explanation"|craver's lecture "Ontic basis of network explanation"]]
+***
+
+[^1]: Coordination equilibrium is a concept defined by philosopher David Lewis which states that when two or more individuals are engaged in a coordination game, they will naturally gravitate towards the same outcome, as this is the most rational choice. The idea is that each individual will tend to choose the same outcome because they can both benefit from it. This is in contrast with Nash equilibrium, where each individual must make a choice that maximizes their own payoff without considering the other's payoff.
+[^2]: Correlated equilibrium is a general solution concept introduced by Aumann [-@aumann1974; -@aumann1987]. As opposed to the classic Nash equilibrium, where players choose their strategies independently, here players choose strategies based on a public signal the value of which they assess privately, thus coordinating their actions according to a given correlation device.
+[^3]: An ESS is a strategy which, if adopted by a population, is resilient to invasion by any alternative strategy. Mathematically, an ESS can be defined as a strategy profile $\boldsymbol{s} = (s_1, s_2, ... , s_n)$ such that $\forall \boldsymbol{s'} \neq \boldsymbol{s}$, we have $\pi(\boldsymbol{s}, \boldsymbol{s}) > \pi(\boldsymbol{s}, \boldsymbol{s'})$, where $\pi$ is the average payoff of the population playing the strategies $\boldsymbol{s}$ and $\boldsymbol{s'}$ [@maynardsmith1982].
+[^4]: Nash equilibrium is a solution concept describing a strategy profile consisting of each player's best response to the other player's strategies where no one gains bigger payoff by deviating unilaterally.
+[^5]: However, it is still not clear whether human players such as grazers have genuine fitness rather than utility value function. As @sterelny2012 suggests, there has been an evolutionary shift from fitness to utility correlated with the demographic explosion in the Pleistocene and subsequent significant decline in individual-level heritability of cultural traits, for offspring did not more resemble their parents informationally and ideologically due to the abundance of cultural information sources.
+
+***
+
+
 <!--- https://www.annalsfondazioneluigieinaudi.it/images/LII/R28201801_E-4284-Tieffenbach_Review.pdf-->
 <!--- https://ndpr.nd.edu/reviews/understanding-institutions-the-philosophy-and-science-of-living-together/-->
-<!--- Problem with correlation — [[003_correlation_as_core_problem]]-->
-<!--- Problem with representation — [[006_problem-with-representation]]-->
 <!--- Discussion and interim results-->
 <!--    - [[11.3_Stable-and-efficient-social-contracts-evolved-due-to-within-group-AND-between-group-dynamics.md]]-->
 <!--    - [[10.1a_hard-to-say-coordination-problems-or-socialization-evolved-first.md]]-->
 <!---->
+
 <!--# Chapter 3. Evolution of conventions as a problem of scope of actionable signals-->
 
-<!--```mermaid-->
-<!--flowchart LR-->
-<!--    A[Minimal Minds] --> B[Developmental Plasticity];-->
-<!--    B --> C[Robust Tracking & Representation];-->
-<!--    C --> D[Situated Intentionality];-->
-<!--    D --> E[Epistemic Agency];-->
-<!--```-->
-<!--***-->
+<!-- - 🔥 @okasha2015 + research rabbit -->
+<!--- @lee2023-->
 <!--## 2.X The Evolution of Social Conventions: Bridging Evolutionary and Epistemic Agents through a Naturalistic Framework-->
 <!---->
 <!--### 1. Introduction-->
@@ -1631,3 +2167,85 @@ In the next chapter, we will put game-theoretic notion of convention into the co
 <!--- the problem: 🔥 [[10.1b_Human-and-animal-conventions-differ-in-scope-of-actionable-signals.md]]-->
 <!--- Naturalization of social conventions: connecting evolution and deliberation-->
 <!---->
+
+
+<!-- ### 2. Rules, norms and conventions -->
+<!-- - [x] What are the rules Guala and Hindriks are talking about? As they stipulate that institutions are norm-governed salient social practices, or behavioral regularities, rules are norms. It is the case for agent rules, though. So, what roles do norms play in institutions? Guala notes that social norms fulfill two functions highlighted by @north1990: they make behaviour more stable and more predictable. However, as noted by Searle, they introduce new behaviours, as well, and they do it by changing game payoffs. Norms help explain not only the persistence of institutions, but also its emergence. But if social norms are inherently important to institutions, what are they, and how do they differ from social institutions? -->
+<!---->
+<!-- @hindriks2019 elaborates on the definition of social institutions as norm-governed social practices and explicates how norms might govern practices. His main idea is that modeling social norms as sanctions with costs that agents incur for violating norms, is insufficient for its perception by agents as legitimate. According to the author, this account fails to capture the motivation by the norm itself and not by the costs of its violation. He claims that it is normative expectations and normative beliefs that complement sanctions as a source for norm existence and perception as legitimate. Social norm governs a practice if its participants are motivated to follow its rule to a noteworthy extent. -->
+<!---->
+<!-- Social norms can influence behavior due to sanctions imposed for violating them. Such sanctions modify people's preferences in cooperation games and motivate them to cooperate [@ullmann-margalit1977]. Apart from this, norms can be seen as legitimate, which leads people to conform even if it might not be in their best interest [@bicchieri2005]. This is evidenced by the difficulty people experience when deciding to violate norms. In other words, decisions to conform are often more complex than a simple cost-benefit calculation. -->
+<!---->
+<!-- Hindriks highlights coordination and cooperation types of social norms. Coordination norms such as first-come-first-serve as standing in line are contrasted by cooperation norms like “I-will-scratch-your-back-if-you-scratch-mine”. Game-theoretically, this distinction is represented by either aligning or conflicting interests of agents in a game, respectively. -->
+<!---->
+<!-- To this end, social institutions can be seen as solutions to coordination or cooperation games. Coordination games have at least two solutions that benefit all players. For example, two sides of the road to drive on. It does not matter on which particular side all the drivers drive, but the side being the same does matter, e.g, left in the UK or right in Europe. Cooperation games have one solution optimal for all players. For example, hunting a stag requires several participants but has a higher payoff for each, whereas hunting a rabbit can be done alone and has a lower payoff. It is more beneficial for everyone to cooperate and hunt a stag to get a higher payoff. -->
+<!---->
+<!-- Hindriks studies the conditions of possibility for such behavioral regularities that successfully solve coordination and cooperation problems. He starts with the notion of convention, which is a population-wide beneficial regularity of behavior, deviating unilaterally from which is disadvantageous [@lewis2008]. As there are two or more equally profitable solutions, or equilibria, in coordination problems, the mutual convergence of the agents on the same solution becomes important, otherwise there will be miscoordination. Lewis, a pioneer of game-theoretic analysis of conventions, argues that given recurrent situations with coordination problems, people choose by precedent. They condition their behavior on what they expect others to do, enabling coordinated behavior among the population. -->
+<!---->
+<!-- Lewis's account of conventions states that a behavioral regularity is a convention in a population P in a coordination game situation S if the following criteria are fulfilled: -->
+<!---->
+<!-- - (1) Members of P conform to the regularity; -->
+<!-- - (2) They expect others to conform; -->
+<!-- - (3) They prefer to conform if others do so; -->
+<!-- - (4) This is common knowledge of the form "everybody knows that everybody knows that P". -->
+<!---->
+<!-- On this account, conventions are strict NE. At the same time, Lewis regards conventions as norms and does not make a sharp distinction between the two. -->
+<!---->
+<!-- Vanderschraaf advances Lewis's notion of convention by formalizing the notion of salience central to Lewis's account. He shows that conventions are not NE, but correlated equilibria [@vanderschraaf1995; @vanderschraaf2001]. -->
+<!---->
+<!-- On this game-theoretic account, social norms are modeled as sanctions with costs that can alter behavior by influencing agents' preferences, as agents face costs for not conforming to it. High costs and a greater likelihood of violation-detection increase the incentive to cooperate. Institutions, in their turn, are maintained partly because of these norm costs. -->
+<!---->
+<!-- At the same time, introduction of sufficiently high delta parameter into cooperation problems transforms them into coordination ones. For instance, given a Prisoner's dilemma with a high delta parameter representing a cost for norm violation, the game becomes that of coordination with two equilibria — $CC, DD$ instead of only $DD$ [@crawford1995]. This shows that normative rules can in principle be coordination devices, or “choreographers”, as Gintis puts it [@gintis2009a]. -->
+<!---->
+<!-- \begin{table}[h] -->
+<!-- \centering -->
+<!-- \begin{tabular}{|c|c|c|} -->
+<!-- \hline -->
+<!-- & $C$ & $D$ \\ -->
+<!-- \hline -->
+<!-- $C$ & $-1,-1$ & $-3,0$\\ -->
+<!-- \hline -->
+<!-- $D$ & $0,-3$ & $-2,-2$ \\ -->
+<!-- \hline -->
+<!-- \end{tabular} -->
+<!-- \begin{tabular}{|c|c|c|} -->
+<!-- \hline -->
+<!-- & $C$ & $D$ \\ -->
+<!-- \hline -->
+<!-- $C$ & $-1,-1$ & $-3,0-\delta$\\ -->
+<!-- \hline -->
+<!-- $D$ & $0-\delta,-3$ & $-2,-2$ \\ -->
+<!-- \hline -->
+<!-- \end{tabular} -->
+<!-- \caption{\label{fig:delta-transformation-coordination-game}{Delta parameter transforming cooperation game into coordination game.}} -->
+<!-- \end{table} -->
+<!---->
+<!-- Hindriks draws a distinction between social norms and conventions: norm-compliance is motivated, and conventions are self-reinforcing. He also calls them descriptive and normative conventions. @bicchieri2005 has stated this in terms of the relationship between self-interest and common interest. They coincide in conventions and do not in norms. It means there can be conventions without norms. However, contra Lewis, @gilbert1992 explicitly treats conventions as intrinsically normative and calls them quasi-agreements conceptually linked to joint intentions, which generate normative reasons for conformity. At the same time, @brennan2013 argue that conventions can become normative because they protect or promote some value. @guala2010 support this by empirical evidence. -->
+<!---->
+<!-- Overall, conventions are self-reinforcing, so sanctions are not necessary for creating and maintaining a mutually beneficial behavioral regularity. However, both Lewis and Bicchieri acknowledge that exceptions may exist, making some conventions more fragile than others. Norms, in their turn, make confirming more attractive and thus help to stabilize conventions to ensure collective benefits and prevent malfunctions. -->
+<!---->
+<!-- According to the rules-in-equilibria theory of institutions that Hindriks defend along with Guala, institutions are norm-governed social practices. And Hindriks defines a social practice as a regularity in behavior that involves norms. Practices arise in response to signaling devices, which are salient features of the environment that enable agents to align their behaviors in beneficial ways, creating new strategies and thus giving rise to conventions. Interdependent behavioral regularities in coordination games arise from signaling rules of the form “if D, do A”, whereby agents condition their behavior on a signal to coordinate mutually beneficial interactions and achieve collective benefits. In a case of a traffic light, the light itself serves a signaling device that helps to make traffic safer and more efficient by coordinating behaviors. -->
+<!---->
+<!-- As normativity pervades social interaction, Hindriks distinguishes two types of normative standards: deontic ones, such as right/wrong, and evaluative ones, such as better/worse. Deontic standards signify obligations, while evaluative standards refer to the quality of performance in various activities, e.g., hosting guests. Social practices can feature either deontic and evaluative standards, evaluative standards only, or neither. As an example, a group of friends that loathes rules may also dislike evaluative standards. This suggests that conventions involve signaling rules, but do not necessarily include normative rules. Therefore, social practices can exist without being an institution. -->
+<!---->
+<!-- Hindriks discusses several views of social norms. The 'normative-beliefs view' holds that when people encounter a coordination or cooperation game situation, they are expected to act in a certain way and this is generally known. @brennan2013 define social norms as normative principles or rules which are commonly accepted and known. Social norms are thus generally accepted and recognized normative beliefs. -->
+<!---->
+<!-- However, the phenomenon of “pluralistic ignorance” counteracts the 'normative-beliefs view' by being too restrictive in requiring acceptance of the norm. Hindriks provides an example of college students believing that they are expected to drink heavily on weekends, while not really liking doing it. They do not believe that they ought to do so, but they acknowledge that others believe that college students generally do it. To reflect it, the secind, normative-expectations view, proposes that a social norm exists in a population if its rule is present in the normative expectations of its members. This differs from the normative-beliefs view in that it does not require acceptance of the norm, only acknowledgment of it, and that knowledge of others' attitudes is not necessary. It permits inclusion of the norm in first-order beliefs. -->
+<!---->
+<!-- Bicchieri's theory [-@bicchieri2005] is largely akin to the normative-expectations view, yet there are three key differences. Firstly, she limits the concept of a social norm to regulations that address cooperation problems, while Hindriks includes coordination ones, as well. Secondly, her conception of normative expectations does not make them normative, strictly speaking, for they are higher-order empirical expectations. Someone has a normative expectation if they expect others to adhere to a descriptive rule of 'Everybody does A'. According to Bicchieri, this involves obligations. However, as Hindriks stipulates, an expectation of behavior differs from the belief that a normative rule applies; the former being an expectation, the latter a belief about what should be done. -->
+<!---->
+<!-- The third view of social norms is 'conditional-preferences view'. It holds that a social norm exists when enough participants prefer to conform to it given empirical and normative expectations [@bicchieri2005]. However, @southwood2019 argues that people may secretly wish to break the norm if others do the same and expect each other to do so. According to the conditional-preferences view, perceiving a social norm as legitimate is when someone regards the relevant normative expectations as well-founded. This can motivate people to act accordingly [@bicchieri2005]. -->
+<!---->
+<!-- Overall, the normative-beliefs view holds that people need only possess normative beliefs featuring a rule for it to be perceived as legitimate; these beliefs are self-justifying. The conditional-preferences view, however, states that legitimacy is derived from justified normative expectations. -->
+<!---->
+<!-- According to Hindriks, neither of these two views is adequate. The normative-beliefs view holds that social norms are self-justifying and tend to be regarded as legitimate. Yet, pluralistic ignorance shows that this is not always the case. The normative-expectations view suggests that perceived legitimacy is based on justified normative expectations, which lead to corresponding beliefs. This belief lies at the core of what it means for a social norm to be seen as legitimate, and can only be suitably justified with empirical and normative expectations. The conditional-preferences view fails to capture this complexity, while the normative-expectations view does so by explicating legitimacy in terms of an agent's normative beliefs. This motivates agents to conform and makes a difference to behavior within institutions. -->
+<!---->
+<!-- Moreover, the normative-expectations view states that a social norm has authority if the normative beliefs people have are suitably justified. This is only true if the expectations are both justified and true, indicating that there is an applicable regularity and that others believe the norm applies. -->
+<!---->
+<!-- According to Hindriks, for a social norm to govern a social practive, its participants must adhere to it. This will create an institution, which will be perceived as legitimate and have authority. However, norm-following alone is too demanding an explanation for institutions that are not seen as legitimate. Sanctions, which are important in formal and informal norms, demonstrate that norm-following does not always lead to conformity. -->
+<!---->
+<!-- In sum, a norm governs a practice only if it motivates a substantial number of participants. It happens when it is deemed significant to conform to it. Norm-conformity is not enough for norm-governance, as demonstrated by the example of the convention to drive on the right-hand side of the road. This convention is self-reinforcing, but does not motivate anybody and does not constitute an institution. Thus, neither norm-following nor norm-conformity is necessary for norm-governance and norm-conformity is insufficient. -->
+<!---->
+<!-- To this end, social institutions are norm-driven conventions, or social practices, that require cognitive capacities for recognition, complying to and changing of social norms. The main problem is the source of normativity. -->
+<!---->
+
