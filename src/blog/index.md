@@ -9,17 +9,33 @@
 
 ---
 
-## [Naturalistic ontology as a guide to unified social science (draft)](disser_test)
+## [Живые клетки, наука о данных и «второй мозг» (1/3)](cells-and-pkm)
 
-A major problem in arriving at a non-contradictory theoretical core in sociology is the *lack of ontological constraints on concepts*. It implies insufficient empirical data substantiation, as well as a lack of commitment criteria for evaluating whether a concept is adequately substantiated or not.
 
-*2025-02-25 ~18 минут*
+
+*"26.04.2025" *
 
 ---
 
-## ["Ontic reference in formal social ontology: evolution of social institutions from \"animal conventions\" with niche construction"](phd-draft)
+## ["Мир как датасет: связь теории информация, философии науки и управления знаниями (2/3)"](world-as-data)
 
-phd thesis work-in-progress
+
+
+*"26.04.2025" *
+
+---
+
+## [Живые клетки, наука о данных и «второй мозг» (1/3)](cells-and-pkm)
+
+
+
+*"26.04.2025" *
+
+---
+
+## ["Мир как датасет: связь теории информация, философии науки и управления знаниями (2/3)"](world-as-data)
+
+
 
 *"26.04.2025" *
 
@@ -30,4 +46,12 @@ phd thesis work-in-progress
 
 
 *"2025-03-12" *
+
+---
+
+## [Naturalistic ontology as a guide to unified social science (draft)](disser_test)
+
+A major problem in arriving at a non-contradictory theoretical core in sociology is the *lack of ontological constraints on concepts*. It implies insufficient empirical data substantiation, as well as a lack of commitment criteria for evaluating whether a concept is adequately substantiated or not.
+
+*"2025-02-25" ~18 минут*
 

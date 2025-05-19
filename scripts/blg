@@ -145,11 +145,11 @@ done
 wait # Wait for all pages to be processed
 
 # copy google site verification file into final build
-for file in google*.html; do
-  if [[ -f "$file" ]]; then
-    echo "Found google site verification file, copying $file into $BUILD_DIR"
-    cp "$file" "$BUILD_DIR"
-  fi
-done
+# for file in google*.html; do
+#   if [[ -f "$file" ]]; then
+#     echo "Found google site verification file, copying $file into $BUILD_DIR"
+#     cp "$file" "$BUILD_DIR"
+#   fi
+# done
 
 exit 0
