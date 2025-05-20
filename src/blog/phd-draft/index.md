@@ -2,7 +2,7 @@
 id: index
 aliases: []
 tags: []
-date: "17.05.2025"
+date: "20.05.2025"
 documentclass: article
 generate_toc: true
 geometry:
@@ -13,258 +13,219 @@ geometry:
   - top=20mm
   - bottom=20mm
 header-includes:
-  - \usepackage{epigraph}
+  - \usepackage{array}
 pagestyle: headings
 subtitle: phd thesis work-in-progress
 title: Evolution of social institutions from "animal conventions" with niche construction in Guala's unified social ontology
 ---
-
 ::: {.epigraph}
-Future social science may be as ontologically surprising as twentieth-century physics was.
+Future social science may be as ontologically surprising as twentieth-century physics was
 
-**Don Ross**
+Don Ross
 :::
 
 ::: {.epigraph}
 He who understands baboon would do more towards metaphysics than Locke
 
-**Charles Darwin**
+Charles Darwin
 :::
 
 # Introduction
 ## Relevance of the study
-How the cognitive architecture underlying normative behavior and requiring sophisticated representational capacities could have evolved from simpler forms of social coordination and how it affects social ontology? This is what the current dissertation addresses.
+Both animals and humans coordinate their behavior strategically. At least, it can be described as such by game theory. However, game-theoretic models of human and animal coordination are formally indistinguishable. For example, consider two butterflies competing over the mating spot, where one is the "owner" and another is "intruder" of the spot. How do they resolve this dispute? As research shows, they mostly take into account who occupied the spot first [@davies1978]. This makes each butterfly capable of following one of the *conditional strategies*: 
 
-Beginning with foundational models of convention and coordination, such as those proposed by David Lewis and Brian Skyrms, and extending through more recent debates on the metaphysics of social kinds and the explanatory scope of evolutionary game theory, this dissertation seeks to clarify how social norms can be understood as both products of natural processes and objects of scientific inquiry. The analysis pays particular attention to the distinction between **ontic correlations**-ecological, cue-driven mechanisms of coordination-and **epistemic correlations**-cognitive, representation-based processes that enable agents to interpret and respond to social cues.
+- "if I am an owner of this spot, I will fight over it whatever it takes"
+- "if I am an intruder, I will show hostility but will not escalate and eventually retreat".
 
-The study thus situates itself at the intersection of several ongoing debates: the naturalization of social ontology, the explanatory adequacy of equilibrium models in social science, and the metaphysical status of social kinds. By engaging with these debates, the dissertation aims to provide a framework that is both conceptually rigorous and empirically grounded, while remaining attentive to the limitations and challenges inherent in any attempt to bridge the natural and social sciences.
+Now consider a similar situation in humans. Two tribes graze their cattle on different sides of a dried riverbed. They both *know* that it is in their best interest not to trespass, so they resolve a potential conflict around their property in a similar way by following a conditional strategy "if the land is to the South (or North for another tribe) from the riverbed, graze the cattle" [@guala2015]. Structurally and formally, these cases look the same: 
 
-The doctrine of social normativity, as it is commonly understood, presupposes both the desirability of stable coordination and the possibility that such stability may, at times, require revision or contestation. This dual aspect of normativity-as both a source of order and a potential site of conflict-has deep roots in philosophical tradition, from the classical accounts of justice and law to contemporary debates on institutional design and collective intentionality. The present dissertation situates itself within this tradition, while seeking to advance the discussion by offering a naturalistic account of norm emergence that is sensitive to both ecological and cognitive factors.
+<!-- doc representation -->
+<!-- Table: Payoff matrix for animal and human coordination game -->
+<!---->
+<!-- |              | $Fight$     | $Retreat$    | $Conditional$      | -->
+<!-- |--------------|-------------|--------------|--------------------| -->
+<!-- | $$Fight$$    | $(0,0)$     | $(2,1)$     | $(1,0.5)$          | -->
+<!-- | $$Retreat$$  | $(1,2)$     | $(1,1)$     | $(1,1.5)$          | -->
+<!-- | $$Conditional$$ | $(0.5,1)$ | $(1.5,1)$   | $(1.5,1.5)$        | -->
 
-In examining the argumentative strategies and theoretical systems of leading thinkers in the field, the research focuses on the status of conventions and norms as elements of social ontology. The analysis is attentive to the ways in which ecological cues, cognitive representations, and evolutionary dynamics interact to produce stable patterns of coordination, as well as to the limitations of existing models in accounting for the normative dimension of social life.
+<!-- web-representation -->
+$$
+\begin{array}{|c|c|c|c|}
+\hline
+& Fight & Retreat & Conditional \\
+\hline
+Fight & 0,0 & 2,1 & 1,0.5 \\
+\hline
+Retreat & 1,2 & 1,1 & 1,1.5 \\
+\hline
+Conditional & 0.5,1 & 1.5,1 & 1.5,1.5 \\
+\hline
+\end{array}
+$$
 
-The concept of **social convention** is understood here as a pattern of behavior that arises within a population through repeated interaction, facilitating coordination and reducing uncertainty. **Normativity** refers to the prescriptive force that such conventions can acquire, often accompanied by expectations, sanctions, or moral justification. The distinction between the two is not always clear-cut, and one of the aims of this dissertation is to clarify the mechanisms by which conventions become normative and norms become institutionalized.
+In both cases, the agents have conditional strategies, but what is hidden is the nature of *conditionalization*. In the first case, it relies solely on environmental features and in the second,  it relies on explicit shared normative beliefs. Butterflies coordinate on order of precedence and do not "think" about it, while we humans not only think (sometimes) but base the very game and its strategies on our representations of others' actions and beliefs. 
 
-The **status of social kinds**-such as conventions, norms, and institutions-is a central concern of contemporary social ontology. The present work adopts a modest stance, recognizing the complexity of these phenomena and the challenges involved in providing a unified account. Rather than claiming to offer a definitive solution, the dissertation aims to contribute to ongoing debates by articulating a framework that integrates ecological, evolutionary, and cognitive perspectives, while remaining open to revision and critique.
+My question in the current dissertation is *how the cognitive architecture underlying normative behavior which requires sophisticated representational capacities could have evolved from simpler representational systems and forms of social coordination*? And what does it say about the ontological status of social social institutions as normatively-driven self-sustaining behavioral patterns [@aoki2007; @aoki2011]? The relevance of it stems from its relation to naturalistic constraints of social ontology and sociological theorizing, for *emergence of social epistemology*, which is largely said to ground social ontology [@searle1995; @guala2016; @gintis2009a; @tuomela2013] is one the most important questions on philosophy of social science.
 
-The **relevance** of this research in the contemporary context is multifaceted. Theoretically, the results may be of interest to scholars in philosophy of science, social ontology, cognitive science, and evolutionary theory. Practically, the insights gained may inform the design of institutions, the development of artificial intelligence systems, and the analysis of organizational dynamics. By bridging gaps between different disciplinary approaches and engaging with both international and Russian scholarship, the dissertation aspires to make a modest contribution to the advancement of knowledge in this field.
+The project is situated at the intersection of social ontology, philosophy of science, and cognitive science. It seeks to contribute to the ongoing endeavor to naturalize social normativity, that is, to explain normative (or rather proto-normative) phenomena as arising from natural processes without metaphysical or purely interpretive notions. This aligns with a scientific realist perspective that treats social kinds, such as institutions and norms, as real entities with causal efficacy, amenable to empirical investigation and theoretical modeling [@boyd1999; @guala2016].
 
-***
-What is a convention? As @goodman1989 notes, this term is intricately ambiguous. Social conventions, the unwritten rules that govern our interactions, present a fundamental puzzle in understanding social order. How do shared patterns of behavior emerge and persist within a population when no explicit agreement dictates them? The term "convention" itself carries a dual meaning, referring both to the ordinary and expected, and to the artificial and optional, highlighting the complexity of this phenomenon 1. Philosophers have long been interested in conventions, recognizing their foundational role in various aspects of social life, including language, law, and morality 1.
+More concretely, the study is situated at the intersection of several ongoing debates: the naturalization of social ontology, the explanatory adequacy of equilibrium models in social science, and the metaphysical status of social kinds. By engaging with these debates, the dissertation aims to provide a framework that is both conceptually rigorous and empirically oriented, while remaining attentive to its limitations.
 
-A central contribution of this thesis is to provide a naturalistic and evolutionary account of how humans come to represent and follow institutional rules as prescriptions, thereby addressing a key lacuna in Francesco Guala’s influential “rules-in-equilibrium” theory of institutions. Guala’s account unifies the “institutions-as-rules” and “institutions-as-equilibria” traditions, arguing that institutions are best understood as rules that are in equilibrium: they are both cognitive devices (rules) that individuals use to represent and navigate social life, and stable patterns of behavior (equilibria) that persist due to mutual expectations and incentives[3][6][8]. While this approach elegantly bridges philosophical and game-theoretic perspectives, critics have noted that Guala’s theory leaves underexplored the psychological and evolutionary mechanisms by which agents come to internalize equilibria as rules, and how the prescriptive force of rules arises from mere behavioral regularities[1][5][6].
+The dissertation builds on Francesco Guala’s *rules-in-equilibrium* theory, which provides a unified framework for understanding social institutions as *correlated equilibria* (CE)[^corr] maintained by agents’ conditional strategies [@guala2015]. However, Guala’s theory, while conceptually robust, leaves open the question of how such equilibria and the underlying conditional strategies evolve from simpler forms of coordination observed in non-human animals. Addressing this gap requires integrating insights from evolutionary game theory, cognitive science, and ecological modeling to trace the evolutionary emergence of epistemic belief-mediated agency.
 
-This thesis advances Guala’s project by explicitly modeling the **evolutionary pathway from ontic correlation to epistemic correlation**: that is, from mere statistical dependencies in agent behavior (as in classical evolutionary game theory) to the emergence of decoupled, belief-like representations of rules that agents act upon as prescriptions. Drawing on recent developments in the philosophy of cognitive science and the evolutionary modeling of social behavior, the thesis shows how agents, starting as simple reinforcement learners, can evolve to infer the latent structure of their social environment, develop decoupled representations, and ultimately coordinate on shared rules that are experienced as normative. This approach substantiates Guala’s claim that rules are cognitive representations of equilibria, but, crucially, it **demonstrates how such representations can evolve from non-normative origins**, rather than being presupposed or imposed by external correlation devices[6][8].
+[^corr]: A solution concept from game theory generalizing Nash equilibrium, when all players get a private signal from a third party and it is in their best interest to follow that signal. A notable example is traffic lights. Guala and many other scholars claim social norms to be such correlation devices akin to traffic lights.
 
-Furthermore, by formalizing the transition from ontic to epistemic correlation within agent-based and evolutionary game-theoretic models, the thesis addresses critiques that Guala’s theory is overly externalist or insufficiently accounts for the material and psychological reality of institutions[1][5]. It provides a detailed account of how the prescriptive, rule-like character of institutions can be grounded in evolved cognitive capacities for decoupled representation, thus offering a robust naturalistic ontology of institutions that integrates both their behavioral and normative dimensions.
+This research seeks to bridge the explanatory gap between animal coordination and human normativity. By focusing on the evolutionary and ecological mechanisms that give rise to proto-normative beliefs that mediate conditional strategies and underpin social institutions, the dissertation offers a naturalistic account that complements and extends existing social ontologies. It refrains from assuming advanced cognitive capacities or collective intentionality as prerequisites, instead exploring how such capacities can gradually evolve from reactive, non-epistemic behaviors.
 
-In summary, the novelty of this work lies in:
-- **Elucidating the evolutionary and cognitive mechanisms** by which equilibrium behavior becomes internalized as prescriptive rules;
-- **Bridging the gap** between ontic (behavioral) and epistemic (representational) perspectives on institutions;
-- **Providing a formal and empirically grounded account** of how human normativity and institutional rule-following emerge from basic social interaction, thereby advancing and refining Guala’s unified theory of institutions.
+A central contribution of this dissertation is a naturalistic and evolutionary account of how humans come to represent and follow institutional rules as prescriptions, thereby addressing a key lacuna in Guala’s “rules-in-equilibrium” theory of institutions [@guala2016]. His account unifies the “institutions-as-rules” [@searle1995] and “institutions-as-equilibria” [@north1990; @aoki2007] traditions, arguing that institutions are best understood as rules that are in equilibrium: they are both cognitive devices (rules) that individuals use to represent and navigate social life, and stable patterns of behavior (equilibria) that persist due to mutual expectations and incentives. While this approach elegantly bridges philosophical and game-theoretic perspectives, Guala’s theory leaves underexplored the cognitive and evolutionary mechanisms by which agents come to internalize equilibria as rules, and how the prescriptive force of rules arises from mere behavioral regularities.
 
-This contribution not only clarifies the foundations of the rules-in-equilibrium approach but also extends its explanatory power to the origins and evolution of human social normativity.
+The current dissertation advances Guala’s project by explicitly modeling the evolutionary pathway from from mere statistical dependencies in agent behavior (as in classical evolutionary game theory) to the emergence of decoupled, belief-like representations of rules that agents act upon as prescriptions. Drawing on recent developments in the philosophy of cognitive science and the evolutionary modeling of social behavior, the thesis shows how agents, starting as simple reinforcement learners, can evolve to infer the latent structure of their social environment, develop decoupled representations, and ultimately coordinate on shared rules that are experienced as normative. This approach substantiates Guala’s claim that rules are cognitive representations of equilibria, but, crucially, it demonstrates *how such representations can evolve from non-normative origins*, rather than being presupposed or imposed by external correlation devices.
 
+Furthermore, by formalizing the emergence of belief-mediated coordination within agent-based and evolutionary game-theoretic models, the thesis addresses critiques that Guala’s theory is overly externalist [@roversi2021] or insufficiently accounts for the material and psychological reality of institutions [@rabinowicz2018]. It provides a detailed account of how the prescriptive, rule-like character of institutions can be grounded in evolved cognitive capacities for decoupled representation [@sterelny2003], thus offering a robust naturalistic ontology of institutions that integrates both their behavioral and normative dimensions.
 
-- [[Шевченко-—-Научный-доклад]]
+Beginning with foundational models of convention and coordination, such as those proposed by David Lewis [@lewis1969] and Brian Skyrms [@skyrms1994; @skyrms2010], and extending through more recent debates on the metaphysics of social kinds and the explanatory scope of evolutionary game theory, this dissertation seeks to clarify how cognitive architecture needed for social norms can be understood as both product of natural processes and object of scientific inquiry. The analysis leads to introduce a crucial distinction between *ontic correlations* — ecological, cue-driven mechanisms of coordination leading to *CE*, and *epistemic correlations* — cognitive, representation-based processes that enable agents to interpret and respond to social cues which leads to epistemic CE.
 
-***
----
+The concept of *social convention* is understood here in line with the tradition of David Hume and David Lewis as a pattern of behavior that arises within a population through repeated interaction, facilitating coordination and reducing uncertainty. *Normativity* refers to the prescriptive force that such conventions can acquire over time, often accompanied by expectations, sanctions, or moral justification. The distinction between the two is not always clear-cut, and one of the aims of this dissertation is to clarify the mechanisms by which conventions become normative.
 
-**[Continued in the next message: Object and Subject of Study, Goal and Research Tasks, Main Hypothesis, and more, following the structure and cadence of your example.]**
+The status of *social kinds* such as conventions, norms, and institutions is a central concern of contemporary social ontology. The present work adopts a modest stance, recognizing the complexity of these phenomena and the challenges involved in providing a unified account. Rather than claiming to offer a definitive solution, the dissertation aims to contribute to ongoing debates by articulating a framework that integrates ecological, evolutionary, and cognitive perspectives into a coherent account of naturalizing these social kinds, while remaining open to revision and critique.
 
-Citations:
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/1328076/5993bb90-b4a1-4822-812f-a6538007b60d/paste.txt
+The *relevance* of this research in the contemporary context is multifaceted. Theoretically, the results may be of interest to scholars in philosophy of science, social ontology, cognitive science, and evolutionary theory. Practically, the insights gained may inform the design of institutions (by accounting for their emergent cognitive dynamics), the development of artificial intelligence systems, and the analysis of organizational dynamics.
 
----
-Answer from Perplexity: pplx.ai/share
-***
+In sum, this research addresses a critical and timely problem: explaining the naturalistic origins of cognitive capacities responsible for normativity grounding the stability of social institutions within a scientifically grounded framework. It aspires to offer a conceptual and empirical foundation that is both modest in its claims and ambitious in its integrative scope, advancing the philosophical and scientific study of social order.
 
-### Object and Subject of Study
+## Object and subject of study
 
-The **object of this research** is Francesco Guala’s *rules-in-equilibrium* theory, which offers a unified social ontology that synthesizes two influential traditions in the philosophy of social institutions: the institutions-as-rules approach and the institutions-as-equilibria approach [@guala2015unified]. This theory conceptualizes social institutions as sets of regulative rules-conditional strategies of the form “if X then do Y”-that coordinate behavior by creating correlated equilibria in strategic interactions. Unlike earlier models that treat institutions either as mere conventions or as constitutive rules, Guala’s framework emphasizes the causal role of correlated equilibria sustained by agents’ conditional strategies and beliefs. This approach is particularly valuable because it provides a mathematically rigorous yet philosophically nuanced account of how social order can emerge and persist without presupposing idealized rationality or collective intentionality.
+The *object of this research* is Guala’s *rules-in-equilibrium* theory, which offers a unified social ontology that synthesizes two influential traditions in the philosophy of social institutions: the institutions-as-rules approach and the institutions-as-equilibria approach [@guala2015]. This theory conceptualizes social institutions as sets of regulative rules which are conditional strategies of the form “if X then do Y” which coordinate behavior by creating CE in strategic interactions. Unlike earlier models that treat institutions either as mere conventions or as constitutive rules, Guala’s framework emphasizes the causal role of CE sustained by agents’ conditional strategies and *beliefs*. This approach is particularly valuable because it provides a mathematically rigorous yet philosophically nuanced account of how social order can emerge and persist without presupposing idealized rationality or collective intentionality.
 
-This dissertation takes seriously the question of the **naturalistic underpinnings** of Guala’s framework. More specifically, it investigates how social institutions, as described by rules-in-equilibrium, can evolve from animal conventions within an evolutionary and ecological context. While Guala’s theory is primarily conceptual and formal, it leaves open the empirical and mechanistic question of how such institutions arise in real populations of agents with limited cognitive capacities. The present research aims to fill this gap by exploring the evolutionary trajectory from simpler forms of coordination observed in non-human animals to the complex normative institutions characteristic of human societies. This involves examining whether and how the correlated equilibria that sustain institutions can be grounded in natural selection, ecological constraints, and cognitive evolution.
+Building on Guala's own attempt to naturalistically ground his theory, this dissertation takes seriously the question of the *naturalistic underpinnings* of Guala’s framework. More specifically, it investigates how social institutions, as described by rules-in-equilibrium, could have evolved from animal conventions within an evolutionary and ecological context. While Guala’s theory is primarily conceptual and (a bit) formal, it leaves open the empirical and mechanistic question of how such institutions arise in real populations of agents with limited cognitive capacities. The present research aims to fill this gap by exploring the evolutionary trajectory from simpler forms of coordination observed in non-human animals to the complex normative institutions characteristic of human societies. This involves examining whether and how the CE that sustain institutions can be grounded in selection processes, ecological constraints, and cognitive evolution.
 
-The **subject of the study** is the **evolutionary emergence of epistemic belief-mediated conditional strategies** from more primitive, reactive, non-epistemic conditional strategies within game-theoretic settings. Reactive conditional strategies are those that depend directly on environmental or social cues without involving internal representations or beliefs about others’ intentions or future actions. For example, an animal might condition its behavior on the immediate presence of a signal or a stimulus, responding reflexively or habitually. In contrast, epistemic belief-mediated conditional strategies involve agents forming internal models or beliefs about the behavior of others, allowing for more flexible, anticipatory, and context-sensitive responses.
+The *subject of the study* is the *evolutionary emergence of epistemic belief-mediated conditional strategies* from more primitive, reactive, non-epistemic conditional strategies within game-theoretic settings of the Hawk-Dove-Bourgeois game which I mentioned in the beginning of the dissertation. Reactive conditional strategies are those that depend directly on environmental or social cues without involving internal representations or beliefs about others’ intentions or future actions. For example, a butterfly conditioning its behavior on the immediate presence of a signal or a stimulus like "is there anyone already in this spot?". In contrast, epistemic belief-mediated conditional strategies involve agents forming internal models or beliefs about the behavior of others, allowing for more flexible, anticipatory, and context-sensitive responses. Tribes grazing their cattle form their strategies according to shared beliefs abstracted from immediate observable borders.
 
-This transition from reactive to epistemic strategies marks a crucial evolutionary step toward what can be called **proto-normativity**-a stage where agents’ conditional strategies are not merely responses to stimuli but are mediated by deontic or proto-deontic beliefs about what ought to be done in a given social context. This proto-normativity does not yet encompass fully developed normative systems with explicit mechanisms for sanctioning deviations or enforcing compliance but represents the foundational cognitive and behavioral capacities that make such systems possible. By focusing on this emergence, the dissertation contributes to understanding how the cognitive architecture underlying normative behavior could have evolved gradually from simpler forms of social coordination.
+This transition from reactive to epistemic strategies marks a crucial evolutionary step toward what can be called *proto-normativity* which is a stage where agents’ conditional strategies are not merely responses to stimuli but are mediated by deontic or proto-deontic beliefs about what ought to be done in a given context. This proto-normativity does not yet encompass fully developed normative systems with explicit mechanisms for sanctioning deviations or enforcing compliance but represents the foundational cognitive and behavioral capacities that make such systems possible. By focusing on this emergence, the dissertation contributes to understanding how the cognitive architecture underlying normative behavior could have evolved gradually from simpler forms of social coordination.
 
----
-Certainly! Below is the expanded and refined version of the **first part** of your introduction-**Relevance of the Study**-following your latest instructions for precision, detail, and pandoc-style citations, while maintaining a modest and scholarly tone.
+## Goals and tasks of the study
 
----
+The overarching *goal* of this dissertation is to provide a *naturalistic account of the emergence of epistemic belief-mediated agency and proto-normativity*, thereby grounding the possibility of “proper” social normativity within an evolutionary framework. This goal is motivated by the recognition that many existing accounts of normativity either presuppose advanced cognitive capacities such as the ability to represent collective intentionality or to enforce sanctions or treat norms as purely social constructs without sufficient grounding in natural processes somehow already existing in the environment.
 
-## Relevance of the Study
+This research aims to bridge that gap by focusing on the *initial evolutionary and ecological processes* that give rise to deontic (or rather proto-deontic) beliefs about what one ought to do-that underpin normative behavior. These proto-normative beliefs are understood as internal states that mediate conditional strategies, enabling agents to coordinate behavior not only reactively but through anticipatory and belief-based mechanisms.
 
-The study of social normativity and the emergence of social institutions remains a pivotal concern across philosophy, social sciences, and evolutionary theory. Contemporary global challenges-ranging from the governance of digital platforms and decentralized organizations to the resilience of social institutions amid rapid socio-political changes-underscore the urgent need to understand how social order arises and stabilizes. The COVID-19 pandemic, for example, revealed both the fragility and adaptability of social norms, highlighting the dynamic interplay between individual behavior, institutional responses, and collective coordination. Similarly, advances in artificial intelligence and multi-agent systems have brought renewed attention to the mechanisms by which norms and conventions emerge in populations of interacting agents, both human and artificial.
-
-Within this broad context, the present dissertation addresses a foundational question: **How do social conventions and proto-normative beliefs emerge from evolutionary and ecological processes, and how can these processes ground the naturalistic underpinnings of social institutions as conceptualized in unified social ontology?** This question is not only of theoretical significance but also bears practical implications for institutional design, policy-making, and the development of autonomous systems capable of norm-compliant behavior.
-
-Philosophically, the project is situated at the intersection of social ontology, philosophy of science, and cognitive science. It seeks to contribute to the ongoing endeavor to naturalize social normativity-that is, to explain normative phenomena as arising from natural processes without recourse to metaphysical or purely interpretive constructs. This aligns with a scientific realist perspective that treats social kinds, such as institutions and norms, as real entities with causal efficacy, amenable to empirical investigation and theoretical modeling [@boyd1999homeostasis; @guala2016understanding].
-
-The dissertation builds on Francesco Guala’s *rules-in-equilibrium* theory, which provides a unified framework for understanding social institutions as correlated equilibria maintained by agents’ conditional strategies [@guala2015unified]. However, Guala’s theory, while conceptually robust, leaves open the question of how such equilibria and the underlying conditional strategies evolve from simpler forms of coordination observed in non-human animals. Addressing this gap requires integrating insights from evolutionary game theory, cognitive science, and ecological modeling to trace the evolutionary emergence of epistemic belief-mediated agency.
-
-This research thus contributes to a modest but important strand of inquiry that seeks to bridge the explanatory gap between animal coordination and human normativity. By focusing on the evolutionary and ecological mechanisms that give rise to proto-normative beliefs-internal states that mediate conditional strategies and underpin social institutions-the dissertation offers a naturalistic account that complements and extends existing social ontologies. It refrains from assuming advanced cognitive capacities or collective intentionality as prerequisites, instead exploring how such capacities can gradually evolve from reactive, non-epistemic behaviors.
-
-The relevance of this study extends beyond philosophy to practical domains such as economics, political science, artificial intelligence, and organizational theory. Understanding the naturalistic emergence of proto-normativity can inform the design of decentralized governance systems, improve multi-agent coordination protocols, and enhance institutional resilience. Moreover, by engaging with both international and Russian scholarship, the dissertation aims to foster dialogue across linguistic and disciplinary boundaries, contributing to a more integrated global understanding of social normativity.
-
-In sum, this research addresses a critical and timely problem: explaining the naturalistic origins of social normativity and institutions within a scientifically grounded framework. It aspires to offer a conceptual and empirical foundation that is both modest in its claims and ambitious in its integrative scope, advancing the philosophical and scientific study of social order.
-
-
-***
-
-### Goal of the Study
-
-The overarching **goal** of this dissertation is to provide a **naturalistic account of the emergence of epistemic belief-mediated agency and proto-normativity**, thereby grounding the possibility of “proper” social normativity within an evolutionary framework. This goal is motivated by the recognition that many existing accounts of normativity either presuppose advanced cognitive capacities-such as the ability to represent collective intentionality or to enforce sanctions-or treat norms as purely social constructs without sufficient grounding in natural processes.
-
-This research aims to bridge that gap by focusing on the **initial evolutionary and ecological processes** that give rise to deontic or proto-deontic beliefs-beliefs about what one ought to do-that underpin normative behavior. These proto-normative beliefs are understood as internal states that mediate conditional strategies, enabling agents to coordinate behavior not only reactively but also through anticipatory and belief-based mechanisms.
-
-Unlike accounts that emphasize punishment or enforcement as central to normativity, this dissertation adopts a more modest stance: it does not attempt to explain the full complexity of normative systems, including sanctioning or moral justification. Instead, it concentrates on the **emergence of the cognitive and behavioral substrates** that make such systems possible. By doing so, it lays the groundwork for future research on how proto-normativity can evolve into fully-fledged normativity with social enforcement mechanisms.
+Unlike accounts that emphasize punishment or enforcement as central to normativity, this dissertation adopts a more modest stance: it does not attempt to explain the full complexity of normative systems, including sanctioning or moral justification. Instead, it concentrates on the *emergence of the cognitive and behavioral substrates* that make such systems possible. By doing so, it lays the groundwork for future research on how proto-normativity can evolve into fully-fledged normativity with social enforcement mechanisms.
 
 More concretely, the study seeks to:
 
-- Elucidate the evolutionary pathways through which agents develop epistemic states that mediate their conditional strategies.
-- Demonstrate, through formal modeling and simulation, how proto-normative beliefs can emerge from ecological interactions and selective pressures favoring coordination.
-- Clarify the conceptual relationship between reactive coordination mechanisms and epistemic, belief-mediated strategies.
-- Situate these findings within Guala’s rules-in-equilibrium framework, thereby providing a naturalistic foundation for the institutions it describes.
+- Scrutinize the relationship between Lewisian social conventions and normativity to better articulate distinctions within Guala's theory
 
----
+- Analyze Guala's theory from epistemological point of view to spot inconsistencies which hid the question of different cognitive architectures
 
-### Main Research Hypothesis
+- Delineate different cognitive architectures presupposed by Guala's theory and elucidate the evolutionary pathways through which agents develop epistemic states that mediate their conditional strategies
 
-The central **hypothesis** of this dissertation can be stated as follows:
+- Demonstrate, through formal modeling and simulation, how proto-normative beliefs can emerge from ecological interactions and selective pressures favoring coordination
 
-> *Epistemic belief-mediated conditional strategies-strategies that depend on agents’ internal beliefs about others’ behavior-can evolve from reactive, non-epistemic conditional strategies through ecological and evolutionary processes that can be rigorously modeled within game-theoretic frameworks. This evolutionary transition underpins the emergence of proto-normativity, providing a naturalistic basis for social institutions conceptualized as rules-in-equilibrium.*
+- Clarify the conceptual relationship between reactive coordination mechanisms and epistemic, belief-mediated strategies
+
+- Situate these findings within Guala’s rules-in-equilibrium framework, thereby providing a naturalistic foundation for the institutions it describes
+
+- Relate findings with debates about metaphysics of social kinds and philosophy of social science.
+
+## Main research hypotheses
+
+The central *hypothesis* of this dissertation can be stated as follows:
+
+> *Epistemic belief-mediated conditional strategies that depend on agents’ internal beliefs about others’ behavior can evolve from reactive, non-epistemic conditional strategies based on environmental asymmetries through ecological and evolutionary processes that can be rigorously modeled within game-theoretic frameworks with agent-based modeling. This evolutionary transition underpins the emergence of proto-normativity, providing a naturalistic basis for social institutions conceptualized as rules-in-equilibrium.*
 
 This hypothesis entails several interrelated claims:
 
-1. **Reactive conditional strategies**-those that respond directly to environmental or social cues without involving internal representations-constitute the evolutionary antecedents of more complex, belief-mediated strategies. Such reactive strategies are widespread in non-human animals and form the baseline for social coordination.
+1. *Reactive conditional strategies* that respond directly to environmental cues without involving internal representations constitute the evolutionary antecedents of more complex, belief-mediated strategies. Such reactive strategies are widespread in non-human animals and form the baseline for social coordination.
 
-2. Through **repeated interactions and selective pressures** favoring successful coordination and cooperation, agents develop **internal epistemic states**-beliefs or representations-that mediate their conditional strategies. These epistemic states enable agents to predict and respond flexibly to the behavior of others, rather than merely reacting to fixed cues.
+2. Through *repeated interactions and selective pressures* favoring successful coordination and cooperation, agents develop *internal epistemic states* like beliefs or representations that mediate their conditional strategy choice. These epistemic states enable agents to predict and respond flexibly to the behavior of others, rather than merely reacting to fixed cues.
 
-3. The emergence of these epistemic strategies gives rise to **proto-normative attitudes**-internal deontic beliefs about what actions are appropriate or required in given social contexts. These proto-normative beliefs are the cognitive precursors to full-fledged normative systems.
+3. The emergence of these epistemic strategies gives rise to *proto-normative attitudes* which internal proto-deontic beliefs about what actions are appropriate or required in given social contexts. These proto-normative beliefs are the cognitive precursors to full-fledged normative systems.
 
-4. The entire process can be **modeled using evolutionary game theory and correlated equilibrium concepts**, demonstrating the plausibility of a naturalistic emergence of normativity without presupposing advanced cognitive capacities such as collective intentionality or explicit sanctioning mechanisms.
+4. The entire process can be *modeled using evolutionary game theory and correlated equilibrium concepts*, demonstrating the plausibility of a naturalistic emergence of normativity without presupposing more advanced cognitive constructs like *collective intentionality* or explicit sanctioning mechanisms.
 
-5. This transition is not merely conceptual but can be **empirically and computationally investigated** through agent-based simulations that capture the dynamics of strategy evolution in populations interacting under ecological constraints.
+5. This transition is not merely conceptual but can be *computationally investigated* through agent-based simulations that capture the dynamics of strategy evolution in populations interacting under ecological constraints.
 
----
+## Theoretical basis of the research
 
-### Theoretical Basis of the Research
+This dissertation draws on a rich and interdisciplinary theoretical foundation that spans social ontology, philosophy of science, evolutionary biology and cognitive science. Key components include:
 
-This dissertation draws on a rich and interdisciplinary theoretical foundation that spans philosophy, evolutionary biology, cognitive science, and social theory. Key components include:
+- *Guala’s rules-in-equilibrium theory:* Guala’s framework offers a philosophically grounded account of social institutions as CE sustained by agents’ conditional strategies [@guala2015]. By integrating the normative and causal dimensions of institutions, this theory strives to provide a parsimonious naturalistic ontology of social order that avoids taking metaphysically-laden constitutive rules or collective intentionality as primitives. The present research builds on this foundation by exploring the evolutionary origins of the conditional strategies that sustain these equilibria.
 
-- **Francesco Guala’s Rules-in-Equilibrium Theory:** Guala’s framework offers a mathematically precise and philosophically grounded account of social institutions as correlated equilibria sustained by agents’ conditional strategies [@guala2015unified]. By integrating the normative and causal dimensions of institutions, this theory provides a naturalistic ontology of social order that avoids metaphysical excesses such as constitutive rules or collective intentionality taken as primitives. The present research builds on this foundation by exploring the evolutionary origins of the conditional strategies that sustain these equilibria.
+- *Evolutionary game theory:* The formal modeling of strategic interactions and their evolution over time is central to this study. Foundational work by Skyrms [@skyrms2010] and Gintis [@gintis2009] has demonstrated how cooperation and coordination can emerge through evolutionary processes. This dissertation extends these insights by focusing specifically on the evolution of epistemic, belief-mediated strategies from reactive ones, using correlated equilibrium concepts as the analytical tool.
 
-- **Evolutionary Game Theory:** The formal modeling of strategic interactions and their evolution over time is central to this study. Foundational work by Brian Skyrms [@skyrms2010evolution] and Samuel Bowles and Herbert Gintis [@gintis2009game] has demonstrated how cooperation and coordination can emerge through evolutionary processes. This dissertation extends these insights by focusing specifically on the evolution of epistemic, belief-mediated strategies from reactive ones, using correlated equilibrium concepts as the analytical tool.
+- *Cognitive science and philosophy of mind:* Understanding the evolution of internal representations and belief systems is critical for distinguishing reactive from epistemic strategies. Philosophers such as Kim Sterelny [@sterelny2003; @sterelny2012Book; @sterelny2021] have emphasized the role of *decoupled representation* and theory of mind in cognitive evolution. Ruth Millikan’s teleosemantic theory [@millikan1984] provides a naturalistic account of mental representation grounded in biological function which serves a foundation for Sterelny's theory. Another important source is Peter Godfrey-Smith's *Environmental Complexity Thesis* [@godfrey-smith1996; @godfrey-smith2001], which states that the very function of cognition is navigating in informationally rich environments and producing adaptive reponse enhancing own's fitness. These perspectives inform the conceptualization of epistemic conditional strategies as belief-mediated in the current thesis.
 
-- **Cognitive Science and Philosophy of Mind:** Understanding the evolution of internal representations and belief systems is critical for distinguishing reactive from epistemic strategies. Philosophers such as Kim Sterelny [@sterelny2003evolution] have emphasized the role of decoupled representation and theory of mind in cognitive evolution. Ruth Millikan’s teleosemantic theory [@millikan1984language] provides a naturalistic account of mental representation grounded in biological function. These perspectives inform the conceptualization of epistemic conditional strategies as belief-mediated.
-
-- **Social Ontology and Normativity:** The metaphysical and normative implications of treating social conventions as natural kinds are informed by the work of Richard Boyd [@boyd1999homeostasis], John Searle [@searle1995construction], and contemporary debates on the naturalization of normativity. Guala’s naturalistic stance on institutions and normativity [@guala2016understanding] provides a critical reference point for situating the present research within ongoing philosophical discussions.
-
-- **Empirical and Simulation Studies:** Methodologically, the research employs agent-based modeling and simulation techniques developed in artificial life and complex systems science. These tools allow for the exploration of how proto-normative beliefs can emerge and stabilize in populations of interacting agents subject to ecological constraints and evolutionary pressures.
+- *Social ontology and normativity:* The metaphysical and normative implications of treating social conventions as natural kinds are informed by the work of Richard Boyd [@boyd1999], John Searle [@searle1995], and contemporary debates on the naturalization of normativity. Guala’s naturalistic stance on institutions and normativity [@guala2016] provides a critical reference point for situating the present research within ongoing philosophical discussions being "a central hub" synthesizing major findings across the subdisciplines of philosophy of science.
 
 Together, these theoretical strands enable a rigorous, interdisciplinary investigation into the naturalistic emergence of proto-normativity, bridging gaps between animal coordination and human social institutions within Guala’s unified social ontology.
 
----
+## Prior research on the topic
 
-If you would like, I can continue expanding other sections or provide further elaborations tailored to your needs.
+The emergence of social normativity and the naturalistic grounding of social institutions have been the focus of extensive interdisciplinary inquiry, yet several conceptual and empirical challenges remain. Early foundational work by Lewis [@lewis1969] introduced game-theoretic formalization of social conventions as stable mutually beneficial behavioral pattesrns, emphasizing how coordination equilibria arise through repeated interactions. Skyrms expanded this framework by incorporating evolutionary dynamics, demonstrating how populations of agents can evolve stable conventions through selection processes [@skyrms2010]. These models successfully explain the emergence of coordination but often get criticized for excluding normativity of conventions from its explanatory scope, treat normativity as an epiphenomenon or rely on idealized rationality assumptions. The detailed inquiry into the historical approaches to social conventions and their normativity in formal philosophy will be presented in [Chapter 1](#chapter-1-social-convention-hume-lewis-and-game-theory) dedicated fully the Humean/Lewisian tradition of game-theoretic treatment of social conventions.
 
----
-Answer from Perplexity: pplx.ai/share
-thank you for sharing the sample structure and cadence. i understand you want your introduction in english to mirror the **logical flow, depth, and volume** of the russian example, while maintaining a modest, scholarly tone. below is the **first part** of your introduction, structured and paced similarly, with careful attention to detail and volume. i will continue in subsequent parts to ensure the full introduction reaches your desired depth and word count.
+Guala’s *rules-in-equilibrium* theory [@guala2015] represents a significant advance by integrating the normative and causal dimensions of social conventions with classic social ontology of Searle [@searle1995]. Guala’s approach avoids the metaphysical commitments of constitutive rules and collective intentionality, instead focusing on the causal efficacy of agents’ conditional strategies. However, while conceptually rigorous, Guala’s theory is does not explicate the evolutionary and cognitive mechanisms by which such conditional strategies arise. This gap has motivated subsequent research exploring the naturalistic foundations of social institutions [@hedoin2021]. We will analyze Guala's theory in detail in Chapter 2, surfacing the problems of conflating agency models implied in his arguments and of conflating the notions of representation he uses to delineate animal and human social coordination.
 
----
-Certainly! Below is the expanded and detailed **Part 3** of your introduction, covering the sections: **Degree of Development of the Research Topic, Methodology, Novelty of the Research, Theses for Defense, and Conclusion of the Introduction**. This part maintains the scholarly, modest tone, includes precise information, and uses pandoc-style citations as requested.
-
----
-
-## Degree of Development of the Research Topic
-
-The emergence of social normativity and the naturalistic grounding of social institutions have been the focus of extensive interdisciplinary inquiry, yet several conceptual and empirical challenges remain. Early foundational work by David Lewis [@lewis1969convention] introduced signaling games as a formal model of social conventions, emphasizing how coordination equilibria can arise through repeated interactions. Brian Skyrms expanded this framework by incorporating evolutionary dynamics, demonstrating how populations of agents can evolve stable conventions through natural selection-like processes [@skyrms2010evolution]. These models successfully explain the emergence of coordination but often treat normativity as an epiphenomenon or rely on idealized rationality assumptions.
-
-Francesco Guala’s *rules-in-equilibrium* theory [@guala2015unified] represents a significant advance by integrating the normative and causal dimensions of institutions within a unified framework grounded in correlated equilibria. Guala’s approach avoids the metaphysical commitments of constitutive rules and collective intentionality, instead focusing on the causal efficacy of agents’ conditional strategies. However, while conceptually rigorous, Guala’s theory is primarily formal and does not fully explicate the evolutionary and cognitive mechanisms by which such conditional strategies arise. This gap has motivated subsequent research exploring the naturalistic foundations of social institutions.
-
-Parallel developments in cognitive science and philosophy of mind have highlighted the importance of epistemic capacities, such as decoupled representation and theory of mind, in the evolution of normativity [@sterelny2003evolution; @millikan1984language]. These perspectives emphasize that normativity involves not only behavioral coordination but also internal states-beliefs and intentions-that mediate social interaction. Yet, the evolutionary transition from reactive, cue-driven behaviors to epistemic, belief-mediated strategies remains insufficiently understood.
-
-In the Russian philosophical and scientific tradition, scholars such as Knyazeva and Stepin have contributed to evolutionary epistemology and social philosophy, investigating the emergence of normativity and social order from a naturalistic standpoint [@knyazeva2018evolutionary; @stepin2017philosophy]. However, their work often remains more conceptual than formally modeled and tends to focus on broader epistemological issues rather than the detailed game-theoretic mechanisms of norm emergence.
+Parallel developments in cognitive science and philosophy of mind have highlighted the importance of epistemic capacities, such as decoupled representation and theory of mind. These perspectives emphasize that proto-normativity involves not only behavioral coordination but also internal states-beliefs and intentions that mediate social interaction [@sterelny2021]. Yet, the evolutionary transition from reactive, cue-driven behaviors to epistemic, belief-mediated strategies remains insufficiently understood. We will address theories of cognitive evolution [@sterelny2003; @sterelny2012Book; @godfrey-smith1996; @millikan1987] and informational niche construction [@odling-smee2003; @bardone2007; @planer-godfrey2021] in Chapter 3, where we review them in relation to the Guala's initial attempt at using Sterelny's arguments for decoupled representation to ground the difference between animal and human coordination [@hindriks2015]. There, we will also look at game-theoretic models explicitly or eimplicitly incorporating the notion of niche construction into its models to explain the stability of social institutions and identify thier insifficiencies for our account. Afterwards, we provide our own computational model of evolution of epistemic belief-mediated correlation of strategies with niche construction.
 
 Overall, while the literature provides valuable insights and diverse approaches, a comprehensive, mechanistic account that integrates evolutionary game theory, cognitive science, and social ontology remains underdeveloped. This dissertation aims to address this lacuna by offering a detailed, naturalistic model of the evolutionary emergence of epistemic belief-mediated conditional strategies, thereby advancing the understanding of proto-normativity and its role in social institutions.
-
----
 
 ## Methodology
 
 The methodology adopted in this research is interdisciplinary, combining conceptual analysis, formal modeling, and computational simulation to investigate the emergence of proto-normativity within an evolutionary framework.
 
-1. **Conceptual Analysis:** The dissertation begins by clarifying key concepts such as normativity, social conventions, epistemic and reactive conditional strategies, and natural kinds. This involves critical engagement with existing philosophical literature to establish a coherent conceptual framework that guides the empirical and modeling work.
+1. *Conceptual analysis:* The dissertation begins by clarifying key concepts such as social conventions, game-theoretic equilibria, conditional strategies and social norms. This involves critical engagement with existing philosophical literature to establish a coherent conceptual framework that guides the modeling work.
 
-2. **Comparative Theoretical Analysis:** Existing models of social norm emergence, including Lewis’s signaling games, Skyrms’s evolutionary models, and Guala’s rules-in-equilibrium theory, are systematically compared and critiqued. This comparative approach identifies strengths, limitations, and gaps that the present research seeks to address.
+2. *Comparative theoretical analysis:* existing models of social norm emergence, including Lewis’s signaling games, Skyrms’s evolutionary models and accounts of @ullmann-margalit1977, @young1998, @epstein1996, @bicchieri2005, @gintis2009a and Guala’s rules-in-equilibrium theory [@guala2016] are systematically compared and critiqued. This comparative approach identifies strengths, limitations, and gaps that the present research seeks to address.
 
-3. **Evolutionary Game-Theoretic Modeling:** Building on foundational work in evolutionary game theory, the dissertation develops formal models that simulate populations of agents employing varying conditional strategies. These models explore how reactive strategies can evolve into epistemic, belief-mediated strategies under different ecological and social conditions. Correlated equilibrium concepts serve as the analytical framework for understanding the stability and causal efficacy of emergent strategies.
+3. *Evolutionary game-theoretic modeling:* building on foundational work in evolutionary game theory [@maynardsmith1982; @skyrms1994], the dissertation develops a formal model that simulates populations of agents employing conditional strategies and "growing" epistemic conditionalization as an adaptive response to high informational density of environment. This model explores how reactive strategies can evolve into belief-mediated ones under ecological pressures. CE and Hawk-Dove-Bourgeois game serve as an analytical framework for understanding the stability and causal efficacy of emergent strategies.
 
-4. **Agent-Based Simulation:** To complement analytical models, agent-based simulations are employed to capture the complex dynamics of strategy evolution in heterogeneous populations. These simulations allow for the exploration of factors such as environmental variability, learning mechanisms, and cognitive constraints, providing empirical grounding for theoretical claims.
+4. *Agent-based simulation:* to complement our analytical model, agent-based simulation is employed to capture the complex dynamics of strategy evolution in a population of non-epistemic agents who only respond to environmental cues and "learn from experience" with a form of *reinforcement learning*. These simulations allow for the exploration of factors such as informational translucency of environment, learning mechanisms, and cognitive constraints, providing empirical grounding for theoretical claims.
 
-5. **Philosophical Reflection:** The results of modeling and simulation are interpreted through the lens of social ontology and philosophy of science. This includes evaluating the metaphysical status of emergent social kinds, the naturalization of normativity, and the implications for scientific realism.
+5. *Philosophical reflection:* The results of modeling and simulation are interpreted through the lens of social ontology and philosophy of science. This includes evaluating the metaphysical status of emergent social kinds, the naturalization of proto-normativity, and the implications for social science.
 
 This mixed-methods approach balances formal rigor with conceptual clarity and empirical relevance, enabling a robust investigation of the evolutionary emergence of proto-normativity.
 
----
-
-## Novelty of the Research
+## Novelty of the research
 
 This dissertation offers several novel contributions to the study of social normativity and social ontology:
 
-- **Conceptual Innovation:** The introduction and rigorous development of the ontic/epistemic correlation distinction as a key explanatory tool for understanding the evolutionary transition from reactive to belief-mediated conditional strategies is original. This distinction clarifies the cognitive and ecological mechanisms underlying proto-normativity.
+- *Conceptual innovation:* the introduction and rigorous development of the *ontic/epistemic correlation* distinction as a key explanatory tool for understanding the evolutionary transition from reactive to belief-mediated conditional strategies is original. This distinction clarifies the cognitive and ecological mechanisms like niche construction underlying the emergence of advanced cognitive architectures capable of proto-normativity.
 
-- **Integrative Modeling:** By combining evolutionary game theory with agent-based simulations, the research provides a mechanistic account of how epistemic conditional strategies can evolve naturally from simpler reactive behaviors, filling a notable gap in existing literature.
+- *Integrative modeling:* by combining evolutionary game theory with agent-based simulations, the research provides a mechanistic account of how epistemic conditional strategies could have evolved naturally from simpler reactive behaviors, filling a notable gap in existing literature.
 
-- **Naturalistic Grounding of Guala’s Theory:** The dissertation extends Guala’s *rules-in-equilibrium* framework by explicating its naturalistic foundations, thereby bridging formal social ontology with evolutionary and cognitive science.
+- *Naturalistic grounding of Guala’s theory:* the dissertation extends Guala’s *rules-in-equilibrium* framework by explicating its naturalistic foundations, thereby bridging unified social ontology with evolutionary and cognitive science.
 
-- **Cross-Cultural Scholarly Dialogue:** By engaging with both international and Russian scholarship, the research fosters interdisciplinary and cross-linguistic dialogue, contributing to a more integrated global understanding of social normativity.
+Thorough literature reviews in respective chapters confirm that no prior work has combined these conceptual, formal, and empirical elements in a unified investigation of the evolutionary emergence of epistemic belief-mediated conditional strategies within a naturalistic social ontology.
 
-- **Modest but Rigorous Scope:** Unlike accounts that presuppose fully developed normative systems or collective intentionality, this work modestly focuses on proto-normativity, providing a foundational step toward explaining the natural emergence of normativity without overreaching claims.
-
-A thorough literature review confirms that no prior work has combined these conceptual, formal, and empirical elements in a unified investigation of the evolutionary emergence of epistemic belief-mediated conditional strategies within a naturalistic social ontology.
-
----
-
-## Theses for Defense
+## Theses for defense
 
 The following theses summarize the core claims of this dissertation and are proposed for defense:
 
-1. Social institutions, as conceptualized by Guala’s *rules-in-equilibrium* theory, can be grounded in evolutionary processes that produce correlated equilibria sustained by agents’ conditional strategies.
+1. Social institutions, as conceptualized by Guala’s *rules-in-equilibrium* theory, can be grounded in evolutionary processes aided with informational niche construction that produce normative correlated equilibria sustained by epistemic agents’ conditional strategies
+2. The ontic/epistemic correlation distinction is essential for explaining the evolutionary transition from ontic to epistemic conditional strategies
+3. The emergence of proto-normativity (internal deontic or proto-deontic beliefs mediating conditional strategies) constitutes a necessary foundation for “proper” social normativity with explicit sanctioning mechanisms and normative beliefs
+4. Social conventions and proto-normative beliefs qualify as natural kinds within a scientific realist social ontology
+5. The naturalistic account of proto-normativity constrains sociological theorizing by grounding social kinds in evolved, causally efficacious mechanisms
+6. This framework advances the naturalization of social ontology without presupposing collective intentionality or explicit sanctioning mechanisms.
 
-2. The ontic/epistemic correlation distinction is essential for explaining the evolutionary transition from reactive to epistemic conditional strategies.
-
-3. Epistemic belief-mediated conditional strategies evolve naturally from reactive strategies through ecological and evolutionary dynamics modeled in game-theoretic frameworks.
-
-4. The emergence of proto-normativity-internal deontic or proto-deontic beliefs mediating conditional strategies-constitutes a necessary foundation for “proper” social normativity.
-
-5. Agent-based simulations demonstrate the plausibility of the evolutionary emergence and stabilization of proto-normative strategies under realistic ecological conditions.
-
-6. Social conventions and proto-normative beliefs qualify as natural kinds within a scientific realist social ontology.
-
-7. The naturalistic account of proto-normativity constrains sociological theorizing by grounding social kinds in evolved, causally efficacious mechanisms.
-
-8. The integration of evolutionary game theory, cognitive science, and social ontology provides a robust framework for studying the origins of social normativity.
-
-9. This framework advances the naturalization of social ontology without presupposing collective intentionality or explicit sanctioning mechanisms.
-
-10. The research contributes to bridging international and Russian scholarly traditions on the evolution and philosophy of social normativity.
-
----
-
-## Conclusion of the Introduction
-
-In conclusion, this dissertation undertakes a modest yet rigorous investigation into the naturalistic emergence of proto-normativity and its role in grounding social institutions within Guala’s unified social ontology. By developing a conceptual distinction between ontic and epistemic correlations and employing formal evolutionary game-theoretic models alongside agent-based simulations, the research offers a mechanistic account of how epistemic belief-mediated conditional strategies evolve from reactive behaviors.
-
-This account advances philosophical debates on social ontology and normativity by providing a scientifically informed framework that respects the complexity of social phenomena without resorting to metaphysical excess. The findings have implications not only for philosophy but also for social sciences, artificial intelligence, and institutional design.
+## Conclusion and acknowledgments
+The dissertation undertakes a modest yet rigorous investigation into the naturalistic emergence of cognitive architecture capable of proto-normativity and its role in grounding social institutions within Guala’s unified social ontology. By developing a conceptual distinction between ontic and epistemic correlations and employing formal evolutionary game-theoretic models alongside agent-based simulations, the research offers a mechanistic account of how epistemic belief-mediated conditional strategies evolve from reactive behaviors.
 
 Ultimately, this work aspires to contribute to a more integrated and naturalistic understanding of social order, bridging gaps between animal coordination and human normativity, and fostering dialogue across disciplinary and cultural boundaries.
 
-***
+I thank:
+
+- **my advisor Vitaliy Dolgorukov** for urging me to be more technically rigorous and pay attention to formal aspects of the work;
+- **my first advisor Helena Knyazeva** for encouragement and support for exploring this inherently complex topic during my early PhD days;
+- **Francesco Guala** for insightful discussions and comments on the parts of the current work; 
+- **Brian Skyrms** for important clarifications about the relationship between evolutionary stable strategies and correlated equilibria in his work (which caused a lot of confusion for me); 
+- **Don Ross** for discussions of the relationship between social coordination and cognition;
+- **Christophe Heintz** for deep questions and genuine interest in the cogs and wheels of my work;
+- **Mark Risjord** for comments on the early paper drafts for this dessertation;
+- **Stephen Turner** for careful and lengthy comments on my early drafts and discussions about coordination, cogntition and philosophy of social science;
+- **colleagues at conferences** who asked questions and engaged in the discussions afterwards.
+
+I also have infinite gratitude for my partner and family for support and care during my PhD years. Thank you!
 
 # **Chapter 1.** Social conventions: Hume, Lewis and game theory
 The tradition of understanding social coordination as a source of social order is historically rich. Aristotle grounded social conventions in human nature and the pursuit of *eudaimonia*, or flourishing. He viewed humans as "political animals" who naturally form communities to achieve collective well-being. Justice and virtue, central to his ethics, were seen as the basis for political order. Unlike later followers of the social contract theory, Aristotle saw social organization as intrinsic to human rationality rather than a deliberate agreement [@aristotle1998].
@@ -457,27 +418,42 @@ Thus, in the mixed strategy Nash equilibrium:
 
 The expected payoffs for both players in this equilibrium are:
 
-- **Husband**: $2q + 0(1-q) = 2\left(\frac{1}{3}\right) + 0 = \frac{2}{3}$,
-- **Wife**: $1p + 0(1-p) = 1\left(\frac{2}{3}\right) + 0 = \frac{2}{3}$.
+- **Husband**: 
+$$
+\begin{aligned}
+\text{E}[U_H] &= p \times q \times u_H(\text{Ballet, Ballet}) + p \times (1 - q) \times u_H(\text{Ballet, Football}) \\
+&\quad + (1 - p) \times q \times u_H(\text{Football, Ballet}) + (1 - p) \times (1 - q) \times u_H(\text{Football, Football}) \\
+&= \frac{2}{3} \times \frac{1}{3} \times 2 + \frac{2}{3} \times \frac{2}{3} \times 0 + \frac{1}{3} \times \frac{1}{3} \times 0 + \frac{1}{3} \times \frac{2}{3} \times 1 \\
+&= \frac{4}{9} + 0 + 0 + \frac{2}{9} = \frac{6}{9} = \frac{2}{3}
+\end{aligned}
+$$
+
+- **Wife**:
+$$
+\begin{aligned}
+\text{E}[U_W] &= p \times q \times u_W(\text{Ballet, Ballet}) + p \times (1 - q) \times u_W(\text{Ballet, Football}) \\
+&\quad + (1 - p) \times q \times u_W(\text{Football, Ballet}) + (1 - p) \times (1 - q) \times u_W(\text{Football, Football}) \\
+&= \frac{2}{3} \times \frac{1}{3} \times 1 + \frac{2}{3} \times \frac{2}{3} \times 0 + \frac{1}{3} \times \frac{1}{3} \times 0 + \frac{1}{3} \times \frac{2}{3} \times 2 \\
+&= \frac{2}{9} + 0 + 0 + \frac{4}{9} = \frac{6}{9} = \frac{2}{3}
+\end{aligned}
+$$
 
 This mixed strategy equilibrium represents a compromise balancing fairness and coordination through randomization, albeit less efficient than pure Nash equilibria due to inherent miscoordination risks[^no-mixed].
 
 [^no-mixed]: Epistemic game theorists contend that there is no correlate of mixed-strategy equilibrium when viewed from epistemic (or knowledge) point of view [@perea]. I agree with them and only talk about it here for the purposes of comparison with CE.
 
-In contrast, CE utilizes public signals to coordinate actions effectively. For instance, a public signal such as a coin flip can recommend both players attend Ballet or Football equiprobably. This mechanism eliminates miscoordination and ensures equal expected payoffs for both players (1.5 each). CE helps agents achieve higher payoffs and fairness compared to both pure and mixed Nash equilibria by leveraging shared randomness or communication.
+In contrast, CE utilizes public signals to coordinate actions effectively. For instance, a public signal such as a coin flip can recommend both players attend Ballet or Football equiprobably. This mechanism eliminates miscoordination and ensures equal expected payoffs for both players ($1.5$ each). CE helps agents achieve higher payoffs and fairness compared to both pure and mixed Nash equilibria by leveraging shared randomness or communication.
 
-To demonstrate how a signal affects the payoff structure, we add a new strategy *Follow Signal (FS)*, where players choose based on a fair coin flip (Heads = Ballet, Tails = Football). The payoffs depend on actual coordination, not just expectations: we can calculate expected payoffs when one player uses FS and the other does not.
+To demonstrate how a signal affects the payoff structure, we add a new strategy *Follow Signal (FS)*, where players choose based on a fair coin flip (Heads = Ballet, Tails = Football). We can do this because CE is essentially a Nash equilibrium of an game augmented with an additional set of strategies [@gintis2009a; @gintis2009]. The payoffs here depend on actual coordination, not just expectations: we can calculate expected payoffs when one player uses $FS$ and the other does not.
 
-FS (H) vs Ballet (W):  
+- **FS (H) vs Ballet (W)**:
+    - Signal = Tails (50%): H chooses Football, W stays at Ballet → $(0, 0)$
+    - Expected payoff: $0.5 \times (2, 1) + 0.5 \times (0, 0)  =  (1, 0.5)$
 
-- Signal = Tails (50%): H chooses Football, W stays at Ballet → $(0, 0)$.  
-- Expected payoff: $0.5 \times (2, 1) + 0.5 \times (0, 0)  =  (1, 0.5)$.  
-
-FS (H) vs. Football (W):
-
-- Signal = Heads (50%): H chooses Ballet, W stays at Football → $(0, 0)$.  
-- Signal = Tails (50%): Both choose Football → $(1, 2)$.  
-- Expected payoff: $0.5 \times (0, 0) + 0.5 \times (1, 2)  =  (0.5, 1)$.  
+- **FS (H) vs. Football (W)**:
+    - Signal = Heads (50%): H chooses Ballet, W stays at Football → $(0, 0)$
+    - Signal = Tails (50%): Both choose Football → $(1, 2)$
+    - Expected payoff: $0.5 \times (0, 0) + 0.5 \times (1, 2)  =  (0.5, 1)$.
 
 Thus, the augmented game matrix becomes:  
 
@@ -1597,11 +1573,11 @@ Crucially, these notions contain a subtle distinction between human and non-huma
 In the next chapter, we will put game-theoretic notion of convention into the context of *social ontology*, especially of a naturalistic kind, which is a strand of philosophy studying what there is in the social world. We will look at the standard notions proposed by @searle1995, their refinements with game-theoretic conventions by @guala2015 and arrive at a philosophical problem of evolution of social conventions underpinned by a deeper problem of *ontic reference* or *ontic account of scientific explanation* [@craver2014]. Afterwards, in chapter 3, we will sketch a pathway towards resolving the problem of ontic reference in game-theoretically inspired social ontology by building a model of evolution of human conventions from animal ones.
 
 
-# Chapter 2. Problems of Guala's unified social ontology
+# **Chapter 2**. Problems of Guala's unified social ontology
 
 In this chapter, we shift gears to study the relationship between game-theoretic models of conventions, social ontology and how the former help *explain* or substantiate the latter in a viable social ontology.
 
-Social conventions are of major interest for social ontology, a philosophical study of the entities comprising the social world. @guala2016 mentions that the mundane notions of "a professor", "a student" or "a husband" make no sense without conventions and, more broadly, social institutions, as central ontological units of the social world. It is because these notions are a part of a mostly hidden and taken-for-granted infrastructure of roles with duties and rights. And conventions, as Guala argues, hold those together. To put conventions into the context of social ontology, let us take a closer look at social ontology and its relation to science and explanation first.
+Social conventions are of major interest for social ontology, a philosophical study of the entities comprising the social world. @guala2016 mentions that the mundane notions of "a professor", "a student" or "a husband" make no sense without conventions and, more broadly, social institutions, as central ontological units of the social world. It is because these notions are a part of a mostly hidden and taken-for-granted infrastructure of roles with duties and rights. And conventions, as Guala argues, hold those together. 
 
 A good deal of the current social ontology is detached from actual social science [@sarkia2023]. It has mostly been developed within analytic philosophy [@baker2019; @searle1995; @epstein2015; @gilbert1992] and social scientific tradition of critical realism [@archer1995; @elder-vass2010]. There are views that social ontology is intrinsically more complex than any "natural" ontology for being "interactive", or dependent on beliefs of individuals and hence changeable [@hacking1999; @epstein2015] and that social reality is inherently normative, meaning it cannot be descriptive and hence cannot import methodologies from "natural" ontologies [@asta2024; @haslanger2012]. Such a position renders and justifies the importance of an "extra-scientific" study of the social world. To me, these are two distinct projects: a set of *mutually coherent and explanatory powerful descriptions* of social phenomena and a normative theory thereof.
 
@@ -2177,7 +2153,7 @@ Overall, reframing the explanatory target of RiE from the stability of social in
 
 What we can do is to build some models possibly explaining this dynamic trajectory and answering the question of how normativity as a "feature of environment" might have evolved from non-normative and non-epistemic agents playing CE. Thus, we are addressing two weaker yet explanatorily crucial parts of RiE: relationship between animal and human conventions as CE and emergence of normative human conventions with decoupled representation. This is what we are going to do in the next chapter.
 
-# Chapter 3. Evolution of normativity in Guala's unified social ontology from non-epistemic agents with niche construction
+# **Chapter 3**. Evolution of normativity in Guala's unified social ontology from non-epistemic agents with niche construction
 As we saw in the previous chapter, Guala an Hindriks explain the stability of social institutions with both objective and subjective parts: equilibria of strategic games and meaningful rules employed by agents with which they represent the objective equilibria of games. I claimed that Guala and Hindriks bet too highly on an ambiguous notion of representation as responsible for normativity which, according to them, stabilizes institutions. The ambiguity stems from the description of representation as correspondence between scientific concepts and its real-world referents, while using cognitive capacity language. Discerning these notions shows that scientific notion of representation is what makes RiE work, but scientific representation depends, as I claimed, on *decoupled representation* as evolved cognitive capacity to disentangle stimuli and response and internalize norms. It means that showing how a representational capacity contributes to rule-following is central for our argument.
 
 A reasonable place to start is Sterelny's theory of decoupled representation mentioned by Guala and Hindriks in their appeal to cognitive representation as responsible for coordinating action on many representations as following rules. Taking Sterelny's theory seriously, we will see that its core mechanism of *cognitive niche construction* is ecological, meaning that the novelty is introduced through the interaction of agents with their environment. This will provide an important clue for resolving both problems of RiE: emergence of epistemic correlation from ontic one and emergence of normativity. Next, we will look deeply into Sterelny's theory of decoupled representation, its main mechanism of niche construction, game-theoretic models incorporating niche construction to finally arrive at our own agent-based models for emergence of epistemic correlation and normativity.

@@ -8,7 +8,7 @@
 
 <div style="width: 50vw;">
 | Название | Журнал | Год |
-| -- | -- | -- |
+| -------- | ------ | --- |
 | [**A Framework for More-than-human Placemaking with Data Storytelling** (2024)](https://doi.org/10.14627/537752023) | *Journal of Digital Landscape Architecture, 235-252* | 2024 |
 | | | 
 | | | 
