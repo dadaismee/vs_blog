@@ -373,6 +373,8 @@ Examples of coordination and cooperation problems include classic games like the
 <!--$$-->
 
 <!--Web-representations-->
+<div class="table">
+
 $$
 \begin{array}{|c|c|c|}
 \hline
@@ -383,10 +385,7 @@ Football & 2,1 & 0,0 \\
 Ballet & 0,0 & 1,2 \\
 \hline
 \end{array}
-$$
-**Battle of the Sexes**
-
-$$
+\quad
 \begin{array}{|c|c|c|}
 \hline
 & Cooperate & Defect \\
@@ -397,8 +396,8 @@ Defect & 0,-3 & -2,-2 \\
 \hline
 \end{array}
 $$
-
-**Prisoner's Dilemma**
+<div class="caption">"Battle of the sexes" (left) and "Prisoner's dilemma" payoff matrices</div>
+</div>
 
 These matrices model real-world problems such as social dilemmas and negotiations. For instance, the Battle of the Sexes often represents situations where partners must choose between competing preferences, while the Prisoner's Dilemma models the challenge of mutual cooperation versus self-interest in scenarios like arms races or public goods provision.
 
@@ -480,8 +479,10 @@ Thus, the augmented game matrix becomes:
 <!---->
 
 <!--Web-representation-->
+<div class="table">
+
 $$
-\begin{array}{|c|c|c|c|}
+\begin{array}{|l|c|c|c|}
 \hline
 & Ballet (W) & Football (W) & FS (W) \\
 \hline
@@ -493,6 +494,8 @@ FS (H) & (1, 0.5) & (0.5, 1) & (1.5, 1.5) \\
 \hline
 \end{array}
 $$
+<div class="caption">"Battle of the sexes" with correlated equilibrium</div>
+</div>
 
 The strategy profile of $(FS, FS)$ represents a Nash equilibrium because neither player has an incentive to deviate. If a Husband switches to Ballet, he would only receive $1$, a decrease from his current payoff of $1.5$ when the Wife remains at $FS$. Similarly, if the Wife switches to Football, she would receive only $1$, a decrease from her current payoff of $1.5$ when the Man stays at $FS$. Since no profitable deviation exists for either player, the strategy profile **$(1.5, 1.5)$** is stable. Thus, the CE strategy is as an NE strategy of an augmented game. The difference is that CE are simpler to compute than NE and model real-world scenarios where external signals (e.g., traffic lights) guide decisions. In summary, CE expand the solution space of a game, offering improvements over Nash equilibria when players can leverage a coordination device.
 
@@ -544,17 +547,21 @@ On the game matrix, it is represented as two non-unique equilibria. It means tha
 <!--$$-->
 
 <!--Web representtion-->
+<div class="table">
+
 $$
 \begin{array}{|c|c|c|}
 \hline
-& Swerve \quad left & Swerve \quad right \\
+& Left & Right \\
 \hline
-Swerve \quad left & 1,1 & -1,-1 \\
+Left & 1,1 & -1,-1 \\
 \hline
-Swerve \quad right & -1,-1 & 1,1 \\
+Right & -1,-1 & 1,1 \\
 \hline
 \end{array}
 $$
+<div class="caption">Driving game (correlative coordination game)</div>
+</div>
 
 Complementary coordination problems, as opposed to correlative ones, require from agents different actions, or strategies, to coordinate successfully. As @oconnor2019 points out, division of labor or resources is an example of this class of games. For instance, two roommates want to organize a party and invite guests. To proceed, they need to tidy up the house and order pizza delivery. If they both do the cleaning, there will be no food when the guests come, and if they both order pizza delivery, they will have plenty of food but be embarrassed by the mess at the house.
 
@@ -575,6 +582,8 @@ Complementary coordination problems, as opposed to correlative ones, require fro
 <!--$$-->
 
 <!--Web representation-->
+<div class="table">
+
 $$
 \begin{array}{|c|c|c|}
 \hline
@@ -586,6 +595,8 @@ Tidy & 1,1 & -1,-1 \\
 \hline
 \end{array}
 $$
+<div class="caption">Pizza game (complementary coordination)</div>
+</div>
 
 The only difference between the two classes of coordination problems is either choosing same or different actions to coordinate successfully.
 
@@ -696,7 +707,6 @@ There is a formal distinction between behavioral, or "general" as Lewis call it,
 
 And in a matrix form it looks as follows:
 
-
 <!--Doc representation-->
 <!--$$-->
 <!--\begin{figure}-->
@@ -714,6 +724,8 @@ And in a matrix form it looks as follows:
 <!--$$-->
 
 <!--Web representation-->
+<div class="table">
+
 $$
 \begin{array}{|c|c|c|}
 \hline
@@ -725,6 +737,8 @@ S₂ & (0,0) & (1,1) \\
 \hline
 \end{array}
 $$
+<div class="caption">Signaling game</div>
+</div>
 
 If a sender's signal representing a world state is correctly acted upon by receiver, both parties get the payoff of $(1, 1)$ and if either party fails to map ("encode" or "decode") information, they get $(0, 0)$. There is a plethora of possible options within this informational "layer" of signaling system like pooling, sysnonyms, deception and others extensively studied primarily by philosophers of biology [@skyrms2010a; @skyrms2010; @huttegger2008; @godfrey-smith1991; @shea2018a; @martinez2019].
 
@@ -1080,14 +1094,18 @@ O'Connor proposed to layer these dimensions onto evolutionary models, namely tho
 <!--$$-->
 
 
+<div class="table">
+
 $$
 \begin{array}{|c|c|c|}
-&A&B\\ \hline
+\hline
+& A & B \\ \hline
 A & (1,1) & (0,0) \\ \hline
-B & (0,0) & (x,x)
+B & (0,0) & (x,x) \\ \hline
 \end{array}
 $$
-**A coordination game where B equilibrium is more favorable given $x > 1$**
+<div class="caption">A coordination game where B equilibrium is more favorable given $x > 1$</div>
+</div>
 
 Modelled as replicator dynamics, the game has B equilibrium as more “natural” in the sense (1) — that of a higher payoff. The corollary of this is a larger basin of attraction, which represent the probability that each outcome evolves, given little information about the initial conditions of the population. Thus, B is more likely to emerge and is more “natural” in the sense (2).
 
@@ -1169,20 +1187,20 @@ For Lewis, common knowledge is a *social construct* tied to conventions. Agents 
 To substantiate the sharp distinction between Lewis's and Shiffman/Aumann notions of common knowledge, @cubitt2003 highlight five key areas of divergence: 
 
 - *Epistemic and practical foundations*:
-- Lewis’s common knowledge is action-oriented and rooted in conventions (e.g., stopping at red lights)
-- Schiffer/Aumann treat it as a logical property of agents’ knowledge structures, decoupled from real-world coordination
+    - Lewis’s common knowledge is action-oriented and rooted in conventions (e.g., stopping at red lights)
+    - Schiffer/Aumann treat it as a logical property of agents’ knowledge structures, decoupled from real-world coordination
 
 - *Role of salience*:
-- Lewis requires salient cues (e.g., focal points) to bootstrap common knowledge
-- Schiffer/Aumann exclude salience, relying instead on axiomatic mutual reasoning
+    - Lewis requires salient cues (e.g., focal points) to bootstrap common knowledge
+    - Schiffer/Aumann exclude salience, relying instead on axiomatic mutual reasoning
 
 - *Bounded and unbounded rationality*:
-- Lewis’s agents operate under bounded rationality—common knowledge emerges from practical precedents, not recursive deductions
-- Schiffer/Aumann assume agents can process infinite hierarchies or partition operations, implying unbounded cognitive capacity
+    - Lewis’s agents operate under bounded rationality—common knowledge emerges from practical precedents, not recursive deductions
+    - Schiffer/Aumann assume agents can process infinite hierarchies or partition operations, implying unbounded cognitive capacity
 
 - *Necessity of publicity*:
-- Lewis emphasizes public events (e.g., a fire alarm) as triggers for common knowledge
-- Schiffer/Aumann reduce publicity to abstract logical or set-theoretic constructs (e.g., public announcements as partition refinements)
+    - Lewis emphasizes public events (e.g., a fire alarm) as triggers for common knowledge
+    - Schiffer/Aumann reduce publicity to abstract logical or set-theoretic constructs (e.g., public announcements as partition refinements)
 
 Cubitt and Sugden contend that Schiffer/Aumann’s formalisms fail to capture the pragmatic nature of common knowledge which involves culture and history in Lewis’s work. This disconnect, according to Cubitt and Sugden, renders Schiffer/Aumann models ill-suited for explaining real-world scenarios Lewis sought to address, such as language conventions or social norms. Their critique underscores that Lewis’s common knowledge is *procedural* and rooted in coordination practices, while Schiffer/Aumann’s is *declarative*, being a static property of knowledge structures. This philosophical and operational gap explains why formal models struggle to replicate the dynamism of Lewis’s convention-based framework.
 
@@ -1453,19 +1471,25 @@ Although the structure of Lewis-Skyrms game mirrors the flow of information in e
 
 Skyrms's sender-receiver system is an *information channel* focusing on how effective codes (signal-meaning pairings) arise and stabilize, not on agents’ beliefs or intention. His signaling games are mechanistic as Maynard Smith's, for they take into account only objective, or "ontic", features of agents like strategy frequency across population or, in case of signaling game, *mappings* from state to signal and from signal to action in accordance to the rate of coordination failures. Compare Lewis-Skyrms game 
 
+<div class="table">
+
 $$
 \begin{array}{ccccc}
 World & \xrightarrow{state} & Sender & \xrightarrow{Message} & Receiver & \xrightarrow{act} & {} \\
 \end{array} \\
 $$
+</div>
 
 with Shannon's information channel:
+
+<div class="table">
 
 $$
 \begin{array}{ccccc}
 Source & \xrightarrow{original \quad message} & Encoder &\xrightarrow{signal} & Channel & \xrightarrow{signal} & Decoder & \xrightarrow{decoded \quad message} & {} \\
 \end{array}
 $$
+</div>
 
 @martinez2019 proposes a "channel-first" view on signaling games and argues that the central behavioral unit of Lewis-Skyrms games is not strategies, but the *encoding-decoding pair* which is similar to *mappings* from above. 
 
@@ -1474,6 +1498,8 @@ In this framework, world states, signals and actions can be represented as *rand
 A sender observes the current state and transmits a signal – one of $m$ possible signals. The receiver detects this signal and chooses an action, $A_i$, from a set of available actions. Both the signal sent and the action chosen are random variables.
 
 The probabilities for the random variables are linked through the sender’s and receiver's strategies which are a probability matrices of signals given world states of acts given signals respectively.
+
+<div class="table">
 
 $$
 \left[\begin{array}{ccc}
@@ -1486,6 +1512,8 @@ $$
 \operatorname{Pr}\left(A_1 \mid M_m\right) & \ldots & \operatorname{Pr}\left(A_a \mid M_m\right)
 \end{array}\right]
 $$
+<div class="caption">Sender and reciever probabilities in @skyrms2010</div>
+</div>
 
 As per criticisms of Skyrms's approach to Lewisian signaling games, @martinez2019 argues that Skyrms did not go far enough into information theory and allowed informational analysis only *after* sender and receiver adopted the strategies which does not explain *how they arrived* at them. Martinez suggests using Shannon's rate-distortion function [@shannon1948] to show minimum mutual information between states and acts with minimum rate of distortion. It allows him to recast payoffs as distortion indicators in the channel. Seen with this lens, a coordination game of signaling, even that involving deception, as an information channel looks more cooperative.
 
@@ -1518,8 +1546,10 @@ Dinka and Nuer tribes graze their cattle on two sides of the river Sobat. After 
 <!--\caption{\small Grazing game: the player strategies are Graze, Not Graze and Graze if North / Graze if South}-->
 <!--\end{table}-->
 
+<div class="table">
+
 $$
-\begin{array}{|c|c|c|c|}
+\begin{array}{|l|c|c|c|}
 \hline
 & G & NG & GiS, NGiN \\
 \hline
@@ -1531,6 +1561,8 @@ GiN, NGiS & 0.5,1 & 1.5,1 & 1.5,1.5 \\
 \hline
 \end{array}
 $$
+<div class="caption">Guala's "Grazing game" [-@guala2015]: strategies are Graze, Not Graze and Graze if North / Graze if South</div>
+</div>
 
 This notion of observability crucial here was interpreted by @sugden2006 as focal points being underpinned not by instrumental but *pragmatic rationality* which is induced from its empirical success. Schelling stressed the "perceptual and suggestive element in the formation of mutually consistent expectations" [@schelling1980, 83-84] which is essential for focal points, as the authors note. It means that there are no logical restrictions on converging for expectations between players. @herrmann2022 give a vivid example: 
 
@@ -1671,9 +1703,12 @@ As we mentioned, in a CE, each agent effectively follows a *conditional strategy
 
 Moreover, the familiar constitutive formulation can be derived as a shorthand. Guala & Hindriks show that by introducing new institutional terms one can transform regulative conditionals into “counts-as” form. This two-part statement has a consequent identical to an institutional status. Compressing these, one obtains a constitutive rule:
 
+<div class="table">
+
 $$
 \text{A piece of land north of the river (}X\text{) counts as Nuer property (}Y\text{) in the context of location (}C\text{).}
 $$
+</div>
 
 In this way, Guala & Hindriks interpret “$X$ counts as $Y$” rules merely as economy of description: they package together a base rule (antecedent) and a status rule (consequent) that were already implied by the equilibrium of regulative rules [@guala2015]. They argue that any regulative rule can be converted into a constitutive rule by inserting an institutional term, and conversely any constitutive rule can be expanded back into regulative form. The purported novelty of constitutive rules is thus secondary: they label what is already established by agents’ correlated strategies. Institutions “consist of regulative rules” from which constitutive formulations can be omitted without loss.
 
@@ -1817,20 +1852,22 @@ However, the notion of players' correlated strategies as an *explanans* of the s
 <!--\end{table}-->
 
 <!--Web representation-->
+<div class="table">
+
 $$
 \begin{array}{|c|c|c|c|}
 \hline
-& $H$ & $D$ & $B$\\
+& H & D & B\\
 \hline
-$H$ &$-1$ &$2$ &$0.5$\\
+H &-1 &2 &0.5\\
 \hline
-$D$ &$0$ &$1$ &$0.5$ \\
+D &0 &1 &0.5 \\
 \hline
-$B$ &$-0.5$ &$1.5$ &$1.0$ \\
+B &-0.5 &1.5 &1.0 \\
 \hline
 \end{array}
 $$
-**"Hawk-Dove-Bourgeois" game**
+<div class="caption">"Hawk-Dove-Bourgeois" game</div>
 
 Presented with a terrestrial resource, a “Hawk” player fights over it, a “Dove” retreats and “Bourgeois” uses a conditional strategy “fight if own and retreat if do not own”. In this game, Guala and Hindriks see the “bourgeois” strategy “fight if own” as a correlated one in the sense of Aumann/Vanderschraaf, meaning that the players coordinate their actions by conditioning them on an external signal. As they say, it is a "simple pre-emption device: whoever occupied the land first has the right to use it" [@hindriks2015, 465]. In this case, the temporal order of occupation is used as a correlation device. Overall, this correlation fulfills the necessary condition of being an institution.
 
@@ -1854,8 +1891,11 @@ Presented with a terrestrial resource, a “Hawk” player fights over it, a “
 <!--\end{table}-->
 
 <!-- Web representation -->
+
+<div class="table">
+
 $$
-\begin{array}{|c|c|c|c|}
+\begin{array}{|l|c|c|c|}
 \hline
 & G & NG & GiS, NGiN \\
 \hline
@@ -1867,7 +1907,8 @@ GiN, NGiS & 0.5,1 & 1.5,1 & 1.5,1.5 \\
 \hline
 \end{array}
 $$
-**Grazing game: the player strategies are Graze, Not Graze and Graze if North / Graze if South**
+<div class="caption">Guala's "Grazing game" [-@guala2015]</div>
+</div>
 
 The payoff structure of the game is identical for animal and human cases, and we cannot discriminate between them solely on this basis. This invites the insufficiency of CE employed by Guala and Hindriks. However, although they mention adding payoff modifiers to the game structure to accommodate inherent normativity of conventions [@hindriks2019], they do not explain how animal conventions evolve into human payoff-modified ones[^payoff-modifications]. So the question is twofold: 
 
@@ -1948,15 +1989,13 @@ He proposed a model of a 'Hawk-Dove' game that represents a *mis*coordination ga
 
 <div class="table">
 
+
 $$
 \begin{array}{|l|c|c|}
 \hline
-& \textbf{Hawk} & \textbf{Dove} \\ 
-\hline
-\textbf{Hawk} & $\left(\frac{1}{2}(V-C), \frac{1}{2}(V-C)\right)$ & $(V, 0)$ \\ 
-\hline
-\textbf{Dove} & $(0, V)$ & $\left(\frac{V}{2}, \frac{V}{2}\right)$ \\ 
-\hline
+& \textbf{Hawk} & \textbf{Dove} \\ \hline
+\textbf{Hawk} & $\frac{(V-C)}{2}, \frac{(V-C)}{2}$ & $V, 0$ \\ \hline
+\textbf{Dove} & $0, V$ & $\frac{V}{2}, \frac{V}{2}$ \\ \hline
 \end{array}
 $$
 <div class="caption">A Hawk-Dove game. The payoffs are determined by the value of the resource ($V$) and the cost of fighting ($C$). Value $V$ increases the Darwinian fitness of an individual if they obtain the resource, and cost $C$ reduces it if injured in a fight over the resource. Not gaining $V$, however, does not mean zero fitness.</div>
@@ -2105,6 +2144,8 @@ Strategies of the game can be described as rules, but a-rules influence behavior
 
 *Institutions are composed of both subjective and objective components*: they are determined by varying social norms as rules and simultaneously restrict certain behaviors and their own perpetuation.
 
+<div class="table">
+
 ```{.mermaid format=svg background=transparent}
 flowchart LR
     subgraph Objective
@@ -2118,6 +2159,7 @@ flowchart LR
     4(Agent rules)
 ```
 <div class="caption">Institutional components in rules-in-equilibrium theory</div>
+</div>
 
 What Guala and Hidriks propose with introduction of representation as a necessary component of a theory of social institutions is essentially a way of connecting objective equilibria and subjective rules. And a core idea is that the latter can misrepresent the former: agents can have false beliefs about objective states (personal communication with Guala).
 
@@ -2940,6 +2982,7 @@ As an example, consider territorial birds, who exemplify robust tracking systems
 
 In the model, each interaction yields a pairwise payoff depending on the roles and chosen actions of the agents. The *underlying game* is a version of asymmetric Hawk-Dove-Bourgeois:
 
+<div class="table">
 
 | Role Combination   | Action Pair   | Payoff (i, j)    |
 | ------------------ | ------------- | ---------------- |
@@ -2949,6 +2992,7 @@ In the model, each interaction yields a pairwise payoff depending on the roles a
 | Any vs. Any        | Hawk vs. Hawk | (0, 0)           |
 | Any vs. Any        | Dove vs. Dove | (1, 1)           |
 
+</div>
 
 The highest-payoff configuration (1.5 each) emerges when *role-asymmetric coordination* occurs: the owner plays Hawk, and the intruder plays Dove, or vice versa. This requires agents to *differentiate roles* despite cue noise and achieve *predictable action alignment*.
 
@@ -3062,7 +3106,11 @@ These observables evolve under the joint influence of learning, perception noise
 ### Coordination and cue evolution
 From the early stages of simulation, there was rapid convergence toward simple coordination strategies based on direct cues associated with role perception. Initially, most agents relied on *Detection-type cues*, with strategy updating governed by local reinforcement dynamics. As learning accumulated across generations, agents improved in exploiting role-correlated cues to select conflict strategies (Hawk or Dove) effectively, producing an increase in coordination success.
 
+<div class="table">
+
 ![](src/blog/phd-draft/assets/final-model.png)
+<div class="caption">Results of our model: translucency drives the selective pressure for latent structure extraction and integration of information into higher-order cues</div>
+</div>
 
 Over time, however, there was a qualitative shift: some agents began to condition behavior not solely on raw cues, but on *statistical patterns in behavior and payoffs*, thereby evolving *Robust tracking* capacities and salient cues* which are structured cue/dominant-action associations that integrate frequency-dependent context. These agents used compound representations of roles and behavioral histories to select actions more reliably across variable settings.
 
