@@ -49,6 +49,7 @@ Now consider a similar situation in humans. Two tribes graze their cattle on dif
 <!-- | $$Conditional$$ | $(0.5,1)$ | $(1.5,1)$   | $(1.5,1.5)$        | -->
 
 <!-- web-representation -->
+<div class="table">
 $$
 \begin{array}{|c|c|c|c|}
 \hline
@@ -62,6 +63,8 @@ Conditional & 0.5,1 & 1.5,1 & 1.5,1.5 \\
 \hline
 \end{array}
 $$
+<div class="caption">Miscoordination game with conditional strategies</div>
+</div>
 
 In both cases, the agents have conditional strategies, but what is hidden is the nature of *conditionalization*. In the first case, it relies solely on environmental features and in the second,  it relies on explicit shared normative beliefs. Butterflies coordinate on order of precedence and do not "think" about it, while we humans not only think (sometimes) but base the very game and its strategies on our representations of others' actions and beliefs. 
 
@@ -444,7 +447,7 @@ This mixed strategy equilibrium represents a compromise balancing fairness and c
 
 In contrast, CE utilizes public signals to coordinate actions effectively. For instance, a public signal such as a coin flip can recommend both players attend Ballet or Football equiprobably. This mechanism eliminates miscoordination and ensures equal expected payoffs for both players ($1.5$ each). CE helps agents achieve higher payoffs and fairness compared to both pure and mixed Nash equilibria by leveraging shared randomness or communication.
 
-To demonstrate how a signal affects the payoff structure, we add a new strategy *Follow Signal (FS)*, where players choose based on a fair coin flip (Heads = Ballet, Tails = Football). We can do this because CE is essentially a Nash equilibrium of an game augmented with an additional set of strategies [@gintis2009a; @gintis2009]. The payoffs here depend on actual coordination, not just expectations: we can calculate expected payoffs when one player uses $FS$ and the other does not.
+To demonstrate how a signal affects the payoff structure, we add a new strategy *Follow Signal (FS)*, where players choose based on a fair coin flip (Heads = Ballet, Tails = Football). We can do this because CE is essentially a Nash equilibrium of a game augmented with an additional set of strategies [@gintis2009a; @gintis2009]. The payoffs here depend on actual coordination, not just expectations: we can calculate expected payoffs when one player uses $FS$ and the other does not.
 
 - **FS (H) vs Ballet (W)**:
     - Signal = Tails (50%): H chooses Football, W stays at Ballet → $(0, 0)$
@@ -1577,7 +1580,7 @@ In the next chapter, we will put game-theoretic notion of convention into the co
 
 In this chapter, we shift gears to study the relationship between game-theoretic models of conventions, social ontology and how the former help *explain* or substantiate the latter in a viable social ontology.
 
-Social conventions are of major interest for social ontology, a philosophical study of the entities comprising the social world. @guala2016 mentions that the mundane notions of "a professor", "a student" or "a husband" make no sense without conventions and, more broadly, social institutions, as central ontological units of the social world. It is because these notions are a part of a mostly hidden and taken-for-granted infrastructure of roles with duties and rights. And conventions, as Guala argues, hold those together. 
+Social conventions are of major interest for social ontology, a philosophical study of the entities comprising the social world. Some scholars see them as foundational blocks of social ontology [@bickhard2008] and others use them as more primitive units to construct more complex social ontologies involving the notions of *social institutions*, which are often dubbed normatively-driven (sets of) social conventions [@aoki2007; @hindriks2022]. For example, @guala2016 mentions that the such mundane notions as "a professor", "a student" or "a husband" make no sense without social institutions as normative structures embedding and making these roles and their content possible. It is because these notions are a part of a mostly hidden and taken-for-granted infrastructure of roles with duties and rights. And conventions, as Guala argues, hold those together. 
 
 A good deal of the current social ontology is detached from actual social science [@sarkia2023]. It has mostly been developed within analytic philosophy [@baker2019; @searle1995; @epstein2015; @gilbert1992] and social scientific tradition of critical realism [@archer1995; @elder-vass2010]. There are views that social ontology is intrinsically more complex than any "natural" ontology for being "interactive", or dependent on beliefs of individuals and hence changeable [@hacking1999; @epstein2015] and that social reality is inherently normative, meaning it cannot be descriptive and hence cannot import methodologies from "natural" ontologies [@asta2024; @haslanger2012]. Such a position renders and justifies the importance of an "extra-scientific" study of the social world. To me, these are two distinct projects: a set of *mutually coherent and explanatory powerful descriptions* of social phenomena and a normative theory thereof.
 
@@ -1745,31 +1748,54 @@ To address this issue, Hindriks and Guala use an equilibrium account to show the
 <!--\end{table}-->
 
 <!--Web representation-->
-$$
-\begin{array}{|c|c|c|}
-\hline
-& $C$ & $D$ \\
-\hline
-$C$ & $-1,-1$ & $-3,0$ \\
-\hline
-$D$ & $0,-3$ & $-2,-2$ \\
-\hline
-\end{array}
-$$
 
 $$
 \begin{array}{|c|c|c|}
 \hline
-& $S$ & $H$ \\
+  & C & D \\
 \hline
-$S$ & $4,4$ & $1,3$\\
+C & -1,-1 & -3,0 \\
 \hline
-$H$ & $3,1$ & $2,2$ \\
+D & 0,-3 & -2,-2 \\
+\hline
+\end{array}
+\quad
+\begin{array}{|c|c|c|}
+\hline
+  & S & H \\
+\hline
+S & 4,4 & 1,3 \\
+\hline
+H & 3,1 & 2,2 \\
 \hline
 \end{array}
 $$
 
-**Prisoner's dilemma (left) and Stag hunt (right)**
+<!-- $$ -->
+<!-- \begin{array}{|c|c|c|} -->
+<!-- \hline -->
+<!-- & $C$ & $D$ \ -->
+<!-- \hline -->
+<!-- $C$ & $-1,-1$ & $-3,0$ \ -->
+<!-- \hline -->
+<!-- $D$ & $0,-3$ & $-2,-2$ \\ -->
+<!-- \hline -->
+<!-- \end{array} -->
+<!-- $$ -->
+<!---->
+<!-- $$ -->
+<!-- \begin{array}{|c|c|c|} -->
+<!-- \hline -->
+<!-- & $S$ & $H$ \ -->
+<!-- \hline -->
+<!-- $S$ & $4,4$ & $1,3$\ -->
+<!-- \hline -->
+<!-- $H$ & $3,1$ & $2,2$ \ -->
+<!-- \hline -->
+<!-- \end{array} -->
+<!-- $$ -->
+
+<div class="caption">Prisoner's dilemma (left) and Stag hunt (right)</div>
 
 However, the notion of players' correlated strategies as an *explanans* of the stability of institutions is insufficient, as well, as the authors point out, for it is too permissive. They provide an example of non-human animals solving coordination problems without institutions. For example, male baboons, lions, swallowtails and other species exhibit a recurring behavioral pattern that can be described in terms of CE. Males patrol an area to mate with females and have ritual fights with intruders if encountered. The evolved pair of players' strategies minimizes possible damage to both parties and lets the incumbent occupy territory and mate [@maynardsmith1982]. The authors use Maynard Smith's exposition of animal territorial behavior represented as a “Hawk-Dove-Bourgeois” game to provide a simplified example of a prototypical social institution of property:
 
@@ -1888,7 +1914,7 @@ $$
 And ESS is given by: 
 
 $$
-P(s^*, s^*) > P(s', s^*) \quad or \quad [P(s^*, s^*) = P(s', s^*) \quad and \quad P(s^*, s') > P(s', s')].
+u(s^*, s^*) > u(s', s^*) \quad or \quad [u(s^*, s^*) = u(s', s^*) \quad and \quad u(s^*, s') > u(s', s')].
 $$
 
 which means that, although they both are Nash equilibria, they have diverging assumptions. For RiE, it means that:
@@ -1920,16 +1946,21 @@ He proposed a model of a 'Hawk-Dove' game that represents a *mis*coordination ga
 <!-- \end{table} -->
 <!---->
 
+<div class="table">
+
 $$
-\begin{array}{|l|c|c|c|}
+\begin{array}{|l|c|c|}
 \hline
-& \textbf{Hawk} & \textbf{Dove} \\ \hline
-\textbf{Hawk} & $\frac{1}{2}(V-C)$, $\frac{(V-C)}{2}$ & $V$ \\ \hline
-\textbf{Dove} & $0$ & $\frac{V}{2}$ \\ \hline
+& \textbf{Hawk} & \textbf{Dove} \\ 
+\hline
+\textbf{Hawk} & $\left(\frac{1}{2}(V-C), \frac{1}{2}(V-C)\right)$ & $(V, 0)$ \\ 
+\hline
+\textbf{Dove} & $(0, V)$ & $\left(\frac{V}{2}, \frac{V}{2}\right)$ \\ 
+\hline
 \end{array}
 $$
-
-**A 'Hawk-Dove' game. The payoffs are determined by the value of the resource ($V$) and the cost of fighting ($C$). Value $V$ increases the Darwinian fitness of an individual if they obtain the resource, and cost $C$ reduces it if injured in a fight over the resource. Not gaining $V$, however, does not mean zero fitness.**
+<div class="caption">A Hawk-Dove game. The payoffs are determined by the value of the resource ($V$) and the cost of fighting ($C$). Value $V$ increases the Darwinian fitness of an individual if they obtain the resource, and cost $C$ reduces it if injured in a fight over the resource. Not gaining $V$, however, does not mean zero fitness.</div>
+</div>
 
 This model assumes:
 
@@ -1976,15 +2007,22 @@ The Hawk-Dove game is symmetrical—both players have the same choice of strateg
 <!-- \end{table} -->
 <!---->
 
+<div class="table">
 $$
 \begin{array}{|l|c|c|c|}
 \hline
-& \textbf{Hawk} & \textbf{Dove} & \textbf{Bourgeois} \\ \hline
-\textbf{Hawk} & $-1$ & $2$ & $0.5$ \\ \hline
-\textbf{Dove} & $0$ & $1$ & $0.5$ \\ \hline
-\textbf{Bourgeois} & $-0.5$ & $1.5$ & $1$ \\ \hline
+& \textbf{Hawk} & \textbf{Dove} & \textbf{Bourgeois} \\ 
+\hline
+\textbf{Hawk} & 0,0 & 2,1 & 1,0.5 \\
+\hline
+\textbf{Dove} & 1,2 & 1,1 & 1,1.5 \\
+\hline
+\textbf{Bourgeois} & 0.5,1 & 1.5,1 & 1.5,1.5 \\
+\hline
 \end{array}
 $$
+<div class="caption">Hawk-Dove-Bourgeois game payoff matrix</div>
+</div>
 
 In this example, the Hawk-Dove game is extended to include a third strategy, $B$ (or Bourgeois), which is defined as 'if owner, play Hawk; if intruder, play Dove'. This strategy is ESS and the only ESS of this game. It is assumed that each strategy type is owner and intruder equally frequently. Hence, even when ownership does not alter payoffs or success in fighting, an asymmetry of ownership can be used as a conventional one to settle the contest. In a way, it is a correlation of strategies.
 
@@ -2032,15 +2070,16 @@ Instead, what remains to be explained by RiE is the gap between ontic and episte
 
 Guala and Hindriks mention *representation* as the third component of an adequate theory of social institutions along with coordination and correlation of strategies. Their argument goes that representation helps agents to condition their strategies not on immediate features of environment like in ontic correlation, but on many representations which Guala and Hindriks, importantly, equate with following rules (which is essentially epistemic correlation). So, representation for them is a mechanism for bridging animal and human conventions and explaining emergence of normativity and hence the stability of institutions. However, it is not evident how the two are connected.
 
-```mermaid
-flowchart LR;
+<div class="table">
+
+```{.mermaid background=transparent format=svg}
+flowchart LR
 1(Representation) --grounds--> 2(Normativity) --grounds--> 3(Social stability)
 ```
-
+<div class="caption">Conceptual relations of main explanatory components of RiE</div>
+</div>
 
 One more important point is that overall, Guala's account is ambiguous about the stage of the game played, for example the "Grazing game". And it has explanatory consequences for RiE. the "Grazing game" is presented as a late-stage game and the implications are stretched beyond late-stage games.
-
-
 
 So far, we have identified the problem of conflated agency models within RiE which influences the cohesiveness of one of its main arguments. Namely, the argument that CEs are insufficient for explanation of stability of human social institutions, for they are applicable to animal coordination problems and hence necessitate rules as separate explanatory entities. Identification of this problem allows to view normativity as left unexplained in RiE, for animal CEs are stable without rules and human CEs might themselves be salient social norms as rules. If normativity is already included into CEs, how did we go from non-normative CEs to normative ones? A capacity for representation is responsible for transitioning from the former to the latter, which is a big bet for a theory of stability of institutions. We now turn to studying the notion of representation and its relation to normativity in RiE.
 
@@ -2066,18 +2105,19 @@ Strategies of the game can be described as rules, but a-rules influence behavior
 
 *Institutions are composed of both subjective and objective components*: they are determined by varying social norms as rules and simultaneously restrict certain behaviors and their own perpetuation.
 
-```{.mermaid background=transparent}
-flowchart LR;
-subgraph Objective
-3(Observer rules)
-1(Correlated equilibrium)
-1<-.->3
-end
-subgraph Subjective
-3<-.Representation.->4
-end
-4(Agent rules)
+```{.mermaid format=svg background=transparent}
+flowchart LR
+    subgraph Objective
+        3(Observer rules)
+        1(Correlated equilibrium)
+        1<-.->3
+    end
+    subgraph Subjective
+        3<-.Representation.->4
+    end
+    4(Agent rules)
 ```
+<div class="caption">Institutional components in rules-in-equilibrium theory</div>
 
 What Guala and Hidriks propose with introduction of representation as a necessary component of a theory of social institutions is essentially a way of connecting objective equilibria and subjective rules. And a core idea is that the latter can misrepresent the former: agents can have false beliefs about objective states (personal communication with Guala).
 
@@ -2087,7 +2127,10 @@ The constitutive rules approach argues that our beliefs are essential for the ex
 
 As the authors note, constitutive rules are linguistically transformed regulative rules, aided with a new term to name an institution. Combining these accounts enables researchers to investigate Y terms like “money” used by individuals in everyday life and analyze their internal regulative and strategic character, thus *bridging explicit ontology of social science and implicit ontology of ordinary language*. The main idea of this argument, thus, is that constitutive rules can be developed at will from regulative rules or game-theoretic strategies by introducing institutional terms [@guala2015, 477].
 
+<div class="table">
+
 $$\text{Regulative rule (if X, do Y)} \, + \, \text{Institutional terms (e.g. "money")} = \text{Constitutive rule (X as Y in C)}$$
+</div>
 
 However, the very notion of "representation" as used in RiE is ambiguous: a-rules as semantic constructs "inside of the heads of agents" seem to "represent" game-theoretic strategies just like the scientific concept of a "gene" represents a physically realizable macro-molecule. In other words, it is not a mental state, but a *scientific representation* between an object in the ontological structure of the world and a concept *representing* it. At the same time authors mention terms like "stimuli", "behavior" and "representation" in one sentence, seemingly implying a narrower cognitive perspective.
 
@@ -3053,31 +3096,33 @@ Compared to prior work in institutional emergence [@conte1995] or norm internali
 * *Emergence of norm representations*: The model provides a mechanistic account of how representational and proto-deontic components evolve from strategic behavior
 * *Gradient of dependence on representation*: It captures the shift from ontic (objective, perceptually anchored) to epistemic (belief-mediated) coordination, consistent with social ontological theories.
 
-This model complements recent computational approaches in cultural evolution [@boyd2005; @henrich2020], yet extends their scope by integrating cognitive and ecological scaffolding of emergent proto-normativity. In addition, it can be compared to @morsky2019 as it is ideologically similar to ours and explicitly models emergence of social norms from random beliefs as environmental signals.
+This model complements recent computational approaches in cultural evolution [@boyd2005; @henrich2020], yet extends their scope by integrating cognitive and ecological scaffolding of emergent proto-normativity. 
 
-| Feature                    | **Morsky & Akçay**                                                                                 | **Our aim**                                                                                                |
-| -------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| **Context representation** | Vertices in a labeled graph $G = (V, E)$; each edge is a game, each vertex a private signal/event. | Internal **cues** $c \in \mathcal{C}$ built from role perceptions, possibly misperceived due to translucency. |
-| **Context structure**      | Exogenously given; ambiguity comes from **vertex label aggregation** via label matrix $L$.         | Endogenously learned; cues are formed and refined based on **experience and interaction patterns**.           |
-| **Ambiguity source**       | Label coarseness — multiple vertices can share a label.                                            | **Perceptual noise** (translucency $T$) distorts role identity, leading to ambiguous internal cues.           |
-| **Action selection mechanism** | Deterministic or default: follow the prescribed pure strategy from $P$; else default (e.g., Nash).      | **Stochastic action selection** via **softmax over Q-values**, capturing uncertainty and exploration.             |        |   |                                        |                                                                                                               |
-| **Adaptation mechanism**       | Norms evolve through **fitness-based imitation dynamics**. Players do not introspectively revise norms. | Learning is **individual** via temporal difference updates; norms emerge via cue generalization over generations. |        |   |                                        |                                                                                                               |
-| **Norm structure**        | Triple $(L, P, D)$: labels, prescriptive strategies, and beliefs about others. | Norms are not explicitly represented but **emerge** via cue-to-action mappings shaped by reward history.          |
-| **Descriptive component** | Descriptive behavior matrix $D$: player’s beliefs about others’ actions.       | No explicit belief matrix; instead, agents **track action frequencies** and derive dominance ratios to form cues. |
-| **Adaptation process**  | Imitation of more successful norms; no internal learning per se.   | Agents learn **individually over lifetime** and reproduce proportionally to accumulated rewards.                |
-| **Evolutionary update** | Norms spread via **fitness-proportional imitation**.               | Strategies (Q-tables) are inherited; **cognitive complexity** can evolve (Detection → Robust → Decoupled).      |
-| **Cue abstraction**     | Fixed via label set $\mathcal{L}$; coarseness influences behavior. | **Endogenously structured** via dominance thresholds $\theta_R, \theta_C$; leads to higher-order cue formation. |
-| **Main goal**            | Analyze **norm performance** and evolution in structured populations under ambiguity. | Investigate how **representational complexity** and **cue abstraction** evolve under perceptual uncertainty. |
-| **Type of norms**        | Social prescriptions shared by groups.                                                | Individually emergent mappings that may converge to population-level coordination patterns.                  |
-| **Game theoretic scope** | Generic symmetric games played repeatedly on a network.                               | **Asymmetric Hawk-Dove-Bourgeois game** with role-based coordination incentives.                             |
-| **Core equation**     | $\mathbb{E}[\pi_{nn'}] = \text{tr}(\Pi P' L' A L P^\top)$ — expected payoff from norm-norm interaction. | $Q_{c}^{a} \leftarrow Q_{c}^{a} + \alpha \cdot (R - Q_{c}^{a})$ — TD-learning rule for action values under cues. |
-| **Fitness mechanism** | Sum of expected payoffs over interaction graph; imitation drives norm frequency.                        | **Fitness-proportional selection** based on **cumulative reward** over $G$ interactions.                         |
-| **Top-down vs bottom-up**  | Top-down: Norms are structured, prescribed, and tracked explicitly. | Bottom-up: Norms emerge from learned mappings; complexity builds over time. |
-| **Rationality assumption** | Players **follow prescriptions**, don’t optimize internally.        | Agents are **boundedly rational**, adapt via experience.                    |
-| **Cognitive modeling**     | Abstract; assumes behavior is externally guided.                    | Mechanistic; includes **learning, perception, and misperception**.          |
-
-As can be seen, our models are quite different while addressing a similar concern. Our model aligns more closely with Guala's RiE.
-
+<!-- In addition, it can be compared to @morsky2019 as it is ideologically similar to ours and explicitly models emergence of social norms from random beliefs as environmental signals. -->
+<!---->
+<!-- | Feature                    | **Morsky & Akçay**                                                                                 | **Our aim**                                                                                                | -->
+<!-- | -------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | -->
+<!-- | **Context representation** | Vertices in a labeled graph $G = (V, E)$; each edge is a game, each vertex a private signal/event. | Internal **cues** $c \in \mathcal{C}$ built from role perceptions, possibly misperceived due to translucency. | -->
+<!-- | **Context structure**      | Exogenously given; ambiguity comes from **vertex label aggregation** via label matrix $L$.         | Endogenously learned; cues are formed and refined based on **experience and interaction patterns**.           | -->
+<!-- | **Ambiguity source**       | Label coarseness — multiple vertices can share a label.                                            | **Perceptual noise** (translucency $T$) distorts role identity, leading to ambiguous internal cues.           | -->
+<!-- | **Action selection mechanism** | Deterministic or default: follow the prescribed pure strategy from $P$; else default (e.g., Nash).      | **Stochastic action selection** via **softmax over Q-values**, capturing uncertainty and exploration.             |        |   |                                        |                                                                                                               | -->
+<!-- | **Adaptation mechanism**       | Norms evolve through **fitness-based imitation dynamics**. Players do not introspectively revise norms. | Learning is **individual** via temporal difference updates; norms emerge via cue generalization over generations. |        |   |                                        |                                                                                                               | -->
+<!-- | **Norm structure**        | Triple $(L, P, D)$: labels, prescriptive strategies, and beliefs about others. | Norms are not explicitly represented but **emerge** via cue-to-action mappings shaped by reward history.          | -->
+<!-- | **Descriptive component** | Descriptive behavior matrix $D$: player’s beliefs about others’ actions.       | No explicit belief matrix; instead, agents **track action frequencies** and derive dominance ratios to form cues. | -->
+<!-- | **Adaptation process**  | Imitation of more successful norms; no internal learning per se.   | Agents learn **individually over lifetime** and reproduce proportionally to accumulated rewards.                | -->
+<!-- | **Evolutionary update** | Norms spread via **fitness-proportional imitation**.               | Strategies (Q-tables) are inherited; **cognitive complexity** can evolve (Detection → Robust → Decoupled).      | -->
+<!-- | **Cue abstraction**     | Fixed via label set $\mathcal{L}$; coarseness influences behavior. | **Endogenously structured** via dominance thresholds $\theta_R, \theta_C$; leads to higher-order cue formation. | -->
+<!-- | **Main goal**            | Analyze **norm performance** and evolution in structured populations under ambiguity. | Investigate how **representational complexity** and **cue abstraction** evolve under perceptual uncertainty. | -->
+<!-- | **Type of norms**        | Social prescriptions shared by groups.                                                | Individually emergent mappings that may converge to population-level coordination patterns.                  | -->
+<!-- | **Game theoretic scope** | Generic symmetric games played repeatedly on a network.                               | **Asymmetric Hawk-Dove-Bourgeois game** with role-based coordination incentives.                             | -->
+<!-- | **Core equation**     | $\mathbb{E}[\pi_{nn'}] = \text{tr}(\Pi P' L' A L P^\top)$ — expected payoff from norm-norm interaction. | $Q_{c}^{a} \leftarrow Q_{c}^{a} + \alpha \cdot (R - Q_{c}^{a})$ — TD-learning rule for action values under cues. | -->
+<!-- | **Fitness mechanism** | Sum of expected payoffs over interaction graph; imitation drives norm frequency.                        | **Fitness-proportional selection** based on **cumulative reward** over $G$ interactions.                         | -->
+<!-- | **Top-down vs bottom-up**  | Top-down: Norms are structured, prescribed, and tracked explicitly. | Bottom-up: Norms emerge from learned mappings; complexity builds over time. | -->
+<!-- | **Rationality assumption** | Players **follow prescriptions**, don’t optimize internally.        | Agents are **boundedly rational**, adapt via experience.                    | -->
+<!-- | **Cognitive modeling**     | Abstract; assumes behavior is externally guided.                    | Mechanistic; includes **learning, perception, and misperception**.          | -->
+<!---->
+<!-- As can be seen, our models are quite different while addressing a similar concern. Our model aligns more closely with Guala's RiE. -->
+<!---->
 In addition, several extensions can enhance the theoretical and empirical utility of the model:
 
 1. *Integration with Free Energy Principle (FEP)*: The FEP [@friston2010] offers a unifying theory of cognition as inference under uncertainty. Agents minimize variational free energy by updating internal models to better predict sensory inputs. Integrating our model with FEP would allow us to:
@@ -3271,23 +3316,22 @@ From a Boyd–style homeostatic property cluster view of natural kinds, conventi
 
 @martinez2020 gives a further refinement to natural kinds as *synergic kinds*, claiming that it is not the redundancy and co-occurrence of the clustered properties due to underlying causal mechanisms that accounts for the kindhood, but their functionally complementary causal interaction which produces unique features. One of the strengths of the synergic kinds account is its capacity to accommodate complex scientific categories that challenge traditional natural kind theories. Polymorphic species and now social institutions can be better understood under the synergic model, which allows for varied but functionally integrated properties to jointly constitute a kind’s identity. In the case of social institutions it can be so, for it accommodates both "indifferent" and "interactive" kindhoods with mechanisms of reinforcement learning, ecological feedback and social learning on the one side and the mechanism of belief-based population-level adaptation on the other side. Martínez also argues that the naturalness of a kind can be understood in terms of how its synergistic properties support reliable inductive inferences and scientific generalizations. This perspective supports a gradualist view of natural kinds, contrasting with rigid dichotomies between natural and non-natural (social) kinds, and aligns more closely with scientific practice.
 
-    <!-- ## A quick note on ontic explanation -->
-    <!-- @craver2014 has argued for an *ontic account of scientific explanation*, in which explanations are not just abstract patterns but physically instantiated mechanisms: the explanation of a phenomenon is the mechanism that produces it. In this framework, a good scientific model is one that *mirrors the causal structure of the world*. -->
-    <!---->
-    <!-- Our model meets this criterion. It is not a merely descriptive or statistical model of behavior; it is a *mechanistic account of the emergence of conventions* via specific interactions between learning dynamics, informational constraints, and ecological structures. The agents’ evolving cue-inference strategies and payoff-driven behavior constitute a concrete causal system. Conventions emerge not as abstract rules imposed from outside, but as endogenous products of these dynamics. -->
-    <!---->
-    <!-- This gives us an *ontic grounding for sociological explanation*. Instead of positing social roles or institutions as opaque macro-level variables, we can explain them as emerging from—and reducible to—mechanistic substrates of coordination, strategy selection, and role differentiation. -->
+<!-- ## A quick note on ontic explanation -->
+<!-- @craver2014 has argued for an *ontic account of scientific explanation*, in which explanations are not just abstract patterns but physically instantiated mechanisms: the explanation of a phenomenon is the mechanism that produces it. In this framework, a good scientific model is one that *mirrors the causal structure of the world*. -->
+<!---->
+<!-- Our model meets this criterion. It is not a merely descriptive or statistical model of behavior; it is a *mechanistic account of the emergence of conventions* via specific interactions between learning dynamics, informational constraints, and ecological structures. The agents’ evolving cue-inference strategies and payoff-driven behavior constitute a concrete causal system. Conventions emerge not as abstract rules imposed from outside, but as endogenous products of these dynamics. -->
+<!---->
+<!-- This gives us an *ontic grounding for sociological explanation*. Instead of positing social roles or institutions as opaque macro-level variables, we can explain them as emerging from—and reducible to—mechanistic substrates of coordination, strategy selection, and role differentiation. -->
 
-    The model also invites reflection through the lens of *ontic structural realism* (OSR) which says that fundamental ontology of science is not made up of individual objects, but of *relational structures* [@ladyman2007]. In the context of social science, this suggests that what is most real about the social world is not the agents and their properties (even aggregate) but the *networks of roles, norms, and strategies* that structure their interaction.
+The model also invites reflection through the lens of *ontic structural realism* (OSR) which says that fundamental ontology of science is not made up of individual objects, but of *relational structures* [@ladyman2007]. In the context of social science, this suggests that what is most real about the social world is not the agents and their properties (even aggregate) but the *networks of roles, norms, and strategies* that structure their interaction.
 
-    The model embodies this structurally realist intuition:
+The model embodies this structurally realist intuition:
 
-    * Agents succeed not by virtue of intrinsic properties, but by occupying *positions in a relational structure* like the roles of “owner” or “intruder,” inferred from cues and stabilized by mutually reinforcing strategies;
-    * The stability of these roles depends not on individual essence, but on *systemic regularities* characteristic of OSR.
-    * What emerges as real, and what constrains explanation, is not the psychology of any single agent but the *structured convention-space* of possible stable configurations, which is objective yet relative to concrete sets of normative beliefs which can be explained evolutionarliy. 
+* Agents succeed not by virtue of intrinsic properties, but by occupying *positions in a relational structure* like the roles of “owner” or “intruder,” inferred from cues and stabilized by mutually reinforcing strategies;
+* The stability of these roles depends not on individual essence, but on *systemic regularities* characteristic of OSR.
+* What emerges as real, and what constrains explanation, is not the psychology of any single agent but the *structured convention-space* of possible stable configurations, which is objective yet relative to concrete sets of normative beliefs which can be explained evolutionarliy. 
 
 In this way, the model bridges mechanistic explanation with structural realism: it shows how *relational regularities* encoded in role-structured strategies and cue mappings constitute the real explanatory grain of the social.
-
 
 ### Towards radically naturalistic metaphysics and social ontology
 

@@ -117,6 +117,7 @@ for page in "${pages[@]}"; do
     # Build the page 
     pandoc --toc "$page" -o "$BUILD_DIR/$new_page" \
       --citeproc \
+      --filter mermaid-filter \
       --toc-depth=2 \
       --bibliography=/Users/valerii/Obsidian/Service/zotero-library.json \
       --csl=/Users/valerii/Obsidian/Service/apa-5th-edition.csl \
