@@ -2048,48 +2048,46 @@ To summarize Guala's and Hindriks's argument:
 
 Put differently, the difference in scope of actionable signals between animals and humans is due to humans having social epistemology with normative beliefs that grounds social ontology.
 
-
-### What is the "scope of actionable signals" in RiE?
-
+### The "scope of actionable signals" in more detail
 What, however, is "increasing number of equilibria" and how exactly the "scope of actionable signals" is different in animals and humans? If both animal and human cases can be seen as CE, it presupposes a probability distribution over possible strategies which "suggests" players to play a certain strategy. The number of strategies is equal in both cases, as well, so "increasing number of equilibria" is not literal and must reside, then, somewhere else. "Scope of actionable signals" means that humans can attend to and correlate strategies on a wider range of correlation devices. Formally, the representation of a probability distribution over strategies characteristic of CE is identical and hence does not grasp the difference between animal and human HDB. 
 
 I suggest that what is increasing between animal and human HDB is the *degree of arbitrariness of a correlation device*: to what extent it could have been otherwise? We could quantify it by appealing to *how many features of environment can be salient* for an organism to coordinate upon? In Lewis's language, it is "how many states of the world agents are able to recognize?". Butterflies, for instance, coordinate on the order of precedence among other things, but their set of recognizable salient features is much smaller than humans' (which is not quite surprising, to be honest).
 
 If we view a set of *recognizable world states* for a butterfly schematically, we might get:
 $$
-\Omega = \{ Spot is occupied, spoty is free, opponent is bigger, opponent is smaller \}
+\Omega = \{ Spot \ is \  occupied, \ spot \ is \ free, \ opponent \ is bigger, \ opponent \  is \ smaller \}
 $$
 
 This set of recognizable world states can be generalized to a set of *salient environmental features* and hence of possible correlation devices $D$ which agents can coordinate upon to arrive at CE: 
 
 $$
-D_1 = \{precedence, opponent's size\}
+D_1 = \{precedence, opponent's \  size\}
 $$
 
-What $D$ represents is the possible sources of signals given by CE to players. If precedence is salient, then CE will consist of probabilty distributions over strategies "Hawk, Dove, Hawk if you occupied the spot first, Dove if the spot is already occupied". This essentially models ownership as in "owner/intruder" role assignation in Maynard Smith's HDB [@maynardsmith1982]. If opponent's size is more salient, the CE would contain "Hawk if bigger" and "Dove is smaller" strategies.
+What $D$ represents is the possible sources of signals given by CE to players. If precedence is salient, then CE will consist of probabilty distributions over strategies "Hawk, Dove, Hawk if you occupied the spot first, Dove if the spot is already occupied". This essentially models ownership as in "owner/intruder" role assignation in Maynard Smith's HDB [@maynardsmith1982]. If opponent's size is more salient, the CE would contain "Hawk if bigger" and "Dove is smaller" strategies. 
 
 However, it is only applicable to one particular case of a territorial contest and not the entire behavioral repertoire of butterflies. This suggests that in other games other sets of possible relevant correlation devices might hold. And the number and nature of these correlation devices is ultimately *bound to the level of cognitive sophistication of an agent*. This is why, I suppose, Guala appeals to Sterelny by saying that "more complex creates can decouple stimulus and response with representation of environment". This is what I mean by the level of cognitive sophistication affecting the amount of potentially salient environmental features.
 
 To illustrate it, we can classify agents by the number of games they are capable of playing and how big is their set of correlation devices (which equals to how many environmental features they can attend to). For example, for the sake of simplicity, let us consider butterflies as only capable of playing Hawk-Dove-Bourgeois and not "Prisoner's dilemma" or "Stag hunt". Humans can play all sorts of games and the amount of correlation devices in each can be bigger than two. Consider Guala's "Grazing game":
 
 $$
-D_2 = \{ precedence, position to the Sobat riverved, shared knowledge of each other's property, \dots \}
+D_2 = \{ precedence, \  position \ to \ the \ Sobat \ riverbed, \ shared \ knowledge \ of \ each \ other's \ property, \dots \}
 $$
 
-Both the quantity and the quality of correlation devices differ. What Guala specifically mentions is that humans can condition strategy not on a single cue, but on multiple ones simultaneously, which he equates with following rules. What this practically means is that we, I suggest, can *integrate* many salient cues like "precedence", "shared knowledge of other's borderlines" and others to come up with a strategic response.
+Both the quantity and the quality of correlation devices differ. What Guala specifically mentions is that humans can condition strategy not on a single cue, but on multiple ones simultaneously, which he equates with following rules. What this practically means is that we, I suggest, can *integrate* many salient cues like "precedence", "shared knowledge of other's borderlines" and others to come up with a strategic response. However, this is a toy example, since it does not reflect a real question which @herrmann2021 emphasize: "what is the set of asymmetries over which *selection is operating*" and not just all logically possible asymmetries? It reflects the ontic/epistemic divide, since we sketched the sets of asymmetries *recognized* by agents as opposed to those on which *selection operates*.
 
-Moreover, what is important, if we abstract away from the particular case of riverbed-based borderlines, the amount of things which could serve as a correlation device for coordinating on borders and property would grow, for there is *functional independence* of human correlation devices from a set of environmental features which could possibly be salient. We can *use* different things as correlation device in functionally similar situations like deciding who goes first when pedestrians or cars clash into each other. There is a possibility, however, that there is an exhaustive set of functionally possible correlation devices which can be deployed across contexts varying from more mechanistic like "precedence" and "spatial position" to more social constructed categories like "age" (since its perception and attitude towards can vary culture-wise), "gender", "role" and others[^oconnor].
+If we abstract away from a particular case of riverbed-based borderlines, the amount of things which could serve as a correlation device for coordinating on borders and property would grow, for there is *functional independence* of human correlation devices from a set of environmental features which could possibly be salient. We can *use* different things as correlation device in functionally similar situations like deciding who goes first when pedestrians or cars clash into each other. There is a possibility, however, that there is an exhaustive set of functionally possible correlation devices which can be deployed across contexts varying from more mechanistic like "precedence" and "spatial position" to more social constructed categories like "age" (since its perception and attitude towards can vary culture-wise), "gender", "role" and others[^oconnor].
 
 [^oconnor]: @oconnor2019 has studied the emergence of unfairness and gendered labor division in this manner, although she has been criticized for using social categories themselves as correlation devices and not thing to be explained in the first place [@saunders2022].
 
 Two important features differentiate human correlation devices from animal ones here: 
 
-- *Functional abstraction*: we can use contextually-accessible environmental cues as functionally similar correlation device (shells, necklaces, coins and cigarettes can equally be money in different contexts);
+- *Functional abstraction*: we can use contextually-accessible environmental cues as functionally similar correlation device (shells, necklaces, coins and cigarettes can be money in different contexts);
 - *Beliefs as cues*: we can use beliefs as "environmental cues". For instance, players in the "Grazing game" base their strategies not only on physical markers, but on shared belief about existence of another tribe and consequences of trespassing, although it is not evident from the very formulation of strategies like "In North to the river, graze".
 
 Human institutions are *multiply realizable* in the sense of being functionally abstracted from particular instantiations. Applying this insight to our example of the set of correlation devices $D_2$ for "Grazing game", we see that the set would consist of different things from context to context as different environmental cues can be relevant for establishing territorial borders, just like money.
 
-Thus, *environmental asymmetries appearing to organisms as salient comprise a set of possible correlation devices*. The greater the number of recognizable asymmetries, be it physical or epistemic, the greater the amount of possible correlation devices. So, what Guala most probably means by "scope of actionable signals" is essentially a set of recognizable salient environmental asymmetries.
+Thus, *environmental asymmetries appearing to organisms as salient comprise a set of possible correlation devices*. The greater the number of recognizable asymmetries, be it physical or epistemic, the greater the amount of possible correlation devices. So, what Guala most probably means by "scope of actionable signals" is essentially a set of recognizable salient environmental asymmetries. We will use this insight later in Chapter 3 when modeling the cognitive evolution of correlation devices.
 
 
 ### Conflation of agency models in RiE
@@ -2108,7 +2106,7 @@ Institutions coordinate behavior by *correlating agents' strategies in coordinat
 - that agents can coordinate upon any coordination device 
 - that coordination is mutually beneficial.
 
-As might have been noticed, there is a subtle tension within the game-theoretic part of Guala's and Hindriks's theory. While discussing HDB, they say that animals play CE and at the same time credit @maynardsmith1982 as for coming up with the very conceptualization of the HDB game. An important remark, though, is that Maynard-Smith used HDB to introduce the concept of ESS and did not use the notion of CE. An intuitive question arises about how do CE and ESS hang together in the same game-theoretic description of an animal convention, especially taking into account the conditional nature of CE which animals supposedly lack. As we remember, CE is given by:
+As might have been noticed, there is a subtle tension within the game-theoretic part of Guala's and Hindriks's theory. While discussing HDB, they say that animals play CE and at the same time credit @maynardsmith1982 as for coming up with the very conceptualization of the HDB game. An important remark, though, is that Maynard-Smith used HDB to introduce the concept of ESS as we already know and did not use the notion of CE. An intuitive question is how do CE and ESS hang together in the same game-theoretic description of an animal convention, especially taking into account the conditional nature of CE which animals supposedly lack. As we remember, CE is given by:
 
 $$
 \sum_{s_{-i} \in S_{-i}} p\left(s_i, s_{-i}\right) u_i\left(s_i, s_{-i}\right) \geq \sum_{s_{-i} \in S_{-i}} p\left(s_i, s_{-i}\right) u_i\left(s_i^{\prime}, s_{-i}\right), \quad \forall s_i, s_i^{\prime} \in S_i
@@ -2122,14 +2120,14 @@ $$
 
 which means that, although they both are Nash equilibria, they have diverging assumptions. For RiE, it means that:
 
-- either "animal conventions" are mathematically different from human social institutions, for they represent ESS and not CE, and hence Guala's argument from insufficiency and the very reason for introduction of rules fail (for one misinterprets ESS for CE with its rationality assumptions);
-- or "animal conventions" are themselves correlated, and there comes the need of showing *in what respect these correlations are different*.
+- either "animal conventions" are mathematically different from human social institutions, for they represent ESS and not CE, and hence Guala's argument from insufficiency and the very reason for introduction of rules seems to fail (for one misinterprets ESS for CE with its rationality assumptions);
+- or "animal conventions" are themselves correlated, and there comes the need of showing *in what respect these correlations are different*. Only by showing it we can disambiguate the claims of RiE about CE as its backbone.
 
-Guala and Hindriks use the notion of *"bourgeois equilibrium"* introduced in the context of evolutionary game theory by @maynardsmith1982. They see the HDB game of animal territorial ownership a prototypical "animal convention". According to the authors, the so-called "bourgeois equilibrium" (BE) is essentially a CE, however Maynard Smith used BE to define ESS. It creates tension, for CE and ESS are mathematically distinct: the former is "too loose" and the latter is "too strict" in terms of the stability conditions (and RiE strives to explain the stability of social institutions), and it is unclear how they can be combined. Hence, the issue consists of clarifying the status of BE: whether it is a CE, an ESS or something else. It is due to being at the core of Guala's argument for institutions as correlation of strategies rooted in evolution. Let us look at the Maynard Smith's notion of BE captured in the HDB game.
+Guala and Hindriks use the notion of *"bourgeois equilibrium"* (BE) introduced in the context of evolutionary game theory by @maynardsmith1982. They see the HDB game of animal territorial ownership a prototypical "animal convention". According to the authors, the so-called BE is essentially a CE, however Maynard Smith used BE to define ESS. It creates tension, for CE and ESS are mathematically distinct: the former is "too loose" and the latter is "too strict" in terms of the stability conditions (and RiE strives to explain the stability of social institutions), and it is unclear how they can be combined. Hence, the issue consists of clarifying the status of BE: whether it is a CE, an ESS or something else. It is due to being at the core of Guala's argument for institutions as correlation of strategies rooted in evolution.
 
 <!-- Taking into account the wealth of research on the relationship between ESS and correlation in game theory [@skyrms1994; @lee-penagos2016; @kim2017; @metzger2018; @herrmann2021], the first option in resolving the tension in Guala's argument becomes insufficient. Hence, let us explore the second option. -->
 
-Guala's "Grazing game" presupposes that both tribes know that the other tribe exist over the river and they know the consequences of crossing the river as they are embedded into the game structure. This "consequentialist" position suggests that agents correlate their strategies not on interactional asymmetries or simple environmental cues, but on higher-order representations. And in spite of Guala's idea that agents use simple heuristics and conditional rules like "Graze if North", it seems like such heuristics are the result of previous more cognitively demanding reasoning and not a first-time optimization. The very payoff structure and the notion of both tribes' knowledge of it presupposes at least some proto-normativity, as shared knowledge of low payoff for a certain strategy signals to agents not to use it. We will look at this in technical detail in Chapter 3 when presenting our model of the cognitive evolution of correlation devices. 
+Guala's "Grazing game" presupposes that both tribes know that the other tribe exist over the river and they know the consequences of crossing the river as they are embedded into the game structure. This "consequentialist" position suggests that agents correlate their strategies not on interactional asymmetries or simple environmental cues, but on higher-order representations. And in spite of Guala's idea that agents use simple heuristics and conditional rules like "Graze if North", it seems like such heuristics are the result of previous more cognitively demanding reasoning and not a first-time optimization. The very payoff structure and the notion of both tribes' knowledge of it presupposes at least some proto-normativity, as shared knowledge of low payoff for a certain strategy signals to agents not to use it. 
 
 The ambiguity over what is actually a "bourgeois equilibrium" calls for an inquiry into its origins in Maynard Smith's evolutionary game theory and subsequent comparison with Guala's account.
 
@@ -2137,7 +2135,7 @@ The ambiguity over what is actually a "bourgeois equilibrium" calls for an inqui
 ### Ontic and epistemic correlation of strategies 
 @maynardsmith1982 famously has introduced the notion of ESS into game theory. A 'strategy' is a behavioral *phenotype*, a specification of what an individual will do in any situation. An ESS is a strategy that, if adopted by all members of a population, prevents the invasion of any mutant strategy by natural selection. The concept originated in the context of animal behavior, but can be applied to any phenotypic variation.
 
-He proposed a model of a 'Hawk-Dove' game that represents a *mis*coordination game between two agents. In a competition for some resource, 'Hawk' fights for it and 'Dove' displays and retreats if threatened.
+Maynard Smith proposed a model of a 'Hawk-Dove' game that represents a *mis*coordination game between two agents. In a competition for some resource, 'Hawk' fights for it and 'Dove' displays and retreats if threatened.
 
 <!-- Doc representation -->
 <!-- \begin{table}[h] -->
@@ -2153,7 +2151,6 @@ He proposed a model of a 'Hawk-Dove' game that represents a *mis*coordination ga
 <!---->
 
 <div class="table">
-
 
 $$
 \begin{array}{|l|c|c|}
@@ -2175,20 +2172,22 @@ This model assumes:
 
 Defining the stability criteria for the strategies, he proposed that If a strategy $I$ is stable against $J$, it must satisfy the “standard conditions” from @smith1973: the fitness of typical members adopting $I$ must be greater than any mutant $J$, such that:
 
-- either $E(I, I)>E(J, I)$ or $E(I, I)=E(J, I)$
-- and $E(I, J)>E(J, J)$.
+- either $E(I, I) > E(J, I)$ or $E(I, I) = E(J, I)$
+- and $E(I, J) > E(J, J)$.
 
 According to these conditions, $D$ cannot be an ESS, for $E(D,D) < E(H,D)$, and $H$ is an ESS if costs of injury are less than potential gain from the resource, $V > C$. If $V < C$, neither $H$ nor $D$ is an ESS. To proceed, Maynard Smith considers the behavior of individuals who can play either strategy with a certain probability, which they pass on to their offspring. This strategy takes the form 'play $H$ with probability $P$, and $D$ with probability $(1-P)$'.
 
-A mixed strategy $I$, which randomly chooses an action from a set of possible actions, may be an ESS if the expected payoffs of the strategies composing it are equal. This follows from a theorem by @bishop1978: if a mixed ESS includes the pure strategies $A, B, C, \ldots$ with non-zero probability, then $$E(A, I)=E(B, I)=E(C, I)=\ldots=E(I, I)$$
+A mixed strategy $I$, which randomly chooses an action from a set of possible actions, may be an ESS if the expected payoffs of the strategies composing it are equal. This follows from a theorem by @bishop1978: if a mixed ESS includes the pure strategies $A, B, C, \ldots$ with non-zero probability, then 
 
-Intuitively, this means that if $E(A, I)>E(B, I)$, adopting $A$ more often and $B$ less often would be more advantageous than following strategy $I$, making it not an ESS.
+$$E(A, I) = E(B, I) = E(C, I) = \ldots = E(I, I)$$
+
+Intuitively, this means that if $E(A, I) > E(B, I)$, adopting $A$ more often and $B$ less often would be more advantageous than following strategy $I$, making it not an ESS.
 
 However, $I$ can be an ESS if probability of its adoption is $P = V/C$. In contests where the cost of injury is greater than the rewards of victory, $V < C$, mixed strategies with $P = V/C$ are evolutionarily stable.
 
 What is important, a game with two pure strategies always has an ESS, and games with three or more strategies may not have one. As we remember, both "Hawk-Dove" and "Grazing" games have three strategies.
 
-@maynardsmith1982 introduces the distinction between symmetric and asymmetric games. He illustrates them with animal contests. An asymmetric contest is one where participants have different roles, allowing them to use different strategies. Roles must be identifiable and can be based on gender, ownership, or intruder status. Circumstances which determine an individual's role are assumed to be independent of their genetic strategy. A contest with no role differentiation is 'symmetric'. @maynardsmith1982 characterizes them as follows:
+@maynardsmith1982 introduces the distinction between *symmetric and asymmetric games*. He illustrates them with animal contests. An asymmetric contest is one where participants have different roles, allowing them to use different strategies. Roles must be identifiable and can be based on gender, ownership, or intruder status. Circumstances which determine an individual's role are assumed to be independent of their genetic strategy. A contest with no role differentiation is 'symmetric'. @maynardsmith1982 characterizes them as follows:
 
 1. Contests are between two individuals of distinct roles (e.g., owner/intruder, larger/smaller, older/younger);
 2. Both individuals know their role;
@@ -2259,29 +2258,29 @@ In their theory, Guala and Hindriks endorse the epistemic interpretation of the 
 
 According to Skyrms, the conditional nature of the $B$ strategy is genuinely correlative:  the $BB$ strategy profile is a CE *spontaneously arising* from symmetry-breaking that happens when individuals randomize the choice of their strategies and do not know whether they are “Hawkes” or “Doves” [-@skyrms2014, 78].
 
-This is where Skyrms's notion of "correlated convention" from the previous chapter shines. To reiterate, correlation in evolutionary game is achieved with the symmetry broken with interactional dependencies between agents (spatial or social structure, signaling, etc). This is possible due to a frquentist interpretation of probability in CE without beliefs instead of conditional and with objective frequencies of strategy use.
+This is where Skyrms's notion of "correlated convention" from the previous chapter shines. To reiterate, correlation in evolutionary game is achieved with the symmetry broken with interactional dependencies between agents (spatial or social structure, signaling, etc). This is possible due to a frequentest interpretation of probability in CE without beliefs instead of subjective one.
 
-A random mutation or learning can create a CE in a Hawk-Dove game. A slight increase in resource value or fighting ability will strongly favor the bourgeois equilibrium over others. What was "uncorrelated asymmetry" for Maynard Smith, became "correlated asymmetry" for Skyrms.
+A random mutation or learning can create a CE in a Hawk-Dove game. A slight increase in resource value or fighting ability will strongly favor the BE over other strategies. What was "uncorrelated asymmetry" for Maynard Smith, became "correlated asymmetry" for Skyrms.
 
-On Skyrms's account, $BB$ is CE *and* ESS at the same time without conflict (personal communication). More precisely, $BB$ is an *adaptive-ratifiable* strategy* (generalized ESS), for it takes into account conditional strategies emerging from endogenous structure of interactions and resulting into correlation which affects interaction frequencies and stabilizes the strategy over the population. This strategy does not assume *any* rationality in agents, let alone a Bayesian one, implied by Guala.
+On Skyrms's account, $BB$ is CE *and* ESS at the same time without a conflict (personal communication). More precisely, $BB$ is an *adaptive-ratifiable* strategy (generalized ESS), for it takes into account conditional strategies emerging from endogenous structure of interactions and resulting into correlation which affects interaction frequencies and stabilizes the strategy over the population. This strategy does not assume *any* rationality in agents, let alone a Bayesian or a boundedly rational one implied by Guala.
 
-For RiE, the notion of "correlated convention" means that an example of animal HDB can indeed be described as CE and ESS at the same time under the crucial condition of the *non-epistemic nature of the game*, whereas Guala's agents are strictly epistemic and conditional (personal communication). 
+For RiE, the notion of "correlated convention" means that an example of animal HDB can indeed be described as CE and ESS at the same time under the crucial condition of the *non-epistemic nature of the game*, whereas Guala's agents are strictly epistemic (personal communication). 
 
 The crucial difference is that non-epistemic agents correlate on the *objective features of environment*, while epistemic agents *correlate on beliefs*, especially in the case of human HDB with added normativity, where social norms are the source of salience like Guala and Gintis put forward [@guala2015; @gintis2009a]. 
 
 We might introduce the distinction of *ontic* and *epistemic* correlation. What is subtle yet crucial here and what is overlooked in RiE, is that these types of correlation have distinct real-world references. While both animal and human conventions are CE formally and can be described with a single model, both their "inner workings" and references "in the world" are different. This renders the entire Guala's argument of "scope of actionable signals" problematic, for it is not evident how to compare games with ontic and epistemic cues. To remind, this argument is at the backbone of RiE as it justifies the introduction of rules into equilibrium theories of social institutions. 
 
-According to Guala and Hindriks, stability of social institutions cannot be based only on CE as CE is equally applicable to animals. However, as we have seen, these are two distinct CEs — frequentest (ontic) and Bayesian (epistemic) ones. While rules or any notion of normativity is missing in the ontic correlation by definition (as it cannot be a feature of environment[^emergent-normativity]), rules as salient norms can and sometimes are CE themselves. For example, @gintis2009a views social norms as "choreographers" and CE as they are essentially "second-order" conditional strategies.
+According to Guala and Hindriks, stability of social institutions cannot be based only on CE as it is equally applicable to animals and humans. However, these are two distinct CEs — frequentest (ontic) and Bayesian (epistemic) ones. While rules or any notion of normativity is missing in the ontic correlation by definition (as it cannot be a feature of environment[^emergent-normativity]), rules as salient norms can and sometimes are CE themselves. For example, @gintis2009a views social norms as "choreographers" and CE as they are essentially "second-order" conditional strategies. We can imagine a pair of strategies like "Others expect me to stop if red" and "Others expect me to drive if green" which comprise a CE.
 
 [^emergent-normativity]: As we will see in Chapter 3, normativity can be an emergent property of interaction of agents with environmental cues, which can be considered "a feature of environment", but it would require agents to already be of higher representational grade and a system to have a separate mechanism of niche construction.
 
-It means that Guala's and Hindriks's argument for insufficiency of CE without rules for human cases is unsubstantiated, for CE as norms already includes both Bayesian rationality *and* normativity (for example, Gintis's belief matrices from the previous chapter). Consequently, explanation of stability of institutions does not require separate CE and rules as norms, as for epistemic games with conditional agents, norms can be CE themselves. 
+It means that Guala's and Hindriks's argument for insufficiency of CE without rules for human cases is unsubstantiated, for CE as norms already includes both Bayesian rationality *and* normativity (for example, Gintis's belief matrices from the previous chapter). Consequently, explanation of stability of institutions might nit require separate rules as norms, as for epistemic games with conditional agents, norms can be CE themselves. 
 
 While I am not denying the effectiveness of having both rules and equilibria, I argue that the "insufficiency" argument for introducing norms as separate entities from CEs seems to go not well. Norms are smuggled into RiE almost *ex nihilo* and remain unexplained why we need them for the explanation of stability of institutions, while having them as the central causal factor of such stability according to the insufficiency of CE argument.
 
 Instead, what remains to be explained by RiE is the gap between ontic and epistemic correlation: **how stability of human institutions evolves from stability of animal conventions**?
 
-Guala and Hindriks mention *representation* as the third component of an adequate theory of social institutions along with coordination and correlation of strategies. Their argument goes that representation helps agents to condition their strategies not on immediate features of environment like in ontic correlation, but on many representations which Guala and Hindriks, importantly, equate with following rules (which is essentially epistemic correlation). So, representation for them is a mechanism for bridging animal and human conventions and explaining emergence of normativity and hence the stability of institutions. However, it is not evident how the two are connected.
+Guala and Hindriks mention *representation* as the third component of an adequate theory of social institutions along with coordination and correlation of strategies. Their argument goes that representation helps agents to condition their strategies not on immediate features of environment like in ontic correlation, but on many representations which Guala and Hindriks, importantly, equate with following rules (which is essentially epistemic correlation). So, representation for them is a mechanism for bridging animal and human conventions and explaining emergence of normativity and hence the stability of institutions. However, it is not evident how the two are connected. 
 
 <div class="table">
 
@@ -2292,9 +2291,13 @@ flowchart LR
 <div class="caption">Conceptual relations of main explanatory components of RiE</div>
 </div>
 
-One more important point is that overall, Guala's account is ambiguous about the stage of the game played, for example the "Grazing game". And it has explanatory consequences for RiE. The "Grazing game" is most probably presented as a late-stage game, for agents already use heuristic-like rules and do not perform any inference, although it might not be the case for the early stages of the game. The implications of this game are stretched and generalized beyond late-stage games.
+A subtle thing about "representation" is that agents represent equilibria with rules, so rules might not even have any causal efficacy as they can *mis*represent an actual equilibrium (Guala, personal communication). Rules would have causal efficacy if they contributed to the maintenance of an equilibrium, but Guala claims that these can be misaligned while still have effective equilibria. It presupposes that rules in rules-in-equilibria might be eliminable. 
 
-So far, we have identified the problem of conflated agency models within RiE which influences the cohesiveness of one of its main arguments. Namely, the argument that CEs are insufficient for explanation of stability of human social institutions, for they are applicable to animal coordination problems and hence necessitate rules as separate explanatory entities. Identification of this problem allows to view normativity as left unexplained in RiE, for animal CEs are stable without rules and human CEs might themselves be salient social norms as rules. If normativity is already included into CEs, how did we go from non-normative CEs to normative ones? A capacity for representation is responsible for transitioning from the former to the latter, which is a big bet for a theory of stability of institutions. We now turn to studying the notion of representation and its relation to normativity in RiE.
+Although I do not advocate for eliminating rules, I believe they are not causally efficacious in RiE, since they only serve as a placeholder to explain why agents exhibit rule-like social behavior (because they internalize objective behavioral patterns and represent them as recipes for action). However, there might be another, causal sense in which representation in RiE could work and do real explanatory work.
+
+<!-- One more important point is that overall, Guala's account is ambiguous about the stage of the game played, for example the "Grazing game". And it has explanatory consequences for RiE. The "Grazing game" is most probably presented as a late-stage game, for agents already use heuristic-like rules and do not perform any inference, although it might not be the case for the early stages of the game. The implications of this game are stretched and generalized beyond late-stage games. -->
+
+<!-- So far, we have identified the problem of conflated agency models within RiE which influences the cohesiveness of one of its main arguments. Namely, the argument that CEs are insufficient for explanation of stability of human social institutions, for they are applicable to animal coordination problems and hence necessitate rules as separate explanatory entities. Identification of this problem allows to view normativity as left unexplained in RiE, for animal CEs are stable without rules and human CEs might themselves be salient social norms as rules. If normativity is already included into CEs, how did we go from non-normative CEs to normative ones? A capacity for representation is responsible for transitioning from the former to the latter, which is a big bet for a theory of stability of institutions.  -->
 
 
 ### The problem with "representation" in RiE
@@ -2306,9 +2309,9 @@ Correlation in RiE (which we now know is epistemic) is possible, as Guala and Hi
 
 > “An institution is a self-sustaining, salient pattern of social interaction, as represented by meaningful rules that every agent knows, and incorporated as agents' shared beliefs about the ways the game is to be played”.
 
-If agents *represent* objective behavioral patterns as meaningful recipes for action and incorporate these patterns as shared beliefs, it creates an interesintg relationship: agents essentially *share* representations of the game structure, but it they also represent it with recipes for action for themselves. It means that there are at least two different representation at play: shared and private ones, and Guala and Hindriks talk about a private one as responsible for normativity of institutions.
+If agents *represent* objective behavioral patterns as meaningful recipes for action and incorporate these patterns as shared beliefs, it creates an interesting relationship: agents essentially *share representations of the game structure*, but they also *represent it with recipes for action* for themselves. It means there might be two different representations at play: shared and private ones, and Guala and Hindriks seemingly talk about a private one as responsible for normativity of institutions (although it is not evident for sure).
 
-If *rules* are private representations of objective game structure, what are they? As Guala and Hindriks stipulate, *rules essentially are norms*. Guala, following @north1990, notes that social norms make behavior more stable and more predictable. However, as noted by Searle, they introduce new behaviors, as well, and they do it by changing game payoffs. 
+If *rules* are private representations of objective game structure, what are they? As Guala and Hindriks stipulate, *rules essentially are norms*. Guala, following @north1990, notes that social norms make behavior more stable and more predictable. However, as noted by @vlerick2019, they introduce new behaviors, as well, and they do it by changing game payoffs. 
 
 There are two types of rules in RiE:
 
@@ -2336,9 +2339,9 @@ flowchart LR
 <div class="caption">Institutional components in rules-in-equilibrium theory</div>
 </div>
 
-What Guala and Hidriks propose with introduction of representation as a necessary component of a theory of social institutions is essentially a way of connecting objective equilibria and subjective rules. And a core idea is that the latter can misrepresent the former: agents can have false beliefs about objective states (personal communication with Guala).
+What Guala and Hidriks propose with introduction of representation as a necessary component of a theory of social institutions is essentially a way of connecting objective equilibria and subjective rules. And a core idea is that the latter can misrepresent the former as I have already noted: agents can have false beliefs about objective states.
 
-However, it is not evident how rules *(mis)represent* strategies, especially after we have suggested that there are public and private representation components in RiE. To clarify, the authors, drawing on @hindriks2005, bridge their rules-in-equilbria account of institutions with the constitutive rules account. The latter presents institutions as systems of statuses and functions, proposed by @searle1995 as the formula "X counts as Y in C”. Searle draws a sharp distinction between constitutive and regulative rules, emphasizing the difference in their syntax, for that of the latter is “do X if Y”.
+However, it is not evident how rules *(mis)represent* strategies, although we have suggested that there are public and private representation components in RiE which might not coincide. To clarify, the authors, drawing on @hindriks2005, bridge their rules-in-equilbria account of institutions with the constitutive rules account of @searle1995. The latter presents institutions as systems of statuses and functions as the formula "X counts as Y in C”. Searle draws a sharp distinction between constitutive and regulative rules, emphasizing the difference in their syntax, for that of the latter is “do X if Y”.
 
 The constitutive rules approach argues that our beliefs are essential for the existence of institutions, which involve more than just actions. This applies to objects, persons, and events too. X in "X counts as Y in C" can be replaced by predicates that refer to any ontological category [@guala2015, 470].
 
@@ -2349,45 +2352,49 @@ As the authors note, constitutive rules are linguistically transformed regulativ
 $$\text{Regulative rule (if X, do Y)} \, + \, \text{Institutional terms (e.g. "money")} = \text{Constitutive rule (X as Y in C)}$$
 </div>
 
-However, the very notion of "representation" as used in RiE is ambiguous: a-rules as semantic constructs "inside of the heads of agents" seem to "represent" game-theoretic strategies just like the scientific concept of a "gene" represents a physically realizable macro-molecule. In other words, it is not a mental state, but a *scientific representation* between an object in the ontological structure of the world and a concept *representing* it. At the same time authors mention terms like "stimuli", "behavior" and "representation" in one sentence, seemingly implying a narrower cognitive perspective.
+However, the very notion of "representation" as used in RiE is ambiguous: a-rules as semantic constructs "inside of the heads of agents" seem to "represent" game-theoretic strategies just like the scientific concept of a "gene" represents a physically realizable macro-molecule. In other words, it is not a *mental state*, but a *scientific representation* of an object in the ontological structure of the world with a concept representing it. At the same time, authors mention terms like "stimuli", "behavior" and "representation" in one sentence, implying a narrower cognitive perspective.
 
-From a scientific point of view, representation as a relation makes sense, for it allows investigation of Y-terms like "money" used by agents [@guala2016b, ch. 14]. However, representation as a cognitive capacity does not have any immediate practical application, especially in sociological data. Hence, there is need to discern two notions of representation in Guala's and Hindriks' argument:
+From a scientific point of view, representation as a relation makes sense, for it allows investigation of Y-terms like "money" used by agents [@guala2016b, ch. 14]. However, representation as a cognitive capacity does not have any immediate practical application, especially in sociological data. Hence, we can discern two notions of representation in Guala's and Hindriks' argument:
 
 - representation as relation between a concept and real-world entity
-- representation as cognitive capacity or mental state.
+- representation as cognitive capacity for having mental states.
 
 If, according to the authors, representation as a cognitive capacity distinguishes human conventions from animal ones, which is a crucial step in their argument from insufficiency of both rules and equilibria, representation as a relation between the rules and equilibrium might ontologically depend on representation as a cognitive capacity.
 
-According to Guala, agents directly represent the strategies of the game with a-rules (personal communication), which contradicts Sterelny's notion of representation, as the latter presupposes *representing the immediate features of environment*, and strategies are scientific representations rather than features of agents environment.
+According to Guala, agents directly represent the strategies of the game with a-rules (personal communication), which seems to contradict Sterelny's notion of representation used by Guala, as the latter presupposes *representing the immediate features of environment*, and strategies (specifically as strategies and not rules) are abstract representations rather than features of agents' environment.
 
-As the authors base their argument on Sterelny's, the capacity for inventing and following new normative rules depends on response breadth and decoupled representation of environment accessible to humans. However, crucially, there is no explicit conceptual link between representation as a cognitive capacity that grounds rule invention and representation of strategies by a-rules. *The former is a feature of agents, and the latter the feature of a theory describing the agents*.
+As the authors base their argument on Sterelny's, the capacity for inventing and following new normative rules depends on response breadth and decoupled representation of environment accessible to humans. However, crucially, there is no explicit conceptual link between representation as a cognitive capacity that grounds rule invention and representation of strategies by a-rules. The former is a feature of agents, and the latter is a feature of a theory describing the agents.
 
-When the authors introduce representation as a final condition for satisfactory theory of institutions along with coordination and correlation, while they intend to mean congitive capacity (personal communication with Guala), they actually mean "scientific representation-as-relation". It is because they use it to clarify and justify the relationship between the two parts of the theory: rules and equilibria. Representation here means that agents are capable of representing equilibria and their salient features in symbolic form [@hindriks2015, 466]. This is possible due to an advanced cognitive capacity for decoupling a stimulus and behavior with the aid of representation of environment. This decoupling allows for conditioning behavior, or strategies, on many coordination devices, and the authors take it for humans to be equivalent to "following different rules". Here rules are symbolic representations of the strategies "that ought to be followed in a given game" [@hindriks2015, 467].
+When the authors introduce representation as a final condition for satisfactory theory of institutions along with coordination and correlation, while they intend to mean congitive capacity (personal communication with Guala), they convey scientific representation. It is because they use it to clarify and justify the relationship between the two parts of the theory: rules and equilibria. Representation here means that agents are capable of representing equilibria and their salient features in symbolic form [@hindriks2015, 466]. This is possible due to an advanced cognitive capacity for decoupling a stimulus and behavior with the aid of representation of environment. This decoupling allows for conditioning behavior, or strategies, *on many coordination devices*, and the authors take it for humans to be equivalent to "following different rules". Here rules are symbolic representations of the strategies "that ought to be followed in a given game" [@hindriks2015, 467].
 
-The argument presupposes that behavior conditioning, and hence strategy selection, occurs already being based on existing rules. To follow a rule, it should already exist in the structure of the game. At the same time, these rules are a-rules, and they already represent existing strategies "that ought to be followed in a given game". It means that behavior is conditioned on existing strategies, and this involves a vicious circle: inventing new rules requires not only a capacity for stimulus-behavior decoupling, but existing equilbria, for here salient features of existing equilibria are used as coordination devices. 
+The argument presupposes that behavior conditioning, and hence strategy selection, occurs already being based on existing rules. To follow a rule, it should already exist in the structure of the game. At the same time, these rules are a-rules, and they already represent existing strategies "that ought to be followed in a given game". It means that behavior is conditioned on existing strategies, and this involves something like a reductive regress: inventing new rules requires not only a capacity for stimulus-behavior decoupling, but existing equilbria, for here salient features of existing equilibria are used as coordination devices. Although it can be problematic only from a logical point of view and not from a pragmatic and evolutionary one, since realistically we cannot think of a situation with no strategic equilibria (maybe before life?).
 
-In other words, the authors equate representation of salient features of the environment with representation of existing strategies, or behavioral responses, that preexist in the current game structure and "ought to be followed". It means that agents directly represent game structure with the aid of a-rules and institutional terms. Decoupled representation is used as a bridge between a-rules and o-rules, but it would mean that stimuli are themselves o-rules of the form "do X if Y". There seems to be a missing link as from an evolutionary point of view, abstract entities like conditional strategies cannot be features of environment to coordinate on. Guala and HIndriks thus put the cart before the horse by essentially saying that "agents represent existing normativity with recipes for action" and do not explain how representaiton causally affects normativity and hence the stability of social institutions. 
+In other words, the authors equate representation of salient features of the environment with representation of existing strategies, or behavioral responses, that preexist in the current game structure and "ought to be followed". It means that agents directly represent game structure with the aid of a-rules and institutional terms, which does not allow them to form whimsical private (mis)representations. 
 
-All in all, cognitive representation does not do useful work in RiE, for:
+Decoupled representation is used as a bridge between a-rules and o-rules, but it would mean that stimuli are themselves o-rules of the form "do X if Y". There seems to be a missing link as from an evolutionary point of view, abstract entities like conditional strategies cannot be features of environment to coordinate on. Guala and Hindriks thus put the cart before the horse by saying that "agents represent existing normativity with recipes for action" and do not explain *how representation causally affects normativity* and hence the stability of social institutions. 
+
+Cognitive representation, hence, does not do useful work in RiE, for:
 
 1. it is interpreted by the authors as scientific representation relating concepts rather than features of environment
+
 2. it is used to represent already existing normativity in the form of conditional strategies (o-rules).
 
-Would this work without representation as a cognitive capacity? No, for stimulus-behavior decoupling is key for a capacity to invent and follow new rules which distinguishes human social institutions and animal conventions. The introduction of decoupled representation as a cognitive capacity is only due to justifying this difference: although the payoff structure in both HDB games is the same, human agents are able to devise and converge on new equilibria given the same coordination device, or signal. For example, if butterflies can coordinate only on the precedence of occupying the sun spot, for they use the temporal order of territory occupation as a coordination device, humans are not genetically hardwired for using one and only coordination device for a given situation. We can interpret the same coordination device differently. As a simple example, many countries have a nod as "yes" and head shake as "no". However, it is the opposite in Bulgaria. A set of signals is the same, but the equilibrium is different. And it crashes when a foreigner tries to understand a native. Overall, the argument will not succeed without representation as a cognitive capacity, for there will still be no difference between human social institutions and animal conventions in game-theoretic terms.
+Would this work without representation as a cognitive capacity? Probably no, for stimulus-behavior decoupling is key for a capacity to invent and follow new rules which distinguishes human social institutions and animal conventions. The introduction of decoupled representation as a cognitive capacity is only due to justifying this difference: although the payoff structure in both HDB games is the same, human agents are able to devise and converge on new equilibria with new coordination devices. If butterflies coordinate only on the precedence of occupying the sun spot, humans are not genetically hardwired for using one and only coordination device for a given situation: we can interpret the same coordination device differently and use various devices for the same function (we called it *functional abstraction* earlier). As an example, many countries have a nod as "yes" and head shake as "no". However, it is the opposite in Bulgaria. A set of signals is the same, but the equilibrium is different. If a foreigner tries to understand a native, the equilibrium might crash. Overall, the argument will not succeed without representation as a cognitive capacity, for there will still be no difference between human social institutions and animal conventions in game-theoretic terms.
 
-And would the argument work without the notion of representation as a relation between rules and equilibria? No, as well, as it is the crux of the argument and of the unification done by rules-in-equilibria theory. Representation here logically connects rules and equilibria and helps to further connect it to constitutive rules theory by the notion of institutional, or Y-terms, as in "X count as Y in C" formula.
+And would the argument work without the notion of representation as a relation between rules and equilibria? Probably no, as well, as it is the crux of the argument for unification done by RiE. Representation here logically connects rules and equilibria and helps to further connect it to constitutive rules theory by the notion of institutional rules, or Y-terms, as in "X count as Y in C" formula.
 
-A more interesting question is whether representation as relation is possible without representation as a capacity. No, for as there is no structural difference between animal conventions and human social institutions without a human capacity for stimulus-behavior decoupling, there is no added representation of strategies with a-rules by agents. Animals seemingly cannot represent strategies with formulated normative a-rules. And if there is no decoupling, hence there is no "new rules and strategies". Apart from this, according to the authors, representation is needed to condition the behavior on the features of existing equilibria "that ought to be followed" to introduce new strategies and equilibria. It means that behavior conditioning, either in Sterelny's sense of salient features of immediate environment or in Guala's and Hindriks' sense of a-rules as representations of salient features of existing equilibria, requires a capacity for a decoupled representation.
+A more interesting question is whether representation as relation is possible without representation as a capacity. Again, probably no, for as there is no structural difference between animal conventions and human social institutions without a human capacity for stimulus-behavior decoupling, there is no added representation of strategies with a-rules by agents. Animals seemingly cannot represent strategies with formulated normative a-rules (otherwise they would also have complex institutions as we do). And if there is no decoupling, there is no "new rules, strategies and correlation devices". 
 
-Thus, for the entire argument about social institution as rules-in-equilibria to succeed, Guala and Hindriks should show how representation as a relation between rules and equilibrium is related to representation as a cognitive capacity. In strcter terms, they need to show how how the former is dependent on the latter, for this is the only way to *ground* normativity, for what they initially introduced "representation".
+Apart from this, according to the authors, representation is needed to condition the behavior on the features of existing equilibria "that ought to be followed in a given game" to introduce new strategies and equilibria. It means that behavior conditioning, either in Sterelny's sense of salient features of immediate environment or in Guala's and Hindriks' sense of a-rules as representations of salient features of existing equilibria, requires a capacity for a decoupled representation.
+
+Thus, for the argument about social institution as rules-in-equilibria to succeed, Guala and Hindriks need to show how representation as a relation between rules and equilibrium is related to representation as a cognitive capacity. In stricter terms, they need to show how the former is dependent on the latter, for this is the only way to *ground* normativity, which is why they initially introduced "representation". This picture would only make cognitive representations causal and not "rules" from RiE and they will remain heuristic, while actual causation would happen at the level of representations of environment.
 
 For RiE to work, the authors need to clarify the *mechanics of decoupled representation*: how it contributes to the emergence of new strategies to the extent that agents acquire an advanced capacity to represent game structure and salient features of equilibria, which supposedly leads to normativity which stabilizes human CEs. We will do this in the next chapter. 
 
-We wrap this chapter with a brief discussion of the notion of scientific explanation and the deeper problem with RiE related to it. RiE employs representational explanation, which might have led to the conflation of agency models. Using an ontic (causal mechanistic) explanation might help untangle the problems of RiE and build a pathway to a more naturalistic social ontology.
-
+We wrap this chapter with a brief discussion of the notion of scientific explanation and the deeper problem with RiE related to it. RiE employs representational explanation, which might have led to the conflation of agency models and supposedly heuristic (non-causal) use of "rules". Using an ontic (causal mechanistic) explanation might help untangle the problems of RiE and build a pathway to a more naturalistic social ontology.
 
 ## Representational explanation as source of problems in RiE
-What we have identified as a conflation of agency models can be described in more general terms of scientific explanation and different view thereof. 
+What we have identified as a conflation of agency models can be described in more general terms of scientific explanation and different view thereof.
 
 According to a prominent family of views in the philosophy of science, scientific explanations fundamentally involve subsuming a phenomenon or its description under a general representation. This *representational subsumption view* (RSV) has been articulated in various forms: for @hempel1965, explanations take the form of generalizations expressed in first-order logic; Kitcher [-@kitcher1981; -@kitcher1989 ] conceives them as argument schemas; @bechtel2005 emphasize mental models; @churchland1992 appeals to prototype vectors[^prototype-vectors]; and @machamer2000 focus on mechanism schemas. Despite differences in the specific representational format, these accounts share the core assumption that the philosophical debate about scientific explanation should center on the nature of these representational forms.
 
@@ -2401,198 +2408,203 @@ Applying the ontic/representational distinction of explanation to RiE, we can se
 
 The ontic account of explanation in RiE which derives explanatory power from the very structure of causal mechanisms would require explicating such mechanisms which are responsible for normativity of human social institutions as its distinctive feature. To attempt it, we will take Sterelny's theory of decoupled representation which Guala build the "scope of actionable signals" argument on at face value and attempt to explain the emergence of normativity in epistemic agents from non-epistemic ones with a epistemic niche construction theory [@sterelny2003; @sterelny2012Book; @seitz2020].
 
+
 ## Interim results
 In this chapter, we have put the notion of social conventions into the context of social ontology and identified the problems within the leading unified framework of "rules-in-equilibria" theory of Guala and Hindriks.
 
 We have looked at the standard notions of social ontology with Searle's theory of constitutive rules and a more general characterization of this mode of reasoning as the "Standard Model of Social Ontology" with its reflexivity, performativity and collective intentionalty; we scrutinized the "rules-in-equilibria" theory with its relation to both "Standard Model" and game theory, looked at its criticisms and, most importantly, identified its deeper problems. 
 
-We spotted a problem with agency models in HDB game where Guala and Hindriks illegitimately transferred "correlated conventions" from evolutionary context to an epistemic one. To reiterate, animal HDB in Maynard Smith from whom Guala and Hindriks take the notion of HDB, although it can be seen as CE, *operates on phenotypes* as agents and not conditional individuals as Guala and Hindriks stipulate. This conflation generates a problem in their insufficiency argument for introduction of rules as separate explanatory entities: in human HDB, normativity is already there, while in animal HDB rules are just not needed as a correlation device. I argued that this generates a further problem with introduction of the notion of "representation" in RiE as an explanation of the difference between animal and human conventions, for Guala and Hindriks seem to conflate scientific and cognitive notions of representation which leaves normativity unexplained and the gap between animal and human conventions mysterious. I also argued that these problems might be due to the authors' subscription to a representational subsumption view of scientific explanation, according to which the explanatory power of a model comes from its representational features rather than from its real-world counterpart.
+We spotted a problem with agency models in HDB game where Guala and Hindriks illegitimately transferred CE from evolutionary context to an epistemic one. To reiterate, animal HDB in Maynard Smith from whom Guala and Hindriks take the notion of HDB, although it can be seen as CE, *operates on phenotypes* or non-epistemic agents and not boundedly rational Bayesian individuals as Guala and Hindriks propose. This conflation generates a problem in their insufficiency argument for introduction of rules as separate explanatory entities: in human HDB, normativity is already there, while in animal HDB rules are just not needed as a correlation device. I argued that this generates a further problem with introduction of the notion of "representation" in RiE as an explanation of the difference between animal and human conventions, for Guala and Hindriks seem to conflate scientific and cognitive notions of representation which leaves normativity unexplained and the gap between animal and human conventions mysterious. Importantly, I suggested that the "scope of actionable signals" can be quantified as a set of potentially salient environmental features which can be used as correlation devices, and that humans have more functionally abstract correlation devices. I also argued that problems of RiE might be due to the authors' (probably implicit) subscription to a representational subsumption view of scientific explanation, according to which the explanatory power of a model comes from its representational features rather than from its real-world counterpart of entities and causal processes responsible for an outcome.
 
-Overall, reframing the explanatory target of RiE from the stability of social institutions to the transition from the stable animal conventions to stable humans ones for the sake of resolving the epistemological problem within RiE, make the problem harder. It is so because we now essentially need to explain the emergence of human social epistemology, which is much grander project than "fixing a social ontology theory from a philosophy of science point of view". The dynamic trajectory of social coordination is complex and, as @ross2012a points out, social coordination is inherently difficult due to the multiplicity of equilibria, and features of social organization tend to evolve and stabilize to make it easier. However, as he says, it does not illuminate anything about the relationship between coordination problems and emergence of normativity: 
+<!-- Overall, reframing the explanatory target of RiE from the stability of social institutions to the transition from the stable animal conventions to stable humans ones for the sake of resolving the epistemological problem within RiE, make the problem harder. It is because we now need to tackle the problem of emergence of human social epistemology, which is much grander project than " a social ontology theory from a philosophy of science point of view". The dynamic trajectory of social coordination is complex and, as @ross2012a points out, social coordination is inherently difficult due to the multiplicity of equilibria, and features of social organization tend to evolve and stabilize to make it easier. However, as he says, it does not illuminate anything about the relationship between coordination problems and emergence of normativity:  -->
+<!---->
+<!-- > “Did socialization come first in hominid evolution, giving rise to complex coordination problems that higher intelligence then evolved to solve? Or, in light of the importance of social norms and conventions for selecting focal points in coordination games, did intelligence generate coordination problems to which increasingly complex social structures are adaptations?” [@ross2012a, 484]. -->
 
-> “Did socialization come first in hominid evolution, giving rise to complex coordination problems that higher intelligence then evolved to solve? Or, in light of the importance of social norms and conventions for selecting focal points in coordination games, did intelligence generate coordination problems to which increasingly complex social structures are adaptations?” [@ross2012a, 484].
-
-What we can do is to build some models possibly explaining this dynamic trajectory and answering the question of how normativity as a "feature of environment" might have evolved from non-normative and non-epistemic agents playing CE. Thus, we are addressing two weaker yet explanatorily crucial parts of RiE: relationship between animal and human conventions as CE and emergence of normative human conventions with decoupled representation. This is what we are going to do in the next chapter.
+What we do next is building models to (try to) answer the question of how cognitively sophisticated and functionally abstracted correlated devices might have evolved from non-normative and non-epistemic agents playing CE in HDB. We are addressing two weaker yet explanatorily crucial parts of RiE: relationship between animal and human conventions as CE and emergence of normative human conventions with decoupled representation. 
 
 
 # **Chapter 3**. Evolution of normativity in Guala's unified social ontology from non-epistemic agents with niche construction
-As we saw in the previous chapter, Guala and Hindriks explain the stability of social institutions with both objective and subjective parts: equilibria of strategic games and meaningful rules employed by agents with which they represent the objective equilibria of games. I claimed that Guala and Hindriks bet too much on an ambiguous notion of representation as responsible for normativity which, according to them, stabilizes institutions. The ambiguity stems from the description of representation as correspondence between scientific concepts and its real-world referents, while using cognitive capacity language. Discerning these notions shows that scientific notion of representation is what makes RiE work, but scientific representation depends, as I claimed, on *decoupled representation* as evolved cognitive capacity to disentangle stimuli and response and internalize norms. It means that showing how a representational capacity contributes to rule-following is central for our argument.
+As we saw in the previous chapter, Guala and Hindriks explain the stability of social institutions with both objective and subjective parts: equilibria of strategic games and meaningful rules employed by agents with which they represent the objective equilibria of games. I claimed that Guala and Hindriks bet too much on an ambiguous notion of representation as responsible for normativity which, according to them, stabilizes institutions. The ambiguity stems from the description of representation as correspondence between scientific concepts and its real-world referents, while using cognitive capacity language. Discerning these notions shows that scientific notion of representation is what makes RiE work, but scientific representation depends, as I claimed, on *decoupled representation* as evolved cognitive capacity to disentangle stimuli and response and internalize norms. Showing how a representational capacity contributes to rule-following is central for our argument.
 
-A reasonable place to start is Sterelny's theory of decoupled representation mentioned by Guala and Hindriks in their appeal to cognitive representation as responsible for coordinating action on many representations as following rules. Taking Sterelny's theory seriously, we will see that its core mechanism of *cognitive niche construction* is ecological, meaning that the novelty is introduced through the interaction of agents with their environment. This will provide an important clue for resolving both problems of RiE: emergence of epistemic correlation from ontic one and emergence of normativity. 
+A reasonable place to start is to unpack Sterelny's theory of decoupled representation mentioned by Guala and Hindriks in their appeal to cognitive representation as responsible for coordinating action on many representations as following rules. Taking Sterelny's theory seriously will allow us to see that its core mechanism of *cognitive niche construction* is ecological, meaning that the novelty is introduced through the interaction of agents with their environment. This will provide an important clue for resolving both problems of RiE: emergence of epistemic correlation from ontic one and emergence of normativity. A capacity of agents to modify the informational structure of their environment affects the ways of responding to environment, thus providing a "ratcheting" mechanism of what Sterelny calls "downstream niche construction".
 
-Next, we will look deeply into Sterelny's theory of decoupled representation, its main mechanism of niche construction, game-theoretic approaches incorporating niche construction and arrive at our own agent-based model of emergence of epistemic correlation and normativity.
+Next, we look into Sterelny's theory of decoupled representation, its main mechanism of cognitive niche construction, game-theoretic approaches incorporating niche construction and arrive at our own agent-based model of emergence of epistemic correlation and normativity.
 
 ## Sterelny's theory of decoupled representation
-Sterelny has offered a comprehensive evolutionary framework for understanding the origins and nature of human cognition [@sterelny2003; @sterelny2012Book]. Central to his account is the concept of *decoupled representation*, which refers to internal cognitive states that represent aspects of the environment independently of immediate behavioral responses. This concept is pivotal in explaining how humans evolved the capacity for flexible planning, social cooperation, and cumulative culture. It also happens to be of import for Guala and Hindriks for its purported responsibility for capacity of rule-following.
+Guala and Hindriks mentioned Sterelny's notion of decoupled representation as a key differentiator of agents capable of larger "scope of actionable signals" ir what we called arbitrary and functionally abstracted correlation devices. We spotted that this mention is explanatorily insufficient for substantiating normativity and "rules" as decoupled representation is only responsible for flexible and context-relevant usage of "stored" representations of external stimuli detached from direct response. The claim that conditioning behavior on many representations is the same as following rules is not right, for normativity does not come from many representations alone. Most probably it comes from the different *nature* of them, depending on the level of their *functional abstraction*.
 
-Sterelny situates cognitive evolution within a “hostile world” - an environment marked by unpredictability, competition, and complexity. In such a world, simple stimulus-response mechanisms are insufficient; organisms benefit from representations that are *decoupled* from immediate stimuli and rigid behavioral patterns, enabling flexible and strategic behavior. In a way, decoupled representation is responsible for emergence of *individual strategic behavior* describable by game theory as Lewis, Guala, Vanderschraaf, Gintis and others have been doing. This fact highlights the distinction of models with phenotypes and individuals as agents within RiE which I noted in previous chapter as the former do not possess capacities for strategic behavior and the latter do.
+Sterelny has offered a comprehensive evolutionary framework for understanding the origins and nature of human cognition [@sterelny2003; @sterelny2012Book]. Central to his account is the concept of *decoupled representation*, which refers to internal cognitive states that represent aspects of the environment independently of immediate behavioral responses. This concept is pivotal in explaining how humans evolved the capacity for flexible planning, social cooperation, and cumulative culture.
 
-Sterelny’s theory is deeply interdisciplinary, drawing on evolutionary biology, philosophy of mind, and anthropology. It builds on and refines earlier philosophical work, particularly Millikan’s biosemantics [-@millikan1987] and Godfrey-Smith’s theory of cognition as functional adaptation to environmental complexity [@godfrey-smith1996]. Moreover, Sterelny integrates niche construction theory [@odling-smee2003], emphasizing how organisms modify their environments informationally in ways that feed back on cognitive evolution.
+Sterelny situates cognitive evolution within a “hostile world” - an environment marked by unpredictability, competition, and complexity. In such a world, simple stimulus-response mechanisms are insufficient; organisms benefit from representations that are *decoupled* from immediate stimuli and rigid behavioral patterns, enabling flexible and strategic behavior. In a way, decoupled representation is responsible for emergence of *individual strategic behavior* describable by game theory as Lewis, Guala, Vanderschraaf, Gintis and others have been doing. This fact highlights the distinction of models with phenotypes and Bayesian individuals as agents within RiE which I noted in the previous chapter as the former do not possess capacities for strategic behavior and the latter do.
 
-Godfrey-Smith’s Environmental Complexity Thesis (ECT) is a foundational idea in the philosophy of biology and cognitive science, and it plays a central role in Sterelny’s evolutionary account of cognition. The core claim of the ECT is succinctly stated:
+It is important to understand the conceptual foundations of Sterelny’s theory to fully apply it to RiE. His theory is deeply interdisciplinary, drawing on evolutionary biology, philosophy of mind, and anthropology. It builds on and refines earlier philosophical work, particularly Millikan’s biosemantics [-@millikan1987] and Godfrey-Smith’s theory of cognition as functional adaptation to environmental complexity [@godfrey-smith1996]. Moreover, Sterelny integrates niche construction theory [@odling-smee2003], emphasizing how organisms modify their environments informationally in ways that feed back on cognitive evolution.
+
+Probably, the most foundational to Sterelny's theory is Godfrey-Smith’s Environmental Complexity Thesis (ECT), a quite important idea in the philosophy of biology and cognitive science. The core claim of the ECT is succinctly stated:
 
 > “The function of cognition is to enable the agent to deal with environmental complexity” [@godfrey-smith1996, 3]
 
-Godfrey-Smith’s ECT asserts that the complexity of an organism’s cognitive architecture is shaped by the complexity of its environment. Specifically, cognition evolves as an adaptation to environments that are variable, unpredictable, and structured in ways that require flexible, context-sensitive responses. This is a form of what Godfrey-Smith calls “c-externalism”: the idea that internal complexity in organisms can be explained in terms of the complexity of their external environments[@godfrey-smith1996, 4].
+Godfrey-Smith’s ECT asserts that the complexity of an organism’s cognitive architecture is shaped by the complexity of its environment. Specifically, cognition evolves as an adaptation to environments that are variable, unpredictable, and structured in ways that require flexible, context-sensitive responses. This is a form of what Godfrey-Smith calls “c-externalism” ("c" means complexity): the idea that internal complexity in organisms can be explained in terms of the complexity of their external environments [@godfrey-smith1996, 4]. There are several core claims connected to ECT:
 
-- **Necessity, not sufficiency**: The ECT claims that environmental complexity is necessary for the evolution of cognition, but not sufficient as other factors may play a role.
-- **Function and adaptation**: Cognition is understood *teleonomically*: its function is the effect that explains its presence, typically as a result of natural selection favoring agents that can mediate well-adapted responses to environmental variability. This is very much like Wright's notion of biological function [@wright1973] employed by Guala and Hindriks [@hindriks2021].
-- **Behavioral and mechanistic levels**: The ECT bridges behavioral and mechanistic explanations, relating the functional properties of behavior to environmental structure, and offering a framework for understanding how agent-environment systems operate.
+- *Necessity, not sufficiency*: the ECT claims that environmental complexity is necessary for the evolution of cognition, but not sufficient as other factors may play a role. It is similar to how decoupled representation is necessary and not sufficient for normative rule-following in RiE
+- *Function and adaptation*: cognition is understood *teleonomically*. Its function is the effect that explains its presence, typically as a result of natural selection favoring agents that can mediate well-adapted responses to environmental variability. This is very much like Wright's notion of biological function [@wright1973] employed by Guala and Hindriks in their justification of functions of institutions [@hindriks2021]
+- *Behavioral and mechanistic levels*: the ECT bridges behavioral and mechanistic explanations, relating the functional properties of behavior to environmental structure, and offering a framework for understanding how agent-environment systems operate.
 
-Godfrey-Smith distinguishes between environmental complexity generated by abiotic factors like climate or terrain and generated by other organisms, especially conspecifics. The latter is particularly important in social species, where the activities of others create a “causal cycle” of complexity and response: organisms both shape and are shaped by their social environments[@godfrey-smith2001]. A similar idea concerning specifically human evolution is due to @zawidzki2013 and his idea of "mindshaping" and complementing mindreading, a capacity to recursively reason about other's reasoning akin to Lewis's "common knowledge" or "common reason to believe". This recursive dynamic is crucial for understanding the evolution of cognition in social animals including humans and will be of great importance for evolving normativity.
+For Godfrey-Smith, both abiotic and biotic factors can generate environmental complexity:  climate, terrain, other organisms and especially conspecifics. The latter is particularly important in social species, where the *activities of others create a “causal cycle” of complexity and response*: organisms both shape and are shaped by their social environments [@godfrey-smith2001]. A similar idea concerning specifically human evolution is due to @zawidzki2013 and his idea of "mindshaping" and complementing mindreading, which area cognitive capacities to recursively reason about other's reasoning akin to Lewis's "common knowledge" or "common reason to believe". This recursive dynamic is crucial for understanding the evolution of cognition in social animals including humans. Note the "causal cycle" as it will be of great import for our model.
 
-Godfrey-Smith also carefully distinguishes between “constructivist” and “externalist” explanations. While externalist explanations account for organismal properties in terms of environmental features, constructivist explanations focus on how organisms actively modify their environments like niche construction, although the theory had not been explicated yet [@godfrey-smith1996]. Godfrey-Smith’s “narrow constructivism” requires that organisms causally intervene in the external world, not merely change themselves in response, as @bedau1996 notes. This distinction is important for understanding the feedback loops between organisms and environments in cognitive evolution.
+Godfrey-Smith also carefully distinguishes between “constructivist” and “externalist” explanations. While externalist explanations account for organismal properties in terms of environmental features, constructivist explanations focus on how organisms actively modify their environments. Godfrey-Smith’s “narrow constructivism” requires that *organisms causally intervene in the external world*, not merely change themselves in response, as @bedau1996 notes. This distinction is important for understanding the feedback loops between organisms and environments in cognitive evolution.
 
-The ECT has been influential in both empirical and theoretical research, providing a framework for *agent-based modeling* and studies of behavioral flexibility [@seth2002], which will be important for us in the later parts of this chapter. It underpins Sterelny’s argument that increasing environmental and social complexity selects for more flexible, decoupled forms of representation, as organisms must cope with uncertainty, hazard, and the evolved strategic behavior of others.
+The ECT has been influential in both empirical and theoretical research, providing a framework for *agent-based modeling* and studies of behavioral flexibility [@seth2002]. It underpins Sterelny’s argument that increasing environmental and social complexity selects for more flexible, decoupled forms of representation, as organisms must cope with uncertainty, hazard, and the evolved strategic behavior of others.
 
 Another foundational source of Sterelny's decoupled representation theory is Millikan’s theory of signals, especially her distinction between *indicative* and *directive* (or imperative) signals [@millikan1987; @millikan2004].
 
 Millikan famously has distinguished between two classes of animal signals: 
 
-- *Indicative Signals*: These are representations or signals whose function is to indicate or “tell the truth” about some state of the world. They are belief-like, corresponding to what is the case. For example, a vervet monkey’s “snake alarm call” indicates the presence of a snake.
-- *Directive (Imperative) Signals*: These are signals whose function is to direct or motivate behavior. They are desire-like, corresponding to what should be done. For example, the same snake alarm call also functions to direct conspecifics to climb trees which is a specific "hard-wired" anti-predator response.
+- *Indicative signals*: these are public representations whose function is to indicate or “tell the truth” about some state of the world. They are belief-like, corresponding to what is the case. For example, a vervet monkey’s “snake alarm call” indicates the presence of a snake
+- *Directive (Imperative) signals*: these are signals whose function is to direct or motivate behavior. They are desire-like, corresponding to what should be done. For example, the same snake alarm call also functions to direct conspecifics to climb trees which is a specific "hard-wired" anti-predator response.
 
-Millikan’s insight is that many natural signals and representations are “dual-purpose,” having both indicative (informational) and directive (motivational) functions, but these *can be separated and evolve independently*, which can help explain the emergence of normativity "naturally".
+Millikan’s insight is that many natural signals and representations are “dual-purpose” having both indicative (informational) and directive (motivational) functions, but these *can be separated and evolve independently*, which can help explain the emergence of normativity "naturally".
 
 Millikan’s framework explains how signals and representations can evolve to serve different functions in animal communication and cognition. In simple organisms, signals are often tightly coupled: the indicative and directive functions are fused. For example, a chemical cue triggers a fixed action, like in ants. In more complex organisms, these functions can become disentangled, allowing for flexible, context-sensitive responses which is a key step toward the evolution of belief-desire psychology and decoupled representation.
 
-Millikan’s theory dovetails with Godfrey-Smith’s ECT: as environments become more complex and unpredictable, there is selective pressure for organisms to evolve cognitive architectures that can separate the indicative (what is the case) from the directive (what to do about it). This separation enables organisms to hold beliefs about the world independently of immediate action, supporting planning, learning, and, most interestingly for us, social coordination.
+Millikan’s theory dovetails with Godfrey-Smith’s ECT: as environments become more complex and unpredictable, there is selective pressure for organisms to evolve cognitive architectures that can separate the indicative (what is the case) from the directive (what to do about it) signals. This separation enables organisms to hold beliefs about the world independently of immediate action, supporting planning, learning, and, most interestingly for us, social coordination.
 
 Together, these frameworks explain why and how cognition evolves to meet the demands of complex environments, and how the separation of indicative and directive functions underlies the emergence of flexible, decoupled representation at the heart of human cognition.
 
-Sterelny’s analysis begins with Godfrey-Smith’s work on behavioral flexibility, which posits that cognitive complexity evolves in response to environmental variability. Sterelny identifies three ascending grades of representation:
+Sterelny’s analysis begins with identification of three ascending grades of representation:
 
 1. **Detection Systems**:
-- Found in simple organisms, these are tightly coupled stimulus-response mechanisms. For example, ants detect oleic acid as a single cue to remove corpses, triggering a fixed behavior. Here, representation and action are inseparable; the “indicative” (detection) and “imperative” (action) functions are fused.
-- Such systems are adaptive in stable environments where cues reliably predict outcomes. However, in more variable or ambiguous environments, these rigid couplings become maladaptive, leading to inappropriate or inefficient behaviors.
+- Found in simple organisms, these are tightly coupled stimulus-response mechanisms. For example, ants detect oleic acid as a single cue to remove corpses, triggering a fixed behavior. Here, representation and action are inseparable; the “indicative” (detection) and “imperative” (action) functions are fused;
+- Such systems are adaptive in stable environments where cues reliably predict outcomes. However, in more variable or ambiguous environments, these rigid couplings become maladaptive, leading to inappropriate or inefficient behaviors;
 - For example, a frog’s tongue-flick response to small moving objects is effective in simple settings but fails in cluttered environments where non-prey items move. Here, the frog’s detection system cannot discriminate context, leading to wasted effort.
 
 2. **Robust Tracking**:
-- Intermediate organisms integrate multiple cues to track environmental states more reliably. A bird might use visual, auditory, and olfactory signals to identify predators, reducing reliance on single, error-prone cues. This “input-side” flexibility enhances accuracy but does not yet decouple representation from specific outputs and make it flexible for offline use and interpretation.
-- Sterelny emphasizes that robust tracking enhances accuracy by pooling information but does not fully decouple representation from behavior. The *behavioral repertoire* remains limited and relatively fixed. For example, the bird’s detection of a predator still triggers a narrow set of responses such as alarm calls or flight.
+- Intermediate organisms integrate multiple cues to track environmental states more reliably. A bird might use visual, auditory, and olfactory signals to identify predators, reducing reliance on single, error-prone cues. This “input-side” flexibility enhances accuracy but does not yet decouple representation from specific outputs and make it flexible for offline use and interpretation;
+- Sterelny emphasizes that robust tracking enhances accuracy by *pooling information* but does not fully decouple representation from behavior. The *behavioral repertoire remains limited* and relatively fixed. For example, the bird’s detection of a predator still triggers a narrow set of responses such as alarm calls or flight.
 
 3. **Decoupled Representation**:
-- The highest grade, seen in humans and some social mammals, involves internal states that track environmental features like predator presence without dictating fixed responses. These representations are *multipurpose*: the same belief about a predator’s location could inform fleeing, hiding, or attacking, depending on context. They provide a flexible informational basis for selecting among a range of possible actions, depending on context, goals, and internal states.
-- This flexibility enables organisms to engage in *means-end reasoning*, planning, and strategic social behavior. For example, a chimpanzee tracking the dominance rank of a rival may decide to challenge, avoid, or ally with that rival based on its own strength and social context.
-- Decoupled representations require significant cognitive resources, including working memory and the ability to maintain and manipulate internal states independently of immediate stimuli. Sterelny argues that such representations are metabolically costly and developmentally demanding, which explains their rarity outside humans and a few social mammals.
+- The highest grade, seen in humans and some social mammals, involves internal states that track environmental features like predator presence without dictating fixed responses. These representations are *multipurpose*: the same belief about a predator’s location could inform fleeing, hiding, or attacking, depending on context. They provide a flexible informational basis for selecting among a range of possible actions, depending on context, goals, and internal states;
+- This flexibility enables organisms to engage in *means-end reasoning*, planning, and strategic social behavior. For example, a chimpanzee tracking the dominance rank of a rival may decide to challenge, avoid, or ally with that rival based on its own strength and social context;
+- Decoupled representations require significant cognitive resources, including *working memory* and the ability to maintain and manipulate internal states independently of immediate stimuli. Sterelny argues that such representations are metabolically costly and developmentally demanding, which explains their rarity outside humans and a few social mammals.
 
-Sterelny situates the evolution of decoupled representation within the context of a *hostile world*, an environment marked by unpredictability, competition, and complexity. He argues that such environments impose selective pressures favoring cognitive flexibility and strategic behavior. Key drivers include:
+The *hostile world* in which Sterelny embeds the evolution of decoupled representation is an environment marked by unpredictability, competition, and complexity. Sterelny argues that such environments impose selective pressures favoring cognitive flexibility and strategic behavior. Key drivers include:
 
 - environmental translucency
 - social complexity
 - niche construction.
 
-The unpredictability, or *environmental translucency*, means that cues are often ambiguous or misleading. For example, a rustling bush might signify prey, predator, or merely wind. In such cases, organisms benefit from maintaining internal representations that can be updated and used flexibly rather than triggering fixed responses.
+The unpredictability, or *environmental translucency*, means that cues are often ambiguous or misleading. For example, a rustling bush might signify prey, predator, or merely wind. In such cases, organisms benefit from maintaining *internal representations that can be updated* and used flexibly rather than triggering fixed responses. We can already see parallels with Bayesian agents as having advantage over non-Bayesian ones, since updating internal beliefs and maintaining memory are beneficial for *information integration* which is crucial for adaptive learning.
 
 Sterelny aligns with the *social intelligence hypothesis*, which posits that the cognitive demands of living in complex social groups drove the evolution of advanced cognition. He argues that decoupled representations initially evolved to track *social information* like alliances, hierarchies and intentions effectively enabling strategic social behavior.
 
-In primate societies, individuals must monitor the shifting alliances and rivalries among group members. Decoupled representations allow an individual to maintain a mental map of social relationships that can be used flexibly to guide behavior, such as choosing when to cooperate, compete, or deceive.
+In primate societies, individuals must monitor the shifting alliances and rivalries among group members. Decoupled representations allow an individual to maintain a *mental map* of social relationships that can be used flexibly to guide behavior, such as choosing when to cooperate, compete, or deceive.
 
-Sterelny incorporates *niche construction theory* [@odling-smee2003] to explain how organisms modify their environments in ways that feedback on cognitive evolution. He argues that early hominins constructed *cognitive niches*: socially and materially modified environments that scaffolded the development of decoupled representations. As he puts it:
+Lastly, Sterelny incorporates *niche construction theory* [@odling-smee2003] to explain how organisms modify their environments in ways that feedback on cognitive evolution. He argues that early hominins constructed *cognitive niches*: socially and materially modified environments that *scaffolded* the development of decoupled representations. As he puts it:
 
 > “Niche construction creates new selective pressures and cognitive challenges. By modifying their environments, organisms create opportunities for planning, innovation, and cultural transmission that require flexible, decoupled cognition.” [@sterelny2003, 89].
 
-Examples include tool use, landscape modification, and *social institutions*, which extend cognitive capacities beyond biological limits. For instance, the use of fire or construction of shelters alters ecological conditions, creating new problems and opportunities that require planning and flexible behavior [@sterelny2021].
+Examples include tool use, landscape modification, and *social institutions*, which extend cognitive capacities beyond biological limits. For instance, the use of fire or construction of shelters alters ecological conditions, creating new problems and opportunities that require planning, flexible behavior and, importantly, social coordination [@sterelny2021].
 
-These constructed niches also provide stable contexts in which learning and cultural transmission can occur, further reinforcing the selective advantage of decoupled representation.
+These constructed niches provide stable contexts in which learning and cultural transmission can occur, further reinforcing the selective advantage of decoupled representation.
 
-Another crucial feature enabling the evolution of decoupled representation is *developmental plasticity*, especially as it interacts with processes of niche construction. Developmental plasticity refers to an organism’s ability to modify its behavior, physiology, or morphology in response to environmental conditions during its development. This plasticity is crucial for the evolution of cognitive architectures that support decoupled representation for several reasons:
+A crucial feature enabling the evolution of decoupled representation is *developmental plasticity*, especially as it interacts with processes of niche construction. Developmental plasticity refers to an organism’s ability to modify its behavior, physiology, or morphology in response to environmental conditions during its development. This plasticity is crucial for the evolution of cognitive architectures that support decoupled representation for several reasons:
 
-- **Facilitating behavioral flexibility:** plasticity allows individuals to adjust their responses to a wide range of environmental stimuli, rather than being limited to fixed, hard-wired reactions. This flexibility is a necessary precursor for the emergence of representations that can be “decoupled” from any single cue or response, enabling organisms to use information in a context-sensitive, rather than stimulus-bound, manner.
+- *Facilitating behavioral flexibility:* plasticity allows individuals to adjust their responses to a wide range of environmental stimuli, rather than being limited to fixed, hard-wired reactions. This flexibility is a necessary precursor for the emergence of representations that can be “decoupled” from any single cue or response, enabling organisms to use information in a context-sensitive, rather than stimulus-bound, manner.
 
-- **Supporting general-purpose information storage:** decoupled representations serve as a general-purpose information store, allowing organisms to accumulate and deploy knowledge across different contexts. Developmental plasticity provides the substrate for this by enabling the learning and retention of information that is not immediately linked to a specific behavioral output, but can be flexibly applied as circumstances demand.
+- *Supporting general-purpose information storage:* decoupled representations serve as a general-purpose information store, allowing organisms to accumulate and deploy knowledge across different contexts. Developmental plasticity provides the substrate for this by enabling the learning and retention of information that is not immediately linked to a specific behavioral output, but can be flexibly applied as circumstances demand.
 
-- **Enabling conditional and hypothetical reasoning:** with plasticity, *organisms can entertain conditional beliefs* "if X do Y, then Z will result" and use internal models to guide novel or indirect forms of action. This is a hallmark of decoupled representation, moving beyond direct stimulus-response links to support practical reasoning and planning. It is also, probably, the most important cognitive feature which Guala and Hindriks wanted to integrate into RiE.
+- *Enabling conditional and hypothetical reasoning:* with plasticity, *organisms can entertain conditional beliefs* "if X do Y, then Z will result" and use internal models to guide novel or indirect forms of action. This is a hallmark of decoupled representation, moving beyond direct stimulus-response links to support practical reasoning and planning. It is also, probably, the most important cognitive feature which Guala and Hindriks wanted to integrate into RiE. It is also worth noting that the distinction of ontic and epistemic correlation from Chapter 2 can be seen as distinction between ecological (or relational) condition like "if owner, play Hawk" and conditional *reasoning*. And the shift is from "environmental" probabilistic to individual Bayesian inference.
 
 Developmental plasticity is especially potent when coupled with *niche construction*. Sterelny argues that niche construction and plasticity are mutually reinforcing:
 
-- **Stabilizing and scaffolding cognitive development:** organisms can shape their learning environments through parental care, social learning, environmental modification or in some other way, making it more likely that plastic developmental processes will lead to adaptive, decoupled representations. In turn, plasticity allows individuals to take advantage of these constructed niches, further enhancing the reliability and utility of their internal models.
+- *Stabilizing and scaffolding cognitive development:* organisms can shape their learning environments through parental care, social learning, environmental modification or in some other way, making it more likely that plastic developmental processes will lead to adaptive, decoupled representations. In turn, plasticity allows individuals to take advantage of these constructed niches, further enhancing the reliability and utility of their internal models.
 
-- **Driving the evolution of cognitive complexity:** as organisms construct more complex and information-rich niches, selection favors greater developmental plasticity and more sophisticated representational capacities. This co-evolutionary dynamic helps explain the emergence of belief-like, decoupled representations in lineages with extensive niche construction, such as humans.
+- *Driving the evolution of cognitive complexity:* as organisms construct more complex and information-rich niches, selection favors greater developmental plasticity and more sophisticated representational capacities. This co-evolutionary dynamic helps explain the emergence of belief-like, decoupled representations in lineages with extensive niche construction, such as humans.
 
 As I have mentioned, plasticity supports conditional reasoning. It does so in several ways:
 
-- **Adaptive neural investment:** variable environments select for neural systems that can flexibly encode and update associations between cues and outcomes. This means that, rather than being locked into rigid stimulus-response patterns, individuals can learn to map specific environmental signals (X) to context-appropriate actions (Y), and revise these mappings as circumstances change. Such flexibility is a definitive sign of conditional reasoning. An important difference between "X" here and in RiE is that in the latter it can be an abstract entity like a social norm, while in evolutionary scenarios "X" is more concrete and often physical feature of environment.
+- *Adaptive neural investment:* variable environments select for neural systems that can flexibly encode and update associations between cues and outcomes. This means that, rather than being locked into rigid stimulus-response patterns, individuals can learn to map specific environmental signals (X) to context-appropriate actions (Y), and revise these mappings as circumstances change. Such flexibility is a definitive sign of conditional reasoning. An important difference between "X" here and in RiE is that in the latter it can be an abstract entity like a social norm, while in evolutionary scenarios "X" is more concrete and often physical feature of environment.
 
-- **Learning from social and environmental cues:** plasticity allows individuals to use early-life experiences, social learning, and feedback to shape their cognitive strategies. For example, exposure to reliable cues of social support or adversity can calibrate neural development and bias individuals toward certain forms of decision-making or problem-solving. This developmental tuning enables agents to form conditional strategies such as “if signal A is present, cooperate; if signal B, defect” that are sensitive to the specifics of their environment.
+- *Learning from social and environmental cues:* plasticity allows individuals to use early-life experiences, social learning, and feedback to shape their cognitive strategies. For example, exposure to reliable cues of social support or adversity can calibrate neural development and bias individuals toward certain forms of decision-making or problem-solving. This developmental tuning enables agents to form conditional strategies such as “if signal A is present, cooperate; if signal B, defect” that are sensitive to the specifics of their environment.
 
-- **Evolved probabilistic cognitive mechanisms:** plasticity underlies what evolutionary developmental psychology calls “evolved probabilistic cognitive mechanisms” which are information-processing systems that are not hard-wired but are expressed flexibly, depending on developmental context. These mechanisms allow for the emergence of domain-general reasoning abilities, including the capacity to entertain hypothetical scenarios, reason about contingencies, and update strategies based on experience. This aligns with Guala's view on conditional agents as boundedly rational.
+- *Evolved probabilistic cognitive mechanisms:* plasticity underlies what evolutionary developmental psychology calls “evolved probabilistic cognitive mechanisms” which are information-processing systems that are not hard-wired but are expressed flexibly, depending on developmental context. These mechanisms allow for the emergence of domain-general reasoning abilities, including the capacity to counterfactual reasoning and updating strategies based on experience. This aligns with Guala's view on conditional agents as boundedly rational.
 
-Guala’s conditional agents are characterized by their use of explicit, context-sensitive rules “if X, do Y” to coordinate with others where X is a social norm. The emergence of such agents from a plastic developmental substrate can be understood as follows:
+<!-- Guala’s conditional agents are characterized by their use of explicit, context-sensitive rules “if X, do Y” to coordinate with others where X can be a social norm. The emergence of such agents from a plastic developmental substrate can be understood as follows. -->
 
-- In evolutionary models, agents may begin as simple phenotypes with fixed behavioral strategies. Plasticity enables some individuals to move beyond these fixed patterns, learning to condition their actions on salient cues and to adjust these condition-action rules as they gain experience. This transition is facilitated by developmental processes that allow for the formation and refinement of internal representations and expectations about the environment and other agents.
-- Plasticity also supports the uptake and internalization of social norms. Through imitation, tutoring, and feedback, agents can acquire conditional rules that are prevalent in their group (“if the light is red, stop; if green, go”), and these rules become stabilized as shared expectations. Over time, such conditional strategies are not just learned but become institutionalized as norms, further reinforcing their spread and stability.
-- Guala’s agents do not require perfect rationality or full-fledged Bayesian updating based on probability distributions. Instead, his agents use *bounded, heuristic updating*: agents adjust their conditional rules based on the observed success or failure of past actions, gradually converging on strategies that yield higher payoffs in their ecological and social niche. This presupposes a rather peculiar cognitive architecture joining *reinforcement learning* with elements of *Bayesian updating*, which we will consider later in this chapter.
+In evolutionary models, agents may begin as simple phenotypes with fixed behavioral strategies. *Plasticity* enables some individuals to move beyond these fixed patterns, learning to condition their actions on salient cues and to adjust these condition-action rules as they gain experience. This transition is facilitated by developmental processes that allow for the formation and refinement of internal representations and expectations about the environment and other agents.
 
-Sterelny has developed his theory further by focusing on *apprenticeship learning* as a key mechanism enabled by decoupled representation. It is essentially a higher-level learning mechanism *in situ* which allows for structured social learning, where novices acquire skills through observation, imitation, and explicit instruction. Sterelny writes.
+Plasticity also supports the uptake and internalization of social norms. Through imitation, tutoring, and feedback, agents can acquire conditional rules that are prevalent in their group (“if the light is red, stop; if green, go”), and these rules become stabilized as shared expectations. Over time, such conditional strategies are not just learned but become institutionalized as norms, further reinforcing their spread and stability.
 
-> “Apprenticeship learning requires metarepresentational capacities-understanding the intentions and goals of teachers-and the ability to decouple representations of skills from immediate utility.” [@sterelny2012Book, 112].
+Guala’s agents do not require perfect rationality or full-fledged Bayesian updating based on probability distributions. Instead, his agents use *bounded, heuristic updating*: agents adjust their conditional rules based on the observed success or failure of past actions, gradually converging on strategies that yield higher payoffs in their ecological and social niche. This presupposes a rather peculiar cognitive architecture probably joining *reinforcement learning* with elements of *Bayesian updating*, which we will consider later in this chapter.
 
-Unlike many non-human animals, humans engage in *detached pedagogy*, where teaching is intentional and involves explicit communication about how and why to perform tasks. This requires the ability to represent others’ mental states (also called "theory of mind") and to hold representations that are not immediately tied to current goals or stimuli, but are abstracted from immediate utility.
+Sterelny has developed his theory further by focusing on *apprenticeship learning* as a key mechanism enabled by decoupled representation. It is essentially a higher-level learning mechanism *in situ* which allows for structured social learning, where novices acquire skills through observation, imitation, and explicit instruction. Sterelny writes:
 
-For example, a master flintknapper teaching a novice does not merely demonstrate but explains the purpose of shaping a tool in a particular way, even if the novice cannot immediately use the tool. This decoupling of representation from immediate action enables cumulative cultural learning and rich normativity.
+> “Apprenticeship learning requires metarepresentational capacities—understanding the intentions and goals of teachers—and the ability to decouple representations of skills from immediate utility.” [@sterelny2012Book, 112].
 
-Decoupled representations underpin *cumulative culture* as the progressive accumulation and refinement of knowledge and technology over generations. He traces the evolution of tool complexity, from simple stone flakes to composite tools and eventually modern technology, as evidence of this process. The capacity to hold abstract representations of tool function and design, detached from immediate use, allows humans to innovate by recombining existing knowledge in novel ways. Such "combinatorial creativity" underpins normativity, as well.
+Unlike many non-human animals, humans engage in *detached pedagogy*, where teaching is intentional and involves explicit communication about how and why to perform tasks. This requires the ability to represent others’ mental states (also called "theory of mind") and to hold representations that are not immediately tied to current goals or stimuli, but are *abstracted* from immediate utility.
 
-Sterelny highlights the importance of *external scaffolding* represented by cultural artifacts and social institutions that support cognitive processes. Writing systems, calendars, and legal codes externalize memory and planning, reducing cognitive load and enabling abstract thought. The counterpart of this in modern social ontology might be Bratman's theory of shared institutional agency based on planning [-@bratman2022] which emphasizes planning as a core activity supporting shared agency. As Sterelny writes:
+For example, a master flintknapper teaching a novice does not merely demonstrate but explains the purpose of shaping a tool in a particular way, even if the novice cannot immediately use the tool. This decoupling of representation from immediate action enables cumulative cultural learning and rich normativity by *explaining the general purpose detached from immediate response*.
+
+Decoupled representations underpin *cumulative culture* as the progressive accumulation and refinement of knowledge and technology over generations. Sterelny traces the evolution of tool complexity, from simple stone flakes to composite tools and eventually modern technology, as evidence of this process. The capacity to hold abstract representations of tool function and design, detached from immediate use, allows humans to innovate by recombining existing knowledge in novel ways. Such "combinatorial creativity" can underpin normativity, as well.
+
+Sterelny highlights the importance of *external scaffolding* represented by cultural artifacts and social institutions that support cognitive processes. Writing systems, calendars, and legal codes *externalize memory and planning*, reducing cognitive load and enabling abstract thought. The counterpart of this in modern social ontology might be Bratman's theory of shared institutional agency based on planning [-@bratman2022] which emphasizes planning as a core activity supporting shared agency. As Sterelny writes:
 
 > “External scaffolds offload cognitive demands, allowing humans to engage in forms of reasoning and planning that would be impossible unaided.” [@sterelny2012Book, 156].
 
-These external cognitive tools are sometimes called *entanglements*: bidirectional dependencies between agents, artifacts, and environments. For example, the invention of written language not only externalized memory but also demanded new skills like literacy and infrastructures like schools. Moreover, as @hodder2014 notes, artifacts “cannot reproduce on their own” as they require continuous maintenance, repair, and transmission across generations, binding humans to more complex webs of dependency and what Sterelny calls "downstream niche construction".
+These external cognitive tools are sometimes called *entanglements*: bidirectional dependencies between agents and artifacts (or environments). For example, the invention of written language not only externalized memory but also demanded new skills like literacy and infrastructures like schools. Moreover, as @hodder2014 notes, artifacts “cannot reproduce on their own” as they require continuous maintenance, repair, and transmission across generations, binding humans to increasingly more complex webs of dependency further feeding back into cognitive evolution which Sterelny calls "downstream niche construction".
 
 Consider a smartphone: its use presupposes not just technical literacy but global supply chains for rare-earth minerals, energy grids, and software ecosystems. These entanglements drive cognitive evolution by demanding advanced planning, abstract reasoning, and cooperative problem-solving. Sterelny’s framework highlights how humans engineer their environments to scaffold cognition, but in doing so, they become “trapped” in self-created niches that impose new cognitive demands.
 
-According to @bardone2007, a central mechanism in cognitive niche construction is *mimetic activity*, wherein individuals externalize fleeting thoughts and private ideas by representing them in the environment. This externalization is a form of disembodiment @donald1991, creating representations independent of their authors and which can be manipulated, shared, and reinterpreted by others.
+According to @bardone2007, a central mechanism in cognitive niche construction is *mimetic activity*, wherein individuals externalize fleeting thoughts and private ideas by representing them in the environment. This externalization is a form of disembodiment [@donald1991], creating representations independent of their authors and which can be manipulated, shared, and reinterpreted by others.
 
-An illustrative example is found in cognitive paleoanthropology: cave paintings created by early humans served as external memory supports, encoding information about animals, locations, and vegetation relevant for hunting [@mithen1988]. These paintings acted as early information technologies, enabling the transmission and sharing of knowledge that exceeded the limits of individual memory.
+An illustrative example is found in cognitive paleoanthropology: cave paintings created by early humans served as external memory supports, *encoding information* about animals, locations, and vegetation relevant for hunting [@mithen1988]. These paintings acted as early information technologies, enabling the transmission and sharing of knowledge that exceeded the limits of individual memory.
 
-Thus, cognitive niche construction through mimetic externalization creates additional levels of representation that augment internal cognition, facilitating complex problem solving, planning, and social coordination.
+Thus, cognitive niche construction through mimetic externalization creates *additional levels of representation* that augment internal cognition, facilitating complex problem solving, planning, and social coordination.
 
-Extending this ecological-cognitive perspective to the social domain, social institutions can be understood as normative cognitive artifacts-complex, socially constructed systems of shared beliefs, norms, and rules that structure human interaction. Institutional theory, particularly the cultural-cognitive pillar [@scott2001], highlights that institutions are sustained by internalized symbolic representations that mediate between the external social world and individual cognition. These internalized schemas encode normative expectations and shared meanings, enabling individuals to navigate social environments with reduced cognitive effort and uncertainty. This very much resembles Guala's line of thought.
+Extending this ecological-cognitive perspective to the social domain, social institutions can be understood as normative cognitive artifacts—complex, socially constructed systems of shared beliefs, norms, and rules that structure human interaction. Institutional theory, particularly the cultural-cognitive pillar [@scott2001], highlights that institutions are sustained by internalized symbolic representations that mediate between the external social world and individual cognition. @aoki2011 also calls institutions "cognitive media" highlighting their intermediary position between individual cognition and social structure. internalized schemas encode normative expectations and shared meanings, enabling individuals to navigate social environments with reduced cognitive effort and uncertainty. This very much resembles Guala's line of thought.
 
-Institutions, thus, are not merely sets of rules or regulations but embodied cognitive constructs that emerge through and reinforce cognitive niche construction at the social level. They operate as externalized, collectively maintained representations that coordinate behavior, stabilize social order, and instantiate normative force. This view aligns with Bardone and Magnani’s emphasis on sharing representations: institutions distribute normative knowledge across individuals, embedding it in rituals, practices, language, and symbolic systems, thereby facilitating epistemic coordination on a societal scale.
+Institutions, thus, are not merely sets of rules or regulations but *embodied cognitive constructs* that emerge through and reinforce cognitive niche construction. They operate as *externalized, collectively maintained representations* that coordinate behavior, stabilize social order, and instantiate normative force. This view aligns with Bardone and Magnani’s emphasis on sharing representations: institutions distribute normative knowledge across individuals, embedding it in rituals, practices, language, and symbolic systems, thereby facilitating epistemic coordination on a societal scale. This reinforces out previous intuition about two representations with RiE—private and public one—where public one is encoded in others' behavior and lives within the "X" in "if X do Y" and a private one guides an action of a certain agent.
 
 Recently Stetelny has provided his own account of normativity [@sterelny2021]. Decoupled representations, according to Sterelny, are the *evolutionary precondition for normativity*. They allow agents to consider not just what *is* the case, but what *ought* to be done, and to represent social rules and expectations that are not reducible to immediate environmental cues.
 
-Sterelny approaches the problem of normativity in terms of evolutionary puzzle of large-scale cooperation. While kin selection and reciprocal altruism explain some forms of cooperation, they are insufficient for the scale and stability of human social groups, which often involve unrelated individuals and *delayed or indirect reciprocity*. He frames the problem as follows: how did early humans solve the “free rider” problem-ensuring that individuals contribute to collective goods and do not exploit the cooperative efforts of others? The answer, he argues, lies in the evolution of normative cognition and the emergence of social contracts enforced by group-level monitoring and sanctioning.
+Sterelny approaches the problem of normativity in terms of evolutionary puzzle of large-scale cooperation. While kin selection and reciprocal altruism explain some forms of cooperation, they are insufficient for the scale and stability of human social groups, which often involve unrelated individuals and *delayed or indirect reciprocity*. He frames the problem as follows: how did early humans solve the “free rider” problem—ensuring that individuals contribute to collective goods and do not exploit the cooperative efforts of others? The answer, he argues, lies in the evolution of normative cognition and the emergence of social contracts enforced by group—level monitoring and sanctioning.
 
 Sterelny posits that normativity emerged through a co-evolutionary process involving:
 
-- **Coalitional monitoring**: early humans lived in groups where individuals could observe and evaluate each other’s behavior. This transparency enabled the detection of free riders and norm violators.
-- **Reputation and indirect reciprocity**: individuals who consistently contributed to group goals gained reputational capital, increasing their chances of receiving help in the future. Conversely, norm violators risked exclusion or punishment.
-- **Collective sanctioning**: groups developed mechanisms for punishing defectors, ranging from gossip and ostracism to physical coercion. These sanctions were themselves subject to group norms, preventing the abuse of power.
+- *Coalitional monitoring*: early humans lived in groups where individuals could observe and evaluate each other’s behavior. This transparency enabled the detection of free riders and norm violators. We can see it as an adaptation to a statistically unusual behavior;
+- *Reputation and indirect reciprocity*: individuals who consistently contributed to group goals gained reputational capital, increasing their chances of receiving help in the future. Conversely, norm violators risked exclusion or punishment;
+- *Collective sanctioning*: groups developed mechanisms for punishing defectors, ranging from gossip and ostracism to physical coercion. These sanctions were themselves subject to group norms, preventing the abuse of power. This presupposes that the sanctioning mechanisms themselves are "meta-normative" since they require social norms to be sustained.
 
-Sterelny emphasizes that these processes depend on decoupled representations: agents must be able to represent rules, track reputations, and plan actions based on anticipated social consequences, not just immediate rewards or punishments.
-
-A key innovation in Sterelny’s account is the role of apprenticeship and cumulative culture. Human children are raised in socially rich environments where they learn not only practical skills but also the norms governing cooperation, fairness, and punishment. This learning is scaffolded by explicit teaching, imitation, and storytelling, all of which depend on the capacity to represent and communicate abstract rules.
-
-Sterelny writes:
+Sterelny emphasizes that these processes depend on decoupled representations: agents must be able to represent rules, track reputations, and plan actions based on anticipated social consequences, not just immediate rewards or punishments. Sterelny writes:
 
 > “Normative cognition is not just about tracking what others do, but about learning and internalizing what one *ought* to do, and why. This requires a capacity for metarepresentation-for representing not just actions, but the rules that govern actions, and the reasons for those rules.” [@sterelny2012Book, 156].
 
-Sterelny’s “Pleistocene Social Contract” is not a literal agreement but an evolutionary equilibrium-a set of mutually reinforcing expectations and behaviors that stabilize cooperation within groups. This equilibrium is maintained by:
+We can suggest that agents not only extract a cue-action pattern in other agents and average over it to base their action choice on this higher-order cue, but *understand* how this particular pattern applies to this particular context. This requires abstracting a observed pattern from its immediate function in the context.
 
-- **Mutual monitoring**: individuals observe each other’s behavior and share information about norm violations.
-- **Reputational feedback**: good standing in the group depends on adherence to norms; social rewards and penalties are distributed accordingly.
-- **Cultural transmission**: norms are transmitted across generations through teaching, imitation, and narrative.
+<!-- A key innovation in Sterelny’s account is the role of apprenticeship and cumulative culture. Human children are raised in socially rich environments where they learn not only practical skills but also the norms governing cooperation, fairness, and punishment. This learning is scaffolded by explicit teaching, imitation, and storytelling, all of which depend on the capacity to represent and communicate abstract rules. -->
+
+Sterelny’s “Pleistocene Social Contract” is not a literal agreement but an evolutionary equilibrium—a set of mutually reinforcing expectations and behaviors that stabilize cooperation within groups. This equilibrium is maintained by:
+
+- *Mutual monitoring*: individuals observe each other’s behavior and share information about norm violations
+- *Reputational feedback*: good standing in the group depends on adherence to norms; social rewards and penalties are distributed accordingly
+- *Cultural transmission*: norms are transmitted across generations through teaching, imitation, and narrative.
 
 This system is robust because it is self-enforcing: individuals have incentives to monitor, report, and punish norm violations, as their own reputations and access to group resources depend on the maintenance of cooperation.
 
 Sterelny argues that the content of early human norms was shaped by the ecological and social challenges of the Pleistocene. Key domains include:
 
-- **Food sharing**: norms developed to regulate the distribution of meat and other resources, balancing individual interests with group needs
-- **Mating and kinship**: rules governing marriage, inheritance, and parental investment stabilized social relationships and reduced conflict
-- **Conflict resolution**: mechanisms for mediating disputes and punishing aggression promoted group cohesion.
+- *Food sharing*: norms developed to regulate the distribution of meat and other resources, balancing individual interests with group needs
+- *Mating and kinship*: rules governing marriage, inheritance, and parental investment stabilized social relationships and reduced conflict
+- *Conflict resolution*: mechanisms for mediating disputes and punishing aggression promoted group cohesion.
 
 These domains remain central to human morality, suggesting deep evolutionary roots for contemporary normative systems.
 
-Sterelny emphasizes that norms are not static and evolve in response to changes in group size, resource availability, and social structure. The capacity for metarepresentation and explicit reasoning about norms enables groups to adapt their social contracts to new challenges, a process visible in the diversity of human moral systems. 
+<!-- Sterelny emphasizes that norms are not static and evolve in response to changes in group size, resource availability, and social structure. The capacity for metarepresentation and explicit reasoning about norms enables groups to adapt their social contracts to new challenges, a process visible in the diversity of human moral systems.  -->
 
-Sterelny’s account links the evolution of normativity to the broader evolution of human agency. Decoupled representations allow agents to deliberate about rules, evaluate their consequences, and choose actions based on shared expectations rather than immediate impulses. This capacity underpins the uniquely human ability to justify, contest, and revise norms—a feature which Guala calls "scope of actionable signals".
+<!-- Sterelny’s account links the evolution of normativity to the broader evolution of human agency. Decoupled representations allow agents to deliberate about rules, evaluate their consequences, and choose actions based on shared expectations rather than immediate impulses. This capacity underpins the uniquely human ability to justify, contest, and revise norms—a feature which Guala calls "scope of actionable signals". -->
 
 Sterelny highlights the recursive relationship between norms and cognition: as groups develop more sophisticated normative systems, they create new cognitive demands like tracking complex reputational networks which in turn select for enhanced cognitive capacities. This feedback loop drives the cumulative evolution of both normativity and intelligence.
 
-Sterelny’s account complements but also challenges traditional evolutionary explanations of cooperation, such as kin selection and reciprocal altruism. While these mechanisms explain some forms of prosocial behavior, they do not account for the scale, flexibility, and stability of human normativity, especially in large, unrelated groups.
+<!-- Sterelny’s account complements but also challenges traditional evolutionary explanations of cooperation, such as kin selection and reciprocal altruism. While these mechanisms explain some forms of prosocial behavior, they do not account for the scale, flexibility, and stability of human normativity, especially in large, unrelated groups. -->
 
 Sterelny’s model aligns with dual-inheritance theory, which emphasizes the co-evolution of genetic and cultural inheritance systems. This is what Gintis has put forward as "gene-culture co-evolution" [@gintis2007; @gintis2013]. Sterelny argues that normativity is a product of both biological evolution (the capacity for decoupled, metarepresentational cognition) and cultural evolution (the accumulation and transmission of norms).
 
@@ -2622,7 +2634,8 @@ Sterelny’s theory has not gone unchallenged. One notable critique comes from @
 
 > “Decoupled representation is not merely the capacity to anticipate future states but the ability to manipulate internal representations *in novel ways*, supporting innovation and cumulative culture.” [@sterelny2012Book, 96].
 
-Thus decoupled representation is *generative* and *flexible* just as Guala suggests, but it is nevergtheless insufficient for explaining normativity and institutional stability yet.
+Thus decoupled representation is *generative* and *flexible* just as Guala suggests, but it is nevertheless insufficient for explaining normativity and institutional stability yet.
+
 
 ## Decoupled representation is insufficient for explanation of normativity in RiE 
 As we have seen, decoupled representation is a cognitive capacity for tracking environment with context-sensitive, open-ended and flexible behavioral responses which overcome genetically "hard-wired" strategies as in most animals. And although decoupled representation allows for cumulative culture and downstream cognitive niche construction, it does not explain or account for normativity by itself as Guala and Hindriks would want.
@@ -2650,7 +2663,7 @@ To fully explain how decoupled representation is responsible for normativity in 
 1. to explain how conditional epistemic agents capable of inferring and coordinating upon the latent structure of the world (referring to Sterelny's gradient of representational capacities) evolve from non-epistemic cue-based Skyrmsian ones. In other words, we need to show, how *ontic* correlation of strategies based on interactional dependencies between agents and environment (like "if bigger than opponent, fight") evolves into *epistemic* correlation based on shared beliefs so that these shared beliefs can function as "features of environment" ("if North to the river, graze the cattle");
 2. to explain how observable behavioral regularities acquire normative (or deontic) force for epistemic agents as an endogenous feature of environment backed up by the capacity of decoupled representation to capture, store and contextually adapt to regularities of the latent structure of environment.
 
-In short, how epistemic conditionalization evolves and how cognitive niche scaffolds emergence of epistemic normativity as shared normative beliefs, which are central to RiE. But what is *niche construction* in the first place and how is it useful in solving out problem?
+In short, how epistemic conditionalization evolves and how cognitive niche scaffolds emergence of epistemic normativity as shared normative beliefs, which are central to RiE.
 
 <!-- закомментил 23.05.2025 -->
 <!-- To proceed, we need to frame these problems in terms of niche construction theory [@odling-smee2003; @seitz2020] on which Sterelny builds his argument about decoupled representation and then formulate the problem in mathematical and modeling terms. Niche construction will provide a mechanism for modeling evolutionary feedback loops between representational capacities and behavioral repertoire of agents. Understanding feedback loops between the complexity of the ecological niche which selects for behavior to tackle this complexity and adapted behavior which itself creates new selective pressures can demystify an evolutionary mechanism for emergence of conditional Bayesian-like agents and epistemic normativity in them. -->
@@ -2658,14 +2671,14 @@ In short, how epistemic conditionalization evolves and how cognitive niche scaff
 <!-- ## Niche construction and game theory -->
 <!-- Traditional evolutionary theory often conceptualizes organisms as passive entities adapting to static environmental pressures. However, *Niche Construction Theory (NCT)* challenges this view by emphasizing the active role organisms play in modifying their own selective environments, thereby influencing their evolutionary trajectories.  -->
 
-@odling-smee2003 has defined niche construction as the process whereby organisms modify environmental states, thereby altering the selection pressures acting on themselves, their descendants and other species. This process generates *ecological inheritance*, a form of non-genetic inheritance where descendants inherit not only genes but also modified environments. For example, beavers build dams that transform aquatic ecosystems, affecting not only their own survival but also that of many other species. Similarly, earthworms alter soil composition, influencing nutrient cycling and plant growth. These examples illustrate that organisms are not mere passive recipients of environmental pressures but *agents of environmental change*, creating feedback loops that shape evolutionary dynamics.
+To clarify, @odling-smee2003 has defined niche construction as the process whereby organisms modify environmental states, thereby altering the selection pressures acting on themselves, their descendants and other species. This process generates *ecological inheritance*, a form of non-genetic inheritance where descendants inherit not only genes but also modified environments. For example, beavers build dams that transform aquatic ecosystems, affecting not only their own survival but also that of many other species. Similarly, earthworms alter soil composition, influencing nutrient cycling and plant growth. These examples illustrate that organisms are not mere passive recipients of environmental pressures but *agents of environmental change*, creating feedback loops that shape evolutionary dynamics.
 
 @odling-smee2003 articulate several key components of niche construction:
 
-- **Environmental modification**: organisms alter abiotic and biotic aspects of their environment
-- **Selective feedback**: these modifications change selection pressures on the constructor and others
-- **Ecological inheritance**: modified environments are transmitted across generations, influencing evolutionary trajectories
-- **Evolutionary consequences**: niche construction can accelerate, decelerate, or redirect evolutionary change.
+- *Environmental modification*: organisms alter abiotic and biotic aspects of their environment
+- *Selective feedback*: these modifications change selection pressures on the constructor and others
+- *Ecological inheritance*: modified environments are transmitted across generations, influencing evolutionary trajectories
+- *Evolutionary consequences*: niche construction can accelerate, decelerate, or redirect evolutionary change.
 
 Humans exemplify niche constructors par excellence. Beyond altering physical environments through agriculture, architecture, and technology, humans construct *cognitive and cultural niches* just as those scrutinized by @sterelny2003. These include language, social institutions, and symbolic systems that create new domains of interaction and learning. Such constructed niches provide scaffolding for cognitive development and cultural transmission, effectively *co-evolving with human cognition*.
 
@@ -2708,216 +2721,268 @@ Consider a population playing a public goods game, where cooperation yields coll
 - This shifts the evolutionary dynamics, making cooperation more advantageous
 - Over time, the population evolves toward cooperation, stabilizing the institution.
 
-This example illustrates how niche construction can endogenously modify payoffs and enable the evolution of cooperation norms which some researchers put forward [@vlerick2019; @vlerick2016; @skyrms2014]. However, *our case does not suppose any change in payoffs*. They stay the same throughout the evolution. What does niche construction affect, then? 
+This example illustrates how niche construction can endogenously modify payoffs and enable the evolution of cooperation norms which some researchers put forward [@vlerick2019; @vlerick2016; @skyrms2014]. However, *our case does not suppose any change in payoffs*, since agent efficiently play CE from the outset in Maynard Smith's Hawk-Dove-Bourgeois. What does niche construction affect in our case, then? The answer is *the degree of the functional abstraction of a correlation device* which corresponds to the level of cognitive sophistication of an agent.
 
-The case above represents *social* niche construction, whereas we are interested in *cognitive* one
+
+## Correlated conventions with niche construction
+Skyrms emphasizes that CE can be supported by *environmental cues or signals* that serve as correlation devices. For example, a traffic light’s color signals when to drive, enabling drivers to coordinate without direct communication with each other. These signals are part of the constructed social environment and play a crucial role in stabilizing conventions. The rules are thus *encoded* in these artifacts.
+
+Niche construction theory complements Skyrms’s account by explaining how these environmental signals and cues are not fixed but *constructed and maintained by agents* themselves. The social environment, including traffic lights, linguistic conventions, or handshake rituals, is a product of collective activity that modifies coordination possibilities.
+
+@herrmann2021 model endogenous *invention* and *evolution* of correlated conventions. They integrate a Hawk–Dove game with a Schreiber urn reinforcement process [@schreiber2001] and an innovation mechanism derived from Hoppe’s urn model [@hoppe1984], thereby modeling the evolutionary dynamics of strategy invention, propagation, and stabilization. The model addresses the central question of how agents in a symmetric setting can converge on a stable, asymmetric behavioral convention *without external coordination signal* or "choreographer". Their model shows that:
+
+- *Invention* involves discovering or creating new environmental asymmetries or signals (via mutation)
+- *Evolution* involves the population dynamics that favor coordination on particular environmental asymmetries.
+
+The two-player Hawk–Dove game models a resource conflict in which mutual aggression is costly, mutual passivity is inefficient, and asymmetric behavior is optimal. Let each agent choose an action $a \in \{\text{Hawk}, \text{Dove}\}$. The payoff matrix is defined as follows:
+
+<div class="table">
+
+$$
+\begin{array}{|c|c|c|}
+ & \text{Hawk} & \text{Dove} \\
+\hline
+\text{Hawk} & (0, 0) & (V, 1) \\
+\hline
+\text{Dove} & (1, V) & (2, 2) \\
+\end{array}
+$$
+</div>
+
+In Herrmann and Skyrms’s model, the value of the resource is $V = 3$, and the cost of conflict is $C = 3$, so the Hawk–Hawk outcome yields payoff 0 for both, and Dove–Dove yields 2.
+
+Each agent $i$ is endowed with a vector of neutral traits like "size", "brightness", etc:
+
+$$
+\mathbf{x}_i = (x_{i1}, x_{i2}, \dots, x_{iK}) \in (0, 1)^K
+$$
+
+These traits are payoff-irrelevant and drawn independently from a uniform distribution on $(0, 1)$ at the time of the agent’s birth. Trait values serve as potential *asymmetry generators* when agents adopt strategies that condition behavior on them.
+
+The strategy space $\mathcal{S}$ includes:
+
+* *Unconditional strategies*:
+  $s_i(a) = \text{Hawk}$ or $s_i(a) = \text{Dove}$
+
+* *Conditional strategies* (or *conventions*) of the form:
+
+$$
+s_i(\mathbf{x}_i, \mathbf{x}_j) =
+\begin{cases}
+\text{Hawk} & \text{if } x_{ik} > x_{jk} \text{ (or } x_{ik} < x_{jk} \text{)} \\
+\text{Dove} & \text{otherwise}
+\end{cases}
+$$
+
+where $k \in \{1, \dots, K\}$ is the index of the trait used, and the comparison is either “greater than” or “less than”. For example:
+
+  > “Play Hawk if my trait *x* is greater than (or less than) my opponent’s; otherwise play Dove”.
+
+These strategies instantiate candidate *correlation devices* using arbitrary traits to resolve role assignment in an otherwise symmetric game.
+
+The population is modeled as a Schreiber urn $U$ containing balls representing agents. Each ball encodes a strategy $s \in \mathcal{S}$ and a fresh draw of a trait vector $\mathbf{x}$.
+
+In each generation:
+
+* A number of agents are *sampled uniformly at random* from the urn and paired for interaction
+* After playing the Hawk–Dove game, agents receive payoffs
+* Payoff determines reproductive success: for each point of payoff, the agent's strategy is copied into the urn with new, independently drawn traits
+* A *mutator ball* is always present in the urn. When drawn, it *introduces a new conditional strategy*, based on a previously unused trait dimension and polarity (greater-than or less-than).
+
+This mechanism follows *Hoppe’s model of innovation*, ensuring a continual possibility of *strategic invention*. It works like this: the urn starts a diverse collection of colored balls, including a black ‘mutator ball’.  In each turn, a ball is drawn at random.  If a color other than black is selected, it’s replaced in the urn, and a matching duplicate is added.  But if the black ‘mutator ball’ is drawn, it’s also replaced and a new, previously unseen color is introduced. This process can continue without limit, resulting in an urn containing an infinite number of colors. These potentially infinite differently colored balls represent agent traits which are essentially *potential environmental asymmetries*.
 
 ***
-types of niche construction:
+Over time, conditional strategies that coordinate well on asymmetric trait values can *invade and outcompete* unconditional strategies. A particularly successful convention might be, for example:
 
+> “Play Hawk if my trait 2 is greater than my opponent’s, else play Dove.”
 
-## Correlated convention enhanced with niche construction
-Skyrms emphasizes that CE can be supported by *environmental cues or signals* that serve as coordination devices. For example, a traffic light’s color signals which side to drive on, enabling drivers to coordinate without direct communication. These signals are part of the constructed social environment and play a crucial role in stabilizing conventions. Rules are *encoded* in these coordination devices.
+If most agents adopt this strategy, and trait 2 is randomly distributed, this induces a stable *correlated equilibrium* without any exogenous signal. The population effectively *constructs an asymmetry* out of a payoff-neutral trait. The model shows that:
 
-Niche construction theory complements Skyrms’s account by explaining how these environmental signals and cues are *not fixed but constructed and maintained by agents themselves*. The social environment, including traffic lights, linguistic conventions, or handshake rituals, is a product of collective activity that modifies payoffs and coordination possibilities.
+* *Pure conventions* (all agents using the same trait and polarity) are *evolutionarily stable strategies (ESS)*.
+* *Unconditional strategies* or mixed conventions are generally *unstable* under evolutionary pressure.
+* The *timing of invention* matters: early-invented traits have a higher chance of becoming population-wide conventions due to *path dependence*.
 
-Importantly, *niche construction endogenizes the correlation device*:
+The model demonstrates that *correlation devices need not be given*; they can *evolve from scratch* through mechanisms of invention, competition, and stabilization. By grounding the emergence of asymmetry in *trait-based comparisons*, the model offers a solution to the *problem of symmetry-breaking* in coordination games. Unlike classical correlated equilibrium frameworks (e.g., Aumann), this model does not assume a public signal or a referee; instead, conventions emerge *organically* via decentralized dynamics.
+***
 
-- The environment $E$ includes signals or cues used for coordination.
-- Agents’ behaviors $x$ influence the presence and reliability of these cues.
-- The payoff function $\pi_E$ depends on the environment’s state, including the availability of correlation devices.
-- The environmental dynamics $\Phi$ describe how agents build, maintain, or degrade these cues.
+1. *Pairwise interactions*:
 
-This feedback loop explains how correlated conventions emerge as stable equilibria supported by constructed environments.
+   * $n$ pairs of agents $(i, j) \sim U$ are sampled uniformly without replacement.
+   * Each pair plays the Hawk–Dove game, with payoffs $\pi_i, \pi_j$ computed based on actions $a_i = s_i(\mathbf{x}_i, \mathbf{x}_j)$, $a_j = s_j(\mathbf{x}_j, \mathbf{x}_i)$.
 
-Although not explicitly referring to niche construction, @herrmann2021 model both the *invention* and *evolution* of correlated conventions. They address how populations select among multiple possible environmental asymmetries for coordination and how these conventions spread and stabilize. This implicitly endogenizes environment into the game structure.
+2. *Reinforcement (reproduction)*:
 
-Their model shows that:
+   * For each unit of payoff $\pi_i$, a new copy of agent $i$’s strategy $s_i$ is added to the urn, assigned a new independent trait vector $\mathbf{x}_i' \sim \text{Uniform}(0,1)^K$.
 
-- **Invention** involves discovering or creating new environmental asymmetries or signals.
-- **Evolution** involves the population dynamics that favor coordination on particular signals.
+3. *Mutation and invention (Hoppe-style mutator)*:
 
-Niche construction is implicit in the invention phase, as agents actively create or highlight signals that facilitate coordination. This work fills a critical gap by explaining not only how conventions evolve but how they originate through collective environmental modification.
+   * The urn contains a persistent **mutator ball** $M$. If selected during pairing, it invents a new conditional strategy not yet present in $\mathcal{S}$ using an unused trait index $k$ and polarity.
+   * This new strategy is added to $\mathcal{S}$ and placed into the urn with a new trait vector.
 
-Building on the formalism introduced earlier, we consider a population of agents playing a symmetric coordination game with strategy set $S = \{s_1, s_2, \ldots, s_n\}$ and payoff function $\pi_E: S \times S \to \mathbb{R}$ that depends on the environmental state $E \in \mathcal{E}$.
+***
+Our example is a model of evolution in a finite, growing population. We take the particular instance of the hawk–dove game in table 1 as our base game. There is a countably infinite list of visible traits. For each agent i and each trait j, nature assigns a random value $x_i,j \in (0,1)$ representing the j-th trait value of the i-th agent. Example traits are thumb length, plumage brightness, and so on. Any time an agent is added to the population, either through mutation or through reinforcement, nature assigns a random value to each trait for that agent.
 
-The environment encodes *correlation devices* or cues that agents use to coordinate. Formally, let $E = (e_1, e_2, \ldots, e_m)$ represent a vector of environmental features, each corresponding to a potential signal or asymmetry.
+The population starts in a state in which the only strategies agents play are the un- conditional ‘always hawk’ or ‘always dove’. The dynamics proceed similarly to the Schreiber urn model. At each time step a fixed proportion of agents are drawn from the population and paired off at random. Each pair plays the hawk–dove game, and replicate according to their payoffs.
 
-The agents’ population state is given by a distribution $x = (x_1, x_2, \ldots, x_n)$ over strategies, evolving according to replicator dynamics:
+The main difference from the Schreiber urn model occurs when a mutator ball is drawn.19 In this case a mutant is added to the population. There are two mutator balls, one of which we will call the big mutator ball and the other the small mutator ball. The ith time the big mutator ball is drawn a mutant with the conditional strategy ‘hawk if my ith property is larger than my opponent’s ith property, dove otherwise’ is added to the population. Similarly, the ith time the small mutator ball is drawn a mutant with the strategy ‘hawk if my ith property is smaller than my opponent’s ith property, dove otherwise’ is added to the population.20 Having both mutator balls allows us to use the model to explore how the contradictory strategies, Big i (Bi) and Small i (Si), interact.
+***
 
-$$
-\dot{x_i} = x_i \left[ \pi_E(s_i, x) - \bar{\pi}_E(x) \right]
-$$
+This dynamic produces an evolutionary trajectory in which **novel conventions** can be invented and tested against the population, and successful ones are reinforced over time.
 
-where 
+A key result of the model is that **pure conventions**, in which nearly all agents adopt the same conditional strategy based on the same trait and polarity, are **evolutionarily stable**. Formally, a strategy $s^* \in \mathcal{S}$ is an ESS if, for all mutant strategies $s'$, the expected payoff $E[\pi(s^*, s^*)] > E[\pi(s', s^*)]$.
 
-$$\pi_E(s_i, x) = \sum_{j=1}^n x_j \pi_E(s_i, s_j)$$ 
+* In a population dominated by $s^*$, coordination is consistent and efficient: each interaction resolves asymmetry using a shared comparison rule.
+* Such conventions are **self-sustaining** under the urn dynamics and resist invasion by both unconditional strategies and alternative conventions.
 
-and 
+By contrast:
 
-$$\bar{\pi}_E(x) = \sum_{i=1}^n x_i \pi_E(s_i, x)$$ 
+* *Unconditional strategies* yield *lower average payoffs*, especially in mixed populations.
+* *Mixed conventions* (with multiple traits or polarities in use) can persist temporarily but tend to be outcompeted by more coherent pure conventions.
 
-is the average population payoff. The environment evolves according to:
+The Herrmann–Skyrms model demonstrates that **correlated equilibria can evolve** without being externally imposed. Asymmetries that function as coordination signals need not be innate or environmental; they can be **invented**, **propagated**, and **stabilized** through selection on their functional effects. Trait comparisons become de facto **public signals** once a convention stabilizes.
 
-$$\dot{E} = \Phi(E, x)$$
+This modeling approach supports a broader view in which **institutions and social roles emerge endogenously** through feedback between behavioral patterns and the structure of interaction. The model provides a baseline for exploring more sophisticated cognitive mechanisms, such as **flexible role representation**, **learning**, and **contextual generalization**—topics taken up in the next chapter.
 
-where $\Phi$ models how agent behavior modifies the presence, salience, or reliability of correlation devices.
+Another important finding of @herrmann2021 is that in populations where only Hawks and Doves have taken over the expected number of agents added to population after each round is 3 (two new and one "descendant" of a winner of the previous game), whereas in populations with a convention takeover it is 4 (because in CE both players have symmetric payoffs and both reproduce resulting in 4 new agents). It led Herrman and Skyrms to suggest that populations with established convention *would be larger* which might have consequences for group selection. This echoes Sterelny's idea of the disentanglement of fitness and utility due to larger group sizes which, in its turn, promoted further informational complexity and decrease in individual trait heritability. This slightly suggests how having a convention affects further "ratcheting" of the evolution og cognition.
 
+In this example, invention of new asymmetries serves as a form of niche construction, where agents randomly mutate to introduce new asymmetries and either get picked up by the rest of the population or not and if yes, it has both larger group size and further detachment of fitness from individual strategy choice.
+
+***
 While Guala’s framework explains how rules stabilize as equilibria, it does not fully specify how the *environmental and social conditions that sustain these equilibria emerge*. Niche construction theory fills this gap by showing how agents *actively build and maintain the material and symbolic environments* that embed rules as stable coordination devices.
 
 - The constructed environment $E$ includes not only physical artifacts but also social norms, enforcement mechanisms, and shared representations.
 - These environmental features modify payoffs and make certain equilibria focal and stable.
 - Agents internalize rules through socialization within these constructed niches, acquiring the motivational and epistemic commitments Guala emphasizes.
 
-While there have been several notable examples of explicit incorporation of niche construction into game-theoretic modeling [@bowles2003; @lehmann2006; @godfrey-smith2013], most of them either ignore *cognitive realism* we are striving for by either treating agents as already having epistemic beliefs and not evolving them [@bowles2003]
+<!-- While there have been several notable examples of explicit incorporation of niche construction into game-theoretic modeling [@bowles2003; @godfrey-smith2013], most of them either ignore *cognitive realism* we are striving for by either treating agents as already having epistemic beliefs and not evolving them [@bowles2003] -->
+<!---->
+<!-- @bowles2003 have been instrumental in incorporating niche construction into the framework of economic game theory, particularly in their work on the evolution of cooperation and the emergence of stable institutions. Their approach goes beyond simple strategic interaction by allowing for the endogenous formation of the institutions that structure those interactions. They argue that individuals not only act within institutions but also participate in their creation and maintenance, a perspective that directly mirrors the central ideas of niche construction. -->
+<!---->
+<!-- Bowles and Gintis model institutions as equilibria in repeated games where agents influence both the payoffs and the rules of interaction. In particular, they emphasize that the enforcement of cooperative norms through monitoring, punishment, and reputation mechanisms is not externally imposed but emerges from the strategic behaviors of the agents themselves. -->
 
-### Co-evolution of individual preferences and institutions (Bowles and Gintis)
-@bowles2003 have been instrumental in incorporating niche construction into the framework of economic game theory, particularly in their work on the evolution of cooperation and the emergence of stable institutions. Their approach goes beyond simple strategic interaction by allowing for the endogenous formation of the institutions that structure those interactions. They argue that individuals not only act within institutions but also participate in their creation and maintenance, a perspective that directly mirrors the central ideas of niche construction.
+<!-- Suppose we have a population of agents $i = 1, ..., N$ who engage in a repeated public goods game. The payoff to an agent $i$ at time $t$ is given by: -->
+<!---->
+<!-- $$ -->
+<!-- U_i^t = B(G^t) - C(s_i^t) - P(s_i^, \theta^t)  -->
+<!-- $$ -->
+<!---->
+<!-- where: -->
+<!---->
+<!-- * $G^t$ is the group contribution to the public good at time $t$ -->
+<!-- * $C(s_i^t)$ is the cost of the strategy $s_i^t$ -->
+<!-- * $P(s_i^t, \theta^t)$ is the penalty function, dependent on the strategy and enforcement structure $\theta^t$. -->
+<!---->
+<!-- Crucially, $\theta^t$, representing enforcement norms is itself determined endogenously by a meta-strategic game: -->
+<!---->
+<!-- $$ -->
+<!-- \theta^{t+1} = f(\theta^t, \mathbf{s}^t)  -->
+<!-- $$ -->
 
-Bowles and Gintis model institutions as equilibria in repeated games where agents influence both the payoffs and the rules of interaction. In particular, they emphasize that the enforcement of cooperative norms through monitoring, punishment, and reputation mechanisms is not externally imposed but emerges from the strategic behaviors of the agents themselves.
+<!-- This recursive structure captures niche construction: agents shape the environment through their actions, and this environment in turn reshapes incentives for future behavior. -->
+<!---->
+<!-- Another key feature of Bowles's and Gintis’s work is the coevolution of preferences and institutional rules. They propose that agents evolve not just strategies but underlying preferences for fairness, reciprocity, or punishment. These evolved preferences support the construction and maintenance of cooperative institutions. -->
 
-Suppose we have a population of agents $i = 1, ..., N$ who engage in a repeated public goods game. The payoff to an agent $i$ at time $t$ is given by:
+<!-- They formalize this with a replicator dynamic: -->
+<!---->
+<!-- $$ -->
+<!-- \frac{d p_i}{dt} = p_i \left( \pi_i - \bar{\pi} \right) -->
+<!-- $$ -->
+<!---->
+<!-- where $p_i$ is the proportion of agents with preference type $i$, $\pi_i$ is the fitness of that type, and $\bar{\pi}$ is average population fitness. Fitness is determined by performance in the repeated game, which is structured by the evolving institution $\theta^t$. -->
 
-$$
-U_i^t = B(G^t) - C(s_i^t) - P(s_i^, \theta^t) 
-$$
+<!-- Their framework provides a mechanism for the emergence of institutions that are self-enforcing, historically contingent, and robust to defection. Stable institutions are not externally imposed equilibria but the result of endogenous dynamics: -->
+<!---->
+<!-- 1. Agents construct institutions through strategic investment -->
+<!-- 2. These institutions alter the fitness landscape -->
+<!-- 3. Preferences adapt to new institutional constraints. -->
+<!---->
+<!-- This approach partially aligns with RiE [@guala2016], with niche construction acting as the dynamic engine, but still has drawbacks. Fundamentally, the work of Bowles and Gintis shows how *preferences for punishment/cooperation* can co-evolve with *institutional rules*, but: -->
+<!---->
+<!-- * They model *preference types* (altruistic vs. selfish), not the *epistemic shift* toward interpreting actions as *rule-governed* or *normative* -->
+<!-- * Niche construction in their models directly changes the *payoff structure*, not the *representational structure* of agents which mediated payoff structure, whereas Guala's argument depends on a claim about such structure enabling rule-following. -->
+<!---->
+<!-- In other words, although the model excels at showing co-evolution of individual preferences and institutional rules with niche construction-like dynamics, it does not consider the evolutionary emergence of the very epistemic correlation of strategies which is needed for naturalistic grounding of RiE. -->
+<!---->
+<!-- Thus, Bowles's and Gintis's model is insufficient for our purposes, for it is missing a model of *shared belief structures*** that are not just behavioral preferences but *cognitive representations*. -->
+<!---->
+<!-- @lehmann2006 have explored how spatial and kin-structured populations affect the evolution of social behavior. Their models are notable for treating environmental structure as both a constraint and an evolutionary variable, thereby aligning with niche construction theory. -->
+<!---->
+<!-- In their framework, individuals interact within spatially structured populations where local density, interaction neighborhood, and dispersal can be affected by agents’ behaviors. These local structures are not fixed and evolve as agents modify their interaction environments. -->
+<!---->
+<!-- Consider a fitness function: -->
+<!---->
+<!-- $$ -->
+<!-- w_i = b \cdot f(n_i) - c  -->
+<!-- $$ -->
+<!---->
+<!-- where: -->
+<!---->
+<!-- * $w_i$ is the fitness of individual $i$ -->
+<!-- * $n_i$ is the number of cooperative neighbors -->
+<!-- * $f(n_i)$ reflects the benefit function shaped by local density or kin structure -->
+<!-- * $b$ is the benefit multiplier, and $c$ is the cost of cooperation -->
+<!---->
+<!-- The function $f(n_i)$ depends on how the individual’s behavior affects the local interaction network. For example, if cooperation leads to reduced dispersal or higher local survival, then $f(n_i)$ increases, leading to higher benefits for cooperative behaviors. -->
+<!---->
+<!-- Lehmann and Keller explicitly model how agents modify local conditions: -->
+<!---->
+<!-- * Cooperative agents may build nests or create microhabitats -->
+<!-- * These modifications affect the spatial clustering of kin or similar strategists -->
+<!-- * Clustering enhances the payoffs of cooperative behavior. -->
+<!---->
+<!-- Mathematically, let: -->
+<!---->
+<!-- $$ -->
+<!-- \Delta E_i^t = g(s_i^t, E_i^t)  -->
+<!-- $$ -->
+<!---->
+<!-- where $E_i^t$ is the local environment around agent $i$ at time $t$, and $g$ is a function modeling how strategy $s_i^t$ alters this environment. -->
+<!---->
+<!-- The environment then feeds back into future payoffs: -->
+<!---->
+<!-- $$ -->
+<!-- U_i^{t+1} = h(s_i^{t+1}, E_i^{t+1})  -->
+<!-- $$ -->
+<!---->
+<!-- This recursive loop constitutes a spatially localized form of niche construction. -->
+<!---->
+<!-- This model shows that cooperation can evolve not simply because of genetic relatedness or direct benefits, but because cooperative behavior reshapes the interaction environment in ways that favor cooperators. -->
+<!---->
+<!-- Lehmann and Keller's models focus on how *local ecological and social structure* like relatedness and clustering enables cooperation through niche construction very much like Skyrms's "correlated convention" does [@skyrms1994], but: -->
+<!---->
+<!-- * Cooperation emerges *via demographic patterns*, not through *epistemic commitments* or *shared symbolic norms* -->
+<!-- * Agents are still *behaviorally reactive*, not *normatively committed*. -->
+<!---->
+<!-- This model in insufficient for supplementing RiE, as well, for it does not explan how *agents begin to represent situations* and coordinate actions on these representations, which is a crucial explanatory gap in RiE as we showed in the previous chapter. -->
+<!---->
 
-where:
-
-* $G^t$ is the group contribution to the public good at time $t$
-* $C(s_i^t)$ is the cost of the strategy $s_i^t$
-* $P(s_i^t, \theta^t)$ is the penalty function, dependent on the strategy and enforcement structure $\theta^t$.
-
-Crucially, $\theta^t$, representing enforcement norms is itself determined endogenously by a meta-strategic game:
-
-$$
-\theta^{t+1} = f(\theta^t, \mathbf{s}^t) 
-$$
-
-This recursive structure captures niche construction: agents shape the environment through their actions, and this environment in turn reshapes incentives for future behavior.
-
-Another key feature of Bowles's and Gintis’s work is the coevolution of preferences and institutional rules. They propose that agents evolve not just strategies but underlying preferences for fairness, reciprocity, or punishment. These evolved preferences support the construction and maintenance of cooperative institutions.
-
-They formalize this with a replicator dynamic:
-
-$$
-\frac{d p_i}{dt} = p_i \left( \pi_i - \bar{\pi} \right)
-$$
-
-where $p_i$ is the proportion of agents with preference type $i$, $\pi_i$ is the fitness of that type, and $\bar{\pi}$ is average population fitness. Fitness is determined by performance in the repeated game, which is structured by the evolving institution $\theta^t$.
-
-Their framework provides a mechanism for the emergence of institutions that are self-enforcing, historically contingent, and robust to defection. Stable institutions are not externally imposed equilibria but the result of endogenous dynamics:
-
-1. Agents construct institutions through strategic investment
-2. These institutions alter the fitness landscape
-3. Preferences adapt to new institutional constraints.
-
-This approach partially aligns with RiE [@guala2016], with niche construction acting as the dynamic engine, but still has drawbacks. Fundamentally, the work of Bowles and Gintis shows how *preferences for punishment/cooperation* can co-evolve with *institutional rules*, but:
-
-* They model *preference types* (altruistic vs. selfish), not the *epistemic shift* toward interpreting actions as *rule-governed* or *normative*
-* Niche construction in their models directly changes the *payoff structure*, not the *representational structure* of agents which mediated payoff structure, whereas Guala's argument depends on a claim about such structure enabling rule-following.
-
-In other words, although the model excels at showing co-evolution of individual preferences and institutional rules with niche construction-like dynamics, it does not consider the evolutionary emergence of the very epistemic correlation of strategies which is needed for naturalistic grounding of RiE.
-
-Thus, Bowles's and Gintis's model is insufficient for our purposes, for it is missing a model of *shared belief structures*** that are not just behavioral preferences but *cognitive representations*.
-
-### Spatial and kin-structured games and evolution of institutions (Lehmann and Keller)
-@lehmann2006 have explored how spatial and kin-structured populations affect the evolution of social behavior. Their models are notable for treating environmental structure as both a constraint and an evolutionary variable, thereby aligning with niche construction theory.
-
-In their framework, individuals interact within spatially structured populations where local density, interaction neighborhood, and dispersal can be affected by agents’ behaviors. These local structures are not fixed and evolve as agents modify their interaction environments.
-
-Consider a fitness function:
-
-$$
-w_i = b \cdot f(n_i) - c 
-$$
-
-where:
-
-* $w_i$ is the fitness of individual $i$
-* $n_i$ is the number of cooperative neighbors
-* $f(n_i)$ reflects the benefit function shaped by local density or kin structure
-* $b$ is the benefit multiplier, and $c$ is the cost of cooperation
-
-The function $f(n_i)$ depends on how the individual’s behavior affects the local interaction network. For example, if cooperation leads to reduced dispersal or higher local survival, then $f(n_i)$ increases, leading to higher benefits for cooperative behaviors.
-
-Lehmann and Keller explicitly model how agents modify local conditions:
-
-* Cooperative agents may build nests or create microhabitats
-* These modifications affect the spatial clustering of kin or similar strategists
-* Clustering enhances the payoffs of cooperative behavior.
-
-Mathematically, let:
-
-$$
-\Delta E_i^t = g(s_i^t, E_i^t) 
-$$
-
-where $E_i^t$ is the local environment around agent $i$ at time $t$, and $g$ is a function modeling how strategy $s_i^t$ alters this environment.
-
-The environment then feeds back into future payoffs:
-
-$$
-U_i^{t+1} = h(s_i^{t+1}, E_i^{t+1}) 
-$$
-
-This recursive loop constitutes a spatially localized form of niche construction.
-
-This model shows that cooperation can evolve not simply because of genetic relatedness or direct benefits, but because cooperative behavior reshapes the interaction environment in ways that favor cooperators.
-
-Lehmann and Keller's models focus on how *local ecological and social structure* like relatedness and clustering enables cooperation through niche construction very much like Skyrms's "correlated convention" does [@skyrms1994], but:
-
-* Cooperation emerges *via demographic patterns*, not through *epistemic commitments* or *shared symbolic norms*
-* Agents are still *behaviorally reactive*, not *normatively committed*.
-
-This model in insufficient for supplementing RiE, as well, for it does not explan how *agents begin to represent situations* and coordinate actions on these representations, which is a crucial explanatory gap in RiE as we showed in the previous chapter.
-
-### Signaling and informational niche construction (Planer & Godfrey-Smith)
-Planer and Godfrey-Smith [-@planer-godfrey2021] generalize Godfrey-Smith's model to explain coordination within and between organisms. After Skyrms [-@skyrms2010], they group selection processes that can stabilize signaling and present them in order of increasing cognitive requirements: 
+<!-- ### Signaling and informational niche construction (Planer & Godfrey-Smith) -->
+A more direct treatment of informational and cognitive niche construction which we can incorporate into our model is due to Planer and Godfrey-Smith [-@planer-godfrey2021], who generalize Godfrey-Smith's model to explain coordination within and between organisms. After Skyrms [-@skyrms2010], they group selection processes that can stabilize signaling and present them in order of increasing cognitive requirements: 
 
 - biological evolution
 - reinforcement learning
 - imitation of the successful
 - rational choice.
 
-After Godfrey-Smith, they discern state–act and act–act coordination.Between-agent coordination mostly functions as information transmission, whereas within-agent coordination works as routine combination and processing to yield new information which is useful in controlling behavior. In other words, the latter kind of coordination not only transmits information, but carries out computations. This fact, authors suggest, establishes co-evolutionary feedback loop between the within-agent and between-agent coordination processes. With the increasing organization of internal signaling, computation becomes more efficient, and it allows to represent more external information in terms of states of the world so that one can act upon them.
+After Godfrey-Smith, they discern state–act and act–act coordination. Between-agent coordination mostly functions as information transmission, whereas within-agent coordination works as routine combination and processing to yield new information which is useful in controlling behavior. In other words, the latter kind of coordination not only transmits information, but carries out computations. This fact, authors suggest, establishes co-evolutionary feedback loop between the within-agent and between-agent coordination processes. With the increasing organization of internal signaling, computation becomes more efficient, and it allows to represent more external information in terms of states of the world so that one can act upon them.
 
 Sterelny [-@sterelny2017] critiques sender–receiver framework for its apparent inability to accommodate “mindreading” or recursive reasoning about others' beliefs, for it requires a theory of mind, and the framework is not equipped to grasp it. However, Planer and Godfrey-Smith reply that sender–receiver framework is flexible enough to allow gradient in amount of cognitive resources required: it accommodates a spectrum of possibilities from those not requiring any meta-psychology or mindreading to strategically or interpretively sophisticated ones.
 
 Although this "model" in the most appropriate for our case of substantiating Guala's RiE with niche construction, it still has drawbacks. It explicitly appeals to the epistemic shift in agents' cognitive capacities and accounts for feedback between internal computations, cognitive affordances and conventions' strength, but it does not have a mechanism for detaching signals from fixed referents paving the way to decoupled representation and normativity.
-
-<!-- Doc representation -->
-<!-- $$ -->
-<!-- \begin{table}[H] -->
-<!-- \centering -->
-<!-- \caption{Comparison of Key Models on Correlation and Normativity} -->
-<!-- \begin{tabular}{|l|c|c|c|c|} -->
-<!-- \hline -->
-<!-- \textbf{Model} & \textbf{Ontic Corr.} & \textbf{Epistemic Corr.} & \textbf{Decoupled Repres.} & \textbf{Normativity} \\ -->
-<!-- \hline -->
-<!-- Skyrms (2004, 2010) & \checkmark & $\times$ & $\times$ & $\times$ \\ -->
-<!-- Guala (2016)        & $\times$ (assumed) & \checkmark & \checkmark & \checkmark \\ -->
-<!-- Bowles \& Gintis (2011) & \checkmark & Partial & $\times$ & Partial \\ -->
-<!-- Lehmann \& Keller (2006) & \checkmark & $\times$ & $\times$ & $\times$ \\ -->
-<!-- Godfrey-Smith (2002) & \checkmark & Partial & Partial & $\times$ \\ -->
-<!-- \hline -->
-<!-- \end{tabular} -->
-<!-- \end{table} -->
-<!-- $$ -->
 
 <!-- web representation -->
 
 | Model                  | Ontic Corr.          | Epistemic Corr. | Decoupled Repres. | Normativity |
 |------------------------|----------------------|-----------------|-------------------|-------------|
 | Skyrms (2004, 2010)    | ✓                    | ×               | ×                 | ×           |
-| Lehmann & Keller (2006)| ✓                    | ×               | ×                 | ×           |
-| Morsky & Akcay (2019)  | ×                    | ✓               | ×                 | ✓           |
-| Bowles & Gintis (2011) | ✓                    | Partial         | ×                 | Partial     |
 | Godfrey-Smith (2021)   | ✓                    | Partial         | Partial           | ×           |
-| Guala (2016)           | × (assumed)           | ✓               | × (assumed)                 | ✓           |
+| Guala (2016)           | × (assumed)          | ✓               | × (assumed)       | ✓           |
 
+<!-- | Bowles & Gintis (2011) | ✓                    | Partial         | ×                 | Partial     | -->
+<!-- | Lehmann & Keller (2006)| ✓                    | ×               | ×                 | ×           | -->
+<!-- | Morsky & Akcay (2019)  | ×                    | ✓               | ×                 | ✓           | -->
 
-To make the case for the *emergence of normativity with representation*, we still need:
+To make the case for the *emergence of epistemic correaltion and normativity*, we still need:
 
 1. Show how *ontic coordination* (mere behavioral fit) gives rise to *epistemic correlation* as coordinating on shared expectations and beliefs
 2. Show how *shared representations* emerge *as stable artifacts* via niche construction
@@ -2931,7 +2996,8 @@ That means that we need to:
 
 After Sterelny, we will use niche construction as a main evolutionary mechanism for both emergence of epistemic conditional agents from non-epistemic ones and evolution of normativity with institutional scaffolds. Developmental plasticity will be a key feature of a baseline cognitive architecture. Next, we formulate the problem in terms of cognitive architectures of reinforcement learning and Bayesian updating, which will serve as a foil for our own model.
 
-## Cognitive architectures of Skyrms's and Guala's agents
+
+## Cognitive architectures of Skyrms's and Guala's agents and the evolutionary plausibility of the shift
 Guala's RiE can benefit from taking Sterelny's theory of decoupled representation theory in its entirety seriously. It can be done by introducing the mechanism of cognitive niche construction as a bridge between ontic and epistemic correlation of strategies. As we have also distinguished between two agency models within RiE — Skyrms's non-epistemic conditional and Guala's epistemic conditional agents, their agents differ in cognitive architectures or underlying rationality assumptions. And niche construction theory can help them meet. Moreover, the very same niche construction mechanism can account for emergence of full-fledged normativity in the form of epistemic correlation of normaitve beliefs as in Guala's "Grazing game" and payoff-modified games. This would require us to model these transitions explicitly, but to do that we need to reformulate the problem in terms of cognitive architectures.
 
 Skyrms's agents do not possess any shared beliefs and coordinate strategies using solely interactional dependencies and environmental asymmetries. They are cue-based detection systems, in Sterelny's terms, meaning that they possess the simplest possible representational grade of tracking only genetically hard-wired environmental cues. Guala's example of butterflies correlating strategies based on the order of occupying of a sun spot is an example of such agent and of an objective non-epistemic environmental dependency. From a modeling point of view, Skyrms's agents are *simple reinforcement learners (RL)* [@erev1998] who update strategies on the observed objective frequencies and not representations. They do not have any *beliefs* to update.
@@ -2992,256 +3058,257 @@ Okasha's view of  agents as "as if" Bayesian is consistent with Skyrms's approac
 
 Tracking of and coordinating upon the latent environmental features can be modeled as conditional inference, where occurrence of one cue is assessed according to the occurrence of another one, thus establishing associations. This inference itself evolves from the interaction of agents with environment. 
 
-As Skyrms's agents do not possess any rationality and beliefs, although they exhibit seemingly rational aggregate behavior, they are modeled either as evolutionary agents (phenotypes) or as simple learners (reinforcement learning agents) [@skyrms2010; @skyrms2014]. We will model them as RL agents. Guala's agents are trickier to model as there is no straightforward way in the literature to represent them. Although they are conditional, epistemic and coordinate on shared beliefs, Guala portray them as boundedly rational agents learning from observed empirical frequencies akin to RL-agents. And although they do not express full Bayesian rationality, they still have conditional probabilities on beliefs given certain signals, meaning that they can be modeled as Bayesian agents. This is why we will model them as hybrid RL-agents with Bayesian updating components. 
+As Skyrms's agents do not possess any rationality and beliefs, although they exhibit seemingly rational aggregate behavior, they are modeled either as evolutionary agents (phenotypes) or as simple learners (reinforcement learning agents) [@skyrms2010; @skyrms2014]. We will model them as RL agents. Guala's agents are trickier to model as there is no straightforward way in the literature to represent them. Although they are conditional, epistemic and coordinate on shared beliefs, Guala portrays them as boundedly rational agents learning from observed empirical frequencies akin to RL-agents. And although they do not express full Bayesian rationality, they still have conditional probabilities on beliefs given certain signals, meaning that they can be modeled as Bayesian agents. This is why we will model them as hybrid RL-agents with Bayesian updating components.
 
 We are now ready to set up our model of emergence of epistemic correlation from ontic one with niche construction which evolves conditionalization with decoupled representation, effectively solving Guala's problem of "scope of actionable signals" as differentiator between animal and human conventions.
 
-## A formal model of coevolution of cue structure and cognitive types
-Our model focuses on environmental asymmetry aligning closely with *informational niche construction* through acting upon information extracted from observed coordination patterns. It shows how conditional epistemic agents with decoupled representation conditioning their strategy selection on normative expectations might have evolved from simple reactive cue-based RL agents.
 
-At the core is a *Hawk-Dove-Bourgeois conflict over asymmetric roles* (Owner vs. Intruder), with *partial information* about roles mediated by environmental "translucency" modeled as cue entropy. Agents adapt not just actions, but *cue representation types*: from raw signals to compressed summaries of interaction history. This tracks the Skyrmsian insight that signaling systems evolve not from predefined symbols, but from the iterative feedback between learning, context, and selection. We base the model on theories of Skyrms, Sterelny and Guala.
-
-From Skyrms, we take the notion and mechanistic approach to the emergence of *correlated conventions* [@skyrms1994] and appeal to his general idea how equilibria emerge from local reinforcement and selection. A key limitation of Skyrms’ models, however, is in the assumption of fixed sets of roles and environmental states. This leaves unexamined a key epistemological issue: what happens when the *categories themselves are underdetermined* or must be learned? In the real world, agents often face *ambiguity about the structure of the game itself*. Roles are not labeled, and cues are not tagged with semantic content. Rather than responding to a clearly defined cue, agents must infer structure from partial observations. This demands not only strategic learning but *representational evolution*. This is where Skyrms’ account runs up against a deeper epistemic problem: How do agents learn what to represent? How does cue structure evolve when it is not directly tethered to objective, reliable categories?
-
-From Sterelny, we take the idea of *environmentally scaffolded cognition*, where external regularities allow for increasingly offloaded cognitive structure. We integrate Skyrmsian notion of *environmental asymmetries* (specifically, the role in Hawk-Dove-Bourgeois game). Sterelny's notion of decoupled representation shows how cognition can become more abstract over time, as organisms come to rely on higher-order correlations and longer-range patterns. However, Sterelny leaves open the mechanism by which more abstract representations are constructed (aside from informational niche construction). He focuses on the benefits of scaffolding but not on how exactly agents might shift from cue-following to *representation construction*. Our model takes this step by simulating how agents gradually *internalize abstract categories* through interaction with each other and reading environmental cues. In particular, our agents move from *signal detection* to *cue abstraction*: learning what regularities to track and what distinctions to ignore. This is a formal instantiation of Sterelny’s claim that cognition evolves in tandem with the informational environment but adds specificity about how this tandem development occurs.
-
-From Guala, we take the architecture of regulative rules as equilibria and private rules to investigates how they are being bridged and how abstract social facts (e.g., roles, expectations) come to structure individual decisions. At the same time, Guala acknowledges that institutional functioning depends on agents having the *epistemic capacity to track these structures* via internalized rules as recipes for action. People must be able to recognize roles, understand norms, and anticipate sanctions. But Guala’s realism creates a puzzle: if institutions are real and external, how do agents come to *represent* them accurately? What prevents circularity that epistemic representations merely reflect social expectations rather than real underlying patterns? Our model provides a candidate solution. Agents in our simulation evolve *epistemic representations*—internal cue structures—not through shared agreement, but through adaptive feedback from the environment. Some representations stabilize because they afford better coordination in noisy conditions. Others fade because they fail to compress relevant regularities. The model thus captures Guala’s intuition that institutions are *external, while providing a mechanism for how internal representations can come to *mirror* them without presupposing them. In other words, the epistemic does not merely reflect the ontic—it *tracks* it, imperfectly but adaptively.
-
-Our model represents agent’s ability to *evolve the representation of environmental structure* in cue form moving from direct signal detection to higher-order contextual inference. Moreover, agents not just learn to represent better, but change the environment so that other agents see newly emerged consistent interaction patterns as noisy cues, exerting selective pressure.
-
-Agents interact in repeated asymmetric Hawk-Dove-Bourgeois games, where they must infer others’ roles (owner vs. intruder) through partial cues. Over time, they evolve both their action strategies and the internal representations (or “cue types”) they use to make decisions. These cues can be raw percepts, role-action patterns, or abstract contextual compressions like role-action-observation.
-
-I find that as environmental ambiguity increases, agents adapt not merely by changing strategies, but by *changing what kind of information they track* thus moving from low-level detection to context-dependent *inference*. This shift mirrors real-world institutional emergence, where shared abstract representations underpin coordination even when perceptual signals are unreliable. And all this if "for free" and without notion of "collective intentionality" proper as in "Standard Model of Social Ontology"! At least, such intentionality might exist analytically as a statistical regularity of environment rather that metaphysical property of the social world.
-
-The model thus connects the dots between Skyrms’ reinforcement-based agents, Sterelny’s account of cognitive niche construction, and Guala’s unified social ontology. Most importantly, it provides a formal, dynamical account of how epistemic correlations can emerge from ontic ones, thus addressing a core puzzle in social epistemology and philosophy of social science.
-
-### Conceptual framework
-I propose a dynamic framework in which agents evolve not just strategies but *representational structures*, enabling them to process cues with increasing abstraction. This is very much in line with @planer-godfrey2021 with their idea of co-evolution of coordination and cognitive capacities. These representational structures are classified into cognitive types, each corresponding to a different *level of epistemic engagement with environmental regularities*.
-
-I frame this evolution as a response to *three interlocking pressures*:
-
-1. *Translucency*: the partial observability of social roles due to noisy environment,
-2. *Coordination success*: the fitness benefits of aligning actions across role asymmetries,
-3. *Cue compression*: the selective advantage of reusing and abstracting cues across contexts.
-
-Together, these pressures drive a shift from perception-bound responses to higher-order, abstract representations.
-
-Agents in the model play HDB and begin with access only to *unlabeled, noisy perceptual cues*. Each interaction randomly assigns roles (owner or intruder), but the roles are not directly observable. Instead, agents infer roles through partial information or *translucency*, parameterized by $T \in [0, 1]$, the probability that a perceived cue is in fact inverted (if "owner" is actually an "intruder"). That is, when agent $i$ holds role $r_i$, the cue it perceives is:
-
-$$
-\text{perceived}_i = 
-\begin{cases}
-r_i & \text{with probability } 1 - T, \\
-\text{invert}(r_i) & \text{with probability } T.
-\end{cases}
-$$
-
-Agents maintain a *Q-table* mapping cues to action weights over strategies $\{ \text{Hawk}, \text{Dove} \}$, updated via reinforcement learning with a fixed learning rate $\alpha$. However, how the cue is encoded—that is, *what counts as "the same situation"* for the purposes of updating—varies across cognitive types. These types are dynamically determined based on the agent's internal representation history:
-
-* *Detection* agents treat raw ontic cues like "owner" or "intruder" as distinct and unstructured. They learn separate action mappings for each role-as-perceived, without abstraction;
-
-* *Robust* agents are, as in Sterelny, "robust trackers" and condition their action on *cue-action pair frequencies*. When certain actions dominate in a cue context like 75% of intruder encounters result in Dove, they construct a new structured cue as a tuple $(r, a^*)$, where $a^*$ is the dominant action. This reflects an *abductive abstraction*, retaining cue identity but bundling it with observed behavioral regularities. 
-
-* *Decoupled* agents construct *contextual representations* decoupled from the immediate stimulus of the form $\text{cue} = (\text{'contextual'}, r, a^*)$. These agents effectively treat cue-action regularities as indicative of *latent social roles* or *proto-institutional contexts*, abstracted from perception.
-
-Cognitive type is therefore not hard-coded, but *emerges* based on the structure of the agent’s cue-action mapping and the stability of social regularities. The type classification is implemented by pattern-matching over the contents of the agent's Q-table.
-
-In encoding lower-level flat perceptual cues, agents do no perform aggregate statistical inference themselves or have private memory log. Instead, they offload it to environment due to informational niche construction. The environment itself, however, does not perform inference like a brain does. Instead, it is a *statistical aggregator* of behavior over generations. This statistical aggregation becomes *functionally equivalent* to inference because:
-
-* It tracks population-wide behaviors over time;
-* It identifies consistent regularities (e.g., "80% of owners play Hawk");
-* These regularities are *fed back* into the cue system used by agents.
-
-This is what we call *evolutionary scaffolding*: a process by which *selection pressures and feedback loops* shape the environment so that it encodes and stabilizes patterns — without any agent explicitly computing them. It works as follows:
-
-* Agents play games repeatedly;
-* The actions they take are stored;
-* The model computes the most frequent action per role (owner or intruder);
-* If one action dominates (above 60%), it is flagged as a *salient cue*;
-* Future agents then receive this dominant behavior as part of their perceptual cue set.
-
-From an *evolutionary perspective*, the system discovers a *correlated convention* through repeated interactions. No agent *understands* the correlation, but:
-
-* Successful coordination reinforces strategies;
-* Those strategies create statistical patterns;
-* The patterns are used by future agents as environmental cues (Skyrmsian asymmetries).
-
-This is similar to Skyrms' correlated equilibrium or Sterelny’s scaffolded learning, but grounded in ecological regularities, not reasoning. So, the "inference" is done not by individuals but by population-environment feedback loop, which is aligned with models of stigmergy, distributed cognition, or niche construction:
-
-- Regularities arise through many agents’ actions;
-- These patterns persist in the environment;
-- New agents can exploit them as if they were inferred, which resembles Okasha's "as-if" evolutionary Bayesianism [@okasha2015].
-
-This serves to show how agents could have evolved to rely on environmentally encoded norms, not internal models — minimal form of representation that can gradually scaffold more complex representations over time.
-
-As an example, consider territorial birds, who exemplify robust tracking systems in Sterelny's representational gradient [@sterelny2003]. There, owners defend and intruders retreat. Over many interactions, individuals don’t observe ownership directly, but can detect behavioral regularities like birds near certain landmarks act aggressively. Over time, nest location and aggressive behavior becomes a cue bundle or a "socially constructed signal" of ownership. Even naive birds learn: “When I see aggressive behavior near certain spots → I retreat”. Of course, environment does not literally "think" but stable features and consistent behavior coalesce into an external, detectable regularity. The core idea here is Sterelnian capacity for *information integration* which accounts for more and more complex conditional logic learned and employed by agents.
-
-In the model, each interaction yields a pairwise payoff depending on the roles and chosen actions of the agents. The *underlying game* is a version of asymmetric Hawk-Dove-Bourgeois:
-
-<div class="table">
-
-| Role Combination   | Action Pair   | Payoff (i, j)    |
-| ------------------ | ------------- | ---------------- |
-| Owner vs. Intruder | Hawk vs. Dove | (1.5, 1.5)       |
-| Intruder vs. Owner | Dove vs. Hawk | (1.5, 1.5)       |
-| Any vs. Any        | Hawk vs. Dove | (2, 1) or (1, 2) |
-| Any vs. Any        | Hawk vs. Hawk | (0, 0)           |
-| Any vs. Any        | Dove vs. Dove | (1, 1)           |
-
-</div>
-
-The highest-payoff configuration (1.5 each) emerges when *role-asymmetric coordination* occurs: the owner plays Hawk, and the intruder plays Dove, or vice versa. This requires agents to *differentiate roles* despite cue noise and achieve *predictable action alignment*.
-
-Agents that generalize across cues too early may fail to differentiate roles, but agents that fail to generalize may waste learning opportunities by treating every situation as unique. Thus, the evolution of cue abstraction is *shaped by a trade-off*: between exploiting structured regularities and avoiding misgeneralization under high translucency.
-
-The *selection environment* rewards agents who achieve higher payoffs. Over generations, successful agents reproduce proportionally to their accrued rewards, with offspring inheriting and slightly mutating their Q-tables. The model tracks several key quantities per generation:
-
-* *Salient cue use*: proportion of agents using structured cue types (robust tracking or decoupled representations);
-* *Coordination succesS*: proportion of interactions achieving role-asymmetric coordination;
-* *Translucency level*: Systematically increased to simulate increasingly noisy environments (due to compound effects if actions of agents or stygmery).
-
-These measures serve as *selection pressures* shaping the distribution of cognitive types in the population. As translucency increases, reliance on raw cues becomes less effective. Agents that internalize higher-order cues gain a fitness advantage by compressing the strategic landscape and thus mirroring the kind of *normatively-driven tracking* envisioned by Guala, for example even in his "Grazing game" (the very structure of game is due to normative expectations).
-
-From a broader perspective, our model simulates the *evolution of representations* as an evolutionary advantage for coordination. Rather than encoding strategies over fixed roles, agents *construct functional categories* through interaction history. These categories are neither innate nor externally provided from the outset. Instead, they are *discovered* as abstractions that yield stable behavior in an otherwise ambiguous environment. This approach shifts the modeling focus from *"What do agents know?"* to *"What structures do they build to make sense of ambiguous cues?"*.
-
-The result is a simulated pathway from *cue reactivity* to *proto-institutional cognition* where agents internalize patterns of behavior stable across noisy contexts and treat them as structuring expectations about others’ behavior.
-
-### Mathematical Model
-
-I formalize the evolutionary learning dynamics of our agents as a multi-level stochastic system with embedded reinforcement processes and evolving representational structures. The model tracks the evolution of strategies and the transformation of cue mappings under changing environmental pressure, most notably: the translucency of role perception.
-
-Let the population be of size $N$, evolving over $G$ generations. Each agent $a_i \in \mathcal{A}$ has a learning rate $\alpha$ and a *cue-action value map*:
-
-$$Q: \mathcal{C} \rightarrow \mathbb{R}^2$$ 
-
-where $\mathcal{C}$ is the agent’s set of internal cues, and $Q(c) = (Q_c^H, Q_c^D)$ represents the weights for choosing Hawk or Dove in context $c \in \mathcal{C}$. The *probability of choosing action $a \in \{\text{Hawk}, \text{Dove}\}$* under cue $c$ is given by normalized softmax[^softmax]:
-
-$$
-P(a \mid c) = \frac{Q_c^a}{Q_c^H + Q_c^D}
-$$
-
-[^softmax]: The softmax function takes a vector of real numbers as input and transforms it into a probability distribution: $\softmax(z_i) = \frac{e^{z_i}}{\sum_{j} e^{z_j}}$, where $z_i$ is the $i$-th element of the input vector, $exp(z_i)$ is the exponential function applied to $z_i$, which ensures that all values are positive. $sum(exp(z_j) for all j)$ is the sum of the exponentials of all elements in the input vector. Softmax is used to for classification tasks and helps to numerically assess to which class an element belongs with a certain probability. In our case, the probability of choosing action $a$ (Hawk or Dove) under cue $c$ is given as a vector of real numbers $(Q_c^H, Q_c^D)$ because it represents the *weights* for choosing each action *within that specific context*. 
-
-Each generation comprises pairwise interactions in a Hawk-Dove-Bourgeois game with asymmetric roles (Owner, Intruder). The perceived role $\tilde{r}$ is distorted by increasing *translucency $\tau \in [0, 1]$*, which represents the probability of misperceiving another’s role. Perception follows:
-
-$$
-\Pr[\tilde{r}_i = r_j] = 1 - \tau.
-$$
-
-After each interaction and given cue $c \in \mathcal{C}$, chosen action $a \in \{H, D\}$, and reward $r$, each agent updates its action-value estimate  using a *temporal difference reinforcement learning rule*:
-
-$$
-Q_{c}^{a} \leftarrow Q_{c}^{a} + \alpha \cdot (R - Q_{c}^{a})
-$$
-
-where:
-
-* $\alpha \in (0, 1)$ is the learning rate,
-* $R$ is the received payoff for taking action $a$ under cue $c$.
-
-This incremental update allows agents to gradually adapt their responses over time. It does not assume complete state observability or optimality, aligning with bounded rationality endorsed by Guala.
-
-Next, agents perceive a cue $\tilde{r} \in \{\text{owner}, \text{intruder}\}$, possibly distorted by translucency $T$, such that:
-
-$$
-\Pr(\tilde{r} = r) = 1 - T, \quad \Pr(\tilde{r} = \text{invert}(r)) = T
-$$
-
-Agents construct cues based on observed role-action frequencies over time. I define the *dominance ratio* for action $a$ under perceived role $\tilde{r}$ as:
-
-$$
-D_{\tilde{r}}^a = \frac{\text{count}(\tilde{r}, a)}{\sum_{a'} \text{count}(\tilde{r}, a')}
-$$
-
-Given a dominance threshold $\theta$, agents encode cues based on type as follows:
-
-* *Detection* (ontic cues): use flat cue $c = \tilde{r}$.
-* *Robust* (salient cues): if $\exists a^* \mid D_{\tilde{r}}^{a^*} > \theta_R$, encode cue as $c = (\tilde{r}, a^*)$.
-* *Decoupled* (integrated contextual cue): if the same condition holds and agent is already "Robust", encode cue as $c = (\text{"context"}, \tilde{r}, a^*)$.
-
-Let $f_{r}(a)$ be the frequency of action $a$ taken by agents in role $r$. The salient cue is used if:
-
-$$
-\max_{a} \left( \frac{f_r(a)}{\sum_{a'} f_r(a')} \right) > \theta_s,
-$$
-
-with $\theta_s = 0.6$ Detection agents transition to Robust ones and with $\theta_c = 0.75$ Robust agents transition to Decoupled ones. Thus, cue abstraction emerges endogenously from interaction history and stabilizes when regularities become sufficiently structured.
-
-In terms of payoff matrix, let $A = \{\text{Hawk}, \text{Dove}\}$ be the action set. The expected payoffs for any action pair $(a_i, a_j)$ given roles $(r_i, r_j)$ are defined by the asymmetric matrix:
-
-$$
-\text{Payoff}(r_i, a_i, r_j, a_j) =
-\begin{cases}
-(1.5, 1.5) & \text{if } (r_i, a_i, r_j, a_j) \in \{ (\text{owner}, H, \text{intruder}, D), (\text{intruder}, D, \text{owner}, H) \} \\
-(2, 1) & \text{if } a_i = H, a_j = D \\
-(1, 2) & \text{if } a_i = D, a_j = H \\
-(1, 1) & \text{if } a_i = D, a_j = D \\
-(0, 0) & \text{if } a_i = H, a_j = H
-\end{cases}
-$$
-
-This payoff matrix favors *role-asymmetric coordination*, but achieving it requires agents to consistently interpret roles from imperfect cues. Importantly, here I do not treat Bourgeois as a separate strategy but as a explicitly conditional upon a cue, which helps to treat environmental asymmetries as extra-game.
-
-Fitness is directly proportional to cumulative rewards in each generation. New agents are sampled with probability proportional to fitness. After $G$ interactions per generation, agents are selected proportionally to their cumulative rewards $R_i$. Let the fitness $F_i$ be:
-
-$$
-F_i = \frac{R_i}{\sum_{j=1}^{N} R_j}
-$$
-
-Each new agent is sampled with probability $F_i$, inheriting the Q-table of its parent (copied without mutation for simplicity, though mutation could be incorporated). This replicator dynamic implements *fitness-proportional selection* on representational strategies rather than on fixed behaviors. It means that the better agents aggregately represent new translucent cues, the more probably they will reproduce.
-
-I track three key population-level metrics per generation:
-
-1. *Cue abstraction rate* $S(t)$: the average number of structured cue uses per agent, indicating representational complexity;
-2. *Coordination success* $C(t)$: proportion of role-asymmetric Hawk-Dove interactions (Bourgeois-Bourgeois which is ESS here);
-3. *Cognitive type distribution* $\pi_k(t)$: proportion of agents of type $k \in \{\text{Detection}, \text{Robust}, \text{Decoupled}\}$.
-
-These observables evolve under the joint influence of learning, perception noise (via translucency $T(t)$), and selection. Empirically, we observe that increasing $T$ induces selection for more abstract cue representations, which in turn facilitate coordination (back).
-
-## Model results
-### Coordination and cue evolution
-From the early stages of simulation, there was rapid convergence toward simple coordination strategies based on direct cues associated with role perception. Initially, most agents relied on *Detection-type cues*, with strategy updating governed by local reinforcement dynamics. As learning accumulated across generations, agents improved in exploiting role-correlated cues to select conflict strategies (Hawk or Dove) effectively, producing an increase in coordination success.
-
-<div class="table">
-
-![](src/blog/phd-draft/assets/final-model.png)
-<div class="caption">Results of our model: translucency drives the selective pressure for latent structure extraction and integration of information into higher-order cues</div>
-</div>
-
-Over time, however, there was a qualitative shift: some agents began to condition behavior not solely on raw cues, but on *statistical patterns in behavior and payoffs*, thereby evolving *Robust tracking* capacities and salient cues* which are structured cue/dominant-action associations that integrate frequency-dependent context. These agents used compound representations of roles and behavioral histories to select actions more reliably across variable settings.
-
-Eventually, a third class of agents emerged: those that began to rely on contextually abstracted, high-order cues which are *Decoupled representations* (or approximations thereof) which encode conditional structures and behavioral regularities detached from direct perceptual features. These agents interpret situations through embedded contextual regularities, such as common behavior of owners in the presence of high-frequency Dove strategies, enabling coordination even in novel or ambiguous scenarios.
-
-### Cue types transitions
-The transition across cue types can be interpreted as an *evolutionary learning gradient*. Initially, strategy selection is grounded in ontic detection: agents react to what is present. As structured regularities emerge and are reinforced, agents develop more stable role-action correlations, evolving salient cue use. Eventually, through niche construction and recursive interaction, agents begin to *represent* roles and actions as context-dependent functions, marking the emergence of Decoupled, epistemically mediated strategies or *epistemic correlation* just like in Guala's theory.
-
-The shift is not uniform nor universal. There is *heterogeneity* within populations: Detection agents persist alongside Robust and Decoupled agents, with proportions fluctuating according to ecological constraints and population dynamics. This supports the hypothesis that *coordination norms are scaffolded by diverse representational strategies*, rather than imposed by a single cognitive type.
-
-Interestingly, Decoupled agents often outperform others in rapidly shifting environments, but are less robust in highly stable settings where fixed cue-action mappings suffice. This matches findings in cognitive science that link abstraction with generalization under uncertainty [@tenenbaum2011].
-
-### Translucency as environmental selection pressure
-A key control parameter in our simulations is *translucency*: the probability that an agent's role is misperceived by another. Translucency introduces *partial observability* into the model, simulating real-world ambiguity in social interactions.
-
-In the model, increased translucency favors the evolution of more abstract cue representations. As role observability becomes less reliable, Detection-based strategies fail more often, leading to selective pressure for agents who can integrate broader behavioral patterns and contextual inferences. Robust and Decoupled agents rise in frequency under such conditions.
-
-Translucency thus acts as an *environmental gradient driving representational sophistication*. Crucially, this supports the claim that *coordination conventions do not require full common knowledge*, contra Lewisian accounts, but can emerge under ecological constraints through selection on cue-responsiveness and abstraction.
-
-## Methodological reflections
-The model explicitly incorporates ecological feedback and cue salience into the process of norm stabilization. Rather than assuming predefined payoffs or utility functions, it allows the payoff structure to be shaped endogenously through agent interaction. This distinguishes it from classical game-theoretic models, such as those based on repeated coordination games, which typically fix the game's structure ex ante.
-
-Unlike Lewisian models of convention [@lewis1969], which emphasize common knowledge and rational expectation, our model avoids assumptions of global cognition and focuses instead on localized, evolving feedback. Similarly, while evolutionary game theory [@young1998] offers insights into strategy diffusion, it rarely addresses the emergence of normativity or the transition from merely functional behavior to norm-bound convention.
-
-Our approach aligns more closely with recent ecological and enactive models [@barandiaran2009], in that conventions are not imposed externally but arise through the co-adaptation of agents and environments. Importantly, our model integrates this dynamic with explicit role structures, allowing us to trace the evolution of representational and deontic content from non-normative coordination.
-
-Compared to prior work in institutional emergence [@conte1995] or norm internalization [@axelrod986], our model contributes the following advances:
-
-* *Ecological modularity*: different cue ecologies yield distinct conventions, facilitating analysis of ecological constraints on norm formation
-* *Transition dynamics*: I explicitly model the transition from detection-based coordination to decoupled role-cognition and normativity
-* *Emergence of norm representations*: The model provides a mechanistic account of how representational and proto-deontic components evolve from strategic behavior
-* *Gradient of dependence on representation*: It captures the shift from ontic (objective, perceptually anchored) to epistemic (belief-mediated) coordination, consistent with social ontological theories.
-
-This model complements recent computational approaches in cultural evolution [@boyd2005; @henrich2020], yet extends their scope by integrating cognitive and ecological scaffolding of emergent proto-normativity. 
-
+<!-- ## A formal model of coevolution of cue structure and cognitive types -->
+<!-- Our model focuses on environmental asymmetry aligning closely with *informational niche construction* through acting upon information extracted from observed coordination patterns. It shows how conditional epistemic agents with decoupled representation conditioning their strategy selection on normative expectations might have evolved from simple reactive cue-based RL agents. -->
+<!---->
+<!-- At the core is a *Hawk-Dove-Bourgeois conflict over asymmetric roles* (Owner vs. Intruder), with *partial information* about roles mediated by environmental "translucency" modeled as cue entropy. Agents adapt not just actions, but *cue representation types*: from raw signals to compressed summaries of interaction history. This tracks the Skyrmsian insight that signaling systems evolve not from predefined symbols, but from the iterative feedback between learning, context, and selection. We base the model on theories of Skyrms, Sterelny and Guala. -->
+<!---->
+<!-- From Skyrms, we take the notion and mechanistic approach to the emergence of *correlated conventions* [@skyrms1994] and appeal to his general idea how equilibria emerge from local reinforcement and selection. A key limitation of Skyrms’ models, however, is in the assumption of fixed sets of roles and environmental states. This leaves unexamined a key epistemological issue: what happens when the *categories themselves are underdetermined* or must be learned? In the real world, agents often face *ambiguity about the structure of the game itself*. Roles are not labeled, and cues are not tagged with semantic content. Rather than responding to a clearly defined cue, agents must infer structure from partial observations. This demands not only strategic learning but *representational evolution*. This is where Skyrms’ account runs up against a deeper epistemic problem: How do agents learn what to represent? How does cue structure evolve when it is not directly tethered to objective, reliable categories? -->
+<!---->
+<!-- From Sterelny, we take the idea of *environmentally scaffolded cognition*, where external regularities allow for increasingly offloaded cognitive structure. We integrate Skyrmsian notion of *environmental asymmetries* (specifically, the role in Hawk-Dove-Bourgeois game). Sterelny's notion of decoupled representation shows how cognition can become more abstract over time, as organisms come to rely on higher-order correlations and longer-range patterns. However, Sterelny leaves open the mechanism by which more abstract representations are constructed (aside from informational niche construction). He focuses on the benefits of scaffolding but not on how exactly agents might shift from cue-following to *representation construction*. Our model takes this step by simulating how agents gradually *internalize abstract categories* through interaction with each other and reading environmental cues. In particular, our agents move from *signal detection* to *cue abstraction*: learning what regularities to track and what distinctions to ignore. This is a formal instantiation of Sterelny’s claim that cognition evolves in tandem with the informational environment but adds specificity about how this tandem development occurs. -->
+<!---->
+<!-- From Guala, we take the architecture of regulative rules as equilibria and private rules to investigates how they are being bridged and how abstract social facts (e.g., roles, expectations) come to structure individual decisions. At the same time, Guala acknowledges that institutional functioning depends on agents having the *epistemic capacity to track these structures* via internalized rules as recipes for action. People must be able to recognize roles, understand norms, and anticipate sanctions. But Guala’s realism creates a puzzle: if institutions are real and external, how do agents come to *represent* them accurately? What prevents circularity that epistemic representations merely reflect social expectations rather than real underlying patterns? Our model provides a candidate solution. Agents in our simulation evolve *epistemic representations*—internal cue structures—not through shared agreement, but through adaptive feedback from the environment. Some representations stabilize because they afford better coordination in noisy conditions. Others fade because they fail to compress relevant regularities. The model thus captures Guala’s intuition that institutions are *external, while providing a mechanism for how internal representations can come to *mirror* them without presupposing them. In other words, the epistemic does not merely reflect the ontic—it *tracks* it, imperfectly but adaptively. -->
+<!---->
+<!-- Our model represents agent’s ability to *evolve the representation of environmental structure* in cue form moving from direct signal detection to higher-order contextual inference. Moreover, agents not just learn to represent better, but change the environment so that other agents see newly emerged consistent interaction patterns as noisy cues, exerting selective pressure. -->
+<!---->
+<!-- Agents interact in repeated asymmetric Hawk-Dove-Bourgeois games, where they must infer others’ roles (owner vs. intruder) through partial cues. Over time, they evolve both their action strategies and the internal representations (or “cue types”) they use to make decisions. These cues can be raw percepts, role-action patterns, or abstract contextual compressions like role-action-observation. -->
+<!---->
+<!-- I find that as environmental ambiguity increases, agents adapt not merely by changing strategies, but by *changing what kind of information they track* thus moving from low-level detection to context-dependent *inference*. This shift mirrors real-world institutional emergence, where shared abstract representations underpin coordination even when perceptual signals are unreliable. And all this if "for free" and without notion of "collective intentionality" proper as in "Standard Model of Social Ontology"! At least, such intentionality might exist analytically as a statistical regularity of environment rather that metaphysical property of the social world. -->
+<!---->
+<!-- The model thus connects the dots between Skyrms’ reinforcement-based agents, Sterelny’s account of cognitive niche construction, and Guala’s unified social ontology. Most importantly, it provides a formal, dynamical account of how epistemic correlations can emerge from ontic ones, thus addressing a core puzzle in social epistemology and philosophy of social science. -->
+<!---->
+<!-- ### Conceptual framework -->
+<!-- I propose a dynamic framework in which agents evolve not just strategies but *representational structures*, enabling them to process cues with increasing abstraction. This is very much in line with @planer-godfrey2021 with their idea of co-evolution of coordination and cognitive capacities. These representational structures are classified into cognitive types, each corresponding to a different *level of epistemic engagement with environmental regularities*. -->
+<!---->
+<!-- I frame this evolution as a response to *three interlocking pressures*: -->
+<!---->
+<!-- 1. *Translucency*: the partial observability of social roles due to noisy environment, -->
+<!-- 2. *Coordination success*: the fitness benefits of aligning actions across role asymmetries, -->
+<!-- 3. *Cue compression*: the selective advantage of reusing and abstracting cues across contexts. -->
+<!---->
+<!-- Together, these pressures drive a shift from perception-bound responses to higher-order, abstract representations. -->
+<!---->
+<!-- Agents in the model play HDB and begin with access only to *unlabeled, noisy perceptual cues*. Each interaction randomly assigns roles (owner or intruder), but the roles are not directly observable. Instead, agents infer roles through partial information or *translucency*, parameterized by $T \in [0, 1]$, the probability that a perceived cue is in fact inverted (if "owner" is actually an "intruder"). That is, when agent $i$ holds role $r_i$, the cue it perceives is: -->
+<!---->
+<!-- $$ -->
+<!-- \text{perceived}_i =  -->
+<!-- \begin{cases} -->
+<!-- r_i & \text{with probability } 1 - T, \\ -->
+<!-- \text{invert}(r_i) & \text{with probability } T. -->
+<!-- \end{cases} -->
+<!-- $$ -->
+<!---->
+<!-- Agents maintain a *Q-table* mapping cues to action weights over strategies $\{ \text{Hawk}, \text{Dove} \}$, updated via reinforcement learning with a fixed learning rate $\alpha$. However, how the cue is encoded—that is, *what counts as "the same situation"* for the purposes of updating—varies across cognitive types. These types are dynamically determined based on the agent's internal representation history: -->
+<!---->
+<!-- * *Detection* agents treat raw ontic cues like "owner" or "intruder" as distinct and unstructured. They learn separate action mappings for each role-as-perceived, without abstraction; -->
+<!---->
+<!-- * *Robust* agents are, as in Sterelny, "robust trackers" and condition their action on *cue-action pair frequencies*. When certain actions dominate in a cue context like 75% of intruder encounters result in Dove, they construct a new structured cue as a tuple $(r, a^*)$, where $a^*$ is the dominant action. This reflects an *abductive abstraction*, retaining cue identity but bundling it with observed behavioral regularities.  -->
+<!---->
+<!-- * *Decoupled* agents construct *contextual representations* decoupled from the immediate stimulus of the form $\text{cue} = (\text{'contextual'}, r, a^*)$. These agents effectively treat cue-action regularities as indicative of *latent social roles* or *proto-institutional contexts*, abstracted from perception. -->
+<!---->
+<!-- Cognitive type is therefore not hard-coded, but *emerges* based on the structure of the agent’s cue-action mapping and the stability of social regularities. The type classification is implemented by pattern-matching over the contents of the agent's Q-table. -->
+<!---->
+<!-- In encoding lower-level flat perceptual cues, agents do no perform aggregate statistical inference themselves or have private memory log. Instead, they offload it to environment due to informational niche construction. The environment itself, however, does not perform inference like a brain does. Instead, it is a *statistical aggregator* of behavior over generations. This statistical aggregation becomes *functionally equivalent* to inference because: -->
+<!---->
+<!-- * It tracks population-wide behaviors over time; -->
+<!-- * It identifies consistent regularities (e.g., "80% of owners play Hawk"); -->
+<!-- * These regularities are *fed back* into the cue system used by agents. -->
+<!---->
+<!-- This is what we call *evolutionary scaffolding*: a process by which *selection pressures and feedback loops* shape the environment so that it encodes and stabilizes patterns — without any agent explicitly computing them. It works as follows: -->
+<!---->
+<!-- * Agents play games repeatedly; -->
+<!-- * The actions they take are stored; -->
+<!-- * The model computes the most frequent action per role (owner or intruder); -->
+<!-- * If one action dominates (above 60%), it is flagged as a *salient cue*; -->
+<!-- * Future agents then receive this dominant behavior as part of their perceptual cue set. -->
+<!---->
+<!-- From an *evolutionary perspective*, the system discovers a *correlated convention* through repeated interactions. No agent *understands* the correlation, but: -->
+<!---->
+<!-- * Successful coordination reinforces strategies; -->
+<!-- * Those strategies create statistical patterns; -->
+<!-- * The patterns are used by future agents as environmental cues (Skyrmsian asymmetries). -->
+<!---->
+<!-- This is similar to Skyrms' correlated equilibrium or Sterelny’s scaffolded learning, but grounded in ecological regularities, not reasoning. So, the "inference" is done not by individuals but by population-environment feedback loop, which is aligned with models of stigmergy, distributed cognition, or niche construction: -->
+<!---->
+<!-- - Regularities arise through many agents’ actions; -->
+<!-- - These patterns persist in the environment; -->
+<!-- - New agents can exploit them as if they were inferred, which resembles Okasha's "as-if" evolutionary Bayesianism [@okasha2015]. -->
+<!---->
+<!-- This serves to show how agents could have evolved to rely on environmentally encoded norms, not internal models — minimal form of representation that can gradually scaffold more complex representations over time. -->
+<!---->
+<!-- As an example, consider territorial birds, who exemplify robust tracking systems in Sterelny's representational gradient [@sterelny2003]. There, owners defend and intruders retreat. Over many interactions, individuals don’t observe ownership directly, but can detect behavioral regularities like birds near certain landmarks act aggressively. Over time, nest location and aggressive behavior becomes a cue bundle or a "socially constructed signal" of ownership. Even naive birds learn: “When I see aggressive behavior near certain spots → I retreat”. Of course, environment does not literally "think" but stable features and consistent behavior coalesce into an external, detectable regularity. The core idea here is Sterelnian capacity for *information integration* which accounts for more and more complex conditional logic learned and employed by agents. -->
+<!---->
+<!-- In the model, each interaction yields a pairwise payoff depending on the roles and chosen actions of the agents. The *underlying game* is a version of asymmetric Hawk-Dove-Bourgeois: -->
+<!---->
+<!-- <div class="table"> -->
+<!---->
+<!-- | Role Combination   | Action Pair   | Payoff (i, j)    | -->
+<!-- | ------------------ | ------------- | ---------------- | -->
+<!-- | Owner vs. Intruder | Hawk vs. Dove | (1.5, 1.5)       | -->
+<!-- | Intruder vs. Owner | Dove vs. Hawk | (1.5, 1.5)       | -->
+<!-- | Any vs. Any        | Hawk vs. Dove | (2, 1) or (1, 2) | -->
+<!-- | Any vs. Any        | Hawk vs. Hawk | (0, 0)           | -->
+<!-- | Any vs. Any        | Dove vs. Dove | (1, 1)           | -->
+<!---->
+<!-- </div> -->
+<!---->
+<!-- The highest-payoff configuration (1.5 each) emerges when *role-asymmetric coordination* occurs: the owner plays Hawk, and the intruder plays Dove, or vice versa. This requires agents to *differentiate roles* despite cue noise and achieve *predictable action alignment*. -->
+<!---->
+<!-- Agents that generalize across cues too early may fail to differentiate roles, but agents that fail to generalize may waste learning opportunities by treating every situation as unique. Thus, the evolution of cue abstraction is *shaped by a trade-off*: between exploiting structured regularities and avoiding misgeneralization under high translucency. -->
+<!---->
+<!-- The *selection environment* rewards agents who achieve higher payoffs. Over generations, successful agents reproduce proportionally to their accrued rewards, with offspring inheriting and slightly mutating their Q-tables. The model tracks several key quantities per generation: -->
+<!---->
+<!-- * *Salient cue use*: proportion of agents using structured cue types (robust tracking or decoupled representations); -->
+<!-- * *Coordination succesS*: proportion of interactions achieving role-asymmetric coordination; -->
+<!-- * *Translucency level*: Systematically increased to simulate increasingly noisy environments (due to compound effects if actions of agents or stygmery). -->
+<!---->
+<!-- These measures serve as *selection pressures* shaping the distribution of cognitive types in the population. As translucency increases, reliance on raw cues becomes less effective. Agents that internalize higher-order cues gain a fitness advantage by compressing the strategic landscape and thus mirroring the kind of *normatively-driven tracking* envisioned by Guala, for example even in his "Grazing game" (the very structure of game is due to normative expectations). -->
+<!---->
+<!-- From a broader perspective, our model simulates the *evolution of representations* as an evolutionary advantage for coordination. Rather than encoding strategies over fixed roles, agents *construct functional categories* through interaction history. These categories are neither innate nor externally provided from the outset. Instead, they are *discovered* as abstractions that yield stable behavior in an otherwise ambiguous environment. This approach shifts the modeling focus from *"What do agents know?"* to *"What structures do they build to make sense of ambiguous cues?"*. -->
+<!---->
+<!-- The result is a simulated pathway from *cue reactivity* to *proto-institutional cognition* where agents internalize patterns of behavior stable across noisy contexts and treat them as structuring expectations about others’ behavior. -->
+<!---->
+<!-- ### The model -->
+<!---->
+<!-- I formalize the evolutionary learning dynamics of our agents as a multi-level stochastic system with embedded reinforcement processes and evolving representational structures. The model tracks the evolution of strategies and the transformation of cue mappings under changing environmental pressure, most notably: the translucency of role perception. -->
+<!---->
+<!-- Let the population be of size $N$, evolving over $G$ generations. Each agent $a_i \in \mathcal{A}$ has a learning rate $\alpha$ and a *cue-action value map*: -->
+<!---->
+<!-- $$Q: \mathcal{C} \rightarrow \mathbb{R}^2$$  -->
+<!---->
+<!-- where $\mathcal{C}$ is the agent’s set of internal cues, and $Q(c) = (Q_c^H, Q_c^D)$ represents the weights for choosing Hawk or Dove in context $c \in \mathcal{C}$. The *probability of choosing action $a \in \{\text{Hawk}, \text{Dove}\}$* under cue $c$ is given by normalized softmax[^softmax]: -->
+<!---->
+<!-- $$ -->
+<!-- P(a \mid c) = \frac{Q_c^a}{Q_c^H + Q_c^D} -->
+<!-- $$ -->
+<!---->
+<!-- [^softmax]: The softmax function takes a vector of real numbers as input and transforms it into a probability distribution: $\softmax(z_i) = \frac{e^{z_i}}{\sum_{j} e^{z_j}}$, where $z_i$ is the $i$-th element of the input vector, $exp(z_i)$ is the exponential function applied to $z_i$, which ensures that all values are positive. $sum(exp(z_j) for all j)$ is the sum of the exponentials of all elements in the input vector. Softmax is used to for classification tasks and helps to numerically assess to which class an element belongs with a certain probability. In our case, the probability of choosing action $a$ (Hawk or Dove) under cue $c$ is given as a vector of real numbers $(Q_c^H, Q_c^D)$ because it represents the *weights* for choosing each action *within that specific context*.  -->
+<!---->
+<!-- Each generation comprises pairwise interactions in a Hawk-Dove-Bourgeois game with asymmetric roles (Owner, Intruder). The perceived role $\tilde{r}$ is distorted by increasing *translucency $\tau \in [0, 1]$*, which represents the probability of misperceiving another’s role. Perception follows: -->
+<!---->
+<!-- $$ -->
+<!-- \Pr[\tilde{r}_i = r_j] = 1 - \tau. -->
+<!-- $$ -->
+<!---->
+<!-- After each interaction and given cue $c \in \mathcal{C}$, chosen action $a \in \{H, D\}$, and reward $r$, each agent updates its action-value estimate  using a *temporal difference reinforcement learning rule*: -->
+<!---->
+<!-- $$ -->
+<!-- Q_{c}^{a} \leftarrow Q_{c}^{a} + \alpha \cdot (R - Q_{c}^{a}) -->
+<!-- $$ -->
+<!---->
+<!-- where: -->
+<!---->
+<!-- * $\alpha \in (0, 1)$ is the learning rate, -->
+<!-- * $R$ is the received payoff for taking action $a$ under cue $c$. -->
+<!---->
+<!-- This incremental update allows agents to gradually adapt their responses over time. It does not assume complete state observability or optimality, aligning with bounded rationality endorsed by Guala. -->
+<!---->
+<!-- Next, agents perceive a cue $\tilde{r} \in \{\text{owner}, \text{intruder}\}$, possibly distorted by translucency $T$, such that: -->
+<!---->
+<!-- $$ -->
+<!-- \Pr(\tilde{r} = r) = 1 - T, \quad \Pr(\tilde{r} = \text{invert}(r)) = T -->
+<!-- $$ -->
+<!---->
+<!-- Agents construct cues based on observed role-action frequencies over time. I define the *dominance ratio* for action $a$ under perceived role $\tilde{r}$ as: -->
+<!---->
+<!-- $$ -->
+<!-- D_{\tilde{r}}^a = \frac{\text{count}(\tilde{r}, a)}{\sum_{a'} \text{count}(\tilde{r}, a')} -->
+<!-- $$ -->
+<!---->
+<!-- Given a dominance threshold $\theta$, agents encode cues based on type as follows: -->
+<!---->
+<!-- * *Detection* (ontic cues): use flat cue $c = \tilde{r}$. -->
+<!-- * *Robust* (salient cues): if $\exists a^* \mid D_{\tilde{r}}^{a^*} > \theta_R$, encode cue as $c = (\tilde{r}, a^*)$. -->
+<!-- * *Decoupled* (integrated contextual cue): if the same condition holds and agent is already "Robust", encode cue as $c = (\text{"context"}, \tilde{r}, a^*)$. -->
+<!---->
+<!-- Let $f_{r}(a)$ be the frequency of action $a$ taken by agents in role $r$. The salient cue is used if: -->
+<!---->
+<!-- $$ -->
+<!-- \max_{a} \left( \frac{f_r(a)}{\sum_{a'} f_r(a')} \right) > \theta_s, -->
+<!-- $$ -->
+<!---->
+<!-- with $\theta_s = 0.6$ Detection agents transition to Robust ones and with $\theta_c = 0.75$ Robust agents transition to Decoupled ones. Thus, cue abstraction emerges endogenously from interaction history and stabilizes when regularities become sufficiently structured. -->
+<!---->
+<!-- In terms of payoff matrix, let $A = \{\text{Hawk}, \text{Dove}\}$ be the action set. The expected payoffs for any action pair $(a_i, a_j)$ given roles $(r_i, r_j)$ are defined by the asymmetric matrix: -->
+<!---->
+<!-- $$ -->
+<!-- \text{Payoff}(r_i, a_i, r_j, a_j) = -->
+<!-- \begin{cases} -->
+<!-- (1.5, 1.5) & \text{if } (r_i, a_i, r_j, a_j) \in \{ (\text{owner}, H, \text{intruder}, D), (\text{intruder}, D, \text{owner}, H) \} \\ -->
+<!-- (2, 1) & \text{if } a_i = H, a_j = D \\ -->
+<!-- (1, 2) & \text{if } a_i = D, a_j = H \\ -->
+<!-- (1, 1) & \text{if } a_i = D, a_j = D \\ -->
+<!-- (0, 0) & \text{if } a_i = H, a_j = H -->
+<!-- \end{cases} -->
+<!-- $$ -->
+<!---->
+<!-- This payoff matrix favors *role-asymmetric coordination*, but achieving it requires agents to consistently interpret roles from imperfect cues. Importantly, here I do not treat Bourgeois as a separate strategy but as a explicitly conditional upon a cue, which helps to treat environmental asymmetries as extra-game. -->
+<!---->
+<!-- Fitness is directly proportional to cumulative rewards in each generation. New agents are sampled with probability proportional to fitness. After $G$ interactions per generation, agents are selected proportionally to their cumulative rewards $R_i$. Let the fitness $F_i$ be: -->
+<!---->
+<!-- $$ -->
+<!-- F_i = \frac{R_i}{\sum_{j=1}^{N} R_j} -->
+<!-- $$ -->
+<!---->
+<!-- Each new agent is sampled with probability $F_i$, inheriting the Q-table of its parent (copied without mutation for simplicity, though mutation could be incorporated). This replicator dynamic implements *fitness-proportional selection* on representational strategies rather than on fixed behaviors. It means that the better agents aggregately represent new translucent cues, the more probably they will reproduce. -->
+<!---->
+<!-- I track three key population-level metrics per generation: -->
+<!---->
+<!-- 1. *Cue abstraction rate* $S(t)$: the average number of structured cue uses per agent, indicating representational complexity; -->
+<!-- 2. *Coordination success* $C(t)$: proportion of role-asymmetric Hawk-Dove interactions (Bourgeois-Bourgeois which is ESS here); -->
+<!-- 3. *Cognitive type distribution* $\pi_k(t)$: proportion of agents of type $k \in \{\text{Detection}, \text{Robust}, \text{Decoupled}\}$. -->
+<!---->
+<!-- These observables evolve under the joint influence of learning, perception noise (via translucency $T(t)$), and selection. Empirically, we observe that increasing $T$ induces selection for more abstract cue representations, which in turn facilitate coordination (back). -->
+<!---->
+<!-- ## Model results -->
+<!-- ### Coordination and cue evolution -->
+<!-- From the early stages of simulation, there was rapid convergence toward simple coordination strategies based on direct cues associated with role perception. Initially, most agents relied on *Detection-type cues*, with strategy updating governed by local reinforcement dynamics. As learning accumulated across generations, agents improved in exploiting role-correlated cues to select conflict strategies (Hawk or Dove) effectively, producing an increase in coordination success. -->
+<!---->
+<!-- <div class="table"> -->
+<!---->
+<!-- ![](src/blog/phd-draft/assets/final-model.png) -->
+<!-- <div class="caption">Results of our model: translucency drives the selective pressure for latent structure extraction and integration of information into higher-order cues</div> -->
+<!-- </div> -->
+<!---->
+<!-- Over time, however, there was a qualitative shift: some agents began to condition behavior not solely on raw cues, but on *statistical patterns in behavior and payoffs*, thereby evolving *Robust tracking* capacities and salient cues* which are structured cue/dominant-action associations that integrate frequency-dependent context. These agents used compound representations of roles and behavioral histories to select actions more reliably across variable settings. -->
+<!---->
+<!-- Eventually, a third class of agents emerged: those that began to rely on contextually abstracted, high-order cues which are *Decoupled representations* (or approximations thereof) which encode conditional structures and behavioral regularities detached from direct perceptual features. These agents interpret situations through embedded contextual regularities, such as common behavior of owners in the presence of high-frequency Dove strategies, enabling coordination even in novel or ambiguous scenarios. -->
+<!---->
+<!-- ### Cue types transitions -->
+<!-- The transition across cue types can be interpreted as an *evolutionary learning gradient*. Initially, strategy selection is grounded in ontic detection: agents react to what is present. As structured regularities emerge and are reinforced, agents develop more stable role-action correlations, evolving salient cue use. Eventually, through niche construction and recursive interaction, agents begin to *represent* roles and actions as context-dependent functions, marking the emergence of Decoupled, epistemically mediated strategies or *epistemic correlation* just like in Guala's theory. -->
+<!---->
+<!-- The shift is not uniform nor universal. There is *heterogeneity* within populations: Detection agents persist alongside Robust and Decoupled agents, with proportions fluctuating according to ecological constraints and population dynamics. This supports the hypothesis that *coordination norms are scaffolded by diverse representational strategies*, rather than imposed by a single cognitive type. -->
+<!---->
+<!-- Interestingly, Decoupled agents often outperform others in rapidly shifting environments, but are less robust in highly stable settings where fixed cue-action mappings suffice. This matches findings in cognitive science that link abstraction with generalization under uncertainty [@tenenbaum2011]. -->
+<!---->
+<!-- ### Translucency as environmental selection pressure -->
+<!-- A key control parameter in our simulations is *translucency*: the probability that an agent's role is misperceived by another. Translucency introduces *partial observability* into the model, simulating real-world ambiguity in social interactions. -->
+<!---->
+<!-- In the model, increased translucency favors the evolution of more abstract cue representations. As role observability becomes less reliable, Detection-based strategies fail more often, leading to selective pressure for agents who can integrate broader behavioral patterns and contextual inferences. Robust and Decoupled agents rise in frequency under such conditions. -->
+<!---->
+<!-- Translucency thus acts as an *environmental gradient driving representational sophistication*. Crucially, this supports the claim that *coordination conventions do not require full common knowledge*, contra Lewisian accounts, but can emerge under ecological constraints through selection on cue-responsiveness and abstraction. -->
+<!---->
+<!-- ## Methodological reflections -->
+<!-- The model explicitly incorporates ecological feedback and cue salience into the process of norm stabilization. Rather than assuming predefined payoffs or utility functions, it allows the payoff structure to be shaped endogenously through agent interaction. This distinguishes it from classical game-theoretic models, such as those based on repeated coordination games, which typically fix the game's structure ex ante. -->
+<!---->
+<!-- Unlike Lewisian models of convention [@lewis1969], which emphasize common knowledge and rational expectation, our model avoids assumptions of global cognition and focuses instead on localized, evolving feedback. Similarly, while evolutionary game theory [@young1998] offers insights into strategy diffusion, it rarely addresses the emergence of normativity or the transition from merely functional behavior to norm-bound convention. -->
+<!---->
+<!-- Our approach aligns more closely with recent ecological and enactive models [@barandiaran2009], in that conventions are not imposed externally but arise through the co-adaptation of agents and environments. Importantly, our model integrates this dynamic with explicit role structures, allowing us to trace the evolution of representational and deontic content from non-normative coordination. -->
+<!---->
+<!-- Compared to prior work in institutional emergence [@conte1995] or norm internalization [@axelrod986], our model contributes the following advances: -->
+<!---->
+<!-- * *Ecological modularity*: different cue ecologies yield distinct conventions, facilitating analysis of ecological constraints on norm formation -->
+<!-- * *Transition dynamics*: I explicitly model the transition from detection-based coordination to decoupled role-cognition and normativity -->
+<!-- * *Emergence of norm representations*: The model provides a mechanistic account of how representational and proto-deontic components evolve from strategic behavior -->
+<!-- * *Gradient of dependence on representation*: It captures the shift from ontic (objective, perceptually anchored) to epistemic (belief-mediated) coordination, consistent with social ontological theories. -->
+<!---->
+<!-- This model complements recent computational approaches in cultural evolution [@boyd2005; @henrich2020], yet extends their scope by integrating cognitive and ecological scaffolding of emergent proto-normativity.  -->
+<!---->
 <!-- In addition, it can be compared to @morsky2019 as it is ideologically similar to ours and explicitly models emergence of social norms from random beliefs as environmental signals. -->
 <!---->
 <!-- | Feature                    | **Morsky & Akçay**                                                                                 | **Our aim**                                                                                                | -->
@@ -3267,26 +3334,27 @@ This model complements recent computational approaches in cultural evolution [@b
 <!---->
 <!-- As can be seen, our models are quite different while addressing a similar concern. Our model aligns more closely with Guala's RiE. -->
 <!---->
-In addition, several extensions can enhance the theoretical and empirical utility of the model:
 
-1. *Integration with Free Energy Principle (FEP)*: The FEP [@friston2010] offers a unifying theory of cognition as inference under uncertainty. Agents minimize variational free energy by updating internal models to better predict sensory inputs. Integrating our model with FEP would allow us to:
-
-* Model agents as active inferences, dynamically updating their beliefs about roles and cues
-* Ground role perception and norm internalization in precision-weighted prediction errors
-* Simulate transitions from reactive to anticipatory norm-following behaviors on a lower level.
-
-Such integration would also align with recent enactivist and ecological models of cognition [@korbak2021; @hohwy2019], thereby anchoring norm emergence in thermodynamic and informational constraints.
-
-2. *Cultural Transmission and Learning Heuristics*: Introducing intergenerational learning or prestige-biased transmission could illuminate how conventions stabilize over longer timescales, potentially explaining historical patterns in institutional evolution.
-
-3. *Multi-layered Institutions*: Extending the model to allow nested or recursive conventions from using money as a medium of exchange up to informal regulations for borrowing and returning it. It could help model institutional complexity. This would also allow for testing robustness and resilience under external shocks or internal inconsistencies.
-
-4. *Empirical Calibration*: Aligning the model’s parameters with empirical data like ethnographic studies of property norms, behavioral experiments on fairness would move the model toward predictive adequacy and open pathways for empirical validation.
-
-5. *Moral Norms and Value-Laden Conventions*: Future models might encode affective feedback and moral salience, testing the extent to which normative alignment is driven by strategic as opposed to moral affordances. This would support integration with moral psychology and ethics.
-
-In sum, our agent-based model provides a flexible, extensible platform for studying the ecological and cognitive mechanisms underpinning the emergence of social institutions as norm-governed repeated mutually beneficial behavioral regularities necessitating capacities for decoupled representation. Its methodological novelty lies in treating conventions not as fixed rules, but as *emergent structures responsive to ecological constraints, cognitive architecture, and evolutionary pressures*. 
-
+<!-- In addition, several extensions can enhance the theoretical and empirical utility of the model: -->
+<!---->
+<!-- 1. *Integration with Free Energy Principle (FEP)*: The FEP [@friston2010] offers a unifying theory of cognition as inference under uncertainty. Agents minimize variational free energy by updating internal models to better predict sensory inputs. Integrating our model with FEP would allow us to: -->
+<!---->
+<!-- * Model agents as active inferences, dynamically updating their beliefs about roles and cues -->
+<!-- * Ground role perception and norm internalization in precision-weighted prediction errors -->
+<!-- * Simulate transitions from reactive to anticipatory norm-following behaviors on a lower level. -->
+<!---->
+<!-- Such integration would also align with recent enactivist and ecological models of cognition [@korbak2021; @hohwy2019], thereby anchoring norm emergence in thermodynamic and informational constraints. -->
+<!---->
+<!-- 2. *Cultural Transmission and Learning Heuristics*: Introducing intergenerational learning or prestige-biased transmission could illuminate how conventions stabilize over longer timescales, potentially explaining historical patterns in institutional evolution. -->
+<!---->
+<!-- 3. *Multi-layered Institutions*: Extending the model to allow nested or recursive conventions from using money as a medium of exchange up to informal regulations for borrowing and returning it. It could help model institutional complexity. This would also allow for testing robustness and resilience under external shocks or internal inconsistencies. -->
+<!---->
+<!-- 4. *Empirical Calibration*: Aligning the model’s parameters with empirical data like ethnographic studies of property norms, behavioral experiments on fairness would move the model toward predictive adequacy and open pathways for empirical validation. -->
+<!---->
+<!-- 5. *Moral Norms and Value-Laden Conventions*: Future models might encode affective feedback and moral salience, testing the extent to which normative alignment is driven by strategic as opposed to moral affordances. This would support integration with moral psychology and ethics. -->
+<!---->
+<!-- In sum, our agent-based model provides a flexible, extensible platform for studying the ecological and cognitive mechanisms underpinning the emergence of social institutions as norm-governed repeated mutually beneficial behavioral regularities necessitating capacities for decoupled representation. Its methodological novelty lies in treating conventions not as fixed rules, but as *emergent structures responsive to ecological constraints, cognitive architecture, and evolutionary pressures*.  -->
+<!---->
 ## Contributions of our model and implications for RiE
 One of the core contributions of our model is the *operationalization* of the distinction between *ontic and epistemic CE* in coordination. Ontic correlation relies on reactive, probabilistic, frequentest cues while epistemic correlation depends on *conditional beliefs and representations* of roles, norms, and strategies.
 
