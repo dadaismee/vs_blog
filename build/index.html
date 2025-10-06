@@ -4,13 +4,12 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <script data-goatcounter="https://dadaisme.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+  <script src="assets/p5.min.js"></script>
 
     
     
-  <script>!function(){"use strict";var s={"scripts/annotator.bundle.js":"scripts/annotator.bundle.js?aa987d","styles/annotator.css":"styles/annotator.css?ce3b25","styles/annotator.css.map":"styles/annotator.css.map?e7c11d","styles/highlights.css":"styles/highlights.css?24baca","styles/highlights.css.map":"styles/highlights.css.map?377599","styles/katex.min.css":"styles/katex.min.css?921c28","styles/katex.min.css.map":"styles/katex.min.css.map?e7e03f","styles/pdfjs-overrides.css":"styles/pdfjs-overrides.css?c95edf","styles/pdfjs-overrides.css.map":"styles/pdfjs-overrides.css.map?1d8ac6","styles/sidebar.css":"styles/sidebar.css?f03dde","styles/sidebar.css.map":"styles/sidebar.css.map?c0b7fb","styles/ui-playground.css":"styles/ui-playground.css?531600","styles/ui-playground.css.map":"styles/ui-playground.css.map?894a78","scripts/annotator.bundle.js.map":"scripts/annotator.bundle.js.map?44664e","scripts/sidebar.bundle.js":"scripts/sidebar.bundle.js?b2ad9b","scripts/ui-playground.bundle.js":"scripts/ui-playground.bundle.js?c8334b","scripts/sidebar.bundle.js.map":"scripts/sidebar.bundle.js.map?0f16cd","scripts/ui-playground.bundle.js.map":"scripts/ui-playground.bundle.js.map?ee738f"};function e(s){s.setAttribute("data-hypothesis-asset","")}function t(s,t){var r=s.createElement("link");r.rel="stylesheet",r.type="text/css",r.href=t,e(r),s.head.appendChild(r)}function r(s,t){var r=arguments.length>2&&void 0!==arguments[2]?arguments[2]:{},n=r.esModule,o=void 0===n||n,a=r.forceReload,i=void 0!==a&&a,l=s.createElement("script");o&&(l.type="module"),i&&(t+="#ts=".concat(Date.now())),l.src=t,l.async=!1,e(l),s.head.appendChild(l)}function n(s,t,r,n){var o=s.createElement("link");o.rel=t,o.href=n,o.type="application/annotator+".concat(r),e(o),s.head.appendChild(o)}function o(s,t,r){var n=s.createElement("link");n.rel="preload",n.as=t,n.href=r,"fetch"===t&&(n.crossOrigin="anonymous"),e(n),s.head.appendChild(n)}function a(s,e){return s.assetRoot+"build/"+s.manifest[e]}function i(s){var e=arguments.length>1&&void 0!==arguments[1]?arguments[1]:document;if(-1===s.indexOf("{"))return s;var t=function(){var s,e,t=(arguments.length>0&&void 0!==arguments[0]?arguments[0]:document).currentScript;return t?(s=t.src,(e=s.match(/(https?):\/\/([^:/]+)/))?{protocol:e[1],hostname:e[2]}:null):null}(e);if(!t)throw new Error("Could not process URL template because script origin is unknown");return s=(s=s.replace("{current_host}",t.hostname)).replace("{current_scheme}",t.protocol)}if(function(){var s=[()=>Object.fromEntries([]),()=>new URL(document.location.href),()=>new Request("https://hypothes.is"),()=>Element.prototype.attachShadow,()=>CSS.supports("display: grid"),()=>(document.evaluate("/html/body",document,null,XPathResult.ANY_TYPE,null),!0)];try{return s.every((s=>s()))}catch(s){return!1}}()){var l=function(s){for(var e={},t=s.querySelectorAll("script.js-hypothesis-config"),r=0;r<t.length;r++){var n=void 0;try{n=JSON.parse(t[r].textContent||"")}catch(s){console.warn("Could not parse settings from js-hypothesis-config tags",s),n={}}Object.assign(e,n)}return e}(document),c=i(l.assetRoot||"https://cdn.hypothes.is/hypothesis/1.1649.0/");if(document.querySelector("hypothesis-app")){!function(s,e){o(s,"fetch",e.apiUrl),o(s,"fetch",e.apiUrl+"links");for(var n=0,i=["scripts/sidebar.bundle.js"];n<i.length;n++)r(s,a(e,i[n]),{esModule:!0});for(var l=0,c=["styles/katex.min.css","styles/sidebar.css"];l<c.length;l++)t(s,a(e,c[l]))}(document,{assetRoot:c,manifest:s,apiUrl:l.apiUrl})}else{var p=function(){var s;return null===(s=(arguments.length>0&&void 0!==arguments[0]?arguments[0]:window).chrome)||void 0===s||null===(s=s.runtime)||void 0===s?void 0:s.id}();if(p&&!function(s){return!!(arguments.length>1&&void 0!==arguments[1]?arguments[1]:document).querySelector("script.js-hypothesis-config[data-extension-id=".concat(s,"]"))}(p))throw new Error("Could not start Hypothesis extension as configuration is missing");var d=l,u=i(d.notebookAppUrl||"https://hypothes.is/notebook"),h=i(d.profileAppUrl||"https://hypothes.is/user-profile"),y=i(d.sidebarAppUrl||"https://hypothes.is/app.html");!function(s,e){if(!s.querySelector('link[type="application/annotator+html"]')){n(s,"sidebar","html",e.sidebarAppUrl),n(s,"notebook","html",e.notebookAppUrl),n(s,"profile","html",e.profileAppUrl),o(s,"style",a(e,"styles/annotator.css")),n(s,"hypothesis-client","javascript",e.assetRoot+"build/boot.js");for(var i=0,l=["scripts/annotator.bundle.js"];i<l.length;i++)r(s,a(e,l[i]),{esModule:!1});var c=[];void 0!==window.PDFViewerApplication&&c.push("styles/pdfjs-overrides.css"),c.push("styles/highlights.css");for(var p=0,d=c;p<d.length;p++)t(s,a(e,d[p]))}}(document,{assetRoot:c,manifest:s,notebookAppUrl:u,profileAppUrl:h,sidebarAppUrl:y})}}else console.warn("The Hypothesis annotation tool is not supported in this browser. See https://web.hypothes.is/help/which-browsers-are-supported-by-hypothesis/.")}();
-</script>
-  <!-- <script src="https://unpkg.com/petite-vue" defer init></script> -->
-
+  <script src="https://hypothes.is/embed.js" async></script>
   <script>
     window.hypothesisConfig = function() {
       return {
@@ -30,299 +29,362 @@
   Beep Boop. As you were. -->
 
   <style>
-html {
-color: #1a1a1a;
-background-color: #fdfdfd;
+    /* html {
+  color: #1a1a1a;
+  background-color: #fdfdfd;
 }
 body {
-margin: 0 auto;
-max-width: 36em;
-padding-left: 50px;
-padding-right: 50px;
-padding-top: 50px;
-padding-bottom: 50px;
-hyphens: auto;
-overflow-wrap: break-word;
-text-rendering: optimizeLegibility;
-font-kerning: normal;
+  margin: 0 auto;
+  max-width: 36em;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  text-rendering: optimizeLegibility;
+  font-kerning: normal;
 }
 @media (max-width: 600px) {
-body {
-font-size: 0.9em;
-padding: 12px;
-}
-h1 {
-font-size: 1.8em;
-}
+  body {
+    font-size: 0.9em;
+    padding: 12px;
+  }
+  h1 {
+    font-size: 1.8em;
+  }
 }
 @media print {
-html {
-background-color: white;
-}
-body {
-background-color: transparent;
-color: black;
-font-size: 12pt;
-}
-p, h2, h3 {
-orphans: 3;
-widows: 3;
-}
-h2, h3, h4 {
-page-break-after: avoid;
-}
+  html {
+    background-color: white;
+  }
+  body {
+    background-color: transparent;
+    color: black;
+    font-size: 12pt;
+  }
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2, h3, h4 {
+    page-break-after: avoid;
+  }
 }
 p {
-margin: 1em 0;
+  margin: 1em 0;
 }
 a {
-color: #1a1a1a;
+  color: #1a1a1a;
 }
 a:visited {
-color: #1a1a1a;
+  color: #1a1a1a;
 }
 img {
-max-width: 100%;
+  max-width: 100%;
 }
 svg {
-height: auto;
-max-width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 h1, h2, h3, h4, h5, h6 {
-margin-top: 1.4em;
+  margin-top: 1.4em;
 }
 h5, h6 {
-font-size: 1em;
-font-style: italic;
+  font-size: 1em;
+  font-style: italic;
 }
 h6 {
-font-weight: normal;
+  font-weight: normal;
 }
 ol, ul {
-padding-left: 1.7em;
-margin-top: 1em;
+  padding-left: 1.7em;
+  margin-top: 1em;
 }
 li > ol, li > ul {
-margin-top: 0;
+  margin-top: 0;
 }
 blockquote {
-margin: 1em 0 1em 1.7em;
-padding-left: 1em;
-border-left: 2px solid #e6e6e6;
-color: #606060;
+  margin: 1em 0 1em 1.7em;
+  padding-left: 1em;
+  border-left: 2px solid #e6e6e6;
+  color: #606060;
 }
 code {
-font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
-font-size: 85%;
-margin: 0;
-hyphens: manual;
+  font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+  font-size: 85%;
+  margin: 0;
+  hyphens: manual;
 }
 pre {
-margin: 1em 0;
-overflow: auto;
+  margin: 1em 0;
+  overflow: auto;
 }
 pre code {
-padding: 0;
-overflow: visible;
-overflow-wrap: normal;
+  padding: 0;
+  overflow: visible;
+  overflow-wrap: normal;
 }
 .sourceCode {
-background-color: transparent;
-overflow: visible;
+ background-color: transparent;
+ overflow: visible;
 }
 hr {
-background-color: #1a1a1a;
-border: none;
-height: 1px;
-margin: 1em 0;
+  background-color: #1a1a1a;
+  border: none;
+  height: 1px;
+  margin: 1em 0;
 }
 table {
-margin: 1em 0;
-border-collapse: collapse;
-width: 100%;
-overflow-x: auto;
-display: block;
-font-variant-numeric: lining-nums tabular-nums;
+  margin: 1em 0;
+  border-collapse: collapse;
+  width: 100%;
+  overflow-x: auto;
+  display: block;
+  font-variant-numeric: lining-nums tabular-nums;
 }
 table caption {
-margin-bottom: 0.75em;
+  margin-bottom: 0.75em;
 }
 tbody {
-margin-top: 0.5em;
-border-top: 1px solid #1a1a1a;
-border-bottom: 1px solid #1a1a1a;
+  margin-top: 0.5em;
+  border-top: 1px solid #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
 }
 th {
-border-top: 1px solid #1a1a1a;
-padding: 0.25em 0.5em 0.25em 0.5em;
+  border-top: 1px solid #1a1a1a;
+  padding: 0.25em 0.5em 0.25em 0.5em;
 }
 td {
-padding: 0.125em 0.5em 0.25em 0.5em;
+  padding: 0.125em 0.5em 0.25em 0.5em;
 }
 header {
-margin-bottom: 4em;
-text-align: center;
+  margin-bottom: 4em;
+  text-align: center;
 }
 #TOC li {
-list-style: none;
+  list-style: none;
 }
 #TOC ul {
-padding-left: 1.3em;
+  padding-left: 1.3em;
 }
 #TOC > ul {
-padding-left: 0;
+  padding-left: 0;
 }
 #TOC a:not(:hover) {
-text-decoration: none;
+  text-decoration: none;
 }
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
 div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-
+/* The extra [class] is a hack that increases specificity enough to
+   override a similar rule in reveal.js */
 ul.task-list[class]{list-style: none;}
 ul.task-list li input[type="checkbox"] {
-font-size: inherit;
-width: 0.8em;
-margin: 0 0.8em 0.2em -1.6em;
-vertical-align: middle;
+  font-size: inherit;
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
 }
-:root {
---color: blue;
---max-content-width: 700px;
---font-family-mono: monospace, monospace;
---font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+ */
+     :root {
+        --color: blue;
+        --max-content-width: 700px;
+        }
 
-body {
-margin: 0 auto;
-max-width: var(--max-content-width);
-padding: 1rem 1rem 3rem;
-font-family: var(--font-family-mono);
-text-align: justify; font-family: monospace;
-line-height: 1.5; margin-left: 80px;
-}
-h1,h2,h3,h4,h5,h6 {
-margin-top: 1.5em;
-margin-bottom: 0.5em;
-text-align:left; font-family: monospace;
-width: 50vw;
-}
-p,li {
-width: 50vw;
-font-size: 1rem;
-max-width: 100%;
-}
-h1 { font-size: 1.75rem; }
-h2 { font-size: 1.5rem; }
-h3 { font-size: 1.25rem;; }
-h4 { font-size: 1.125rem;; }
-code, .sourceCode {
-padding: 0.2em 0.4em;
-border-radius: 3px;
-font-size: 0.95em;
-word-break: break-word;
-}
-.navbar {
-font-size: 1rem;
-color: white;
-}
-nav{
-font-family: monospace; font-size: 0.8em;
-position: fixed;
-right: 80px;
-width: 30em;
-border: 1px dashed #36454F;
-border-radius: 5px;
-padding: 1em;
-line-height: 2;
-text-align: left;
-}
-nav li {
-font-size: 10px;
-}
-table {
-font-size: 16px;
-}
-.textBase {
-font-family: monospace;
-}
-.caption {
-font-size: 13px;
-text-align: center;
-margin-top: 0px;
-}
-.table {
-margin: 60px 0px;
-}
-.epigraph {
-margin: 2em 4em; 
-font-style: italic; 
-font-size: 1.1em; 
-color: #555555; 
-border-left: 3px solid #cccccc; 
-padding-left: 1em; 
-quotes: "“" "”"; 
-position: relative;
-}
-.epigraph p {
-margin: 0 0 0.5em 0;
-text-indent: 0;
-}
-.epigraph p:first-child::before {
-content: open-quote;
-font-size: 2em;
-line-height: 0;
-vertical-align: -0.4em;
-margin-right: 0.1em;
-color: #999999;
-}
-.epigraph p:last-child {
-text-align: right;
-font-style: normal; 
-font-weight: bold;
-margin-top: 0.5em;
-color: #333333;
-}
+    body {
+      font-family: monospace;
+      margin: 40px;
+      line-height: 1.5; 
+      /* display: flex; */
+      /* flex-direction: column; */
+      /* justify-self: center; */
+    }
 
-.textBase::after {
-content: '';
-display: inline-block;
-width: 5px; 
-height: 16px; 
-background-color: var(--color); 
-animation: blink 1s cubic-bezier(0.19, 1, 0.22, 1) infinite; 
-}
-@keyframes blink {
-0%, 100% {
-opacity: 0; 
-}
-50% {
-opacity: 1; 
-}
-}
-@media (max-width: 1300px) {
-nav {
-display: none;
-}
-}
+    img {
+      width: 100%;
+    }
 
-.katex-table {
-margin: 2em auto;
-text-align: center;
-}
-.katex-table .caption {
-font-weight: bold;
-margin-bottom: 0.8em;
-font-family: "Latin Modern", serif;
-counter-increment: table;
-}
-.katex-table .caption::before {
-content: "Table " counter(table) ": ";
-}
-</style>
+    .border {
+      border-radius: 10px;
+      border: 1px dashed blue;
+    }
+
+    audio {
+      margin-top: 20px;
+    }
+
+    video {
+      border-radius: 10px;
+      border: 1px dashed blue;
+      width: 100%;
+    }
+
+    figure {
+      margin: 40px 0px;
+      text-align: center;
+    }
+
+    figcaption {
+      font-size: 13px;
+      font-style: italic;
+    }
+
+    h1 {
+     margin-bottom: -10px;
+    }
+
+    h2,h3,h4,h5,h6 {
+      margin-top: 40px;
+      margin-bottom: 10px;
+      text-align:left; 
+      font-family: monospace;
+    }
+
+    article figure img {
+      width: 80%;
+
+      @media (max-width: 700px) {
+        width: 100%;
+      }
+    }
+
+    a {
+      text-decoration-color: #00f;
+      text-underline-offset: 4px;
+      text-decoration: underline dashed;
+      color: black;
+    }
+
+    a:hover:not(:has(img)) {
+      background-color: blue;
+      color: white;
+    }
+
+    /* a:hover { */
+    /*   background-color: blue; */
+    /*   color: white; */
+    /* } */
+
+    a:hover img {
+      background-color: transparent;
+    }
+
+    .main-page {
+      width: 500px;
+
+      @media (max-width: 700px) {
+        width: 100%;
+      }
+    }
+
+    /* hr { */
+    /*   border-top: 2px dashed #000; */
+    /* } */
+
+
+    .content {
+      width: 700px;
+      font-size: 15px;
+
+      @media (max-width: 700px) {
+        width: 100%;
+      }
+    }
+
+    .p5-container {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+
+      @media (max-width: 700px) {
+        width: 100%;
+        height: 200px;
+      }
+    }
+
+    .table {
+      margin: 60px 0px;
+      width: 100%;
+    }
+
+    .hypothesis {
+      position: absolute;
+      right: 60px;
+      top: 130px;
+      width: 175px;
+      font-size: 12px;
+      opacity: 0.5;
+
+      @media (max-width: 700px) {
+        display: none;
+    }
+
+    .epigraph {
+      margin: 2em 4em;           /* vertical and horizontal margins */
+      font-style: italic;        /* italicize the quote */
+      font-size: 1.1em;          /* slightly larger than normal text */
+      color: blue;            /* subtle gray color for elegance */
+      border-left: 3px solid #cccccc; /* vertical line on the left */
+      padding-left: 1em;         /* spacing between border and text */
+      quotes: "“" "”";   /* fancy quotation marks */
+    }
+
+    .epigraph p {
+      margin: 0 0 0.5em 0;
+      text-indent: 0;
+    }
+
+    a:hover {
+        background-color: blue;
+        color: white;
+    }
+
+    .epigraph p:first-child::before {
+      content: open-quote;
+      font-size: 2em;
+      line-height: 0;
+      vertical-align: -0.4em;
+      margin-right: 0.1em;
+      color: #999999;
+    }
+
+    .epigraph p:last-child {
+      text-align: right;
+      font-style: normal;       /* author name not italic */
+      font-weight: bold;
+      margin-top: 0.5em;
+      color: #333333;
+    }
+
+    /*Animation*/
+    .textBase::after {
+        content: '';
+        display: inline-block;
+        width: 5px; /* Width of the cursor */
+        height: 16px; /* Height should match the text line height */
+        background-color: var(--color); /* Cursor color */
+        animation: blink 1s cubic-bezier(0.19, 1, 0.22, 1) infinite; /* Animation for blinking effect */
+    }
+
+    @keyframes blink {
+        0%, 100% {
+            opacity: 0; /* Cursor is invisible at start and end */
+        }
+        50% {
+            opacity: 1; /* Cursor is fully visible at halfway point */
+        }
+    }
+    @media (max-width: 1300px) {
+    nav {
+      display: none;
+    }
+  }
+
+  </style>
 
   
   <!--[if lt IE 9]>
@@ -331,54 +393,77 @@ content: "Table " counter(table) ": ";
 </head>
 
 <body>
-  <header style="display: flex; align-items: center; justify-content: space-around;">
-    <a href="/" class="textBase">valerii.shevchenko:~#</a>
-    <a href="/blog">мысли/</a>
-    <a href="/publications">публикации/</a>
-    <a href="https://vsdesigner.netlify.app/">портфолио↗</a>
+  <header>
+    <a href="/" style="text-decoration: none">
+        <img class="border" src="assets/valerii — копия.png" alt="Валерий Шевченко" style="width: 75px;"/>
+    </a>
   </header>
 
-
-      <main>
-      <div style="display: flex;">
+  <div style="display: flex">
+  <div class="content">
+      <article>
+      <div style="display: flex; flex-direction: column; gap: 0px; margin-top: 20px;">
                       </div>
-      <p>Привет! Меня зовут Валерий Шевченко. Я философ социальной
-      науки, дизайнер взаимодействия и основатель
-      <a href="https://konspekt.io" target="_blank">школы
-      «Конспект»</a>. Исследую устойчивое взаимодействие человека и
-      информации с точки зрения HCI (human-computer interaction) и <a href="https://t.me/chot_ne_idet">пишу кандидатскую диссертацию</a>
-      об эволюции социальной координации с точки зрения теории игр и
-      теории информации.</p>
-      <div style="line-height: 80%">
-      <pre><code>             ↖↙↖                          
-           ←↘→→→→↙↓↓→←                    
-       ←→↗↗↗↗↗↗↗↗↗↗↗↗↗↗→↖                 
-      ←↘→↗→↗↗↑↑↗↑↑↑↑↑↗↗↗↗↖                
-     ↙→↗↗↑↑↑↑↑↑↑↑↗↑↑↑↑↑↗↗↗↙↖              
-     ↗↑↑↑↗↘↓↓↙↙←←←←←↓↗↑↗↑↗↗→←             
-     →↑↑↗↙←←↖↖↖↖↖↖←←←↙↓↑↑↑↗↓↖             
-     ←→↗→←←←↖↖↖↖↖↖↖←←↙↙→↑↑→↖              
-      ↓↗↙←←←↖↖↖↖↖↖←←←←↙↓↗↑↖               
-      ↖↗↙↓↓↘→↘↙←←↙↘↗↗→→→↗←                
-       ↓↙↘→↑↑→↘↙←↘→→↑↗↗↗→←↖               
-     ←↙↓↙↙↙↙↙↙↙←←↓↙↙↓↓↙↙↓↘↙↖              
-     ↖←←←←↖↖↖←↙←←↙↓←←←←↙↓↙↙               
-      ←←↙←←←←↙↓↘↓→↗↓↙←↙↓→↙↖               
-       ←←↙↙←↙↙→↗↗↗↗→↘↙↓→↖                 
-         ↙↙↙↓→→→↘→→→↓↓↘↓                  
-         ↖↓↓↙↙↙↓↓↓↘↓↓→→                   
-     ↙↗↑↑↑↗↓↓←←←↙↙↙↙↓↗↑↑↑↑↑↑↑←            
-    →↑↑↑↑↑↗↙↙→↓↓↙↓↘→↗↗↑↑↑↑↑↑↑↙            
-   →↑↑↑↑↑↓↓↙↙↙↓→↗↗↗↗↗↗↗→↑↑↑↑↑→            
- ↖↗↑↑↑↑↑→↙↓↓↙↙↓↙↙↓↗↗→↗→↘↑↑↑↑↑↑↑→←         </code></pre>
+      <div class="main-page">
+      <p>Привет!</p>
+      <p>Меня зовут Валерий Шевченко. Я философ науки и дизайнер.
+      Исследую интерфейсы, которые помогают глубже понимать мир вокруг и
+      внутри себя.</p>
+      <!--Считаю, что следовать за любопытством — путь к радости понимания (и наполненной жизни). И здорово, когда его ничего не преграждает:-->
+      <!---->
+      <!--- ни сложные интерфейсы -->
+      <!--- ни закрытые цифровые экосистемы и их серверы-->
+      <!--- ни необходимость учиться думать как машина, чтобы что-то понять-->
+      <!--- ни дороговизна специальных программ-->
+      <!--- ни зашоренность и инфопузыри.-->
+      <!--Вдохновляюсь идеями Виктора Папанека, Брета Виктора, Сеймура Пейперта, Марии Монтессори и других классных людей.-->
+      <p>Сейчас исследую «народные» интерфейсы — простые самодельные
+      цифровые инструменты для углубления понимания в разных областях
+      знания, которые не требуют навыков программирования (и даже
+      «вайб-кодинга»).</p>
+      <ul>
+      <li>Изучал социологию в МГУ и «Шанинке», философию науки — в
+      «Высшей Школе Экономики», дизайн взаимодействия — в <a
+      href="https://mome.hu/en/programmes/interaction-design-ma-in-english"
+      target="_blank" rel="noopener noreferrer">MOME</a>, медиаискусство
+      — в <a href="https://mdfschool.ru" target="_blank"
+      rel="noopener noreferrer">«Школе Родченко»</a></li>
+      <li>Сделал <a href='https://konspekt.io' target='_blank'> курс по
+      системе письма</a> для PhD-студентов и аспирантов</li>
+      <li><a href="https://t.me/chot_ne_idet" target="_blank"
+      rel="noopener noreferrer">Пишу кандидатскую диссертацию</a> об
+      эволюции социальной координации с точки зрения теории игр и
+      философии биологии.</li>
+      </ul>
+      <p>Буду рад совместным проектам, связанным с <em>образовательным
+      потенциалом дизайна взаимодействия</em> (в т.ч. аналогового и
+      тактильного). Для этого <a
+      href="mailto:valerii.s.shevchenko@gmail.com">напишите мне на
+      почту</a>.</p>
+      <p><strong>Эссе и заметки</strong>:</p>
+      <p>→ (06.10.2025) <a href="/symmetry" target="_self">Симметрия
+      чтения и письма</a> — ~20 минут</p>
+      <!--<hr/>-->
+      <!--- Несколько [проектов](https://vsdesigner.netlify.app/).-->
+      <!--- Пара публикаций:-->
+      <!--  - A Framework for More-than-human Placemaking with Data Storytelling ([2024](https://doi.org/10.14627/537752023))-->
+      <!--  - Coordination as naturalistic social ontology: constraints and explanation ([2023](https://doi.org/10.1177/00483931221150486))-->
+      <!--  - Вывод к наилучшему объяснению как методология социальной онтологии ([2023](https://doi.org/10.22394/2074-0492-2023-4-122-140))-->
+      <!---->
+      <!--<hr/>-->
+      <!--| [Почта](mailto:valerii.s.shevchenko@gmail.com)-->
+      <!--• **Cognitive Basis of Focal Points: Evolution and Correlated Equilibrium Emergence** (**2021\)***. Logical and philosophical studies, 19(2), 131-135.*  -->
+      <!---->
+      <!--• **After Method, Only Hyper-Chaos: The Limitations of John Law's Sociological Method Theory (2021)**.  *Sociology of power, 33(4), 169-183*  -->
+      <!---->
+      <!--• **Quasi-formal interaction in the situation of the educational process** (**2021).** *Siberian Historical Research(1), 184-199;*  -->
+      <!---->
+      <!--• **What's wrong with assemblage theory?** **(2020)** *Logos, 30(5 (138)), 131-164*.  -->
+      <!---->
+      <!--• **Conflict of Otherness Models in John Law's Actor-Network Theory** **(2019).** *Sociology of power(2), 44-67.*-->
       </div>
-      <p>Здесь мои <a href="/blog">мысли</a>, <a href="/publications">публикации</a> и <a href="https://vsdesigner.netlify.app/">проекты</a>.</p>
-      <hr />
-      <div class="line-block"><a href="https://github.com/dadaismee">GitHub</a> | <a href="mailto:valerii.s.shevchenko@gmail.com">Почта</a></div>
-    </main>
-
-    <script>
-      PetiteVue.createApp().mount();
-    </script>
+    </article>
+  </div>
+  </div>
   </body>
 </html>
