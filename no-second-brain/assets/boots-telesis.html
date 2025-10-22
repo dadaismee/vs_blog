@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Своя или чужая обувь?</title>
+  <style>
+    body { font-family: sans-serif; }
+    .shoe { display: inline-block; margin: 20px; padding: 16px 28px; border-radius: 24px; background: #eee; font-size: 22px; cursor: pointer; border: 3px solid #aaa; }
+    .shoe.yours { background: #b3e6ff; border-color: #099; }
+    .shoe.ready1 { background: #ffd6d6; border-color: #e53935; }
+    .shoe.ready2 { background: #fff7bf; border-color: #dac034; }
+    .selected { box-shadow: 0 0 10px 3px #0099ff; }
+    #customize { margin-top: 20px; }
+    #result { margin-top: 32px; font-size: 20px; min-height:50px;}
+    .custom-options { margin-top: 12px; }
+    label { margin-right: 10px; }
+    button { font-size: 16px; }
+  </style>
+</head>
+<body>
+  <h2>Создай свою обувь для ума</h2>
+  <div>
+    <div class="shoe ready1" id="shoe1" onclick="tryShoe(1)">👟 Готовая обувь #1 (размер 37, красная)</div>
+    <div class="shoe ready2" id="shoe2" onclick="tryShoe(2)">👞 Готовая обувь #2 (размер 44, жёлтая)</div>
+    <div class="shoe yours" id="shoeYour" onclick="tryShoe('custom')">🩰 Своя обувь (настроить)</div>
+  </div>
+
+  <div id="customize" style="display:none;">
+    <div class="custom-options">
+      <label>Размер:
+        <input type="number" id="custom-size" min="30" max="47" value="40" style="width:50px;">
+      </label>
+      <label>Цвет:
+        <select id="custom-color">
+          <option value="#b3e6ff">голубой</option>
+          <option value="#fbe9ae">жёлтый</option>
+          <option value="#ff8585">красный</option>
+          <option value="#cfffcd">зелёный</option>
+          <option value="#e7c8ff">фиолетовый</option>
+        </select>
+      </label>
+      <label>Фишка:
+        <select id="custom-feature">
+          <option value="с супинатором">с супинатором</option>
+          <option value="очень лёгкая">очень лёгкая</option>
+          <option value="дышащая подошва">дышащая подошва</option>
+          <option value="антискользящая">антискользящая</option>
+        </select>
+      </label>
+      <button onclick="finishCustom()">Примерить!</button>
+    </div>
+  </div>
+
+  <div id="result"></div>
+
+  <script>
+    function tryShoe(num) {
+      document.getElementById('customize').style.display = 'none';
+      document.querySelectorAll('.shoe').forEach(e => e.classList.remove('selected'));
+      if (num === 1) {
+        showResult('👟 Ты примеряешь готовую обувь #1 (размер 37).<br><b>Она жмёт, неудобно ходить, приходится идти неестественно!</b>', '#ffd6d6');
+        document.getElementById('shoe1').classList.add('selected');
+      } else if (num === 2) {
+        showResult('👞 Ты примеряешь готовую обувь #2 (размер 44).<br><b>Она слишком большая, болтается — сложно двигаться, неуверенность!</b>', '#fff7bf');
+        document.getElementById('shoe2').classList.add('selected');
+      } else if (num === 'custom') {
+        showResult('🩰 Настрой свою обувь по размеру и вкусу!', '#b3e6ff');
+        document.getElementById('shoeYour').classList.add('selected');
+        document.getElementById('customize').style.display = '';
+      }
+    }
+
+    function finishCustom() {
+      const size = document.getElementById('custom-size').value;
+      const color = document.getElementById('custom-color').value;
+      const feature = document.getElementById('custom-feature').value;
+      document.getElementById('shoeYour').style.background = color;
+      showResult(`🩰 Ты надел свою обувь!<br>Размер: ${size}, цвет: ${document.getElementById('custom-color').options[document.getElementById('custom-color').selectedIndex].text}, <b>${feature}</b>.<br><span style="color:green;font-weight:bold;">Идеально подходит именно тебе — удобно, можешь двигаться свободно!</span>`, color);
+    }
+
+    function showResult(msg, clr) {
+      const res = document.getElementById('result');
+      res.innerHTML = msg;
+      res.style.background = clr;
+    }
+  </script>
+</body>
+</html>

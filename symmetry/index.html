@@ -10,6 +10,7 @@
     
       <title>Симметрия чтения и письма</title>
     
+
   <script src="https://hypothes.is/embed.js" async></script>
   <script>
     window.hypothesisConfig = function() {
@@ -282,15 +283,36 @@ div.csl-indent {
 
     body {
       font-family: monospace;
-      margin: 40px;
+      margin: 30px;
       line-height: 1.5; 
       /* display: flex; */
       /* flex-direction: column; */
       /* justify-self: center; */
     }
 
+    .plashka {
+      background-color: #bbb; 
+      padding: 10px; 
+      margin: 20px 0px
+    }
+
+    .plashka p {
+      margin: 0px;
+    }
+
+    /* @media (prefers-color-scheme: dark) { */
+    /*   body {  */
+    /*     background-color: #282828; */
+    /*     color: #f2f2f2; */
+    /*   } */
+    /*   a { */
+    /*     color: #f2f2f2 !important; */
+    /*     text-decoration-color: #f2f2f2 !important ; */
+    /*   } */
+    /* } */
+
     img {
-      width: 100%;
+      width: 90%;
     }
 
     .border {
@@ -303,19 +325,29 @@ div.csl-indent {
     }
 
     video {
-      border-radius: 10px;
       border: 1px dashed blue;
-      width: 100%;
+      border-radius: 7.5px;
+      width: 90%;
     }
 
     figure {
       margin: 40px 0px;
+      width: 100%;
       text-align: center;
     }
 
     figcaption {
       font-size: 13px;
       font-style: italic;
+      text-align: center;
+      width: 100%;
+    }
+
+    canvas {
+      display: block;
+      margin: 30px auto;
+      background: #eef3fa;
+      border-radius: 10px;
     }
 
     h1 {
@@ -330,7 +362,9 @@ div.csl-indent {
     }
 
     article figure img {
-      width: 80%;
+      border-radius: 7.5px;
+      border: 1px dashed blue;
+      width: 85%;
 
       @media (max-width: 700px) {
         width: 100%;
@@ -406,6 +440,7 @@ div.csl-indent {
 
       @media (max-width: 700px) {
         display: none;
+      }
     }
 
     .epigraph {
@@ -426,6 +461,25 @@ div.csl-indent {
     a:hover {
         background-color: blue;
         color: white;
+    }
+
+    .blueButton {
+        background-color: #00f;
+        color: white;
+        font-family: monospace;
+        width: 100%;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 10px;
+        border: none;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .blueButton:hover {
+        background-color: white;
+        color: #00f;
+        font-weight: bold;
+        border: 2px dashed #00f;
     }
 
     .epigraph p:first-child::before {
@@ -480,7 +534,7 @@ div.csl-indent {
 <body>
   <header>
     <a href="/" style="text-decoration: none">
-        <img class="border" src="assets/valerii — копия.png" alt="Валерий Шевченко" style="width: 75px;"/>
+        <img class="border" src="/assets/valerii — копия.png" alt="Валерий Шевченко" style="width: 75px;"/>
     </a>
   </header>
 
@@ -489,7 +543,7 @@ div.csl-indent {
       <h1>Симметрия чтения и письма</h1>
     <div class="hypothesis">
       <p>Чтобы прокомментировать любую фразу, выделите её и нажмите <i>Annotate</i></p>
-      <img class="border" src="assets/annotate.png" alt="Annotate" style="display: flex; justify-self: center; width: 75%;"/>
+      <img class="border" src="/assets/annotate.png" alt="Annotate" style="display: flex; justify-self: center; width: 75%;"/>
     </div>
     <!--  -->
     <!-- <nav id="TOC" role="doc-toc"> -->
@@ -534,10 +588,12 @@ id="toc-интерфейсы-для-чтения-и-письма">Интерфе
       на что похоже прочитанное, кто ещё об этом писал, «а в том фильме
       про это тоже говорили».</p>
       <figure>
-      <img src="assets/symmetry_reading.png"
-      alt="Чтение и рой мыслей" />
-      <figcaption aria-hidden="true">Чтение и рой мыслей</figcaption>
+      <img style="border:none;"src="assets/symmetry_reading.png" alt="Чтение и рой мыслей" style="width:100%;"/>
+      <figcaption>
+      Чтение и рой мыслей
+      </figcaption>
       </figure>
+      <!--![Чтение и рой мыслей](assets/symmetry_reading.png)-->
       <p>А когда вы пишете, мысли и образы роятся у вас в голове, борясь
       за внимание. Вы думаете о миллионе вещей одновременно,
       перескакиваете между источниками, чтобы что-то подсмотреть, и
@@ -944,8 +1000,7 @@ id="toc-интерфейсы-для-чтения-и-письма">Интерфе
       при необходимости класть в свой чемодан только подходящие и
       сочетающиеся друг с другом вещи.</p>
       <hr />
-      <div class="border"
-      style="background-color: #bbb; padding: 10px; margin: 20px 0px">
+      <div class="border plashka">
       <p><strong>Цитировать этот текст можно вот так:</strong></p>
       <blockquote>
       <p>Шевченко Валерий, <em>Симметрия чтения и письма</em>. Москва,

@@ -9,6 +9,7 @@
 
     
     
+
   <script src="https://hypothes.is/embed.js" async></script>
   <script>
     window.hypothesisConfig = function() {
@@ -197,15 +198,36 @@ ul.task-list li input[type="checkbox"] {
 
     body {
       font-family: monospace;
-      margin: 40px;
+      margin: 30px;
       line-height: 1.5; 
       /* display: flex; */
       /* flex-direction: column; */
       /* justify-self: center; */
     }
 
+    .plashka {
+      background-color: #bbb; 
+      padding: 10px; 
+      margin: 20px 0px
+    }
+
+    .plashka p {
+      margin: 0px;
+    }
+
+    /* @media (prefers-color-scheme: dark) { */
+    /*   body {  */
+    /*     background-color: #282828; */
+    /*     color: #f2f2f2; */
+    /*   } */
+    /*   a { */
+    /*     color: #f2f2f2 !important; */
+    /*     text-decoration-color: #f2f2f2 !important ; */
+    /*   } */
+    /* } */
+
     img {
-      width: 100%;
+      width: 90%;
     }
 
     .border {
@@ -218,19 +240,29 @@ ul.task-list li input[type="checkbox"] {
     }
 
     video {
-      border-radius: 10px;
       border: 1px dashed blue;
-      width: 100%;
+      border-radius: 7.5px;
+      width: 90%;
     }
 
     figure {
       margin: 40px 0px;
+      width: 100%;
       text-align: center;
     }
 
     figcaption {
       font-size: 13px;
       font-style: italic;
+      text-align: center;
+      width: 100%;
+    }
+
+    canvas {
+      display: block;
+      margin: 30px auto;
+      background: #eef3fa;
+      border-radius: 10px;
     }
 
     h1 {
@@ -245,7 +277,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     article figure img {
-      width: 80%;
+      border-radius: 7.5px;
+      border: 1px dashed blue;
+      width: 85%;
 
       @media (max-width: 700px) {
         width: 100%;
@@ -321,6 +355,7 @@ ul.task-list li input[type="checkbox"] {
 
       @media (max-width: 700px) {
         display: none;
+      }
     }
 
     .epigraph {
@@ -341,6 +376,25 @@ ul.task-list li input[type="checkbox"] {
     a:hover {
         background-color: blue;
         color: white;
+    }
+
+    .blueButton {
+        background-color: #00f;
+        color: white;
+        font-family: monospace;
+        width: 100%;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 10px;
+        border: none;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .blueButton:hover {
+        background-color: white;
+        color: #00f;
+        font-weight: bold;
+        border: 2px dashed #00f;
     }
 
     .epigraph p:first-child::before {
@@ -395,7 +449,7 @@ ul.task-list li input[type="checkbox"] {
 <body>
   <header>
     <a href="/" style="text-decoration: none">
-        <img class="border" src="assets/valerii — копия.png" alt="Валерий Шевченко" style="width: 75px;"/>
+        <img class="border" src="/assets/valerii — копия.png" alt="Валерий Шевченко" style="width: 75px;"/>
     </a>
   </header>
 
@@ -405,10 +459,12 @@ ul.task-list li input[type="checkbox"] {
       <div style="display: flex; flex-direction: column; gap: 0px; margin-top: 20px;">
                       </div>
       <div class="main-page">
-      <p>Привет!</p>
+      <p style="margin-top: 0px;">
+      Привет!
+      </p>
       <p>Меня зовут Валерий Шевченко. Я философ науки и дизайнер.
-      Исследую интерфейсы, которые помогают глубже понимать мир вокруг и
-      внутри себя.</p>
+      Исследую интерфейсы, которые помогают <em>глубже понимать</em> мир
+      вокруг и внутри себя.</p>
       <!--Считаю, что следовать за любопытством — путь к радости понимания (и наполненной жизни). И здорово, когда его ничего не преграждает:-->
       <!---->
       <!--- ни сложные интерфейсы -->
@@ -416,11 +472,7 @@ ul.task-list li input[type="checkbox"] {
       <!--- ни необходимость учиться думать как машина, чтобы что-то понять-->
       <!--- ни дороговизна специальных программ-->
       <!--- ни зашоренность и инфопузыри.-->
-      <!--Вдохновляюсь идеями Виктора Папанека, Брета Виктора, Сеймура Пейперта, Марии Монтессори и других классных людей.-->
-      <p>Сейчас исследую «народные» интерфейсы — простые самодельные
-      цифровые инструменты для углубления понимания в разных областях
-      знания, которые не требуют навыков программирования (и даже
-      «вайб-кодинга»).</p>
+      <!--Сейчас исследую «народные» интерфейсы — простые самодельные цифровые инструменты для углубления понимания в разных областях знания, которые не требуют навыков программирования (и даже «вайб-кодинга»).-->
       <ul>
       <li>Изучал социологию в МГУ и «Шанинке», философию науки — в
       «Высшей Школе Экономики», дизайн взаимодействия — в <a
@@ -436,11 +488,11 @@ ul.task-list li input[type="checkbox"] {
       философии биологии.</li>
       </ul>
       <p>Буду рад совместным проектам, связанным с <em>образовательным
-      потенциалом дизайна взаимодействия</em> (в т.ч. аналогового и
-      тактильного). Для этого <a
-      href="mailto:valerii.s.shevchenko@gmail.com">напишите мне на
-      почту</a>.</p>
+      потенциалом дизайна взаимодействия</em> (особенно тактильного).
+      Для этого <a href="mailto:valerii.s.shevchenko@gmail.com">напишите
+      мне на почту</a>.</p>
       <p><strong>Эссе и заметки</strong>:</p>
+      <!--→ (16.10.2025) <a href="/lab" target="_self">«Второй мозг» — чужой мозг</a> — ~15 минут<br/>-->
       <p>→ (06.10.2025) <a href="/symmetry" target="_self">Симметрия
       чтения и письма</a> — ~20 минут</p>
       <!--<hr/>-->
