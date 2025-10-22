@@ -21,6 +21,7 @@
   <meta name="description" content="$subtitle$">
   $endif$
 
+
   <script src="https://hypothes.is/embed.js" async></script>
   <script>
     window.hypothesisConfig = function() {
@@ -49,15 +50,36 @@
 
     body {
       font-family: monospace;
-      margin: 40px;
+      margin: 30px;
       line-height: 1.5; 
       /* display: flex; */
       /* flex-direction: column; */
       /* justify-self: center; */
     }
 
+    .plashka {
+      background-color: #bbb; 
+      padding: 10px; 
+      margin: 20px 0px
+    }
+
+    .plashka p {
+      margin: 0px;
+    }
+
+    /* @media (prefers-color-scheme: dark) { */
+    /*   body {  */
+    /*     background-color: #282828; */
+    /*     color: #f2f2f2; */
+    /*   } */
+    /*   a { */
+    /*     color: #f2f2f2 !important; */
+    /*     text-decoration-color: #f2f2f2 !important ; */
+    /*   } */
+    /* } */
+
     img {
-      width: 100%;
+      width: 90%;
     }
 
     .border {
@@ -70,19 +92,29 @@
     }
 
     video {
-      border-radius: 10px;
       border: 1px dashed blue;
-      width: 100%;
+      border-radius: 7.5px;
+      width: 90%;
     }
 
     figure {
       margin: 40px 0px;
+      width: 100%;
       text-align: center;
     }
 
     figcaption {
       font-size: 13px;
       font-style: italic;
+      text-align: center;
+      width: 100%;
+    }
+
+    canvas {
+      display: block;
+      margin: 30px auto;
+      background: #eef3fa;
+      border-radius: 10px;
     }
 
     h1 {
@@ -97,7 +129,9 @@
     }
 
     article figure img {
-      width: 80%;
+      border-radius: 7.5px;
+      border: 1px dashed blue;
+      width: 85%;
 
       @media (max-width: 700px) {
         width: 100%;
@@ -173,6 +207,7 @@
 
       @media (max-width: 700px) {
         display: none;
+      }
     }
 
     .epigraph {
@@ -193,6 +228,25 @@
     a:hover {
         background-color: blue;
         color: white;
+    }
+
+    .blueButton {
+        background-color: #00f;
+        color: white;
+        font-family: monospace;
+        width: 100%;
+        height: 50px;
+        cursor: pointer;
+        border-radius: 10px;
+        border: none;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .blueButton:hover {
+        background-color: white;
+        color: #00f;
+        font-weight: bold;
+        border: 2px dashed #00f;
     }
 
     .epigraph p:first-child::before {
@@ -250,7 +304,7 @@
 <body>
   <header>
     <a href="/" style="text-decoration: none">
-        <img class="border" src="assets/valerii — копия.png" alt="Валерий Шевченко" style="width: 75px;"/>
+        <img class="border" src="/assets/valerii — копия.png" alt="Валерий Шевченко" style="width: 75px;"/>
     </a>
   </header>
 
@@ -260,7 +314,7 @@
     <h1>$title$</h1>
     <div class="hypothesis">
       <p>Чтобы прокомментировать любую фразу, выделите её и нажмите <i>Annotate</i></p>
-      <img class="border" src="assets/annotate.png" alt="Annotate" style="display: flex; justify-self: center; width: 75%;"/>
+      <img class="border" src="/assets/annotate.png" alt="Annotate" style="display: flex; justify-self: center; width: 75%;"/>
     </div>
     <!-- $if(toc)$ -->
     <!-- <nav id="$idprefix$TOC" role="doc-toc"> -->

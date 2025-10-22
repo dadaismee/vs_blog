@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Карточки Лумана — связи по номерам</title>
+  <style>
+    body { font-family: sans-serif; }
+    #cardInput { margin-bottom: 10px; }
+    .cards, #chain { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px;}
+    .card, .chain-card { min-width: 120px; background: #eee; padding: 10px 16px; border-radius: 10px; border: 2px solid #9ab; position: relative; font-size: 15px;}
+    .card-num, .chain-num { font-weight: bold; color: #1a61a8;}
+    button { margin-left: 8px; }
+    #chain { margin-top: 28px; min-height: 46px; }
+    .chain-arrow { font-size: 26px; color: #1a61a8; margin: 0 4px;}
+    .card-link-btn { position: absolute; right: 10px; top: 12px; font-size:14px;}
+  </style>
+</head>
+<body>
+  <h2>Карточки идей Лумана</h2>
+  <div id="cardInput">
+    <input id="ideaText" placeholder="Запиши идею...">
+    <button onclick="addCard()">Добавить карточку</button>
+  </div>
+  <div class="cards" id="cards"></div>
+
+  <div style="margin-top:20px;">
+    <b>Построй цепочку:</b>
+    <br>
+    <span style="font-size:14px;color:#222;">Кликни по карточке — она станет первой в цепочке. Потом кликай по номеру связанной карточки, чтобы добавить её.<br>Строится цепочка как у Лумана!</span>
+  </div>
+  <div id="chain"></div>
+
+<script>
+let cards = [];
+let links = {}; // { fromNum: toNum }
+let chain = [];
+
+function addCard() {
+  const text = document.getElementById('ideaText').value.trim();
+  if (!text) return;
+  let num = cards.length + 1;
+  cards.push({ num, text });
+  renderCards();
+  document.getElementById('ideaText').value = '';
+}
+
+function renderCards() {
+  const box = document.getElementById('cards');
+  box.innerHTML = '';
+  cards.forEach((card, idx) => {
+    let el = document.createElement('div');
+    el.className = 'card';
+    el.innerHTML = `<span class='card-num'>№${card.num}</span><br>${card.text}`;
+    el.onclick = () => startChain(idx);
+    // Кнопка связи
+    let linkBtn = document.createElement('button');
+    linkBtn.className = 'card-link-btn';
+    linkBtn.innerText = '🔗';
+    linkBtn.title = 'Связать с другой карточкой';
+    linkBtn.onclick = (e) => {
+      e.stopPropagation();
+      let to = prompt(`Введите номер карточки, с которой связать №${card.num}:`);
+      let toNum = Number(to);
+      if (toNum && toNum !== card.num && cards.some(c => c.num === toNum)) {
+        links[card.num] = toNum;
+        renderCards();
+      }
+    };
+    el.appendChild(linkBtn);
+    // Если есть связь, показать
+    if (links[card.num]) {
+      let lnk = document.createElement('div');
+      lnk.style="font-size:13px; color:#666;";
+      lnk.innerHTML = `→ связь: №${links[card.num]}`;
+      el.appendChild(lnk);
+    }
+    box.appendChild(el);
+  });
+}
+
+function startChain(idx) {
+  chain = [cards[idx].num];
+  renderChain();
+}
+
+function renderChain() {
+  const chainBox = document.getElementById('chain');
+  if (chain.length === 0) { chainBox.innerHTML = ''; return; }
+  let html = '';
+  chain.forEach((num, i) => {
+    let card = cards.find(c => c.num === num);
+    html += `<span class='chain-card'><span class='chain-num'>№${num}</span><br>${card.text}</span>`;
+    if (links[num]) {
+      html += `<button class='chain-arrow' onclick='addToChain(${links[num]})'>→ №${links[num]}</button>`;
+    }
+  });
+  chainBox.innerHTML = html;
+}
+
+function addToChain(num) {
+  if (!chain.includes(num)) chain.push(num);
+  renderChain();
+}
+
+renderCards();
+renderChain();
+</script>
+</body>
+</html>

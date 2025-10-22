@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работа и Знание</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fa;
+            margin: 0;
+            padding: 10px;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            width: 302px;
+            height: 152px;
+            display: flex;
+            gap: 10px;
+            cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ctext x='12' y='16' text-anchor='middle' font-family='Arial' font-size='12' fill='%233498db' font-weight='bold'%3E+%3C/text%3E%3C/svg%3E") 12 12, auto;
+        }
+        
+        .card {
+            flex: 1;
+            text-align: center;
+        }
+        
+        canvas {
+            width: 140px;
+            height: 100px;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            background: white;
+        }
+        
+        .title {
+            margin-top: 8px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        
+        .effort-title {
+            color: #3498db;
+        }
+        
+        .knowledge-title {
+            color: #2ecc71;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="clickArea">
+        <div class="card">
+            <canvas id="evaporationCanvas" width="140" height="100"></canvas>
+            <div class="title effort-title">Работа испаряется</div>
+        </div>
+        
+        <div class="card">
+            <canvas id="accumulationCanvas" width="140" height="100"></canvas>
+            <div class="title knowledge-title">Знание копится</div>
+        </div>
+    </div>
+
+    <script>
+        // Испаряющиеся усилия
+        const evapCanvas = document.getElementById('evaporationCanvas');
+        const evapCtx = evapCanvas.getContext('2d');
+        let efforts = [];
+        
+        // Накопительные идеи  
+        const accCanvas = document.getElementById('accumulationCanvas');
+        const accCtx = accCanvas.getContext('2d');
+        let knowledgeBlocks = [];
+        
+        // Обработчик клика по всей области
+        const clickArea = document.getElementById('clickArea');
+        clickArea.addEventListener('click', () => {
+            // Добавляем каплю в левой части
+            efforts.push({ 
+                x: 40 + Math.random() * 20, 
+                y: 30, 
+                opacity: 1,
+                size: 4 + Math.random() * 3
+            });
+            
+            // Добавляем идею с каждым кликом
+            knowledgeBlocks.push({});
+            if (knowledgeBlocks.length > 5) {
+                knowledgeBlocks.shift();
+            }
+        });
+        
+        function drawEvaporation() {
+            evapCtx.clearRect(0, 0, evapCanvas.width, evapCanvas.height);
+            
+            // Рисуем "песочные часы"
+            evapCtx.strokeStyle = '#3498db';
+            evapCtx.lineWidth = 1.5;
+            evapCtx.beginPath();
+            evapCtx.moveTo(50, 20);
+            evapCtx.lineTo(90, 20);
+            evapCtx.lineTo(70, 80);
+            evapCtx.closePath();
+            evapCtx.stroke();
+            
+            // Рисуем усилия
+            efforts.forEach((effort, index) => {
+                evapCtx.fillStyle = `rgba(52, 152, 219, ${effort.opacity})`;
+                evapCtx.beginPath();
+                evapCtx.arc(effort.x, effort.y, effort.size, 0, Math.PI * 2);
+                evapCtx.fill();
+                
+                // Обновляем позицию и прозрачность
+                effort.y += 1.5;
+                effort.opacity -= 0.03;
+                
+                // Удаляем невидимые
+                if (effort.opacity <= 0) {
+                    efforts.splice(index, 1);
+                }
+            });
+        }
+        
+        function drawAccumulation() {
+            accCtx.clearRect(0, 0, accCanvas.width, accCanvas.height);
+            
+            // Рисуем "сейф"
+            accCtx.strokeStyle = '#2ecc71';
+            accCtx.lineWidth = 1.5;
+            accCtx.strokeRect(35, 20, 70, 70);
+            
+            // Рисуем накопленные блоки знания
+            knowledgeBlocks.forEach((block, index) => {
+                const yPos = 80 - (index * 12);
+                
+                accCtx.fillStyle = '#2ecc71';
+                accCtx.fillRect(40, yPos, 60, 10);
+                
+                // Добавляем текст на блоки
+                if (index === knowledgeBlocks.length - 1) {
+                    accCtx.fillStyle = 'white';
+                    accCtx.font = 'bold 8px Arial';
+                    accCtx.fillText('Идея', 55, yPos + 7);
+                }
+            });
+        }
+        
+        // Анимация
+        function animate() {
+            drawEvaporation();
+            drawAccumulation();
+            requestAnimationFrame(animate);
+        }
+        
+        // Инициализация
+        function init() {
+            // Добавляем первоначальные элементы для демонстрации
+            efforts.push({ x: 60, y: 40, opacity: 0.7, size: 5 });
+            
+            animate();
+        }
+        
+        init();
+    </script>
+</body>
+</html>
