@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -191,10 +190,10 @@ ul.task-list li input[type="checkbox"] {
 }
 .display.math{display: block; text-align: center; margin: 0.5rem auto;}
  */
-     :root {
+    :root {
         --color: blue;
         --max-content-width: 700px;
-        }
+    }
 
     body {
       font-family: monospace;
@@ -346,7 +345,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     .hypothesis {
-      position: absolute;
+      position: fixed;
       right: 60px;
       top: 130px;
       width: 175px;
@@ -378,6 +377,15 @@ ul.task-list li input[type="checkbox"] {
         color: white;
     }
 
+    .inline-button {
+        background-color: #00f;
+        color: white;
+        cursor: pointer;
+        border: none;
+        transition: all 0.2s ease-in-out;
+        border-radius: 10px;
+    }
+
     .blueButton {
         background-color: #00f;
         color: white;
@@ -397,6 +405,10 @@ ul.task-list li input[type="checkbox"] {
         border: 2px dashed #00f;
     }
 
+    .explainer {
+        display: none;
+    }
+
     .epigraph p:first-child::before {
       content: open-quote;
       font-size: 2em;
@@ -414,25 +426,6 @@ ul.task-list li input[type="checkbox"] {
       color: #333333;
     }
 
-    /*Animation*/
-    .textBase::after {
-        content: '';
-        display: inline-block;
-        width: 5px; /* Width of the cursor */
-        height: 16px; /* Height should match the text line height */
-        background-color: var(--color); /* Cursor color */
-        animation: blink 1s cubic-bezier(0.19, 1, 0.22, 1) infinite; /* Animation for blinking effect */
-    }
-
-    @keyframes blink {
-        0%, 100% {
-            opacity: 0; /* Cursor is invisible at start and end */
-        }
-        50% {
-            opacity: 1; /* Cursor is fully visible at halfway point */
-        }
-    }
-    @media (max-width: 1300px) {
     nav {
       display: none;
     }
@@ -453,7 +446,6 @@ ul.task-list li input[type="checkbox"] {
     </a>
   </header>
 
-  <div style="display: flex">
   <div class="content">
       <article>
       <div style="display: flex; flex-direction: column; gap: 0px; margin-top: 20px;">
@@ -515,7 +507,6 @@ ul.task-list li input[type="checkbox"] {
       <!--• **Conflict of Otherness Models in John Law's Actor-Network Theory** **(2019).** *Sociology of power(2), 44-67.*-->
       </div>
     </article>
-  </div>
   </div>
   </body>
 </html>
