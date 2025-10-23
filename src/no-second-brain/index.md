@@ -10,7 +10,7 @@ title: "Вам не нужен «второй мозг»"
 ---
 
 <div class="border plashka">
-**Для кого текст**: исследователи, которые пробовали готовые системы работы с идеями, — Zettelkasten, «второй мозг», Obsidian, Notion, etc. — и столкнулись с сопротивлением материала и собственного мышления.
+**Для кого текст**: исследователи, которые пробовали готовые системы работы с идеями — Zettelkasten, «второй мозг», Obsidian, Notion, etc. — и столкнулись с сопротивлением материала и собственного мышления.
 </div>
 
 ## Введение
@@ -75,9 +75,7 @@ title: "Вам не нужен «второй мозг»"
 
 Популяризаторы «умных» методов работы со знанием — Зонке Аренс, Тиаго Форте [@forte2022], Скотт Шепер [@scheper2022] и другие — брали за основу метод цеттелькастен (Zettelkasten), как его описал Никлас Луман [@luhmann1981]. 
 
-Читая, Луман записывал понравившиеся идеи на карточки и связывал их номерами. Так он не забывал прочитанное и видел связи между идеями. 
-
-<!--<span><button id="zk-button" class="inline-button" onClick="toggleZK('zk', 'zk-button')">Попробовать</button></span>-->
+Читая, Луман записывал понравившиеся идеи на карточки и связывал их номерами. Так он не забывал прочитанное и видел связи между идеями. <span><button id="zk-button" class="inline-button" onClick="toggleZK('zk', 'zk-button')">Попробовать</button></span>
 
 <!--Номера на карточках служили адресами и помогали находить нужную идею и связанную с ней цепочку.-->
 
@@ -95,9 +93,9 @@ function toggleZK(id, buttonId) {
 }
 </script>
 
-<!--<figure id="zk" style="display: none"> -->
-<!--<object data="assets/zettelkasten.html" type="text/html" class="border" style="width:100%; height:60vh;"></object>-->
-<!--</figure>-->
+<figure id="zk" style="display: none"> 
+<object data="assets/zettelkasten.html" type="text/html" class="border" style="width:100%; height:40vh;"></object>
+</figure>
 
 Важно, что для Лумана цеттелькастен был *естественным продолжением его мышления* — ответом на плохую память и интерес к кибернетике. Он настроил систему *для себя*.
 
@@ -236,7 +234,7 @@ if (iframe.requestFullscreen) {
 <!--- **Исследователи**, которые чувствуют, что их интеллектуальный капитал не накапливается-->
 <!--- **Методологи и профессионалы**, для которых ясность мышления — основной рабочий инструмент.-->
 
-<a href="https://konspekt.io" target="_blank">
+<a href="https://forms.gle/77yvMkfRoMNhz4zTA" target="_blank">
   <button class="blueButton border">Заполнить анкету</button>
 </a>
 
