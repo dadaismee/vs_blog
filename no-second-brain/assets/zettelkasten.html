@@ -1,109 +1,214 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Карточки Лумана — связи по номерам</title>
-  <style>
-    body { font-family: sans-serif; }
-    #cardInput { margin-bottom: 10px; }
-    .cards, #chain { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px;}
-    .card, .chain-card { min-width: 120px; background: #eee; padding: 10px 16px; border-radius: 10px; border: 2px solid #9ab; position: relative; font-size: 15px;}
-    .card-num, .chain-num { font-weight: bold; color: #1a61a8;}
-    button { margin-left: 8px; }
-    #chain { margin-top: 28px; min-height: 46px; }
-    .chain-arrow { font-size: 26px; color: #1a61a8; margin: 0 4px;}
-    .card-link-btn { position: absolute; right: 10px; top: 12px; font-size:14px;}
-  </style>
+    <title>Магнитные идеи</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: white;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        
+        .idea {
+            position: absolute;
+            width: 80px;
+            height: 40px;
+            border: 1px dashed #00F;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: #00F;
+            background: white;
+            cursor: move;
+            transition: all 0.3s ease;
+        }
+        
+        .controls {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+        
+        button {
+            background: #00F;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+    </style>
 </head>
 <body>
-  <h2>Карточки идей Лумана</h2>
-  <div id="cardInput">
-    <input id="ideaText" placeholder="Запиши идею...">
-    <button onclick="addCard()">Добавить карточку</button>
-  </div>
-  <div class="cards" id="cards"></div>
+    <div class="controls">
+        <button onclick="addIdea()">+ Идея</button>
+        <button onclick="reset()">Заново</button>
+    </div>
 
-  <div style="margin-top:20px;">
-    <b>Построй цепочку:</b>
-    <br>
-    <span style="font-size:14px;color:#222;">Кликни по карточке — она станет первой в цепочке. Потом кликай по номеру связанной карточки, чтобы добавить её.<br>Строится цепочка как у Лумана!</span>
-  </div>
-  <div id="chain"></div>
+    <script>
+        let ideas = [];
+        let isAttracting = false;
+        let attractionInterval;
 
-<script>
-let cards = [];
-let links = {}; // { fromNum: toNum }
-let chain = [];
+        function addIdea() {
+            const idea = {
+                id: ideas.length,
+                x: Math.random() * (window.innerWidth - 100),
+                y: Math.random() * (window.innerHeight - 60),
+                element: null,
+                cluster: null
+            };
+            
+            const element = document.createElement('div');
+            element.className = 'idea';
+            element.textContent = 'Идея';
+            element.style.left = idea.x + 'px';
+            element.style.top = idea.y + 'px';
+            
+            // Перетаскивание
+            element.onmousedown = function(e) {
+                const startX = e.clientX - idea.x;
+                const startY = e.clientY - idea.y;
+                
+                function moveAt(e) {
+                    idea.x = e.clientX - startX;
+                    idea.y = e.clientY - startY;
+                    element.style.left = idea.x + 'px';
+                    element.style.top = idea.y + 'px';
+                }
+                
+                document.addEventListener('mousemove', moveAt);
+                
+                document.onmouseup = function() {
+                    document.removeEventListener('mousemove', moveAt);
+                    document.onmouseup = null;
+                };
+            };
+            
+            document.body.appendChild(element);
+            idea.element = element;
+            ideas.push(idea);
+            
+            // Начинаем притяжение, если идей достаточно
+            if (ideas.length >= 3 && !isAttracting) {
+                startAttraction();
+            }
+        }
 
-function addCard() {
-  const text = document.getElementById('ideaText').value.trim();
-  if (!text) return;
-  let num = cards.length + 1;
-  cards.push({ num, text });
-  renderCards();
-  document.getElementById('ideaText').value = '';
-}
+        function startAttraction() {
+            isAttracting = true;
+            
+            attractionInterval = setInterval(() => {
+                // Для каждой идеи находим ближайших соседей и притягиваемся к ним
+                ideas.forEach(idea => {
+                    let totalX = 0;
+                    let totalY = 0;
+                    let neighbors = 0;
+                    
+                    // Ищем соседей в радиусе 200px
+                    ideas.forEach(other => {
+                        if (idea.id !== other.id) {
+                            const dx = other.x - idea.x;
+                            const dy = other.y - idea.y;
+                            const distance = Math.sqrt(dx * dx + dy * dy);
+                            
+                            if (distance < 200) {
+                                totalX += other.x;
+                                totalY += other.y;
+                                neighbors++;
+                            }
+                        }
+                    });
+                    
+                    // Если есть соседи, двигаемся к их центру масс
+                    if (neighbors > 0) {
+                        const centerX = totalX / neighbors;
+                        const centerY = totalY / neighbors;
+                        
+                        // Медленное движение к центру
+                        idea.x += (centerX - idea.x) * 0.02;
+                        idea.y += (centerY - idea.y) * 0.02;
+                        
+                        idea.element.style.left = idea.x + 'px';
+                        idea.element.style.top = idea.y + 'px';
+                        
+                        // Меняем цвет при сближении
+                        const intensity = Math.min(neighbors / 3, 1);
+                        idea.element.style.borderColor = `rgb(0, 0, ${255 * intensity})`;
+                        idea.element.style.background = `rgba(0, 0, 255, ${0.1 * intensity})`;
+                    }
+                });
+                
+                // Автоматическое образование кластеров
+                formClusters();
+                
+            }, 50);
+        }
 
-function renderCards() {
-  const box = document.getElementById('cards');
-  box.innerHTML = '';
-  cards.forEach((card, idx) => {
-    let el = document.createElement('div');
-    el.className = 'card';
-    el.innerHTML = `<span class='card-num'>№${card.num}</span><br>${card.text}`;
-    el.onclick = () => startChain(idx);
-    // Кнопка связи
-    let linkBtn = document.createElement('button');
-    linkBtn.className = 'card-link-btn';
-    linkBtn.innerText = '🔗';
-    linkBtn.title = 'Связать с другой карточкой';
-    linkBtn.onclick = (e) => {
-      e.stopPropagation();
-      let to = prompt(`Введите номер карточки, с которой связать №${card.num}:`);
-      let toNum = Number(to);
-      if (toNum && toNum !== card.num && cards.some(c => c.num === toNum)) {
-        links[card.num] = toNum;
-        renderCards();
-      }
-    };
-    el.appendChild(linkBtn);
-    // Если есть связь, показать
-    if (links[card.num]) {
-      let lnk = document.createElement('div');
-      lnk.style="font-size:13px; color:#666;";
-      lnk.innerHTML = `→ связь: №${links[card.num]}`;
-      el.appendChild(lnk);
-    }
-    box.appendChild(el);
-  });
-}
+        function formClusters() {
+            // Простой алгоритм кластеризации
+            ideas.forEach(idea => {
+                idea.cluster = null;
+            });
+            
+            let clusterId = 0;
+            
+            ideas.forEach(idea => {
+                if (idea.cluster === null) {
+                    idea.cluster = clusterId;
+                    // Находим всех соседей в радиусе 100px и добавляем в кластер
+                    ideas.forEach(other => {
+                        if (other.cluster === null) {
+                            const dx = other.x - idea.x;
+                            const dy = other.y - idea.y;
+                            const distance = Math.sqrt(dx * dx + dy * dy);
+                            
+                            if (distance < 100) {
+                                other.cluster = clusterId;
+                            }
+                        }
+                    });
+                    clusterId++;
+                }
+            });
+            
+            // Визуализируем кластеры разными оттенками
+            ideas.forEach(idea => {
+                if (idea.cluster !== null) {
+                    const hue = (idea.cluster * 60) % 360;
+                    idea.element.style.borderColor = `hsl(${hue}, 100%, 50%)`;
+                    idea.element.style.color = `hsl(${hue}, 100%, 50%)`;
+                }
+            });
+        }
 
-function startChain(idx) {
-  chain = [cards[idx].num];
-  renderChain();
-}
+        function reset() {
+            // Останавливаем притяжение
+            clearInterval(attractionInterval);
+            isAttracting = false;
+            
+            // Удаляем все идеи
+            ideas.forEach(idea => {
+                if (idea.element) {
+                    idea.element.remove();
+                }
+            });
+            ideas = [];
+        }
 
-function renderChain() {
-  const chainBox = document.getElementById('chain');
-  if (chain.length === 0) { chainBox.innerHTML = ''; return; }
-  let html = '';
-  chain.forEach((num, i) => {
-    let card = cards.find(c => c.num === num);
-    html += `<span class='chain-card'><span class='chain-num'>№${num}</span><br>${card.text}</span>`;
-    if (links[num]) {
-      html += `<button class='chain-arrow' onclick='addToChain(${links[num]})'>→ №${links[num]}</button>`;
-    }
-  });
-  chainBox.innerHTML = html;
-}
-
-function addToChain(num) {
-  if (!chain.includes(num)) chain.push(num);
-  renderChain();
-}
-
-renderCards();
-renderChain();
-</script>
+        // Добавляем первые идеи для демонстрации
+        setTimeout(() => {
+            addIdea();
+            addIdea();
+            addIdea();
+        }, 100);
+    </script>
 </body>
 </html>
