@@ -3,6 +3,9 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"></script>
   <script data-goatcounter="https://dadaisme.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script src="assets/p5.min.js"></script>
 
@@ -189,7 +192,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-.display.math{display: block; text-align: center; margin: 0.5rem auto;}
 /* CSS for syntax highlighting */
 pre > code.sourceCode { white-space: pre; position: relative; }
 pre > code.sourceCode > span { line-height: 1.25; }
@@ -277,7 +279,7 @@ div.csl-indent {
 } */
     :root {
         --color: blue;
-        --max-content-width: 700px;
+        --max-content-width: 900px;
     }
 
     body {
@@ -338,8 +340,10 @@ div.csl-indent {
     figcaption {
       font-size: 13px;
       font-style: italic;
-      text-align: center;
-      width: 100%;
+      text-align: justify;
+      margin-top: 10px;
+      width: 80%;
+      justify-self: center;
     }
 
     canvas {
@@ -462,6 +466,10 @@ div.csl-indent {
         color: white;
     }
 
+    button {
+      font-family: monospace;
+    }
+
     .inline-button {
         background-color: #00f;
         color: white;
@@ -512,9 +520,21 @@ div.csl-indent {
     }
 
     nav {
-      display: none;
+      display: block;
+      position: fixed;
+      top: 320px;
+      right: 60px;
+      border: 1px dashed #00f;
+      font-size: 12px;
+      padding: 20px;
+      border-radius: 10px;
+      opacity: 0.75;
     }
-  }
+
+    nav strong {
+      text-align: center;
+      align-self: center;
+    }
 
   </style>
 
@@ -537,29 +557,28 @@ div.csl-indent {
       <p>Чтобы прокомментировать любую фразу, выделите её и нажмите <i>Annotate</i></p>
       <img class="border" src="/assets/annotate.png" alt="Annotate" style="display: flex; justify-self: center; width: 75%;"/>
     </div>
-    <!--  -->
-    <!-- <nav id="TOC" role="doc-toc"> -->
-    <!--   <strong>Содержание</strong> -->
-    <!--   <ul>
-<li><a href="#введение" id="toc-введение">Введение</a></li>
-<li><a href="#метафора-кодирования"
-id="toc-метафора-кодирования">Метафора кодирования</a></li>
-<li><a href="#репрезентация"
-id="toc-репрезентация">Репрезентация</a></li>
-<li><a href="#слова-и-алгебра-понятий"
-id="toc-слова-и-алгебра-понятий">Слова и алгебра понятий</a></li>
-<li><a href="#промежуточные-результаты"
-id="toc-промежуточные-результаты">Промежуточные результаты</a></li>
-<li><a href="#интерфейсы-для-чтения-и-письма"
-id="toc-интерфейсы-для-чтения-и-письма">Интерфейсы для чтения и
-письма</a></li>
-<li><a href="#вместо-заключения" id="toc-вместо-заключения">Вместо
-заключения</a></li>
-<li><a href="#источники" id="toc-источники">Источники</a></li>
-</ul> -->
-    <!-- </nav> -->
-    <!--  -->
-      <article>
+        <nav id="TOC" role="doc-toc">
+      <strong>Содержание</strong>
+      <ul>
+      <li><a href="#введение" id="toc-введение">Введение</a></li>
+      <li><a href="#метафора-кодирования"
+      id="toc-метафора-кодирования">Метафора кодирования</a></li>
+      <li><a href="#репрезентация"
+      id="toc-репрезентация">Репрезентация</a></li>
+      <li><a href="#слова-и-алгебра-понятий"
+      id="toc-слова-и-алгебра-понятий">Слова и алгебра понятий</a></li>
+      <li><a href="#промежуточные-результаты"
+      id="toc-промежуточные-результаты">Промежуточные
+      результаты</a></li>
+      <li><a href="#интерфейсы-для-чтения-и-письма"
+      id="toc-интерфейсы-для-чтения-и-письма">Интерфейсы для чтения и
+      письма</a></li>
+      <li><a href="#вместо-заключения" id="toc-вместо-заключения">Вместо
+      заключения</a></li>
+      <li><a href="#источники" id="toc-источники">Источники</a></li>
+      </ul>
+    </nav>
+          <article>
       <div style="display: flex; flex-direction: column; gap: 0px; margin-top: 20px;">
                             <p style="margin: 0px;">Опубликовано: <i>06.10.2025</i></p>
             <!-- , обновлено <i>06.10.2025</i></p> -->

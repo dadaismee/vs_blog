@@ -3,6 +3,9 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"></script>
   <script data-goatcounter="https://dadaisme.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script src="assets/p5.min.js"></script>
 
@@ -189,7 +192,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-.display.math{display: block; text-align: center; margin: 0.5rem auto;}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
@@ -213,7 +215,7 @@ div.csl-indent {
 } */
     :root {
         --color: blue;
-        --max-content-width: 700px;
+        --max-content-width: 900px;
     }
 
     body {
@@ -274,8 +276,10 @@ div.csl-indent {
     figcaption {
       font-size: 13px;
       font-style: italic;
-      text-align: center;
-      width: 100%;
+      text-align: justify;
+      margin-top: 10px;
+      width: 80%;
+      justify-self: center;
     }
 
     canvas {
@@ -452,9 +456,21 @@ div.csl-indent {
     }
 
     nav {
-      display: none;
+      display: block;
+      position: fixed;
+      top: 320px;
+      right: 60px;
+      border: 1px dashed #00f;
+      font-size: 12px;
+      padding: 20px;
+      border-radius: 10px;
+      opacity: 0.75;
     }
-  }
+
+    nav strong {
+      text-align: center;
+      align-self: center;
+    }
 
   </style>
 
@@ -477,34 +493,33 @@ div.csl-indent {
       <p>Чтобы прокомментировать любую фразу, выделите её и нажмите <i>Annotate</i></p>
       <img class="border" src="/assets/annotate.png" alt="Annotate" style="display: flex; justify-self: center; width: 75%;"/>
     </div>
-    <!--  -->
-    <!-- <nav id="TOC" role="doc-toc"> -->
-    <!--   <strong>Содержание</strong> -->
-    <!--   <ul>
-<li><a href="#введение" id="toc-введение">Введение</a></li>
-<li><a href="#работа-которая-испаряется"
-id="toc-работа-которая-испаряется">Работа, которая испаряется</a></li>
-<li><a href="#три-года-в-ловушке-продуктивности"
-id="toc-три-года-в-ловушке-продуктивности">Три года в ловушке
-продуктивности</a></li>
-<li><a href="#второй-мозг-не-нужен"
-id="toc-второй-мозг-не-нужен">«Второй мозг» не нужен</a></li>
-<li><a href="#не-второй-мозг-а-продолжение-первого"
-id="toc-не-второй-мозг-а-продолжение-первого">Не второй мозг, а
-продолжение первого</a></li>
-<li><a href="#от-абстракций-к-материальности"
-id="toc-от-абстракций-к-материальности">От абстракций к
-материальности</a></li>
-<li><a href="#что-с-этим-делать" id="toc-что-с-этим-делать">Что с этим
-делать?</a></li>
-<li><a href="#от-инструментов-к-пониманию"
-id="toc-от-инструментов-к-пониманию">От инструментов — к
-пониманию</a></li>
-<li><a href="#источники" id="toc-источники">Источники</a></li>
-</ul> -->
-    <!-- </nav> -->
-    <!--  -->
-      <article>
+        <nav id="TOC" role="doc-toc">
+      <strong>Содержание</strong>
+      <ul>
+      <li><a href="#введение" id="toc-введение">Введение</a></li>
+      <li><a href="#работа-которая-испаряется"
+      id="toc-работа-которая-испаряется">Работа, которая
+      испаряется</a></li>
+      <li><a href="#три-года-в-ловушке-продуктивности"
+      id="toc-три-года-в-ловушке-продуктивности">Три года в ловушке
+      продуктивности</a></li>
+      <li><a href="#второй-мозг-не-нужен"
+      id="toc-второй-мозг-не-нужен">«Второй мозг» не нужен</a></li>
+      <li><a href="#не-второй-мозг-а-продолжение-первого"
+      id="toc-не-второй-мозг-а-продолжение-первого">Не второй мозг, а
+      продолжение первого</a></li>
+      <li><a href="#от-абстракций-к-материальности"
+      id="toc-от-абстракций-к-материальности">От абстракций к
+      материальности</a></li>
+      <li><a href="#что-с-этим-делать" id="toc-что-с-этим-делать">Что с
+      этим делать?</a></li>
+      <li><a href="#от-инструментов-к-пониманию"
+      id="toc-от-инструментов-к-пониманию">От инструментов — к
+      пониманию</a></li>
+      <li><a href="#источники" id="toc-источники">Источники</a></li>
+      </ul>
+    </nav>
+          <article>
       <div style="display: flex; flex-direction: column; gap: 0px; margin-top: 20px;">
                             <p style="margin: 0px;">Опубликовано: <i>23.10.2025</i></p>
             <!-- , обновлено <i>22.10.2025</i></p> -->
