@@ -3,6 +3,9 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"></script>
   <script data-goatcounter="https://dadaisme.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
   <script src="assets/p5.min.js"></script>
 
@@ -44,7 +47,7 @@
     /* $styles.html()$ */
     :root {
         --color: blue;
-        --max-content-width: 700px;
+        --max-content-width: 900px;
     }
 
     body {
@@ -105,8 +108,10 @@
     figcaption {
       font-size: 13px;
       font-style: italic;
-      text-align: center;
-      width: 100%;
+      text-align: justify;
+      margin-top: 10px;
+      width: 80%;
+      justify-self: center;
     }
 
     canvas {
@@ -283,9 +288,21 @@
     }
 
     nav {
-      display: none;
+      display: block;
+      position: fixed;
+      top: 320px;
+      right: 60px;
+      border: 1px dashed #00f;
+      font-size: 12px;
+      padding: 20px;
+      border-radius: 10px;
+      opacity: 0.75;
     }
-  }
+
+    nav strong {
+      text-align: center;
+      align-self: center;
+    }
 
   </style>
 
@@ -312,12 +329,12 @@
       <p>Чтобы прокомментировать любую фразу, выделите её и нажмите <i>Annotate</i></p>
       <img class="border" src="/assets/annotate.png" alt="Annotate" style="display: flex; justify-self: center; width: 75%;"/>
     </div>
-    <!-- $if(toc)$ -->
-    <!-- <nav id="$idprefix$TOC" role="doc-toc"> -->
-    <!--   <strong>Содержание</strong> -->
-    <!--   $toc$ -->
-    <!-- </nav> -->
-    <!-- $endif$ -->
+    $if(toc)$
+    <nav id="$idprefix$TOC" role="doc-toc">
+      <strong>Содержание</strong>
+      $toc$
+    </nav>
+    $endif$
   $endif$
     <article>
       <div style="display: flex; flex-direction: column; gap: 0px; margin-top: 20px;">

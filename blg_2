@@ -58,6 +58,7 @@ for page in "${pages[@]}"; do
     # Build the page - extract media to post-specific assets directory
     pandoc --toc "$page" -o "$BUILD_DIR/$new_page" \
       --citeproc \
+      --mathjax \
       --filter mermaid-filter \
       --lua-filter=append-back-after-source.lua \
       --lua-filter=target_blank.lua \

@@ -1,7 +1,5 @@
 ---
 id: index
-aliases: []
-tags: []
 date: $date
 documentclass: article
 generate_toc: true
@@ -18,6 +16,7 @@ pagestyle: headings
 subtitle: phd thesis work-in-progress
 title: Evolution of social institutions from "animal conventions" with niche construction in Guala's unified social ontology
 ---
+
 ::: {.epigraph}
 Future social science may be as ontologically surprising as twentieth-century physics was
 
@@ -2432,6 +2431,7 @@ What we do next is building models to (try to) answer the question of how cognit
 
 
 # **Chapter 3**. Evolution of normativity in Guala's unified social ontology from non-epistemic agents with niche construction
+
 As we saw in the previous chapter, Guala and Hindriks explain the stability of social institutions with both objective and subjective parts: equilibria of strategic games and meaningful rules employed by agents with which they represent the objective equilibria of games. I claimed that Guala and Hindriks bet too much on an ambiguous notion of representation as responsible for normativity which, according to them, stabilizes institutions. The ambiguity stems from the description of representation as correspondence between scientific concepts and its real-world referents, while using cognitive capacity language. Discerning these notions shows that scientific notion of representation is what makes RiE work, but scientific representation depends, as I claimed, on *decoupled representation* as evolved cognitive capacity to disentangle stimuli and response and internalize norms. Showing how a representational capacity contributes to rule-following is central for our argument.
 
 A reasonable place to start is to unpack Sterelny's theory of decoupled representation mentioned by Guala and Hindriks in their appeal to cognitive representation as responsible for coordinating action on many representations as following rules. Taking Sterelny's theory seriously will allow us to see that its core mechanism of *cognitive niche construction* is ecological, meaning that the novelty is introduced through the interaction of agents with their environment. This will provide an important clue for resolving both problems of RiE: emergence of epistemic correlation from ontic one and emergence of normativity. A capacity of agents to modify the informational structure of their environment affects the ways of responding to environment, thus providing a "ratcheting" mechanism of what Sterelny calls "downstream niche construction".
