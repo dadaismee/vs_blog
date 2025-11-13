@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Коробки дел и мыслей — Цветные</title>
+  <style>
+    body { font-family: sans-serif; }
+    #shelf, .box { min-height: 40px; border: 2px dashed #aaa; padding: 10px; margin-bottom: 12px; display: flex; flex-wrap: wrap; }
+    #shelf { background: #f5f5f5; }
+    .item { margin: 6px; padding: 4px 10px; border-radius: 12px; font-size: 16px; cursor: move; background: #fbe9ae; transition: background 0.2s; }
+    .box-title { font-weight: bold; font-size: 17px; margin-bottom: 6px; }
+    .box { width: 30%; min-width: 110px; margin-right: 2%; display: inline-block; vertical-align: top; }
+    .box.over { box-shadow: 0 0 6px 2px #6666aa; }
+    /* Цвета коробок */
+    .box-think { background: #d9f5db; border-color: #4caf50; }
+    .box-need { background: #fff8d2; border-color: #ffd600; }
+    .box-now { background: #ffd6d6; border-color: #e53935; }
+    /* Цвета мыслей в коробке */
+    .item-think { background: #b9ebbf; }
+    .item-need { background: #ffe36d; }
+    .item-now { background: #ff8585; }
+  </style>
+</head>
+<body>
+  <h2>Коробки дел и мыслей (цветные)</h2>
+  <div>
+    <input id="item-text" placeholder="Игрушка или мысль...">
+    <button onclick="addItem()">Добавить на полку</button>
+  </div>
+  <div id="shelf"></div>
+
+  <hr>
+  <div style="display: flex; justify-content: space-between;">
+    <div class="box box-think" id="box-question"><div class="box-title">? <br><small>Надо подумать</small></div></div>
+    <div class="box box-need" id="box-file"><div class="box-title">📁 <br><small>Будет нужно</small></div></div>
+    <div class="box box-now" id="box-action"><div class="box-title">⚡ <br><small>Сделать сейчас</small></div></div>
+  </div>
+
+  <script>
+    let shelf = [];
+    let boxes = { question: [], file: [], action: [] };
+
+    function addItem() {
+      const value = document.getElementById('item-text').value;
+      if (!value) return;
+      shelf.push(value);
+      renderShelf();
+      document.getElementById('item-text').value = '';
+    }
+
+    function renderShelf() {
+      const shelfDiv = document.getElementById('shelf');
+      shelfDiv.innerHTML = '';
+      shelf.forEach((item, idx) => {
+        let el = document.createElement('span');
+        el.className = 'item';
+        el.innerText = item;
+        el.draggable = true;
+        el.ondragstart = (e) => {
+          e.dataTransfer.setData('text/plain', idx);
+        };
+        shelfDiv.appendChild(el);
+      });
+    }
+
+    function setupBoxDnD(boxId, boxKey, itemClass) {
+      const box = document.getElementById(boxId);
+      box.ondragover = (e) => {
+        e.preventDefault();
+        box.classList.add('over');
+      };
+      box.ondragleave = () => box.classList.remove('over');
+      box.ondrop = (e) => {
+        e.preventDefault();
+        box.classList.remove('over');
+        const idx = +e.dataTransfer.getData('text/plain');
+        if (!isNaN(idx)) {
+          boxes[boxKey].push({ text: shelf[idx], class: itemClass });
+          shelf.splice(idx, 1);
+          renderShelf(); renderBoxes();
+        }
+      };
+    }
+
+    function renderBoxes() {
+      document.getElementById('box-question').innerHTML = `<div class="box-title">? <br><small>Надо подумать</small></div>` +
+        boxes.question.map(i => `<span class='item item-think'>${i.text}</span>`).join('');
+      document.getElementById('box-file').innerHTML = `<div class="box-title">📁 <br><small>Будет нужно</small></div>` +
+        boxes.file.map(i => `<span class='item item-need'>${i.text}</span>`).join('');
+      document.getElementById('box-action').innerHTML = `<div class="box-title">⚡ <br><small>Сделать сейчас</small></div>` +
+        boxes.action.map(i => `<span class='item item-now'>${i.text}</span>`).join('');
+    }
+
+    renderShelf();
+    renderBoxes();
+    // boxId | boxKey | itemClass
+    setupBoxDnD('box-question', 'question', 'item-think');
+    setupBoxDnD('box-file', 'file', 'item-need');
+    setupBoxDnD('box-action', 'action', 'item-now');
+  </script>
+</body>
+</html>
