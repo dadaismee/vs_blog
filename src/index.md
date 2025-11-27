@@ -23,6 +23,7 @@
 <br/>
 **Эссе и заметки**:
 
+→ (27.11.2025) <a href="https://dadaismee.github.io/k.longread.writing-well-main/" target="_self">Введение в систему письма</a> — ~20 минут<br/>
 → (23.10.2025) <a href="/no-second-brain" target="_self">Вам не нужен «второй мозг»</a> — ~15 минут<br/>
 → (06.10.2025) <a href="/symmetry" target="_self">Симметрия чтения и письма</a> — ~20 минут
 
