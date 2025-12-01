@@ -288,7 +288,6 @@
     }
 
     nav {
-      display: block;
       position: fixed;
       top: 320px;
       right: 60px;
@@ -297,6 +296,10 @@
       padding: 20px;
       border-radius: 10px;
       opacity: 0.75;
+
+      @media (max-width: 700px) {
+        display: none;
+      }
     }
 
     nav strong {
