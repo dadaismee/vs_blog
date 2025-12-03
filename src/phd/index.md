@@ -43,6 +43,21 @@ pagestyle: headings
 <!---->
 ## Актуальность исследования
 
+• Формальный Каркас: Представить модель в рамках Сигнальных Игр (Lewis Signaling Games), явно показывая, как манипулирование Rep (например, количеством состояний мира W или сообщений M) влияет на H и R 
+SM
+​
+ . | Lewis Signaling Games, ESS, CE, H, R 
+SM
+​
+ . |
+
+
+◦ Связь: Энтропия (H) – это формальное следствие репрезентации (Rep), поскольку Rep увеличивает кардинальность возможных сигналов/интерпретаций, делая исходы более равновероятными и, следовательно, увеличивая H.
+
+Цель вашей диссертации: Натуралистическое объяснение возникновения принудительной силы эпистемических конструкций (правил) в онтологии институтов.
+
+***
+
 Социальные институты — деньги, собственность или брак — обладают интересным свойством: их существование и способность оказывать причинное воздействие обусловлены нашими представлениями о них. Коллективное представление «эта бумага — деньги» не просто описывает мир, но активно его формирует, наделяя бумагу причинной силой и способностью к ценностному обмену, а математическая модель оценки опционов, распространяясь среди трейдеров, становится для них руководством к действию, и реальные цены опционов начинают соответствовать предсказаниями модели [@mackenzie2006].
 
 > A viable ontology is both a product and a project of any science. It is a foil for future research and an ultimate goal of knowing "what there is". Conjectures about the nature of objects of study influence the ways of approaching them: if the social world, for example, is comprised of individuals, you will probably study individuals, their properties and relationships between them. Philosophy and history of science have seen cases when mistaken ontology led to scientific mistakes[^1]. In social science, the issue of ontology is even more complicated due to its multi-paradigm nature and lack of shared foundations: diverse objects of study, methods and explanatory strategies[^2].
