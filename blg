@@ -116,6 +116,7 @@ for page in "${pages[@]}"; do
 
     # Build the page 
     pandoc --toc "$page" -o "$BUILD_DIR/$new_page" \
+      --katex \
       --citeproc \
       --filter mermaid-filter \
       --lua-filter=append-back-after-source.lua \
@@ -130,7 +131,6 @@ for page in "${pages[@]}"; do
       --resource-path="assets:$directory" \
       # --filter pandoc-sidenote \
       # --css="/Users/valerii/Obsidian/Service/pandoc.css" \
-      # --katex \
       # --css="/Users/valerii/Obsidian/Service/tufte.css" \
       # --css="/Users/valerii/Obsidian/Service/tufte-extra.css" \
       # --template="/Users/valerii/Obsidian/Service/tufte.html5"
