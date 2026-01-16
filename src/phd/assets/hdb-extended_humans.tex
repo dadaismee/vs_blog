@@ -12,52 +12,56 @@
     infoset/.style={thick,dashed}
 ]
 
-% Nature
+% === Nature ===
 \node[chance] (N) at (0,0) {$N$};
 
-% Types
-\node (O) at (3,2) {Owner};
-\node (I) at (3,-2) {Intruder};
+% === Types ===
+\node (O) at (2,2) {Owner};
+\node (I) at (2,-2) {Intruder};
 
 \draw[line] (N) -- node[above] {$1/2$} (O);
 \draw[line] (N) -- node[below] {$1/2$} (I);
 
-% Receiver nodes
-\node[decision] (SO1) at (6,3) {$R$};   % Owner -> O
-\node[decision] (SO2) at (6,1) {$R$};   % Owner -> I
-\node[decision] (SI1) at (6,-1) {$R$};  % Intruder -> O
-\node[decision] (SI2) at (6,-3) {$R$};  % Intruder -> I
+% === Receiver nodes ===
+\node[decision] (RO_I) at (5,3) {$R$};    % Owner → m=I
+\node[decision] (RO_O) at (5,1) {$R$};    % Owner → m=O
+\node[decision] (RI_O) at (5,-1) {$R$};   % Intruder → m=O
+\node[decision] (RI_I) at (5,-3) {$R$};   % Intruder → m=I
 
-% Messages (SWAPPED at Owner)
-\draw[line] (O) -- node[above] {$m=I$} (SO1);
-\draw[line] (O) -- node[below] {$m=O$} (SO2);
+% === Messages ===
+\draw[line] (O) -- node[above] {$m=I$} (RO_I);
+\draw[line] (O) -- node[below] {$m=O$} (RO_O);
+\draw[line] (I) -- node[above] {$m=O$} (RI_O);
+\draw[line] (I) -- node[below] {$m=I$} (RI_I);
 
-\draw[line] (I) -- node[above] {$m=O$} (SI1);
-\draw[line] (I) -- node[below] {$m=I$} (SI2);
+% === Information set for m=O ===
+\draw[infoset] (5,0) ellipse (0.6 and 1.6);
 
-% Information set for m = O (CORRECT)
-\draw[infoset] (6,0) ellipse (0.9 and 1.8);
+% === Terminal nodes (симметрично и с равным интервалом) ===
+\node (S1) at (8,3.8) {$(0,0)$};   % Owner→m=I, H
+\node (S2) at (8,2.2) {$(2,1)$};   % Owner→m=I, D
+\node (S3) at (8,1.0) {$(0,0)$};   % Owner→m=O, H
+\node (S4) at (8,-0.2) {$(2,1)$};  % Owner→m=O, D
+\node (S5) at (8,-1.0) {$(1,2)$};  % Intruder→m=O, H
+\node (S6) at (8,-2.2) {$(1,1)$};  % Intruder→m=O, D
+\node (S7) at (8,-3.2) {$(0,0)$};  % Intruder→m=I, H
+\node (S8) at (8,-4.4) {$(2,1)$};  % Intruder→m=I, D
 
-\node at (6,2.4) {$m=O$};
+% === Connect Receiver nodes to terminal payoffs ===
+\draw[line] (RO_I) -- node[above] {H} (S1);
+\draw[line] (RO_I) -- node[below] {D} (S2);
 
-% Payoffs
-\node (S1) at (9,3.8) {$(0,0)$};
-\node (S2) at (9,2.2) {$(2,1)$};
-\node (S3) at (9,0.8) {$(0,0)$};
-\node (S4) at (9,-0.8) {$(2,1)$};
-\node (S5) at (9,-2.2) {$(1,2)$};
-\node (S6) at (9,-3.8) {$(1,1)$};
+\draw[line] (RO_O) -- node[above] {H} (S3);
+\draw[line] (RO_O) -- node[below] {D} (S4);
 
-\draw[line] (SO1) -- node[above] {H} (S1);
-\draw[line] (SO1) -- node[below] {D} (S2);
+\draw[line] (RI_O) -- node[above] {H} (S5);
+\draw[line] (RI_O) -- node[below] {D} (S6);
 
-\draw[line] (SO2) -- node[above] {H} (S3);
-\draw[line] (SO2) -- node[below] {D} (S4);
+\draw[line] (RI_I) -- node[above] {H} (S7);
+\draw[line] (RI_I) -- node[below] {D} (S8);
 
-\draw[line] (SI2) -- node[above] {H} (S5);
-\draw[line] (SI2) -- node[below] {D} (S6);
-
-\node at (4.5,-5.2) {\textbf{Cheap talk: Bourgeois not ESS}};
+% === Label ===
+% \node at (4.5,-5.5) {\textbf{Cheap talk: Bourgeois not ESS}};
 
 \end{tikzpicture}
 
