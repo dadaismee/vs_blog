@@ -5,7 +5,6 @@ published: $date
 subtitle: phd thesis work-in-progress
 title: Автореферат диссертации
 word_count: 5334 слов, ~21 минуты
-generate_toc: true
 toc_depth: 3
 documentclass: article
 geometry:
@@ -31,11 +30,11 @@ pagestyle: headings
 
 <!--Don Ross-->
 
-::: {.epigraph}
-Тот, кто понимает бабуина, сделает в метафизике больше, чем Локк
-
-Чарльз Дарвин
-:::
+<!--::: {.epigraph}-->
+<!--Тот, кто понимает бабуина, сделает в метафизике больше, чем Локк-->
+<!---->
+<!--Чарльз Дарвин-->
+<!--:::-->
 <!--He who understands baboon would do more towards metaphysics than Locke-->
 
 <!--Charles Darwin-->
@@ -365,9 +364,9 @@ $$
 #### 1.1.1 Теория конститутивных правил Джон Сёрла
 В 1.1.1 описывается теория Сёрла, её основные компоненты и её объяснение принудительной силы институтов: различение конститутивных и регулятивных правил, понятия деонтической силы, коллективной интенциональности, фоновыж ожиданий.
 
-После описания основных подходов я выделяю ключевые различения для анализа проблемы — конститутивные и регулятивные правила, деонтические силы конститутивных правил [@searle1995], теоретико-игровые равновесия и их разновидности, функциональные/произвольные и нормативные/ненормативные конвенции [@oconnor2019] и провожу границу между понятиями института, социальной нормы и конвенции. После этого я рассматриваю лакуны теорий.
+<!--После описания основных подходов я выделяю ключевые различения для анализа проблемы — конститутивные и регулятивные правила, деонтические силы конститутивных правил [@searle1995], теоретико-игровые равновесия и их разновидности, функциональные/произвольные и нормативные/ненормативные конвенции [@oconnor2019] и провожу границу между понятиями института, социальной нормы и конвенции. После этого я рассматриваю лакуны теорий.-->
 
-#### 1.1.2 Традиция Сёрла: «Стандартная модель» социальной онтологии
+#### 1.1.2 ✅ Традиция Сёрла: «Стандартная модель» социальной онтологии
 Описывается «Стандартная модель» социальной онтологии: её компоненты и представители, а также отношение этих теорий к проблеме источника принудительной силы социальных институтов. Рефлексивность, перформативность…
 
 #### 1.1.3 Критика теории Сёрла
@@ -377,22 +376,350 @@ $$
 ### 1.2 Институты как равновесия в теории игр: устойчивость из рациональности агентов
 Описывается теоретико-игровая традиция институтов как равновесий и базовые понятия теории игр, используемые в данном исследовании. 
 
-#### 1.2.1 «Конвенция» Дэвида Льюиса
-
-#### 1.2.2 Традиция: Шеллинг, Скирмс, Вандершрааф, Гинтис, Гуала
-
-#### 1.2.3 Критика традиции: выхолащивание нормативности, экономический империализм
+#### 1.2.1 ✅ Понятия теории игр
 <details>
+Game theory is a mathematical framework used to analyze situations of strategic interaction between rational decision-makers. Originally developed by John von Neumann and Oskar Morgenstern in their seminal work *Theory of Games and Economic Behavior* [@morgenstern1944], game theory has since evolved to encompass a wide range of applications in economics, biology, political science, and sociology [@gintis2009; @osborne2004]. It provides the tools to study how individuals or groups make choices when their outcomes depend not only on their own decisions but also on the decisions of others. The fundamental building blocks of game theory are games, players, strategies, payoffs, and equilibria [@zamir2013].
+
+A strategic game in game theory is defined as a formal model $G = (N, S, P)$ where:
+
+- $N$ is a set of players
+- $S = (S_1, S_2, \dots, S_n)$ is strategy sets of each player, where $S_i$ is the set of strategies available to player $i$
+- $P = (P_1, P_2, \dots, P_n)$ specifies the payoff functions, where $P_i: S_1 \times S_2 \times \dots S_n \rightarrow \mathbb{R}$ gives the utility for player $i$ given the chosen strategy profile [@myerson1991].
+
+A strategy $s_i \in S_i$ is a complete plan of action a player will follow in any situation they might face within the game. Payoffs represent the rewards or utilities that players receive based on the combination of strategies chosen by all involved.
+
+One of the central concepts in game theory is equilibrium, where no player has an incentive to unilaterally change their strategy given the strategies of others. The most well-known equilibrium concept is the Nash equilibrium (NE), introduced by John Nash in the early 1950s [@nash1950]. A strategy profile $(s_1^*, s_2^*, \dots, s_n^*)$ forms a Nash equilibrium if for every player $i$, the following condition holds:
+
+$$
+P_i(s_i^*, s_{-i}^*) \geq P_i(s_i, s_{-i}^*) \quad \forall s_i \in S_i.
+$$
+
+Here,
+
+- $P_i$ is a payoff function for player $i$
+- $s_i^*$ is a strategy chosen by player $i$ at equilibrium
+- $s_{-i}^*$ is a combination of strategies chosen by all other players except player $i$
+
+The inequality states that player $i$ cannot increase their payoff by unilaterally changing their strategy from $s_i^*$ to any other available strategy $s_i$.
+
+Shortly after Nash’s work, Robert Aumann introduced the concept of *correlated equilibrium* (CE) in 1974 [@aumann1974]. This generalization of Nash equilibrium allows players to coordinate their strategies through signals from a trusted mediator. Unlike Nash equilibrium, where players act independently, CE enables communication or correlation of strategies, capturing coordination through shared information. In a CE, a random signal suggests a strategy to each player, and players follow the recommendation if it is in their best interest to do so. Formally, a correlated equilibrium satisfies:
+
+$$
+\sum_{s'_{-i}} q(s_i, s'_{-i}) \cdot [P_i(s_i, s'_{-i}) - P_i(s'_i, s'_{-i})] \geq 0 \quad \forall s_i, s'_i.
+$$
+
+Here,
+
+- $q(s_i, s'_{-i})$ represents the probability that the mediator recommends strategy $s_i$ to player $i$ and $s'_{-i}$ to the other players
+- $P_i(s_i, s'_{-i})$ is the payoff to player $i$ when they play $s_i$ and the others play $s'_{-i}$
+
+The inequality ensures that the expected payoff from following the recommendation is at least as great as from deviating.
+
+As Roger Myerson has reportedly observed, 
+
+> "If there is intelligent life on other planets, in a majority of them, they would have discovered correlated equilibrium before Nash equilibrium" [@solan1999]. 
+
+CE can be a more natural concept than Nash equilibrium, as its mathematical simplicity and reliance on cooperation make it easier to discover. Myerson argued that humanity's prioritization of Nash equilibrium may have been an accident of history rather than a reflection of its fundamental importance. In societies or civilizations where cooperative behavior is emphasized or external mediators are prevalent, CE could emerge as a more intuitive starting point for understanding strategic interactions.
+
+In the realm of evolutionary biology, John Maynard Smith introduced the concept of *evolutionarily stable strategy* (ESS) in 1973 [@maynard1973]. An ESS is a strategy $s^*$ that is robust against invasion by mutant strategies and satisfies the following condition:
+
+$$
+P(s^*, s^*) > P(s', s^*) \quad or \quad [P(s^*, s^*) = P(s', s^*) \quad and \quad P(s^*, s') > P(s', s')].
+$$
+
+Here,
+
+- $P(s^*, s^*)$ is the payoff when both the incumbent and the invader use strategy $s^*$.
+- $P(s', s^*)$ is the payoff when the invader uses strategy $s'$ while the incumbent sticks to $s^*$.
+
+Beyond Nash, CE and ESS, game theory has explored other equilibrium concepts, including subgame perfect equilibrium, trembling hand perfect equilibrium, and proper equilibrium, among others. These refinements address limitations of the NE, particularly in dynamic and extensive-form games. We will only focus on CE and ESS in the current thesis. 
+
+<!--Notable equilibrium refinements include:-->
+<!---->
+<!--- *Subgame Perfect Equilibrium*: introduced by Selten [-@selten1965], it ensures rational behavior at every stage of a dynamic game by requiring equilibrium strategies in every subgame. It refines NE by eliminating non-credible threats and is particularly relevant in sequential games.-->
+<!---->
+<!--- *Trembling Hand Perfect Equilibrium*: proposed also by Selten [@selten1975], it accounts for the possibility of small, unintended mistakes (or trembles) by requiring that strategies remain optimal even if there is a slight probability of error. This refinement helps to eliminate equilibria that are not robust to slight deviations.-->
+<!---->
+<!--- *Proper Equilibrium*: introduced by Myerson [-@myerson1978], this concept strengthens trembling hand equilibrium by further penalizing less likely mistakes. It ensures that less probable errors are assigned proportionally smaller probabilities, reinforcing stability.-->
+<!---->
+<!--- *Sequential Equilibrium*: developed by Kreps and Wilson [@kreps1982], this refinement addresses the problem of imperfect information by combining strategies with beliefs about what has happened earlier in the game. It is particularly useful in signaling games and dynamic strategic interactions.-->
+<!---->
+<!--- *Perfect Bayesian Equilibrium*: extending the Bayesian framework, it requires that players update their beliefs consistently using Bayes’ rule and choose optimal strategies given their beliefs. It is widely applied in games with incomplete information [@fudenberg1991].-->
+<!---->
+<!--These equilibrium refinements aim to ensure stability and plausibility in strategic settings by accounting for dynamic aspects, imperfect information, and potential errors.-->
+
+Coordination and cooperation problems are fundamental challenges in social philosophy since Hobbes [-@hobbes2016], and game theory has been an indispensable tool for tackling these problems due to its clarity and rigor.
+
+- *Coordination problems* arise when individuals or groups need to choose between multiple possible equilibria, creating ambiguity about which solution will be selected. These problems are central to strategic interaction because they reflect situations where all parties would benefit from making compatible choices but may struggle to agree on a single option. 
+
+- *Cooperation problems*, on the other hand, highlight the conflict between individual rationality and collective benefit, where mutual cooperation yields a better outcome for all, but self-interest may lead to suboptimal results. Such challenges often require mechanisms to facilitate coordination or encourage cooperation, including social conventions or equilibrium selection techniques. Consequently, equilibrium concepts are fundamentally linked to coordination and cooperation problems because they model how rational agents arrive at stable solutions given others' strategies.
+
+Examples of coordination and cooperation problems include classic games like the Battle of the Sexes and the Prisoner's Dilemma. In the former, a husband and a wife coordinate on choosing a leisure activity where everyone is satisfied with the choice, and in the latter, two prisoners independently either defect or cooperate with each other by uncovering their partner in crime to an officer. The payoff matrices of these games are shown below[^payoff-matrix].
+
+[^payoff-matrix]: A payoff matrix is a mathematical representation that shows the possible outcomes for each combination of strategies chosen by the players. Achieving coordination often requires stabilizing communication to arrive at mutual agreement, especially when different individuals or groups have conflicting preferences. This need for a reliable mechanism to resolve coordination issues is crucial in many social contexts.
+
+<!--Doc representations-->
+<!--$$-->
+<!--\begin{figure}-->
+<!--\centering-->
+<!--\begin{tabular}{|c|c|c|}-->
+<!--\hline-->
+<!--& Football & Ballet\\-->
+<!--\hline-->
+<!--Football & 2,1 & 0,0 \\-->
+<!--\hline-->
+<!--Ballet & 0,0 & 1,2 \\-->
+<!--\hline-->
+<!--\end{tabular}-->
+<!--\caption{Battle of sexes}-->
+<!--\end{figure}-->
+<!--$$-->
+
+<!--Web-representations-->
+<div class="table">
+
+$$
+\begin{array}{|c|c|c|}
+\hline
+& Football & Ballet\\
+\hline
+Football & 2,1 & 0,0 \\
+\hline
+Ballet & 0,0 & 1,2 \\
+\hline
+\end{array}
+\quad
+\begin{array}{|c|c|c|}
+\hline
+& Cooperate & Defect \\
+\hline
+Cooperate & -1,-1 & -3,0 \\
+\hline
+Defect & 0,-3 & -2,-2 \\
+\hline
+\end{array}
+$$
+<div class="caption">"Battle of the sexes" (left) and "Prisoner's dilemma" payoff matrices</div>
+</div>
+
+These matrices model real-world problems such as social dilemmas and negotiations. For instance, the Battle of the Sexes often represents situations where partners must choose between competing preferences, while the Prisoner's Dilemma models the challenge of mutual cooperation versus self-interest in scenarios like arms races or public goods provision.
+
+To illustrate the practical difference of equilibrium concepts in solving coordination problems, let us consider the Battle of the Sexes with pure Nash, mixed Nash and CE.
+
+In pure Nash, two pure strategy equilibria exist: both players attend either Ballet or Football. These equilibria ensure perfect coordination but are inherently unfair, as one player always prefers the chosen event over the other. 
+
+A mixed strategy Nash equilibrium also exists, where players randomize their choices independently, but it risks miscoordination. Let the Husband choose Ballet with probability $p$ and Football with $1-p$, and let the Wife choose Ballet with probability $q$ and Football with $1-q$. Using the *indifference principle* according to which a player randomizes her strategies in a way that the opponent is indifferent between their own available strategies, we calculate probabilities:
+
+1. For the Husband to be indifferent, the Wife's mixed strategy must make his expected payoff from Ballet equal to that from Football:
+$$2q + 0(1-q) = 0q + 1(1-q) \implies 2q = 1 - q \implies q = \frac{1}{3}$$
+
+2. For the Wife to be indifferent, the Husband's mixed strategy must make her expected payoff from Ballet equal to that from Football:
+$$1p + 0(1-p) = 0p + 2(1-p) \implies p = 2(1-p) \implies p = \frac{2}{3}$$
+
+Thus, in the mixed strategy Nash equilibrium:
+
+- The **Husband** chooses Ballet with probability $p = \frac{2}{3}$ and Football with $1-p = \frac{1}{3}$.
+- The **Wife** chooses Ballet with probability $q = \frac{1}{3}$ and Football with $1-q = \frac{2}{3}$.
+
+The expected payoffs for both players in this equilibrium are:
+
+- **Husband**: 
+$$
+\begin{aligned}
+\text{E}[U_H] &= p \times q \times u_H(\text{Ballet, Ballet}) + p \times (1 - q) \times u_H(\text{Ballet, Football}) \\
+&\quad + (1 - p) \times q \times u_H(\text{Football, Ballet}) + (1 - p) \times (1 - q) \times u_H(\text{Football, Football}) \\
+&= \frac{2}{3} \times \frac{1}{3} \times 2 + \frac{2}{3} \times \frac{2}{3} \times 0 + \frac{1}{3} \times \frac{1}{3} \times 0 + \frac{1}{3} \times \frac{2}{3} \times 1 \\
+&= \frac{4}{9} + 0 + 0 + \frac{2}{9} = \frac{6}{9} = \frac{2}{3}
+\end{aligned}
+$$
+
+- **Wife**:
+$$
+\begin{aligned}
+\text{E}[U_W] &= p \times q \times u_W(\text{Ballet, Ballet}) + p \times (1 - q) \times u_W(\text{Ballet, Football}) \\
+&\quad + (1 - p) \times q \times u_W(\text{Football, Ballet}) + (1 - p) \times (1 - q) \times u_W(\text{Football, Football}) \\
+&= \frac{2}{3} \times \frac{1}{3} \times 1 + \frac{2}{3} \times \frac{2}{3} \times 0 + \frac{1}{3} \times \frac{1}{3} \times 0 + \frac{1}{3} \times \frac{2}{3} \times 2 \\
+&= \frac{2}{9} + 0 + 0 + \frac{4}{9} = \frac{6}{9} = \frac{2}{3}
+\end{aligned}
+$$
+
+This mixed strategy equilibrium represents a compromise balancing fairness and coordination through randomization, albeit less efficient than pure Nash equilibria due to inherent miscoordination risks[^no-mixed].
+
+[^no-mixed]: Epistemic game theorists contend that there is no correlate of mixed-strategy equilibrium when viewed from epistemic (or knowledge) point of view [@perea]. I agree with them and only talk about it here for the purposes of comparison with CE.
+
+In contrast, CE utilizes public signals to coordinate actions effectively. For instance, a public signal such as a coin flip can recommend both players attend Ballet or Football equiprobably. This mechanism eliminates miscoordination and ensures equal expected payoffs for both players ($1.5$ each). CE helps agents achieve higher payoffs and fairness compared to both pure and mixed Nash equilibria by leveraging shared randomness or communication.
+
+To demonstrate how a signal affects the payoff structure, we add a new strategy *Follow Signal (FS)*, where players choose based on a fair coin flip (Heads = Ballet, Tails = Football). We can do this because CE is essentially a Nash equilibrium of a game augmented with an additional set of strategies [@gintis2009a; @gintis2009]. The payoffs here depend on actual coordination, not just expectations: we can calculate expected payoffs when one player uses $FS$ and the other does not.
+
+- **FS (H) vs Ballet (W)**:
+    - Signal = Tails (50%): H chooses Football, W stays at Ballet → $(0, 0)$
+    - Expected payoff: $0.5 \times (2, 1) + 0.5 \times (0, 0)  =  (1, 0.5)$
+
+- **FS (H) vs. Football (W)**:
+    - Signal = Heads (50%): H chooses Ballet, W stays at Football → $(0, 0)$
+    - Signal = Tails (50%): Both choose Football → $(1, 2)$
+    - Expected payoff: $0.5 \times (0, 0) + 0.5 \times (1, 2)  =  (0.5, 1)$.
+
+Thus, the augmented game matrix becomes:  
+
+<!--Doc representation-->
+<!--$$-->
+<!--\begin{figure}-->
+<!--\centering-->
+<!--\begin{tabular}{|c|c|c|c|}-->
+<!--\hline-->
+<!-- & Ballet (W) & Football (W) & FS (W) \\-->
+<!--\hline-->
+<!--Ballet (H) & (2, 1) & (0, 0) & (1, 0.5) \\-->
+<!--\hline-->
+<!--Football (H) & (0, 0) & (1, 2) & (0.5, 1) \\-->
+<!--\hline-->
+<!--FS (H) & (1, 0.5) & (0.5, 1) & (1.5, 1.5) \\-->
+<!--\hline-->
+<!--\end{tabular}-->
+<!--\end{figure}-->
+<!--$$-->
+<!---->
+
+<!--Web-representation-->
+<div class="table">
+
+$$
+\begin{array}{|l|c|c|c|}
+\hline
+& Ballet (W) & Football (W) & FS (W) \\
+\hline
+Ballet (H) & (2, 1) & (0, 0) & (1, 0.5) \\
+\hline
+Football (H) & (0, 0) & (1, 2) & (0.5, 1) \\
+\hline
+FS (H) & (1, 0.5) & (0.5, 1) & (1.5, 1.5) \\
+\hline
+\end{array}
+$$
+<div class="caption">"Battle of the sexes" with correlated equilibrium</div>
+</div>
+
+The strategy profile of $(FS, FS)$ represents a Nash equilibrium because neither player has an incentive to deviate. If a Husband switches to Ballet, he would only receive $1$, a decrease from his current payoff of $1.5$ when the Wife remains at $FS$. Similarly, if the Wife switches to Football, she would receive only $1$, a decrease from her current payoff of $1.5$ when the Man stays at $FS$. Since no profitable deviation exists for either player, the strategy profile **$(1.5, 1.5)$** is stable. Thus, the CE strategy is as an NE strategy of an augmented game. The difference is that CE are simpler to compute than NE and model real-world scenarios where external signals (e.g., traffic lights) guide decisions. In summary, CE expand the solution space of a game, offering improvements over Nash equilibria when players can leverage a coordination device.
+
+Getting back to coordination problems, @oconnor2019 distinguishes two classes of them:
+
+- correlative problems (same choice to coordinate)
+- complementary problems (different choices to coordinate)
+
+In correlative coordination problems, agents need to converge on the same choice to coordinate successfully. For example, consider a driving game, where two players drive towards each other and each can choose the left or right side to drive on. If they both are on the same side and no one swerves, they might crash, and if each of them chooses a different side, they will stay safe. One important feature of this and other coordination problems is arbitrariness, meaning that it does not matter on what side both players would converge. Instead, what matters is that they either coordinate by choosing the same action, for example, swerving to the right. 
+
+<!--Doc representation-->
+<!--$$-->
+<!--\usepackage{tikz}-->
+<!--\begin{tikzpicture}[scale=1]-->
+<!--% Draw the two-lane road (one lane each direction)-->
+<!--\fill[gray!30] (-2.5,0) rectangle (2.5,6); % road base-->
+<!--% Lane markings (center line)-->
+<!--\draw[white, dashed, line width=1pt] (0,0) -- (0,6);-->
+<!--% Left car (driving upwards, initially left lane, swerving right)-->
+<!--\fill[blue] (1.1,1) rectangle (1.6,2); % car body-->
+<!--% Right car (driving downwards, initially right lane, swerving right from its perspective)-->
+<!--\fill[red] (1.1,5) rectangle (1.6,4); % car body-->
+<!--\draw[->, thick, red] (1.55,4.5) .. controls (0.8,3.5) .. (0.2,2.5); % swerving arrow to right lane (middle lane)-->
+<!--% Labels-->
+<!--\node[blue] at (1.35,0.5) {Swerve right};-->
+<!--\node[red] at (1.35,5.5) {Swerve right};-->
+<!--\end{tikzpicture}-->
+<!--\end{document}-->
+<!--$$-->
+<!---->
+
+On the game matrix, it is represented as two non-unique equilibria. It means that either of them solves the coordination problem.
+
+<!--Doc representation-->
+<!--$$-->
+<!--\begin{figure}-->
+<!--\centering-->
+<!--\begin{tabular}{|c|c|c|}-->
+<!--\hline-->
+<!--& Swerve \quad left & Swerve \quad right \\-->
+<!--\hline-->
+<!--Swerve \quad left & 1,1 & -1,-1 \\-->
+<!--\hline-->
+<!--Swerve \quad right & -1,-1 & 1,1 \\-->
+<!--\hline-->
+<!--\end{tabular}-->
+<!--\caption{Driving game}-->
+<!--\end{figure}-->
+<!--$$-->
+
+<!--Web representtion-->
+<div class="table">
+
+$$
+\begin{array}{|c|c|c|}
+\hline
+& Left & Right \\
+\hline
+Left & 1,1 & -1,-1 \\
+\hline
+Right & -1,-1 & 1,1 \\
+\hline
+\end{array}
+$$
+<div class="caption">Driving game (correlative coordination game)</div>
+</div>
+
+Complementary coordination problems, as opposed to correlative ones, require from agents different actions, or strategies, to coordinate successfully. As @oconnor2019 points out, division of labor or resources is an example of this class of games. For instance, two roommates want to organize a party and invite guests. To proceed, they need to tidy up the house and order pizza delivery. If they both do the cleaning, there will be no food when the guests come, and if they both order pizza delivery, they will have plenty of food but be embarrassed by the mess at the house.
+
+<!--Doc representation-->
+<!--$$-->
+<!--\begin{figure}-->
+<!--\begin{tabular}{|c|c|c|}-->
+<!--\hline-->
+<!--& Order & Tidy \\-->
+<!--\hline-->
+<!--Order & -1,-1 & 1,1 \\-->
+<!--\hline-->
+<!--Tidy & 1,1 & -1,-1 \\-->
+<!--\hline-->
+<!--\end{tabular}-->
+<!--\caption{Party game}-->
+<!--\end{figure}-->
+<!--$$-->
+
+<!--Web representation-->
+<div class="table">
+
+$$
+\begin{array}{|c|c|c|}
+\hline
+& Order & Tidy \\
+\hline
+Order & -1,-1 & 1,1 \\
+\hline
+Tidy & 1,1 & -1,-1 \\
+\hline
+\end{array}
+$$
+<div class="caption">Pizza game (complementary coordination)</div>
+</div>
+
+The only difference between the two classes of coordination problems is either choosing same or different actions to coordinate successfully.
+
+Coordination problems and conventions are intrinsically linked as former ones emerge when individuals or groups require aligned action for mutual benefit, necessitating communication and shared understanding to stabilize interactions. *Conventions function as a mechanism for predictable coordination by encapsulating mutual expectations*, thereby reducing ambiguity and establishing stable behavioral patterns within a social context. David Lewis’s theory of conventions as coordination equilibria, explored in the subsequent section, provides a central treatment of this relationship.
 </details>
 
-### 1.3 Синтез и его амбивалентность: теория «правил-в-равновесии» Франческо Гуалы
+#### 1.2.2 ✅ «Конвенция» Дэвида Льюиса
+
+#### 1.2.3 ✅ Традиция: Шеллинг, Скирмс, Вандершрааф, Гинтис, Гуала
+
+#### 1.2.4 Критика традиции: выхолащивание нормативности, экономический империализм
+
+### 1.3 ✅ Синтез и его амбивалентность: теория «правил-в-равновесии» Франческо Гуалы
 Описывается теория правил-в-равновесии (ПвР) Франческо Гуалы, её критика со стороны коллег, а также критика автора, направленная на лакуны в аргументации и, следовательно, нелегитимные теоретические выводы ПвР.
 
 #### 1.3.1 Теория правил-в-равновесии
-Эту критику развивает Гуала и утверждает, что для объяснения стабильности нужно понятие равновесия из теории игр. Гуала рассматривает большой пласт литературы об институтах как равновесиях и «когнитивных медиа», экономящих мышление. Он предлагает унифицированную социальную онтологию, объединяющую натуралистический проект и интуиции Сёрла с теоретико-игровыми подходами к конвенциям. 
+Гуала утверждает, что для объяснения стабильности нужно понятие равновесия из теории игр. Гуала рассматривает большой пласт литературы об институтах как равновесиях и «когнитивных медиа», экономящих мышление. Он предлагает унифицированную социальную онтологию, объединяющую натуралистический проект и интуиции Сёрла с теоретико-игровыми подходами к конвенциям. 
 
 #### 1.3.2 Критика теории правил-в-равновесии
-Однако теория Гуалы недостаточно проработана — её критикуют с разных сторон: за отсутствие механизма самокорректировки равновесий [@Vanderschraaf_2017], за излиший экстернализм, за неправильный выбор концепции равновесия, за излишнюю инструментализацию и выхолащивание нормативности [@hindriks2019].
+Теория Гуалы недостаточно проработана — её критикуют с разных сторон: за отсутствие механизма самокорректировки равновесий [@Vanderschraaf_2017], за излиший экстернализм, за неправильный выбор концепции равновесия, за излишнюю инструментализацию и выхолащивание нормативности [@hindriks2019].
 
 #### 1.3.3 Глубокая проблема: соотношение правил и равновесий
 Корень проблемы, по моему мнению, глубже — в отношении между правилами и равновесиями в теории Гуалы. Аргументируя унификацию институтов как правил и равнвовесий, Гуала исходит из недостаточности каждого элемента по отдельности: правила могут не иметь принудительной силы и не соблюдаться, а равновесия описывают слишком большой класс феноменов — например, решение территориальных споров у животных [@hindriks2015a]. 
@@ -402,6 +729,8 @@ $$
 Иначе говоря, теория Гуалы создаёт круг в определении: правила помогают агентам достичь равновесий и одновременно репрезентируют уже существующие стратегии, которым необходимо следовать в игре, а нормативность возникает из равновесия. Неясно, что онтологически первично — правила или равновесия, и откуда и почему возникает нормативность. Всё это затрудняет определение онтологии социального института.
 
 Во второй главе я подробно рассматриваю отношение между правилом и равновесием в теории Гуалы.
+
+Настоящая работа, оставаясь в проблемном поле философского анализа институтов (на примере дискуссии с Ф. Гуалой), по своему онтологическому масштабу выходит за его рамки. Критикуя статичную онтологию «правил-в-равновесии», мы предлагаем не просто альтернативную модель института, но новый концептуальный язык для описания социальной реальности — язык параметризованных информационно-силовых сетей. Это не социальная метафизика, а потенциально операционализируемая онтологическая оптика.
 
 <!--Там же гуала говорит, что репрезентация (а не правила, как я думал) отличает КР животных и людей — The reason why this third condition of representation is needed is that the notion of correlated equilibrium is far too permissive and would let in too many behavioural patterns that we would not intuitively consider institutions (466)-->
 
@@ -642,15 +971,49 @@ $$
 <!--Проблема звучит так — что первично для института как источник принудительной силы: равновесие или правило? Интуитивный ответ (вслед за Гинтисом [@gintis2010]) — равновесие, поддерживаемое общим знанием о нормативных санкциях. Решение Гинтиса, кстати, подвержено такой же проблеме *petitio principii*, поскольку постулирует изначально нормативно-ориентированных агентов [@gintis2009a].-->
 
 ## Глава 3. Формальные условия устойчивости института: локальная компенсация блефа и взаимная информация между стратегическими ситуациями
-3.1. Игра «Ястреб-Голубь-Буржуа» с неполной информацией и проблема блефа
+В этой главе мы стрим формальную модель игры ЯГБ с неполной информацией и показываем условия эволюционной стабильности условной (коррелированной) стратегии. Это позволит разрешить проблему статуса правил в теории Гуалы — *ex ante*/*ex post* — и внести ясность в проблему источника принудительной силы в социальной онтологии.
 
-3.2. $\delta$-параметр как необходимое условие локальной устойчивости — статической и эволюционной 
+### 3.1. Игра «Ястреб-Голубь-Буржуа» с неполной информацией и проблема блефа
+- Рассматривается реалистичная игра ЯГБ без предустановленной конвенции в качестве равновесия
+- Находится байесовское равновесие в этой игре с неполной информацией. 
+- Показывается, что оно отличается от коррелированного равновесия, и что стратегия «всегда посылать сигнал "Владелец" и играть по правилу Буржуа-стратегии» строго выгоднее, чем простая условная стратегия Буржуа. 
+- Делается вывод, что КР недостаточно для описания института.
 
-3.3. Проблема масштаба: от одной игры к популяции. Параметр $r$ и надёжность компенсации блефа
+***
 
-3.4. Взаимная информация $I$ о компенсации блефа как мера связности идентичных стратегических ситуаций
+Стратегия Буржуа в ЯГБ является КР в игре с полной информацией — если типы игроков наблюдаемы обоими игроками. Чтобы это показать, введём понятия *истории игры* и *информационного множества*.
+
+История $h \in H$ — конечная последовательность ходов (или узлов дерева) игры в развёрнутой форме $h = (a_1, a_2,\dots, a_k)$. Информационное множество $I_R$ — это набор *неразличимых для получателя* историй игры. Если $|I_R| > 1$, то получатель не знает, в каком узле игры он находится, что усложняет принятие решения. В ЯГБ в примере Гуалы с животными:
+$$
+\begin{gathered}
+h_1 = \{\theta_1, m_1\} \\
+h_2 = \{\theta_2, m_2\} \\
+I_R = \{h\}
+\end{gathered}
+$$
+Поскольку $I_R = 1$ (истории эквивалентны, так как идентичны по форме), получатель сигнала точно знает, в каком узле игры находится.
+
+![Игра ЯГБ с территориальным спором животных в развёрнутой форме. Природа задаёт отправителю сигнала тип с вероятностью ¹⁄₂, он может отправить только сигнал, соответствующий его типу. Получатель сигнала «видит» истинный тип игрока, потому что получаемый сигнал идентичен типу.](./assets/hdb-extended_animals.svg)
+
+А в примере Гуалы с племенами:
+$$I_R(m_1) = \{h, (\theta_2, m_1)\}$$
+
+Тип отправителя неразличим для получателя сигнала — он видит один и тот же сигнал «я владелец» и когда отправитель действительно «владелец», и когда он «чужак», что обозначено на схеме пунктирной линией. Это создаёт неопределённость и лазейку для эксплуатации получателя.
+
+![Игра ЯГБ с территориальным спором людских племён в развёрнутой форме. Природа так же назначает отправителю тип с вероятностью ¹⁄₂, но он может отправить сигнал, не соответствующий своему типу. В таком случае получатель сигнала не сможет различить истинный тип отправителя. Пунктиром обозначено информационно множество — узел дерева игры, который получатель не может различить.](./assets/hdb-extended_humans.svg)
+
+<!--Институт в человеческом обществе не может быть смоделирован как коррелированное равновесие в игре с объективными, проверяемыми сигналами (как у Гуалы). Реальный институт — это попытка установить что-то вроде КР в игре со стратегическими, ненадёжными сигналами. Эта попытка обречена на провал (π(M,B) > π(B,B)), если только в игру не встроен внешний механизм наказания за ложь (δ).-->
+<!---->
+<!--Таким образом, δ — это не часть КР, а предварительное условие для возможности существования КР-подобного состояния в реальном мире. Гуала постулирует идеальные условия (проверяемые сигналы), при которых КР работает без δ. Вы показываете, что в неидеальных условиях (стратегические сигналы) для достижения похожего результата нужен δ.-->
+
+### 3.2. $\delta$-параметр как необходимое условие локальной устойчивости — статической и эволюционной 
+
+### 3.3. Проблема масштаба: от одной игры к популяции. Параметр $r$ и надёжность компенсации блефа
+
+### 3.4. Взаимная информация $I$ о компенсации блефа как мера связности идентичных стратегических ситуаций
 
 Вывод: 
+
 - Формально, институт — это сеть дельта-стабилизированных равновесий в условных стратегий с высокой взаимной информацией. 
 - для существования института нужны:
   - ситуация с конфликтом за ресурс
@@ -662,9 +1025,17 @@ $$
   - любой механизм или устройство, повышающий взаимную информацию о применении санкции между игровыми ситуациями 
 
 ## Глава 4. Каузально-информационная онтология института: связная сеть $\delta$-стабилизированных равновесий в условных стратегиях
-
+<!--Переименуйте один из ключевых подразделов (например, 4.4) или создайте новый 4.1 «Онтологические основания каркаса: от сущностей к параметрам».-->
+<!---->
+<!--Здесь чётко сформулируйте:-->
+<!---->
+<!--Мы отказываемся от онтологизации правил, норм, верований как первичных сущностей.-->
+<!--Мы предлагаем онтологию двух фундаментальных параметров (D, I) и паттернов их распределения в сети акторов.-->
+<!--Институт — это не «вещь» или «правило», а устойчивая конфигурация этих параметров, превышающая определенные пороги.-->
+<!---->
 ### 4.1 Онтологическая интерпретация модели: что такое институт?
-В главн говорится:
+В главе говорится:
+
 - Институт — это набор механизмов, глобально санкционирующих эксплуатацию правила (условной стратегии) в определенном классе стратегических ситуаций.
 - Институт может появиться, только если уже существует конвенция — равновесие в условных стратегиях. Санкция появляется как контрмера от эксплуатации условной стратегии.
 - Институт решает две информационных проблемы: компенсация стратегического блефа и маштабирование применения этой компенсации
@@ -707,30 +1078,7 @@ $$
 ## Заключение: методологическая рефлексия и последствия для социологии
 
 ## ПОДВАЛ
-Чтобы проверить, может ли условная стратегия быть устойчивой в человеческих условиях, нам необходимо явно смоделировать игру с неполной информацией.
 
-В этой главе я строю формальную модель игры ЯГБ с неполной информацией и показываю условия эволюционной стабильности условной (коррелированной) стратегии. Это позволит разрешить проблему статуса правил в теории Гуалы — *ex ante*/*ex post* — и внести ясность в проблему источника принудительной силы в социальной онтологии.
-
-Стратегия Буржуа в ЯГБ эволюционно стабильна, если типы наблюдаемы обоими игроками. Чтобы это показать, введём понятия *истории игры* и *информационного множества*.
-
-История $h \in H$ — конечная последовательность ходов (или узлов дерева) игры в развёрнутой форме $h = (a_1, a_2,\dots, a_k)$. Информационное множество $I_R$ — это набор *неразличимых для получателя* историй игры. Если $|I_R| > 1$, то получатель не знает, в каком узле игры он находится, что усложняет принятие решения. В ЯГБ в примере Гуалы с животными:
-$$
-\begin{gathered}
-h_1 = \{\theta_1, m_1\} \\
-h_2 = \{\theta_2, m_2\} \\
-I_R = \{h\}
-\end{gathered}
-$$
-Поскольку $I_R = 1$ (истории эквивалентны, так как идентичны по форме), получатель сигнала точно знает, в каком узле игры находится.
-
-![Игра ЯГБ с территориальным спором животных в развёрнутой форме. Природа задаёт отправителю сигнала тип с вероятностью ¹⁄₂, он может отправить только сигнал, соответствующий его типу. Получатель сигнала «видит» истинный тип игрока, потому что получаемый сигнал идентичен типу.](./assets/hdb-extended_animals.svg)
-
-А в примере Гуалы с племенами:
-$$I_R(m_1) = \{h, (\theta_2, m_1)\}$$
-
-Тип отправителя неразличим для получателя сигнала — он видит один и тот же сигнал «я владелец» и когда отправитель действительно «владелец», и когда он «чужак», что обозначено на схеме пунктирной линией. Это создаёт неопределённость и лазейку для эксплуатации получателя.
-
-![Игра ЯГБ с территориальным спором людских племён в развёрнутой форме. Природа так же назначает отправителю тип с вероятностью ¹⁄₂, но он может отправить сигнал, не соответствующий своему типу. В таком случае получатель сигнала не сможет различить истинный тип отправителя. Пунктиром обозначено информационно множество — узел дерева игры, который получатель не может различить.](./assets/hdb-extended_humans.svg)
 
 Поскольку получатель не знает наверняка, в каком узле игры находится, его информационное множество позволяет ввести параметр *вероятности блефа отправителя* $e$[^entropy] — каков шанс, что сигнал отправителя не соответствует его типу. 
 
