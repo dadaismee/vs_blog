@@ -320,7 +320,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     figcaption {
       font-size: 13px;
       font-style: italic;
-      text-align: justify;
+      text-align: center;
       margin-top: 10px;
       width: 80%;
       justify-self: center;
@@ -500,7 +500,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     }
 
     nav {
-      display: block;
       position: fixed;
       top: 320px;
       right: 60px;
@@ -509,6 +508,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       padding: 20px;
       border-radius: 10px;
       opacity: 0.75;
+
+      @media (max-width: 700px) {
+        display: none;
+      }
     }
 
     nav strong {
