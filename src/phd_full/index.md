@@ -5,7 +5,7 @@ published: $date
 subtitle: phd thesis work-in-progress
 title: диссертация
 word_count: 
-toc_depth: 3
+toc_depth: 2
 documentclass: article
 geometry:
   - a4paper
@@ -28,7 +28,7 @@ pagestyle: headings
 
 
 # Глава 1. Принудительная сила институтов в социальной онтологии
-В первой главе диссертации описывается проблема, — откуда исходит принудительная сила социальных институтов, а также рассматриваются её ключевые решения — традиция социальной онтологии Джона Сёрла и его последователей [@searle1995; @searle2010; @tuomela2013; @gilbert1992; @bratman2022], традиция теоретико-игрового анализа социальных конвенций Дэвида Льюиса [@lewis1969; @vanderschraaf1995; @gintis2009a], институциональной экономики [@greif2011; @crawford1995; @aoki2011; @aoki2007; @north1990], а также синтез этих традиций в унифицированной социальной онтологии правил-в-равновесии Франческо Гуалы [@guala2015; @guala2016a] и его критику [@searle2015; @rabinowicz2018; @hedoin2021; @Vanderschraaf_2017].
+В первой главе диссертации описывается проблема, — источник принудительной силы социальных институтов, а также рассматриваются её ключевые решения — традиция теоретико-игрового анализа социальных конвенций Дэвида Льюиса [@lewis1969; @vanderschraaf1995; @gintis2009a], традиция социальной онтологии Джона Сёрла и его последователей [@searle1995; @searle2010; @tuomela2013; @gilbert1992; @bratman2022], традиция институциональной экономики [@greif2011; @crawford1995; @aoki2011; @aoki2007; @north1990], а также синтез этих традиций в унифицированной социальной онтологии правил-в-равновесии Франческо Гуалы [@guala2015; @guala2016a] и его критика [@searle2015; @rabinowicz2018; @hedoin2021; @Vanderschraaf_2017].
 
 Результат первой главы — формулировка проблемы диссертации: способна ли синтетическая онтология Франческо Гуалы объяснить принудительную силу социальных институтов? И если нет, то как может быть устроена такая непротиворечивая синтетическая социальная онтология?
 
@@ -63,7 +63,9 @@ pagestyle: headings
 
 [^метафизика]: Метафизика отличается от онтологии тем, что последняя представляет собой совокупность сущностей в определенной области, существование которых считается очевидным, а первая изучает более широкие понятия тождества, причинности и т.д. В данном исследовании мы сосредоточены на социальной онтологии, а не социальной метафизике.
 
-Философ науки Дон Росс предлагает различать *аналитическую* и *научную* социальную онтологию, где основной метод первой — концептуальный анализ, а второй — эмпирические исследования и вывод к наилучшему объяснению [@ross2023]. Для Росса «натуралистическая метафизика», как он её называет, не применяет концепции, которые не встречаются в теориях, моделях или объяснениях «науки первого порядка». Подобную онтологичскую картину мы постараемся построить в данном исследовании.
+Философ науки Дон Росс предлагает различать *аналитическую* и *научную* социальную онтологию, где основной метод первой — концептуальный анализ, а второй — эмпирические исследования и вывод к наилучшему объяснению[^ibe] [@ross2023]. Для Росса «натуралистическая метафизика», как он её называет, не применяет концепции, которые не встречаются в теориях, моделях или объяснениях «науки первого порядка». Подобную онтологичскую картину мы постараемся построить в данном исследовании.
+
+[^ibe]: Есть мнение, что метод вывода к наилучшему объяснению принципиально недоступен для социальных наук и социологии, в частности, поскольку в них «нет аналогов гравитационных волн или бозона Хиггса» — то есть, фундаментальных единиц анализа, исходя из которых можно 
 
 Чтобы ярко показать контраст между научной и аналитической метафизикой, хорошо подходит физика. Онтология физики формулируется в математических терминах, требующих технической компетентности. Формулировка онтологии физики аналитическим способом с использованием семантики возможных миров была бы контринтуитивной и излишне сложной. Она потребовала бы перевода уже существующих научных концепций на язык аналитической метафизики.
 
@@ -77,153 +79,31 @@ pagestyle: headings
 
 [^hbi]: Иерархический Байес — это модель с вероятностными параметрами, которая допускает иерархические отношения между случайными величинами и их распределениями.
 
-Аналитическая социальная онтология основана на концептуальном анализе и утверждает, что она *логически предшествует* методологии социальных наук [@searle1995; @epstein2016; @lauer2019]. Иначе говоря, невозможно изучать социальное, не определив заранее его ключевые характеристики, или видовые свойства, как мы их назвали ранее. Натуралистическая социальная онтология критикует подход аналитической как оторванный от социальной науки [@elder-vass2007; @sarkia2023; @kincaid2024; @ross2023; @little2020]. Их фокус скорее метаонтологический, чем онтологический, поскольку они задаются вопросом, что значит задавать вопросы об онтологии социальных наук и каковы способы достижения онтологии, вместо того чтобы предлагать или критиковать конкретные онтологические модели.
+Аналитическая социальная онтология основана на концептуальном анализе и утверждает, что она *логически предшествует* методологии социальных наук [@searle1995; @epstein2016; @lauer2019]. Иначе говоря, невозможно изучать социальное, не определив заранее его ключевые характеристики, или видовые свойства, как мы их назвали ранее. Натуралистическая социальная онтология критикует подход аналитической как оторванный от социальной науки [@elder-vass2007; @sarkia2023; @kincaid2024; @ross2023; @little2020]. Фокус её пропонентов скорее метаонтологический, поскольку они задаются вопросом, что значит задавать вопросы об онтологии социальных наук и каковы способы достижения онтологии, вместо того чтобы предлагать или критиковать конкретные онтологические модели.
 
-В данной работе основное внимание будет уделено «единой социальной онтологии» Франческо Гуалы, названной им теорией «правил-в-равновесии» [@guala2015; @hindriks2015; @guala2016]. Теория Гуалы пытается сохранить «лучшее из обоих миров» аналитической и натуралистической социальной онтологии и предлагает научный подход к аналитической социальной онтологии Джона Сёрла [@searle1995]. Мы используем теорию Гуалы как отправную точку для построения научной социальной онтологии в смысле Дона Росса — эмпирически-совместимой и основанной на выводе к наилушчему объяснению, а не на концептуальном анализе. 
+В данной работе основное внимание будет уделено «единой социальной онтологии» Франческо Гуалы, названной им теорией «правил-в-равновесии» [@guala2015; @hindriks2015; @guala2016]. Теория Гуалы пытается сохранить «лучшее из обоих миров» аналитической и натуралистической социальной онтологии и предлагает научный подход к аналитической социальной онтологии Джона Сёрла [@searle1995]. Мы используем теорию Гуалы как отправную точку для построения *научной социальной онтологии* в смысле Дона Росса — эмпирически-совместимой и *основанной на выводе к наилучшему объяснению*, а не на концептуальном анализе. 
 
-Чтобы перейти к рассмотрению теории правил-в-равновесии и её роли в построении более общей *научной* социальной онтологии (Глава 2), необходимо рассмотреть традиции исследования институтов, синтезируемые Гуалой в его теории [@hindriks2015a]: 
+Чтобы перейти к рассмотрению теории правил-в-равновесии и её роли в построении более общей научной социальной онтологии (Глава 2), необходимо рассмотреть традиции исследования институтов, синтезируемые Гуалой в его теории [@hindriks2015a]: 
 
-- *конститутивную*, которую выше мы назвали традицией коллективной интенциональности — теории, рассматривающие институты как статусные функции, наделяющие физические объекты социальным значением через их коллективное принятие
 - *равновесную* (equilibrium) — философские и экономические теории, рассматривающие институт как теоретико-игровое равновесие стратегий агентов
+- *конститутивную*, которую выше мы назвали традицией коллективной интенциональности — теории, рассматривающие институты как статусные функции, наделяющие физические объекты социальным значением через их коллективное принятие
 - *регулятивную* — экономические теории, рассматривающие институт как систему правил, направляющих и ограничивающих поведение
 
-## ⏳ 1.1 Институт как система конститутивных правил: принудительная сила из коллективной интенциональности 
 
-<details>
-Теория Джона Сёрла представляет собой фундаментальный вклад в философию общества, фокусируясь на онтологии социальных институтов. Разработанная в работах от «Речевых актов» (1969) до "Создания социального мира" (2010), она объясняет, как социальная реальность конструируется через коллективную интенциональность и язык, подчеркивая роль конститутивных правил в создании институциональных фактов с принудительной силой. Принудительная сила здесь понимается как деонтические полномочия — права, обязанности и санкции, которые обязывают индивидов к определенному поведению в контексте институтов, таких как деньги, брак или государство. Эта сила не физическая, а нормативная, возникающая из коллективного признания [@searle1995]. Теория интегрирует элементы философии языка, разума и общества, предлагая унифицированный подход к пониманию, как «физические факты» (brute facts) преобразуются в «институциональные» через правила и статус-функции.
+## 1.1 Институт как равновесие
+<!--:принудительная сила из стратегических ограничений взаимодействия-->
 
-### 1.1.1 Теория конститутивных правил Джона Сёрла
-Интеллектуальные корни теории Сёрла уходят в аналитическую философию середины XX века. Он опирается на идеи Дж. Остина, чья теория речевых актов ввела понятие *перформативов* — высказываний, которые «создают» реальность (например, «объявляю вас мужем и женой") [@austin1962]. Сёрл развивает это, показывая, что перформативы лежат в основе институциональных фактов [@searle1969]. Другим ключевым интеллектуальным источником идей Сёрла послужил Людвиг Витгенштейн, чьи идеи о языковых играх и правилах [@wittgenstein1953] Сёрл адаптирует для различия между регулятивными и конститутивными правилами. Витгенштейн подчеркивал, что значение возникает из использования, а Сёрл применяет это к социальным институтам, где правила не просто регулируют, но конституируют деятельность.
+<!--Если традиция «Стандартной модели» социальной онтологии полагает коллективную интенциональность источником нормативных сил правил, которые создают и регулируют социальный порядок (и институты в частности), то теоретико-игровая традиция в философии науки и институциональной экономике полагает таким источником *стратегическое ограничение* в ситуации взаимодействия. -->
+<!---->
+<!--Это большая онтологическая разница: социальная устойчивость из общего понимания нормативности и из иррациональности отклонения от выгодного паттерна поведения. Первое требует коллективного принятия и распознавания конститутивного правила вида «X считается Y в контексте C», которое генерирует регулятивные правила, обязательные к следованию просто в силу того, что все заранее приняли конститутивное правило. Второе требует лишь инструментальной рациональности агентов в ситуациях выбора (хотя не всегда, как мы покажем ниже): агент выбирает действие, которое потенциально окажется для него более желательным. В этом смысле мы будем говорить о «максимизации полезности». -->
+<!---->
+<!--Теория игр, таким образом, концептуализиует институты и социальный порядок в целом как проблему оптимизации и выбора наилучшей стратегии действии в зависимости от контекста ситуации. Подобный акцент на инструментальной рациональности часто подвергался критике как «выхолащивание нормативности» и неспособность схватить нормативное измерение социальной реальности. Однако, как мы покажем ниже, это тоже не всегда так.-->
+<!---->
+<!--Если источник социальной стабильности — это рациональность и оптимизация выбора в условиях ограничений контекста, то именно понятие *ограничения* (constraint), в рамках которого и происходит выбор, будет основным понятием для описания этой традиции.-->
 
-Влияние также заметно от Джона Ролза, чья статья "Two Concepts of Rules" [@rawls1955] ввела понятие конститутивных правил для игр вроде шахмат. Сёрл расширяет это на социальную реальность, включая принудительную силу институтов. В более широком контексте теория Сёрла повлияла на социальную онтологию, интегрируя ее с философией разума: *коллективная интенциональность* — это биологическая способность, возникшая эволюционно, что, по мнению Сёрла, связывает социальное с естественными науками [@searle2010]. В русскоязычном академическом дискурсе влияние Сёрла видно в работах по социальной философии, где его идеи адаптируются для анализа власти и институтов, подчеркивая роль языка в создании нормативных структур [@baidlaeva2014; @nikitin2019].
+Ниже мы кратко представим интеллектуальные истоки теоретико-игрового подхода к социальной координации, исходящие от Дэвида Юма и Томаса Гоббса, затем рассмотрим важные для нашей работы понятия теории игр, — игра, равновесие и несколько их разновидностей, выплата — а после представим аналитическую реконструкцию традиции как *эндогенизации ограничения*, в рамках которого происходит стратегический выбор. Подобная эндогенизация означает, что принуждение «встроено» в структуру стратегического взаимодействия. 
 
-Теория Сёрла также перекликается с критической теорией, хотя он отвергает редукционизм марксизма или структурализма. Вместо этого он предлагает натуралистический подход: социальные факты объективны эпистемически, несмотря на их субъективную онтологию — зависимость от ментальных состояний [@searle2006].
-
-<!--### 1.1.2 Теория и её компоненты-->
-Центральным элементом теории Сёрла является различие между регулятивными и конститутивными правилами. Регулятивные правила регулируют уже существующие формы поведения (например, "не ходи по траве"), имея форму "Делай X" или "Если Y, то делай X" (Searle, 1969). Конститутивные правила, напротив, создают новые формы поведения, делая возможными институциональные факты. Их форма – "X считается Y в контексте C", где X – brute fact (например, кусок бумаги), Y – статус-функция (например, деньги), а C – институциональный контекст (например, экономическая система) (Searle, 1995).
-
-Статус-функции — ключевой компонент: они наделяют объекты или действия функциями, не зависящими от физических свойств, а от коллективного принятия. Это создает «деонтические силы» — принудительную силу институтов, включая положительные (права, разрешения) и отрицательные (обязанности, санкции) аспекты. Например, статус "президент" наделяет индивида правом вето, обязывая других признавать это [@searle2010]. Принудительная сила здесь — нормативная: она мотивирует поведение через обязательства, возникающие из коллективной интенциональности, а не внешнего принуждения.
-
-Коллективная интенциональность — биологически примитивная способность, позволяющая "мы-интенции" (мы делаем что-то вместе), в отличие от индивидуальной "я-интенции". Она лежит в основе социальных фактов, которые иерархически строятся: от brute facts к институциональным, с языком как необходимым средством представления статус-функций (Searle, 2006). В поздних работах Сёрл вводит "Status Function Declarations" — декларативные речевые акты, создающие реальность (например, объявление войны), подчеркивая роль языка в конституировании институтов (Searle, 2010).
-
-В русском контексте теория адаптируется для анализа эволюции институтов: конститутивные правила объясняют, как социальные сущности, такие как власть, приобретают принудительную силу через коллективное признание (Гумницкий, 2020). Компоненты теории можно представить в таблице:
-
-| Компонент | Описание | Пример | Роль в принудительной силе |
-|-----------|----------|--------|----------------------------|
-| Конститутивные правила | "X считается Y в C"; создают новые формы поведения | Кусок бумаги (X) считается деньгами (Y) в экономике (C) | Генерируют статус-функции, наделяющие деонтическими полномочиями (обязанности платить) |
-| Регулятивные правила | Регулируют существующие практики | Правила этикета | Поддерживают, но не создают принудительную силу; могут эволюционировать в конститутивные |
-| Статус-функции | Функции, наложенные коллективно, независимо от физических свойств | Брак как статус | Создают права и обязанности, обеспечивая принудительную силу (например, юридические обязательства) |
-| Коллективная интенциональность | Примитивные "мы-интенции" | Совместная охота или выборы | Основа признания, делающего деонтические полномочия обязательными |
-| Деонтические полномочия | Права, обязанности, санкции | Право собственности | Принудительная сила: мотивируют compliance через нормативные ожидания |
-
-### Key Citations
-- Austin, J. L. (1962). *How to Do Things with Words*. Oxford University Press.
-- Байдлаева, А. К. (2014). Власть и язык: теория создания социальных институтов. *Вестник КазНУ. Серия философия. Серия культурология. Серия политология*, 2(48), 78-85. [URL](https://bulletin-philospolit.kaznu.kz/index.php/1-pol/article/download/280/271)
-- Buekens, F. (2014). Institutions without constitutive rules? In *Deconstructing Searle's Making the Social World* (ed. F. Hindriks). Oxford University Press.
-- Epstein, B. (2015). *The Ant Trap: Rebuilding the Foundations of the Social Sciences*. Oxford University Press.
-- Giddens, A. (1984). *The Constitution of Society: Outline of the Theory of Structuration*. Polity Press.
-- Guala, F. (2010). The philosophy of social science: Metaphysical and empirical. *Philosophy Compass*, 5(4), 254-264.
-- Гумницкий, Г. Н. (2020). Фундаментальная онтология Джона Серля и минимальные условия политического. *Вестник Томского государственного университета. Философия. Социология. Политология*, 55, 5-17. [URL](https://cyberleninka.ru/article/n/fundamentalnaya-ontologiya-dzhona-serlya-i-minimalnye-usloviya-politicheskogo)
-- Hindriks, F. (2009). Constitutive rules, language, and ontology. *Erkenntnis*, 71(2), 253-275. [URL](https://www.rug.nl/staff/f.a.hindriks/constitutive_rules_language_ontology.pdf)
-- Hindriks, F. (2013). Restructuring Searle's Making the Social World. *Philosophy of the Social Sciences*, 43(3), 373-389.
-- Hindriks, F. (2015). Deconstructing Searle's Making the Social World. *Philosophy of the Social Sciences*, 45(3), 363-369.
-- Lawson, T. (2012). Ontology and the study of social reality: Emergence, organisation, community, power, social relations, corporations, artefacts and money. *Cambridge Journal of Economics*, 36(2), 345-385.
-- Miller, S. (2010). *The Moral Foundations of Social Institutions: A Philosophical Study*. Cambridge University Press.
-- Никитин, А. П. (2019). Связь языка и культуры в социально-институциональном измерении: решение проблемы в аналитической традиции. *Философия и культура*, 1, 45-56.
-- Ransdell, J. (1971). Constitutive rules and speech-act analysis. *The Journal of Philosophy*, 68(13), 385-400.
-- Rawls, J. (1955). Two concepts of rules. *The Philosophical Review*, 64(1), 3-32.
-- Ruben, D.-H. (1997). John Searle's The Construction of Social Reality. *Philosophy and Phenomenological Research*, 57(2), 443-447.
-- Searle, J. R. (1969). *Speech Acts: An Essay in the Philosophy of Language*. Cambridge University Press.
-- Searle, J. R. (1995). *The Construction of Social Reality*. Free Press.
-- Searle, J. R. (2006). Social ontology: Some basic principles. *Anthropological Theory*, 6(1), 12-29.
-- Searle, J. R. (2010). *Making the Social World: The Structure of Human Civilization*. Oxford University Press.
-- Tuomela, R. (2002). *The Philosophy of Social Practices: A Collective Acceptance View*. Cambridge University Press.
-- Tuomela, R. (2007). *The Philosophy of Sociality: The Shared Point of View*. Oxford University Press.
-- Warnock, G. J. (1971). The object of morality. Methuen.
-- Wittgenstein, L. (1953). *Philosophical Investigations*. Blackwell.
-</details>
-
-<details>
-Searle’s social ontology distinguishes two kinds of rules: *regulative* rules, which govern actions that can occur independently, and *constitutive* rules, which create new kinds of social reality [@searle1995; @searle2010]. In Searle’s formulation, constitutive rules take the schematic form:
-$$
-X \text{ counts as } Y \text{ in context } C
-$$
-where $X$ is a pre‐institutional entity or action, $Y$ is a *status function*, a social role or function assigned to $X$, and $C$ is the relevant context or domain [@searle1995]. For example, “putting the ball in the net ($X$) counts as scoring a goal ($Y$) in a game of football ($C$)” [@searle1995]. Such rules do not merely regulate pre‐existing behavior; they *create* new social facts. In Searle’s own words, “institutional facts only exist within systems of constitutive rules” [@searle1995].
-
-- **Constitutive vs. Regulative.** A constitutive rule makes a novel institutional action possible, whereas a regulative rule simply prescribes behavior within an already existing framework [@searle1995]. Chess provides a classic example: the constitutive rules of chess *create* the possibility of the game, whereas a regulative rule would say, for instance, “if you touch a piece you must move it” [@searle1995].
-- **Status Functions and Deontic Powers.** Under a rule $X$ counts as $Y$ in $C$, $Y$ is a *status function* attached to $X$, and carrying this status typically confers normative powers (rights, obligations, etc.) on the bearer. Thus if a community collectively accepts that certain actions or objects bear status $Y$, those actions have deontic powers. Searle often emphasizes that constitutive rules imply deontic powers: e.g. a wedding ring ($X$) gives someone the status of “married person” ($Y$), along with associated rights and duties. In Searle’s framework, linguistic declarations often play a role: he introduces the idea of a *Status Function Declaration*, a speech act that imposes or announces status functions as binding [@searle2010].
-
-Searle identifies *institutions* with systems of constitutive rules. He writes that “an institution is any system of constitutive rules of the form $X$ counts as $Y$ in $C$” [@searle1995]. Thus, for Searle, political offices, legal entities, money, marriages, etc., exist because underlying constitutive rules assign new status functions to physical or social substrates. These rules are held in place by *collective acceptance* of the community. In Searle’s view, the syntax “$X$ counts as $Y$ in $C$” – often called the *counts-as* locution – succinctly captures the logic of institutional facts.
-
-Searle’s theory posits that social reality is built upon constitutive rules that are *creatively* implemented: they not only *regulate* behavior but *generate* the very phenomena like institutions and roles they describe [@searle1995; @searle2010].
-</details>
-
-
-### ⏳ 1.1.2 Последователи Сёрла: уточнение природы коллективной интенциональности
-<details>
-Последователи Сёрла развивают его идеи в социальной онтологии, часто уточняя или расширяя их. Раймо Туомела фокусируется на "мы-аттитюдах" (we-attitudes), интегрируя их в теорию коллективного принятия: институты возникают из совместных интенций, но Туомела подчеркивает роль норм и санкций в поддержании принудительной силы (Tuomela, 2002; 2007). Франк Хиндрикс предлагает "статусный аккаунт", ревизуя конститутивные правила: они касаются статусов с нормативными атрибутами (import), а не только "counts-as", позволяя учитывать неявные институты без явного языка (Hindriks, 2009; 2013). Брайан Эпштейн критикует, но развивает теорию, вводя "grounding" институциональных фактов в социальных практиках (Epstein, 2015).
-
-В русском академическом пространстве последователи, такие как А.К. Байдлаева, применяют теорию к анализу власти: язык создает социальные институты с принудительной силой через перформативы, подчеркивая эволюцию от brute facts к институциональным (Байдлаева, 2014). Г.Н. Гумницкий исследует минимальные условия политики в онтологии Сёрла, фокусируясь на коллективной интенциональности как основе политических институтов (Гумницкий, 2020). М.А. Никитин связывает язык и культуру в институциональном измерении, развивая идеи о деонтических полномочиях (Никитин, 2019). Эти авторы часто интегрируют Сёрла с русской традицией социальной философии, подчеркивая роль норм в постсоветских институтах.
-
-Другие, как Тони Лоусон, диалогизируют с Сёрлом, подчеркивая социальные тотальности вместо институциональных фактов, но признавая сходство в онтологии (Lawson, 2012). В целом, последователи расширяют теорию, добавляя акцент на неявные правила и эволюционные аспекты, делая её более гибкой для эмпирических наук.
-</details>
-
-<details>
-In its standard analytic formulations, which @guala2007 even calls the "Standard Model of Social Ontology" (SMOSO), social ontology describes the loosely constrained individualistic foundations of social phenomena and has three key elements [@tuomela2002]:
-
-- reflexivity
-- performativity 
-- collective intentionality.
-
-Reflexivity is a property of social entities to be largely comprised of beliefs about beliefs. There are I-mode and we-mode formulations of reflexive beliefs. Some philosophers say that initial and most basic beliefs comprising “the fabric“ of the social are essentially in We-mode and are not reducible to I-mode [@tuomela2002; @gilbert1992; @schmid2023]. However, there are also more individualistic accounts of reflexive beliefs based on game theory [@guala2016; @bicchieri2005]. 
-
-Performativity amounts to social entities needing to be continuously maintained, performed or recreated. And collective intentionality, in its turn, refers to joint directedness of multiple individuals towards a phenomenon that contributes to its constitution. Collective intentionality tends to be presented either as a derivative of common knowledge and I-beliefs of the form “everyone knows that everyone knows that P“, where P is some social fact like social norm [@bicchieri2005], or as a primitive notion which makes common knowledge redundant. Moreover, there are attempts to naturalize collective intentionality by showing its irreducibility to individual intentionality [@rakoczy2007; @gallotti2012]. 
-
-A prominent example is Searle [-@searle1995] who asks whether it is possible to be epistemologically objective about ontologically subjective issues. How can we know the truths about things whose existence depends on our representations or feelings, for example, about money, property and marriage? By analysing these distinctions of ontology/epistemology and objectivity/subjectivity, Searle arrived at an idea of a missing ingredient that allows for a picture of ontologically subjective entities, which is *constitutive rules* of the form “X counts as Y in C”. 
-
-Here, our classifications of the social world help establish and maintain it, whereas non-social objects are indifferent to our classifications of it, as @hacking1999 puts forward with his distinction of interactive and indifferent kinds[^kinds]. Nature's objects do not change their behaviour given these classifications of them as opposed to social objects. This idea illustrates the notions of reflexivity and performativity characteristic for the “Standard model”. If social entities are comprised of beliefs about beliefs, their nature depends on these beliefs, and if beliefs change, social entities change accordingly. If social entities depend on beliefs about them, it is needed to constantly perform those to maintain them. To do this, individuals need to have collective intentionality about these beliefs. For example, for money to be itself, a relevant community has hold a collective intention to believe that certain physical entities can be used as a medium of exchange. 
-
-[^kinds]: This distinction mirrors the classic one of natural and social kinds, where the former are "homeostatic property clusters", sets of necessary and stable features [@boyd1991].
-
-</details>
-
-
-### ⏳ 1.1.3 Критика теории Сёрла
-Помимо Гуалы, Миллер [@miller2001, 191] и Людвиг [@ludwig2017, 262] переопределяют конститутивные правила как регулятивные. В частности, Людвиг называет конститутивные правила такими регулятивными, правилами намеренное следование которым и конституирует управляемую им активность.
-
-<details>
-Критика теории Сёрла многоаспектна и касается как концептуальных основ, так и применения. Энтони Гидденс аргументирует, что различие между конститутивными и регулятивными правилами искусственно: все правила имеют оба аспекта (например, правило "работники должны отмечаться в 8:00" регулирует, но конституирует бюрократию) (Giddens, 1984). Дэвид-Хиллел Рубен и Джеффри Уорнок видят в нём лишь лингвистическую особенность: действия конститутивны или регулятивны относительно описания, а не онтологически (Ruben, 1997; Warnock, 1971). Джозеф Рансделл критикует фокус на "connotation" (условиях) за счет "import" (нормативных последствий), предлагая правила "X считается Z" для интеграции норм (Ransdell, 1971).
-
-Франк Хиндрикс указывает на проблемы в поздних работах: переоценка роли языка (институты могут существовать без явных деклараций), путаница в Status Function Declarations и игнорирование непризнанных прав (Hindriks, 2013; 2015). Филип Бюкенс предлагает альтернативу: институциональные объекты, как деньги, объясняются действиями и стимулами, без необходимости в статусе Сёрла (Buekens, 2014). Франческо Гвала критикует умозависимость: она подразумевает инфаллибилизм (нет ошибок об институтах), противореча реализму (Guala, 2010). Кроме того, теория не учитывает моральные ограничения: институты могут быть тривиальными или коррумпированными (например, расизм как институт) (Miller, 2010).
-
-В русском контексте критика фокусируется на политике: Гумницкий отмечает, что минимальные условия (коллективная интенциональность, присвоение функций, конститутивные правила) игнорируют историческую эволюцию без явного принятия (Гумницкий, 2020). Никитин подчеркивает несовместимость с культурными контекстами, где принудительная сила возникает из неявных норм (Никитин, 2019). Общая критика: теория слишком формалистична, не объясняя эволюцию институтов из регулятивных практик (например, деньги из бартера) без коллективного акта (Atiyah, 1981).
-
-Несмотря на критику, теория Сёрла остается влиятельной в философии науки, предлагая рамку для анализа, как социальные институты с принудительной силой возникают из коллективных практик и языка.
-</details>
-
-<details>
-Hindriks [-@hindriks2005] has challenged several aspects of Searle’s constitutive-rule framework. His deconstruction focuses on the notions of *status functions* and the role of language. Broadly, Hindriks argued that Searle’s theoretical apparatus is misleading, and that a more streamlined account can be given by focusing on collective acceptance and normative powers.
-
-- **Status Functions as Deontic Powers.** Hindriks finds the term *status function* confusing and somewhat redundant. He suggests dropping the “function” and simply treating statuses as normative powers. In his words, “we can do without the term function while retaining the term status,” instead explicating statuses directly as the bundle of deontic powers they grant [@hindriks2009]. By equating statuses with deontic powers (rights, obligations), Hindriks makes the normative dimension of institutions explicit, rather than hiding it under the metaphor of a “function” [@hindriks2009]. Indeed, Searle himself has acknowledged that “all status functions are deontic powers,” which supports Hindriks’s move toward a more direct terminology [@hindriks2009].
-
-- **Redundancy of Status Function Declarations.** Searle’s idea of a *Status Function Declaration* – a speech act that supposedly creates or recognizes a status – is, for Hindriks, unnecessary. He argues that the two key claims Searle attributes to such declarations (that collective acceptance is necessary and sufficient for the status) are already implicit in the standard “counts-as” formulation. Once we accept that *institutional statuses require collective acceptance, and that collective acceptance alone brings them into being* (the “Collective Acceptance Principle”), the special notion of a Status Function Declaration adds nothing new [@hindriks2015]. Introducing declarations suggests without argument that only explicit speech acts can create institutions; Hindriks finds this unjustified and unhelpful. He concludes that Searle’s extra machinery (the Status Function Declaration with its “double direction of fit”) should be abandoned since it “does not add anything of value” [@hindriks2015].
-
-- **Linguistic vs. Normative Distinction.** Hindriks also questions Searle’s emphasis on language as the source of all institutional power. In his earlier work, Hindriks has argued that the regulative/constitutive distinction is mainly a grammatical one: regulative rules are phrased with explicit imperatives or deontic terms, while constitutive rules are phrased with the “counts-as” locution, but both embed the same normative content [@hindriks2009]. Normative obligations figure explicitly in regulative rules (“Do X” / “If Y do X”), whereas constitutive rules imply those obligations without stating them overtly. Thus, the locus of normativity is not really different between the two; only the linguistic presentation is. Hindriks calls for a view of institutions that centers on *collective commitment* and acceptance of standards, rather than on linguistic declarations per se [@hindriks2009].
-
-In sum, Hindriks dismantles Searle’s superstructure of status functions and declarations, proposing instead that we should “explicate statuses in terms of normative powers” and rely on a simpler collective-acceptance principle [@hindriks2009; @hindriks2015]. On this view, institutions are upheld by groups collectively endorsing certain rules, and the resulting normative powers of those rules are what really matters. His critique paves the way for unifying Searle’s approach with more analytical models, by translating constitutive claims into the language of regulative rules and equilibria.
-</details>
-
-
-## 🚧 1.2 Институт как равновесие: принудительная сила из стратегических ограничений взаимодействия
-Если традиция «Стандартной модели» социальной онтологии полагает коллективную интенциональность источником нормативных сил правил, которые создают и регулируют социальный порядок (и институты в частности), то теоретико-игровая традиция в философии науки и институциональной экономике полагает таким источником *стратегическое ограничение* в ситуации взаимодействия. 
-
-Это большая онтологическая разница: социальная устойчивость из общего понимания нормативности и из иррациональности отклонения от выгодного паттерна поведения. Первое требует коллективного принятия и распознавания конститутивного правила вида «X считается Y в контексте C», которое генерирует регулятивные правила, обязательные к следованию просто в силу того, что все заранее приняли конститутивное правило. Второе требует лишь инструментальной рациональности агентов в ситуациях выбора (хотя не всегда, как мы покажем ниже): агент выбирает действие, которое потенциально окажется для него более желательным. В этом смысле мы будем говорить о «максимизации полезности». 
-
-Теория игр, таким образом, концептуализиует институты и социальный порядок в целом как проблему оптимизации и выбора наилучшей стратегии действии в зависимости от контекста ситуации. Подобный акцент на инструментальной рациональности часто подвергался критике как «выхолащивание нормативности» и неспособность схватить нормативное измерение социальной реальности. Однако, как мы покажем ниже, это тоже не всегда так.
-
-Если источник социальной стабильности — это рациональность и оптимизация выбора в условиях ограничений контекста, то именно понятие *ограничения* (constraint), в рамках которого и происходит выбор, будет основным понятием для описания этой традиции.
-
-Ниже мы кратко представим интеллектуальные истоки теоретико-игрового подхода к социальной координации, исходящие от Дэвида Юма и Томаса Гоббса, затем рассмотрим важные для нашей работы понятия теории игр, — игра, равновесие и несколько их разновидностей, выплата — а после представим аналитическую реконструкцию традиции как постепенной *эндогенизации ограничения*, в рамках которого происходит стратегический выбор. Подобная эндогенизация означает, что принуждение «встроено» в структуру стратегического взаимодействия. По нашему мнению, именно эндогенизация ограничения наиболее полно отражает суть традиции и объединяет разные направления внутри неё.
+<!--По нашему мнению, именно эндогенизация ограничения наиболее полно отражает суть традиции и объединяет разные направления внутри неё.-->
 
 Начать стоит с того, что традиция понимания социальной координации как источника социального порядка имеет богатую историю. Аристотель обосновывал социальные конвенции человеческой природой и стремлением к *эвдемонии*, или процветанию. Он рассматривал людей как «политических животных», которые естественным образом формируют сообщества для достижения коллективного благополучия. Справедливость и добродетель, центральные элементы его этики, считались основой политического порядка. В отличие от более поздних последователей теории общественного договора, Аристотель рассматривал социальную организацию как неотъемлемую часть человеческой рациональности, а не как преднамеренное соглашение [@aristotle1998].
 
@@ -269,7 +149,7 @@ In sum, Hindriks dismantles Searle’s superstructure of status functions and de
 Льюис возродил и операционализировал идеи Юма в теории конвенций, используя теорию игр и рассматривая конвенции как равновесия, поддерживаемые общими знаниями и прецедентами. В то время как Юм подчёркивал историческую случайность и постепенное возникновение, Льюис сформулировал более строгие критерии рациональности и взаимных ожиданий [@lewis2008]. Он рассматривал конвенции как решения проблем координации — класса проблем в теории игр (разделе математики, изучающем стратегическое поведение), — которые требуют от двух или более агентов согласования своих действий для достижения совместно оптимального результата. В следующем разделе мы кратко рассмотрим основные концепции теории игр, прежде чем вернуться к теории конвенций Льюиса, поскольку теория игр будет иметь решающее значение в оставшейся части диссертации.
 
 
-### 1.2.1 Важные понятия теории игр
+### 1.1.1 Важные понятия теории игр
 Теория игр — это математическая теория, используемая для анализа ситуаций стратегического взаимодействия между рациональными агентами, принимающими решения. Первоначально разработанная Джоном фон Нейманом и Оскаром Моргенштерном в их фундаментальной работе *Theory of Games and Economic Behavior* [@morgenstern1944], теория игр впоследствии эволюционировала и охватила широкий спектр приложений в экономике, биологии, политической науке и социологии [@gintis2009; @osborne2004]. Она предоставляет инструменты для изучения того, как индивиды или группы принимают решения в условиях, когда их результаты зависят не только от собственных действий, но и от действий других. Базовыми элементами теории игр являются игры, игроки, стратегии, выигрыши (выплаты) и равновесия [@zamir2013].
 
 Стратегическая игра в теории игр определяется как формальная модель
@@ -461,7 +341,7 @@ $$
 Теория конвенций Дэвида Льюиса, рассматриваемая в следующем разделе, предлагает систематическое объяснение того, каким образом такие координационные равновесия возникают и закрепляются.
 
 
-### 1.2.2 Институт как координационное равновесие: традиция «конвенций» Дэвида Льюиса
+### 1.1.2 Координационное равновесие: традиция «конвенций» Дэвида Льюиса
 
 <!--- переписать немного часть про льюиса, сказав, что Lewis discovers the minimal form of social constraint, ✔ deviation is possible but irrational и это proto-coercion. Что Conventions do not obligate — they trap — TODO-->
 
@@ -587,7 +467,7 @@ $$
 Хотя формально поведенческие и сигнальные конвенции схожи, поскольку обе могут быть описаны как игры с игроками и выигрышами, они различаются тем, что вторые включают дополнительный «информационный слой» между участниками. И хотя сам Льюис считал сигнальные конвенции подтипом поведенческих, их взаимосвязь остаётся неоднозначной. Для Скирмса сигналы *информируют* действия, а сигнальные сети *координируют* действия, что неявно предполагает первичность сигнальных конвенций по отношению к поведенческим, а не наоборот. Более того, Скирмс выдвигает тезис о том, что сигнализация ответственна за эволюцию командной работы как таковой [@skyrms2010], что ставит под вопрос иерархию Льюиса и порождает проблему «курицы и яйца», выходящую за рамки данной диссертации.
 
 
-#### 1.2.2.1 Уточнение механизма устойчивости 1: Вандершрааф и конвенция как информационная стабильность
+#### 1.1.2.1 Вандершрааф и конвенция как информационная стабильность
 
 <!--- дописать эту часть, сказав, что структурное ограничение конвенций (структура равновесия) последователи льюиса пытались натурализовать и описать его как системное свойство, а не психологическое (напомнить про юма (привычки) → льюиса (рациональность) → вандершраффа (доступная информация) и, наконец, скримса (динамика без рациональности)) — TODO-->
   <!--- Lewis: constraint = equilibrium structure-->
@@ -690,7 +570,7 @@ $$
 
 Ещё одно значительное расширение теории Льюиса связано с переопределением конвенций как ЭСС и в основном обязано Скирмсу.
 
-#### 1.2.2.2 Уточнение механизма устойчивости 2: Скирмс и конвенция как динамический аттрактор
+#### 1.1.2.2 Скирмс и конвенция как динамический аттрактор
 
 Скирмс поместил теорию конвенций Льюиса в эволюционную рамку. Он показал, как сигнальные конвенции могут возникать естественным образом в процессе адаптивной эволюции и обучения агентов с ограниченными когнитивными способностями, что позволяет обойтись без зависимости Льюиса от общего знания [@skyrms2010].
 
@@ -782,9 +662,28 @@ $$
 
 В целом, расширение Скирмсом теории конвенций Льюиса отказалось от требований рациональности и ввело более натуралистическое описание сигнальных систем в широком контексте. Ключевое: оно подразумевает минимальную когнитивную архитектуру (или её отсутствие), что кардинально отличается от условных агентов Вандершраафа.
 
-### 1.2.3 Институт как равновесие с модификаторами выплат 1: социальные нормы как слабое принуждение
+<!--***-->
+<!---->
+<!--В традиции, восходящей к Шеллингу, Льюису, Вандершрафу и Скирмсу, социальные институты и конвенции трактуются как равновесия ожиданий или популяционной динамики, возникающие в координационных играх [@lewis1969; @vanderschraaf1998; @skyrms2010]. Ключевым механизмом здесь является *взаимная согласованность ожиданий* или фактическая приспособленность стратегии (у Скирмса), а не санкции.-->
+<!---->
+<!--У Льюиса конвенция — это регулярность поведения $R$, такая что:-->
+<!---->
+<!--1. все ожидают, что другие будут следовать $R$;-->
+<!--2. у всех есть причина следовать $R$, если другие следуют $R$;-->
+<!--3. эта структура является общим знанием.-->
+<!---->
+<!--Формально это равновесие Нэша в координационной игре без наказаний за отклонение. Санкции, если они и присутствуют, являются *внешними* по отношению к самой конвенции.-->
+<!---->
+<!--Именно здесь возникает разрыв с подходами Грейфа, Норта и Остром: в условиях конкуренции, конфликта интересов и асимметричной информации равновесия ожиданий оказываются недостаточными для устойчивости. Без $\delta$-санкции такие равновесия либо локальны, либо чрезвычайно хрупки.-->
+<!---->
+<!--#### Промежуточный вывод-->
+<!---->
+<!--Таким образом, институциональные теории Грейфа, Норта и Остром предлагают альтернативу как нормативным, так и чисто координационным моделям. В них институты понимаются как равновесия, стабилизированные *эндогенно возникающими санкционными структурами*, а не разделяемыми нормами или общим знанием. Это позволяет аналитически отделить вопрос происхождения мотивации от вопроса устойчивости равновесия и подготовить почву для формализации институциональной стабильности через параметр $\delta$.-->
+<!---->
 
-#### 1.2.3.1 Теория социальных норм Гинтиса
+### 1.1.3 Равновесие с модификаторами выплат: социальные нормы как слабое принуждение
+
+#### 1.1.3.1 Теория социальных норм Гинтиса
 
 Влиятельная равновесная концепция социальной стабильности, которая, однако, не опирается на идеи Дэвида Льюиса, принадлежит Герберту Гинтису. Он предложил *многоуровневую эволюционную модель* социальных норм, интегрирующую идеи теории игр, поведенческой экономики, эволюционной биологии и теории сложных систем. Гинтис утверждал, что *нормы — это форма социально передаваемого правила поведения*, которое коэволюционировала с человеческой способностью к сотрудничеству и наказанию, а их устойчивость объясняется через *коэволюцию генов и культуры* [@gintis2003; @gintis2009].
 
@@ -845,7 +744,7 @@ $$
 
 Теория Гинтиса — это попытка ответить на обвинения теории игр в выхолащивании нормативности. Иначе говоря, для Гинтиса принудительная сила исходит из двух источников: (1) эволюционно- и культурно-сформированной и передаваемой социальной нормы, которая регулирует поведение, (2) делая отклонение нерациональным по внутренним причинам (стыд, вина). Однако, по нашему мнению, социальная норма в концепции Гинтиса онтологически важнее равновесия, поскольку является условием его возможности.
 
-#### 1.2.3.2 Социальные нормы как ожидаемые санкции в теории Кристины Биккиери
+#### 1.1.3.2 Социальные нормы как ожидаемые санкции в теории Кристины Биккиери
 
 Философ Кристина Биккиери  предложила самостоятельный и ныне ставший мейнстримным *эпистемический и психологический подход* к социальным нормам, отходящий от традиционных моделей теории игр, функционалистских и чисто поведенческих объяснений [@bicchieri2005]. Она проводит различие между конвенциями и социальными нормами на основе идеи *условных предпочтений*. Согласно Биккиери, индивиды следуют правилу, если они:
 
@@ -891,13 +790,13 @@ $$
 - написать, почему нам важна теория Биккиери — TODO
 - сказать, что у Биккиери нормы объясняют мотивацию, но не устойчивость: как агент следует норме а не почему норма вообще существует → TODO
 
-### 1.2.4 Равновесие с модификатором выплаты 2: сильное принуждение с $\delta$-параметрами
+### 1.1.4 Равновесие с модификатором выплат: сильное принуждение с $\delta$-параметрами
 
 В широком спектре институциональных теорий — от новой институциональной экономики до исторической политэкономии — институты трактуются как устойчивые паттерны стратегического поведения, поддерживаемые не только ожиданиями, но и механизмами исполнения. В отличие от нормативных и эпистемических подходов к социальным нормам вроде Биккиери и Гинтиса, данные теории фокусируются не на том, *почему агенты считают некоторое поведение обязательным*, а на том, *почему отклонение от равновесия становится невыгодным*.
 
 Общая интуиция этих подходов — что институт существует постольку, поскольку он трансформирует исходную стратегическую ситуацию, уменьшая привлекательность отклоняющихся стратегий. Формально это может быть представлено как вычитание из выигрыша отклонения некоторой величины $\delta > 0$, интерпретируемой как санкция, издержка или потеря будущих возможностей. Важно подчеркнуть, что в данных теориях *эндогенны не предпочтения и не нормы*, а именно *структуры санкций*, возникающие из повторяющихся взаимодействий, репутационных эффектов, организационных форм или материальной инфраструктуры.
 
-#### 1.2.4.1 Авнер Грейф: межвременные санкции и институциональная связность
+#### 1.1.4.1 Авнер Грейф: межвременные санкции и институциональная связность
 
 В работах Авнера Грейфа институты анализируются как равновесия в повторяющихся и взаимосвязанных играх, где устойчивость поведения обеспечивается через *репутационные и коллективные санкции* [@greif2006]. Классический пример — торговые коалиции магрибских купцов, где нарушение контракта в одной сделке приводит к потере доступа к сети взаимодействий в будущем.
 
@@ -911,63 +810,10 @@ $$
 
 В отличие от нормативных теорий, у Грейфа не требуется, чтобы агенты считали нарушение *морально неправильным*. Достаточно того, что санкции статистически надёжно следуют за отклонением. Институты у Грейфа — это равновесия, стабилизированные *межвременной связностью санкций*, а не интернализированными нормами.
 
-#### 1.2.4.2 Дуглас Норт: институты как структуры стимулов и ограничений
-
-Дуглас Норт предлагает более абстрактное, но концептуально совместимое понимание институтов как «правил игры», которые структурируют стимулы и ограничения человеческого взаимодействия [@north1990]. Он различает формальные институты (законы, контракты, бюрократические процедуры) и неформальные (обычаи, традиции, нормы), однако в обоих случаях центральным остаётся вопрос принуждения.
-
-Для Норта институт изменяет стратегическое пространство, если он:
-
-1. увеличивает издержки отклонения;
-2. повышает предсказуемость санкций;
-3. снижает трансакционные издержки исполнения.
-
-Хотя Норт не формализует эту идею, сделать это можно было бы как изменение функции выплат:
-$$
-\pi_i'(s) = \pi_i(s) - \delta_i(s)
-$$
-где $\delta_i(s)$ определяется институциональной средой, а не субъективными убеждениями агента. Хотя Норт признаёт роль идеологий и убеждений, они выступают скорее как *факторы, влияющие на эффективность принуждения*, чем как конститутивные элементы института.
-
-В этом смысле Норт радикально расходится с традицией Льюиса: институты у него не редуцируются к равновесиям ожиданий, поскольку без материальных и организационных механизмов санкционирования равновесие остаётся хрупким и локальным.
-
-#### 1.2.4.3 Элинор Остром: эндогенные санкции и локальная устойчивость
-
-Элинор Остром предлагает анализ институтов коллективного управления, показывая, что устойчивые режимы возможны и без централизованного государства [@ostrom1990]. Однако вопреки популярным интерпретациям, её теория не является нормативной в строгом смысле.
-
-Остром подчёркивает роль:
-
-* мониторинга,
-* градуированных санкций,
-* повторяемости взаимодействий,
-* локальных правил применения наказаний.
-
-Санкции у Остром эндогенны в том смысле, что они возникают из структуры взаимодействий и распределения информации, а не из абстрактных норм. Даже если участники артикулируют нормативные основания правил, устойчивость режима зависит от того, насколько санкции реально применяются и насколько они предсказуемы.
-
-Формально её подход можно представить как локальное равновесие в повторяющейся игре с вероятностным мониторингом:
-
-$$
-\mathbb{E}[\pi_i(\text{deviate})] = \pi_i - p \cdot \delta
-$$
-
-где $p$ — вероятность обнаружения отклонения, а $\delta$ — величина санкции. Институт стабилен, если ожидаемые потери превышают выигрыш от отклонения.
-
-В традиции, восходящей к Шеллингу, Льюису, Вандершрафу и Скирмсу, социальные институты и конвенции трактуются как равновесия ожиданий или популяционной динамики, возникающие в координационных играх [@lewis1969; @vanderschraaf1998; @skyrms2010]. Ключевым механизмом здесь является *взаимная согласованность ожиданий* или фактическая приспособленность стратегии (у Скирмса), а не санкции.
-
-У Льюиса конвенция — это регулярность поведения $R$, такая что:
-
-1. все ожидают, что другие будут следовать $R$;
-2. у всех есть причина следовать $R$, если другие следуют $R$;
-3. эта структура является общим знанием.
-
-Формально это равновесие Нэша в координационной игре без наказаний за отклонение. Санкции, если они и присутствуют, являются *внешними* по отношению к самой конвенции.
-
-Именно здесь возникает разрыв с подходами Грейфа, Норта и Остром: в условиях конкуренции, конфликта интересов и асимметричной информации равновесия ожиданий оказываются недостаточными для устойчивости. Без $\delta$-санкции такие равновесия либо локальны, либо чрезвычайно хрупки.
-
-#### Промежуточный вывод
-
-Таким образом, институциональные теории Грейфа, Норта и Остром предлагают альтернативу как нормативным, так и чисто координационным моделям. В них институты понимаются как равновесия, стабилизированные *эндогенно возникающими санкционными структурами*, а не разделяемыми нормами или общим знанием. Это позволяет аналитически отделить вопрос происхождения мотивации от вопроса устойчивости равновесия и подготовить почву для формализации институциональной стабильности через параметр $\delta$.
+***
 
 
-### 1.2.5 Критика традиции: выхолащивание нормативности и экономический империализм
+### 1.1.5 Критика традиции: выхолащивание нормативности и экономический империализм
 <details>
 Common knowledge denotes an epistemic state within a group wherein a proposition *p* is known by all members, and each member knows that every other member knows *p*, recursively extending to an infinite level of iterated knowledge. This recursive nature differentiates it from mutual knowledge, which necessitates only that each individual knows *p*. Consequently, common knowledge represents an idealized, stringent condition profoundly impacting coordination and strategic interaction, prompting investigation into its feasibility and real-world relevance.
 
@@ -989,7 +835,174 @@ For example, @binmore2008 challenged the infinite levels of common knowledge pos
 
 </details>
 
-## 1.3 Синтез и его амбивалентность: теория «правил-в-равновесии» Франческо Гуалы
+## 1.2 Институт как система правил 
+
+### 1.2.1 Институт как статусные функции и конститутивные правила: традиция Джона Сёрла
+
+Теория Джона Сёрла представляет собой фундаментальный вклад в философию общества, фокусируясь на онтологии социальных институтов. Разработанная в работах от «Речевых актов» (1969) до "Создания социального мира" (2010), она объясняет, как социальная реальность конструируется через коллективную интенциональность и язык, подчеркивая роль конститутивных правил в создании институциональных фактов с принудительной силой. Принудительная сила здесь понимается как деонтические полномочия — права, обязанности и санкции, которые обязывают индивидов к определенному поведению в контексте институтов, таких как деньги, брак или государство. Эта сила не физическая, а нормативная, возникающая из коллективного признания [@searle1995]. Теория интегрирует элементы философии языка, разума и общества, предлагая унифицированный подход к пониманию, как «физические факты» (brute facts) преобразуются в «институциональные» через правила и статус-функции.
+
+Интеллектуальные корни теории Сёрла уходят в аналитическую философию середины XX века. Он опирается на идеи Дж. Остина, чья теория речевых актов ввела понятие *перформативов* — высказываний, которые «создают» реальность (например, «объявляю вас мужем и женой") [@austin1962]. Сёрл развивает это, показывая, что перформативы лежат в основе институциональных фактов [@searle1969]. Другим ключевым интеллектуальным источником идей Сёрла послужил Людвиг Витгенштейн, чьи идеи о языковых играх и правилах [@wittgenstein1953] Сёрл адаптирует для различия между регулятивными и конститутивными правилами. Витгенштейн подчеркивал, что значение возникает из использования, а Сёрл применяет это к социальным институтам, где правила не просто регулируют, но конституируют деятельность.
+
+Влияние также заметно от Джона Ролза, чья статья "Two Concepts of Rules" [@rawls1955] ввела понятие конститутивных правил для игр вроде шахмат. Сёрл расширяет это на социальную реальность, включая принудительную силу институтов. В более широком контексте теория Сёрла повлияла на социальную онтологию, интегрируя ее с философией разума: *коллективная интенциональность* — это биологическая способность, возникшая эволюционно, что, по мнению Сёрла, связывает социальное с естественными науками [@searle2010]. В русскоязычном академическом дискурсе влияние Сёрла видно в работах по социальной философии, где его идеи адаптируются для анализа власти и институтов, подчеркивая роль языка в создании нормативных структур [@baidlaeva2014; @nikitin2019].
+
+Теория Сёрла также перекликается с критической теорией, хотя он отвергает редукционизм марксизма или структурализма. Вместо этого он предлагает натуралистический подход: социальные факты объективны эпистемически, несмотря на их субъективную онтологию — зависимость от ментальных состояний [@searle2006].
+
+<!--### 1.1.2 Теория и её компоненты-->
+Центральным элементом теории Сёрла является различие между регулятивными и конститутивными правилами. Регулятивные правила регулируют уже существующие формы поведения (например, "не ходи по траве"), имея форму "Делай X" или "Если Y, то делай X" (Searle, 1969). Конститутивные правила, напротив, создают новые формы поведения, делая возможными институциональные факты. Их форма – "X считается Y в контексте C", где X – brute fact (например, кусок бумаги), Y – статус-функция (например, деньги), а C – институциональный контекст (например, экономическая система) (Searle, 1995).
+
+Статус-функции — ключевой компонент: они наделяют объекты или действия функциями, не зависящими от физических свойств, а от коллективного принятия. Это создает «деонтические силы» — принудительную силу институтов, включая положительные (права, разрешения) и отрицательные (обязанности, санкции) аспекты. Например, статус "президент" наделяет индивида правом вето, обязывая других признавать это [@searle2010]. Принудительная сила здесь — нормативная: она мотивирует поведение через обязательства, возникающие из коллективной интенциональности, а не внешнего принуждения.
+
+Коллективная интенциональность — биологически примитивная способность, позволяющая "мы-интенции" (мы делаем что-то вместе), в отличие от индивидуальной "я-интенции". Она лежит в основе социальных фактов, которые иерархически строятся: от brute facts к институциональным, с языком как необходимым средством представления статус-функций (Searle, 2006). В поздних работах Сёрл вводит "Status Function Declarations" — декларативные речевые акты, создающие реальность (например, объявление войны), подчеркивая роль языка в конституировании институтов (Searle, 2010).
+
+В русском контексте теория адаптируется для анализа эволюции институтов: конститутивные правила объясняют, как социальные сущности, такие как власть, приобретают принудительную силу через коллективное признание (Гумницкий, 2020). Компоненты теории можно представить в таблице:
+
+| Компонент | Описание | Пример | Роль в принудительной силе |
+|-----------|----------|--------|----------------------------|
+| Конститутивные правила | "X считается Y в C"; создают новые формы поведения | Кусок бумаги (X) считается деньгами (Y) в экономике (C) | Генерируют статус-функции, наделяющие деонтическими полномочиями (обязанности платить) |
+| Регулятивные правила | Регулируют существующие практики | Правила этикета | Поддерживают, но не создают принудительную силу; могут эволюционировать в конститутивные |
+| Статус-функции | Функции, наложенные коллективно, независимо от физических свойств | Брак как статус | Создают права и обязанности, обеспечивая принудительную силу (например, юридические обязательства) |
+| Коллективная интенциональность | Примитивные "мы-интенции" | Совместная охота или выборы | Основа признания, делающего деонтические полномочия обязательными |
+| Деонтические полномочия | Права, обязанности, санкции | Право собственности | Принудительная сила: мотивируют compliance через нормативные ожидания |
+
+**Key Citations**
+- Austin, J. L. (1962). *How to Do Things with Words*. Oxford University Press.
+- Байдлаева, А. К. (2014). Власть и язык: теория создания социальных институтов. *Вестник КазНУ. Серия философия. Серия культурология. Серия политология*, 2(48), 78-85. [URL](https://bulletin-philospolit.kaznu.kz/index.php/1-pol/article/download/280/271)
+- Buekens, F. (2014). Institutions without constitutive rules? In *Deconstructing Searle's Making the Social World* (ed. F. Hindriks). Oxford University Press.
+- Epstein, B. (2015). *The Ant Trap: Rebuilding the Foundations of the Social Sciences*. Oxford University Press.
+- Giddens, A. (1984). *The Constitution of Society: Outline of the Theory of Structuration*. Polity Press.
+- Guala, F. (2010). The philosophy of social science: Metaphysical and empirical. *Philosophy Compass*, 5(4), 254-264.
+- Гумницкий, Г. Н. (2020). Фундаментальная онтология Джона Серля и минимальные условия политического. *Вестник Томского государственного университета. Философия. Социология. Политология*, 55, 5-17. [URL](https://cyberleninka.ru/article/n/fundamentalnaya-ontologiya-dzhona-serlya-i-minimalnye-usloviya-politicheskogo)
+- Hindriks, F. (2009). Constitutive rules, language, and ontology. *Erkenntnis*, 71(2), 253-275. [URL](https://www.rug.nl/staff/f.a.hindriks/constitutive_rules_language_ontology.pdf)
+- Hindriks, F. (2013). Restructuring Searle's Making the Social World. *Philosophy of the Social Sciences*, 43(3), 373-389.
+- Hindriks, F. (2015). Deconstructing Searle's Making the Social World. *Philosophy of the Social Sciences*, 45(3), 363-369.
+- Lawson, T. (2012). Ontology and the study of social reality: Emergence, organisation, community, power, social relations, corporations, artefacts and money. *Cambridge Journal of Economics*, 36(2), 345-385.
+- Miller, S. (2010). *The Moral Foundations of Social Institutions: A Philosophical Study*. Cambridge University Press.
+- Никитин, А. П. (2019). Связь языка и культуры в социально-институциональном измерении: решение проблемы в аналитической традиции. *Философия и культура*, 1, 45-56.
+- Ransdell, J. (1971). Constitutive rules and speech-act analysis. *The Journal of Philosophy*, 68(13), 385-400.
+- Rawls, J. (1955). Two concepts of rules. *The Philosophical Review*, 64(1), 3-32.
+- Ruben, D.-H. (1997). John Searle's The Construction of Social Reality. *Philosophy and Phenomenological Research*, 57(2), 443-447.
+- Searle, J. R. (1969). *Speech Acts: An Essay in the Philosophy of Language*. Cambridge University Press.
+- Searle, J. R. (1995). *The Construction of Social Reality*. Free Press.
+- Searle, J. R. (2006). Social ontology: Some basic principles. *Anthropological Theory*, 6(1), 12-29.
+- Searle, J. R. (2010). *Making the Social World: The Structure of Human Civilization*. Oxford University Press.
+- Tuomela, R. (2002). *The Philosophy of Social Practices: A Collective Acceptance View*. Cambridge University Press.
+- Tuomela, R. (2007). *The Philosophy of Sociality: The Shared Point of View*. Oxford University Press.
+- Warnock, G. J. (1971). The object of morality. Methuen.
+- Wittgenstein, L. (1953). *Philosophical Investigations*. Blackwell.
+
+Searle’s social ontology distinguishes two kinds of rules: *regulative* rules, which govern actions that can occur independently, and *constitutive* rules, which create new kinds of social reality [@searle1995; @searle2010]. In Searle’s formulation, constitutive rules take the schematic form:
+$$
+X \text{ counts as } Y \text{ in context } C
+$$
+where $X$ is a pre‐institutional entity or action, $Y$ is a *status function*, a social role or function assigned to $X$, and $C$ is the relevant context or domain [@searle1995]. For example, “putting the ball in the net ($X$) counts as scoring a goal ($Y$) in a game of football ($C$)” [@searle1995]. Such rules do not merely regulate pre‐existing behavior; they *create* new social facts. In Searle’s own words, “institutional facts only exist within systems of constitutive rules” [@searle1995].
+
+- **Constitutive vs. Regulative.** A constitutive rule makes a novel institutional action possible, whereas a regulative rule simply prescribes behavior within an already existing framework [@searle1995]. Chess provides a classic example: the constitutive rules of chess *create* the possibility of the game, whereas a regulative rule would say, for instance, “if you touch a piece you must move it” [@searle1995].
+- **Status Functions and Deontic Powers.** Under a rule $X$ counts as $Y$ in $C$, $Y$ is a *status function* attached to $X$, and carrying this status typically confers normative powers (rights, obligations, etc.) on the bearer. Thus if a community collectively accepts that certain actions or objects bear status $Y$, those actions have deontic powers. Searle often emphasizes that constitutive rules imply deontic powers: e.g. a wedding ring ($X$) gives someone the status of “married person” ($Y$), along with associated rights and duties. In Searle’s framework, linguistic declarations often play a role: he introduces the idea of a *Status Function Declaration*, a speech act that imposes or announces status functions as binding [@searle2010].
+
+Searle identifies *institutions* with systems of constitutive rules. He writes that “an institution is any system of constitutive rules of the form $X$ counts as $Y$ in $C$” [@searle1995]. Thus, for Searle, political offices, legal entities, money, marriages, etc., exist because underlying constitutive rules assign new status functions to physical or social substrates. These rules are held in place by *collective acceptance* of the community. In Searle’s view, the syntax “$X$ counts as $Y$ in $C$” – often called the *counts-as* locution – succinctly captures the logic of institutional facts.
+
+Searle’s theory posits that social reality is built upon constitutive rules that are *creatively* implemented: they not only *regulate* behavior but *generate* the very phenomena like institutions and roles they describe [@searle1995; @searle2010].
+
+
+#### 1.2.1 Последователи Сёрла: уточнение природы коллективной интенциональности
+Последователи Сёрла развивают его идеи в социальной онтологии, часто уточняя или расширяя их. Раймо Туомела фокусируется на "мы-аттитюдах" (we-attitudes), интегрируя их в теорию коллективного принятия: институты возникают из совместных интенций, но Туомела подчеркивает роль норм и санкций в поддержании принудительной силы (Tuomela, 2002; 2007). Франк Хиндрикс предлагает "статусный аккаунт", ревизуя конститутивные правила: они касаются статусов с нормативными атрибутами (import), а не только "counts-as", позволяя учитывать неявные институты без явного языка (Hindriks, 2009; 2013). Брайан Эпштейн критикует, но развивает теорию, вводя "grounding" институциональных фактов в социальных практиках (Epstein, 2015).
+
+В русском академическом пространстве последователи, такие как А.К. Байдлаева, применяют теорию к анализу власти: язык создает социальные институты с принудительной силой через перформативы, подчеркивая эволюцию от brute facts к институциональным (Байдлаева, 2014). Г.Н. Гумницкий исследует минимальные условия политики в онтологии Сёрла, фокусируясь на коллективной интенциональности как основе политических институтов (Гумницкий, 2020). М.А. Никитин связывает язык и культуру в институциональном измерении, развивая идеи о деонтических полномочиях (Никитин, 2019). Эти авторы часто интегрируют Сёрла с русской традицией социальной философии, подчеркивая роль норм в постсоветских институтах.
+
+Другие, как Тони Лоусон, диалогизируют с Сёрлом, подчеркивая социальные тотальности вместо институциональных фактов, но признавая сходство в онтологии (Lawson, 2012). В целом, последователи расширяют теорию, добавляя акцент на неявные правила и эволюционные аспекты, делая её более гибкой для эмпирических наук.
+
+<details>
+In its standard analytic formulations, which @guala2007 even calls the "Standard Model of Social Ontology" (SMOSO), social ontology describes the loosely constrained individualistic foundations of social phenomena and has three key elements [@tuomela2002]:
+
+- reflexivity
+- performativity 
+- collective intentionality.
+
+Reflexivity is a property of social entities to be largely comprised of beliefs about beliefs. There are I-mode and we-mode formulations of reflexive beliefs. Some philosophers say that initial and most basic beliefs comprising “the fabric“ of the social are essentially in We-mode and are not reducible to I-mode [@tuomela2002; @gilbert1992; @schmid2023]. However, there are also more individualistic accounts of reflexive beliefs based on game theory [@guala2016; @bicchieri2005]. 
+
+Performativity amounts to social entities needing to be continuously maintained, performed or recreated. And collective intentionality, in its turn, refers to joint directedness of multiple individuals towards a phenomenon that contributes to its constitution. Collective intentionality tends to be presented either as a derivative of common knowledge and I-beliefs of the form “everyone knows that everyone knows that P“, where P is some social fact like social norm [@bicchieri2005], or as a primitive notion which makes common knowledge redundant. Moreover, there are attempts to naturalize collective intentionality by showing its irreducibility to individual intentionality [@rakoczy2007; @gallotti2012]. 
+
+A prominent example is Searle [-@searle1995] who asks whether it is possible to be epistemologically objective about ontologically subjective issues. How can we know the truths about things whose existence depends on our representations or feelings, for example, about money, property and marriage? By analysing these distinctions of ontology/epistemology and objectivity/subjectivity, Searle arrived at an idea of a missing ingredient that allows for a picture of ontologically subjective entities, which is *constitutive rules* of the form “X counts as Y in C”. 
+
+Here, our classifications of the social world help establish and maintain it, whereas non-social objects are indifferent to our classifications of it, as @hacking1999 puts forward with his distinction of interactive and indifferent kinds[^kinds]. Nature's objects do not change their behaviour given these classifications of them as opposed to social objects. This idea illustrates the notions of reflexivity and performativity characteristic for the “Standard model”. If social entities are comprised of beliefs about beliefs, their nature depends on these beliefs, and if beliefs change, social entities change accordingly. If social entities depend on beliefs about them, it is needed to constantly perform those to maintain them. To do this, individuals need to have collective intentionality about these beliefs. For example, for money to be itself, a relevant community has hold a collective intention to believe that certain physical entities can be used as a medium of exchange. 
+
+[^kinds]: This distinction mirrors the classic one of natural and social kinds, where the former are "homeostatic property clusters", sets of necessary and stable features [@boyd1991].
+
+</details>
+
+
+#### 1.2.2 Критика теории Сёрла
+<!--Помимо Гуалы, Миллер [@miller2001, 191] и Людвиг [@ludwig2017, 262] переопределяют конститутивные правила как регулятивные. В частности, Людвиг называет конститутивные правила такими регулятивными, правилами намеренное следование которым и конституирует управляемую им активность.-->
+
+<details>
+Критика теории Сёрла многоаспектна и касается как концептуальных основ, так и применения. Энтони Гидденс аргументирует, что различие между конститутивными и регулятивными правилами искусственно: все правила имеют оба аспекта (например, правило "работники должны отмечаться в 8:00" регулирует, но конституирует бюрократию) (Giddens, 1984). Дэвид-Хиллел Рубен и Джеффри Уорнок видят в нём лишь лингвистическую особенность: действия конститутивны или регулятивны относительно описания, а не онтологически (Ruben, 1997; Warnock, 1971). Джозеф Рансделл критикует фокус на "connotation" (условиях) за счет "import" (нормативных последствий), предлагая правила "X считается Z" для интеграции норм (Ransdell, 1971).
+
+Франк Хиндрикс указывает на проблемы в поздних работах: переоценка роли языка (институты могут существовать без явных деклараций), путаница в Status Function Declarations и игнорирование непризнанных прав (Hindriks, 2013; 2015). Филип Бюкенс предлагает альтернативу: институциональные объекты, как деньги, объясняются действиями и стимулами, без необходимости в статусе Сёрла (Buekens, 2014). Франческо Гвала критикует умозависимость: она подразумевает инфаллибилизм (нет ошибок об институтах), противореча реализму (Guala, 2010). Кроме того, теория не учитывает моральные ограничения: институты могут быть тривиальными или коррумпированными (например, расизм как институт) (Miller, 2010).
+
+В русском контексте критика фокусируется на политике: Гумницкий отмечает, что минимальные условия (коллективная интенциональность, присвоение функций, конститутивные правила) игнорируют историческую эволюцию без явного принятия (Гумницкий, 2020). Никитин подчеркивает несовместимость с культурными контекстами, где принудительная сила возникает из неявных норм (Никитин, 2019). Общая критика: теория слишком формалистична, не объясняя эволюцию институтов из регулятивных практик (например, деньги из бартера) без коллективного акта (Atiyah, 1981).
+
+Несмотря на критику, теория Сёрла остается влиятельной в философии науки, предлагая рамку для анализа, как социальные институты с принудительной силой возникают из коллективных практик и языка.
+</details>
+
+<details>
+Hindriks [-@hindriks2005] has challenged several aspects of Searle’s constitutive-rule framework. His deconstruction focuses on the notions of *status functions* and the role of language. Broadly, Hindriks argued that Searle’s theoretical apparatus is misleading, and that a more streamlined account can be given by focusing on collective acceptance and normative powers.
+
+- **Status Functions as Deontic Powers.** Hindriks finds the term *status function* confusing and somewhat redundant. He suggests dropping the “function” and simply treating statuses as normative powers. In his words, “we can do without the term function while retaining the term status,” instead explicating statuses directly as the bundle of deontic powers they grant [@hindriks2009]. By equating statuses with deontic powers (rights, obligations), Hindriks makes the normative dimension of institutions explicit, rather than hiding it under the metaphor of a “function” [@hindriks2009]. Indeed, Searle himself has acknowledged that “all status functions are deontic powers,” which supports Hindriks’s move toward a more direct terminology [@hindriks2009].
+
+- **Redundancy of Status Function Declarations.** Searle’s idea of a *Status Function Declaration* – a speech act that supposedly creates or recognizes a status – is, for Hindriks, unnecessary. He argues that the two key claims Searle attributes to such declarations (that collective acceptance is necessary and sufficient for the status) are already implicit in the standard “counts-as” formulation. Once we accept that *institutional statuses require collective acceptance, and that collective acceptance alone brings them into being* (the “Collective Acceptance Principle”), the special notion of a Status Function Declaration adds nothing new [@hindriks2015]. Introducing declarations suggests without argument that only explicit speech acts can create institutions; Hindriks finds this unjustified and unhelpful. He concludes that Searle’s extra machinery (the Status Function Declaration with its “double direction of fit”) should be abandoned since it “does not add anything of value” [@hindriks2015].
+
+- **Linguistic vs. Normative Distinction.** Hindriks also questions Searle’s emphasis on language as the source of all institutional power. In his earlier work, Hindriks has argued that the regulative/constitutive distinction is mainly a grammatical one: regulative rules are phrased with explicit imperatives or deontic terms, while constitutive rules are phrased with the “counts-as” locution, but both embed the same normative content [@hindriks2009]. Normative obligations figure explicitly in regulative rules (“Do X” / “If Y do X”), whereas constitutive rules imply those obligations without stating them overtly. Thus, the locus of normativity is not really different between the two; only the linguistic presentation is. Hindriks calls for a view of institutions that centers on *collective commitment* and acceptance of standards, rather than on linguistic declarations per se [@hindriks2009].
+
+In sum, Hindriks dismantles Searle’s superstructure of status functions and declarations, proposing instead that we should “explicate statuses in terms of normative powers” and rely on a simpler collective-acceptance principle [@hindriks2009; @hindriks2015]. On this view, institutions are upheld by groups collectively endorsing certain rules, and the resulting normative powers of those rules are what really matters. His critique paves the way for unifying Searle’s approach with more analytical models, by translating constitutive claims into the language of regulative rules and equilibria.
+</details>
+
+
+### 1.2.2 Институт как регулятивные правила
+
+#### 1.2.2.1 Дуглас Норт: институты как структуры стимулов и ограничений
+
+Дуглас Норт предлагает более абстрактное, но концептуально совместимое понимание институтов как «правил игры», которые структурируют стимулы и ограничения человеческого взаимодействия [@north1990]. Он различает формальные институты (законы, контракты, бюрократические процедуры) и неформальные (обычаи, традиции, нормы), однако в обоих случаях центральным остаётся вопрос принуждения.
+
+Для Норта институт изменяет стратегическое пространство, если он:
+
+1. увеличивает издержки отклонения;
+2. повышает предсказуемость санкций;
+3. снижает трансакционные издержки исполнения.
+
+Хотя Норт не формализует эту идею, сделать это можно было бы как изменение функции выплат:
+$$
+\pi_i'(s) = \pi_i(s) - \delta_i(s)
+$$
+где $\delta_i(s)$ определяется институциональной средой, а не субъективными убеждениями агента. Хотя Норт признаёт роль идеологий и убеждений, они выступают скорее как *факторы, влияющие на эффективность принуждения*, чем как конститутивные элементы института.
+
+В этом смысле Норт радикально расходится с традицией Льюиса: институты у него не редуцируются к равновесиям ожиданий, поскольку без материальных и организационных механизмов санкционирования равновесие остаётся хрупким и локальным.
+
+
+#### 1.2.2.1 Элинор Остром: эндогенные санкции и локальная устойчивость
+
+Элинор Остром предлагает анализ институтов коллективного управления, показывая, что устойчивые режимы возможны и без централизованного государства [@ostrom1990]. Однако вопреки популярным интерпретациям, её теория не является нормативной в строгом смысле.
+
+Остром подчёркивает роль:
+
+* мониторинга,
+* градуированных санкций,
+* повторяемости взаимодействий,
+* локальных правил применения наказаний.
+
+Санкции у Остром эндогенны в том смысле, что они возникают из структуры взаимодействий и распределения информации, а не из абстрактных норм. Даже если участники артикулируют нормативные основания правил, устойчивость режима зависит от того, насколько санкции реально применяются и насколько они предсказуемы.
+
+Формально её подход можно представить как локальное равновесие в повторяющейся игре с вероятностным мониторингом:
+
+$$
+\mathbb{E}[\pi_i(\text{deviate})] = \pi_i - p \cdot \delta
+$$
+
+где $p$ — вероятность обнаружения отклонения, а $\delta$ — величина санкции. Институт стабилен, если ожидаемые потери превышают выигрыш от отклонения.
+
+
+## 1.3 Институт как правила-в-равновесии: теория Франческо Гуалы
+<!--Синтез и его амбивалентность: теория «правил-в-равновесии» Франческо Гуалы-->
+
 Описывается теория правил-в-равновесии (ПвР) Франческо Гуалы, её критика со стороны коллег, а также критика автора, направленная на лакуны в аргументации и, следовательно, нелегитимные теоретические выводы ПвР.
 
 ### 1.3.1 Теория правил-в-равновесии
@@ -1160,14 +1173,16 @@ $$
 
 # Глава 2. Анализ теории правил-в-равновесии
 <!--: круг в определении, подмена объясняемого и допущение о полноте информации-->
-## 2.1. Круг в определении: институт как скрытая предпосылка института
+## 2.1. Проблематичность правил: ex ante vs. ex post
+<!--Круг в определении: институт как скрытая предпосылка института-->
 <!--### 2.1.1 Сравнение несравнимых игр (*в принципе можно убрать*)-->
 ### 2.1.2 Подмена условной стратегии готовой конвенцией
+
 ## 2.2. Неустойчивость коррелированного равновесия: правило без санкции в условиях неполной информации
 
 # Глава 3. Формальные условия устойчивости института
 <!--: локальная компенсация блефа и взаимная информация между стратегическими ситуациями-->
-## 3.1. $\delta$-параметр как необходимое условие локальной устойчивости
+## 3.1. $\delta$-параметр как условие локальной устойчивости
 ## 3.2. Проблема масштаба: от одной игры к популяции. Параметр $r$ и надёжность компенсации блефа
 ## 3.3. Взаимная информация $I$ о компенсации блефа как мера связности идентичных стратегических ситуаций
 ## 3.4. Формальное определение: институт, протоинститут, конвенция
