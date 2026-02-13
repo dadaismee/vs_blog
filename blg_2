@@ -62,7 +62,7 @@ for page in "${pages[@]}"; do
       --filter mermaid-filter \
       --lua-filter=append-back-after-source.lua \
       --lua-filter=target_blank.lua \
-      --toc-depth=2 \
+      --toc-depth=3 \
       --metadata link-citations=true \
       --bibliography=/Users/valerii/Obsidian/Service/zotero-library.json \
       --csl=/Users/valerii/Obsidian/Service/apa-5th-edition.csl \
