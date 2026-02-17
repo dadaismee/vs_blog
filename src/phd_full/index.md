@@ -890,8 +890,6 @@ For example, @binmore2008 challenged the infinite levels of common knowledge pos
 
 </details>
 
-ОСТАНОВИЛСЯ ЗДЕСЬ
-
 Сёрл критикует идею равновесия, говоря, что, например, частная собственность в США изначально контролировалась федеральным законом 1862 года.  
 Важно, что, по словам Сёрла, закон был создан, насаждён и \*принуждал\* (enforce).  
 Сёрл говорит про принуждение как часть деонтических сил конститутивных правил. Также он говорит про блеф и что понятие равновесия не схватывает эти тонкости.  
@@ -906,7 +904,9 @@ For example, @binmore2008 challenged the infinite levels of common knowledge pos
 
 ### 1.2.1 Институт как статусные функции и конститутивные правила: традиция Джона Сёрла
 
-Джон Сёрл [@searle1995] одним из первых сформулировал проблему онтологического статуса социальных фактов и институтов: как можно быть эпистемологически объективным касательно онтологически субъективных вещей? Сёрл показал, что социальные (или, как он их называет, институциональные) факты создаются *конститутивными правилами* вида «X считается Y в контексте C», где X — грубый (brute) факт. Эти правила зависят от коллективного признания (collective acceptance) и имеют принудительную силу[^durkheim]. Коллективное признание зависит от коллективной интенциональности (we-intentionality) — постулируемой Сёрлом когнитивной способности индивидов иметь сонаправленность мысли.
+Джон Сёрл [@searle1995] одним из первых сформулировал проблему онтологического статуса социальных фактов и институтов: как можно быть эпистемологически объективным касательно онтологически субъективных вещей? Сёрл показал, что социальные (или, как он их называет, институциональные) факты создаются *конститутивными правилами* вида «X считается Y в контексте C», где X — факт как таковой (brute fact). Например, «забить мяч в сетку ($X$) считается голом ($Y$) в футбольном матче ($C$)» [@searle1995]. Такие правила не просто регулируют уже существующее поведение, а *создают* новые социальные факты. 
+
+По словам Сёрла, «институциональные факты существуют только в системах конститутивных правил» [@searle1995]. Эти правила зависят от коллективного признания (collective acceptance) и имеют принудительную силу[^durkheim]. Коллективное признание зависит от коллективной интенциональности (we-intentionality) — постулируемой Сёрлом когнитивной способности индивидов иметь сонаправленность мысли.
 
 [^durkheim]: Однако эта принудительная сила не является надындивидуальной, как у Дюркгейма [@durkheim2014], определившего социальные факты как способы действия, мышления и чувствования, обладающие принудительной силой. Для Сёрла нет надындивидуальной социальной реальности за пределами коллективного признания.
 
@@ -928,82 +928,37 @@ For example, @binmore2008 challenged the infinite levels of common knowledge pos
 
 Статус-функции — ключевой компонент теории Сёрла: они наделяют объекты или действия функциями, зависящими не от их физических свойств, а от коллективного принятия этих функций. Именно статусные функции создают «деонтические силы» — принудительную силу институтов. Например, статус «президент» наделяет индивида правом вето и обязывает других признавать его [@searle2010]. Принудительная сила здесь — нормативная: она мотивирует поведение через обязательства, возникающие из коллективной интенциональности, а не внешнего принуждения.
 
+В поздних работах Сёрл вводит «декларации статусных функций» — декларативные речевые акты, создающие реальность (например, объявление войны), подчеркивая роль языка в конституировании институтов [@searle2010].
+
+
+#### 1.2.1.1 Последователи Сёрла: уточнение природы коллективной интенциональности
+Последователи Сёрла развивают его идеи в социальной онтологии. Раймо Туомела фокусируется на "мы-аттитюдах" (we-attitudes), интегрируя их в теорию коллективного принятия: институты возникают из совместных интенций, но Туомела подчеркивает роль норм и санкций в поддержании принудительной силы [@tuomela2002; @tuomela2007]. Фрэнк Хиндрикс, пересматривая роль конститутивных правил, отмечает их нормативность: они касаются статусов с нормативными атрибутами (import), а не только наделения физического объекта статусом, позволяя учитывать неявные институты без явного языка [@hindriks2009; @hindriks2013].
+
+В русскоязычном академическом пространстве идеи Сёрла в основном применяют к анализу власти, политики и культуры. Язык создает социальные институты с принудительной силой через перформативы, подчеркивая эволюцию от фактов как таковых к институциональным фактам [@baidlaeva2014]. Г.Н. Гумницкий исследует минимальные условия политики в онтологии Сёрла, фокусируясь на коллективной интенциональности как основе политических институтов [@gumnitskiy2020]. М.А. Никитин связывает язык и культуру в институциональном измерении, развивая идеи о деонтических полномочиях [@nikitin2019]. В целом, последователи расширяют теорию, добавляя акцент на неявные правила и эволюционные аспекты, делая её более гибкой для эмпирических наук.
+
+Что их всех объединяет? В стандартных аналитических формулировках, которые Франческо Гуала называет «Стандартной моделью социальной онтологии», социальная онтология описывает слабо ограниченные индивидуалистические основы социальных явлений и имеет три ключевых элемента [@guala2007], как их описывает Туомела [@tuomela2002]:
+
+- рефлексивность
+- перформативность
+- коллективная интенциональность.
+
+Рефлексивность — идея о том, что социальные сущности в значительной степени состоят из убеждений об убеждениях. Такие убеждения могут быть в индивидуальными или групповыми, в зависимости от того, кто считается их носителем: разделяют «я»-режим и в «мы»-режиме (I-mode, we-mode). Некоторые философы утверждают, что фундаментальные убеждения, составляющие «ткань» социального, находятся в режиме «мы» и не сводятся к режиму «я» [@tuomela2002; @gilbert1992; @schmid2023]. Однако существуют также более индивидуалистические описания рефлексивных убеждений, основанные на теории игр [@guala2016; @bicchieri2005].
+
+Перформативность — идея о том, что социальные сущности необходимо постоянно поддерживать, демонстрировать или воссоздавать, чтобы они продолжали существовать. Социальная реальность не существует самостоятельно «вовне» — её нужно постоянно воссоздавать и поддерживать [@law2004].
+
+Коллективная интенциональность — идея о совместной направленности внимания и/намерения множества индивидов на явление. Именно это намерение и наделяет физические объекты статусом социальных и нормативно-нагруженных. Коллективная интенциональность представляется либо как производная от общих знаний и «я-убеждений» в форме «все знают, что все знают, что $P$», где $P$ — социальный факт, например, социальная норма [@bicchieri2005], либо как базовое понятие, делающее общее знание избыточными. Более того, существуют попытки натурализовать коллективную интенциональность, показывая её несводимость к индивидуальной интенциональности [@rakoczy2007; @gallotti2012].
+
+Согласно идеям рефлексивности и перформативности, наши классификации социального мира помогают его устанавливать и поддерживать, тогда как несоциальные объекты безразличны к нашим классификациям, как это предлагает Ян Хакинг , выделяя интерактивные и нейтральные виды[^kinds][@hacking1999]. Природные объекты не меняют своего поведения в зависимости от этих классификаций, в отличие от социальных объектов. Если социальные сущности состоят из убеждений об убеждениях, то их природа зависит от этих убеждений, и если убеждения меняются, то и социальные сущности — тоже. Для этого индивидам необходимо обладать коллективной интенциональностью в отношении этих убеждений. Например, чтобы деньги существовали, сообщество должно иметь коллективное намерение верить, что определенные физические объекты могут использоваться в качестве средства обмена.
+
+[^kinds]: Это различие отражает классическое различие между природными и социальными видами, где первые представляют собой «кластеры гомеостатических свойств», наборы необходимых и стабильных характеристик [@boyd1991].
+
+#### 1.2.1.2 Критика традиции конститутивных правил
+
 ОСТАНОВИЛСЯ ЗДЕСЬ
 
-В поздних работах Сёрл вводит "Status Function Declarations" — декларативные речевые акты, создающие реальность (например, объявление войны), подчеркивая роль языка в конституировании институтов (Searle, 2010).
-
-**Key Citations**
-- Austin, J. L. (1962). *How to Do Things with Words*. Oxford University Press.
-- Байдлаева, А. К. (2014). Власть и язык: теория создания социальных институтов. *Вестник КазНУ. Серия философия. Серия культурология. Серия политология*, 2(48), 78-85. [URL](https://bulletin-philospolit.kaznu.kz/index.php/1-pol/article/download/280/271)
-- Buekens, F. (2014). Institutions without constitutive rules? In *Deconstructing Searle's Making the Social World* (ed. F. Hindriks). Oxford University Press.
-- Epstein, B. (2015). *The Ant Trap: Rebuilding the Foundations of the Social Sciences*. Oxford University Press.
-- Giddens, A. (1984). *The Constitution of Society: Outline of the Theory of Structuration*. Polity Press.
-- Guala, F. (2010). The philosophy of social science: Metaphysical and empirical. *Philosophy Compass*, 5(4), 254-264.
-- Гумницкий, Г. Н. (2020). Фундаментальная онтология Джона Серля и минимальные условия политического. *Вестник Томского государственного университета. Философия. Социология. Политология*, 55, 5-17. [URL](https://cyberleninka.ru/article/n/fundamentalnaya-ontologiya-dzhona-serlya-i-minimalnye-usloviya-politicheskogo)
-- Hindriks, F. (2009). Constitutive rules, language, and ontology. *Erkenntnis*, 71(2), 253-275. [URL](https://www.rug.nl/staff/f.a.hindriks/constitutive_rules_language_ontology.pdf)
-- Hindriks, F. (2013). Restructuring Searle's Making the Social World. *Philosophy of the Social Sciences*, 43(3), 373-389.
-- Hindriks, F. (2015). Deconstructing Searle's Making the Social World. *Philosophy of the Social Sciences*, 45(3), 363-369.
-- Lawson, T. (2012). Ontology and the study of social reality: Emergence, organisation, community, power, social relations, corporations, artefacts and money. *Cambridge Journal of Economics*, 36(2), 345-385.
-- Miller, S. (2010). *The Moral Foundations of Social Institutions: A Philosophical Study*. Cambridge University Press.
-- Никитин, А. П. (2019). Связь языка и культуры в социально-институциональном измерении: решение проблемы в аналитической традиции. *Философия и культура*, 1, 45-56.
-- Ransdell, J. (1971). Constitutive rules and speech-act analysis. *The Journal of Philosophy*, 68(13), 385-400.
-- Rawls, J. (1955). Two concepts of rules. *The Philosophical Review*, 64(1), 3-32.
-- Ruben, D.-H. (1997). John Searle's The Construction of Social Reality. *Philosophy and Phenomenological Research*, 57(2), 443-447.
-- Searle, J. R. (1969). *Speech Acts: An Essay in the Philosophy of Language*. Cambridge University Press.
-- Searle, J. R. (1995). *The Construction of Social Reality*. Free Press.
-- Searle, J. R. (2006). Social ontology: Some basic principles. *Anthropological Theory*, 6(1), 12-29.
-- Searle, J. R. (2010). *Making the Social World: The Structure of Human Civilization*. Oxford University Press.
-- Tuomela, R. (2002). *The Philosophy of Social Practices: A Collective Acceptance View*. Cambridge University Press.
-- Tuomela, R. (2007). *The Philosophy of Sociality: The Shared Point of View*. Oxford University Press.
-- Warnock, G. J. (1971). The object of morality. Methuen.
-- Wittgenstein, L. (1953). *Philosophical Investigations*. Blackwell.
-
-Searle’s social ontology distinguishes two kinds of rules: *regulative* rules, which govern actions that can occur independently, and *constitutive* rules, which create new kinds of social reality [@searle1995; @searle2010]. In Searle’s formulation, constitutive rules take the schematic form:
-$$
-X \text{ counts as } Y \text{ in context } C
-$$
-where $X$ is a pre‐institutional entity or action, $Y$ is a *status function*, a social role or function assigned to $X$, and $C$ is the relevant context or domain [@searle1995]. For example, “putting the ball in the net ($X$) counts as scoring a goal ($Y$) in a game of football ($C$)” [@searle1995]. Such rules do not merely regulate pre‐existing behavior; they *create* new social facts. In Searle’s own words, “institutional facts only exist within systems of constitutive rules” [@searle1995].
-
-- **Constitutive vs. Regulative.** A constitutive rule makes a novel institutional action possible, whereas a regulative rule simply prescribes behavior within an already existing framework [@searle1995]. Chess provides a classic example: the constitutive rules of chess *create* the possibility of the game, whereas a regulative rule would say, for instance, “if you touch a piece you must move it” [@searle1995].
-- **Status Functions and Deontic Powers.** Under a rule $X$ counts as $Y$ in $C$, $Y$ is a *status function* attached to $X$, and carrying this status typically confers normative powers (rights, obligations, etc.) on the bearer. Thus if a community collectively accepts that certain actions or objects bear status $Y$, those actions have deontic powers. Searle often emphasizes that constitutive rules imply deontic powers: e.g. a wedding ring ($X$) gives someone the status of “married person” ($Y$), along with associated rights and duties. In Searle’s framework, linguistic declarations often play a role: he introduces the idea of a *Status Function Declaration*, a speech act that imposes or announces status functions as binding [@searle2010].
-
-Searle identifies *institutions* with systems of constitutive rules. He writes that “an institution is any system of constitutive rules of the form $X$ counts as $Y$ in $C$” [@searle1995]. Thus, for Searle, political offices, legal entities, money, marriages, etc., exist because underlying constitutive rules assign new status functions to physical or social substrates. These rules are held in place by *collective acceptance* of the community. In Searle’s view, the syntax “$X$ counts as $Y$ in $C$” – often called the *counts-as* locution – succinctly captures the logic of institutional facts.
-
-Searle’s theory posits that social reality is built upon constitutive rules that are *creatively* implemented: they not only *regulate* behavior but *generate* the very phenomena like institutions and roles they describe [@searle1995; @searle2010].
-
-
-#### 1.2.1 Последователи Сёрла: уточнение природы коллективной интенциональности
-Последователи Сёрла развивают его идеи в социальной онтологии, часто уточняя или расширяя их. Раймо Туомела фокусируется на "мы-аттитюдах" (we-attitudes), интегрируя их в теорию коллективного принятия: институты возникают из совместных интенций, но Туомела подчеркивает роль норм и санкций в поддержании принудительной силы (Tuomela, 2002; 2007). Франк Хиндрикс предлагает "статусный аккаунт", ревизуя конститутивные правила: они касаются статусов с нормативными атрибутами (import), а не только "counts-as", позволяя учитывать неявные институты без явного языка (Hindriks, 2009; 2013). Брайан Эпштейн критикует, но развивает теорию, вводя "grounding" институциональных фактов в социальных практиках (Epstein, 2015).
-
-В русском академическом пространстве последователи, такие как А.К. Байдлаева, применяют теорию к анализу власти: язык создает социальные институты с принудительной силой через перформативы, подчеркивая эволюцию от brute facts к институциональным (Байдлаева, 2014). Г.Н. Гумницкий исследует минимальные условия политики в онтологии Сёрла, фокусируясь на коллективной интенциональности как основе политических институтов (Гумницкий, 2020). М.А. Никитин связывает язык и культуру в институциональном измерении, развивая идеи о деонтических полномочиях (Никитин, 2019). Эти авторы часто интегрируют Сёрла с русской традицией социальной философии, подчеркивая роль норм в постсоветских институтах.
-
-Другие, как Тони Лоусон, диалогизируют с Сёрлом, подчеркивая социальные тотальности вместо институциональных фактов, но признавая сходство в онтологии (Lawson, 2012). В целом, последователи расширяют теорию, добавляя акцент на неявные правила и эволюционные аспекты, делая её более гибкой для эмпирических наук.
-
-<details>
-In its standard analytic formulations, which @guala2007 even calls the "Standard Model of Social Ontology" (SMOSO), social ontology describes the loosely constrained individualistic foundations of social phenomena and has three key elements [@tuomela2002]:
-
-- reflexivity
-- performativity 
-- collective intentionality.
-
-Reflexivity is a property of social entities to be largely comprised of beliefs about beliefs. There are I-mode and we-mode formulations of reflexive beliefs. Some philosophers say that initial and most basic beliefs comprising “the fabric“ of the social are essentially in We-mode and are not reducible to I-mode [@tuomela2002; @gilbert1992; @schmid2023]. However, there are also more individualistic accounts of reflexive beliefs based on game theory [@guala2016; @bicchieri2005]. 
-
-Performativity amounts to social entities needing to be continuously maintained, performed or recreated. And collective intentionality, in its turn, refers to joint directedness of multiple individuals towards a phenomenon that contributes to its constitution. Collective intentionality tends to be presented either as a derivative of common knowledge and I-beliefs of the form “everyone knows that everyone knows that P“, where P is some social fact like social norm [@bicchieri2005], or as a primitive notion which makes common knowledge redundant. Moreover, there are attempts to naturalize collective intentionality by showing its irreducibility to individual intentionality [@rakoczy2007; @gallotti2012]. 
-
-A prominent example is Searle [-@searle1995] who asks whether it is possible to be epistemologically objective about ontologically subjective issues. How can we know the truths about things whose existence depends on our representations or feelings, for example, about money, property and marriage? By analysing these distinctions of ontology/epistemology and objectivity/subjectivity, Searle arrived at an idea of a missing ingredient that allows for a picture of ontologically subjective entities, which is *constitutive rules* of the form “X counts as Y in C”. 
-
-Here, our classifications of the social world help establish and maintain it, whereas non-social objects are indifferent to our classifications of it, as @hacking1999 puts forward with his distinction of interactive and indifferent kinds[^kinds]. Nature's objects do not change their behaviour given these classifications of them as opposed to social objects. This idea illustrates the notions of reflexivity and performativity characteristic for the “Standard model”. If social entities are comprised of beliefs about beliefs, their nature depends on these beliefs, and if beliefs change, social entities change accordingly. If social entities depend on beliefs about them, it is needed to constantly perform those to maintain them. To do this, individuals need to have collective intentionality about these beliefs. For example, for money to be itself, a relevant community has hold a collective intention to believe that certain physical entities can be used as a medium of exchange. 
-
-[^kinds]: This distinction mirrors the classic one of natural and social kinds, where the former are "homeostatic property clusters", sets of necessary and stable features [@boyd1991].
-
-</details>
-
-
-#### 1.2.2 Критика теории Сёрла
 <!--Помимо Гуалы, Миллер [@miller2001, 191] и Людвиг [@ludwig2017, 262] переопределяют конститутивные правила как регулятивные. В частности, Людвиг называет конститутивные правила такими регулятивными, правилами намеренное следование которым и конституирует управляемую им активность.-->
 
-
-Однако теория Сёрла часто подвергалась критике: из-за недостаточности деонтических сил для объяснения следования правилам [@guala2015],  отсутствия механизма возникновения конститутивных правил и каузальности деонтических сил [#insertSource], переоценки роли рационального коллективного признания и «сверхинтеллектуализма» [@gilbert1992] и других. Помимо критики внутри философии и социальной онтологии, теория Сёрла подвергалась критике в философии социальной науки — особенно за постулирование примата социальной онтологии над методологией изучения социальной реальности [@lauer2019; @little2020; @kincaid2021; @ross2023]. 
+Теория Сёрла часто подвергалась критике: из-за недостаточности деонтических сил для объяснения следования правилам [@guala2015], отсутствия механизма возникновения конститутивных правил и каузальности деонтических сил [#insertSource], переоценки роли рационального коллективного признания и «сверхинтеллектуализма» [@gilbert1992] и других. Помимо критики внутри философии и социальной онтологии, теория Сёрла подвергалась критике в философии социальной науки — особенно за постулирование примата социальной онтологии над методологией изучения социальной реальности [@lauer2019; @little2020; @kincaid2021; @ross2023]. 
 
 
 <details>
@@ -1011,10 +966,9 @@ Here, our classifications of the social world help establish and maintain it, wh
 
 Франк Хиндрикс указывает на проблемы в поздних работах: переоценка роли языка (институты могут существовать без явных деклараций), путаница в Status Function Declarations и игнорирование непризнанных прав (Hindriks, 2013; 2015). Филип Бюкенс предлагает альтернативу: институциональные объекты, как деньги, объясняются действиями и стимулами, без необходимости в статусе Сёрла (Buekens, 2014). Франческо Гвала критикует умозависимость: она подразумевает инфаллибилизм (нет ошибок об институтах), противореча реализму (Guala, 2010). Кроме того, теория не учитывает моральные ограничения: институты могут быть тривиальными или коррумпированными (например, расизм как институт) (Miller, 2010).
 
-В русском контексте критика фокусируется на политике: Гумницкий отмечает, что минимальные условия (коллективная интенциональность, присвоение функций, конститутивные правила) игнорируют историческую эволюцию без явного принятия (Гумницкий, 2020). Никитин подчеркивает несовместимость с культурными контекстами, где принудительная сила возникает из неявных норм (Никитин, 2019). Общая критика: теория слишком формалистична, не объясняя эволюцию институтов из регулятивных практик (например, деньги из бартера) без коллективного акта (Atiyah, 1981).
+Общая критика: теория слишком формалистична, не объясняя эволюцию институтов из регулятивных практик (например, деньги из бартера) без коллективного акта (Atiyah, 1981).
 
 Несмотря на критику, теория Сёрла остается влиятельной в философии науки, предлагая рамку для анализа, как социальные институты с принудительной силой возникают из коллективных практик и языка.
-</details>
 
 <details>
 Hindriks [-@hindriks2005] has challenged several aspects of Searle’s constitutive-rule framework. His deconstruction focuses on the notions of *status functions* and the role of language. Broadly, Hindriks argued that Searle’s theoretical apparatus is misleading, and that a more streamlined account can be given by focusing on collective acceptance and normative powers.
@@ -1060,7 +1014,7 @@ In sum, Hindriks dismantles Searle’s superstructure of status functions and de
 
 Согласно Норту, «ключ к пониманию процесса изменения — в интенциональности игроков, учреждающих институциональные изменения, и в их понимании проблем» [@north2005, 3].
 
-ОСТАНОВИЛСЯ ЗДЕСЬ
+todo
 
 #### 1.2.2.1 Дуглас Норт: институты как структуры стимулов и ограничений
 Дуглас Норт определяет институты как «правила игры» и делит их на формальные (законы) и неформальные (нормы, конвенции). Важно, что оба типа правил принудительны (enforcing) — они регулируют поведение, потому что подкреплены силой.
@@ -1425,3 +1379,28 @@ $$
 
 <!--Я показываю, что все разнообразные механизмы, описанные Грейфом, Кингстоном, Вейнгастом и другими, являются исторически конкретными способами поддержания одного и того же минимального условия: rD > B. Остракизм у Магрибских купцов, сообщества ответственности в Шампани, конституционный баланс в Англии — это разные технологии повышения r (надёжности санкции) и стандартизации D (силы санкции). Моя теория не заменяет их объяснения, а даёт им общий онтологический знаменатель. Она позволяет перевести их нарративы с языка истории на язык сравнительной институциональной динамики»-->
 
+<!--- Austin, J. L. (1962). *How to Do Things with Words*. Oxford University Press.-->
+<!--- Байдлаева, А. К. (2014). Власть и язык: теория создания социальных институтов. *Вестник КазНУ. Серия философия. Серия культурология. Серия политология*, 2(48), 78-85. [URL](https://bulletin-philospolit.kaznu.kz/index.php/1-pol/article/download/280/271)-->
+<!--- Buekens, F. (2014). Institutions without constitutive rules? In *Deconstructing Searle's Making the Social World* (ed. F. Hindriks). Oxford University Press.-->
+<!--- Epstein, B. (2015). *The Ant Trap: Rebuilding the Foundations of the Social Sciences*. Oxford University Press.-->
+<!--- Giddens, A. (1984). *The Constitution of Society: Outline of the Theory of Structuration*. Polity Press.-->
+<!--- Guala, F. (2010). The philosophy of social science: Metaphysical and empirical. *Philosophy Compass*, 5(4), 254-264.-->
+<!--- Гумницкий, Г. Н. (2020). Фундаментальная онтология Джона Серля и минимальные условия политического. *Вестник Томского государственного университета. Философия. Социология. Политология*, 55, 5-17. [URL](https://cyberleninka.ru/article/n/fundamentalnaya-ontologiya-dzhona-serlya-i-minimalnye-usloviya-politicheskogo)-->
+<!--- Hindriks, F. (2009). Constitutive rules, language, and ontology. *Erkenntnis*, 71(2), 253-275. [URL](https://www.rug.nl/staff/f.a.hindriks/constitutive_rules_language_ontology.pdf)-->
+<!--- Hindriks, F. (2013). Restructuring Searle's Making the Social World. *Philosophy of the Social Sciences*, 43(3), 373-389.-->
+<!--- Hindriks, F. (2015). Deconstructing Searle's Making the Social World. *Philosophy of the Social Sciences*, 45(3), 363-369.-->
+<!--- Lawson, T. (2012). Ontology and the study of social reality: Emergence, organisation, community, power, social relations, corporations, artefacts and money. *Cambridge Journal of Economics*, 36(2), 345-385.-->
+<!--- Miller, S. (2010). *The Moral Foundations of Social Institutions: A Philosophical Study*. Cambridge University Press.-->
+<!--- Никитин, А. П. (2019). Связь языка и культуры в социально-институциональном измерении: решение проблемы в аналитической традиции. *Философия и культура*, 1, 45-56.-->
+<!--- Ransdell, J. (1971). Constitutive rules and speech-act analysis. *The Journal of Philosophy*, 68(13), 385-400.-->
+<!--- Rawls, J. (1955). Two concepts of rules. *The Philosophical Review*, 64(1), 3-32.-->
+<!--- Ruben, D.-H. (1997). John Searle's The Construction of Social Reality. *Philosophy and Phenomenological Research*, 57(2), 443-447.-->
+<!--- Searle, J. R. (1969). *Speech Acts: An Essay in the Philosophy of Language*. Cambridge University Press.-->
+<!--- Searle, J. R. (1995). *The Construction of Social Reality*. Free Press.-->
+<!--- Searle, J. R. (2006). Social ontology: Some basic principles. *Anthropological Theory*, 6(1), 12-29.-->
+<!--- Searle, J. R. (2010). *Making the Social World: The Structure of Human Civilization*. Oxford University Press.-->
+<!--- Tuomela, R. (2002). *The Philosophy of Social Practices: A Collective Acceptance View*. Cambridge University Press.-->
+<!--- Tuomela, R. (2007). *The Philosophy of Sociality: The Shared Point of View*. Oxford University Press.-->
+<!--- Warnock, G. J. (1971). The object of morality. Methuen.-->
+<!--- Wittgenstein, L. (1953). *Philosophical Investigations*. Blackwell.-->
+<!---->
