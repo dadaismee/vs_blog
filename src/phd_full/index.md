@@ -1087,11 +1087,11 @@ $$
 ## 1.3 Институт как правила-в-равновесии: теория Франческо Гуалы
 <!--Синтез и его амбивалентность: теория «правил-в-равновесии» Франческо Гуалы-->
 
-Франческо Гуала и Фрэнк Хиндрикс предлагают синтез правило-ориентированных и теоретико-игровых подходов к институтам [@guala2015]. Они называют его теорией правил-в-равновесии (ПвР) и говорят, что он может служить унифицированной социальной онтологией. 
+Франческо Гуала и Фрэнк Хиндрикс предлагают синтез правило-ориентированных и теоретико-игровых подходов к институтам [@guala2015]. Они называют его теорией правил-в-равновесии (ПвР) и говорят, что он может служить унифицированной социальной онтологией. Эта теория — самая современная и широко обсуждаемая попытка унификации социальной онтологии.
 
 В этой теории регулятивные правила находятся в координационных равновесиях, символически репрезентированных терминами вроде «денег» или «брака» [@hindriks2015]. Это значит, что агенты выбирают стратегии, основываясь на знании регулятивного правила как устройства корреляции, «рекомендующего» наилучший выбор для агента. Например, «пасти скот, если находишься к югу/северу от реки» — регулятивное правило, помогающее решить территориальный спор и работающее как устройство корреляции. Оно помогает каждому агенту выбрать оптимальную стратегию.
 
-Теория ПвР соединяет подходы, основанные на регулятивных правилах, равновесиях стратегических игр и конститутивных правилах. Первые два дополняют друг друга и составляют собственно правила‑в‑равновесии, а третий дополняет его, предоставляя символическую репрезентацию — возможность описывать поведенческие паттерны вида «Если X, делай Y» как термин вроде «денег» или «брака».
+Теория ПвР соединяет подходы, основанные на регулятивных правилах, равновесиях стратегических игр и конститутивных правилах. Первые два дополняют друг друга и составляют собственно правила‑в‑равновесии, а третий дополняет его, предоставляя символическую репрезентацию — возможность описывать поведенческие паттерны вида «Если X, делай Y» как термин вроде «денег» или «брака». 
 
 *Подход, основанный на правилах* — это экономические теории, которые мы рассматривали выше. В них правила направляют и ограничивают поведение в социальном взаимодействии. Они — «человечески созданные ограничения» социальных взаимодействий [@north1990]. *Равновесный подход* рассматривает институты как поведенческие регулярности и, что наиболее важно, как решения проблем координации (традиция Льюиса) и кооперации (традиция институциональной экономики). *Подход конститутивных правил* видит институты как системы правил, присваивающих статусы физическим объектам и наделяющих их деонтическими силами (традиция Сёрла).
 
@@ -1133,7 +1133,7 @@ $$
  <div class="caption">Диллема заключенного (слева) и Охота на оленя (справа)</div> 
  </div> 
 
-- сделать маркдаун-таблицы игр — todo
+<!--- сделать маркдаун-таблицы игр — todo-->
 
 Хотя взаимное предательство в дилемме заключённого — равновесие Нэша, это не социальный институт, поскольку оно не является самоподдерживающимся из‑за независимости стратегий игроков. Напротив, обоюдное решение охотиться на оленя, а не на зайца (оба варианта также являются равновесиями Нэша) — это, по мнению Гуалы и Хиндрикса, уже институт, поскольку для достижения большего совместного выигрыша требуется корреляция стратегий игроков. Последнее означает, что стратегия является «заметной» и выгодной для игроков, что и объясняет, почему одни правила соблюдаются, а другие — нет.
 
@@ -1144,6 +1144,20 @@ $$
 По мнению Гуалы и Хиндрикса, *правила — это репрезентации стратегий в заданной игре*. Эти репрезентации не только служат символическими маркерами свойств равновесий, но и значительно экономят когнитивные усилия самим агентам. Как отмечает экономист Масахико Аоки, на идеи которого опираются Гуала и Хиндрикс:
 
 > Институт — это самоподдерживающийся, заметный паттерн социального взаимодействия, репрезентированный значимыми правилами, которые знает каждый агент и которые инкорпорированы как разделяемые агентами убеждения о способах разыгрывания игры [@aoki2007, 6].
+
+
+```mermaid
+graph LR;
+    subgraph Objective
+        3(Observer rules)
+        1(Correlated equilibrium)
+        1<-.->3
+    end
+    subgraph Subjective
+        3<-.Representation.->4
+    end
+    4(Agent rules)
+```
 
 Тот же Аоки очерчивает институт как двухуровневую систему, где стратегический выбор агентов создаёт объективное состояние игры, это состояние выражается публичной репрезентацией, эта репрезентация способствует формированию ожиданий и верований, которые служат источником стратегического выбора агентов [@aoki2011]. Гуала и Хиндрикс согласны с такой механикой функционирования института:
 
@@ -1164,11 +1178,61 @@ $$
 
 <!--Также можно преобразовать любое конститутивное правило обратно в регулятивную форму. Предполагаемая новизна конститутивных правил оказывается вторичной: они маркируют то, что уже установлено коррелированными стратегиями агентов. Институты, согласно теории правил-в-равновесии, «состоят из регулятивных правил», и конститутивные формулировки могут быть опущены без потери содержания.-->
 
+<!--Hindriks draws a distinction between social norms and conventions: norm-compliance is motivated, and conventions are self-reinforcing. He also calls them descriptive and normative conventions. @bicchieri2005 has stated this in terms of the relationship between self-interest and common interest. They coincide in conventions and do not in norms. It means there can be conventions without norms. However, contra Lewis, @gilbert1992 explicitly treats conventions as intrinsically normative and calls them quasi-agreements conceptually linked to joint intentions, which generate normative reasons for conformity. At the same time, @brennan2013 argue that conventions can become normative because they protect or promote some value. @guala2010 support this by empirical evidence.-->
+<!---->
+<!--Overall, conventions are self-reinforcing, so sanctions are not necessary for creating and maintaining a mutually beneficial behavioral regularity. However, both Lewis and Bicchieri acknowledge that exceptions may exist, making some conventions more fragile than others. Norms, in their turn, make confirming more attractive and thus help to stabilize conventions to ensure collective benefits and prevent malfunctions.-->
+<!---->
+<!--According to the rules-in-equilibria theory of institutions that Hindriks defend along with Guala, institutions are norm-governed social practices. And Hindriks defines a social practice as a regularity in behavior that involves norms. Practices arise in response to signaling devices, which are salient features of the environment that enable agents to align their behaviors in beneficial ways, creating new strategies and thus giving rise to conventions. Interdependent behavioral regularities in coordination games arise from signaling rules of the form “if D, do A”, whereby agents condition their behavior on a signal to coordinate mutually beneficial interactions and achieve collective benefits. In a case of a traffic light, the light itself serves a signaling device that helps to make traffic safer and more efficient by coordinating behaviors.-->
+<!---->
+<!--As normativity pervades social interaction, Hindriks distinguishes two types of normative standards: deontic ones, such as right/wrong, and evaluative ones, such as better/worse. Deontic standards signify obligations, while evaluative standards refer to the quality of performance in various activities, e.g., hosting guests. Social practices can feature either deontic and evaluative standards, evaluative standards only, or neither. As an example, a group of friends that loathes rules may also dislike evaluative standards. This suggests that conventions involve signaling rules, but do not necessarily include normative rules. Therefore, social practices can exist without being an institution.-->
+<!---->
+<!--Hindriks discusses several views of social norms. The 'normative-beliefs view' holds that when people encounter a coordination or cooperation game situation, they are expected to act in a certain way and this is generally known. @brennan2013 define social norms as normative principles or rules which are commonly accepted and known. Social norms are thus generally accepted and recognized normative beliefs.-->
+<!---->
+<!--However, the phenomenon of “pluralistic ignorance” counteracts the 'normative-beliefs view' by being too restrictive in requiring acceptance of the norm. Hindriks provides an example of college students believing that they are expected to drink heavily on weekends, while not really liking doing it. They do not believe that they ought to do so, but they acknowledge that others believe that college students generally do it. To reflect it, the secind, normative-expectations view, proposes that a social norm exists in a population if its rule is present in the normative expectations of its members. This differs from the normative-beliefs view in that it does not require acceptance of the norm, only acknowledgment of it, and that knowledge of others' attitudes is not necessary. It permits inclusion of the norm in first-order beliefs.-->
+
+<!--Bicchieri's theory [-@bicchieri2005] is largely akin to the normative-expectations view, yet there are three key differences. Firstly, she limits the concept of a social norm to regulations that address cooperation problems, while Hindriks includes coordination ones, as well. Secondly, her conception of normative expectations does not make them normative, strictly speaking, for they are higher-order empirical expectations. Someone has a normative expectation if they expect others to adhere to a descriptive rule of 'Everybody does A'. According to Bicchieri, this involves obligations. However, as Hindriks stipulates, an expectation of behavior differs from the belief that a normative rule applies; the former being an expectation, the latter a belief about what should be done.-->
+<!---->
+<!--The third view of social norms is 'conditional-preferences view'. It holds that a social norm exists when enough participants prefer to conform to it given empirical and normative expectations [@bicchieri2005]. However, @southwood2019 argues that people may secretly wish to break the norm if others do the same and expect each other to do so. According to the conditional-preferences view, perceiving a social norm as legitimate is when someone regards the relevant normative expectations as well-founded. This can motivate people to act accordingly [@bicchieri2005].-->
+<!---->
+<!--Overall, the normative-beliefs view holds that people need only possess normative beliefs featuring a rule for it to be perceived as legitimate; these beliefs are self-justifying. The conditional-preferences view, however, states that legitimacy is derived from justified normative expectations.-->
+<!---->
+<!--According to Hindriks, neither of these two views is adequate. The normative-beliefs view holds that social norms are self-justifying and tend to be regarded as legitimate. Yet, pluralistic ignorance shows that this is not always the case. The normative-expectations view suggests that perceived legitimacy is based on justified normative expectations, which lead to corresponding beliefs. This belief lies at the core of what it means for a social norm to be seen as legitimate, and can only be suitably justified with empirical and normative expectations. The conditional-preferences view fails to capture this complexity, while the normative-expectations view does so by explicating legitimacy in terms of an agent's normative beliefs. This motivates agents to conform and makes a difference to behavior within institutions.-->
+<!---->
+<!--Moreover, the normative-expectations view states that a social norm has authority if the normative beliefs people have are suitably justified. This is only true if the expectations are both justified and true, indicating that there is an applicable regularity and that others believe the norm applies.-->
+<!---->
+<!--According to Hindriks, for a social norm to govern a social practive, its participants must adhere to it. This will create an institution, which will be perceived as legitimate and have authority. However, norm-following alone is too demanding an explanation for institutions that are not seen as legitimate. Sanctions, which are important in formal and informal norms, demonstrate that norm-following does not always lead to conformity.-->
+<!---->
+<!--In sum, a norm governs a practice only if it motivates a substantial number of participants. It happens when it is deemed significant to conform to it. Norm-conformity is not enough for norm-governance, as demonstrated by the example of the convention to drive on the right-hand side of the road. This convention is self-reinforcing, but does not motivate anybody and does not constitute an institution. Thus, neither norm-following nor norm-conformity is necessary for norm-governance and norm-conformity is insufficient.-->
+<!---->
+
 Важно, что *Гуала переосмысляет проект Серла в теоретико-игровых терминах, не отказываясь от его интуиций*. Он признаёт, что институциональные статусы влияют на то, как мы классифицируем мир и действуем в нём, но настаивает, что эти статусы всегда согласованы с поведенческими регулярностями, выраженными как КР. Тем самым акцент Серла на конструкции «считается как» можно восстановить как эпифеномен координации — кажущуюся творческую силу языка, которая в действительности является не более чем эффектом коррелированных стратегических профилей. Как формулируют Гуала и Хиндрикс:
 
 > … язык — лишь одно из множества координационных устройств и не обладает большей творческой силой, чем подбрасывание монеты или любое другое событие, которое игроки могут использовать для координации своих решений [@guala2015].
 
 Гуала и Хиндрикс утверждают, что нормативные аспекты можно моделировать как модификации выигрышей базовой игры, аналогичные $\delta$-параметрам у Остром [@crawford1995]. Нормативное правило добавляет стимулы или санкции, делающие определённые действия — например, кооперацию — более привлекательными. На практике это означает, что если агенты получают «право» или несут «обязанность», мы представляем это, вставляя издержки или выгоды в матрицу выигрышей. Это преобразует игру с ненулевой суммой в координационную игру, где эффективное равновесие становится более заметным.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|c|c|c|}
+\hline
+& $C$ & $D$ \\
+\hline
+$C$ & $-1,-1$ & $-3,0$\\
+\hline
+$D$ & $0,-3$ & $-2,-2$ \\
+\hline
+\end{tabular}
+\begin{tabular}{|c|c|c|}
+\hline
+& $C$ & $D$ \\
+\hline
+$C$ & $-1,-1$ & $-3,0-\delta$\\
+\hline
+$D$ & $0-\delta,-3$ & $-2,-2$ \\
+\hline
+\end{tabular}
+\caption{\label{fig:delta-transformation-coordination-game}{Delta parameter transforming cooperation game into coordination game.}}
+\end{table}
 
 Гуала показывает, что добавление таких нормативных издержек может создавать новые равновесия, ранее отсутствовавшие, или делать социально оптимальный исход устойчивым. Важно, что эти модификации не требуют введения отдельной онтологической категории помимо стандартных инструментов теории игр. Нормативные силы просто становятся частью равновесной структуры: они обеспечивают координацию, изменяя стимулы. Гуала и Хиндрикс демонстрируют, что любое статусное правило — например, право пользоваться, передавать или исключать — может быть переформулировано как регулятивное правило после включения нормативных полномочий.
 
@@ -1248,27 +1312,535 @@ $$
 
 Решение Гуалы — приравнять регулятивные правила вроде «стой на красный, иди на зеленый» к условным стратегиям агентов в играх. Точнее, он говорит, что это два взгляда на одну и ту же сущность: с точки зрения действующего агента это правила, а с точки зрения наблюдателя — условные стратегии, ведущие к коррелированному равновесию [@guala2015]. Правила, по утверждению Гуалы, «неотъемлемы для *достижения* равновесий, формирующих институты» [@hindriks2015a, 463, курсив мой], то есть логически им предшествуют. Однако в другом месте Гуала говорит, что правила — это «репрезентации стратегий <…>, которым *должно* (ought) следовать в игре» [@hindriks2015a, 467, курсив мой]. При этом долженствование, выражающее принудительный характер институтов, следует из инструментальной рациональности КР — игрокам не выгодно отклоняться от стратегии, предложенной устройством корреляции. Сам Гуала признаёт, что это «слабая нормативность» инструментальной рациональности, а не деонтические силы в полной мере, как это есть у Сёрла [@guala2015].
 
-Правила как условие возможности равновесия и как его репрезентация — логические разные объекты. Первые — *ex ante*, вторые — *ex post*. Это создаёт круг в определении: правила помогают агентам достичь равновесий и одновременно репрезентируют уже существующие стратегии, которым необходимо следовать в игре, а нормативность возникает из равновесия. Неясно, что из этого онтологически первично — правила или равновесия, и откуда и почему возникает нормативность. Всё это затрудняет определение онтологии социального института.
+Правила как условие возможности равновесия и как его репрезентация — логические разные объекты. Первые — *ex ante*, вторые — *ex post*. Это создаёт круг в определении: правила помогают агентам достичь равновесий и одновременно репрезентируют уже существующие стратегии, которым необходимо следовать в игре, а нормативность возникает из равновесия. Неясно, что из этого онтологически первично — правила или равновесия, и откуда и почему возникает нормативность. Всё это затрудняет определение онтологии социального института. Это значит, что несмотря на вполне успешную объяснительную редукцию, собственно онтологическая унификация не вполне осуществлена — есть две сущности с логически неясным отношением между ними.
 
-Это значит, что несмотря на вполне успешную объяснительную редукцию, собственно онтологическая унификация не вполне осуществлена — есть две сущности с логически неясным отношением между ними.
+В этой главе мы рассмотрели три основные традиции рассмотрения социальных институтов в рамках социальной онтологии, которые пытаются ответить на вопрос об источнике его принудительной силы. Показав сильные и слабые стороны каждой, мы рассмотрели синтез этих традиций в теории ПвР Гуалы и Хиндрикса, и, рассмотрев её существующую критику, нашли критичную лакуну, которая ставит под вопрос объяснительную мощь ПвР — проблему «курицы и яйца» в отношениях правил и равновесий. 
 
-В следующей главе мы детально рассматрим отношение между правилом и равновесием в ПвР, чтобы наметить непротиворечивый путь не только объяснительной, но и онтологической унификации.
+В следующей главе мы детально рассмотрим отношение между правилом и равновесием в ПвР, чтобы наметить непротиворечивый путь не только объяснительной, но и онтологической унификации.
 
 # Глава 2. Анализ теории правил-в-равновесии Франческо Гуалы
 <!--круг в определении, подмена объясняемого и допущение о полноте информации-->
 
-## 2.1. Проблематичность правил: ex ante vs. ex post
-Круг в определении: институт как скрытая предпосылка института
+<!--- написать введение к 2 главе — что тут сказать? — todo-->
 
-### 2.1.1 Сравнение несравнимых игр 
+### 2.1 Логический круг в определении правил
+
+<!--According to rules-in-equilibria theory, social institutions are the central unit of social ontology [@guala2016b], and coordination is its main mechanism rooted in evolution [@shevchenko2023]. As institutions are normatively-driven self-sustaining behavioral regularities designed to solve coordination problems [@lewis2008; @aoki2007], they share many features with 'animal conventions' that help animals solve coordination problems and maintain stable relationships [@hindriks2015]. Consequently, understanding the emergence of social institutions requires an examination of the evolutionary mechanisms that enable correlation of strategies with normative force as a key characteristic.-->
+<!---->
+<!--To expand, let us first look at Guala's [-@guala2016b] argument that has the following logic:-->
+<!---->
+<!--1. social institutions are backed not by constitutive rules of the form "X counts as Y in (the context of) C", like in Searle [-@searle1995],[^1] but by regulative rules of the form "do X if Y"-->
+<!--2. from a game-theoretic point of view, regulative rules can be seen as agents' strategies that comprise a *correlated equilibrium*[^2]-->
+<!--3. constitutive rules are linguistically transformed regulative rules with added theoretical term that represents a certain equilibrium-->
+<!--4. at the same time, many animal species including baboons, lions, swallowtails, and others exhibit behavioral patterns describable in the form similar to correlated equilibrium [@maynardsmith1982]-->
+<!--5. despite the similarity of mathematical representation, the cases of 'animal conventions' and human social institutions differ in scope of actionable signals. Building on Sterelny [-@sterelny2003], Guala puts for forward an idea that humans can invent and follow new rules, whereas animals are bound to genetically inherited sets of behavioral responses-->
+<!--6. the arbitrariness of rules that humans can invent and follow is grounded in and ontologically depends on shared representations of a given community-->
+<!--7. put differently, the difference in scope of actionable signals between animals and humans can be explained by humans having social epistemology that grounds social ontology.-->
+<!---->
+<!--Although sound, this argument has an Achilles heel: the evolutionary roots of correlation of strategies as the basis of any self-sustaining social coordination, human or not, are still obscure and underdeveloped.-->
+<!---->
+<!--Guala and Hindriks base their account on Maynard Smith's, who does not use the notion of correlated eqiulibrium explicitly and discusses what he calls a *bourgeois equilibrium* — a situation in animal territorial behavior, when the most optimal strategy for an animal is to fight for a territory it "owns" or not fight otherwise. This game is represented in the matrix below.-->
+<!---->
+<!--\begin{table}[h]-->
+<!--\centering-->
+<!--\begin{tabular}{|l|c|c|c|}-->
+<!--\hline-->
+<!--& \textbf{Hawk} & \textbf{Dove} & \textbf{Bourgeois} \\ \hline-->
+<!--\textbf{Hawk} & $\frac{(V-C)}{2}$, $\frac{(V-C)}{2}$ & $V$, $0$ & $\frac{(V-C)}{2}$, $V-C$ \\ \hline-->
+<!--\textbf{Dove} & $0$, $V$ & $\frac{V}{2}$, $\frac{V}{2}$ & $0$, $\frac{V}{2}$ \\ \hline-->
+<!--\textbf{Bourgeois} & $C-V$, $\frac{(C-V)}{2}$ & $\frac{(C-V)}{2}$, $C-V$ & $\frac{(C-V)}{2}$, $\frac{(C-V)}{2}$ \\ \hline-->
+<!--\end{tabular}-->
+<!--\caption{\small A game-theoretic matrix for a "hawk-dove-bourgeois" game from Maynard Smith's book "Evolution and theory of games". In this game, two players (represented by rows and columns) can choose to be either a hawk (fight for resources), dove (submit and share resources), or bourgeois (submit only when opponent is also bourgeois). The payoffs are determined by the value of the resource (V) and the cost of fighting (C). The table shows the payoff for each player given their own strategy and their opponent's strategy.}-->
+<!--\end{table}-->
+<!---->
+<!--Guala and Hindriks interpret bourgeois equilibrium as a correlated one. However, there are at least two interpretations of it: *correlated equilibrium* (CE) and *evolutionary stable strategy* (ESS)[^3] based on uncorrelated asymmetry. They are mathematically distinct, and we will look at both in detail later.-->
+<!---->
+<!--The presented ambiguity creates tension at the backbone of Guala's argument. It means that:-->
+<!---->
+<!--- either 'animal conventions' are mathematically different from human social institutions, for they represent ESS and not correlated equilibrium, and there comes the burden of showing how the former becomes the latter in the course of evolution;-->
+<!--- or that 'animal conventions' are themselves correlated, and there comes the burden of showing how humans acquired the capacity for social epistemology that ontologically grounds social ontology as rules-in-equilibria.-->
+<!---->
+<!--Taking into account the wealth of research on transition from ESS to correlation in game theory [@skyrms1994; @lee-penagos2016; @kim2017; @metzger2018; @herrmann2021], the first option in resolving the tension in Guala's argument becomes insufficient. The transition from ESS to correlation does not intrinsically presuppose the emergence of intentional compliance to norms, as in social institutions, which are normatively-driven and at the same time arbitrary, as will be covered later. Consequently, it will be needed to account for the second option, but to begin, we need to figure out whether social institutions indeed necessitate correlation of strategies. In this paper, I will address the source of the issue—Maynard Smith's notion of bourgeois equilibrium and its interpretations in regard to social coordination.-->
+<!---->
+<!--It is relevant, for if social institutions have emerged from 'animal conventions' with the aid of cognitive capacities like mindreading and/or mindshaping [@zawidzki2013], it constrains social ontology as the scope of possible objects of study to the logical derivatives of social institutions and social coordination in general as discussed in @shevchenko2023.-->
+<!---->
+<!--This paper is structured as follows. The first section is devoted to description of the rules-in-equilibria (RiE) theory of social institutions. In the second section, the relationship between social institutions, conventions, and norms is discussed. The third section examines the notion of representation as used in RiE. In the fourth section, the role of Hawk-Dove-Bourgeois game as correlation and as asymmetry of strategies is studied. The final section explores the source of randomization in correlation as the problem in social institutions as evolved correlated equilibria.-->
+<!---->
+
+<!--The authors provide an example of non-human animals solving coordination problems but still not having institutions. For example, male baboons, lions, swallowtails and some other species exhibit a recurring behavioral pattern that can be described in terms of correlated equilibrium. Males patrol an area to mate with females and have ritual fights with intruders if encountered. The evolved pair of players' strategies minimizes possible damage to both parties and lets the incumbent occupy territory and mate [@maynardsmith1982]. The authors use Maynard Smith's exposition of animal territorial behavior represented as a “Hawk-Dove-Bourgeois” game to provide an example of a prototypical social institution:-->
+<!---->
+<!--\begin{table}[h]-->
+<!--\centering-->
+<!--\begin{tabular}{|c|c|c|c|}-->
+<!--\hline-->
+<!--& $H$ & $D$ & $B$\\-->
+<!--\hline-->
+<!--$H$ &$-1$ &$2$ &$0.5$\\-->
+<!--\hline-->
+<!--$D$ &$0$ &$1$ &$0.5$ \\-->
+<!--\hline-->
+<!--$B$ &$-0.5$ &$1.5$ &$1.0$ \\-->
+<!--\hline-->
+<!--\end{tabular}-->
+<!--\caption{\\small "Hawk-Dove-Bourgeois" game}-->
+<!--\end{table}-->
+<!---->
+<!--Presented with a terrestrial resource, a “Hawk” player fights over it, a “Dove” retreats and “Bourgeois” uses a strategy “fight if own and retreat if do not own”. In this game, Guala and Hindriks see the “bourgeois” strategy “fight of own” as a correlated one, meaning that players coordinate their actions by conditioning them on an external signal. As they say, its is a "simple pre-emption device: whoever occupied the land first has the right to use it" [@hindriks2015, 465]. In this case, the temporal order of occupation is used as correlation device. Overall, this correlation fulfills the necessary condition of being an institution.-->
+<!---->
+<!--@guala2015 illustrate the applicability of HDB to humans with a game where two tribes, spatially separated by a dry river, graze their cattle. The dry river serves as a “focal point”—a salient feature of the environment that the members of both tribes have been aware of [@schelling1980]. It also serves as a correlation device, for it is a source of a public signal that coordinated actions of different tribes without their explicit agreement. Thus, the shepherds of both tribes have three possible strategies: “Graze”, “Not graze” and “Graze if North / South of the river” according to the history of their territorial occupation. The members of one tribe might be killed by the members of another if grazing their cattle on another side of the dry river which the other tribe possesses. The most stable set of strategies is grazing if on the own side of the dry river. However, this is insufficient, for the payoff structure of the game is uniform for animal and human cases. Hence, we cannot discriminate between them solely on this basis.-->
+<!---->
+<!--\begin{table}[h]-->
+<!--\centering-->
+<!--\begin{tabular}{|c|c|c|c|}-->
+<!--\hline-->
+<!--& $G$ & $NG$ & $GIS$ \\-->
+<!--\hline-->
+<!--$G$ &$-1$ &$2$ &$0.5$\\-->
+<!--\hline-->
+<!--$NG$ &$0$ &$1$ &$0.5$ \\-->
+<!--\hline-->
+<!--$GIN$ &$-0.5$ &$1.5$ &$1.0$ \\-->
+<!--\hline-->
+<!--\end{tabular}-->
+<!--\caption{\small Grazing game: the player strategies are Graze, Not Graze and Graze if North / Graze if South}-->
+<!--\end{table}-->
+<!---->
+<!--What, then, distinguishes animal conventions from human social institutions? Guala and Hidriks argue that they differ in the scope of actionable signals. Building on the work of @sterelny2003, they say that animals may only respond to a limited set of stimuli, but humans, with their ability to use representations and symbols to condition behavior, can decouple stimulus and response and invent new rules. For example, butterflies cannot coordinate on anything but who occupied the sunspot first and unable to create new equilibria. Humans, however, can go beyond this: establishing various correlations, devising new strategies, and expanding the number of equilibria.-->
+<!---->
+<!--There are two types of rules:-->
+<!---->
+<!--- agent-rules that agents formulate to represent and guide their behaviour-->
+<!--- observer-rules that observer formulates to represent and summarize others' behaviour.-->
+<!---->
+<!--Strategies can be described as rules, but a-rules influence behaviour and o-rules only describe it [@guala2016b, 54].-->
+<!---->
+<!--Institutions are composed of both subjective and objective components: they are determined by varying social norms as rules and simultaneously restrict certain behaviors and their own perpetuation. But how they are connected?-->
+<!---->
+<!--Guala and Hindriks argue that an adequate theory of institutions must have three explanatory components [@guala2015, 469]:-->
+<!---->
+<!--- coordination-->
+<!--- correlation-->
+<!--- representation.-->
+<!---->
+<!--Following the logic of the authors, institutions coordinate behavior by correlation of strategies, and humans are able to devise many strategies and equilibria given the same correlation device, or signal, due to an advanced cognitive capacity for conditioning behavior on representation of the environment. At the same time, as rules-in-equilibria theory has “rules” and "equilibria” parts, they must be somehow connected. For this reason, rules are symbolic representations of strategies in a game that comprise equilibria. They not only serve as symbolic markers of the properties of equilibria, but considerably save cognitive effort. As Aoki notes [-@aoki2007, 6]:-->
+<!---->
+<!--> “An institution is a self-sustaining, salient pattern of social interaction, as represented by meaningful rules that every agent knows, and incorporated as agents' shared beliefs about the ways the game is to be played”.-->
+<!---->
+<!--```{.mermaid background=transparent}-->
+<!--graph LR;-->
+<!--	subgraph Objective-->
+<!--		3(Observer rules)-->
+<!--		1(Correlated equilibrium)-->
+<!--		1<-.->3-->
+<!--	end-->
+<!--	subgraph Subjective-->
+<!--		3<-.Representation.->4-->
+<!--	end-->
+<!--	4(Agent rules)-->
+<!--```-->
+<!---->
+<!--However, it is not evident how exactly rules represent strategies. To clarify this issue, the authors, drawing on @hindriks2005, propose to bridge their rules-in-equilbria account of institutions with the constitutive rules account. The latter presents institutions as systems of statuses and functions, paradigmatically proposed by @searle1995 as the formula "X counts as Y in C”. Searle draws a sharp distinction between constitutive and regulative rules, emphasizing the difference in their syntax, for that of the latter is “do X if Y”.-->
+<!---->
+<!--The constitutive rules approach argues that our beliefs are essential for the existence of institutions, which involve more than just actions. This applies to objects, persons, and events too—for example, “Bills issued by the Bureau of Engraving and Printing count as money in the United States” [@searle1995, 28]. X can be replaced by predicates that refer to any ontological category [@guala2015, 470].-->
+<!---->
+<!--As the authors note, constitutive rules are linguistically transformed regulative rules, aided with a new term to name an institution. Combining these accounts enables researchers to investigate Y terms like “money” used by individuals in everyday life and analyze their internal regulative and strategic character, thus bridging explicit ontology of social science and implicit ontology of ordinary language. The main idea of this argument, thus, is that constitutive rules can be developed at will from regulative rules or game-theoretic strategies by introducing institutional terms [@guala2015, 477].-->
+<!---->
+<!--$$\text{Regulative rules} \, + \, \text{Institutional terms}= \text{Constitutive rules}$$-->
+<!---->
+<!--For example, one can transform a regulative rule "if a bill is issued by the Bureau of Engraving and Printing, it can be used to pay for goods in the United States" into "Bills issued by the Bureau of Engraving and Printing count as money in the United States" by adding an institutional term “money”. Now let us turn to the relationship between the concepts of rules, norms, conventions and institutions in rules-in-equilibria theory.-->
+
+
+<!--Guala and Hindriks draw inspiration for their rules-in-equilibria theory of social institutions in Maynard Smith's concept of *"bourgeois equilibrium"* [@maynardsmith1982]. They see the "Hawk-Dove-Bourgeois" (HDB) game of animal territorial ownership as representing a prototypical "animal convention". According to the authors, bourgeois equilibrium (BE) is essentially a CE, however Maynard Smith uses bourgeois to define evolutionary stable strategies ESS. It creates tension, for CE and ESS are mathematically distinct: the former is "too loose" and the latter is "too strict" in terms of the stability conditions, and it is unclear how they can be combined. Hence, the issue consists of clarifying the status of BE: whether it is a CE, an ESS or something else. It is due to being at the core of Guala's argument for institutions as correlation of strategies rooted in evolution. Let us look at the Maynard Smith's notion of BE captured in the the HDB game.-->
+<!---->
+<!--#### 4.1 Maynard Smith's "Hawk-Dove-Bourgeois" game-->
+<!--@maynardsmith1982 famously has introduced the notion of ESS into game theory. A 'strategy' is a behavioral phenotype, a specification of what an individual will do in any situation. An ESS is a strategy that, if adopted by all members of a population, prevents the invasion of any mutant strategy by natural selection. The concept originated in the context of animal behavior, but can be applied to any phenotypic variation; e.g., growth form, age at first reproduction, or relative number of offspring-->
+<!---->
+<!--He proposes a model of a 'Hawk-Dove' game that represents a *mis*coordination game between two agents. In a competition for some resource, 'Hawk' fights for it and 'Dove' displays and retreats if threatened.-->
+<!---->
+<!--\begin{table}[h]-->
+<!--\centering-->
+<!--\begin{tabular}{|l|c|c|c|}-->
+<!--\hline-->
+<!--& \textbf{Hawk} & \textbf{Dove} \\ \hline-->
+<!--\textbf{Hawk} & $\frac{1}{2}(V-C)$, $\frac{(V-C)}{2}$ & $V$ \\ \hline-->
+<!--\textbf{Dove} & $0$ & $\frac{V}{2}$ \\ \hline-->
+<!--\end{tabular}-->
+<!--\caption{\small A 'Hawk-Dove' game. The payoffs are determined by the value of the resource ($V$) and the cost of fighting ($C$). Value $V$ increases the Darwinian fitness of an individual if they obtain the resource, and cost $C$ reduces it if injured in a fight over the resource. Not gaining $V$, however, does not mean zero fitness.}-->
+<!--\end{table}-->
+<!---->
+<!--As this model is at the core of Guala's theory, its assumptions are important. This model assumes an infinite population with asexual reproduction and symmetric contests between two opponents. It also has a finite set of strategies.-->
+<!---->
+<!--Defining the stability criteria for the strategies, he proposes that If a strategy $I$ is stable against $J$, it must satisfy the “standard conditions” from @smith1973: the fitness of typical members adopting $I$ must be greater than any mutant $J$, such that:-->
+<!---->
+<!--- either $E(I, I)>E(J, I)$ or $E(I, I)=E(J, I)$-->
+<!--- and $E(I, J)>E(J, J)$.-->
+<!---->
+<!--According to these conditions, $D$ cannot be an ESS, for $E(D,D) < E(H,D)$, and $H$ is an ESS if costs of injury are less than potential gain from the resource, $V > C$. If $V<C$, neither $H$ nor $D$ is an ESS. To proceed, Maynard Smith considers the behavior of individuals who can play either strategy with a certain probability, which they pass on to their offspring. This strategy takes the form 'play $H$ with probability $P$, and $D$ with probability $(1-P)$'.-->
+<!---->
+<!--A mixed strategy $I$, which randomly chooses an action from a set of possible actions, may be an ESS if the expected payoffs of the strategies composing it are equal. This follows from a theorem by @bishop1978: if a mixed ESS includes the pure strategies $A, B, C, \ldots$ with non-zero probability, then $$E(A, I)=E(B, I)=E(C, I)=\ldots=E(I, I)$$-->
+<!---->
+<!--Intuitively, this means that if $E(A, I)>E(B, I)$, adopting $A$ more often and $B$ less often would be more advantageous than following strategy $I$, making it not an ESS.-->
+<!---->
+<!--However, $I$ can be an ESS if probability of its adoption is $P=V/C$. In contests where the cost of injury is greater than the rewards of victory, $V < C$, mixed strategies with $P=V/C$ are evolutionarily stable.-->
+<!---->
+<!--What is important, a game with two pure strategies always has an ESS, and games with three or more strategies may not have one. As we remember, both "Hawk-Dove" and "Grazing" games have three strategies.-->
+<!---->
+<!--@maynardsmith1982 introduces the distinction between symmetric and asymmetric games. He illustrates them with animal contests. An asymmetric contest is one where participants have different roles, allowing them to use different strategies. Roles must be identifiable and can be based on gender, ownership, or intruder status. Circumstances which determine an individual's role are assumed to be independent of their genetic strategy. A contest with no role differentiation is 'symmetric'. @maynardsmith1982 characterizes them as follows:-->
+<!---->
+<!--1. Contests are between two individuals of distinct roles (e.g., owner/intruder, larger/smaller, older/younger);-->
+<!--2. Both individuals know their role;-->
+<!--3. Both have the same strategies available (e.g., escalate, retaliate, display);-->
+<!--4. Role may influence chances of winning or value of victory.-->
+<!---->
+<!--The Hawk-Dove game is symmetrical—both players have the same choice of strategies and payoffs. However, most contests are asymmetric, with differences in size, strength, gender, age, or ownership influencing strategy choice and/or altering payoffs or success in escalation. Even when the asymmetry does not change payoffs or escalation outcomes, it may still determine the players' actions.-->
+<!---->
+<!--\begin{table}[h]-->
+<!--\centering-->
+<!--\begin{tabular}{|l|c|c|c|}-->
+<!--\hline-->
+<!--& \textbf{Hawk} & \textbf{Dove} & \textbf{Bourgeois} \\ \hline-->
+<!--\textbf{Hawk} & $-1$ & $2$ & $0.5$ \\ \hline-->
+<!--\textbf{Dove} & $0$ & $1$ & $0.5$ \\ \hline-->
+<!--\textbf{Bourgeois} & $-0.5$ & $1.5$ & $1$ \\ \hline-->
+<!--\end{tabular}-->
+<!--\caption{\small 'Hawk-Dove-Bourgeois' game}-->
+<!--\end{table}-->
+<!---->
+<!--In this example, the Hawk-Dove game is extended to include a third strategy, $B$ (or Bourgeois), which is defined as 'if owner, play Hawk; if intruder, play Dove'. This strategy is ESS and the only ESS of this game. It is assumed that each strategy type is owner and intruder equally frequently. Hence, even when ownership does not alter payoffs or success in fighting, an asymmetry of ownership can be used as a conventional one to settle the contest.-->
+<!---->
+<!--Here, the $B$ player chooses $H$ and $D$ with equal frequency, acting as an owner on half the occasions and an intruder on the other half. And when two $B$'s compete, if one chooses $H$, the other chooses $D$. If $V>C$, the ESS is $H$ as it is worth risking injury to gain the resource; if $V<C$, the ESS is $B$ as ownership settles the contest without escalation. It means that in both 'Hawk-Dove' and 'Grazing' games $V < C$.[^5]-->
+<!---->
+<!--Crucially, this assumes that *the probability of an individual occupying a role is independent of their strategy*. This holds true even for strategy $B$, wherein the individual's role is correlated with their chosen action (Hawk or Dove). The assumption is that the strategy B itself is unrelated to role. In other words, If an agent is indeed an 'owner', it does not entail that she always plays a certain 'owner' strategy like 'Hawk' or 'Bourgeois'. However, according to @gintis2007a, empirical findings corroborate the existence of the 'endowment' effect, when owners value a resource more than intruders, thus making them fight harder for it. It presupposes a certain degree of correlation between role and strategy.-->
+<!---->
+<!--@smith1976 used the term 'uncorrelated asymmetry' to refer to payoff-irrelevant differences in an otherwise symmetric game. In asymmetric contests the value of the resource, or chance of victory, is not the same for both owner and intruder. The payoffs to owners and intruders are often not equal, so the territory may be more valuable to an owner who has already familiarized themselves with food, refuge, and other. Ownership may even offer advantages in escalated contests. Inequality of payoffs is possible due to size or age asymmetry. Even if there is no inequality, an asymmetry can still settle contests. Thus, "Grazing" game as presented by Guala, does not require a correlated device and may be solved by uncorrelated asymmetry alone, as both players recognize the asymmetry of ownership and the value of territorial gains is less than the costs of potential injury, $V < C$, for they might value their own territory more than potential one.-->
+<!---->
+<!--It is interesting that @maynardsmith1982 considers the 'social contract' game as one which humans can play but animals cannot. This game involves a group of individuals agreeing on a behavioral regularity and punishing any member who deviates from it. However, the act of punishing carries a cost, so in order to maintain stability, refusal to participate in enforcement must be considered a breach and punished as well. To ensure enforcement, a subgroup may be rewarded for carrying it out. Essentially, the 'social contract' game differs from any other coordination or cooperation game in added normativity, that can be represented by a delta parameter. And this normativity is characteristic of social institutions as defined in rules-in-equilibria theory. This renders Guala's example with 'Grazing game' problematic, for, following Maynard Smith, not only HDB and 'Grazing game' are conceptually distinct, for they presuppose different cognitive capacities, but they must have different payoff structure due to added normativity in the human case.-->
+<!---->
+<!--Overall, BE assumes that each player is trying to maximize their own self-interest, but no player is attempting to dominate or exploit the others. A BE is certainly a situation and not a solution concept. It occurs when the players have reached a strategy profile in which none of them can improve their payoff by changing only their own strategy, while also recognizing the other player strategies.-->
+<!---->
+<!--As there are two possible interpretation of BE—correlation of strategies and uncorrelated asymmetry, let us consider both.-->
+<!---->
+---
+Аргументация теории ПвР строится на недостаточности правил и равновесий по отдельности. И если правила могут существовать и не исполняться, то с равновесиями всё не так однозначно. Равновесий, по мнению Гуалы и Хиндрикса, недостаточно для объяснения социальных институтов, поскольку они схватывают слишком широкий класс феноменов — в том числе территориальные споры животных. Чтобы это показать, авторы сравнивают две игры — «Ястреб-Голубь-Буржуа» самцов бабочек и подобную игру с выпасом скота у людей.
+
+В первой игре два самца бабочки разрешают конфликт за территорию, координируя поведение на простом физическом сигнале — «кто первым занял место» [@davies1978]. Их стратегия *условна* (conditional) и зависит от наблюдаемых признаков среды — наличия или отсутствия оппонента на территории. У каждой бабочки есть две стратегии: 
+
+- если я хозяин — борюсь насмерть
+- если я захватчик, проявлю агрессию, но если не сработает, отступлю.
+
+<!--- добавить матрицу игры бабочек — todo-->
+
+Во второй игре два человеческих племени — Нуэр и Линка — разделены высохшим руслом реки, которое служит для них границей [@guala2015]. 
+
+![Граница как физический маркер (слева) и как абстрактное правило (справа). Взято из @guala2016a](assets/guala.png)
+
+Стратегия членов каждого племени также условна, но зависит уже не от физического маркера — порядка очередности — а от разделяемого *правила* — «Если земля находится к югу (или к северу — для другого племени) от русла реки, пасти скот». 
+
+<!--- добавить матрицу игры племен — todo-->
+
+<!--Хотя эта стратегия связана с высохшим руслом, в ней это русло важно не само по себе, а как *средство кодирования информации*. Высохшее русло поддерживает (scaffolds) более глубокую эпистемическую структуру, основанную на общем знании (или общей причине полагать) [@lewis1969] о том, что это высохшее русло *означает*. -->
+
+Агенты координируют действия на разделяемом убеждении — правиле, а не на физическом маркере. Это устройство корреляции, *абстрагированное* от физического маркера с помощью *когнитивной репрезентации* разделяемого правила. 
+
+Гуала и Хиндрикс говорят, что люди, в отличие от животных, могут выбирать, на чем координировать свои действия [@guala2015], и поэтому к равновесиям нужно добавить правила.
+
+С точки зрения *теории игр* эти ситуации идентичны. Для их описания подходит одна и та же матрица выигрышей. 
+
+<!--<!-- doc-представление -->-->
+<!--<!-- Таблица: Матрица выигрышей для игры на координацию действий животных и людей -->-->
+<!--<!---->-->
+<!--<!-- | | $Бой$ | $Отступление$ | $Условный$ | -->-->
+<!--<!-- |-------------|------------|-------------|---------------------| -->-->
+<!--<!-- | $$Бой$$ | $(0,0)$ | $(2,1)$ | $(1,0,5)$ | -->-->
+<!--<!-- | $$Отступление$$ | $(1,2)$ | $(1,1)$ | $(1,1,5)$ | -->-->
+<!--<!-- | $$Условное$$ | $(0,5,1)$ | $(1,5,1)$ | $(1,5,1,5)$ | -->-->
+<!---->
+<!--<!-- web-representation -->-->
+<!--<div class="table">-->
+<!---->
+<!--$$-->
+<!--\begin{array}{|c|c|c|c|}-->
+<!--\hline-->
+<!--& Бой & Отступление & Условный \\-->
+<!--\hline-->
+<!--Бой & 0,0 & 2,1 & 1,0.5 \\-->
+<!--\hline-->
+<!--Отступление & 1,2 & 1,1 & 1,1.5 \\-->
+<!--\hline-->
+<!--Условный & 0.5,1 & 1.5,1 & \textcolor{red}{1.5,1.5} \\-->
+<!--\hline-->
+<!--\end{array}-->
+<!--$$-->
+<!--<figcaption class="caption">Когда оба агента выбирают <span style="color: red">условную стратегию</span>, каждый получает равный выигрыш. Этот профиль *эволюционно стабилен*: он оптимален при повторении этой ситуации много раз.</figcaption>-->
+<!--</div>-->
+
 По мнению Бинмора, Гуала и Хиндрикс «мутят воду» приодя пример с «Ястреб-Голубь» Мейнарда Смита, поскольу последняя предполагает ЭСС в качестве равновесия, не равновесие Нэша или коррелированное [@binmore2015].
 
-### 2.1.2 Подмена условной стратегии готовой конвенцией
+- Гуала сравнивает разные игры: 
+  - эволюционную игру с рациональной, беря за основу Ястреб-Голубь-Буржуа Мейнарда Смита. Они имеют разные допущения:
+    - об агентах: фенотипы и индивиды
+    - об источнике корреляции стратегий: экзогенная (внешняя) и эндогенная (зависит от истории)
+    - о концепции устойчивости: ЭСС у Мейнарда Смита (а не КР) и КР у Гуалы
+- Вывод: методологическая неточность как основа аргументации не способствует валидности выводов ПвР
 
-## 2.2. Неустойчивость равновесий: поломка корреляции стратегий при неполной информации
+- Даже приняв методологическую разницу игр, мы видим, что Гуала сравнивает игру с конфликтом с игрой на координацию, не изменяя матрицы и незаметно устраняя конфликт внутри Ястреба-Голубя:
+  - Пример с животными (ЯГБ): Чистая игра с конфликтом. Условная стратегия «Буржуа» — это *решение, которое предстоит найти в рамках игры*. Никаких внешне данных правил нет.
+  - Пример с людьми («выпас скота»): Гуала описывает это так: «Племена пасли скот по разные стороны реки. Река высохла. Теперь они продолжают пасти скот по воображаемой линии».
+  - Ключевой момент: Фраза «продолжают пасти» содержит готовую конвенцию. Но откуда она взялась? В момент, когда река высохла, перед племенами встала точно такая же игра с конфликтом, как у животных (ЯГБ за новый ресурс). Гуала пропускает этот момент и начинает анализ с того, что конвенция уже существует.
 
-<!--# Глава 3. Формальные условия устойчивости института-->
+![Подмена понятий в аргументации Гуалы: конвенция о границе не возникает как перенос очевидной (salient) истории игры, поскольку если есть река, то нет стратегического выбора и самой игры: племена физически не могут пасти скот на другом берегу. Игра «Ястреб-Голубь» возникает с высыханием реки.](assets/guala-podmena.png)
+
+  - Что должно быть объясняемым (explanandum)? Возникновение и устойчивость принудительной социальной структуры (например, границы, права собственности).
+  - Что Гуала использует как объясняющее (explanans)? Уже существующую, работающую социальную структуру (конвенцию о разделе по реке), которую он встраивает в начальные условия своей модели.
+- Итог: Он строит теорию, где институт (как готовая конвенция) является предпосылкой для объяснения института (как устойчивого равновесия). Это логический круг (petitio principii). Он объясняет институт через самого себя. Это фатально, потому что весь пафос Гуалы — показать, как правила и равновесия совместно порождают институты. Но в его ключевом примере правило («паси на своей стороне») не порождается игрой — .*оно дано ей изначально как часть истории*
+- **Вывод 1**: Гуала не моделирует возникновение института. Он моделирует воспроизводство уже существующего института в слегка изменившихся условиях (река исчезла, но «правило» осталось). Его модель объясняет не «почему есть граница», а «почему сохраняется инерция уже существующей конвенции о границе, если физический маркер исчез». Это другая, более простая проблема.
+- Если рассмортреть пример Гуалы с выпасом скота как настоящую ЯГБ (без предустановленной конвенции в виде реки как границы), то там будет и равновесие, и правило — но не в онтологическом смысле уже существующей конвенции, а как условная стратегия. 
+- **Вывод 2:** Это ставит под вопрос необходимость правил для определения института. Возможно, правила не необходимы.
+
+
+### 2.2. Неустойчивость коррелированного равновесия: правило без санкции в условиях неполной информации
+- Рассматривается реалистичная игра ЯГБ без предустановленной конвенции в качестве равновесия
+- Находится байесовское равновесие в этой игре с неполной информацией. 
+- Показывается, что оно отличается от коррелированного равновесия, и что стратегия «всегда посылать сигнал "Владелец" и играть по правилу Буржуа-стратегии» строго выгоднее, чем простая условная стратегия Буржуа. 
+- Делается вывод, что КР недостаточно для описания института.
+
+<details>
+Центральный тезис Гуалы — что КР адекватно описывает устойчивость института. Однако это не так, поскольку работает только в случае допущения о полной информации в игре. Чтобы это показать, представляем игры в развернутой форме и находим байесовское равновесие.
+
+Стратегия Буржуа в ЯГБ является КР в игре с полной информацией — если типы игроков наблюдаемы обоими игроками. Чтобы это показать, введём понятия *истории игры* и *информационного множества*.
+
+История $h \in H$ — конечная последовательность ходов (или узлов дерева) игры в развёрнутой форме $h = (a_1, a_2,\dots, a_k)$. Информационное множество $I_R$ — это набор *неразличимых для получателя* историй игры. Если $|I_R| > 1$, то получатель не знает, в каком узле игры он находится, что усложняет принятие решения. В ЯГБ в примере Гуалы с животными:
+$$
+\begin{gathered}
+h_1 = \{\theta_1, m_1\} \\
+h_2 = \{\theta_2, m_2\} \\
+I_R = \{h\}
+\end{gathered}
+$$
+Поскольку $I_R = 1$ (истории эквивалентны, так как идентичны по форме), получатель сигнала точно знает, в каком узле игры находится.
+
+![Игра ЯГБ с территориальным спором животных в развёрнутой форме. Природа задаёт отправителю сигнала тип с вероятностью ¹⁄₂, он может отправить только сигнал, соответствующий его типу. Получатель сигнала «видит» истинный тип игрока, потому что получаемый сигнал идентичен типу.](./assets/hdb-extended_animals.svg)
+
+А в примере Гуалы с племенами:
+$$I_R(m_1) = \{h, (\theta_2, m_1)\}$$
+
+Тип отправителя неразличим для получателя сигнала — он видит один и тот же сигнал «я владелец» и когда отправитель действительно «владелец», и когда он «чужак», что обозначено на схеме пунктирной линией. Это создаёт неопределённость и лазейку для эксплуатации получателя.
+
+![Игра ЯГБ с территориальным спором людских племён в развёрнутой форме. Природа так же назначает отправителю тип с вероятностью ¹⁄₂, но он может отправить сигнал, не соответствующий своему типу. В таком случае получатель сигнала не сможет различить истинный тип отправителя. Пунктиром обозначено информационно множество — узел дерева игры, который получатель не может различить.](./assets/hdb-extended_humans.svg)
+
+Поскольку получатель не может различить, в каком узле игры находится и кто его оппонент по реальному типу, отправитель сигнала может всегда посылать сигнал «я — владелец», даже не являясь им фактически.
+
+Введём новую стратегию «Блефующий» и рассчитаем средние платежи согласно стандартным условиям игры «Ястреб-Голубь», где стоимость конфликта выше ценности ресурса $C > V$, и каждый игрок может быть либо захватчиком, либо владельцем [@maynardsmith1982]:
+
+1. **Буржуа (B)** — честная стратегия:
+   - Сигналит свой истинный тип.
+   - На сигнал «владелец» → **Голубь**.
+   - На сигнал «захватчик» → **Ястреб**.
+
+2. **Блефующий** — обманывающая стратегия:
+   - Всегда сигналит «владелец».
+   - На сигнал «владелец» → **Голубь**.
+   - На сигнал «захватчик» → **Ястреб**.
+
+Встреча M vs B:
+
+| M тип      | B тип      | Сигналы          | Действия         | Платёж M |
+|------------|------------|------------------|------------------|----------|
+| Владелец   | Захватчик  | (Владелец, Захватчик) | Ястреб, Голубь   | V   |
+| Захватчик  | Владелец   | (Владелец, Владелец) | Голубь, Голубь   | V/2 |
+
+Встреча B vs. B
+
+| B тип      | B тип      | Сигналы          | Действия         | Платёж M |
+|------------|------------|------------------|------------------|----------|
+| Владелец   | Захватчик  | (Владелец, Захватчик) | Голубь, Голубь   | V/2   |
+| Захватчик  | Владелец   | (Захватчик, Владелец) | Голубь, Голубь   | V/2 |
+
+**Средний платёж M:**
+$$
+EU(M,B) = \frac12 \cdot \frac{V}{2} + \frac12 \cdot V = \frac{3V}{4}
+$$
+
+Выигрыш «Блефующего» строго больше выигрыша Буржуа: $\frac{3V}{4} > \frac{V}{2}$ при $C > V$ (и, следовательно, $V - C < 0$).
+
+  - следование правилу (то есть условной стратегии Буржуа в КР) — не лучший ответ. Вместо этого можно сблефовать и получить больший выигрыш
+  - чтобы условная стратегия стала КР, нужен модификатор платежа для стратегии блефа: Гуала его либо уже предполагает встроенным в игру (делая институт черным ящиком), либо игнорирует:
+
+$$\frac{3V}{4} - \delta \geq \frac{V}{2} $$
+
+Это означает, что санкция за блеф $\delta$ должна превышать ожидаемую выгоду от блефа, равную $\frac{V}{4}$. Значит, институт может быть устойчивым даже при малых санкциях, однако КР все равно этого не объясняет.
+
+- Вывод: концепция коррелированного равновесия недостаточна для описания устойчивости института — для нее принципиальна **защита от блефа при неполной информации**. КР схватывает лишь финальное состояние работающего института в игре с полной информацией. Поэтому нужна нужна **динамическая устойчивость** равновесия, которая может объяснить, как стратегия может возникнуть и закрепиться через динамический процесс (обучение, имитация, эволюционный отбор). 
+- Институт в человеческом обществе не может быть смоделирован как коррелированное равновесие в игре с объективными, проверяемыми сигналами (как у Гуалы). Реальный институт — это попытка установить что-то вроде КР в игре со стратегическими, ненадёжными сигналами.
+
+Общий вывод: Теория «правил-в-равновесии» не выполняет своей основной задачи — объяснить принудительную силу институтов. Она либо тавтологична, либо описывает невозможный объект.
+
+**Вывод главы**: необходимость динамической онтологии, исходящей из до-институционального состояния и не предполагающая существования готовой конвенции, которая интегрирует и равновесия, и правила в смысле Сёрла.
+
+
+# Глава 3. Формальные условия устойчивости института
 <!--: локальная компенсация блефа и взаимная информация между стратегическими ситуациями-->
+В этой главе мы строим формальную модель игры ЯГБ с неполной информацией и показываем условия динамической (эволюционной) стабильности условной стратегии.
+
+### 3.1. $\delta$-параметр как необходимое условие локальной устойчивости
+- Поскольку оригинальная игра ЯГБ уже включает в себя термины «захватчик» и «владелец», которые можно трактовать институционально — как наличие или отсутствие уже закрепленного права собственности, мы начнем с симметричной игры Ястреб-Голубь
+- Опираясь на эволюционную динамику Скирмса, мы говорим, что условная Буржуа-стратегия, зависимая от информационной асимметрии (сигнала) появляется в игре как результат адаптации в популяции, даже если агенты не обладают понятием собственности.
+- Это позволяет получить понятие коррелированной конвенции. Однако она, как мы показали в прошлой главе, предполагает полноту информации. 
+- Если убрать полноту информации, Буржуа-стратегия перестанет быть ЭСС 
+- Так же, как и в главе 2 с КР, здесь возникает необходимость компенсации блефа — дельта-параметр
+- Это позволяет нам сказать, что устойчивость института не зависит от конкретного равновесия — и ЭСС, и КР в ЯГБ рушатся при неполной информации. Значит, сущность института — не в равновесии.
+
+<details>
+Чтобы показать, что стратегия $B$ (Буржуа с неполной информацией) не является ЭСС, достаточно показать, что существует мутант, у которого платёж против Буржуа выше, чем у Буржуа против себя:
+
+$$\exists\ M : \quad \pi(M,B) > \pi(B,B)$$
+
+Буржуа не различает тип соперника, поэтому платёж стандартный:
+$$
+\pi(B,B) = \frac{V}{2}
+$$
+* Владелец получает V с вероятностью ¹⁄₂
+* Захватчик получает 0 с вероятностью ¹⁄₂
+
+Берём «блефера», который использует неполную информацию о сигнале:
+
+- Всегда сигнализирует «я — владелец»
+- В остальном играет по правилу Буржуа: Голубь на сигнал владельца, Ястреб на сигнал захватчика
+
+$$EU(M,B) = \frac12 \cdot \frac{V}{2} + \frac12 \cdot V = \frac{3V}{4}$$
+
+Выигрыш «Блефующего» строго больше выигрыша Буржуа: $\frac{3V}{4} > \frac{V}{2}$ при $C > V$ (и, следовательно, $V - C < 0$).
+
+<!--Стратегия «блефующего чужака» направлена в первую очередь на эксплуатацию Буржуа как ЭСС. Мы не будем рассматривать ситуации ЭСС в смешанных стратегиях, поскольку заинтересованы только в условных стратегиях. Блефер всегда посылает сигнал «владельца», а Буржуа не различает типы, поэтому платежи Буржуа взвешены вероятностью ложного сигнала $e \in [0,1]$. -->
+
+<!--правильная матрица ЭСС из [@maynardsmith1982, 96]-->
+<!--\begin{tabular}{cccc}-->
+<!--\hline \hline & & & \\-->
+<!--& $H$ & $D$ & $B$ \\-->
+<!--$H$ & $\frac{1}{2}(V-C)$ & $V$ & $\frac{3}{4} V-\frac{1}{4} C$ \\-->
+<!--$D$ & 0 & $\frac{1}{2} V$ & $\frac{1}{4} V$ \\-->
+<!--$B$ & $\frac{1}{4}(V-C)$ & $\frac{3}{4} V$ & $\frac{1}{2} V$ \\-->
+<!--\hline \hline-->
+<!--\end{tabular}-->
+
+Стратегия Буржуа с неполной информацией не является эволюционно устойчивой, поскольку существует мутантная стратегия, избегающая конфликтов и забираюшая ресурс за счет блефа.
+
+Это означает, что условная стратегия сама по себе не может быть эволюционно стабильной: *корреляции стратегий недостаточно для стабильных социальных контрактов* — вероятность блефа модифицирует платежи и нарушает равновесие.
+
+Восстановление стабильности требует поддерживающего механизма. Для Гуалы подобный механизм — репрезентация агентом равновесия с помощью регулятивного правила: она мотивирует агента выбрать коррелированную стратегию. 
+
+Восстановление эволюционной стабильности условной стратегии возможно благодаря введению параметра, который бы выравнивал платежи стратегий Буржуа и Блефующего:
+
+$$\pi(M, B) - \delta < \pi(B, B)$$
+
+Подобный дельта-параметр можно вывести, определив платежи стратегий Буржуа и блефующего чужака.
+
+Вычтем из выплаты блефующего чужака штраф $\delta$, применяемый к факту эксплуатации неопределенности, а не к самому конфликту:
+$$
+\pi_{M}^\delta=V-\delta
+$$
+
+Это означает, что *эволюционно стабильное равновесие в условных стратегиях не может существовать в среде с ненулевой вероятностью блефа без модификатора платежей*. Введение $\delta$ делает стратегию Буржуа устойчивой на уровне платежа. 
+
+<!--Онтологически это означает, что санкция $\delta$, а не равновесие само по себе — необходимый элемент социального института, отличиющий простую конвенцию от института.-->
+
+Получаем минимальный модификатор платежа, необходимый для поддержания «очевидности» коррелированной (условной и симметричной) стратегии Буржуа для агента:
+
+$$\delta_{\min }={V}{4}$$
+
+Таким образом, $\delta$-параметр — это структурная необходимость для восстановления эволюционной стабильности равновесия в условных стратегиях в ситуации неполной информации — возможности несоответствия сигнала типу игрока-отправителя. Этот параметр восстанавливает стабильность за счёт введения стоимости, *независимой от реализации конфликта*.
+</details>
+
+### 3.2. Проблема масштаба: от одной игры к популяции. Параметр $r$ и надёжность компенсации блефа
+- Если положить не одну игру, а несколько идентичных игр, в каждой из которых санкция не гарантирована, то дельты (и ее размера) становится недостаточно
+- Если в каждой игре дельта либо применена, либо нет (что выражено бинарной случайной величиной E), то эффективная дельта во всех играх будет $\delta \cdot \r$, где $r$ — эмпирическая частота реализации дельты в игре (санкция применена)
+- Это позволяет показать, что при низкой надежности компенсации блефа $r$ во популяции игр Буржуа-стратегия не может быть глобальной ЭСС → равновесие разрушается
+
+<details>
+Как мы показали в прошлой главе, репрезентация равновесия агентом с помощью регулятивного правила не необходима для поддержания стабильности института. Вместо этого *санкция* восстанавливает эволюционную стабильность коррелированного равновесия с помощью модификации платежей.
+
+В этой главе я показываю, что институт с модификатором платежа $\delta$ стабилен только *локально*, в одной игре, но рушится при наличии множества игр. Это позволит формально отделить институт от протоинститута.
+
+Локальная ESS означает устойчивость стратегии в одной игре $𝐺_i$. Глобальная устойчивость — в популяции, где много экземпляров игры $G_N$ происходят в разных местах и моментах. Это пространственная множественность или временная повторяемость:
+
+$$\mathcal{G} = \{G_1, G_2,…,G_N\}$$
+
+Важно, что хотя $\delta$ — объективный параметр института, его применение в каждой конкретной игре *не гарантировано*. Санкция может не реализоваться, что аннулирует дисконтирование платежа нарушителя, и он получит платёж $V$ вместо $V - \delta$.
+
+<!--Здесь, для поддержания глобального равновесия нужен механизм, который позволил бы агентам поступать так, *как если бы санкция была применена мгновенно*. И если санкция $\delta$ — это механизм компенсации блефа в одной игре, то «доставка санкции» — механизм компенсации шума между играми при *масштабирования* каузальной силы санкции $\delta$ на семейство игр.-->
+
+Бинарная случайная величина $E ∈ \{0, 1\}$ определяет, применена ли санкция в конкретной игре: $1$ означает, что санкция $\delta$ применена, а $0$ — не применена. Платежи в локальной игре содержат скрытый параметр $r \coloneq P(E = 1)$ — объективную вероятность применения санкции. Она означает *надёжность механизма принуждения* (enforcement), а при рассмотрении популяции игр — частоту реализации санкции в популяции игр. Поскольку в одной локальной игре применение санкции гарантировано (по результатам прошлой главы), то $r = 1$, поэтому этот параметр скрыт. Однако для популяции игр эффективная санкция будет:
+
+$$\delta_{eff} = 1 \times \delta$$
+
+В популяции игр $r$ — эмпирическая частота реализации санкции: 
+
+$$r = \frac{1}{N} \sum^N_{i=1}E_i$$
+
+Например, есть 5 игр, в трёх из которых санкция была применена: $E = \{0, 1, 1, 0, 1\}$. Тогда $r$ по ним будет $\frac{3}{5} = 0.6$, а эффективная санкция $\delta_{eff} = 0.6\delta$. 
+
+<!--Иначе говоря, *чем больше игр в популяции, тем меньше вероятность доставки санкции во все игры популяции*.-->
+<!---->
+<!--При $r \leq 0.5$ Буржуа-стратегия перестаёт быть ЭСС в популяции игр, несмотря на то, что значение $\delta$ остаётся неизменным. Это объясняется неопределённостью применения санкции $\delta$ между играми:-->
+<!---->
+<!--$$H(E) = -r \text{log} r - (1 - r) \text{log} (1 - r)$$-->
+<!---->
+<!--Эта неопределённость измеряет *шум в канале доставки санкции* между играми. Это не субъективная репрезентация агента, а эмерджентное свойство множества игр.-->
+
+Для глобальной стабильности $(B, B)$ средняя эффективная санкция должна быть выше минимально допустимой:
+
+$$\delta_{eff} = r\delta \geq \delta_{min}$$
+
+Иначе говоря, минимальная частота реализации санкции в популяции игр должна быть:
+
+$$r_{min} = \frac{1}{N} \sum^N_{i=1}E_i = \frac{\delta_{min}}{\delta}$$
+
+Это значение можно назвать *порогом институциональности* поведенческого паттерна: ниже этого значения применение санкций станет непредсказуемым и институт станет протоинститутом.
+
+</details>
+
+
+### 3.3. Взаимная информация $I$ о компенсации блефа как мера связности идентичных стратегических ситуаций
+- Для поддержания Буржуа-стратегии как глобальной ЭСС нужен механизм или устройство для повышения надёжности санкции $r$
+- Функция этого механизма — повышение статистической связности (корреляции) или взаимной информации между фактами применения дельты в каждой из игр. Иначе говоря, нужен канал информации между играми, делающий применение санкции после нарушения предсказуемым.
+- Подобный механизм и составляет глубинную онтологическую основу институа.
+
+<details>
+Повышение надежности санкции (то есть частоты ее применения в играх популяции) требует механизма *повышения связности* между играми — статистической зависимости фактов реализации санкции. Это можно выразить как снижение дисперсии $D(r)$, энтропии доставки санкции $H(r)$ или повышение *взаимной информации* между двумя случайными играми $I(E_i, E_j) > 0$. Подобный механизм выравнивает среднее значение санкции $\delta_{eff}$ в популяции игр.
+
+<!--Дисперсия здесь отражает, насколько неравномерно реализуются санкции в популяции игр. Она максимальна при $r = 0.5$ и минимальна при $r = 0, \quad r = 1$. *Чем ближе дисперсия к $0.5$, тем менее надёжна санкция глобально*.-->
+
+Иначе говоря, для восстановления глобального равновесия, необходимо, чтобы реализация санкции а одной игре была *информативной* относительно других и была предсказуемой на уровне системы.
+
+Подобный механизм и составляет глубинную онтологическую основу институа.
+
+<!--Онтологически это означает две вещи: -->
+<!---->
+<!--1. Институт — это не санкция в одной игре, а *санкционная структура и канал её доставки между играми* с идентичной $\delta$-структурой. Ключевое расхождение с Гуалой — в положении множества связанных игр, в то время как для Гуалы институт — это одна игра;-->
+<!--2. Интуиция конвенции или социального института как корреляции стратегий в одной игре [@vanderschraaf1995; @guala2016a; @gintis2009a] верна, но неточна: *институт — это статистическая связь игр с коррелированным равновесием и санкционирующим механизмом*. Если угодно, это «корреляция второго уровня».-->
+
+Статистическая связь между реализациями санкций в играх популяции — это структура информационного канала между играми, а не модификация платежа или отдельная сущность. 
+
+<!--Онтологически она может быть множественно реализована (multiply realized) — когнитивно (как репрезентация в виде «правил» Гуалы, которые служат интерфейсом к каузальной структуре института и снижают энтропию применения), экологически, технически и т.д.-->
+
+<!--Это имеет ряд следствий: -->
+<!--1. Равновесие первично, но недостаточно — нужен санкционный механизм, а также инфраструктура его доставки между играми-->
+<!--2. Протоинститут отличается от института локальностью — в нём есть только дельта-структура и нет канала между играми. Институт же требует дельта-структуры, множества игр, канала между ними и мезанизма повышения статистической взаимосвязи между ними.-->
+</details>
+
+### 3.4. Формальное определение: институт, протоинститут, конвенция
+- Формально, институт в нашей концепции — это сеть дельта-стабилизированных равновесий в условных стратегиях с высокой взаимной информацией. 
+- *Прото-институт* (как часть определения института) — .*это равновесие в условных стратегиях (неважно, коррелированное, байесовское, ЭСС) в расширенной игре с неполной информацией и конфликтом интересов, которое является Парето-улучшением по отношению к существующему равновесию в базовой (не расширенной) игре*
+  - Эквивалентная ситуация — множество игр с таким равновесием, но с низкой взаимной информацией: применение санкции в одной ситуации ничего не говорит об ее применении в другой.
+- для существования института нужны:
+  - ситуация с конфликтом интересов (описываемые играми ЯГБ, дилемма заключенного, битва полов)
+  - условная стратегия, решающая конфликт и связанная с чистыми стратегиями (а не как у Гуалы)
+  - $\delta$-параметр — модификатор платежа для стратегии, эксплуатирующей условную стратегию
+  - равновесие в условных стратегиях (неважно, какое)
+  - множество структурно идентичных игровых ситуаций с равновесием и дельтой
+  - любой механизм или устройство, повышающий взаимную информацию (или статистическую корреляцию) о применении санкции между игровыми ситуациями
+
+
 <!--## 3.1. $\delta$-параметр как условие локальной устойчивости-->
 <!--## 3.2. Проблема масштаба: от одной игры к популяции. Параметр $r$ и надёжность компенсации блефа-->
 <!--## 3.3. Взаимная информация $I$ о компенсации блефа как мера связности идентичных стратегических ситуаций-->
