@@ -1123,7 +1123,6 @@ $$
 
 Грейф и Кингстон считают, что несмотря на то, что правило может координировать действия агентов, в конечном счёте именно ожидаемое поведение других мотивирует собственное поведение агента, а не абстрактное правило. Мы с этим согласны, но эти авторы упускают из виду, что ожидания поведения других опираются на что-то.
 
-
 <!--[? рефлексия: что традиция регулятивных правил значит для нашего исследования унифицированной онтологи]-->
 Очень важно, что различение правил и равновесие в экономике — не онтологическое, а объяснительное. Представители каждого направления не отрицают существования правил или равновесий в своём подходе, а делают акцент на источнике объяснительной силы для стабильности института. Например, у Грейфа как представителя институтов-как-равновесий сами равновесия зависят от разделяемых агентами правил.
 
@@ -1240,6 +1239,7 @@ $D$ & $0-\delta,-3$ & $-2,-2$ \\
 
 По сути, Гуала и Хиндрикс поддерживают трансформационный взгляд: любой институт, описываемый конститутивным правилом, может быть равным образом описан как набор регулятивных норм, включающих необходимые разрешения и запреты. Само существование статуса $Y$ просто обозначает определённые равновесные отношения между агентами, стоящие «за ним». Переводя статусные функции Серла в терминологию равновесий, унифицированная онтология связывает институциональные «долженствования» со стратегической координацией.
 
+
 ### 1.3.2 Критика теории правил-в-равновесии
 Несмотря на инновационность, теория Гуалы и Хиндрикса не лишена критики, поскольку сведение конститутивных правил к равновесиям, по мнению оппонентов, упускает важные аспекты социальной реальности. Среди линий критики можно выделить:
 
@@ -1274,35 +1274,12 @@ $D$ & $0-\delta,-3$ & $-2,-2$ \\
 
 Согласно Хиндриксу, инструментальный подход не схватывает мотивацию *самими нормами*, а не издержками её нарушения. Это проблема восприятия агентами стратегических ограничений равновесий как *легитимных*. Именно *нормативные ожидания*, по мысли Хиндрикса, и особенно *нормативные убеждения*, дополняют санкции в качестве источника нормы и её восприятия как легитимной. *Социальная норма управляет практикой*, если её участники в значительной степени *мотивированы* следовать её правилу. В этом смысле Хиндрикс разводит нормативность и равновесия. Точнее, он включает нормативность как условие равновесия, что сближает его подход с Биккиери, на работы которой он опирается, а также с Гинтисом.
 
-<!--Hindriks draws a distinction between social norms and conventions: norm-compliance is motivated, and conventions are self-reinforcing. He also calls them descriptive and normative conventions. @bicchieri2005 has stated this in terms of the relationship between self-interest and common interest. They coincide in conventions and do not in norms. It means there can be conventions without norms. However, contra Lewis, @gilbert1992 explicitly treats conventions as intrinsically normative and calls them quasi-agreements conceptually linked to joint intentions, which generate normative reasons for conformity. At the same time, @brennan2013 argue that conventions can become normative because they protect or promote some value. @guala2010 support this by empirical evidence.-->
-<!---->
-<!--Overall, conventions are self-reinforcing, so sanctions are not necessary for creating and maintaining a mutually beneficial behavioral regularity. However, both Lewis and Bicchieri acknowledge that exceptions may exist, making some conventions more fragile than others. Norms, in their turn, make confirming more attractive and thus help to stabilize conventions to ensure collective benefits and prevent malfunctions.-->
-<!---->
-<!--According to the rules-in-equilibria theory of institutions that Hindriks defend along with Guala, institutions are norm-governed social practices. And Hindriks defines a social practice as a regularity in behavior that involves norms. Practices arise in response to signaling devices, which are salient features of the environment that enable agents to align their behaviors in beneficial ways, creating new strategies and thus giving rise to conventions. Interdependent behavioral regularities in coordination games arise from signaling rules of the form “if D, do A”, whereby agents condition their behavior on a signal to coordinate mutually beneficial interactions and achieve collective benefits. In a case of a traffic light, the light itself serves a signaling device that helps to make traffic safer and more efficient by coordinating behaviors.-->
-<!---->
-<!--As normativity pervades social interaction, Hindriks distinguishes two types of normative standards: deontic ones, such as right/wrong, and evaluative ones, such as better/worse. Deontic standards signify obligations, while evaluative standards refer to the quality of performance in various activities, e.g., hosting guests. Social practices can feature either deontic and evaluative standards, evaluative standards only, or neither. As an example, a group of friends that loathes rules may also dislike evaluative standards. This suggests that conventions involve signaling rules, but do not necessarily include normative rules. Therefore, social practices can exist without being an institution.-->
-<!---->
-<!--Hindriks discusses several views of social norms. The 'normative-beliefs view' holds that when people encounter a coordination or cooperation game situation, they are expected to act in a certain way and this is generally known. @brennan2013 define social norms as normative principles or rules which are commonly accepted and known. Social norms are thus generally accepted and recognized normative beliefs.-->
-<!---->
-<!--However, the phenomenon of “pluralistic ignorance” counteracts the 'normative-beliefs view' by being too restrictive in requiring acceptance of the norm. Hindriks provides an example of college students believing that they are expected to drink heavily on weekends, while not really liking doing it. They do not believe that they ought to do so, but they acknowledge that others believe that college students generally do it. To reflect it, the secind, normative-expectations view, proposes that a social norm exists in a population if its rule is present in the normative expectations of its members. This differs from the normative-beliefs view in that it does not require acceptance of the norm, only acknowledgment of it, and that knowledge of others' attitudes is not necessary. It permits inclusion of the norm in first-order beliefs.-->
+Хиндрикс чётко разделяет нормы и конвенции: соблюдение норм дополнительно мотивировано, а конвенции подкрепляют сами себя. Биккиери сформулировала эту разницу в терминах личной выгоды и общего интереса [@bicchieri2005]. Они совпадают в конвенциях и не совпадают в нормах. Это означает, что конвенции могут существовать без норм. Но могут ли нормы существовать без конвенций? Экспериментальные данные Гуалы и Бреннаа говорят, что нет — конвенции обретают нормативные черты в процессе повторяющейся игры [@guala2010; @brennan2013].
 
-<!--Bicchieri's theory [-@bicchieri2005] is largely akin to the normative-expectations view, yet there are three key differences. Firstly, she limits the concept of a social norm to regulations that address cooperation problems, while Hindriks includes coordination ones, as well. Secondly, her conception of normative expectations does not make them normative, strictly speaking, for they are higher-order empirical expectations. Someone has a normative expectation if they expect others to adhere to a descriptive rule of 'Everybody does A'. According to Bicchieri, this involves obligations. However, as Hindriks stipulates, an expectation of behavior differs from the belief that a normative rule applies; the former being an expectation, the latter a belief about what should be done.-->
-<!---->
-<!--The third view of social norms is 'conditional-preferences view'. It holds that a social norm exists when enough participants prefer to conform to it given empirical and normative expectations [@bicchieri2005]. However, @southwood2019 argues that people may secretly wish to break the norm if others do the same and expect each other to do so. According to the conditional-preferences view, perceiving a social norm as legitimate is when someone regards the relevant normative expectations as well-founded. This can motivate people to act accordingly [@bicchieri2005].-->
-<!---->
-<!--Overall, the normative-beliefs view holds that people need only possess normative beliefs featuring a rule for it to be perceived as legitimate; these beliefs are self-justifying. The conditional-preferences view, however, states that legitimacy is derived from justified normative expectations.-->
-<!---->
-<!--According to Hindriks, neither of these two views is adequate. The normative-beliefs view holds that social norms are self-justifying and tend to be regarded as legitimate. Yet, pluralistic ignorance shows that this is not always the case. The normative-expectations view suggests that perceived legitimacy is based on justified normative expectations, which lead to corresponding beliefs. This belief lies at the core of what it means for a social norm to be seen as legitimate, and can only be suitably justified with empirical and normative expectations. The conditional-preferences view fails to capture this complexity, while the normative-expectations view does so by explicating legitimacy in terms of an agent's normative beliefs. This motivates agents to conform and makes a difference to behavior within institutions.-->
-<!---->
-<!--Moreover, the normative-expectations view states that a social norm has authority if the normative beliefs people have are suitably justified. This is only true if the expectations are both justified and true, indicating that there is an applicable regularity and that others believe the norm applies.-->
-<!---->
-<!--According to Hindriks, for a social norm to govern a social practive, its participants must adhere to it. This will create an institution, which will be perceived as legitimate and have authority. However, norm-following alone is too demanding an explanation for institutions that are not seen as legitimate. Sanctions, which are important in formal and informal norms, demonstrate that norm-following does not always lead to conformity.-->
-<!---->
-<!--In sum, a norm governs a practice only if it motivates a substantial number of participants. It happens when it is deemed significant to conform to it. Norm-conformity is not enough for norm-governance, as demonstrated by the example of the convention to drive on the right-hand side of the road. This convention is self-reinforcing, but does not motivate anybody and does not constitute an institution. Thus, neither norm-following nor norm-conformity is necessary for norm-governance and norm-conformity is insufficient.-->
-<!---->
+На наш взгляд отношение нормы, конвенции и института — недоисследованное. Потому что хоть Хиндрикс и говорит, что институт — это нормоуправляемая практика, и что норма — это убеждение о применимости правила в текущем контексте, почему-то его теория (как и теория Гуалы) не способна точно объяснить место и роль каждого из этих понятий и остаётся на уровне метафоры. Мы вернёмся к этой проблеме подробнее в следующей главе, когда будем обсуждать онтологический статус правил в ПвР.
 
 <!--[? насколько критика Хиндриксом Гуалы валидна]-->
-Мы согласны, что проблема легитимности очень важна для социальных институтов, однако не вполне ясен онтологический статус легитимности как условия возможности института. Насколько она необходима и достаточна, чтобы нечто было институтом? По мысли Хиндрикса, только легитимная норма, мотивирующая поведение, может считаться институтом. Однако, по нашему мнению, подобное утверждение не делает ту же ошибку, что и Сёрл — не разделяет «считаться легитимным» и «функционировать как если бы норма была легитимной». В этом смысле подход Хиндрикса продолжает антиреалистическую направленность теории Сёрла.
+Также мы согласны, что проблема легитимности, о которой говорит Хиндрикс, важна для социальных институтов, однако не вполне ясен статус легитимности как условия возможности института. Насколько она необходима и достаточна, чтобы нечто было институтом? По мысли Хиндрикса, только легитимная норма, мотивирующая поведение, может считаться институтом. Однако, по нашему мнению, подобное утверждение подвержено той же ошибке, что и теория Сёрла — оно не разделяет «считаться легитимным группой людей» и «функционировать как если бы норма была легитимной». В этом смысле подход Хиндрикса продолжает антиреалистическую направленность теории Сёрла.
 
 <!--[? как и почему вандершраф критикует Гуалу]-->
 Ванершрааф критикует ПвР за слишком широкую трактовку институтов и отсутствие механизмов коррекции неравновесных состояний [@Vanderschraaf_2017]. С его точки зрения, координационные равновесия не вполне отражают суть институтов: *не все конвенции — социальные институты*, поскольку последние предполагают права, обязанности и *несимметричные роли*.
@@ -1353,12 +1330,22 @@ $$
 
 В следующей главе мы детально рассмотрим отношение между правилом и равновесием в ПвР, чтобы наметить непротиворечивый путь не только объяснительной, но и онтологической унификации.
 
-# Глава 2. Анализ теории правил-в-равновесии Франческо Гуалы
-<!--круг в определении, подмена объясняемого и допущение о полноте информации-->
+# Глава 2. Анализ теории правил-в-равновесии Франческо Гуалы: круг в определении и допущение о полноте информации
 
 <!--- написать введение к 2 главе — что тут сказать? — todo-->
 
-### 2.1 Логический круг в определении правил
+<!--[? что и зачем будет в этой главе]-->
+В этой главе мы детально рассмотрим лакуны теории правил-в-равновесии (ПвР) Франческо Гуалы и Фрэнка Хиндрикса. Это важно сделать, чтобы обнаружить конкретные преграды к логически непротиворечивой унифицированной социальной онтологии.
+
+Поскольку ПвР вбирает в себя многие теории и подходы к социальным институтам как в философии, так и в экономике, анализ её лакун послужит и анализом лакун ассимилированных теорий. В частности, проблема отношения правил и равновесий как также актуальна как минимум для теорий Авнера Грейфа [@greif2006] и Герберта Гинтиса [@gintis2009a], поскольку присутствует и в них.
+
+[? что и как мы будем анализировать ПвР]
+Как мы будем анализировать ПвР? Мы рассмотрим логику аргументации ПвР, которая во многом опирается на *недостаточность* правил и равновесий по отдельности для объяснения стабильности социальных институтов. В этом аргументе Гуала и Хниндрикс приводят пример двух их — «Ястреб-Голубь-Буржуа» бабочек и структурно схожую игру с выпасом скота у людей.
+
+[? почему отношение правил и равновесий, а не что-то другое]
+[? почему неполнота информации, а не что-то другое]
+
+### 2.1 Логический круг в отношений правил и равновесий
 
 <!--According to rules-in-equilibria theory, social institutions are the central unit of social ontology [@guala2016b], and coordination is its main mechanism rooted in evolution [@shevchenko2023]. As institutions are normatively-driven self-sustaining behavioral regularities designed to solve coordination problems [@lewis2008; @aoki2007], they share many features with 'animal conventions' that help animals solve coordination problems and maintain stable relationships [@hindriks2015]. Consequently, understanding the emergence of social institutions requires an examination of the evolutionary mechanisms that enable correlation of strategies with normative force as a key characteristic.-->
 <!---->
