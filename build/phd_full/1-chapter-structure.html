@@ -255,7 +255,7 @@ ul.task-list li input[type="checkbox"] {
     figcaption {
       font-size: 13px;
       font-style: italic;
-      text-align: justify;
+      text-align: center;
       margin-top: 10px;
       width: 80%;
       justify-self: center;
@@ -435,7 +435,6 @@ ul.task-list li input[type="checkbox"] {
     }
 
     nav {
-      display: block;
       position: fixed;
       overflow-y: auto;
       overflow-x: hidden;
@@ -447,6 +446,10 @@ ul.task-list li input[type="checkbox"] {
       padding: 20px;
       border-radius: 10px;
       opacity: 0.75;
+
+      @media (max-width: 700px) {
+        display: none;
+      }
     }
 
     nav strong {
