@@ -32,7 +32,10 @@
   Beep Boop. As you were. -->
 
   <style>
-    /* html {
+    /* /* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+html {
   color: #1a1a1a;
   background-color: #fdfdfd;
 }
@@ -133,8 +136,8 @@ pre code {
  overflow: visible;
 }
 hr {
-  background-color: #1a1a1a;
   border: none;
+  border-top: 1px solid #1a1a1a;
   height: 1px;
   margin: 1em 0;
 }
@@ -259,6 +262,10 @@ ul.task-list li input[type="checkbox"] {
       margin-top: 10px;
       width: 80%;
       justify-self: center;
+    }
+
+    .small {
+      width: 350px;
     }
 
     canvas {
