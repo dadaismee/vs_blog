@@ -3,6 +3,8 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+	<title>Валерий Шевченко — философ и архитектор систем</title>
+  <meta name="robots" content="index, follow">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"></script>
@@ -34,7 +36,10 @@
   Beep Boop. As you were. -->
 
   <style>
-    /* html {
+    /* /* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+html {
   color: #1a1a1a;
   background-color: #fdfdfd;
 }
@@ -135,8 +140,8 @@ pre code {
  overflow: visible;
 }
 hr {
-  background-color: #1a1a1a;
   border: none;
+  border-top: 1px solid #1a1a1a;
   height: 1px;
   margin: 1em 0;
 }
@@ -221,12 +226,22 @@ div.csl-indent {
 
     body {
       font-family: monospace;
-      margin: 30px;
       line-height: 1.5; 
-      /* display: flex; */
-      /* flex-direction: column; */
-      /* justify-self: center; */
+			justify-items: left;
+			margin: 0;
     }
+		
+		p {
+			margin: 10px 0;
+		}
+
+		h4 {
+			margin: 20px 0 0;
+		}
+		
+		ul p {
+			margin: 0px;
+		}
 
     .plashka {
       background-color: #bbb; 
@@ -248,6 +263,10 @@ div.csl-indent {
     /*     text-decoration-color: #f2f2f2 !important ; */
     /*   } */
     /* } */
+
+		header {
+			margin-bottom: 0;
+		}
 
     img {
       width: 90%;
@@ -294,7 +313,7 @@ div.csl-indent {
      margin-bottom: -10px;
     }
 
-    h2,h3,h4,h5,h6 {
+    h2,h3,h5,h6 {
       margin-top: 40px;
       margin-bottom: 10px;
       text-align:left; 
@@ -333,7 +352,7 @@ div.csl-indent {
     }
 
     .main-page {
-      width: 500px;
+      width: 600px;
 
       @media (max-width: 700px) {
         width: 100%;
@@ -481,7 +500,7 @@ div.csl-indent {
 
   </style>
 
-      <script
+      <script defer=""
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
       type="text/javascript"></script>
   

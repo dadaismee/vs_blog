@@ -3,6 +3,8 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+	<title>Валерий Шевченко — философ и архитектор систем</title>
+  <meta name="robots" content="index, follow">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"></script>
@@ -32,7 +34,10 @@
   Beep Boop. As you were. -->
 
   <style>
-    /* html {
+    /* /* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+html {
   color: #1a1a1a;
   background-color: #fdfdfd;
 }
@@ -133,8 +138,8 @@ pre code {
  overflow: visible;
 }
 hr {
-  background-color: #1a1a1a;
   border: none;
+  border-top: 1px solid #1a1a1a;
   height: 1px;
   margin: 1em 0;
 }
@@ -199,12 +204,22 @@ ul.task-list li input[type="checkbox"] {
 
     body {
       font-family: monospace;
-      margin: 30px;
       line-height: 1.5; 
-      /* display: flex; */
-      /* flex-direction: column; */
-      /* justify-self: center; */
+			justify-items: left;
+			margin: 0;
     }
+		
+		p {
+			margin: 10px 0;
+		}
+
+		h4 {
+			margin: 20px 0 0;
+		}
+		
+		ul p {
+			margin: 0px;
+		}
 
     .plashka {
       background-color: #bbb; 
@@ -226,6 +241,10 @@ ul.task-list li input[type="checkbox"] {
     /*     text-decoration-color: #f2f2f2 !important ; */
     /*   } */
     /* } */
+
+		header {
+			margin-bottom: 0;
+		}
 
     img {
       width: 90%;
@@ -272,7 +291,7 @@ ul.task-list li input[type="checkbox"] {
      margin-bottom: -10px;
     }
 
-    h2,h3,h4,h5,h6 {
+    h2,h3,h5,h6 {
       margin-top: 40px;
       margin-bottom: 10px;
       text-align:left; 
@@ -311,7 +330,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     .main-page {
-      width: 500px;
+      width: 600px;
 
       @media (max-width: 700px) {
         width: 100%;
@@ -478,55 +497,114 @@ ul.task-list li input[type="checkbox"] {
                       </div>
       <div class="main-page">
       <p style="margin-top: 0px;">
-      Привет!
+      <strong>Привет!</strong>
       </p>
-      <p>Меня зовут Валерий Шевченко. Я исследую и проектирую
-      интерфейсы, которые помогают <em>глубже понимать</em> мир и
-      себя.</p>
-      <!--Считаю, что следовать за любопытством — путь к радости понимания (и наполненной жизни). И здорово, когда его ничего не преграждает:-->
-      <!---->
-      <!--- ни сложные интерфейсы -->
-      <!--- ни закрытые цифровые экосистемы и их серверы-->
-      <!--- ни необходимость учиться думать как машина, чтобы что-то понять-->
-      <!--- ни дороговизна специальных программ-->
-      <!--- ни зашоренность и инфопузыри.-->
-      <!--Сейчас исследую «народные» интерфейсы — простые самодельные цифровые инструменты для углубления понимания в разных областях знания, которые не требуют навыков программирования (и даже «вайб-кодинга»).-->
+      <p>Меня зовут Валерий Шевченко, я философ науки и архитектор
+      систем. Исследую и создаю интерфейсы для работы с идеями и
+      текстами.</p>
+      <section id="чем-помогаю-бизнесу" class="level4">
+      <h4>Чем помогаю бизнесу</h4>
+      <p>Проектирую системы, автоматически превращающие сырые данные в
+      понятные вашим пользователям документы (отчёты, буклеты, карточки
+      для соцсетей) — без зависимости от платформ, ручной верстки и с
+      измеримой пользой для бизнеса. <a href="/offer">Подробнее</a></p>
+      </section>
+      <section id="проекты" class="level4">
+      <h4>Проекты</h4>
       <ul>
-      <li>Сделал <a href='https://konspekt.io' target='_blank'> курс по
-      системе письма</a> для PhD-студентов и аспирантов</li>
-      <li><a href="https://t.me/chot_ne_idet" target="_blank"
-      rel="noopener noreferrer">Пишу кандидатскую диссертацию</a> о том,
-      как связь мышления и среды эволюционно привела к возникновению
-      социальных правил</li>
-      <li>Изучал социологию в МГУ и «Шанинке», философию науки — в
-      «Высшей Школе Экономики», дизайн взаимодействия — в <a
-      href="https://mome.hu/en/programmes/interaction-design-ma-in-english"
-      target="_blank" rel="noopener noreferrer">MOME</a>, медиаискусство
-      — в <a href="https://mdfschool.ru" target="_blank"
-      rel="noopener noreferrer">«Школе Родченко»</a></li>
+      <li>
+      <p><a id='btn-course' onClick="toggle('course', 'btn-course')">Курс
+      «Система письма»</a> (130 выпускников)</p>
+      <div id="course" style="display: none;">
+      <p><br/> <strong><a href="https://konspekt.io/" target="_blank"
+      rel="noopener noreferrer">konspekt.io</a></strong>: практический
+      курс (видео + воркшопы) для аспирантов, который помогает выстроить
+      процесс работы с текстами: от заметок и сбора источников до
+      готовой статьи или поста.</p>
+      <figure>
+      <video src="assets/explanation.mp4" controls=""><a
+      href="assets/explanation.mp4">Объяснение системы в одном из
+      уроков</a></video>
+      <figcaption aria-hidden="true">Объяснение системы в одном из
+      уроков</figcaption>
+      </figure>
+      <p><strong>Отзывы выпускников:</strong></p>
+      <ul>
+      <li><p><em>«Результат очень облегчает жизнь человеку, пишущему
+      диссертацию»</em>. <strong>Ольга Чумичёва</strong> — PhD-студентка
+      в Университете Манчестера (UK)</p></li>
+      <li><p><em>«Курс помог переосмыслить подход к письму и чтению —
+      смогла написать десятистраничный текст для конференции за
+      месяц»</em>. <strong>Евгения Митрохина</strong> — PhD-студентка в
+      Университете Висконсин-Мэдисон (США)</p></li>
+      <li><p><em>«Курс прекрасно погружает как в техническую часть, так
+      и в содержательную — как сделать заметки партнёром по
+      коммуникации»</em>. <strong>Мария Волкова</strong> — PhD-студентка
+      в Университете Эксетера (UK)</p></li>
       </ul>
-      <p>Буду рад совместным проектам, связанным с <em>образовательным
-      потенциалом дизайна взаимодействия</em> (особенно тактильного).
-      Для этого <a href="mailto:valerii.s.shevchenko@gmail.com">напишите
-      мне на почту</a>.</p>
-      <p><br/> <strong>Эссе и заметки</strong>:</p>
-      <p>→ (27.11.2025)
-      <a href="https://dadaismee.github.io/k.longread.writing-well-main/" target="_self">Введение
-      в систему письма</a> — ~20 минут<br/> → (23.10.2025)
-      <a href="/no-second-brain" target="_self">Вам не нужен «второй
-      мозг»</a> — ~15 минут<br/> → (06.10.2025)
+      <p><br/></p>
+      </div>
+      </li>
+      <li>
+      <p><a id="btn-report" onClick="toggle('report', 'btn-report')">Годовой
+      отчёт</a> Лаборатории сетевого анализа НИУ ВШЭ</p>
+      <div id="report" style="display: none;">
+      <p><br/> Разработка системы для командного написания и
+      автоматической сборки/вёрстки отчёта по требованиям ГОСТ:</p>
+      <ul>
+      <li>Подбор стека для команды: Obsidian, Zotero, Pandoc</li>
+      <li>Дизайн процесса автоматической сборки разделов по их
+      нумерации</li>
+      <li>Разработка CI/CD пайплайна в GitHub Actions</li>
+      <li>Проведение семинара для обучения команды</li>
+      </ul>
+      <figure>
+      <img src="assets/cicd.png" alt="CI/CD" />
+      <figcaption aria-hidden="true">CI/CD</figcaption>
+      </figure>
+      <figure>
+      <img src="assets/anr.png" alt="Обучение команды" />
+      <figcaption aria-hidden="true">Обучение команды</figcaption>
+      </figure>
+      <p><br/></p>
+      </div>
+      </li>
+      <li>
+      <p><a id="btn-timeline" onClick="toggle('timeline', 'btn-timeline')">Интерактивный
+      LLM-таймлайн</a> исторических переписок</p>
+      <div id="timeline" style="display: none;">
+      <p><br/> LLM-приложение на Electron, превращающее отсканированные
+      письма на русском языке из 1920-х в интерактивный таймлайн событий
+      — кто кому когда что написал и что произошло. LLM вычленяет
+      действующих лиц и темы, по которым можно фильтровать события.</p>
+      <figure>
+      <video src="assets/timeline.mp4" controls=""><a
+      href="assets/timeline.mp4">Демо таймлайна</a></video>
+      <figcaption aria-hidden="true">Демо таймлайна</figcaption>
+      </figure>
+      <hr>
+      </div>
+      </li>
+      </ul>
+      <!-- - Интерфейс для написания диссертации <span><button id="zk-button"  onClick="toggle('phd', 'zk-button')">Подробнее</button></span> -->
+      <section id="эссе" class="level4">
+      <h4>Эссе</h4>
+      <p>→ <a href="/no-second-brain" target="_self">Вам не нужен
+      «второй мозг»</a> — ~15 минут<br//> →
       <a href="/symmetry" target="_self">Симметрия чтения и письма</a> —
-      ~20 минут</p>
-      <!--<hr/>-->
-      <!--- Несколько [проектов](https://vsdesigner.netlify.app/).-->
-      <!--- Пара публикаций:-->
-      <!--  - A Framework for More-than-human Placemaking with Data Storytelling ([2024](https://doi.org/10.14627/537752023))-->
-      <!--  - Coordination as naturalistic social ontology: constraints and explanation ([2023](https://doi.org/10.1177/00483931221150486))-->
-      <!--  - Вывод к наилучшему объяснению как методология социальной онтологии ([2023](https://doi.org/10.22394/2074-0492-2023-4-122-140))-->
-      <!---->
-      <!--<hr/>-->
-      <!--| [Почта](mailto:valerii.s.shevchenko@gmail.com)-->
-      <!--• **Cognitive Basis of Focal Points: Evolution and Correlated Equilibrium Emergence** (**2021\)***. Logical and philosophical studies, 19(2), 131-135.*  -->
+      ~20 минут<br//> →
+      <a href="https://dadaismee.github.io/k.longread.writing-well-main/" target="_self">Введение
+      в систему письма</a> — ~20 минут<br//></p>
+      <p><br/></p>
+      <p><strong><a
+      href="mailto:valerii.s.shevchenko@gmail.com">Связаться</a></strong></p>
+      <!-- <hr/> -->
+      <!-- ## Научные публикации: -->
+      <!-- - A Framework for More-than-human Placemaking with Data Storytelling ([2024](https://doi.org/10.14627/537752023)) -->
+      <!-- - Coordination as naturalistic social ontology: constraints and explanation ([2023](https://doi.org/10.1177/00483931221150486)) -->
+      <!-- - Вывод к наилучшему объяснению как методология социальной онтологии ([2023](https://doi.org/10.22394/2074-0492-2023-4-122-140)) -->
+      <!-- <hr/> -->
+      <!--• **Cognitive Basis of Focal Points: Evolution and Correlated Equilibr/ium Emergence** (**2021\)***. Logical and philosophical studies, 19(2), 131-135.*  -->
       <!---->
       <!--• **After Method, Only Hyper-Chaos: The Limitations of John Law's Sociological Method Theory (2021)**.  *Sociology of power, 33(4), 169-183*  -->
       <!---->
@@ -535,6 +613,24 @@ ul.task-list li input[type="checkbox"] {
       <!--• **What's wrong with assemblage theory?** **(2020)** *Logos, 30(5 (138)), 131-164*.  -->
       <!---->
       <!--• **Conflict of Otherness Models in John Law's Actor-Network Theory** **(2019).** *Sociology of power(2), 44-67.*-->
+      <!-- - Сделал <a href='https://konspekt.io' target='_blank'> курс по системе письма</a> для PhD-студентов и аспирантов -->
+      <!-- - [Пишу кандидатскую диссертацию](https://t.me/chot_ne_idet) о том, как связь мышления и среды эволюционно привела к возникновению социальных правил -->
+      <!-- - Изучал социологию в МГУ и «Шанинке», философию науки — в «Высшей Школе Экономики», дизайн взаимодействия — в [MOME](https://mome.hu/en/programmes/interaction-design-ma-in-english), медиаискусство — в [«Школе Родченко»](https://mdfschool.ru) -->
+      </div>
+      <script>
+      function toggle(id, buttonId) {
+        const vis = document.getElementById(id);
+        const visButton = document.getElementById(buttonId);
+        if (vis.style.display === 'none') {
+          vis.style.display = 'block';
+        } else {
+          vis.style.display = 'none';
+        }
+      }
+      </script>
+      </section>
+      </div>
+      </section>
       </div>
     </article>
   </div>

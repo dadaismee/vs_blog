@@ -3,6 +3,8 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+	<title>Валерий Шевченко — философ и архитектор систем</title>
+  <meta name="robots" content="index, follow">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex/dist/contrib/auto-render.min.js"></script>
@@ -33,7 +35,10 @@
   Beep Boop. As you were. -->
 
   <style>
-    /* html {
+    /* /* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+html {
   color: #1a1a1a;
   background-color: #fdfdfd;
 }
@@ -134,8 +139,8 @@ pre code {
  overflow: visible;
 }
 hr {
-  background-color: #1a1a1a;
   border: none;
+  border-top: 1px solid #1a1a1a;
   height: 1px;
   margin: 1em 0;
 }
@@ -193,8 +198,9 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 /* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -205,7 +211,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -284,12 +290,22 @@ div.csl-indent {
 
     body {
       font-family: monospace;
-      margin: 30px;
       line-height: 1.5; 
-      /* display: flex; */
-      /* flex-direction: column; */
-      /* justify-self: center; */
+			justify-items: left;
+			margin: 0;
     }
+		
+		p {
+			margin: 10px 0;
+		}
+
+		h4 {
+			margin: 20px 0 0;
+		}
+		
+		ul p {
+			margin: 0px;
+		}
 
     .plashka {
       background-color: #bbb; 
@@ -311,6 +327,10 @@ div.csl-indent {
     /*     text-decoration-color: #f2f2f2 !important ; */
     /*   } */
     /* } */
+
+		header {
+			margin-bottom: 0;
+		}
 
     img {
       width: 90%;
@@ -357,7 +377,7 @@ div.csl-indent {
      margin-bottom: -10px;
     }
 
-    h2,h3,h4,h5,h6 {
+    h2,h3,h5,h6 {
       margin-top: 40px;
       margin-bottom: 10px;
       text-align:left; 
@@ -396,7 +416,7 @@ div.csl-indent {
     }
 
     .main-page {
-      width: 500px;
+      width: 600px;
 
       @media (max-width: 700px) {
         width: 100%;
@@ -610,16 +630,17 @@ div.csl-indent {
       Чтение и рой мыслей
       </figcaption>
       </figure>
-      <!--![Чтение и рой мыслей](assets/symmetry_reading.png)-->
       <p>А когда вы пишете, мысли и образы роятся у вас в голове, борясь
       за внимание. Вы думаете о миллионе вещей одновременно,
       перескакиваете между источниками, чтобы что-то подсмотреть, и
       переписываете абзац снова и снова, потому что «мысль не идёт».</p>
       <figure>
-      <img src="assets/symmetry_writing.png"
-      alt="Письмо и рой мыслей" />
-      <figcaption aria-hidden="true">Письмо и рой мыслей</figcaption>
+      <img style="border:none;"src="assets/symmetry_writing.png" alt="Письмо и рой мыслей" style="width:100%;"/>
+      <figcaption>
+      Чтение и рой мыслей
+      </figcaption>
       </figure>
+      <!-- ![Письмо и рой мыслей](assets/symmetry_writing.png) -->
       <p>Текст можно представить, как чемодан с идеями. В каких-то
       текстах идеи лежат аккуратно, как в тетрисе, в других — свалены в
       кучу, а некоторые чемоданы — вообще почти пустые. Читая чужой
@@ -793,14 +814,13 @@ div.csl-indent {
       линейную последовательность, в мысль с подлежащим и сказуемым,
       началом и концом.</p>
       <p>Формулирование чужих идеи при чтении текста похоже на машинное
-      обучение<a href="#fn4" class="footnote-ref" id="fnref4"
-      role="doc-noteref"><sup>4</sup></a>. Точнее, на процедуру
-      уменьшения размерности данных. Это когда у вас есть большая
-      таблица людей, где у каждого есть имя, возраст, местоположение,
-      хобби и много другое. И вы пытаетесь понять что-то обо всех людях
-      сразу — вычленить паттерн, стоящий за их свойствами, и убираете
-      «лишние» характеристики<a href="#fn5" class="footnote-ref"
-      id="fnref5" role="doc-noteref"><sup>5</sup></a>.</p>
+      обучение. Точнее, на процедуру уменьшения размерности данных. Это
+      когда у вас есть большая таблица людей, где у каждого есть имя,
+      возраст, местоположение, хобби и много другое. И вы пытаетесь
+      понять что-то обо всех людях сразу — вычленить паттерн, стоящий за
+      их свойствами, и убираете «лишние» характеристики<a href="#fn4"
+      class="footnote-ref" id="fnref4"
+      role="doc-noteref"><sup>4</sup></a>.</p>
       <p>Это как упаковывать сложносоставный человеческий опыт в строку
       текста — много информации о контексте и эмоциях потеряется, но мы
       всё равно находим способ пересказать прочитанное, увиденное или
@@ -838,11 +858,12 @@ div.csl-indent {
       т.д.).</li>
       </ul>
       <figure>
-      <img src="assets/concept-algebra.png"
-      alt="Соотношение свойств, понятий и отношений в алгебре понятий" />
-      <figcaption aria-hidden="true">Соотношение свойств, понятий и
-      отношений в алгебре понятий</figcaption>
+      <img style="border:none;"src="assets/concept-algebra.png" alt="Соотношение свойств, понятий и отношений в алгебре понятий" style="width:100%;"/>
+      <figcaption>
+      Чтение и рой мыслей
+      </figcaption>
       </figure>
+      <!-- ![Соотношение свойств, понятий и отношений в алгебре понятий](assets/concept-algebra.png) -->
       <p>И хотя подобная модель выглядит слишком «компьютерной», чтобы
       мозг действительно по ней работал, она даёт представление о том,
       из чего состоит смысловая часть репрезентаций, когда вы читаете
@@ -864,11 +885,12 @@ div.csl-indent {
       абстрагировать до уровня предложения и абзаца может составлять то
       самое многомерное пространство идей.</p>
       <figure>
-      <img src="assets/concept-sentence-parapgraph.png"
-      alt="Текст как вложенный граф понятий" />
-      <figcaption aria-hidden="true">Текст как вложенный граф
-      понятий</figcaption>
+      <img style="border:none;"src="assets/concept-sentence-parapgraph.png" alt="Текст как вложенный граф понятийЧтение и рой мыслей" style="width:100%;"/>
+      <figcaption>
+      Чтение и рой мыслей
+      </figcaption>
       </figure>
+      <!-- ![Текст как вложенный граф понятий](assets/concept-sentence-parapgraph.png) -->
       <p><strong>Именно поэтому, как я полагаю — в силу вычислительной
       сложности (computational complexity) и малой рабочей памяти — нам
       сложно формулировать собственные мысли: как при чтении чужого, так
@@ -914,9 +936,9 @@ div.csl-indent {
       <p><strong>Симметрия чтения и письма подсвечивает и помогает
       понять две вещи:</strong></p>
       <ol type="1">
-      <li>чтобы писать качественные тексты<a href="#fn6"
-      class="footnote-ref" id="fnref6"
-      role="doc-noteref"><sup>6</sup></a>, хорошо бы иметь объёмное
+      <li>чтобы писать качественные тексты<a href="#fn5"
+      class="footnote-ref" id="fnref5"
+      role="doc-noteref"><sup>5</sup></a>, хорошо бы иметь объёмное
       личное пространство идей и уметь формулировать мысли —
       ориентироваться в своём пространстве идей и сжимать релевантную
       информацию оттуда в линейный текст. Это <strong>навык
@@ -1028,7 +1050,7 @@ div.csl-indent {
       другой стиль цитирования, добавьте этот текст через
       bib-запись:</p>
       <div class="sourceCode" id="cb1"><pre
-      class="sourceCode bib"><code class="sourceCode bibtex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">@misc</span>{<span class="ot">shevchenko2025symmetry</span>,</span>
+      class="sourceCode bib"><code class="sourceCode bibtex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">@misc</span>{<span class="ot">shevchenko2025</span>,</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">author</span>       = {Валерий Шевченко},</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">title</span>        = {Симметрия чтения и письма},</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">year</span>         = {2025},</span>
@@ -1153,18 +1175,15 @@ div.csl-indent {
       (<a href="#ref-turner2018" role="doc-biblioref">2018</a>)</span>,
       гл. 2.<a href="#fnref3" class="footnote-back"
       role="doc-backlink">↩︎</a></p></li>
-      <li id="fn4"><p>Кажется, в 2к25 про него хотя бы что-то слышали
-      примерно все.<a href="#fnref4" class="footnote-back"
-      role="doc-backlink">↩︎</a></p></li>
-      <li id="fn5"><p>Один из наиболее понятных механизмов уменьшения
+      <li id="fn4"><p>Один из наиболее понятных механизмов уменьшения
       размерности — метод главных компонент. А вот <a
-      href="https://education.yandex.ru/handbook/data-analysis/article/metod-glavnyh-komponent-i-faktornyj-analiz"
+      href="https://practicum.yandex.ru/blog/metod-glavnyh-komponent/"
       target="_blank" rel="noopener noreferrer">неплохое введение в него
-      на русском языке</a>.<a href="#fnref5" class="footnote-back"
+      на русском языке</a>.<a href="#fnref4" class="footnote-back"
       role="doc-backlink">↩︎</a></p></li>
-      <li id="fn6"><p>Что такое «качественный» текст, каждый определяет
+      <li id="fn5"><p>Что такое «качественный» текст, каждый определяет
       для себя сам, но базово — это работа, которой вы гордитесь и в
-      которую вложили максимум способностей и отдачи.<a href="#fnref6"
+      которую вложили максимум способностей и отдачи.<a href="#fnref5"
       class="footnote-back" role="doc-backlink">↩︎</a></p></li>
       </ol>
       </section>
