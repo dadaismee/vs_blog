@@ -1,0 +1,319 @@
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Hawk–Dove–Bourgeois–Bluff</title>
+  <style>
+    body { font-family: sans-serif; max-width: 960px; margin: 20px auto; }
+    .row { display: flex; gap: 20px; flex-wrap: wrap; }
+    .panel { border: 1px solid #ccc; padding: 10px; flex: 1 1 260px; }
+    label { display: block; margin: 4px 0; font-size: 14px; }
+    input[type=range] { width: 100%; }
+    table { border-collapse: collapse; margin-top: 8px; }
+    th, td { border: 1px solid #999; padding: 4px 6px; text-align: right; font-size: 13px; }
+    canvas { border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+<h1>Модель Ястреб–Голубь–Буржуа с Блефом</h1>
+
+<div class="row">
+  <div class="panel">
+    <h3>Параметры игры</h3>
+    <label>V (ценность ресурса): <span id="vVal">50</span>
+      <input id="v" type="range" min="10" max="200" step="5" value="50">
+    </label>
+    <label>C (стоимость конфликта): <span id="cVal">100</span>
+      <input id="c" type="range" min="10" max="300" step="5" value="100">
+    </label>
+    <label>dt (шаг времени): <span id="dtVal">0.02</span>
+      <input id="dt" type="range" min="0.005" max="0.05" step="0.005" value="0.02">
+    </label>
+    <label>alpha (скорость адаптации): <span id="alphaVal">1.0</span>
+      <input id="alpha" type="range" min="0.1" max="3" step="0.1" value="1">
+    </label>
+  </div>
+
+  <div class="panel">
+    <h3>Начальные частоты стратегий</h3>
+    <label>H (Hawk): <span id="hVal">0.33</span>
+      <input id="h" type="range" min="0" max="1" step="0.01" value="0.33">
+    </label>
+    <label>D (Dove): <span id="dVal">0.33</span>
+      <input id="d" type="range" min="0" max="1" step="0.01" value="0.33">
+    </label>
+    <label>B (Bourgeois): <span id="bVal">0.34</span>
+      <input id="b" type="range" min="0" max="1" step="0.01" value="0.34">
+    </label>
+    <label>Bluff (L): <span id="lVal">0.00</span>
+      <input id="l" type="range" min="0" max="1" step="0.01" value="0">
+    </label>
+    <label>
+      <input id="enableBluff" type="checkbox">
+      Разрешить стратегию Bluff (ложный сигнал владельца)
+    </label>
+    <small>Bluff действует как Bourgeois по поведению, но всегда сигналит себя как владельца.[web:39]</small>
+    <button id="resetBtn">Сбросить и перезапустить</button>
+  </div>
+
+  <div class="panel">
+    <h3>Матрица выплат (row-игрок)</h3>
+    <table id="payoffTable">
+      <thead>
+        <tr><th></th><th>H</th><th>D</th><th>B</th></tr>
+      </thead>
+      <tbody>
+        <tr><th>H</th><td></td><td></td><td></td></tr>
+        <tr><th>D</th><td></td><td></td><td></td></tr>
+        <tr><th>B</th><td></td><td></td><td></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<h3>Эволюция частот (replicator dynamics)</h3>
+<canvas id="canvas" width="900" height="300"></canvas>
+<p><small>Линии: красная = H, синяя = D, зелёная = B, фиолетовая = Bluff.[web:18][web:30]</small></p>
+
+<script>
+// --- стратегии ---
+const STRATS_ALL = ['H','D','B','L']; // L = Bluff
+
+// поведение стратегии в зависимости от роли
+function actionOf(strategy, role) {
+  if (strategy === 'H') return 'H';
+  if (strategy === 'D') return 'D';
+  if (strategy === 'B') return role === 'owner' ? 'H' : 'D';
+  if (strategy === 'L') return role === 'owner' ? 'H' : 'D'; // Bluff как B по действию
+}
+
+// как стратегия сигналит свой тип (что видит другой)
+// B, H, D — честные; L всегда сигналит "owner".[web:39][web:35]
+function signalOf(strategy, role) {
+  if (strategy === 'L') return 'owner';
+  return role;
+}
+
+// базовый payoff для пары действий (H/D) с учётом ролей
+function basePayoff(actOwner, actIntr, v, c) {
+  if (actOwner === 'H' && actIntr === 'H') {
+    return [(v - c)/2, (v - c)/2];
+  }
+  if (actOwner === 'H' && actIntr === 'D') {
+    return [v, 0];
+  }
+  if (actOwner === 'D' && actIntr === 'H') {
+    return [0, v];
+  }
+  const r = Math.random();
+  return r < 0.5 ? [v, 0] : [0, v];
+}
+
+// один случайный матч между двумя стратегиями s1, s2
+// owner/intruder разыгрываются с p=0.5, сигналы фиксируются, действие зависит от роли.[web:31][web:19]
+function randomMatch(s1, s2, v, c) {
+  const ownerIs1 = Math.random() < 0.5;
+  const role1 = ownerIs1 ? 'owner' : 'intruder';
+  const role2 = ownerIs1 ? 'intruder' : 'owner';
+
+  const sig1 = signalOf(s1, role1);
+  const sig2 = signalOf(s2, role2);
+  // сигналы пока не меняют action, но нужны для онтологической интерпретации.
+  const act1 = actionOf(s1, role1);
+  const act2 = actionOf(s2, role2);
+
+  const [payOwner, payIntr] = basePayoff(
+    ownerIs1 ? act1 : act2,
+    ownerIs1 ? act2 : act1,
+    v, c
+  );
+
+  const payoff1 = ownerIs1 ? payOwner : payIntr;
+  const payoff2 = ownerIs1 ? payIntr : payOwner;
+  return [payoff1, payoff2];
+}
+
+// эмпирическая матрица выплат A[i][j] через N случайных боёв[web:31][web:34]
+function payoffMatrixRandom(v, c, N, enableBluff) {
+  const strategies = enableBluff ? STRATS_ALL : ['H','D','B'];
+  const n = strategies.length;
+  const A = Array.from({length: n}, () => Array(n).fill(0));
+
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) {
+      let sum = 0;
+      for (let k = 0; k < N; k++) {
+        const [p1, _p2] = randomMatch(strategies[i], strategies[j], v, c);
+        sum += p1;
+      }
+      A[i][j] = sum / N;
+    }
+  }
+  return { A, strategies };
+}
+
+// replicator dynamics: dx_i/dt = alpha * x_i * (u_i - u_avg)[web:18][web:29]
+function stepReplicator(x, A, dt, alpha) {
+  const n = x.length;
+  const u = new Array(n).fill(0);
+  for (let i = 0; i < n; i++) {
+    let s = 0;
+    for (let j = 0; j < n; j++) s += A[i][j] * x[j];
+    u[i] = s;
+  }
+  let uAvg = 0;
+  for (let i = 0; i < n; i++) uAvg += x[i] * u[i];
+
+  const y = new Array(n);
+  for (let i = 0; i < n; i++) y[i] = x[i] + dt * alpha * x[i] * (u[i] - uAvg);
+
+  let sum = 0;
+  for (let i = 0; i < n; i++) {
+    y[i] = Math.max(0, y[i]);
+    sum += y[i];
+  }
+  if (sum === 0) {
+    for (let i = 0; i < n; i++) y[i] = 1.0 / n;
+  } else {
+    for (let i = 0; i < n; i++) y[i] /= sum;
+  }
+  return y;
+}
+
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+
+let v = 50, c = 100;
+let dt = 0.02, alpha = 1.0;
+let x = [0.33, 0.33, 0.34]; // H, D, B, (L опционально)
+let t = 0;
+
+const sliders = {
+  v: document.getElementById('v'),
+  c: document.getElementById('c'),
+  dt: document.getElementById('dt'),
+  alpha: document.getElementById('alpha'),
+  h: document.getElementById('h'),
+  d: document.getElementById('d'),
+  b: document.getElementById('b'),
+  l: document.getElementById('l')
+};
+const labels = {
+  v: document.getElementById('vVal'),
+  c: document.getElementById('cVal'),
+  dt: document.getElementById('dtVal'),
+  alpha: document.getElementById('alphaVal'),
+  h: document.getElementById('hVal'),
+  d: document.getElementById('dVal'),
+  b: document.getElementById('bVal'),
+  l: document.getElementById('lVal')
+};
+const enableBluff = document.getElementById('enableBluff');
+
+function updateParamsFromUI() {
+  v = parseFloat(sliders.v.value);
+  c = parseFloat(sliders.c.value);
+  dt = parseFloat(sliders.dt.value);
+  alpha = parseFloat(sliders.alpha.value);
+  labels.v.textContent = v;
+  labels.c.textContent = c;
+  labels.dt.textContent = dt.toFixed(3);
+  labels.alpha.textContent = alpha.toFixed(1);
+
+  let h0 = parseFloat(sliders.h.value);
+  let d0 = parseFloat(sliders.d.value);
+  let b0 = parseFloat(sliders.b.value);
+  let l0 = enableBluff.checked ? parseFloat(sliders.l.value) : 0;
+
+  let s = h0 + d0 + b0 + l0;
+  if (s === 0) { h0 = 0.33; d0 = 0.33; b0 = 0.34; l0 = 0; s = 1; }
+
+  if (enableBluff.checked) {
+    x = [h0/s, d0/s, b0/s, l0/s];
+  } else {
+    const s3 = h0 + d0 + b0;
+    x = [h0/s3, d0/s3, b0/s3];
+  }
+
+  labels.h.textContent = x[0].toFixed(2);
+  labels.d.textContent = x[1].toFixed(2);
+  labels.b.textContent = x[2].toFixed(2);
+  labels.l.textContent = enableBluff.checked && x[3] != null ? x[3].toFixed(2) : '0.00';
+
+  t = 0;
+  clearCanvas();
+  drawAxes();
+  drawPoint();
+  updatePayoffTable();
+}
+
+function updatePayoffTable() {
+  const { A, strategies } = payoffMatrixRandom(v, c, 400, enableBluff.checked);
+  const header = document.querySelector('#payoffTable thead tr');
+  const tbody = document.querySelector('#payoffTable tbody');
+
+  header.innerHTML = '<th></th>' + strategies.map(s => `<th>${s}</th>`).join('');
+
+  tbody.innerHTML = strategies.map((s,i) => {
+    const row = A[i].map(val => `<td>${val.toFixed(1)}</td>`).join('');
+    return `<tr><th>${s}</th>${row}</tr>`;
+  }).join('');
+}
+
+function clearCanvas() {
+  ctx.fillStyle = "#fff";
+  ctx.fillRect(0,0,canvas.width,canvas.height);
+}
+
+function drawAxes() {
+  ctx.strokeStyle = "#ccc";
+  ctx.beginPath();
+  ctx.moveTo(40, 260);
+  ctx.lineTo(870, 260);
+  ctx.moveTo(40, 260);
+  ctx.lineTo(40, 20);
+  ctx.stroke();
+  ctx.fillStyle = "#000";
+  ctx.fillText("t", 870, 275);
+  ctx.fillText("freq", 5, 20);
+  ctx.fillText("0", 25, 260);
+  ctx.fillText("1", 25, 30);
+}
+
+const COLORS = ['red', 'blue', 'green', 'purple']; // H,D,B,L
+
+function drawPoint() {
+  const maxT = 50;
+  const xPix = 40 + (t / maxT) * (canvas.width - 60);
+  function yPix(val) { return 260 - val * 220; }
+
+  for (let i = 0; i < x.length; i++) {
+    ctx.strokeStyle = COLORS[i];
+    ctx.beginPath();
+    ctx.moveTo(xPix, yPix(x[i]));
+    ctx.lineTo(xPix+1, yPix(x[i]));
+    ctx.stroke();
+  }
+}
+
+function loop() {
+  const { A, strategies } = payoffMatrixRandom(v, c, 150, enableBluff.checked);
+  for (let k = 0; k < 2; k++) {
+    x = stepReplicator(x, A, dt, alpha);
+    t += dt;
+  }
+  drawPoint();
+  requestAnimationFrame(loop);
+}
+
+document.getElementById('resetBtn').addEventListener('click', updateParamsFromUI);
+Object.values(sliders).forEach(sl => sl.addEventListener('input', updateParamsFromUI));
+enableBluff.addEventListener('change', updateParamsFromUI);
+
+updateParamsFromUI();
+clearCanvas();
+drawAxes();
+drawPoint();
+requestAnimationFrame(loop);
+</script>
+</body>
+</html>

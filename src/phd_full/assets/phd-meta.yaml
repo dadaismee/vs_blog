@@ -1,0 +1,27 @@
+---
+# Этот файл перекроет метаданные из блога
+title: "Название вашей диссертации полностью"
+subtitle: "Специальность такая-то"
+author: "Имя Фамилия"
+lang: ru-RU
+
+# Настройки для DOCX
+# reference-doc: template.docx  # Если есть файл со стилями
+csl: "/Users/valerii/Obsidian/Service/apa-5th-edition.csl"
+reference-section-title: "Список литературы" 
+notes-after-punctuation: true 
+bibliography: "/Users/valerii/Obsidian/Service/zotero-library.json"
+toc: true
+tod-depth: 3
+toc-title: "Оглавление"
+
+# Настройки для PDF (через LaTeX)
+# geometry:
+#   - top=20mm
+#   - bottom=20mm
+#   - left=30mm
+#   - right=10mm
+# header-includes:
+#   - \usepackage{setspace}
+#   - \onehalfspacing
+# ---

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Bourgeois, Bluff, δ и r</title>
+  <style>
+    body { font-family: sans-serif; max-width: 1100px; margin: 20px auto; }
+    .row { display: flex; gap: 20px; flex-wrap: wrap; }
+    .panel { border: 1px solid #ccc; padding: 10px; }
+    label { display: block; margin: 4px 0; font-size: 14px; }
+    input[type=range] { width: 100%; }
+    canvas { border: 1px solid #ccc; }
+    .ok { color: green; }
+    .bad { color: darkred; }
+  </style>
+</head>
+<body>
+<h2>Из хаоса к институту: Bourgeois, Bluff и санкция δ</h2>
+
+<div class="panel">
+  <h3>Режим</h3>
+  <label><input type="radio" name="mode" value="no_bluff" > 1. Без блефа (H–D–B)</label>
+  <label><input type="radio" name="mode" value="bluff_no_delta"> 2. Блеф, δ = 0</label>
+  <label><input type="radio" name="mode" value="bluff_delta_r" checked> 3. Блеф + санкция δ, популяция игр (r)</label>
+</div>
+
+<div class="panel">
+  <h3>Параметры</h3>
+  <label>V (ценность ресурса): <span id="vVal">50</span>
+    <input id="v" type="range" min="10" max="200" step="5" value="50">
+  </label>
+  <label>C (стоимость конфликта, справочно): <span id="cVal">100</span>
+    <input id="c" type="range" min="10" max="300" step="5" value="100">
+  </label>
+  <label>δ (размер санкции за блеф): <span id="deltaVal">12.51</span>
+    <input id="delta" type="range" min="0" max="100" step="0.01" value="12.51">
+  </label>
+  <label>r (частота применения санкции в популяции игр): <span id="rVal">0.95</span>
+    <input id="r" type="range" min="0" max="1" step="0.01" value="0.95">
+  </label>
+</div>
+
+<div class="row">
+  <div class="panel" style="flex: 0 0 260px;">
+    <h3>Платежи против Bourgeois</h3>
+    <canvas id="barCanvas" width="240" height="200"></canvas>
+    <p style="font-size: 13px;">
+      Зелёный столбец — π(B,B) = V/2. Фиолетовый — π(M,B) без санкции (3V/4).<br>
+      Красный — π(M,B) − δ_eff. Если он ниже зелёного — B защищён от блефа (ESS).
+    </p>
+    <p id="essText" style="font-size: 13px;"></p>
+  </div>
+
+  <div class="panel" style="flex: 1 1 500px;">
+    <h3>Доли стратегий во времени</h3>
+    <canvas id="dynCanvas" width="600" height="260"></canvas>
+    <p style="font-size: 13px;">
+      Линии: H — красный, D — синий, B — зелёный, Bluff — фиолетовый.<br>
+      Фон зелёный, когда при текущих V, δ, r выполняется условие ESS для B против Bluff.
+    </p>
+  </div>
+</div>
+
+<div class="panel">
+  <h3>Популяция игр и эффективная санкция</h3>
+  <canvas id="gridCanvas" width="260" height="140"></canvas>
+  <p style="font-size: 13px;">
+    Каждый квадрат — игра. Красный — где санкция δ применена, серый — нет.<br>
+    Эффективная санкция δ_eff = r·δ, δ_min = V/4.
+  </p>
+  <p id="deltaInfo" style="font-size: 13px;"></p>
+</div>
+
+<script>
+// --- базовые DOM-элементы ---
+const vSlider = document.getElementById('v');
+const cSlider = document.getElementById('c');
+const deltaSlider = document.getElementById('delta');
+const rSlider = document.getElementById('r');
+const vVal = document.getElementById('vVal');
+const cVal = document.getElementById('cVal');
+const deltaVal = document.getElementById('deltaVal');
+const rVal = document.getElementById('rVal');
+const modeRadios = document.querySelectorAll('input[name="mode"]');
+
+const barCanvas = document.getElementById('barCanvas');
+const barCtx = barCanvas.getContext('2d');
+const dynCanvas = document.getElementById('dynCanvas');
+const dynCtx = dynCanvas.getContext('2d');
+const gridCanvas = document.getElementById('gridCanvas');
+const gridCtx = gridCanvas.getContext('2d');
+
+const essText = document.getElementById('essText');
+const deltaInfo = document.getElementById('deltaInfo');
+
+// --- параметры модели ---
+let V = 50, C = 100;
+let delta = 15;
+let r = 1;
+let mode = 'no_bluff';
+
+// replicator dynamics
+let x = [0.3, 0.3, 0.4, 0.0]; // H,D,B,L
+let t = 0;
+const dt = 0.02;
+const alpha = 1.0;
+
+// payoff-матрица (симметричная), усреднённая по owner/intruder[web:31]
+function payoffMatrix(V, C, delta_eff, useBluff) {
+  // H,D,B,Bf (Bluff) в фиксированном порядке
+  // базовые H-D-B из стандартной таблицы[cite:8][web:31]:
+  // H vs H: (V-C)/2; H vs D: V; D vs D: V/2; B усреднён: см. твой HB,DB,BB.
+  const A = [
+    [0.5*(V-C),  V,          0.75*V - 0.25*C, 0],           // H row
+    [0,          0.5*V,      0.25*V,          0],           // D row
+    [0.25*(V-C), 0.75*V,     0.5*V,           0],           // B row
+    [0,          0,          0,               0]            // Bluff row (заполним ниже)
+  ];
+  if (useBluff) {
+    // Bluff против B: π(M,B) = 3V/4, минус санкция delta_eff[cite:8]
+    const piMB = 0.75 * V - delta_eff;
+    // симплификация: Bluff ведёт себя как «ложный Bourgeois»:
+    // против H и D не даём ему преимуществ сверх разумного, можно взять те же формы, но не критично.
+    A[3][0] = 0;           // M vs H
+    A[3][1] = V;      // M vs D
+    A[3][2] = piMB;        // M vs B
+    A[3][3] = 0.5*(V-C);       // M vs M (символически)
+  }
+  // симметрия по столбцам не обязательна для row-плеера, но оставим как есть.
+  return A;
+}
+
+// один шаг replicator dynamics[web:72][web:75]
+function stepReplicator(x, A, dt, alpha, useBluff) {
+  const n = useBluff ? 4 : 3;
+  const u = new Array(n).fill(0);
+  for (let i = 0; i < n; i++) {
+    let s = 0;
+    for (let j = 0; j < n; j++) s += A[i][j] * x[j];
+    u[i] = s;
+  }
+  let uAvg = 0;
+  for (let i = 0; i < n; i++) uAvg += x[i] * u[i];
+
+  const y = x.slice();
+  for (let i = 0; i < n; i++) {
+    y[i] = x[i] + dt * alpha * x[i] * (u[i] - uAvg);
+    if (y[i] < 0) y[i] = 0;
+  }
+  let sum = 0;
+  for (let i = 0; i < n; i++) sum += y[i];
+  if (sum === 0) {
+    for (let i = 0; i < n; i++) y[i] = 1.0 / n;
+  } else {
+    for (let i = 0; i < n; i++) y[i] /= sum;
+  }
+  // если Bluff выключен — нормируем только первые три
+  if (!useBluff) {
+    const s3 = y[0]+y[1]+y[2];
+    y[0] /= s3; y[1] /= s3; y[2] /= s3; y[3] = 0;
+  }
+  return y;
+}
+
+// --- визуализация барчарта payoffs ---
+function drawBarChart(piBB, piMB, piMB_eff, hasBluff, delta_eff, deltaMin, isESS) {
+  barCtx.clearRect(0,0,barCanvas.width,barCanvas.height);
+  const w = barCanvas.width;
+  const h = barCanvas.height;
+  const margin = 30;
+  const maxVal = Math.max(piBB, piMB, piMB_eff, 1) * 1.2;
+  // ось
+  barCtx.strokeStyle = "#999";
+  barCtx.beginPath();
+  barCtx.moveTo(30, h-20);
+  barCtx.lineTo(w-10, h-20);
+  barCtx.stroke();
+  // функция для столбцов
+  function drawBar(x, val, color) {
+    const bh = (val / maxVal) * (h - 50);
+    barCtx.fillStyle = color;
+    barCtx.fillRect(x-20, h-20-bh, 40, bh);
+  }
+  // B
+  drawBar(60, piBB, "green");
+  barCtx.fillStyle = "#000";
+  barCtx.fillText("B", 55, h-5);
+  if (hasBluff) {
+    drawBar(130, piMB, "purple");
+    barCtx.fillText("M", 125, h-5);
+    drawBar(200, piMB_eff, "red");
+    barCtx.fillText("M-δ_eff", 185, h-5);
+  }
+  // линия ESS уровня B
+  barCtx.strokeStyle = "#0a0";
+  barCtx.setLineDash([4,3]);
+  const yB = h-20 - (piBB / maxVal)*(h-50);
+  barCtx.beginPath();
+  barCtx.moveTo(30, yB);
+  barCtx.lineTo(w-10, yB);
+  barCtx.stroke();
+  barCtx.setLineDash([]);
+
+  // текст ESS
+  if (!hasBluff) {
+    essText.innerHTML = '<span class="ok">Bluff выключен: B может быть ESS относительно H и D.</span>';
+  } else if (delta_eff === 0) {
+    essText.innerHTML = `<span class="bad">δ_eff = 0: π(M,B) = ${piMB.toFixed(2)} &gt; π(B,B) = ${piBB.toFixed(2)} ⇒ B не ESS.</span>`;
+  } else {
+    if (isESS) {
+      essText.innerHTML = `<span class="ok">δ_eff = ${delta_eff.toFixed(2)}: π(M,B)-δ_eff = ${piMB_eff.toFixed(2)} &lt; π(B,B) = ${piBB.toFixed(2)} ⇒ B ESS против блефа.</span>`;
+    } else {
+      essText.innerHTML = `<span class="bad">δ_eff = ${delta_eff.toFixed(2)} недостаточна: π(M,B)-δ_eff = ${piMB_eff.toFixed(2)} ≥ π(B,B) = ${piBB.toFixed(2)} ⇒ B не ESS.</span>`;
+    }
+  }
+}
+
+// --- визуализация сетки игр (r) ---
+function drawGrid(r, delta, deltaMin) {
+  gridCtx.clearRect(0,0,gridCanvas.width,gridCanvas.height);
+  const cols = 10, rows = 4;
+  const cellW = gridCanvas.width / cols;
+  const cellH = gridCanvas.height / rows;
+  const total = cols*rows;
+  const active = Math.round(r * total);
+  for (let i = 0; i < total; i++) {
+    const c = i % cols;
+    const rIdx = Math.floor(i / cols);
+    const x0 = c * cellW;
+    const y0 = rIdx * cellH;
+    gridCtx.fillStyle = (i < active) ? "#ff5555" : "#ddd";
+    gridCtx.fillRect(x0+1, y0+1, cellW-2, cellH-2);
+  }
+  const delta_eff = r * delta;
+  deltaInfo.innerHTML =
+    `δ_min = V/4 = ${deltaMin.toFixed(2)}, δ_eff = r·δ = ${delta_eff.toFixed(2)}. ` +
+    (delta_eff >= deltaMin
+      ? '<span class="ok">В среднем санкции достаточно для ESS.</span>'
+      : '<span class="bad">В среднем санкции недостаточно.</span>');
+}
+
+// --- визуализация динамики (линии долей) ---
+function clearDynCanvas(isESS) {
+  dynCtx.fillStyle = isESS ? "rgba(220,255,220,1)" : "rgba(255,230,230,1)";
+  dynCtx.fillRect(0,0,dynCanvas.width,dynCanvas.height);
+  dynCtx.strokeStyle = "#999";
+  dynCtx.beginPath();
+  dynCtx.moveTo(40, 230);
+  dynCtx.lineTo(580, 230);
+  dynCtx.moveTo(40, 230);
+  dynCtx.lineTo(40, 20);
+  dynCtx.stroke();
+  dynCtx.fillStyle = "#000";
+  dynCtx.fillText("t", 580, 245);
+  dynCtx.fillText("freq", 5, 20);
+  dynCtx.fillText("0", 25, 230);
+  dynCtx.fillText("1", 25, 25);
+}
+
+// рисуем одну точку на траектории
+function drawDynPoint(t, x, useBluff) {
+  const maxT = 50;
+  const xPix = 40 + (t / maxT) * (dynCanvas.width - 60);
+  function yPix(val) { return 230 - val * 200; }
+  const colors = ["red","blue","green","purple"];
+  const n = useBluff ? 4 : 3;
+  for (let i=0;i<n;i++) {
+    dynCtx.strokeStyle = colors[i];
+    dynCtx.beginPath();
+    dynCtx.moveTo(xPix, yPix(x[i]));
+    dynCtx.lineTo(xPix+1, yPix(x[i]));
+    dynCtx.stroke();
+  }
+}
+
+// --- обновление параметров и перезапуск динамики ---
+function getMode() {
+  for (const r of modeRadios) if (r.checked) return r.value;
+  return 'no_bluff';
+}
+
+function resetDynamics() {
+  // начальные доли — чуть случайные, чтобы было движение
+  x = [0.3, 0.3, 0.4, 0.0];
+  t = 0;
+}
+
+function updateParams() {
+  V = parseFloat(vSlider.value);
+  C = parseFloat(cSlider.value);
+  delta = parseFloat(deltaSlider.value);
+  r = parseFloat(rSlider.value);
+  vVal.textContent = V;
+  cVal.textContent = C;
+  deltaVal.textContent = delta.toFixed(2);
+  rVal.textContent = r.toFixed(2);
+  mode = getMode();
+  resetDynamics();
+}
+
+// --- главный цикл анимации ---
+function loop() {
+  const useBluff = (mode !== 'no_bluff');
+  const piBB = 0.5 * V;
+  const piMB = 0.75 * V;
+  const deltaMin = piMB - piBB; // V/4
+  let delta_eff = 0;
+  if (mode === 'bluff_no_delta') delta_eff = 0;
+  else if (mode === 'bluff_delta_r') delta_eff = r * delta;
+  const piMB_eff = piMB - delta_eff;
+  const isESS = (!useBluff) || (piMB_eff < piBB);
+
+  // payoff-барчарт и сетка игр
+  drawBarChart(piBB, piMB, piMB_eff, useBluff, delta_eff, deltaMin, isESS);
+  drawGrid(r, delta, deltaMin);
+
+  // динамика: перерисовываем фон, потом добавляем несколько шагов
+  clearDynCanvas(isESS);
+  let localX = x.slice();
+  let localT = t;
+  const stepsPerFrame = 3;
+  const A = payoffMatrix(V, C, delta_eff, useBluff);
+  for (let k=0;k<stepsPerFrame;k++) {
+    localX = stepReplicator(localX, A, dt, alpha, useBluff);
+    localT += dt;
+    drawDynPoint(localT, localX, useBluff);
+  }
+  x = localX;
+  t = localT;
+  if (t > 50) {
+    resetDynamics();
+  }
+
+  requestAnimationFrame(loop);
+}
+
+// обработчики
+[vSlider, cSlider, deltaSlider, rSlider].forEach(el =>
+  el.addEventListener('input', updateParams)
+);
+modeRadios.forEach(radio =>
+  radio.addEventListener('change', updateParams)
+);
+
+updateParams();
+requestAnimationFrame(loop);
+</script>
+</body>
+</html>

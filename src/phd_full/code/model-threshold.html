@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Режимы при разных α</title>
+  <style>
+    body { font-family: sans-serif; }
+    #controls { margin-bottom: 10px; }
+    #alpha-value { font-weight: bold; }
+    canvas { border: 1px solid #ccc; image-rendering: pixelated; }
+  </style>
+</head>
+<body>
+
+<div id="controls">
+  <label>
+    α:
+    <input id="alpha-slider" type="range" min="0" max="1" step="0.01" value="0.75">
+  </label>
+  <span id="alpha-value">0.75</span>
+</div>
+
+<canvas id="heatmap" width="400" height="400"></canvas>
+
+<div>
+  <p>
+    Цвета: 
+    <span style="color:blue;">синий</span> — институт устойчив (правило выгодно), 
+    <span style="color:red;">красный</span> — коллапс (отклонение выгодно), 
+    белый — порог \(r\delta = \Delta u(\alpha)\).
+  </p>
+</div>
+
+<script>
+// параметры сетки, как в Python-версии
+const nDelta = 200;
+const nR = 200;
+const deltaMin = 0;
+const deltaMax = 40;
+const rMin = 0;
+const rMax = 1;
+
+// линейная сетка
+const deltaVals = Array.from({length: nDelta}, (_, j) =>
+  deltaMin + (deltaMax - deltaMin) * j / (nDelta - 1)
+);
+const rVals = Array.from({length: nR}, (_, i) =>
+  rMin + (rMax - rMin) * i / (nR - 1)
+);
+
+const canvas = document.getElementById('heatmap');
+const ctx = canvas.getContext('2d');
+const width = canvas.width;
+const height = canvas.height;
+
+// буфер изображения
+const imgData = ctx.createImageData(width, height);
+
+function deltaU(alpha) {
+  return -25 + 50 * alpha;  // как в Python
+}
+
+// цветовая схема: -1 синий, 0 белый, 1 красный
+function colorForValue(val) {
+  if (val < -0.5) {        // -1
+    return [0, 0, 255, 255];
+  } else if (val > 0.5) {  // 1
+    return [255, 0, 0, 255];
+  } else {                 // 0
+    return [255, 255, 255, 255];
+  }
+}
+
+function recomputeAndDraw(alpha) {
+  const Du = deltaU(alpha);
+  const eps = 1e-6;
+
+  // Заполняем матрицу Z логически, сразу рисуя в canvas через масштабирование
+  // Проходим по "пикселям" изображения (width x height),
+  // для каждого пикселя вычисляем, к какой ячейке (i,j) сетки он относится.
+  for (let py = 0; py < height; py++) {
+    const rIndex = Math.floor(py / height * nR);
+    const r = rVals[Math.min(rIndex, nR - 1)];
+
+    for (let px = 0; px < width; px++) {
+      const deltaIndex = Math.floor(px / width * nDelta);
+      const delta = deltaVals[Math.min(deltaIndex, nDelta - 1)];
+
+      const eff = r * delta;
+      let z;
+      if (Du <= 0) {
+        z = -1;
+      } else {
+        if (eff + eps < Du) {
+          z = 1;
+        } else if (eff > Du + eps) {
+          z = -1;
+        } else {
+          z = 0;
+        }
+      }
+
+      const [rC, gC, bC, aC] = colorForValue(z);
+      const idx = 4 * (py * width + px);
+      imgData.data[idx] = rC;
+      imgData.data[idx + 1] = gC;
+      imgData.data[idx + 2] = bC;
+      imgData.data[idx + 3] = aC;
+    }
+  }
+
+  ctx.putImageData(imgData, 0, 0);
+
+  // подписи осей (простые)
+  ctx.save();
+  ctx.fillStyle = 'black';
+  ctx.font = '12px sans-serif';
+
+  // x-ось: δ
+  ctx.fillText('δ (размер санкции)', width / 2 - 60, height - 5);
+
+  // y-ось: r
+  ctx.save();
+  ctx.translate(10, height / 2 + 60);
+  ctx.rotate(-Math.PI / 2);
+  ctx.fillText('r (надёжность санкции)', 0, 0);
+  ctx.restore();
+
+  // заголовок
+  ctx.fillText(`Режимы при α = ${alpha.toFixed(2)}`, 10, 15);
+  ctx.restore();
+}
+
+const slider = document.getElementById('alpha-slider');
+const alphaValue = document.getElementById('alpha-value');
+
+slider.addEventListener('input', () => {
+  const alpha = parseFloat(slider.value);
+  alphaValue.textContent = alpha.toFixed(2);
+  recomputeAndDraw(alpha);
+});
+
+// первая отрисовка
+recomputeAndDraw(parseFloat(slider.value));
+</script>
+
+</body>
+</html>

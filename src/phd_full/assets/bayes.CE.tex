@@ -1,0 +1,63 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\begin{document}
+
+\begin{tikzpicture}[
+  scale=1.5, 
+  font=\small,
+  node distance=2cm,
+  dot/.style={circle, fill=black, inner sep=1.5pt},
+  level 1/.style={sibling distance=5cm},
+  level 2/.style={sibling distance=2.5cm},
+  level 3/.style={sibling distance=1.2cm}
+]
+
+% Узел Природы
+\node[dot, label=above:{Природа}] (nature) {}
+    child {
+        node[dot, label=left:{Игрок 1}] (P1_A) {}
+        edge from parent node[left, pos=0.5] {$p$ (Тип A: Агрессор)}
+    }
+    child {
+        node[dot, label=right:{Игрок 1}] (P1_B) {}
+        edge from parent node[right, pos=0.5] {$1-p$ (Тип B: Мирный)}
+    };
+
+% Ветви для Типа A
+\node[dot] (P2_A_H) at ($(P1_A) + (-1.2,-1)$ ) {};
+\node[dot] (P2_A_D) at ($(P1_A) + (1.2,-1)$ ) {};
+
+\draw (P1_A) -- (P2_A_H) node[midway, left] {Ястреб (H)};
+\draw (P1_A) -- (P2_A_D) node[midway, right] {Голубь (D)};
+
+% Ветви для Типа B
+\node[dot] (P2_B_H) at ($(P1_B) + (-1.2,-1)$ ) {};
+\node[dot] (P2_B_D) at ($(P1_B) + (1.2,-1)$ ) {};
+
+\draw (P1_B) -- (P2_B_H) node[midway, left] {H};
+\draw (P1_B) -- (P2_B_D) node[midway, right] {D};
+
+% Выигрыши для Типа A
+\draw (P2_A_H) -- ++(-0.6,-0.8) node[below] {$(v-c, v-c)$} node[midway, left] {H};
+\draw (P2_A_H) -- ++(0.6,-0.8) node[below] {$(v, 0)$} node[midway, right] {D};
+\draw (P2_A_D) -- ++(-0.6,-0.8) node[below] {$(0, v)$} node[midway, left] {H};
+\draw (P2_A_D) -- ++(0.6,-0.8) node[below] {$(v/2, v/2)$} node[midway, right] {D};
+
+% Выигрыши для Типа B (например, c=0 для мирного типа)
+\draw (P2_B_H) -- ++(-0.6,-0.8) node[below] {$(v, v)$} node[midway, left] {H};
+\draw (P2_B_H) -- ++(0.6,-0.8) node[below] {$(v, 0)$} node[midway, right] {D};
+\draw (P2_B_D) -- ++(-0.6,-0.8) node[below] {$(0, v)$} node[midway, left] {H};
+\draw (P2_B_D) -- ++(0.6,-0.8) node[below] {$(v/2, v/2)$} node[midway, right] {D};
+
+% Информационное множество Игрока 2
+\draw[dashed, rounded corners=10pt] 
+    ($(P2_A_H) + (-0.2,0.2)$) rectangle ($(P2_B_H) + (0.2,-0.2)$);
+\node at ($(P2_A_H)!0.5!(P2_B_H) + (0, 0.4)$) {Инф. множество Игрока 2};
+
+\draw[dashed, rounded corners=10pt] 
+    ($(P2_A_D) + (-0.2,0.2)$) rectangle ($(P2_B_D) + (0.2,-0.2)$);
+
+\end{tikzpicture}
+\end{document}

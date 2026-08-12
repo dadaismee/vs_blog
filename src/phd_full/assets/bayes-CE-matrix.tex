@@ -1,0 +1,50 @@
+\documentclass{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{tikz}
+\usetikzlibrary{positioning, arrows.meta}
+
+\begin{document}
+
+\begin{tikzpicture}[node distance=2cm, >=Stealth, thick]
+
+% --- Узел Природы ---
+\node[circle, draw, inner sep=2pt, label=above:{Природа}] (N) at (0,0) {N};
+
+% --- Координаты для расположения матриц ---
+\coordinate (M1_pos) at (4, 1.5);
+\coordinate (M2_pos) at (4, -2.5);
+
+% --- Стрелки от Природы к Матрицам ---
+\draw[->] (N) -- (M1_pos) node[midway, above left] {$p$};
+\draw[->] (N) -- (M2_pos) node[midway, below left] {$1-p$};
+
+% --- ПЕРВАЯ МАТРИЦА (Тип А: Агрессивный) ---
+\node at (M1_pos) {
+    \begin{tabular}{r|c|c|}
+    \multicolumn{1}{c}{} & \multicolumn{1}{c}{H} & \multicolumn{1}{c}{D} \\ \cline{2-3}
+    H & $v-c, v-c$ & $v, 0$ \\ \cline{2-3}
+    D & $0, v$ & $v/2, v/2$ \\ \cline{2-3}
+    \end{tabular}
+};
+\node[above=0.8cm of M1_pos, font=\bfseries] {Матрица A (Тип 1)};
+
+% --- ВТОРАЯ МАТРИЦА (Тип B: Мирный) ---
+\node at (M2_pos) {
+    \begin{tabular}{r|c|c|}
+    \multicolumn{1}{c}{} & \multicolumn{1}{c}{H} & \multicolumn{1}{c}{D} \\ \cline{2-3}
+    H & $v, v$ & $v, 0$ \\ \cline{2-3}
+    D & $0, v$ & $v/2, v/2$ \\ \cline{2-3}
+    \end{tabular}
+};
+\node[above=0.8cm of M2_pos, font=\bfseries] {Матрица B (Тип 2)};
+
+% Подписи игроков для матриц (опционально)
+\node[left=1.2cm of M1_pos] {И1};
+\node[above=0.4cm of M1_pos] {\hspace{0.8cm} И2};
+\node[left=1.2cm of M2_pos] {И1};
+\node[above=0.4cm of M2_pos] {\hspace{0.8cm} И2};
+
+\end{tikzpicture}
+
+\end{document}

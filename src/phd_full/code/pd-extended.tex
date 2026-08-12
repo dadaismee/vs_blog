@@ -1,0 +1,76 @@
+\documentclass[tikz, border=2pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{tikz}
+
+\begin{document}
+\begin{tikzpicture}[scale=1.5, font=\footnotesize]
+    % Корень (Игрок 1)
+    \node (P1) at (0,0) [circle, fill, inner sep=1.5pt, label=above:{Игрок 1}] {};
+
+    % Ветки Игрока 1
+    \draw (P1) -- (-1.5,-1) node[midway, left, xshift=-2pt] {Молчать (C)};
+    \draw (P1) -- (1.5,-1) node[midway, right, xshift=2pt] {Предать (D)};
+
+    % Узлы Игрока 2
+    \node (P2L) at (-1.5,-1) [circle, fill, inner sep=1.5pt] {};
+    \node (P2R) at (1.5,-1) [circle, fill, inner sep=1.5pt] {};
+    
+    % Подпись Игрока 2 между узлами
+    \node at (0,-0.8) {Игрок 2};
+
+    % Информационное множество (пунктир)
+    \draw[dashed, thick] (P2L) -- (P2R);
+
+    % Ветки Игрока 2 (слева)
+    \draw (P2L) -- (-2.25,-2.5) node[midway, left] {C} node[below] {(-1, -1)};
+    \draw (P2L) -- (-0.75,-2.5) node[midway, right] {D} node[below] {(-3, 0)};
+
+    % Ветки Игрока 2 (справа)
+    \draw (P2R) -- (0.75,-2.5) node[midway, left] {C} node[below] {(0, -3)};
+    \draw (P2R) -- (2.25,-2.5) node[midway, right] {D} node[below] {(-2, -2)};
+
+\end{tikzpicture}
+
+\end{document}
+
+% \documentclass[border=10pt]{standalone}
+% \usepackage{tikz}
+% % Optional: \usetikzlibrary{calc}
+%
+% \begin{document}
+% \begin{tikzpicture}[
+%     scale=1.5,
+%     node distance=1.5cm,
+%     edge from parent/.style={draw,thick},
+%     every node/.style={font=\small},
+%     root/.style={circle,draw,inner sep=2pt,fill=black},
+%     node/.style={circle,draw,inner sep=2pt,fill=black},
+%     terminal/.style={rectangle,draw,inner sep=2pt,fill=white}
+% ]
+%
+% % Nodes
+% \node [root, label=above:{$P_1$}] (root) {};
+% \node [node, below left of=root, xshift=-1cm, label=left:{$P_2$}] (p2a) {};
+% \node [node, below right of=root, xshift=1cm, label=right:{$P_2$}] (p2b) {};
+%
+% % Terminal nodes
+% \node [terminal, below left of=p2a] (u1) {(3,3)};
+% \node [terminal, below right of=p2a] (u2) {(0,5)};
+% \node [terminal, below left of=p2b] (u3) {(5,0)};
+% \node [terminal, below right of=p2b] (u4) {(1,1)};
+%
+% % Edges and Labels
+% \draw [edge from parent] (root) -- node[above left] {Сотрудничать} (p2a);
+% \draw [edge from parent] (root) -- node[above right] {Предать} (p2b);
+% \draw [edge from parent] (p2a) -- node[left] {C} (u1);
+% \draw [edge from parent] (p2a) -- node[right] {D} (u2);
+% \draw [edge from parent] (p2b) -- node[left] {C} (u3);
+% \draw [edge from parent] (p2b) -- node[right] {D} (u4);
+%
+% % Payoff notation
+% \node[below, font=\footnotesize] at (u1.south) {Взаимное C};
+% \node[below, font=\footnotesize] at (u4.south) {Взаимное D};
+%
+% \end{tikzpicture}
+% \end{document}

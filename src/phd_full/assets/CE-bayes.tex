@@ -1,0 +1,25 @@
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[>=stealth,level distance=20mm,
+  level 1/.style={sibling distance=40mm},
+  level 2/.style={sibling distance=30mm}]
+% Корень: медиатор выбирает сигнал s_i
+\node (root) {Медиатор}
+  child { node (s1) {$s_i$}
+    child { node (follow) {$a_i^{\text{rec}}(s_i)$}
+      child { node[rectangle,draw,align=center] (payoff-follow)
+        {$u_i(a) $ \\ (нет санкции)} }
+    }
+    child { node (dev) {$a_i'$}
+      child { node[rectangle,draw,align=center] (payoff-dev)
+        {$u_i(a_i',a_{-i}) - r\delta$ \\ (девиация + ожидаемый штраф)} }
+    }
+  };
+
+% Подписи к ветвям: следование / девиация
+\path (s1) -- (follow) node[midway,above left] {следовать сигналу};
+\path (s1) -- (dev) node[midway,above right] {отклониться};
+
+\end{tikzpicture}
+\caption{Ветка следования и девиации при сигнале $s_i$ в институциональной игре}
+\end{figure}

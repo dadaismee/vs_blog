@@ -210,7 +210,7 @@ ul.task-list li input[type="checkbox"] {
     }
 		
 		p {
-			margin: 10px 0;
+			margin-bottom: 10px;
 		}
 
 		h4 {
@@ -218,6 +218,10 @@ ul.task-list li input[type="checkbox"] {
 		}
 		
 		ul p {
+			margin: 0px;
+		}
+
+		ul {
 			margin: 0px;
 		}
 
@@ -288,11 +292,11 @@ ul.task-list li input[type="checkbox"] {
     }
 
     h1 {
-     margin-bottom: -10px;
+     margin: 30px 0px -10px;
     }
 
-    h2,h3,h5,h6 {
-      margin-top: 40px;
+    h2,h3 {
+      margin-top: 30px;
       margin-bottom: 10px;
       text-align:left; 
       font-family: monospace;
@@ -496,144 +500,93 @@ ul.task-list li input[type="checkbox"] {
       <div style="display: flex; flex-direction: column; gap: 0px; margin-top: 20px;">
                       </div>
       <div class="main-page">
-      <p style="margin-top: 0px;">
-      <strong>Привет!</strong>
-      </p>
-      <p>Меня зовут Валерий Шевченко, я философ науки и архитектор
-      систем. Исследую и создаю интерфейсы для работы с идеями и
+      <h1 style="margin-top: 10px;">
+      Валерий Шевченко
+      </h1>
+      <h2 style="margin-top: 0px; font-style: italic;">
+      философ науки и дизайнер взаимодействия
+      </h2>
+      <p>Исследую и создаю интерфейсы для работы со знанием и
       текстами.</p>
-      <section id="чем-помогаю-бизнесу" class="level4">
-      <h4>Чем помогаю бизнесу</h4>
-      <p>Превращаю сложные данные и знание в системы, которые объясняют
-      сами себя: автоматические документы из сырых данных, интерактивные
-      интерфейсы для сложных продуктов, инструменты мышления для команд,
-      работающих со знанием. <a href="/offer">Подробнее</a></p>
+      <section id="чем-помогаю" class="level3">
+      <h3>Чем помогаю</h3>
+      <p>Проектирую системы, автоматически превращающие данные в
+      понятные пользователям документы и объясняющие интерфейсы — без
+      зависимости от платформ и с измеримой пользой для бизнеса.
+      <strong><a href="/offer">Подробнее</a></strong></p>
       </section>
-      <section id="проекты" class="level4">
-      <h4>Проекты</h4>
+      <section id="проекты" class="level3">
+      <h3>Проекты</h3>
       <ul>
       <li>
-      <p><a id='btn-course' onClick="toggle('course', 'btn-course')">Курс
-      «Система письма»</a> (130 выпускников)</p>
-      <div id="course" style="display: none;">
-      <p><br/> <strong><a href="https://konspekt.io/" target="_blank"
-      rel="noopener noreferrer">konspekt.io</a></strong>: практический
-      курс (видео + воркшопы) для аспирантов, который помогает выстроить
-      процесс работы с текстами: от заметок и сбора источников до
-      готовой статьи или поста.</p>
-      <figure>
-      <span class="image placeholder"
-      data-original-image-src="explanation.mp4"
-      data-original-image-title="">Объяснение системы в одном из
-      уроков</span>
-      <figcaption>Объяснение системы в одном из уроков</figcaption>
-      </figure>
-      <p><strong>Отзывы выпускников:</strong></p>
-      <ul>
-      <li><p><em>«Результат очень облегчает жизнь человеку, пишущему
-      диссертацию»</em>. <strong>Ольга Чумичёва</strong> — PhD-студентка
-      в Университете Манчестера (UK)</p></li>
-      <li><p><em>«Курс помог переосмыслить подход к письму и чтению —
-      смогла написать десятистраничный текст для конференции за
-      месяц»</em>. <strong>Евгения Митрохина</strong> — PhD-студентка в
-      Университете Висконсин-Мэдисон (США)</p></li>
-      <li><p><em>«Курс прекрасно погружает как в техническую часть, так
-      и в содержательную — как сделать заметки партнёром по
-      коммуникации»</em>. <strong>Мария Волкова</strong> — PhD-студентка
-      в Университете Эксетера (UK)</p></li>
-      </ul>
-      <p><br/></p>
-      </div>
+      <a href="/projects/lab">Автоматическая сборка отчёта
+      лаборатории</a>
       </li>
       <li>
-      <p><a id="btn-report" onClick="toggle('report', 'btn-report')">Годовой
-      отчёт</a> Лаборатории сетевого анализа НИУ ВШЭ</p>
-      <div id="report" style="display: none;">
-      <p><br/> Разработка системы для командного написания и
-      автоматической сборки/вёрстки отчёта по требованиям ГОСТ:</p>
-      <ul>
-      <li>Подбор стека для команды: Obsidian, Zotero, Pandoc</li>
-      <li>Дизайн процесса автоматической сборки разделов по их
-      нумерации</li>
-      <li>Разработка CI/CD пайплайна в GitHub Actions</li>
-      <li>Проведение семинара для обучения команды</li>
-      </ul>
-      <figure>
-      <span class="image placeholder"
-      data-original-image-src="/cicd.png"
-      data-original-image-title="">CI/CD</span>
-      <figcaption>CI/CD</figcaption>
-      </figure>
-      <figure>
-      <span class="image placeholder" data-original-image-src="anr.png"
-      data-original-image-title="">Обучение команды</span>
-      <figcaption>Обучение команды</figcaption>
-      </figure>
-      <p><br/></p>
-      </div>
+      <a href="/projects/timeline">Интерфейс для архива писем</a>
       </li>
       <li>
-      <p><a id="btn-timeline" onClick="toggle('timeline', 'btn-timeline')">Интерактивный
-      LLM-таймлайн</a> исторических переписок</p>
-      <div id="timeline" style="display: none;">
-      <p><br/> LLM-приложение на Electron, превращающее отсканированные
-      письма на русском языке из 1920-х в интерактивный таймлайн событий
-      — кто кому когда что написал и что произошло. LLM вычленяет
-      действующих лиц и темы, по которым можно фильтровать события.</p>
-      <figure>
-      <span class="image placeholder"
-      data-original-image-src="timeline.mp4"
-      data-original-image-title="">Демо таймлайна</span>
-      <figcaption>Демо таймлайна</figcaption>
-      </figure>
-      <hr>
-      </div>
+      <a href="/projects/course">Курс «Система письма»</a>
       </li>
+      <!-- <li> -->
+      <!--    <a href="/projects/school-reports">Динамическая карта развития ученика для родителей</a> -->
+      <!-- </li> -->
+      <!-- <li> -->
+      <!--    <a href="/projects/konspekt-agent">Konspekt Agent — сервис для исследователей</a> -->
+      <!-- </li> -->
+      <!-- <li> -->
+      <!--    <a href="/projects/disser">Интерфейс для написания диссертации</a> -->
+      <!-- </li> -->
       </ul>
-      <!-- - Интерфейс для написания диссертации <span><button id="zk-button"  onClick="toggle('phd', 'zk-button')">Подробнее</button></span> -->
-      <section id="эссе" class="level4">
-      <h4>Эссе</h4>
-      <p>→ <a href="/no-second-brain" target="_self">Вам не нужен
-      «второй мозг»</a> — ~15 минут<br//> →
-      <a href="/symmetry" target="_self">Симметрия чтения и письма</a> —
-      ~20 минут<br//> →
-      <a href="https://dadaismee.github.io/k.longread.writing-well-main/" target="_self">Введение
-      в систему письма</a> — ~20 минут<br//></p>
-      <p><br/></p>
-      <p><strong><a
-      href="mailto:valerii.s.shevchenko@gmail.com">Связаться</a></strong></p>
-      <!-- <hr/> -->
-      <!-- ## Научные публикации: -->
+      </section>
+      <section id="исследовательские-эссе" class="level3">
+      <h3>Исследовательские эссе</h3>
+      <ul>
+      <li><a href="/no-second-brain" target="self">Вам не нужен «второй
+      мозг»</a> — ~15 минут</li>
+      <li><a href="/symmetry" target="self">Симметрия чтения и
+      письма</a> — ~20 минут</li>
+      <li><a href="https://dadaismee.github.io/k.longread.writing-well-main/" target="self">Введение
+      в систему письма</a> — ~20 минут</li>
+      </ul>
+      </section>
+      <section id="избранные-научные-публикации" class="level3">
+      <h3>Избранные научные публикации:</h3>
+      <ul>
+      <li>(2026) <a
+      href="https://socofpower.ranepa.ru/jour/article/view/430/377"
+      target="_blank" rel="noopener noreferrer">Conflation of agency
+      models in francesco Guala’s social ontology sheds light on how
+      normativity of social institutions might have evolved</a>.
+      <em>Социология власти, 38 (2): 187-229</em></li>
+      <li>(2023) <a href="https://doi.org/10.1177/00483931221150486"
+      target="_blank" rel="noopener noreferrer">Coordination as
+      naturalistic social ontology: constraints and explanation</a></li>
+      <li>(2023) <a
+      href="https://doi.org/10.22394/2074-0492-2023-4-122-140"
+      target="_blank" rel="noopener noreferrer">Вывод к наилучшему
+      объяснению как методология социальной онтологии</a></li>
+      <li>(2021) <a
+      href="https://cyberleninka.ru/article/n/kvaziformalnoe-vzaimodeystvie-v-situatsii-uchebnogo-protsessa"
+      target="_blank" rel="noopener noreferrer">Квази-формальное
+      взаимодействие в ситуации учебного процесса</a>. <em>Сибирские
+      исторические исследования</em></li>
+      <li>(2020) <a
+      href="https://drive.google.com/file/d/1O50JhPQR9CqKYfn-S2gEKue0L128-cZg/view?usp=sharing"
+      target="_blank" rel="noopener noreferrer">Что не так с теорией
+      ассамбляжей</a>. <em>Логос, 30(5 (138)), 131-164</em>.</li>
+      </ul>
       <!-- - A Framework for More-than-human Placemaking with Data Storytelling ([2024](https://doi.org/10.14627/537752023)) -->
-      <!-- - Coordination as naturalistic social ontology: constraints and explanation ([2023](https://doi.org/10.1177/00483931221150486)) -->
-      <!-- - Вывод к наилучшему объяснению как методология социальной онтологии ([2023](https://doi.org/10.22394/2074-0492-2023-4-122-140)) -->
       <!-- <hr/> -->
       <!--• **Cognitive Basis of Focal Points: Evolution and Correlated Equilibr/ium Emergence** (**2021\)***. Logical and philosophical studies, 19(2), 131-135.*  -->
-      <!---->
       <!--• **After Method, Only Hyper-Chaos: The Limitations of John Law's Sociological Method Theory (2021)**.  *Sociology of power, 33(4), 169-183*  -->
       <!---->
-      <!--• **Quasi-formal interaction in the situation of the educational process** (**2021).** *Siberian Historical Research(1), 184-199;*  -->
-      <!---->
-      <!--• **What's wrong with assemblage theory?** **(2020)** *Logos, 30(5 (138)), 131-164*.  -->
-      <!---->
       <!--• **Conflict of Otherness Models in John Law's Actor-Network Theory** **(2019).** *Sociology of power(2), 44-67.*-->
-      <!-- - Сделал <a href='https://konspekt.io' target='_blank'> курс по системе письма</a> для PhD-студентов и аспирантов -->
+      <!-- #### Обо мне -->
       <!-- - [Пишу кандидатскую диссертацию](https://t.me/chot_ne_idet) о том, как связь мышления и среды эволюционно привела к возникновению социальных правил -->
       <!-- - Изучал социологию в МГУ и «Шанинке», философию науки — в «Высшей Школе Экономики», дизайн взаимодействия — в [MOME](https://mome.hu/en/programmes/interaction-design-ma-in-english), медиаискусство — в [«Школе Родченко»](https://mdfschool.ru) -->
-      </div>
-      <script>
-      function toggle(id, buttonId) {
-        const vis = document.getElementById(id);
-        const visButton = document.getElementById(buttonId);
-        if (vis.style.display === 'none') {
-          vis.style.display = 'block';
-        } else {
-          vis.style.display = 'none';
-        }
-      }
-      </script>
-      </section>
-      </div>
+      <p><strong><a
+      href="mailto:valerii.s.shevchenko@gmail.com">Связаться</a></strong></p>
       </section>
       </div>
     </article>
