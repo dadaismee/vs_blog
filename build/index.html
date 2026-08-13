@@ -292,11 +292,11 @@ ul.task-list li input[type="checkbox"] {
     }
 
     h1 {
-     margin: 30px 0px -10px;
+     margin: 30px 0px 0px;
     }
 
     h2,h3 {
-      margin-top: 30px;
+      margin-top: 40px;
       margin-bottom: 10px;
       text-align:left; 
       font-family: monospace;
@@ -499,48 +499,38 @@ ul.task-list li input[type="checkbox"] {
       <article>
       <div style="display: flex; flex-direction: column; gap: 0px; margin-top: 20px;">
                       </div>
-      <div class="main-page">
-      <h1 style="margin-top: 10px;">
-      Валерий Шевченко
-      </h1>
+      <section id="валерий-шевченко" class="level1 main-page">
+      <h1>Валерий Шевченко</h1>
       <h2 style="margin-top: 0px; font-style: italic;">
       философ науки и дизайнер взаимодействия
       </h2>
-      <p>Исследую и создаю интерфейсы для работы со знанием и
+      <p>Я исследую и создаю интерфейсы для работы со сложным знанием и
       текстами.</p>
       <section id="чем-помогаю" class="level3">
       <h3>Чем помогаю</h3>
       <p>Проектирую системы, автоматически превращающие данные в
       понятные пользователям документы и объясняющие интерфейсы — без
-      зависимости от платформ и с измеримой пользой для бизнеса.
-      <strong><a href="/offer">Подробнее</a></strong></p>
+      зависимости от платформ и с измеримой пользой для бизнеса. Вот что
+      я уже сделал:</p>
+      <ul>
+      <li><a href="/projects/lab">Автоматический отчёт научной
+      лаборатории</a></li>
+      <li><a href="/projects/timeline">Интерфейс для архива писем</a>
+      <!-- - [Динамическая карта развития ученика для родителей](/projects/school-reports) --></li>
+      </ul>
       </section>
       <section id="проекты" class="level3">
       <h3>Проекты</h3>
       <ul>
-      <li>
-      <a href="/projects/lab">Автоматическая сборка отчёта
-      лаборатории</a>
-      </li>
-      <li>
-      <a href="/projects/timeline">Интерфейс для архива писем</a>
-      </li>
-      <li>
-      <a href="/projects/course">Курс «Система письма»</a>
-      </li>
-      <!-- <li> -->
-      <!--    <a href="/projects/school-reports">Динамическая карта развития ученика для родителей</a> -->
-      <!-- </li> -->
-      <!-- <li> -->
-      <!--    <a href="/projects/konspekt-agent">Konspekt Agent — сервис для исследователей</a> -->
-      <!-- </li> -->
-      <!-- <li> -->
-      <!--    <a href="/projects/disser">Интерфейс для написания диссертации</a> -->
-      <!-- </li> -->
+      <li><a href="/projects/course">Курс «Система письма»</a> (130
+      выпускников, 10 потоков)
+      <!-- - [ИИ-агент для кандидата искусствоведения](/projects/ai-agent) -->
+      <!-- - [Интерфейс для написания диссертации](/projects/disser) --></li>
       </ul>
       </section>
-      <section id="исследовательские-эссе" class="level3">
-      <h3>Исследовательские эссе</h3>
+      <section id="эссе-про-связь-интерфейсов-и-мышления"
+      class="level3">
+      <h3>Эссе про связь интерфейсов и мышления</h3>
       <ul>
       <li><a href="/no-second-brain" target="self">Вам не нужен «второй
       мозг»</a> — ~15 минут</li>
@@ -550,32 +540,63 @@ ul.task-list li input[type="checkbox"] {
       в систему письма</a> — ~20 минут</li>
       </ul>
       </section>
-      <section id="избранные-научные-публикации" class="level3">
-      <h3>Избранные научные публикации:</h3>
-      <ul>
-      <li>(2026) <a
+      <section id="некоторые-научные-публикации" class="level3">
+      <h3>Некоторые научные публикации:</h3>
+      <table>
+      <colgroup>
+      <col style="width: 21%" />
+      <col style="width: 43%" />
+      <col style="width: 34%" />
+      </colgroup>
+      <thead>
+      <tr>
+      <th>Год</th>
+      <th>Название</th>
+      <th>Журнал</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+      <td>2026</td>
+      <td><a
       href="https://socofpower.ranepa.ru/jour/article/view/430/377"
       target="_blank" rel="noopener noreferrer">Conflation of agency
-      models in francesco Guala’s social ontology sheds light on how
-      normativity of social institutions might have evolved</a>.
-      <em>Социология власти, 38 (2): 187-229</em></li>
-      <li>(2023) <a href="https://doi.org/10.1177/00483931221150486"
+      models in Francesco Guala’s social ontology sheds light on how
+      normativity of social institutions might have evolved</a></td>
+      <td>Социология власти, 38 (2): 187–229</td>
+      </tr>
+      <tr>
+      <td>2023</td>
+      <td><a href="https://doi.org/10.1177/00483931221150486"
       target="_blank" rel="noopener noreferrer">Coordination as
-      naturalistic social ontology: constraints and explanation</a></li>
-      <li>(2023) <a
-      href="https://doi.org/10.22394/2074-0492-2023-4-122-140"
+      naturalistic social ontology: constraints and explanation</a></td>
+      <td>Philosophy of the Social Sciences</td>
+      </tr>
+      <tr>
+      <td>2023</td>
+      <td><a href="https://doi.org/10.22394/2074-0492-2023-4-122-140"
       target="_blank" rel="noopener noreferrer">Вывод к наилучшему
-      объяснению как методология социальной онтологии</a></li>
-      <li>(2021) <a
+      объяснению как методология социальной онтологии</a></td>
+      <td>Социология власти, 4: 122–140</td>
+      </tr>
+      <tr>
+      <td>2021</td>
+      <td><a
       href="https://cyberleninka.ru/article/n/kvaziformalnoe-vzaimodeystvie-v-situatsii-uchebnogo-protsessa"
       target="_blank" rel="noopener noreferrer">Квази-формальное
-      взаимодействие в ситуации учебного процесса</a>. <em>Сибирские
-      исторические исследования</em></li>
-      <li>(2020) <a
+      взаимодействие в ситуации учебного процесса</a></td>
+      <td>Сибирские исторические исследования</td>
+      </tr>
+      <tr>
+      <td>2020</td>
+      <td><a
       href="https://drive.google.com/file/d/1O50JhPQR9CqKYfn-S2gEKue0L128-cZg/view?usp=sharing"
       target="_blank" rel="noopener noreferrer">Что не так с теорией
-      ассамбляжей</a>. <em>Логос, 30(5 (138)), 131-164</em>.</li>
-      </ul>
+      ассамбляжей</a></td>
+      <td>Логос, 30(5 (138)): 131–164</td>
+      </tr>
+      </tbody>
+      </table>
       <!-- - A Framework for More-than-human Placemaking with Data Storytelling ([2024](https://doi.org/10.14627/537752023)) -->
       <!-- <hr/> -->
       <!--• **Cognitive Basis of Focal Points: Evolution and Correlated Equilibr/ium Emergence** (**2021\)***. Logical and philosophical studies, 19(2), 131-135.*  -->
@@ -588,7 +609,7 @@ ul.task-list li input[type="checkbox"] {
       <p><strong><a
       href="mailto:valerii.s.shevchenko@gmail.com">Связаться</a></strong></p>
       </section>
-      </div>
+      </section>
     </article>
   </div>
   </body>

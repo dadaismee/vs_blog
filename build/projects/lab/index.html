@@ -292,11 +292,11 @@ ul.task-list li input[type="checkbox"] {
     }
 
     h1 {
-     margin: 30px 0px -10px;
+     margin: 30px 0px 0px;
     }
 
     h2,h3 {
-      margin-top: 30px;
+      margin-top: 40px;
       margin-bottom: 10px;
       text-align:left; 
       font-family: monospace;
@@ -501,48 +501,108 @@ ul.task-list li input[type="checkbox"] {
                       </div>
       <section id="годовой-отчёт-лаборатории" class="level1">
       <h1>Годовой отчёт лаборатории</h1>
-      <section id="задача" class="level2">
-      <h2>Задача</h2>
+      <style>
+      .lab-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0; }
+      .lab-grid.two { grid-template-columns: 1fr 1fr; }
+      @media (max-width: 700px) { .lab-grid, .lab-grid.two { grid-template-columns: 1fr; } }
+      .lab-card { background: #f5f5f5; border-left: 3px solid #00f; padding: 16px 20px; border-radius: 6px; }
+      .lab-card.center { text-align: center; border-left: none; }
+      .lab-card h3 { margin: 0 0 8px; font-size: 15px; }
+      .lab-card ul { margin: 0; padding-left: 20px; }
+      .lab-card li { margin-bottom: 6px; font-size: 14px; }
+      .lab-metric { font-size: 20px; font-weight: 600; color: #00f; }
+      .lab-label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; color: #666; }
+      .lab-tag { display: inline-block; background: #eef2ff; color: #00f; padding: 4px 10px; border-radius: 4px; font-size: 13px; margin: 0 4px 8px 0; }
+      .lab-cta { display: inline-block; padding: 12px 24px; background: #00f; color: white; text-decoration: none; border-radius: 6px; font-weight: 600; margin: 24px 8px 0 0; }
+      .lab-cta.secondary { background: transparent; color: #00f; border: 1px solid #00f; }
+      </style>
       <p>Научно-исследовательская лаборатория федерального вуза собирала
-      годовой отчёт вручную по три-четыре месяца каждый год.
-      Форматирование, вёрстка и вставка библиографии зависели от навыков
-      одного человека.</p>
-      </section>
-      <section id="решение" class="level2">
-      <h2>Решение</h2>
-      <p>Спроектировал и внедрил систему, где текст, картинки,
-      литературные ссылки и шаблоны оформления разделены, а итоговый
-      документ собирается автоматически:</p>
-      <figure>
+      годовой отчёт вручную по три месяца каждый год. Форматирование,
+      вёрстка и вставка библиографии зависели от навыков одного
+      человека.</p>
+      <p>Я спроектировал и внедрил систему, где текст, картинки, ссылки
+      на литературу и шаблоны оформления разделены, а итоговый документ
+      собирается автоматически.</p>
+      <div class="lab-grid">
+      <div class="lab-card center">
+      <div class="lab-metric">
+      3 мес → 3 дня
+      </div>
+      <div class="lab-label">
+      Время сборки отчёта
+      </div>
+      </div>
+      <div class="lab-card center">
+      <div class="lab-metric">
+      на 80% меньше ошибок
+      </div>
+      </div>
+      <div class="lab-card center">
+      <div class="lab-metric">
+      5 → 2 итерации
+      </div>
+      <div class="lab-label">
+      Правок после внедрения
+      </div>
+      </div>
+      </div>
+      <!-- | ❌ Было | ✅ Стало | -->
+      <!-- |---|---| -->
+      <!-- | Координатор вручную собирает, верстает и проверяет отчёт | Отчёт собирается автоматически из текстов авторов | -->
+      <!-- | Сборка 3 месяца | Сборка одной командой | -->
+      <!-- | Плавающее форматирование, потерянные ссылки | Zotero + BetterBibTeX → единая библиография | -->
+      <!-- | Правки до последнего дня перед сдачей | Pandoc собирает PDF по ГОСТу 7.32-2017 одной командой | -->
+      <!-- |  | Git — история изменений, никаких потерь | -->
+      <section id="демо-как-работает-автор" class="level2">
+      <h2>Демо: как работает автор</h2>
       <video src="/assets/lab.mp4" controls style="width:100%; max-width:720px;">
       </video>
-      </figure>
-      <ul>
-      <li>Подбор стека: <a href="https://obsidian.md" target="_blank"
-      rel="noopener noreferrer">Obsidian</a>, <a
-      href="https://zotero.org" target="_blank"
-      rel="noopener noreferrer">Zotero</a>, <a href="https://pandoc.org"
-      target="_blank" rel="noopener noreferrer">Pandoc</a></li>
-      <li>Дизайн процесса автоматической сборки разделов</li>
-      <li>Разработка CI/CD пайплайна в GitHub Actions</li>
-      <li>Проведение семинаров для обучения команды.</li>
-      </ul>
       </section>
-      <section id="результат" class="level2">
-      <h2>Результат</h2>
-      <ul>
-      <li>Команда пишет текст — готовый документ собирается сам</li>
-      <li>Библиография, оглавление и вёрстка по ГОСТ —
-      автоматически</li>
-      <li>Время сборки: с трёх месяцев ручной работы до 1 минуты
-      автоматической компиляции</li>
-      </ul>
-      <hr />
-      <p><strong>Похожая задача?</strong> Покажу на ваших данных за 30
-      минут: <strong><a
-      href="https://calendar.app.google/vZyjjXtrXN5Sb2JN8"
-      target="_blank" rel="noopener noreferrer">выбрать
-      время</a></strong></p>
+      <section id="как-это-меняет-работу" class="level2">
+      <h2>Как это меняет работу</h2>
+      <table>
+      <colgroup>
+      <col style="width: 33%" />
+      <col style="width: 33%" />
+      <col style="width: 33%" />
+      </colgroup>
+      <thead>
+      <tr>
+      <th></th>
+      <th>До: автор — верстальщик</th>
+      <th>После: автор — исследователь</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+      <td><strong>Подготовка</strong></td>
+      <td>Пишет в Word: оформляет заголовки, списки, таблицы</td>
+      <td>Пишет в Markdown, оформление автоматизировано</td>
+      </tr>
+      <tr>
+      <td><strong>Библиография</strong></td>
+      <td>Оформляет библиографию по ГОСТу вручную</td>
+      <td>Цитирует <code>[@citation_key]</code> — никакого
+      форматирования</td>
+      </tr>
+      <tr>
+      <td><strong>Оформление</strong></td>
+      <td>Сдаёт файл → координатор перепроверяет</td>
+      <td>Титульный, нумерация, ГОСТ-библиография — автоматически</td>
+      </tr>
+      <tr>
+      <td><strong>Правки</strong></td>
+      <td>Правки возвращаются 3–5 раз</td>
+      <td>Закончил писать → автоматически готов DOCX/PDF</td>
+      </tr>
+      </tbody>
+      </table>
+      <div style="display: flex;">
+      <p><a href="https://github.com/dadaismee/lab-demo" class="lab-cta secondary" target="_blank">Код
+      проекта на GitHub</a>
+      <a href="https://calendar.app.google/vZyjjXtrXN5Sb2JN8" target="_blank"class="lab-cta">Обсудить
+      пилот для вашей компании</a></p>
+      </div>
       </section>
       </section>
     </article>
