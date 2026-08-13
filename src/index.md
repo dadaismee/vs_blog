@@ -23,9 +23,9 @@
 
 
 ### Эссе про связь интерфейсов и мышления
-- <a href="/no-second-brain" target="self">Вам не нужен «второй мозг»</a> — ~15 минут
-- <a href="/symmetry" target="self">Симметрия чтения и письма</a> — ~20 минут
-- <a href="https://dadaismee.github.io/k.longread.writing-well-main/" target="self">Введение в систему письма</a> — ~20 минут
+- [Вам не нужен «второй мозг»](/no-second-brain) — ~15 минут
+- [Симметрия чтения и письма](/symmetry) — ~20 минут
+- [Введение в систему письма](https://dadaismee.github.io/k.longread.writing-well-main/){target="blank"} — ~20 минут
 
 
 ### Некоторые научные публикации:
