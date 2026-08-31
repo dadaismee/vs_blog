@@ -326,7 +326,6 @@ div.csl-indent {
 
     article figure img {
       border-radius: 7.5px;
-      border: 1px dashed blue;
       width: 85%;
 
       @media (max-width: 700px) {
@@ -393,18 +392,7 @@ div.csl-indent {
       width: 100%;
     }
 
-    .hypothesis {
-      position: fixed;
-      right: 60px;
-      top: 130px;
-      width: 175px;
-      font-size: 12px;
-      opacity: 0.5;
-
-      @media (max-width: 700px) {
-        display: none;
-      }
-    }
+    .hypothesis { display: none; }
 
     .epigraph {
       margin: 2em 4em;           /* vertical and horizontal margins */
@@ -504,24 +492,18 @@ div.csl-indent {
 
     .triple-map {
       position: fixed;
-      right: 60px;
-      top: 620px;
-      width: 460px;
-      height: calc(100vh - 680px);
+      left: 760px;
+      top: 130px;
+      width: 480px;
+      height: calc(100vh - 180px);
       min-height: 240px;
       overflow: visible;
       font-size: 12px;
       z-index: 20;
 
-      @media (max-width: 1000px) {
+      @media (max-width: 1400px) {
         display: none;
       }
-    }
-
-    .triple-map .tm-header {
-      text-align: center;
-      font-weight: bold;
-      padding: 8px;
     }
 
     .triple-map svg {
@@ -530,73 +512,35 @@ div.csl-indent {
       height: 100%;
     }
 
-    .triple-map .node {
-      cursor: pointer;
-    }
+    /* понятия, которые ещё «не открыты» скроллом — скрыты */
+    .triple-map .hidden { visibility: hidden; }
 
-    .triple-map .node circle.node-face {
-      fill: #cfe0ff;
+    .triple-map .node { cursor: pointer; }
+    .triple-map .node circle {
+      fill: #fff;
       stroke: #00f;
       stroke-width: 1.5;
-      transition: r 0.2s ease;
+      stroke-dasharray: 3 2;
     }
-
-    .triple-map .node circle.node-hit {
-      fill: transparent;
-      stroke: none;
-    }
-
     .triple-map .node text {
       font-family: monospace;
-      font-size: 9px;
-      fill: #000;
+      font-size: 11px;
+      fill: #111;
       pointer-events: none;
     }
 
-    .triple-map .node text.count {
-      font-size: 10px;
-      font-weight: bold;
-      fill: #00f;
-    }
-
-    .triple-map .node text.name {
-      font-size: 8px;
-      fill: #333;
-    }
-
-    .triple-map .link {
-      stroke: #999;
-      fill: none;
-      stroke-width: 1.5;
-    }
-
-    .triple-map .link-hit {
-      stroke: transparent;
-      fill: none;
-      stroke-width: 14;
-      cursor: pointer;
-    }
-
-    .triple-map .link.flag {
-      stroke: #e74c3c;
-      stroke-dasharray: 4 3;
-      stroke-width: 1.5;
-    }
+    .triple-map .link { stroke: #94a3b8; stroke-width: 1.5; fill: none; }
+    .triple-map .link.flag { stroke: #e74c3c; stroke-dasharray: 4 3; }
 
     .triple-map .link-label {
       font-family: monospace;
-      font-size: 8px;
-      fill: #00f;
+      font-size: 9px;
+      fill: #2563eb;
       pointer-events: none;
     }
+    .triple-map .link-label.flag { fill: #e74c3c; }
 
-    .triple-map .link-label.flag {
-      fill: #e74c3c;
-    }
-
-    .triple-map .link:hover { stroke: #000; stroke-width: 2.5; }
-
-    .triple-map .arrow { fill: #999; }
+    .triple-map .arrow { fill: #94a3b8; }
 
     .triple-map .tm-tooltip {
       position: fixed;
@@ -612,30 +556,21 @@ div.csl-indent {
       box-shadow: 0 2px 8px rgba(0,0,0,0.2);
       white-space: normal;
     }
-
-    .triple-map .tm-tooltip .tm-rel {
-      font-weight: bold;
-      color: #00f;
-      margin-bottom: 3px;
+    .triple-map .tm-tooltip .tm-rel { font-weight: bold; color: #00f; margin-bottom: 3px; }
+    .triple-map .tm-tooltip .tm-prov-label { font-size: 10px; color: #888; margin: 2px 0; }
+    .triple-map .tm-tooltip .tm-prov { font-style: italic; color: #333; margin: 2px 0; }
+    .triple-map .tm-tooltip .tm-flag { color: #e74c3c; margin-top: 4px; font-weight: bold; }
+    .triple-map .link, .triple-map .link-label, .triple-map .node { cursor: pointer; }
+    .tm-panel {
+      position: fixed; z-index: 40; max-width: 320px; min-width: 220px;
+      background: #fff; border: 1px solid #00f; border-radius: 8px;
+      padding: 8px 10px; font-size: 11px; line-height: 1.4;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.25);
     }
-
-    .triple-map .tm-tooltip .tm-prov-label {
-      font-size: 10px;
-      color: #888;
-      margin: 2px 0;
-    }
-
-    .triple-map .tm-tooltip .tm-prov {
-      font-style: italic;
-      color: #333;
-      margin: 2px 0;
-    }
-
-    .triple-map .tm-tooltip .tm-flag {
-      color: #e74c3c;
-      margin-top: 4px;
-      font-weight: bold;
-    }
+    .tm-panel .tm-panel-title { font-weight: bold; color: #00f; margin-bottom: 4px; }
+    .tm-panel .tm-panel-links { font-size: 10px; color: #888; margin: 4px 0 2px; }
+    .tm-panel .tm-panel-item, .tm-panel .tm-panel-link { cursor: pointer; color: #333; margin: 2px 0; }
+    .tm-panel .tm-panel-item:hover, .tm-panel .tm-panel-link:hover { color: #00f; text-decoration: underline; }
 
   </style>
 
@@ -661,288 +596,7 @@ div.csl-indent {
       <p>Чтобы прокомментировать любую фразу, выделите её и нажмите <i>Annotate</i></p>
       <img class="border" src="/assets/annotate.png" alt="Annotate" style="display: flex; justify-self: center; width: 75%;"/>
     </div>
-        <nav id="TOC" role="doc-toc">
-      <strong>Содержание</strong>
-      <ul>
-      <li><a
-      href="#chapter-1-the-problem-of-social-causality-and-critique-of-existing-approaches"
-      id="toc-chapter-1-the-problem-of-social-causality-and-critique-of-existing-approaches">Chapter
-      1: The Problem of Social Causality and Critique of Existing
-      Approaches</a>
-      <ul>
-      <li><a
-      href="#the-relevance-of-the-study-social-institutions-as-emergent-phenomena"
-      id="toc-the-relevance-of-the-study-social-institutions-as-emergent-phenomena">1.1.
-      The Relevance of the Study: Social Institutions as Emergent
-      Phenomena</a></li>
-      <li><a href="#the-classical-dichotomy-in-social-ontology"
-      id="toc-the-classical-dichotomy-in-social-ontology">1.2. The
-      Classical Dichotomy in Social Ontology</a></li>
-      <li><a
-      href="#gualas-rules-in-equilibrium-theory-a-unified-framework"
-      id="toc-gualas-rules-in-equilibrium-theory-a-unified-framework">1.3.
-      Guala’s Rules-in-Equilibrium Theory: A Unified Framework</a></li>
-      <li><a href="#the-core-problem-mixed-models-of-agency"
-      id="toc-the-core-problem-mixed-models-of-agency">1.4. The Core
-      Problem: Mixed Models of Agency</a></li>
-      <li><a
-      href="#insufficient-attention-to-the-evolution-of-correlation-devices"
-      id="toc-insufficient-attention-to-the-evolution-of-correlation-devices">1.5.
-      Insufficient Attention to the Evolution of Correlation
-      Devices</a></li>
-      <li><a href="#the-problem-of-externalism"
-      id="toc-the-problem-of-externalism">1.6. The Problem of
-      “Externalism”</a></li>
-      <li><a href="#formulating-the-research-problem"
-      id="toc-formulating-the-research-problem">1.7. Formulating the
-      Research Problem</a></li>
-      <li><a
-      href="#theoretical-framework-and-interdisciplinary-foundations"
-      id="toc-theoretical-framework-and-interdisciplinary-foundations">1.8.
-      Theoretical Framework and Interdisciplinary Foundations</a>
-      <ul>
-      <li><a href="#gualas-rules-in-equilibrium-theory"
-      id="toc-gualas-rules-in-equilibrium-theory">1.8.1. Guala’s
-      Rules-in-Equilibrium Theory</a></li>
-      <li><a href="#evolutionary-game-theory"
-      id="toc-evolutionary-game-theory">1.8.2. Evolutionary Game
-      Theory</a></li>
-      <li><a href="#philosophy-of-biology"
-      id="toc-philosophy-of-biology">1.8.3. Philosophy of
-      Biology</a></li>
-      <li><a href="#social-ontology-and-philosophy-of-social-science"
-      id="toc-social-ontology-and-philosophy-of-social-science">1.8.4.
-      Social Ontology and Philosophy of Social Science</a></li>
-      </ul></li>
-      <li><a href="#novelty-and-contribution"
-      id="toc-novelty-and-contribution">1.9. Novelty and
-      Contribution</a></li>
-      </ul></li>
-      <li><a
-      href="#chapter-2.-evolutionary-model-of-conditional-strategies"
-      id="toc-chapter-2.-evolutionary-model-of-conditional-strategies"><strong>Chapter
-      2.</strong> Evolutionary Model of Conditional Strategies</a>
-      <ul>
-      <li><a href="#introduction"
-      id="toc-introduction">Introduction</a></li>
-      <li><a href="#theoretical-framework"
-      id="toc-theoretical-framework">Theoretical Framework</a>
-      <ul>
-      <li><a href="#evolutionary-game-theory-foundations"
-      id="toc-evolutionary-game-theory-foundations">Evolutionary Game
-      Theory Foundations</a></li>
-      <li><a href="#correlated-equilibrium-and-conditional-strategies"
-      id="toc-correlated-equilibrium-and-conditional-strategies">Correlated
-      Equilibrium and Conditional Strategies</a></li>
-      <li><a href="#ontic-vs.-epistemic-correlation"
-      id="toc-ontic-vs.-epistemic-correlation">Ontic vs. Epistemic
-      Correlation</a></li>
-      </ul></li>
-      <li><a href="#the-evolutionary-model"
-      id="toc-the-evolutionary-model">The Evolutionary Model</a>
-      <ul>
-      <li><a href="#population-structure-and-interaction-patterns"
-      id="toc-population-structure-and-interaction-patterns">Population
-      Structure and Interaction Patterns</a></li>
-      <li><a href="#agent-cognitive-architectures"
-      id="toc-agent-cognitive-architectures">Agent Cognitive
-      Architectures</a></li>
-      <li><a href="#evolutionary-dynamics"
-      id="toc-evolutionary-dynamics">Evolutionary Dynamics</a></li>
-      <li><a href="#coordination-games"
-      id="toc-coordination-games">Coordination Games</a></li>
-      </ul></li>
-      <li><a href="#evolution-of-correlation-devices"
-      id="toc-evolution-of-correlation-devices">Evolution of Correlation
-      Devices</a>
-      <ul>
-      <li><a href="#phase-1-ontic-correlation"
-      id="toc-phase-1-ontic-correlation">Phase 1: Ontic
-      Correlation</a></li>
-      <li><a href="#phase-2-cognitive-niche-construction"
-      id="toc-phase-2-cognitive-niche-construction">Phase 2: Cognitive
-      Niche Construction</a></li>
-      <li><a href="#phase-3-epistemic-correlation"
-      id="toc-phase-3-epistemic-correlation">Phase 3: Epistemic
-      Correlation</a></li>
-      </ul></li>
-      <li><a href="#mathematical-analysis-of-evolutionary-transitions"
-      id="toc-mathematical-analysis-of-evolutionary-transitions">Mathematical
-      Analysis of Evolutionary Transitions</a>
-      <ul>
-      <li><a href="#stability-analysis"
-      id="toc-stability-analysis">Stability Analysis</a></li>
-      <li><a href="#simulation-results"
-      id="toc-simulation-results">Simulation Results</a></li>
-      </ul></li>
-      <li><a href="#implications-for-social-ontology"
-      id="toc-implications-for-social-ontology">Implications for Social
-      Ontology</a>
-      <ul>
-      <li><a href="#solving-gualas-theory-gap"
-      id="toc-solving-gualas-theory-gap">Solving Guala’s Theory
-      Gap</a></li>
-      <li><a href="#naturalistic-foundation-for-institutions"
-      id="toc-naturalistic-foundation-for-institutions">Naturalistic
-      Foundation for Institutions</a></li>
-      <li><a href="#bridge-between-animal-and-human-coordination"
-      id="toc-bridge-between-animal-and-human-coordination">Bridge
-      Between Animal and Human Coordination</a></li>
-      </ul></li>
-      <li><a href="#conclusion" id="toc-conclusion">Conclusion</a></li>
-      </ul></li>
-      <li><a
-      href="#chapter-3.-cognitive-evolution-and-niche-construction"
-      id="toc-chapter-3.-cognitive-evolution-and-niche-construction"><strong>Chapter
-      3.</strong> Cognitive Evolution and Niche Construction</a>
-      <ul>
-      <li><a href="#introduction-1"
-      id="toc-introduction-1">Introduction</a></li>
-      <li><a href="#theoretical-foundations"
-      id="toc-theoretical-foundations">Theoretical Foundations</a>
-      <ul>
-      <li><a href="#decoupled-representation-and-cognitive-evolution"
-      id="toc-decoupled-representation-and-cognitive-evolution">Decoupled
-      Representation and Cognitive Evolution</a></li>
-      <li><a href="#environmental-complexity-thesis"
-      id="toc-environmental-complexity-thesis">Environmental Complexity
-      Thesis</a></li>
-      <li><a href="#sterelnys-cognitive-niche-construction"
-      id="toc-sterelnys-cognitive-niche-construction">Sterelny’s
-      Cognitive Niche Construction</a></li>
-      </ul></li>
-      <li><a href="#mechanisms-of-cognitive-evolution"
-      id="toc-mechanisms-of-cognitive-evolution">Mechanisms of Cognitive
-      Evolution</a>
-      <ul>
-      <li><a href="#incremental-cognitive-enhancements"
-      id="toc-incremental-cognitive-enhancements">Incremental Cognitive
-      Enhancements</a></li>
-      </ul></li>
-      <li><a href="#niche-construction-processes"
-      id="toc-niche-construction-processes">Niche Construction
-      Processes</a>
-      <ul>
-      <li><a href="#informational-niche-construction"
-      id="toc-informational-niche-construction">Informational Niche
-      Construction</a></li>
-      <li><a href="#social-niche-construction"
-      id="toc-social-niche-construction">Social Niche
-      Construction</a></li>
-      </ul></li>
-      <li><a href="#co-evolutionary-dynamics"
-      id="toc-co-evolutionary-dynamics">Co-evolutionary Dynamics</a>
-      <ul>
-      <li><a href="#positive-feedback-loops"
-      id="toc-positive-feedback-loops">Positive Feedback Loops</a></li>
-      <li><a href="#multi-level-selection"
-      id="toc-multi-level-selection">Multi-level Selection</a></li>
-      </ul></li>
-      <li><a href="#integration-with-evolutionary-model"
-      id="toc-integration-with-evolutionary-model">Integration with
-      Evolutionary Model</a>
-      <ul>
-      <li><a href="#from-reactive-to-epistemic-strategies"
-      id="toc-from-reactive-to-epistemic-strategies">From Reactive to
-      Epistemic Strategies</a></li>
-      <li><a href="#evolutionary-pathways"
-      id="toc-evolutionary-pathways">Evolutionary Pathways</a></li>
-      </ul></li>
-      <li><a href="#empirical-support"
-      id="toc-empirical-support">Empirical Support</a>
-      <ul>
-      <li><a href="#comparative-cognition"
-      id="toc-comparative-cognition">Comparative Cognition</a></li>
-      <li><a href="#cognitive-archaeology"
-      id="toc-cognitive-archaeology">Cognitive Archaeology</a></li>
-      </ul></li>
-      <li><a href="#implications-for-social-ontology-1"
-      id="toc-implications-for-social-ontology-1">Implications for
-      Social Ontology</a>
-      <ul>
-      <li><a href="#naturalistic-foundation-for-rules"
-      id="toc-naturalistic-foundation-for-rules">Naturalistic Foundation
-      for Rules</a></li>
-      <li><a href="#institutional-ontology-revisited"
-      id="toc-institutional-ontology-revisited">Institutional Ontology
-      Revisited</a></li>
-      </ul></li>
-      <li><a href="#conclusion-1"
-      id="toc-conclusion-1">Conclusion</a></li>
-      </ul></li>
-      <li><a
-      href="#chapter-4.-philosophical-implications-for-social-ontology"
-      id="toc-chapter-4.-philosophical-implications-for-social-ontology"><strong>Chapter
-      4.</strong> Philosophical Implications for Social Ontology</a>
-      <ul>
-      <li><a href="#introduction-2"
-      id="toc-introduction-2">Introduction</a></li>
-      <li><a href="#naturalistic-social-ontology"
-      id="toc-naturalistic-social-ontology">Naturalistic Social
-      Ontology</a>
-      <ul>
-      <li><a href="#institutions-as-natural-kinds"
-      id="toc-institutions-as-natural-kinds">Institutions as Natural
-      Kinds</a></li>
-      <li><a href="#ontological-status-of-institutional-rules"
-      id="toc-ontological-status-of-institutional-rules">Ontological
-      Status of Institutional Rules</a></li>
-      </ul></li>
-      <li><a href="#resolution-of-traditional-problems"
-      id="toc-resolution-of-traditional-problems">Resolution of
-      Traditional Problems</a>
-      <ul>
-      <li><a href="#the-problem-of-ontic-reference"
-      id="toc-the-problem-of-ontic-reference">The Problem of Ontic
-      Reference</a></li>
-      <li><a href="#the-problem-of-social-causation"
-      id="toc-the-problem-of-social-causation">The Problem of Social
-      Causation</a></li>
-      <li><a href="#the-problem-of-normative-explanation"
-      id="toc-the-problem-of-normative-explanation">The Problem of
-      Normative Explanation</a></li>
-      </ul></li>
-      <li><a href="#implications-for-philosophy-of-social-science"
-      id="toc-implications-for-philosophy-of-social-science">Implications
-      for Philosophy of Social Science</a>
-      <ul>
-      <li><a href="#methodological-naturalism"
-      id="toc-methodological-naturalism">Methodological
-      Naturalism</a></li>
-      <li><a href="#scientific-status-of-social-ontology"
-      id="toc-scientific-status-of-social-ontology">Scientific Status of
-      Social Ontology</a></li>
-      </ul></li>
-      <li><a href="#challenges-and-limitations"
-      id="toc-challenges-and-limitations">Challenges and Limitations</a>
-      <ul>
-      <li><a href="#remaining-philosophical-questions"
-      id="toc-remaining-philosophical-questions">Remaining Philosophical
-      Questions</a></li>
-      <li><a href="#empirical-challenges"
-      id="toc-empirical-challenges">Empirical Challenges</a></li>
-      <li><a href="#future-research-directions"
-      id="toc-future-research-directions">Future Research
-      Directions</a></li>
-      </ul></li>
-      <li><a href="#conclusion-2" id="toc-conclusion-2">Conclusion</a>
-      <ul>
-      <li><a href="#resolution-of-traditional-problems-1"
-      id="toc-resolution-of-traditional-problems-1">Resolution of
-      Traditional Problems</a></li>
-      <li><a href="#naturalistic-social-ontology-1"
-      id="toc-naturalistic-social-ontology-1">Naturalistic Social
-      Ontology</a></li>
-      <li><a href="#methodological-implications"
-      id="toc-methodological-implications">Methodological
-      Implications</a></li>
-      <li><a href="#philosophical-position"
-      id="toc-philosophical-position">Philosophical Position</a></li>
-      </ul></li>
-      </ul></li>
-      </ul>
-    </nav>
-          <article>
+      <article>
       <div style="display: flex; flex-direction: column; gap: 0px; margin-top: 20px;">
                                       </div>
       <section
@@ -3244,325 +2898,10 @@ div.csl-indent {
   </div>
 
   <div id="triple-map" class="triple-map">
-    <div class="tm-header">Propositional map</div>
     <svg preserveAspectRatio="xMidYMid meet"></svg>
   </div>
 
-  <script>
-  (function(){
-    var article = document.querySelector("article");
-    if (!article) return;
-
-    function provenanceOf(code, pre){
-      if (pre) {
-        var p = pre.previousElementSibling;
-        while (p && p.tagName !== "P") p = p.previousElementSibling;
-        if (p) return p.textContent.replace(/\s+/g, " ").trim();
-        return pre.textContent.replace(/\s+/g," ").trim();
-      }
-      var p = code.closest("p");
-      if (p) return p.textContent.replace(/\s+/g, " ").trim();
-      return code.textContent.trim();
-    }
-
-    // controlled relation vocabulary + synonym normalization, mirroring cg (contextual-graph-v2)
-    var RELATION_SYNONYMS = {
-      "is_a":"is_a","is a":"is_a","are":"is_a","is":"is_a",
-      "part_of":"part_of","part of":"part_of","component_of":"part_of",
-      "has_attribute":"has_attribute","has":"has_attribute","has_property":"has_attribute",
-      "requires":"requires","needs":"requires","depends_on":"requires",
-      "cause_of":"cause_of","causes":"cause_of","leads_to":"cause_of","results_in":"cause_of",
-      "enables":"enables","allows":"enables","makes_possible":"enables",
-      "contrasts_with":"contrasts_with","contrasts":"contrasts_with","opposes":"contrasts_with",
-      "analogous_to":"analogous_to","analogous":"analogous_to","similar_to":"analogous_to",
-      "fuses_with":"fuses_with","fuses":"fuses_with","merges_with":"fuses_with",
-      "synthesizes":"synthesizes","combines":"synthesizes","integrates":"synthesizes",
-      "references":"references","refers_to":"references","cites":"references",
-      "asserts":"asserts","claims":"asserts","argues":"asserts","states":"asserts",
-      "evolves_to":"evolves_to","evolves":"evolves_to","develops_into":"evolves_to",
-      "conflicts_with":"conflicts_with","conflicts":"conflicts_with",
-      "represents":"represents","represent":"represents","map":"represents","maps":"represents",
-      "maps_to":"represents","encode":"represents","encodes":"represents","embody":"represents",
-      "embodies":"represents",
-      // author's own additions to the controlled vocabulary (extend here, like ~/.config/cg/verb-map.json):
-      // "is-an-a-priori-form-of": "is_a",
-      // "is-refuted-by": "conflicts_with"
-    };
-    var CANONICAL_RELATIONS = {};
-    Object.keys(RELATION_SYNONYMS).forEach(function(k){ CANONICAL_RELATIONS[RELATION_SYNONYMS[k]] = true; });
-    function normalizeRelation(rel){
-      var key = rel.toLowerCase().trim().replace(/\s+/g, "_");
-      return RELATION_SYNONYMS[key] || rel;
-    }
-
-    function parseTripleText(t){
-      // prefer pipe separator, else comma; allow 3 or 4 fields
-      var parts;
-      if (t.indexOf("|") !== -1) parts = t.split("|");
-      else parts = t.split(",");
-      parts = parts.map(function(s){ return s.trim(); }).filter(function(s){ return s !== ""; });
-      if (parts.length < 3) return null;
-      // skip format templates like [subject, typed relation, object, domain]
-      var literal = ["subject","typed relation","relation","object","domain"];
-      if (literal.indexOf(parts[0].toLowerCase()) !== -1) return null;
-      var rel = normalizeRelation(parts[1]);
-      return { subject: parts[0], relation: rel, original: parts[1], object: parts[2],
-               domain: parts[3] || "", canonical: !!CANONICAL_RELATIONS[rel] };
-    }
-
-    function extractTriples(){
-      var triples = [];
-      var codes = article.querySelectorAll("code");
-      codes.forEach(function(code){
-        var text = code.textContent;
-        var pre = code.closest("pre");
-
-        if (pre) {
-          text.split("\n").forEach(function(line){
-            var m = line.match(/\[([^\]]*)\]/);
-            if (!m) return;
-            var tr = parseTripleText(m[1]);
-            if (tr) { tr.provenance = provenanceOf(code, pre); triples.push(tr); }
-          });
-        } else {
-          var m = text.match(/\[([^\]]*)\]/);
-          if (!m) return;
-          var tr = parseTripleText(m[1]);
-          if (tr) { tr.provenance = provenanceOf(code, pre); triples.push(tr); }
-        }
-      });
-      return triples;
-    }
-
-    function buildGraph(triples){
-      var nodeIndex = {};
-      var nodes = [];
-      var key = function(name){ return name.toLowerCase(); };
-      function getNode(name){
-        var k = key(name);
-        if (!nodeIndex[k]) { nodeIndex[k] = { name: name, mentions: 0, prov: [] }; nodes.push(nodeIndex[k]); }
-        return nodeIndex[k];
-      }
-      var links = [];
-      triples.forEach(function(tr){
-        var s = getNode(tr.subject);
-        var o = getNode(tr.object);
-        s.mentions++; o.mentions++;
-        s.prov.push(tr.provenance); o.prov.push(tr.provenance);
-        links.push({ s: s, o: o, relation: tr.relation, original: tr.original,
-                     canonical: tr.canonical, domain: tr.domain, provenance: tr.provenance });
-      });
-      nodes.forEach(function(n){
-        n.prov = n.prov.filter(function(v,i,arr){ return arr.indexOf(v)===i; });
-      });
-      return { nodes: nodes, links: links };
-    }
-
-    // ---- minimal force layout ----
-    function layout(graph, W, H){
-      var nodes = graph.nodes;
-      var links = graph.links;
-      nodes.forEach(function(n){
-        n.x = W/2 + (Math.random()-0.5)*100;
-        n.y = H/2 + (Math.random()-0.5)*100;
-        n.vx = 0; n.vy = 0;
-      });
-      var maxMentions = 1;
-      nodes.forEach(function(n){ if (n.mentions > maxMentions) maxMentions = n.mentions; });
-      nodes.forEach(function(n){ n.r = 9 + (n.mentions-1) * 2; });
-
-      var pairMap = {};
-      links.forEach(function(l){
-        var a = l.s, b = l.o;
-        var id = (a===b) ? "self-"+nodes.indexOf(a) : [nodes.indexOf(a),nodes.indexOf(b)].sort().join("-");
-        if (!pairMap[id]) pairMap[id] = { a:a, b:b };
-      });
-
-      for (var iter=0; iter<300; iter++){
-        // repulsion
-        for (var i=0;i<nodes.length;i++){
-          for (var j=i+1;j<nodes.length;j++){
-            var a=nodes[i], b=nodes[j];
-            var dx = a.x-b.x, dy=a.y-b.y;
-            var d = Math.sqrt(dx*dx+dy*dy) || 1;
-            var f = 3000/(d*d);
-            dx/=d; dy/=d;
-            a.vx += dx*f; a.vy += dy*f;
-            b.vx -= dx*f; b.vy -= dy*f;
-          }
-        }
-        // springs
-        links.forEach(function(l){
-          var dx=l.o.x-l.s.x, dy=l.o.y-l.s.y;
-          var d=Math.sqrt(dx*dx+dy*dy)||1;
-          var f=(d-70)*0.02;
-          dx/=d; dy/=d;
-          l.s.vx+=dx*f; l.s.vy+=dy*f;
-          l.o.vx-=dx*f; l.o.vy-=dy*f;
-        });
-        // center
-        nodes.forEach(function(n){
-          n.vx+=(W/2-n.x)*0.005;
-          n.vy+=(H/2-n.y)*0.005;
-        });
-        // integrate
-        nodes.forEach(function(n){
-          n.x+=n.vx; n.y+=n.vy;
-          n.vx*=0.85; n.vy*=0.85;
-          if(n.x<n.r)n.x=n.r; if(n.x>W-n.r)n.x=W-n.r;
-          if(n.y<n.r)n.y=n.r; if(n.y>H-n.r)n.y=H-n.r;
-        });
-      }
-      return { pairMap: pairMap };
-    }
-
-    function render(mapEl, graph){
-      var svg = mapEl.querySelector("svg");
-      while (svg.firstChild) svg.removeChild(svg.firstChild);
-      var W = (svg.clientWidth || 460);
-      var H = (svg.clientHeight || 360);
-      svg.setAttribute("viewBox", "0 0 " + W + " " + H);
-      var NS="http://www.w3.org/2000/svg";
-      var lr = layout(graph, W, H);
-      var px = function(s){ var e=document.createElementNS(NS,s); return e; };
-
-      var defs=px("defs");
-      var mk=px("marker"); mk.setAttribute("id","tm-arrow"); mk.setAttribute("viewBox","0 0 10 10");
-      mk.setAttribute("refX","9"); mk.setAttribute("refY","5"); mk.setAttribute("markerWidth","5");
-      mk.setAttribute("markerHeight","5"); mk.setAttribute("orient","auto-start-reverse");
-      var mp=px("path"); mp.setAttribute("d","M0,0 L10,5 L0,10 z"); mp.setAttribute("class","arrow");
-      mk.appendChild(mp); defs.appendChild(mk); svg.appendChild(defs);
-
-      Object.keys(lr.pairMap).forEach(function(id){
-        var pm=lr.pairMap[id];
-        var related = graph.links.filter(function(l){ return (l.s===pm.a&&l.o===pm.b)||(l.s===pm.b&&l.o===pm.a); });
-        var label = related.map(function(l){ return l.canonical ? l.relation : l.original + " ⚠"; })
-                          .filter(function(v,i,arr){ return arr.indexOf(v)===i; }).join(", ");
-        var flagged = related.some(function(l){ return !l.canonical; });
-        var prov = related.filter(function(l){ return l.provenance; }).map(function(l){ return l.provenance; })[0] || "";
-        var flags = related.filter(function(l){ return !l.canonical; })
-                           .map(function(l){ return '"' + l.original + '" is not in the relation dictionary — reformulate (→ ' + l.relation + '?)'; });
-
-        var tdata = { relation: label, provenance: prov, flags: flags };
-
-        // fat invisible hit-area so the thin line is easy to hover
-        var hit=px("line");
-        hit.setAttribute("class","link-hit");
-        hit.setAttribute("x1",pm.a.x); hit.setAttribute("y1",pm.a.y);
-        hit.setAttribute("x2",pm.b.x); hit.setAttribute("y2",pm.b.y);
-        if (pm.a===pm.b) { hit.setAttribute("display","none"); }
-        hit.__data = tdata;
-        hit.addEventListener("mousemove", function(e){ showTooltip(e, tdata); });
-        hit.addEventListener("mouseleave", hideTooltip);
-        svg.appendChild(hit);
-
-        var line=px("line");
-        line.setAttribute("class", flagged ? "link flag" : "link");
-        line.setAttribute("x1",pm.a.x); line.setAttribute("y1",pm.a.y);
-        line.setAttribute("x2",pm.b.x); line.setAttribute("y2",pm.b.y);
-        line.setAttribute("marker-end","url(#tm-arrow)");
-        if (pm.a===pm.b) { line.setAttribute("display","none"); }
-        line.__data = tdata;
-        line.addEventListener("mousemove", function(e){ showTooltip(e, tdata); });
-        line.addEventListener("mouseleave", hideTooltip);
-        svg.appendChild(line);
-
-        var mid={ x:(pm.a.x+pm.b.x)/2, y:(pm.a.y+pm.b.y)/2 };
-        var tl=px("text");
-        tl.setAttribute("class", flagged ? "link-label flag" : "link-label");
-        tl.setAttribute("x",mid.x); tl.setAttribute("y",mid.y-2);
-        tl.setAttribute("text-anchor","middle");
-        tl.textContent = label;
-        svg.appendChild(tl);
-      });
-
-      graph.nodes.forEach(function(n){
-        var g=px("g"); g.setAttribute("class","node");
-        g.setAttribute("transform","translate("+n.x+","+n.y+")");
-        var hit=px("circle"); hit.setAttribute("class","node-hit"); hit.setAttribute("r",n.r+8);
-        g.appendChild(hit);
-        var c=px("circle"); c.setAttribute("class","node-face"); c.setAttribute("r",n.r);
-        g.appendChild(c);
-        var cnt=px("text"); cnt.setAttribute("class","count"); cnt.setAttribute("dy","0.35em");
-        cnt.setAttribute("text-anchor","middle"); cnt.textContent = n.mentions;
-        g.appendChild(cnt);
-        var t=px("text"); t.setAttribute("class","name"); t.setAttribute("y",n.r+13); t.setAttribute("text-anchor","middle"); t.textContent=n.name;
-        g.appendChild(t);
-        g.__data = { relation: n.name, provenance: n.prov.join(" | "), flags: [] };
-        g.addEventListener("mouseenter", function(ev){
-          c.setAttribute("r", n.r+3);
-          showTooltip(ev, g.__data);
-        });
-        g.addEventListener("mousemove", function(ev){ showTooltip(ev, g.__data); });
-        g.addEventListener("mouseleave", function(){ c.setAttribute("r", n.r); hideTooltip(); });
-        svg.appendChild(g);
-      });
-    }
-
-    var tooltip = null;
-    function showTooltip(e, data){
-      if (!tooltip) {
-        tooltip = document.createElement("div");
-        tooltip.className = "tm-tooltip";
-        document.body.appendChild(tooltip);
-      }
-      var flags = (data.flags || []).map(function(f){
-        return '<div class="tm-flag">⚠ ' + f + '</div>';
-      }).join("");
-      var prov = (data.provenance || "").split("|").map(function(s){
-        return '<div class="tm-prov">' + s.trim() + '</div>';
-      }).join("");
-      tooltip.innerHTML = '<div class="tm-rel">' + data.relation + '</div>' +
-        (data.provenance ? '<div class="tm-prov-label">in the text:</div>' + prov : "") + flags;
-      tooltip.style.left = (e.clientX + 14 < window.innerWidth - 280 ? e.clientX + 14 : e.clientX - tooltip.offsetWidth - 14) + "px";
-      tooltip.style.top  = (e.clientY + 12) + "px";
-      tooltip.style.display = "block";
-    }
-    function hideTooltip(){
-      if (tooltip) tooltip.style.display = "none";
-    }
-
-    function triplesSignature(triples){
-      return triples.map(function(t){ return t.subject + "|" + t.relation + "|" + t.object + "|" + t.domain; }).sort().join("\n");
-    }
-
-    var mapEl = document.getElementById("triple-map");
-    var lastSig = null;
-    function refresh(force){
-      if (!mapEl) return;
-      var triples = extractTriples();
-      var sig = triplesSignature(triples);
-      if (sig === lastSig && !force) return;
-      lastSig = sig;
-      if (triples.length) {
-        render(mapEl, buildGraph(triples));
-      } else if (mapEl.parentNode) {
-        mapEl.parentNode.removeChild(mapEl);
-        mapEl = null;
-      }
-    }
-
-    function scheduleRefresh(){
-      var t = null;
-      return function(){ if (t) clearTimeout(t); t = setTimeout(refresh, 150); };
-    }
-    var onScroll = scheduleRefresh();
-
-    function init(){
-      refresh();
-      // pick up new triples as the text scrolls/loads
-      document.addEventListener("scroll", onScroll, true);
-      window.addEventListener("resize", function(){ refresh(true); });
-      if (typeof MutationObserver !== "undefined") {
-        var mo = new MutationObserver(onScroll);
-        if (article) mo.observe(article, { childList: true, subtree: true, characterData: true });
-      }
-    }
-
-    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
-    else init();
-  })();
-  </script>
+  <script src="/assets/propositional-map.js" defer></script>
 
   </body>
 </html>

@@ -391,7 +391,6 @@ div.csl-indent {
 
     article figure img {
       border-radius: 7.5px;
-      border: 1px dashed blue;
       width: 85%;
 
       @media (max-width: 700px) {
@@ -689,6 +688,16 @@ div.csl-indent {
       <code>[subject, typed relation, object, domain]</code>, render
       those beside the text, and let them dynamically assemble into a
       structural map of the text which you can change on the fly.</p>
+      <p>Let me be clear about what this essay is and is not. I am not
+      claiming that a propositional map <em>proves</em> to improve
+      comprehension — that is an empirical question, not an article of
+      faith. The building blocks here are not new: propositions, maps
+      and external representations all have long pedigrees. What I am
+      proposing is a particular recombination of them — a portable,
+      editable, co-produced convention that treats reading and writing
+      symmetrically, on the simplest possible stack. I will argue that
+      this combination is worth building, and I will sketch one way it
+      might be tested. Whether it holds up is another matter.</p>
       </section>
       <section id="text-as-a-low-bandwidth-interface-to-ideas"
       class="level2">
@@ -760,6 +769,11 @@ div.csl-indent {
       id="fnref1" role="doc-noteref"><sup>1</sup></a>. And it demands
       either inhumane amounts of attention and memory or a less “lossy”
       conversion between structured ideas and text.</p>
+      <p>A proposition — that something is related to something — is the
+      simplest unit of structured meaning. Embeddings capture
+      statistical proximity; propositions capture explicit relations
+      that can be inspected and edited by a human. That is the
+      representation we need.</p>
       <p>What an idea space can consist of and how to make it tractable
       to augment sense-making in reading and writing? And what if,
       instead of carrying it in my head, I could <em>look at it</em> and
@@ -776,11 +790,19 @@ div.csl-indent {
       triple<a href="#fn2" class="footnote-ref" id="fnref2"
       role="doc-noteref"><sup>2</sup></a>:</p>
       <pre><code>[subject, relation, object].</code></pre>
+      <p>Why triples and not, say, concept maps (Novak), mind maps, or
+      free-form knowledge graphs? Because a triple is the minimal unit
+      of propositional meaning — you cannot compress further without
+      losing the relation. Concept maps add visual hierarchy but keep
+      the same atomic structure underneath. The choice of triples over
+      richer graphs is deliberate: simplicity enables hand-annotation
+      and LLM extraction at scale, and makes the structure portable
+      across texts and domains.</p>
       <p>We, as readers or writers, not only rebuild that structure for
       each sentence in our heads but compare and arrange concepts to
       arrive at higher-order entities like arguments and logical
       lacunae. And it is precisely this reconstruction that costs
-      working memory. For example, in this parapgraph I have assumed
+      working memory. For example, in this paragraph I have assumed
       that:</p>
       <pre><code>[reading, requires, mental_text_structure]
 [arranging_concepts, creates, argument]
@@ -788,10 +810,10 @@ div.csl-indent {
 [mental_text_structure, requires, working_memory].</code></pre>
       <p>It can be represented as a map:</p>
       <figure>
-      <img src="assets/graph.png" alt="Last parapgraph map" />
-      <figcaption aria-hidden="true">Last parapgraph map</figcaption>
+      <img src="assets/graph.png" alt="Last paragraph map" />
+      <figcaption aria-hidden="true">Last paragraph map</figcaption>
       </figure>
-      <!-- [? typed relations in propositions enforce clearer thinking + unversality across domains] -->
+      <!-- [? typed relations in propositions enforce clearer thinking + universality across domains] -->
       <p>What makes triples do useful work is constrained yet extensible
       dictionary of <em>typed</em> relations, so that we distinguish
       “causes” from “depends_on” from “contradicts”. Typed relations
@@ -804,8 +826,12 @@ div.csl-indent {
       region of discourse where the triple <em>makes sense</em>.
       Epistemology, economics, cognitive science and pragmatics are
       possible examples. This allows triples from different fields to be
-      told apart and recombined. Our previous triples become
-      quadruples:</p>
+      told apart and recombined. Without domains,
+      <code>reading — requires — working_memory</code> and
+      <code>climate_change — requires — CO2</code> look structurally
+      identical; domains flag that they belong to different
+      conversations and cannot be transitively linked. Our previous
+      triples become quadruples:</p>
       <pre><code>[reading, requires, mental_text_structure, cognitive_science]
 [arranging_concepts, creates, argument, semantics]
 [argument, is_a, higher_order_entity, semantics]
@@ -821,8 +847,8 @@ div.csl-indent {
       valuable things. First, you can search for concepts and
       relations:</p>
       <figure>
-      <img src="" alt="gif with searching cg" />
-      <figcaption aria-hidden="true">gif with searching cg</figcaption>
+      <img src="assets/cg.png" alt="Searching propositions" />
+      <figcaption aria-hidden="true">Searching propositions</figcaption>
       </figure>
       <p>Second, you can compute over ontology — find transitive
       closures and lacunae which could bring cross-domain insights and
@@ -834,11 +860,12 @@ div.csl-indent {
       <p>which means that
       <code>deeper_domain_knowledge —— requires —» simple_building_blocks</code>.
       And it by itself inspires new ideas and angles. Moreover, another
-      closure on our present graph is that <code>reading</code> requires
-      <code>working_memory</code>. Although this seems obvious, it makes
-      claims explorable: “why does reading require working memory?
-      Because reading requires a mental representation of text’s
-      structure”. Claims become inspectable.</p>
+      closure on our present graph is that
+      <code>[reading, requires, working_memory]</code>. Although this
+      seems obvious, it makes claims explorable: “why does reading
+      require working memory? Because reading requires a mental
+      representation of text’s structure”. Claims become more
+      inspectable.</p>
       </section>
       <section id="writing-baking-idea-structure-into-dynamic-media"
       class="level2">
@@ -856,16 +883,11 @@ div.csl-indent {
       out quadruples <code>[subject, relation, object, domain]</code>.
       They dynamically assemble into a structural map of the text that I
       am working on. Of course, manually extracting propositions from
-      prose is a lot of inhumane work, so I use local LLM as an aid:</p>
-      <figure>
-      <img src="" alt="gif with ollama extraction" />
-      <figcaption aria-hidden="true">gif with ollama
-      extraction</figcaption>
-      </figure>
+      prose is a lot of inhumane work, so I use local LLM as an aid.</p>
       <p>You can add yet another level of structure by introducing
       <em>types of propositions</em>: thesis, claim, example,
       counterargument, etc. Add them as comments to parse later and
-      inspect whether you thesis is supported by claims.</p>
+      inspect whether your thesis is supported by claims.</p>
       <!-- [? text structure map gives re-representation needed for sense-making — CLAIM] -->
       <p>Why is all this valuable for writing? Because the hardest part
       of writing is <em>holding the argument in your head</em> — the
@@ -884,23 +906,40 @@ div.csl-indent {
       <section id="reading-malleable-maps-with-llm-powered-parsers"
       class="level2">
       <h2>Reading: malleable maps with LLM-powered parsers</h2>
-      <p>The same construction works with reading, as well. As you read
-      a digital text — a chapter, an article, a book — an LLM-powered
-      parser runs over it and extracts the entity-relation structure,
-      producing the same triples an author might have written. The
-      output is a first draft of the text’s map. You, the reader, then
-      <em>edit the parsed relationships</em>: you confirm what you
-      consider true, flag what you doubt, merge an entity that the
-      parser split, re-type a relation you think is better described as
-      “assumes” than “proves”. You assemble your own map of the text
+      <p>The same construction works with reading, as well. This is the
+      mirror of writing — same cognitive load, same encoding problem,
+      different direction. When you write, you compress ideas into text.
+      When you read, you unpack text back into ideas. The bottleneck is
+      the same: working memory reconstructing ontological structure on
+      the fly.</p>
+      <p>As you read a digital text — a chapter, an article, a book — an
+      LLM-powered parser runs over it and extracts the entity-relation
+      structure, producing the same triples an author might have
+      written. The output is a first draft of the text’s map. You, the
+      reader, then <em>edit the parsed relationships</em>: you confirm
+      what you consider true, flag what you doubt, merge an entity that
+      the parser split, re-type a relation you think is better described
+      as “assumes” than “proves”. You assemble your own map of the text
       while reading it — but you start from a scaffold instead of a
       blank page.</p>
+      <p>What does this look like in practice? Say you are reading a
+      paper on cognitive load theory. The parser extracts:</p>
+      <pre><code>[working_memory, limits, comprehension, cognitive_science]
+[intrinsic_load, competes_with, germane_load, cognitive_science]
+[germane_load, enables, schema_building, cognitive_science].</code></pre>
+      <p>You read on and find that the paper <em>assumes</em> working
+      memory capacity is fixed across tasks — but your own experience
+      suggests it varies. You change the relation:</p>
+      <pre><code>[working_memory, has_attribute, capacity, cognitive_science]
+[capacity, has_attribute, fixed_volume, cognitive_science]  ← flagged: assumption</code></pre>
+      <p>The map now shows a gap: a claim rests on an unstated
+      assumption. This is what a propositional map makes visible that
+      passive reading does not.</p>
       <figure>
-      <video width="100%" src controls>
-      </video>
-      <figcaption>
-      A prototype of a RAG over PDF with a proposition parser
-      </figcaption>
+      <img src="assets/rag.png"
+      alt="A prototype of a RAG over PDF with a proposition parser" />
+      <figcaption aria-hidden="true">A prototype of a RAG over PDF with
+      a proposition parser</figcaption>
       </figure>
       <p>This is the reading side of the cognitive symmetry. When you
       read, you unpack the author’s propositions and link them to your
@@ -916,7 +955,24 @@ div.csl-indent {
       asserted but never argued. Noticing those gaps is precisely what
       generates new ideas — new questions, new links, new relations to
       investigate. The map does not replace thinking, but gives thinking
-      (yet another) working surface.</p>
+      (yet another) working surface. External representations do not
+      merely save memory — they enable kinds of thinking that are
+      impossible without them (Kirsh, 2010).</p>
+      <p>If all this is to be more than a pleasant intuition, it has to
+      be testable. Here is one way, in the spirit of humane, measurable
+      design: take two groups of comparable readers and the same
+      moderately difficult essay. One group reads it as plain text; the
+      other reads it with the editable map alongside. Give both the same
+      comprehension test — not just “what was the thesis”, but questions
+      that require assembling relations across paragraphs, and detecting
+      an unstated assumption. Time them, count errors. If the map earns
+      its keep, the second group should hold more of the argument in
+      view and notice more gaps, without taking meaningfully longer. The
+      hypothesis is that a map moves part of the load from working
+      memory to the page. A version for writing is harder to design but
+      not impossible: compare the structural soundness of arguments
+      drafted to a visible skeleton versus a blank page, judged
+      blind.</p>
       </section>
       <section id="why-not-just-build-explorable-explanations"
       class="level2">
@@ -937,11 +993,11 @@ div.csl-indent {
       implemented as an interactive engine: a physics essay needs a
       physics engine, an economics essay needs a model of money, a
       statistics essay needs a random number generator.</p>
-      <figure>
-      <img src="" alt="image of distill page with articles" />
-      <figcaption aria-hidden="true">image of distill page with
-      articles</figcaption>
-      </figure>
+      <p><a
+      href="https://distill.pub/2020/communicating-with-interactive-articles/"
+      target="_blank" rel="noopener noreferrer"><img
+      src="assets/explorables.png"
+      alt="image of distill page with articles" /></a></p>
       <p>The author must design an interactive substrate particular to
       one piece of content which is deemed <em>incommensurable</em> with
       other domains. And if one “explorable” does excellent job in
@@ -980,7 +1036,7 @@ div.csl-indent {
       <em>is</em> the act of formulating the thought. You cannot
       annotate a sentence you have not understood. The tool forces the
       very skill that reading and writing both depend on.</p>
-      <p>For reading, the same extraction script can be pointed at a any
+      <p>For reading, the same extraction script can be pointed at any
       other text, with an LLM-parsing in place. A simple plugin for a
       reading environment like <a href="https://www.zotero.org"
       target="_blank" rel="noopener noreferrer">Zotero</a> could take
@@ -989,28 +1045,26 @@ div.csl-indent {
       map that persists across texts. This is not hypothetical
       architecture — it is a thin layer of glue around tools that
       already exist.</p>
-      <p>ОСТАНОВИЛСЯ ЗДЕСЬ</p>
       </section>
       <section id="conclusion" class="level2">
       <h2>Conclusion</h2>
       <p>Ideas have propositional structure, but texts hide it behind a
       linear facade. Working memory is the bottleneck that makes
       reconstructing that structure — in reading and in writing —
-      costly. My proposal is to make it visible with a propositions from
-      concepts and relations dynamically assembled into an editable map.
-      A major point is twofold. First, to use a general enough
-      convention transferable across domains and texts like the
-      proposition quadruples with typed relations proposed above.
-      Second, to make to easy enough to be accessible to non-technical
+      costly. So I propose to make it visible: propositions from
+      concepts and relations, dynamically assembled into an editable
+      map. Two things make this work at scale. First, a convention
+      general enough to transfer across domains and texts — the
+      proposition quadruples with typed relations above. Second,
+      machinery simple enough to be accessible to non-technical
       writers.</p>
-      <p>A structural map augments sense-making. It turns the invisible
-      labor of comprehension into a visible, editable
-      “object-to-think-with”. It makes gaps visible. It lets ideas
-      travel from one text to another. It does so with the simplest
-      possible machinery — markdown, bash, JavaScript, an LLM parser.
-      And it helps to establish a new layer of transparency and
-      learnability between authors, readers and between humans in
-      general.</p>
+      <p>That, at any rate, is the promise: a map that augments
+      sense-making, turning the invisible labor of comprehension into a
+      visible, editable “object-to-think-with”, making gaps visible,
+      letting ideas travel from one text to another — all with the
+      simplest possible machinery: markdown, bash, JavaScript, an LLM
+      parser. Whether it keeps that promise is a question for the
+      experiment I sketched, not for faith.</p>
       <hr />
       <div class="border plashka">
       <p><strong>You can cite this text like this:</strong></p>
@@ -1022,20 +1076,20 @@ div.csl-indent {
       <p>If you use <a href="https://www.zotero.org" target="_blank"
       rel="noopener noreferrer">Zotero</a> and need a different citation
       style, add this text via a bib entry:</p>
-      <div class="sourceCode" id="cb4"><pre
-      class="sourceCode bib"><code class="sourceCode bibtex"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="va">@misc</span>{<span class="ot">shevchenko2026</span>,</span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">author</span>       = {Valerii Shevchenko},</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">title</span>        = {Ontology-augmented text as manipulable idea structure},</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">year</span>         = {2026},</span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">howpublished</span> = {<span class="ch">\url</span>{https://vsblog.netlify.app/symmetry_eng/}},</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">address</span>      = {Moscow}</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+      <div class="sourceCode" id="cb6"><pre
+      class="sourceCode bib"><code class="sourceCode bibtex"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="va">@misc</span>{<span class="ot">shevchenko2026</span>,</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">author</span>       = {Valerii Shevchenko},</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">title</span>        = {Ontology-augmented text as manipulable idea structure},</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">year</span>         = {2026},</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">howpublished</span> = {<span class="ch">\url</span>{https://vsblog.netlify.app/symmetry_eng/}},</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">address</span>      = {Moscow}</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
       </div>
       </section>
       <section id="sources" class="level2">
       <h2>Sources</h2>
       <!-- I believe there are no complex ideas—only not adequate enough ways to communicate them. I also believe that body's bandwidth for understanding "complex" ideas is far greater than that of a brain. -->
-      <!-- Reading theoretical physics or philosophy often requires preliminary training. Yet, there is a way to circumvent the declarative explanations and understand things more viscerally, procedurally and intuitively[^irony]. Although the forms of this kind of learning and understanding are being developed in the fields of embodied learning [#insertSource] and human-computer interaction, the most basic (and imporatnt) activities of reading and writing rarely are being addressed head-on. -->
+      <!-- Reading theoretical physics or philosophy often requires preliminary training. Yet, there is a way to circumvent the declarative explanations and understand things more viscerally, procedurally and intuitively[^irony]. Although the forms of this kind of learning and understanding are being developed in the fields of embodied learning [#insertSource] and human-computer interaction, the most basic (and important) activities of reading and writing rarely are being addressed head-on. -->
       <!-- [^irony]: Isn't it ironic that I use terms that themselves require preliminary understanding?… Well, consider it an illustration of my point. -->
       <!-- Comprehending multi-step arguments and elaborating and compressing disparate ideas into coherent narratives both require immense cognitive effort, memory and attention. -->
       <!-- In the first section, I argue that *a text is a (poor) interface to ideas* in a non-metaphorical sense—that linear sequence of symbols encodes multidimensional space of concepts and relations which can be represented more clearly *as we read or write*. Then, I present a propositional structure like `[concept_1, relation, concept_2]`as an adequate enough representation of an idea in a non-fiction text. In sections 3 and 4 I describe how dynamic assembling of a concept-relation map as a manipulable idea structure representation might look for writing and reading, respectively. In the end, I situate the proposed approach within current landscape of "computational" authoring and reading software and suggest a minimalist implemetation. -->
@@ -1110,9 +1164,8 @@ div.csl-indent {
       <li id="fn1"><p>The concept of <em>implicature</em> in pragmatics
       and the notions of <em>speaker meaning</em> are cases in point.
       They show that what is said could mean many things and it is up to
-      the listener to interpret and infer a meaning. — #insertSource<a
-      href="#fnref1" class="footnote-back"
-      role="doc-backlink">↩︎</a></p></li>
+      the listener to interpret and infer a meaning.<a href="#fnref1"
+      class="footnote-back" role="doc-backlink">↩︎</a></p></li>
       <li id="fn2"><p>In machine learning, a structure like
       <code>[concept, relation@domain, concept]</code> is used in
       domain-contextualized concept graphs <span class="citation"
@@ -1120,7 +1173,7 @@ div.csl-indent {
       role="doc-biblioref"><strong>wang2026?</strong></a>)</span> on
       which I draw heavily.<a href="#fnref2" class="footnote-back"
       role="doc-backlink">↩︎</a></p></li>
-      <li id="fn3"><p>Of course, there is a difficutly defining what
+      <li id="fn3"><p>Of course, there is a difficulty defining what
       constitutes and circumscribes a domain, especially formally, as
       <span class="citation" data-cites="wang2025">(<a
       href="#ref-wang2025"
@@ -1128,9 +1181,9 @@ div.csl-indent {
       Yet, as an aid for sense-making, this may not be a problem.<a
       href="#fnref3" class="footnote-back"
       role="doc-backlink">↩︎</a></p></li>
-      <li id="fn4"><p>Re-representing is considered a necessary for
-      sense-making #insertSource.<a href="#fnref4" class="footnote-back"
-      role="doc-backlink">↩︎</a></p></li>
+      <li id="fn4"><p>Re-representing is considered necessary for
+      sense-making (Russell et al., 1993; Kirsh, 2010).<a href="#fnref4"
+      class="footnote-back" role="doc-backlink">↩︎</a></p></li>
       </ol>
       </section>
     </article>

@@ -3,7 +3,7 @@ id/slug: symmetry_eng
 created: 2026-08-28 05:25
 last-modified: 2026-08-29
 published: 28.08.2026
-summary: Poop
+summary: "Why text is a poor interface to ideas, and how making its propositional structure visible and manipulable can augment sense-making in both reading and writing."
 title: "Ontology-augmented text as manipulable idea structure"
 ---
 
@@ -13,7 +13,9 @@ title: "Ontology-augmented text as manipulable idea structure"
 Text is probably one of the greatest human inventions. It helps convey ideas, advance science and culture and inspire invention. However, its major drawback is that it is *a poor interface to ideas*. The reason for it is that text is a *linear sequence* of symbols that can be said to encode a *messy multidimensional space* of concepts and relations on several layers of abstraction. So, there is just not enough bandwidth. And we have become accustomed to how diabolically hard reading and writing might be. But they do not need to be that hard.
 
 <!-- [? что я предлагаю: манипулируемая структура текста] -->
-I do not mean that text as a medium should go. Instead, making text's structure *visible and manipulable* — in both reading and writing — might augment and support sense-making by turning any text's ontological structure into an "object-to-think-with". In this essay, I lay out this vision, suggest a possible implementation with ubiquitous tools, situate it within current "computational" authoring and reading software and address possible objections. The idea is simple: mark sentences with `[subject, typed relation, object, domain]`, render those beside the text, and let them dynamically assemble into a structural map of the text which you can change on the fly.
+I do not mean that text as a medium should go. Instead, making text's structure *visible and manipulable* — in both reading and writing — might augment and support sense-making by turning any text's ontological structure into an "object-to-think-with". In this essay, I lay out this vision, suggest a possible implementation with ubiquitous tools, situate it within current "computational" authoring software and address possible objections. The idea is simple: mark sentences with `[subject, typed relation, object, domain]`, render those beside the text, and let them dynamically assemble into a structural map of the text which you can change on the fly.
+
+Let me be clear about what this essay is and is not. I am not claiming that a propositional map *proves* to improve comprehension — that is an empirical question. The building blocks here are not new: propositions, maps and external representations all have long pedigrees. What I am proposing is a particular recombination of them — a portable, editable, co-produced convention that treats reading and writing cognitively symmetrically, on the simplest possible stack.Whether it holds up is another matter.
 
 
 ## Text as a low-bandwidth interface to ideas
@@ -44,7 +46,9 @@ Following the encoding metaphor [@waters2021], a text can be seen as a one-dimen
 <!-- [? N-мерное пространство содержит больше информации чем линейный текст] -->
 The encoding/decoding metaphor partially explains text's low bandwidth for conveying ideas. It contains much more information than a string of text[^implicature]. And it demands either inhumane amounts of attention and memory or a less "lossy" conversion between structured ideas and text. 
 
-[^implicature]: The concept of *implicature* in pragmatics and the notions of *speaker meaning* are cases in point. They show that what is said could mean many things and it is up to the listener to interpret and infer a meaning. — #insertSource
+[^implicature]: The concept of *implicature* in pragmatics and the notions of *speaker meaning* are cases in point. They show that what is said could mean many things and it is up to the listener to interpret and infer a meaning.
+
+A proposition — that something is related to something — is the simplest unit of structured meaning. Embeddings capture statistical proximity, and propositions capture explicit relations that can be inspected and edited by a human.
 
 What an idea space can consist of and how to make it tractable to augment sense-making in reading and writing? And what if, instead of carrying it in my head, I could *look at it* and change it?
 
@@ -60,7 +64,9 @@ A text encodes *ideas*, and ideas have *propositional structure*. Every declarat
 
 [^cdc]: In machine learning, a structure like `[concept, relation@domain, concept]` is used in domain-contextualized concept graphs [@wang2025, @wang2026] on which I draw heavily.
 
-We, as readers or writers, not only rebuild that structure for each sentence in our heads but compare and arrange concepts to arrive at higher-order entities like arguments and logical lacunae. And it is precisely this reconstruction that costs working memory. For example, in this parapgraph I have assumed that:
+Why triples and not, say, concept maps [@novak2006], mind maps, or free-form knowledge graphs? Because a triple is the minimal unit of propositional meaning — you cannot compress further without losing the relation. Concept maps add visual hierarchy but keep the same atomic structure underneath. The choice of triples over richer graphs is deliberate: simplicity enables hand-annotation and LLM extraction at scale, and makes the structure portable across texts and domains.
+
+We, as readers or writers, not only rebuild that structure for each sentence in our heads but compare and arrange concepts to arrive at higher-order entities like arguments and logical lacunae. And it is precisely this reconstruction that costs working memory. For example, in this paragraph I have assumed that:
 
 ```
 [reading, requires, mental_text_structure]
@@ -71,13 +77,13 @@ We, as readers or writers, not only rebuild that structure for each sentence in 
 
 It can be represented as a map:
 
-![Last parapgraph map](assets/graph.png)
+![Last paragraph map](assets/graph.png)
 
-<!-- [? typed relations in propositions enforce clearer thinking + unversality across domains] -->
+<!-- [? typed relations in propositions enforce clearer thinking + universality across domains] -->
 What makes triples do useful work is constrained yet extensible dictionary of *typed* relations, so that we distinguish "causes" from "depends_on" from "contradicts". Typed relations like logic, cause-effect, temporality, and mereology (part-whole) are useful here for two reasons. First, they enforce clearer thinking and, second, they are *domain-general*, so they can be found in many texts across many domains. 
 
 <!-- [? domains describe discourse regions where propositions make sense] -->
-The idea of a *domain* is crucial here. It labels a region of discourse where the triple *makes sense*. Epistemology, economics, cognitive science and pragmatics are possible examples. This allows triples from different fields to be told apart and recombined. Our previous triples become quadruples:
+The idea of a *domain* is crucial here. It labels a region of discourse where the triple *makes sense*. Epistemology, economics, cognitive science and pragmatics are possible examples. This allows triples from different fields to be told apart and recombined. The same relationship between the same concepts can mean different things in different domains. So, our triples become quadruples:
 
 ```
 [reading, requires, mental_text_structure, cognitive_science]
@@ -88,18 +94,18 @@ The idea of a *domain* is crucial here. It labels a region of discourse where th
 
 Propositions enforce *ontological* reading of a text — what is happening there at a glance — and domains enforce *contextualized understanding* of these propositions[^domain].
 
-[^domain]: Of course, there is a difficutly defining what constitutes and circumscribes a domain, especially formally, as @wang2025 notes. Yet, as an aid for sense-making, this may not be a problem.
+[^domain]: Of course, there is a difficulty defining what constitutes and circumscribes a domain, especially formally, as @wang2025 notes. Yet, as an aid for sense-making, this may not be a problem.
 
 <!-- [? pragmatic wins of idea space as domain-contextual typed propositions] -->
 Having an idea space disguised as domain-contextualized propositions with typed relations allows for several pragmatically valuable things. First, you can search for concepts and relations:
 
-![gif with searching cg]()
+![Searching propositions](assets/cg.png)
 
 Second, you can compute over ontology — find transitive closures and lacunae which could bring cross-domain insights and new ideas. For example, I might never manually find that 
 
 ![Closure](assets/closure.png)
 
-which means that `deeper_domain_knowledge —— requires —» simple_building_blocks`. And it by itself inspires new ideas and angles. Moreover, another closure on our present graph is that `reading` requires `working_memory`. Although this seems obvious, it makes claims explorable: "why does reading require working memory? Because reading requires a mental representation of text's structure". Claims become inspectable.
+which means that `deeper_domain_knowledge —— requires —» simple_building_blocks`. And it by itself inspires new ideas and angles. Moreover, another closure on our present "graph" is that `[reading, requires, working_memory]`. Although this seems obvious, it makes claims explorable: "why does reading require working memory? Because reading requires a mental representation of text's structure". *Claims become more inspectable*.
 
 
 ## Writing: baking idea structure into dynamic media
@@ -108,34 +114,52 @@ which means that `deeper_domain_knowledge —— requires —» simple_building_
 
 We are used to writing prose first and structuring it into a narrative later. I suggest reversing the order: *start with structure and bake it into the medium itself.* 
 
-For example, I write prose and mark its parts with `[? main idea of the part]` which you could see in the paragraph above. This serves two functions. First, it forces me to formulate what I want to say. Second, it helps to view the argument from a birds-eye view and check the logic. 
+For example, I write prose and mark its parts with `[? main idea of the part]` example of which you see in the paragraph above. This serves two functions. First, it forces me to formulate what I want to say. Second, it helps to view the argument from a birds-eye view and check the logic. 
 
-One level deeper are the propositions which I add as commented out quadruples `[subject, relation, object, domain]`. They dynamically assemble into a structural map of the text that I am working on. Of course, manually extracting propositions from prose is a lot of inhumane work, so I use local LLM as an aid:
+One level deeper are the propositions which I add as commented out quadruples `[subject, relation, object, domain]`. They dynamically assemble into a structural map of the text that I am working on. Of course, manually extracting propositions from prose is a lot of inhumane work, so I use local LLM as an aid.
 
-![gif with ollama extraction]()
-
-You can add yet another level of structure by introducing *types of propositions*: thesis, claim, example, counterargument, etc. Add them as comments to parse later and inspect whether you thesis is supported by claims.
+You can add yet another level of structure by introducing *types of propositions*: thesis, claim, example, counterargument, etc. Add them as comments to parse later and inspect whether your thesis is supported by claims.
 
 <!-- [? text structure map gives re-representation needed for sense-making — CLAIM] -->
 Why is all this valuable for writing? Because the hardest part of writing is *holding the argument in your head* — the working-memory bottleneck above. A structural map partially outsources that load by allowing for *re-representing* concepts and relations which have already gone through your working memory[^rerepresenting]. Instead of keeping the argument in mind, you keep it in view and inspect it.
 
-[^rerepresenting]: Re-representing is considered a necessary for sense-making #insertSource.
+[^rerepresenting]: Re-representing is considered necessary for sense-making (Russell et al., 1993; Kirsh, 2010).
 
 The key advantage over outlining-as-writing is that the map is *live* and *co-produced* with the text. It is not a *plan* you abandon. It is the text's *propositional skeleton* rendered alongside the prose, that bidirectionally syncs ontological structure and its expression in words.
 
 
-## Reading: malleable maps with LLM-powered parsers
+## Reading: editable maps with LLM-powered parsers
 
-The same construction works with reading, as well. As you read a digital text — a chapter, an article, a book — an LLM-powered parser runs over it and extracts the entity-relation structure, producing the same triples an author might have written. The output is a first draft of the text's map. You, the reader, then *edit the parsed relationships*: you confirm what you consider true, flag what you doubt, merge an entity that the parser split, re-type a relation you think is better described as "assumes" than "proves". You assemble your own map of the text while reading it — but you start from a scaffold instead of a blank page.
+The same construction works with reading, as well. This is the mirror of writing — same working memory bottleneck, same encoding/decoding problem, only different direction. When you write, you compress ideas into text. When you read, you unpack text back into ideas. The bottleneck is the same: working memory reconstructing ontological structure on the fly.
 
-<figure>
-  <video width="100%" src="" controls></video>
-  <figcaption>A prototype of a RAG over PDF with a proposition parser</figcaption>
-</figure>
+As you read a digital text — a chapter, an article, a book — an LLM-powered parser runs over it and extracts the entity-relation structure, producing the same triples an author might have written. The output is a first draft of the text's map. You, the reader, then *edit the parsed relationships*: you confirm what you consider true, flag what you doubt, merge an entity that the parser split, re-type a relation you think is better described as "assumes" than "proves". You assemble your own map of the text while reading it — but you start from a scaffold instead of a blank page.
+
+ОСТАНОВИЛСЯ ЗДЕСЬ — поменять пример на Pirolli
+
+What does this look like in practice? Say you are reading a paper on cognitive load theory. The parser extracts:
+
+```
+[working_memory, limits, comprehension, cognitive_science]
+[intrinsic_load, competes_with, germane_load, cognitive_science]
+[germane_load, enables, schema_building, cognitive_science].
+```
+
+You read on and find that the paper *assumes* working memory capacity is fixed across tasks — but your own experience suggests it varies. You change the relation:
+
+```
+[working_memory, has_attribute, capacity, cognitive_science]
+[capacity, has_attribute, fixed_volume, cognitive_science]  ← flagged: assumption
+```
+
+The map now shows a gap: a claim rests on an unstated assumption. This is what a propositional map makes visible that passive reading does not.
+
+![A prototype of a RAG over PDF with a proposition parser](assets/rag.png)
 
 This is the reading side of the cognitive symmetry. When you read, you unpack the author's propositions and link them to your prior knowledge. A map makes that unpacking visible and editable. What is more, because triples are portable, you can drag an idea from one text's map into another's — *your* map, growing across everything you read. It is like "mind maps" but general enough to see through entire text corpora.
 
-Why should this enrich, magnify, and augment sense-making rather than flatten it? Because a map of propositions makes the *gaps* visible. A text that looked air-tight reveals that one claim rests on an unstated assumption, that a relation is asserted but never argued. Noticing those gaps is precisely what generates new ideas — new questions, new links, new relations to investigate. The map does not replace thinking, but gives thinking (yet another) working surface.
+Why should this augment sense-making rather than flatten it? Because a map of propositions makes the *gaps* visible. A text that looked air-tight reveals that one claim rests on an unstated assumption, that a relation is asserted but never argued. Noticing those gaps is precisely what generates new ideas — new questions, new links, new relations to investigate. The map does not replace thinking, but gives thinking (yet another) working surface. External representations do not merely save memory — they enable kinds of thinking that are impossible without them (Kirsh, 2010)[^test].
+
+[^test]: If all this is to be more than a pleasant intuition, it has to be testable. Here is a possible protocol: take two groups of comparable readers and the same moderately difficult essay. One group reads it as plain text; the other reads it with the editable map alongside. Give both the same comprehension test — not just "what was the thesis", but questions that require assembling relations across paragraphs, and detecting an unstated assumption. Time them, count errors. If the map earns its keep, the second group should hold more of the argument in view and notice more gaps, without taking meaningfully longer. The hypothesis is that a map moves part of the load from working memory to the page. A version for writing is harder to design but not impossible: compare the structural soundness of arguments drafted to a visible skeleton versus a blank page, judged blind. 
 
 
 ## Why not just build explorable explanations?
@@ -144,7 +168,7 @@ You might object: there is already a rich culture of *explorable explanations* �
 
 Explorable explanations are *difficult to produce*, because each one requires its own *domain structure* implemented as an interactive engine: a physics essay needs a physics engine, an economics essay needs a model of money, a statistics essay needs a random number generator. 
 
-![image of distill page with articles]()
+[![image of distill page with articles](assets/explorables.png)](https://distill.pub/2020/communicating-with-interactive-articles/)
 
 The author must design an interactive substrate particular to one piece of content which is deemed *incommensurable* with other domains. And if one "explorable" does excellent job in providing a space for tinkering, it does not help at scale. As a result, explorable explanations are bespoke, costly and produced by a handful of gifted tinkerers rather than by general population of non-fiction writers.
 
@@ -159,14 +183,14 @@ For example, you keep your text as a markdown file. A structural annotation is j
 
 The beauty of typing the annotation by hand is that it *is* the act of formulating the thought. You cannot annotate a sentence you have not understood. The tool forces the very skill that reading and writing both depend on.
 
-For reading, the same extraction script can be pointed at a any other text, with an LLM-parsing in place. A simple plugin for a reading environment like [Zotero](https://www.zotero.org) could take the open PDF, run the parser, show the resulting map in a side panel, and let you edit relations and drag ideas into a private map that persists across texts. This is not hypothetical architecture — it is a thin layer of glue around tools that already exist.
+For reading, the same extraction script can be pointed at any other text, with an LLM-parsing in place. A simple plugin for a reading environment like [Zotero](https://www.zotero.org) could take the open PDF, run the parser, show the resulting map in a side panel, and let you edit relations and drag ideas into a private map that persists across texts. This is not hypothetical architecture — it is a thin layer of glue around tools that already exist.
 
 
 ## Conclusion
 
-Ideas have propositional structure, but texts hide it behind a linear facade. Working memory is the bottleneck that makes reconstructing that structure — in reading and in writing — costly. My proposal is to make it visible with a propositions from concepts and relations dynamically assembled into an editable map. A major point is twofold. First, to use a general enough convention transferable across domains and texts like the proposition quadruples with typed relations proposed above. Second, to make to easy enough to be accessible to non-technical writers.
+Ideas have propositional structure, but texts hide it behind a linear facade. Working memory is the bottleneck that makes reconstructing that structure — in reading and in writing — costly. So I propose to make it visible: propositions from concepts and relations, dynamically assembled into an editable map. Two things make this work at scale. First, a convention general enough to transfer across domains and texts — the proposition quadruples with typed relations above. Second, machinery simple enough to be accessible to non-technical writers.
 
-A structural map augments sense-making. It turns the invisible labor of comprehension into a visible, editable "object-to-think-with". It makes gaps visible. It lets ideas travel from one text to another. It does so with the simplest possible machinery — markdown, bash, JavaScript, an LLM parser. And it helps to establish a new layer of transparency and learnability between authors, readers and between humans in general.
+That, at any rate, is the promise: a map that augments sense-making, turning the invisible labor of comprehension into a visible, editable "object-to-think-with", making gaps visible, letting ideas travel from one text to another — all with the simplest possible machinery: markdown, bash, JavaScript, an LLM parser. Whether it keeps that promise is a question for future research.
 
 ***
 
@@ -192,7 +216,7 @@ If you use [Zotero](https://www.zotero.org) and need a different citation style,
 
 <!-- I believe there are no complex ideas—only not adequate enough ways to communicate them. I also believe that body's bandwidth for understanding "complex" ideas is far greater than that of a brain. --> 
 
-<!-- Reading theoretical physics or philosophy often requires preliminary training. Yet, there is a way to circumvent the declarative explanations and understand things more viscerally, procedurally and intuitively[^irony]. Although the forms of this kind of learning and understanding are being developed in the fields of embodied learning [#insertSource] and human-computer interaction, the most basic (and imporatnt) activities of reading and writing rarely are being addressed head-on. -->
+<!-- Reading theoretical physics or philosophy often requires preliminary training. Yet, there is a way to circumvent the declarative explanations and understand things more viscerally, procedurally and intuitively[^irony]. Although the forms of this kind of learning and understanding are being developed in the fields of embodied learning [#insertSource] and human-computer interaction, the most basic (and important) activities of reading and writing rarely are being addressed head-on. -->
 
 <!-- [^irony]: Isn't it ironic that I use terms that themselves require preliminary understanding?… Well, consider it an illustration of my point. -->
 
