@@ -1,8 +1,8 @@
 ---
-id/slug: symmetry_eng
+id/slug: ontology
 created: 2026-08-28 05:25
 last-modified: 2026-08-29
-published: 28.08.2026
+published: 31.08.2026
 summary: "Why text is a poor interface to ideas, and how making its propositional structure visible and manipulable can augment sense-making in both reading and writing."
 title: "Ontology-augmented text as manipulable idea structure"
 ---
@@ -197,7 +197,7 @@ That, at any rate, is the promise: a map that augments sense-making, turning the
 <div class="border plashka">
 **You can cite this text like this:**
 
-> Valerii Shevchenko, *Ontology-augmented text as manipulable idea structure*. Moscow, 2026. URL: https://vsblog.netlify.app/symmetry_eng/
+> Valerii Shevchenko, *Ontology-augmented text as manipulable idea structure*. Moscow, 2026. URL: https://vsblog.netlify.app/ontology/
 
 If you use [Zotero](https://www.zotero.org) and need a different citation style, add this text via a bib entry:
 
@@ -206,7 +206,7 @@ If you use [Zotero](https://www.zotero.org) and need a different citation style,
   author       = {Valerii Shevchenko},
   title        = {Ontology-augmented text as manipulable idea structure},
   year         = {2026},
-  howpublished = {\url{https://vsblog.netlify.app/symmetry_eng/}},
+  howpublished = {\url{https://vsblog.netlify.app/ontology/}},
   address      = {Moscow}
 }
 ```
