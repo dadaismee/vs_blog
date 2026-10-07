@@ -6,13 +6,13 @@ summary: "Или почему я перешёл на «звонилку»"
 ---
 
 Вы наверняка слышали про *«цифровой минимализм»*. Если нет, то это движение за «освобождение внимания» от цифровых технологий: [книги Кэла Ньюпорта](https://www.amazon.com/stores/Cal-Newport/author/B001IGNR0U?ref=ap_rdr&shoppingPortalEnabled=true&ccs_id=ac489d71-db51-44ab-bfff-8e5ea7276366){target="blank"}, отказ от соцсетей и телефоны-«звонилки».
-<!-- - [digital_minimalism, is_a, social_movement] -->
-<!-- - [Cal_Newport, exemplifies, digital_minimalism] -->
+<!-- [digital_minimalism, is_a, social_movement, DESCRIPTION, cultural_anthropology] -->
+<!-- [Cal_Newport, exemplifies, digital_minimalism, EXAMPLE, cultural_anthropology] -->
 
 За последние 5 лет я посмотрел несколько сотен видео и прочитал пару-тройку книг на эту тему. И вот что понял.
 
 **Цифровой минимализм — это технофетишизм под маской заботы о ментальном здоровье**. Объясню почему.
-<!-- - [digital_minimalism, is_a, technofetishism] -->
+<!-- [digital_minimalism, is_a, technofetishism, MY_CLAIM, cultural_anthropology] -->
 
 ## Решение несуществующих проблем
 
