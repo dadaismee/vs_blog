@@ -66,12 +66,14 @@ hayek1973
 hedoin2016
 hedoin2021
 heifetz1999
+herzog2025
 hindriks2005
 hindriks2009
 hindriks2015
 hindriks2015a
 hindriks2019
 hobbes2016
+hodgson2003
 hume1998
 hume2003
 huttegger2007
@@ -100,6 +102,7 @@ morgenstern1944
 mouden2012a
 myerson1991
 nash1950
+nesterenko2021
 nikitin2019
 north1990
 north2005
@@ -107,12 +110,14 @@ oconnor2019
 oconnor2020
 okasha2012
 okasha2017
+orehov2024
 osborne2004
 ostrom1990
 ostrom2005
 papineau2003
 parsons2015
 paternotte2020a
+petracca2025
 psillos1999
 pufendorf1673
 putnam1975
@@ -122,6 +127,7 @@ quine1969
 rabinowicz2018
 rakoczy2007
 rawls1955
+razin2015
 ross2023
 roversi2021
 ruben1989
@@ -141,6 +147,7 @@ selten1975
 seyfarth1990
 shannon1948
 shea2018a
+shevchenko2026
 skyrms1994
 skyrms1996
 skyrms2003
