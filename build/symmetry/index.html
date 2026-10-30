@@ -35,255 +35,254 @@
   Beep Boop. As you were. -->
 
   <style>
-    /* /* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
-html {
-  color: #1a1a1a;
-  background-color: #fdfdfd;
-}
-body {
-  margin: 0 auto;
-  max-width: 36em;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  hyphens: auto;
-  overflow-wrap: break-word;
-  text-rendering: optimizeLegibility;
-  font-kerning: normal;
-}
-@media (max-width: 600px) {
-  body {
-    font-size: 0.9em;
-    padding: 12px;
-  }
-  h1 {
-    font-size: 1.8em;
-  }
-}
-@media print {
-  html {
-    background-color: white;
-  }
-  body {
-    background-color: transparent;
-    color: black;
-    font-size: 12pt;
-  }
-  p, h2, h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2, h3, h4 {
-    page-break-after: avoid;
-  }
-}
-p {
-  margin: 1em 0;
-}
-a {
-  color: #1a1a1a;
-}
-a:visited {
-  color: #1a1a1a;
-}
-img {
-  max-width: 100%;
-}
-svg {
-  height: auto;
-  max-width: 100%;
-}
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 1.4em;
-}
-h5, h6 {
-  font-size: 1em;
-  font-style: italic;
-}
-h6 {
-  font-weight: normal;
-}
-ol, ul {
-  padding-left: 1.7em;
-  margin-top: 1em;
-}
-li > ol, li > ul {
-  margin-top: 0;
-}
-blockquote {
-  margin: 1em 0 1em 1.7em;
-  padding-left: 1em;
-  border-left: 2px solid #e6e6e6;
-  color: #606060;
-}
-code {
-  font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
-  font-size: 85%;
-  margin: 0;
-  hyphens: manual;
-}
-pre {
-  margin: 1em 0;
-  overflow: auto;
-}
-pre code {
-  padding: 0;
-  overflow: visible;
-  overflow-wrap: normal;
-}
-.sourceCode {
- background-color: transparent;
- overflow: visible;
-}
-hr {
-  border: none;
-  border-top: 1px solid #1a1a1a;
-  height: 1px;
-  margin: 1em 0;
-}
-table {
-  margin: 1em 0;
-  border-collapse: collapse;
-  width: 100%;
-  overflow-x: auto;
-  display: block;
-  font-variant-numeric: lining-nums tabular-nums;
-}
-table caption {
-  margin-bottom: 0.75em;
-}
-tbody {
-  margin-top: 0.5em;
-  border-top: 1px solid #1a1a1a;
-  border-bottom: 1px solid #1a1a1a;
-}
-th {
-  border-top: 1px solid #1a1a1a;
-  padding: 0.25em 0.5em 0.25em 0.5em;
-}
-td {
-  padding: 0.125em 0.5em 0.25em 0.5em;
-}
-header {
-  margin-bottom: 4em;
-  text-align: center;
-}
-#TOC li {
-  list-style: none;
-}
-#TOC ul {
-  padding-left: 1.3em;
-}
-#TOC > ul {
-  padding-left: 0;
-}
-#TOC a:not(:hover) {
-  text-decoration: none;
-}
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-/* The extra [class] is a hack that increases specificity enough to
-   override a similar rule in reveal.js */
-ul.task-list[class]{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  font-size: inherit;
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
-  vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-} */
-    :root {
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* CSS for syntax highlighting */
+    html { -webkit-text-size-adjust: 100%; }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+      margin-bottom: 0em;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }    :root {
         --color: blue;
         --max-content-width: 900px;
     }
@@ -293,6 +292,7 @@ div.csl-indent {
       line-height: 1.5; 
 			justify-items: left;
 			margin: 0;
+			max-width: 100%;
     }
 		
 		p {
@@ -432,7 +432,7 @@ div.csl-indent {
 
 
     .content {
-      width: 700px;
+      max-width: 700px;
       font-size: 15px;
 
       @media (max-width: 700px) {
@@ -554,13 +554,18 @@ div.csl-indent {
       align-self: center;
     }
 
+		.divisor {
+     	margin: 30px 0px 0px;
+		 	margin-bottom: 10px;
+		}
+
     .triple-map {
-      position: fixed;
-      left: 760px;
-      top: 130px;
-      width: 480px;
+      position: sticky;
+			top: 130px;
+			laft: 760px;
+			margin-top: 30px;
+      width: 100%;
       height: calc(100vh - 180px);
-      min-height: 240px;
       overflow: visible;
       font-size: 12px;
       z-index: 20;
@@ -651,603 +656,567 @@ div.csl-indent {
     </a>
   </header>
 
-  <div class="content">
-      <h1>Симметрия чтения и письма</h1>
-    <div class="hypothesis">
-      <p>Чтобы прокомментировать любую фразу, выделите её и нажмите <i>Annotate</i></p>
-      <img class="border" src="/assets/annotate.png" alt="Annotate" style="display: flex; justify-self: center; width: 75%;"/>
-    </div>
-      <article>
-      <div style="display: flex; flex-direction: column; gap: 0px; margin-top: 20px;">
-                            <p style="margin: 0px;">Опубликовано: <i>06.10.2025</i></p>
-            <!-- , обновлено <i>06.10.2025</i></p> -->
-                                <p style="margin: 0px;"> Читать: <i>~20
-минут</i></p>
-              </div>
-      <audio src="assets/valerii-shevchenko_symmetry.mp3" controls>
-      </audio>
-      <section id="введение" class="level2">
-      <h2>Введение</h2>
-      <p>Обычно читать нам проще, чем писать: скользить глазами по
-      тексту — куда легче, чем «сгущать» смыслы в понятные, логично
-      связанные и захватывающие предложения. И нередко возникает
-      ощущение, что «за фасадом» текста — пишете вы его или читаете —
-      скрывается нечто, что придаёт этому тексту форму и смысл. Назовём
-      это идеями.</p>
-      <p>Читая, вы представляете образы и отвлекаетесь на свои мысли —
-      на что похоже прочитанное, кто ещё об этом писал, «а в том фильме
-      про это тоже говорили».</p>
-      <figure>
-      <img style="border:none;"src="assets/symmetry_reading.png" alt="Чтение и рой мыслей" style="width:100%;"/>
-      <figcaption>
-      Чтение и рой мыслей
-      </figcaption>
-      </figure>
-      <p>А когда вы пишете, мысли и образы роятся у вас в голове, борясь
-      за внимание. Вы думаете о миллионе вещей одновременно,
-      перескакиваете между источниками, чтобы что-то подсмотреть, и
-      переписываете абзац снова и снова, потому что «мысль не идёт».</p>
-      <figure>
-      <img style="border:none;"src="assets/symmetry_writing.png" alt="Письмо и рой мыслей" style="width:100%;"/>
-      <figcaption>
-      Чтение и рой мыслей
-      </figcaption>
-      </figure>
-      <!-- ![Письмо и рой мыслей](assets/symmetry_writing.png) -->
-      <p>Текст можно представить, как чемодан с идеями. В каких-то
-      текстах идеи лежат аккуратно, как в тетрисе, в других — свалены в
-      кучу, а некоторые чемоданы — вообще почти пустые. Читая чужой
-      текст, вы хотите «достать» идеи автора как вещи из чемодана,
-      посмотреть на них и, если понравятся, убрать в свой гардероб. А
-      работая над своим текстом, вы, возможно, хотите выбрать нужные
-      идеи в гардеробе и аккуратно сложить в чемодан — только нужные,
-      сочетающиеся и красивые.</p>
-      <figure>
-      <img src="assets/text-as-luggage-case.png"
-      alt="Текст как чемодан — аккуратный, неряшливый и пустой (но красивый снаружи)" />
-      <figcaption aria-hidden="true">Текст как чемодан — аккуратный,
-      неряшливый и пустой (но красивый снаружи)</figcaption>
-      </figure>
-      <p>Метафора текста как чемодана наводит на мысль, что чтение и
-      письмо симметричны: это операции над одним и тем же «веществом», —
-      идеями — только направленные в разные стороны.</p>
-      <p>Теория информации даёт интересную оптику: текст можно
-      представить как <em>одномерную последовательность</em> символов,
-      которая во время чтения трансформируется в многомерное
-      «пространство идей» в голове читателя (то есть вашей). Получаете
-      «на вход» строки текста, а «на выход» — роящиеся в голове образы и
-      мысли, частично связанные друг с другом.</p>
-      <p>С письмом наоборот: «сжимаете» части многомерного пространства
-      идей, где роятся мысли, в линейный текст — последовательность
-      символов с началом и концом. Причём это пространство сложнее, чем
-      сами предложения. Это похоже на ДНК — «плоскую» последовательность
-      знаков, которая кодирует объёмные характеристики вроде формы
-      черепа, конечностей и органов. И их устройство сложнее, чем
-      устройство самой ДНК. С идеями ещё сложнее, потому что неясно, что
-      это за «пространство идей», где они, возможно, обитают.</p>
-      <p>Интуитивно понятно лишь то, что чтение и письмо — это
-      «распаковка» и «запаковка» идей — из одномерной формы в
-      многомерную и обратно. А вот где эти идеи обитают, как устроено
-      это место и какова механика его изменения — неясно.</p>
-      <p>Если чтение и письмо — это двери в «мир идей» с разных сторон,
-      то как выглядит и работает этот «мир идей»? И как сделать чтение и
-      письмо более понятными и прозрачными процессами, представляя их
-      внутреннее устройство?</p>
-      </section>
-      <section id="метафора-кодирования" class="level2">
-      <h2>Метафора кодирования</h2>
-      <p>Меня не очень волнует онтологический статус идей — что они
-      такое, как существуют и как связаны с реальностью. Этот пласт
-      философии от Платона до Уильяма Джеймса мы оставим в стороне.
-      Скорее, меня интересует <em>когнитивная механика</em> идей: как
-      концептуализировать чтение и письмо через <em>операции с веществом
-      текста</em>, который скрывается за его «фасадом».</p>
-      <p>Мы уже затронули метафору «кодирования» — что идеи и текст
-      соотносятся подобно ДНК и физическим признакам. Когнитивный
-      психолог Деннис Уотерс пишет, что последовательности (sequences) —
-      это краеугольный камень не только жизни как биологического
-      феномена, но и человеческого языка, культуры и технологий <span
-      class="citation" data-cites="waters2021">(<a
-      href="#ref-waters2021" role="doc-biblioref">Waters,
-      2021</a>)</span>. Всё потому, что последовательности
-      <em>контролируют</em> материю и энергию, при этом не меняя их
-      сути. Это само по себе впечатляет.</p>
-      <p>Одномерные последовательности, например, ДНК, это предложение
-      или компьютерный код создают трёхмерное поведение у других систем:
-      живого существа, групп людей или транзисторов. Последовательности
-      используют «ограничение» (constraint), что создаёт <em>иерархию
-      контроля</em>. Это когда последовательность знаков обретает
-      «значение» исключительно с помощью порядка знаков в ней<a
-      href="#fn1" class="footnote-ref" id="fnref1"
-      role="doc-noteref"><sup>1</sup></a>. Например, разные
-      последовательности нуклеотидов в ДНК «значат» (то есть кодируют)
-      разные аминокислоты.</p>
-      <p>Как это может работать в случае с чтением? Есть одномерная
-      последовательность — текст, который вы сейчас читаете. Он
-      линейный, и у него есть начало и конец. Но «кодирует» ли текст
-      поведение или что-то другое так же, как это делает
-      последовательность нуклеотидов в ДНК?</p>
-      <p>Уотерс пишет, что язык изменяет поведение. Одномерный рецепт
-      яблочного пирога и приказ генерала оркеструют трёхмерное
-      поведение: ваше — в приготовлении пирога, а солдат — на плацу. Но
-      Уотерса больше волнует <em>социальный</em> аспект языка: вы
-      говорите что-то другим (или они — вам), и поведение изменяется:
-      это связь последовательности знаков с окружающей средой. Чтение же
-      — опыт чаще приватный, молчаливый и статичный, и с виду никакой
-      «кодировки» и взаимодействия со средой не происходит.
-      Последовательность здесь не превращается в поведение или
-      трёхмерную структуру (если только мы не берём во внимание
-      формирование новых нейронных связей, но это не специфичный для
-      чтения ответ мозга). Поэтому если есть читаемый текст «на входе»,
-      то что тогда получается на выходе?</p>
-      </section>
-      <section id="репрезентация" class="level2">
-      <h2>Репрезентация</h2>
-      <p>Понимание (или восприятие) текста — обширная область
-      когнитивной науки <span class="citation"
-      data-cites="butterfuss2020">(<a href="#ref-butterfuss2020"
-      role="doc-biblioref">Butterfuss, Kim, &amp; Kendeou,
-      2020</a>)</span>. И одна из уже устоявшихся идей в ней — чем
-      объёмнее рабочая память человека, тем полнее он может понять
-      прочитанное <span class="citation" data-cites="mcvay2012">(<a
-      href="#ref-mcvay2012" role="doc-biblioref">McVay &amp; Kane,
-      2012</a>)</span>. От памяти зависит, сколько вы «удержите в
-      голове», а от этого зависит, насколько хорошо вы интегрируете
-      смысл прочитанного предложения в смысл абзаца и всего текста <span
-      class="citation" data-cites="narayanan2022">(<a
-      href="#ref-narayanan2022" role="doc-biblioref">Narayanan &amp;
-      Jurafsky, 2022</a>)</span>.</p>
-      <p>Вторая важная вещь в чтении помимо объёма рабочей памяти — это
-      <em>когнитивные репрезентации</em>. Это ментальные «изображения»
-      или представления, которые вызывают у нас прочитанные слова<a
-      href="#fn2" class="footnote-ref" id="fnref2"
-      role="doc-noteref"><sup>2</sup></a>. Восприятие и, тем более,
-      понимание текста опосредованы репрезентацией слов, а значит —
-      невозможны без неё. Репрезентации, в свою очередь, зависят от
-      предыдущего знания — какое «сырьё» для представлений у вас в
-      голове есть, такое в ход и идёт <span class="citation"
-      data-cites="butterfuss2020">(<a href="#ref-butterfuss2020"
-      role="doc-biblioref">Butterfuss et al., 2020</a>)</span>. Если оно
-      детальное и богатое контекстом, вы можете глубже понять текст.</p>
-      <p>Что значит «глубже»? Мы не знаем наверняка, но базовая интуиция
-      — что более «глубокое» понимание задействует большее число
-      репрезентаций. Это можно представить в виде сети, где каждая точка
-      — это репрезентация одного понятия. На «глубину» понимания текста
-      влияет два параметра: количество связанных репрезентаций и глубина
-      сети, то есть среднее число «соседних» с основным понятием точек.
-      Чем их больше в момент чтения слова, тем больше источников
-      используется для «конструирования» репрезентации.</p>
-      <figure class="border">
-      <div id="p5-container" class="p5-container">
+	<div id="area" style="display: flex; 
+  width: 100%">
+		<div class="content">
+					<h1>Симметрия чтения и письма</h1>
+			<div class="hypothesis">
+				<p>Чтобы прокомментировать любую фразу, выделите её и нажмите <i>Annotate</i></p>
+				<img class="border" src="/assets/annotate.png" alt="Annotate" style="display: flex; justify-self: center; width: 75%;"/>
+			</div>
+					<article>
+				<div style="display: flex; flex-direction: column; gap: 0px; margin-top: 20px;">
+																	<p style="margin: 0px;">Опубликовано: <i>06.10.2025</i></p>
+							<!-- , обновлено <i>06.10.2025</i></p> -->
+																				<p style="margin: 0px;"> Читать: <i>~20 минут</i></p>
+									</div>
+				<audio src="assets/valerii-shevchenko_symmetry.mp3" controls>
+</audio>
+<section id="введение" class="level2">
+<h2>Введение</h2>
+<p>Обычно читать нам проще, чем писать: скользить глазами по тексту —
+куда легче, чем «сгущать» смыслы в понятные, логично связанные и
+захватывающие предложения. И нередко возникает ощущение, что «за
+фасадом» текста — пишете вы его или читаете — скрывается нечто, что
+придаёт этому тексту форму и смысл. Назовём это идеями.</p>
+<p>Читая, вы представляете образы и отвлекаетесь на свои мысли — на что
+похоже прочитанное, кто ещё об этом писал, «а в том фильме про это тоже
+говорили».</p>
+<figure>
+<img style="border:none;"src="assets/symmetry_reading.png" alt="Чтение и рой мыслей" style="width:100%;"/>
+<figcaption>
+Чтение и рой мыслей
+</figcaption>
+</figure>
+<p>А когда вы пишете, мысли и образы роятся у вас в голове, борясь за
+внимание. Вы думаете о миллионе вещей одновременно, перескакиваете между
+источниками, чтобы что-то подсмотреть, и переписываете абзац снова и
+снова, потому что «мысль не идёт».</p>
+<figure>
+<img style="border:none;"src="assets/symmetry_writing.png" alt="Письмо и рой мыслей" style="width:100%;"/>
+<figcaption>
+Чтение и рой мыслей
+</figcaption>
+</figure>
+<!-- ![Письмо и рой мыслей](assets/symmetry_writing.png) -->
+<p>Текст можно представить, как чемодан с идеями. В каких-то текстах
+идеи лежат аккуратно, как в тетрисе, в других — свалены в кучу, а
+некоторые чемоданы — вообще почти пустые. Читая чужой текст, вы хотите
+«достать» идеи автора как вещи из чемодана, посмотреть на них и, если
+понравятся, убрать в свой гардероб. А работая над своим текстом, вы,
+возможно, хотите выбрать нужные идеи в гардеробе и аккуратно сложить в
+чемодан — только нужные, сочетающиеся и красивые.</p>
+<figure>
+<img src="assets/text-as-luggage-case.png"
+alt="Текст как чемодан — аккуратный, неряшливый и пустой (но красивый снаружи)" />
+<figcaption aria-hidden="true">Текст как чемодан — аккуратный,
+неряшливый и пустой (но красивый снаружи)</figcaption>
+</figure>
+<p>Метафора текста как чемодана наводит на мысль, что чтение и письмо
+симметричны: это операции над одним и тем же «веществом», — идеями —
+только направленные в разные стороны.</p>
+<p>Теория информации даёт интересную оптику: текст можно представить как
+<em>одномерную последовательность</em> символов, которая во время чтения
+трансформируется в многомерное «пространство идей» в голове читателя (то
+есть вашей). Получаете «на вход» строки текста, а «на выход» — роящиеся
+в голове образы и мысли, частично связанные друг с другом.</p>
+<p>С письмом наоборот: «сжимаете» части многомерного пространства идей,
+где роятся мысли, в линейный текст — последовательность символов с
+началом и концом. Причём это пространство сложнее, чем сами предложения.
+Это похоже на ДНК — «плоскую» последовательность знаков, которая
+кодирует объёмные характеристики вроде формы черепа, конечностей и
+органов. И их устройство сложнее, чем устройство самой ДНК. С идеями ещё
+сложнее, потому что неясно, что это за «пространство идей», где они,
+возможно, обитают.</p>
+<p>Интуитивно понятно лишь то, что чтение и письмо — это «распаковка» и
+«запаковка» идей — из одномерной формы в многомерную и обратно. А вот
+где эти идеи обитают, как устроено это место и какова механика его
+изменения — неясно.</p>
+<p>Если чтение и письмо — это двери в «мир идей» с разных сторон, то как
+выглядит и работает этот «мир идей»? И как сделать чтение и письмо более
+понятными и прозрачными процессами, представляя их внутреннее
+устройство?</p>
+</section>
+<section id="метафора-кодирования" class="level2">
+<h2>Метафора кодирования</h2>
+<p>Меня не очень волнует онтологический статус идей — что они такое, как
+существуют и как связаны с реальностью. Этот пласт философии от Платона
+до Уильяма Джеймса мы оставим в стороне. Скорее, меня интересует
+<em>когнитивная механика</em> идей: как концептуализировать чтение и
+письмо через <em>операции с веществом текста</em>, который скрывается за
+его «фасадом».</p>
+<p>Мы уже затронули метафору «кодирования» — что идеи и текст
+соотносятся подобно ДНК и физическим признакам. Когнитивный психолог
+Деннис Уотерс пишет, что последовательности (sequences) — это
+краеугольный камень не только жизни как биологического феномена, но и
+человеческого языка, культуры и технологий <span class="citation"
+data-cites="waters2021">(<a href="#ref-waters2021"
+role="doc-biblioref">Waters, 2021</a>)</span>. Всё потому, что
+последовательности <em>контролируют</em> материю и энергию, при этом не
+меняя их сути. Это само по себе впечатляет.</p>
+<p>Одномерные последовательности, например, ДНК, это предложение или
+компьютерный код создают трёхмерное поведение у других систем: живого
+существа, групп людей или транзисторов. Последовательности используют
+«ограничение» (constraint), что создаёт <em>иерархию контроля</em>. Это
+когда последовательность знаков обретает «значение» исключительно с
+помощью порядка знаков в ней<a href="#fn1" class="footnote-ref"
+id="fnref1" role="doc-noteref"><sup>1</sup></a>. Например, разные
+последовательности нуклеотидов в ДНК «значат» (то есть кодируют) разные
+аминокислоты.</p>
+<p>Как это может работать в случае с чтением? Есть одномерная
+последовательность — текст, который вы сейчас читаете. Он линейный, и у
+него есть начало и конец. Но «кодирует» ли текст поведение или что-то
+другое так же, как это делает последовательность нуклеотидов в ДНК?</p>
+<p>Уотерс пишет, что язык изменяет поведение. Одномерный рецепт
+яблочного пирога и приказ генерала оркеструют трёхмерное поведение: ваше
+— в приготовлении пирога, а солдат — на плацу. Но Уотерса больше волнует
+<em>социальный</em> аспект языка: вы говорите что-то другим (или они —
+вам), и поведение изменяется: это связь последовательности знаков с
+окружающей средой. Чтение же — опыт чаще приватный, молчаливый и
+статичный, и с виду никакой «кодировки» и взаимодействия со средой не
+происходит. Последовательность здесь не превращается в поведение или
+трёхмерную структуру (если только мы не берём во внимание формирование
+новых нейронных связей, но это не специфичный для чтения ответ мозга).
+Поэтому если есть читаемый текст «на входе», то что тогда получается на
+выходе?</p>
+</section>
+<section id="репрезентация" class="level2">
+<h2>Репрезентация</h2>
+<p>Понимание (или восприятие) текста — обширная область когнитивной
+науки <span class="citation" data-cites="butterfuss2020">(<a
+href="#ref-butterfuss2020" role="doc-biblioref">Butterfuss, Kim, &amp;
+Kendeou, 2020</a>)</span>. И одна из уже устоявшихся идей в ней — чем
+объёмнее рабочая память человека, тем полнее он может понять прочитанное
+<span class="citation" data-cites="mcvay2012">(<a href="#ref-mcvay2012"
+role="doc-biblioref">McVay &amp; Kane, 2012</a>)</span>. От памяти
+зависит, сколько вы «удержите в голове», а от этого зависит, насколько
+хорошо вы интегрируете смысл прочитанного предложения в смысл абзаца и
+всего текста <span class="citation" data-cites="narayanan2022">(<a
+href="#ref-narayanan2022" role="doc-biblioref">Narayanan &amp; Jurafsky,
+2022</a>)</span>.</p>
+<p>Вторая важная вещь в чтении помимо объёма рабочей памяти — это
+<em>когнитивные репрезентации</em>. Это ментальные «изображения» или
+представления, которые вызывают у нас прочитанные слова<a href="#fn2"
+class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>.
+Восприятие и, тем более, понимание текста опосредованы репрезентацией
+слов, а значит — невозможны без неё. Репрезентации, в свою очередь,
+зависят от предыдущего знания — какое «сырьё» для представлений у вас в
+голове есть, такое в ход и идёт <span class="citation"
+data-cites="butterfuss2020">(<a href="#ref-butterfuss2020"
+role="doc-biblioref">Butterfuss et al., 2020</a>)</span>. Если оно
+детальное и богатое контекстом, вы можете глубже понять текст.</p>
+<p>Что значит «глубже»? Мы не знаем наверняка, но базовая интуиция — что
+более «глубокое» понимание задействует большее число репрезентаций. Это
+можно представить в виде сети, где каждая точка — это репрезентация
+одного понятия. На «глубину» понимания текста влияет два параметра:
+количество связанных репрезентаций и глубина сети, то есть среднее число
+«соседних» с основным понятием точек. Чем их больше в момент чтения
+слова, тем больше источников используется для «конструирования»
+репрезентации.</p>
+<figure class="border">
+<div id="p5-container" class="p5-container">
 
-      </div>
-      <script src="assets/explainer.js"></script>
-      <input type="range" min="0" max="3" value="0" step="1" id="p5-slider" style="width:85%" >
-      <figcaption style="margin: 10px 0px 20px;">
-      <strong>Двигайте слайдер:</strong> больше связанных с читаемым
-      словом понятий — чётче понимание
-      </figcaption>
-      </figure>
-      <p><strong>Рабочая память и репрезентации, основанные на
-      предыдущем знании — основные, как мне кажется, преграды к
-      пониманию так называемых «сложных» текстов.</strong> Иногда такими
-      текстами называют философию или близкие к ней дисциплины. Возьмите
-      Канта, Хайдеггера, Селларса или Делёза, и вы увидите, что читать
-      их «без подготовки» реально сложно. Однако философия философии,
-      конечно, рознь.</p>
-      <p>Хороших новости две — рабочую память можно развивать, а
-      предыдущее знание (то есть долговременную память) — пополнять и
-      обогащать как проездной. При этом два вида памяти тесно связаны. А
-      именно, если повторять «загруженное» в рабочую память вскоре после
-      прочтения, да ещё и несколько раз с перерывом, гиппокамп его
-      проиндексирует и аккуратно положит в неокортекс — лобную долю, где
-      новая информация задержится уже надолго <span class="citation"
-      data-cites="oakley2021">(<a href="#ref-oakley2021"
-      role="doc-biblioref">Oakley, Rogowsky, &amp; Sejnowski,
-      2021</a>)</span>. Основной механизм для этого — так называемая
-      практика извлечения (retrieval practice) и конкретно <a
-      href="https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5_%D0%BF%D0%BE%D0%B2%D1%82%D0%BE%D1%80%D0%B5%D0%BD%D0%B8%D1%8F"
-      target="_blank" rel="noopener noreferrer">интервальное
-      повторение</a>.</p>
-      <p>Мы и сами не заметили, как подобрались к ответу на вопрос про
-      «вход» и «выход». Линейный текст превращается в голове в ансамбль
-      репрезентаций — сгусток смыслов <em>и эмоций</em>. Конечно, это
-      запутанная философская проблема — является ли мышление
-      семантическим или нет (то есть оперирует только словами или чем-то
-      ещё, например, невыразимым или неосознаваемым)<a href="#fn3"
-      class="footnote-ref" id="fnref3"
-      role="doc-noteref"><sup>3</sup></a>. Для простоты скажем, что
-      репрезентация — это «клубок» смыслов и эмоций, которая включает в
-      себя помимо слов ещё и неосознаваемые «мысли».</p>
-      <p>Проблема «глубокого» понимания текста и тесно связанного с ним
-      письма — в распутывании этого клубка смыслов и эмоций. Нужно
-      сориентироваться в нём, выделить важное и сформулировать эту
-      важность в виде предложения. И да, вам не показалось: такое
-      формулирование — это превращение многомерного «сгустка» мыслей в
-      линейную последовательность, в мысль с подлежащим и сказуемым,
-      началом и концом.</p>
-      <p>Формулирование чужих идеи при чтении текста похоже на машинное
-      обучение. Точнее, на процедуру уменьшения размерности данных. Это
-      когда у вас есть большая таблица людей, где у каждого есть имя,
-      возраст, местоположение, хобби и много другое. И вы пытаетесь
-      понять что-то обо всех людях сразу — вычленить паттерн, стоящий за
-      их свойствами, и убираете «лишние» характеристики<a href="#fn4"
-      class="footnote-ref" id="fnref4"
-      role="doc-noteref"><sup>4</sup></a>.</p>
-      <p>Это как упаковывать сложносоставный человеческий опыт в строку
-      текста — много информации о контексте и эмоциях потеряется, но мы
-      всё равно находим способ пересказать прочитанное, увиденное или
-      услышанное. Именно поэтому мы все зачитываемся хорошо написанной
-      художественной литературой.</p>
-      </section>
-      <section id="слова-и-алгебра-понятий" class="level2">
-      <h2>Слова и алгебра понятий</h2>
-      <p>Мы упомянули, что понимание слов при чтении связано с двумя
-      вещами:</p>
-      <ol type="1">
-      <li>объёмом рабочей памяти</li>
-      <li>глубиной репрезентации этих слов «в голове».</li>
-      </ol>
-      <p>Репрезентируются в данном случае не просто слова, а
-      <strong>понятия</strong>, которые они выражают. Йингшу Уонг <span
-      class="citation" data-cites="wang2006">(<a href="#ref-wang2006"
-      role="doc-biblioref">Wang, 2006</a>)</span> предлагает
-      <strong>алгебру понятий</strong> — математическую структуру,
-      помогающую формально определять отношения и содержания
-      понятий.</p>
-      <p>Главная идея — в модели OAR (Objects, Attributes, Relations —
-      объекты, атрибуты, отношения). Каждое понятие отображает значение
-      реального или абстрактного (воображаемого) объекта.</p>
-      <p>У каждого понятия есть:</p>
-      <ul>
-      <li>референт (или <em>экстенсия</em>) — это объекты реального
-      мира, на которые указывает понятие, например, физический стул
-      🪑</li>
-      <li>атрибуты (или <em>интенсия</em>) — это свойства объектов,
-      которые выражает понятие. Например, «стульность» стула — это
-      наличие ножек и поверхности для сидения</li>
-      <li>отношения — это, как ни странно, отношения между объектами и
-      атрибутами (объект-объект, объект-атрибут, атрибут-атрибут и
-      т.д.).</li>
-      </ul>
-      <figure>
-      <img style="border:none;"src="assets/concept-algebra.png" alt="Соотношение свойств, понятий и отношений в алгебре понятий" style="width:100%;"/>
-      <figcaption>
-      Чтение и рой мыслей
-      </figcaption>
-      </figure>
-      <!-- ![Соотношение свойств, понятий и отношений в алгебре понятий](assets/concept-algebra.png) -->
-      <p>И хотя подобная модель выглядит слишком «компьютерной», чтобы
-      мозг действительно по ней работал, она даёт представление о том,
-      из чего состоит смысловая часть репрезентаций, когда вы читаете
-      текст.</p>
-      <p>Что интересно, эта модель согласуется с нашей интуицией: что
-      «глубина» понимания текста связана с количеством и глубиной
-      предыдущих знаний — что за каждым читаемым словом стоит глубокая
-      сеть репрезентаций.</p>
-      <p>Каждая точка сети — это понятие, у которого есть референт в
-      мире, а также свойства и отношения с другими понятиями.</p>
-      <p>В чём же тогда заключается симметрия чтения и письма? В простом
-      смысле — в извлечении идей при чтении и их «запаковке» при письме.
-      В более сложном смысле — в оперировании одним и тем же
-      пространством репрезентаций (или понятий).</p>
-      <p>Набор предыдущих знаний, то есть плотность и глубина связанных
-      понятий в сети репрезентаций, может определять, насколько хорошо
-      вы понимаете каждое прочитанное слово. А способность удержать в
-      голове такую сеть для каждого слова, «сложить» их вместе и
-      абстрагировать до уровня предложения и абзаца может составлять то
-      самое многомерное пространство идей.</p>
-      <figure>
-      <img style="border:none;"src="assets/concept-sentence-parapgraph.png" alt="Текст как вложенный граф понятийЧтение и рой мыслей" style="width:100%;"/>
-      <figcaption>
-      Чтение и рой мыслей
-      </figcaption>
-      </figure>
-      <!-- ![Текст как вложенный граф понятий](assets/concept-sentence-parapgraph.png) -->
-      <p><strong>Именно поэтому, как я полагаю — в силу вычислительной
-      сложности (computational complexity) и малой рабочей памяти — нам
-      сложно формулировать собственные мысли: как при чтении чужого, так
-      и при написании своего текста.</strong></p>
-      <p>Каждое слово, а точнее — понятие, «рисует» в голове гроздь
-      связанных с ним других понятий, в каждую из которых можно
-      углубиться. Мы обычно охотно это делаем, и, возможно, поэтому
-      «мысли скачут», и их трудно «собрать в кучу». Если рабочая память
-      может «обработать» много больших сетей понятий — прекрасно
-      формулируешь мысли и, следовательно, пишешь легче. А если рабочая
-      память не может «обработать» много, то формулировать мысли
-      становится заметно сложнее и даже больнее.</p>
-      <p>В философских терминах, первый смысл симметрии чтения и письма
-      — <em>онтический</em>, или сущностный. Он не зависит от наших
-      когнитивных процессов. Это понимание любого текста как сжатой в
-      форму линейной последовательности части некоторого общего
-      многомерного «пространства идей». Это то, о чём я говорил в
-      начале, упоминая Дениса Уотерса: социальный аспект идей.</p>
-      <p>Второй смысл симметрии чтения и письма —
-      <em>эпистемический</em> и когнитивный, то есть связанный с личным
-      знанием. Это понимание текста как сгустка репрезентаций или
-      пространства понятий, но уже не общего, а для одного человека —
-      вас или автора текста, который вы читаете.</p>
-      <p>Третий смысл симметрии чтения и письма — практический. Чтение —
-      это извлечение отдельных идей из текста и их связывание с
-      предыдущим знанием в мышлении. Письмо — это «сборка» текста из
-      отдельных мыслей.</p>
-      </section>
-      <section id="промежуточные-результаты" class="level2">
-      <h2>Промежуточные результаты</h2>
-      <ol type="1">
-      <li>у каждого из нас «в голове» есть личное пространство идей —
-      эмоций и репрезентаций понятий, которые мы уже знаем</li>
-      <li>между людьми есть общее «пространство идей», не так тесно
-      связанных с личными репрезентациями. Благодаря ему мы используем
-      одни и те же понятия и иногда интерпретируем их по-разному</li>
-      <li>чтение «извлекает» идеи из текста и интерпретирует их согласно
-      существующим репрезентациям понятий — личному пространству
-      идей</li>
-      <li>письмо «сжимает» части личного пространства идей в линейный
-      текст</li>
-      </ol>
-      <p><strong>Симметрия чтения и письма подсвечивает и помогает
-      понять две вещи:</strong></p>
-      <ol type="1">
-      <li>чтобы писать качественные тексты<a href="#fn5"
-      class="footnote-ref" id="fnref5"
-      role="doc-noteref"><sup>5</sup></a>, хорошо бы иметь объёмное
-      личное пространство идей и уметь формулировать мысли —
-      ориентироваться в своём пространстве идей и сжимать релевантную
-      информацию оттуда в линейный текст. Это <strong>навык
-      формулирования мыслей</strong>, а также начитанность или эрудиция,
-      которая зависит от объёма рабочей памяти.</li>
-      <li>чтобы «пополнять» своё пространство идей, нужно читать,
-      слушать и/или смотреть, прицельно извлекая идеи из источника. Это
-      всё тот же навык формулирования мыслей, та же
-      начитанность/насмотренность и предыдущее знание (или глубина сети
-      репрезентаций) и рабочая память, объём которой позволяет понимать
-      многоступенчатые аргументы и «больше удерживать в голове».</li>
-      </ol>
-      <p>Получается, что <strong>чтение и письмо зависят от одного и
-      того же навыка — формулирования мыслей</strong>, а также от объёма
-      рабочей памяти и глубины предыдущего знания. Эти три параметра
-      одинаковы для обеих активностей.</p>
-      <p>Есть несколько способов работы с этими параметрами. Первый —
-      учиться формулировать мысли и «качать» рабочую память. Это всегда
-      пригодится, но такой путь может подходить не всем. Второй способ —
-      использовать интерфейсы, упрощающие взаимодействие с текстом —
-      пишете вы его или читаете.</p>
-      </section>
-      <section id="интерфейсы-для-чтения-и-письма" class="level2">
-      <h2>Интерфейсы для чтения и письма</h2>
-      <p>Как <a href="https://andymatuschak.org/books/" target="_blank"
-      rel="noopener noreferrer">говорит</a> Энди Матусчак, интерфейсы
-      для чтения должны преодолевать ограничение рабочей памяти — чтобы
-      вы лучше понимали и запоминали прочитанное.</p>
-      <p>Например, <a href="https://www.matthewsiu.com/Latticework"
-      target="_blank" rel="noopener noreferrer">Latticework</a> — это
-      прототип плагина для приложения <a href="https://obsidian.md"
-      target="_blank" rel="noopener noreferrer">Obsidian</a>, чтобы
-      аннотировать текст и сразу же делать из аннотаций заметки. Он
-      помогает сделать заметку «на полях», которая появится в отдельном
-      документе. Это удобно, например, при обработке транскриптов
-      интервью. И если изменить эту заметку «на полях» в новом
-      документе, она автоматически изменится и в источнике (они связаны,
-      да).</p>
-      <figure>
-      <img src="https://www.matthewsiu.com/Latticework/highlight.png"
-      alt="Механика «захвата» идей в сервисе Latticework" />
-      <figcaption aria-hidden="true">Механика «захвата» идей в сервисе
-      Latticework</figcaption>
-      </figure>
-      <p>Другой неплохой пример — интерфейс сервиса <a
-      href="https://protolyst.org/" target="_blank"
-      rel="noopener noreferrer">Protolyst</a>, где можно читать,
-      выделять нужное и сразу же создавать «атомы» — отдельные идеи,
-      которые удобно группировать. По каждому источнику — свой список
-      «атомов», а также их можно связывать между источниками. Так,
-      например, удобно искать ключевые результаты (key results) чужих
-      исследований, если вы делаете литературный обзор.</p>
-      <figure>
-      <video width="100%" src="https://protolyst.org/wp-content/uploads/2023/09/1920x1080-Landing-Page-Vids_capture.mp4" controls>
-      </video>
-      <figcaption>
-      Механика «захвата» идей в сервисе Protolyst
-      </figcaption>
-      </figure>
-      <p>Среди интерфейсов для письма можно выделить <a
-      href="https://gingkowriter.com/" target="_blank"
-      rel="noopener noreferrer">Ginkgo Writer</a>, который позволяет в
-      одном месте видеть и организовывать отдельные идеи в черновик
-      (очень быстро). Визуальная иерархия помогает организовывать идеи
-      по двум осям — от «сырых» к готовым по горизонтали, и в логическом
-      порядке текста — по вертикали. Прелесть интерфейса — в охвате
-      большого контекста, которого так часто не хватает при работе с
-      крупной формой. А ещё — в простоте взаимодействия. Просто
-      перетащив идею в другое место, можно быстро собрать черновик.</p>
-      <figure>
-      <video width="100%" src="https://gingkowriter.com/img/drag-image-out-small.webm" controls>
-      </video>
-      <figcaption>
-      Быстрая перестановка «идей» в Ginkgo Writer
-      </figcaption>
-      </figure>
-      <p>Есть ещё много других приложений, но здесь хочу показать
-      связанные с симметрией чтения и письма в моём представлении —
-      «распаковкой» и «запаковкой» текста. Единого интерфейса для этого
-      пока что нет. Но он, возможно, и не нужен (или нужен).</p>
-      </section>
-      <section id="вместо-заключения" class="level2">
-      <h2>Вместо заключения</h2>
-      <p>Симметрия чтения и письма приоткрывает кулису в «мир идей«, в
-      котором мы находимся при работе с текстом. Она помогает понять,
-      что идеи разной степени оформленности — это вещество мышления, и
-      что, делая пометки при чтении, вы уже «пишете».</p>
-      <p>Также симметрия чтения и письма помогает понять, что и
-      «распаковка», и «запаковка» идей зависит от вашей способности
-      формулировать мысли. А она, в свою очередь, зависит от вашего
-      предыдущего знания и объёма рабочей памяти.</p>
-      <p>Иначе говоря, чтобы писать тексты, нужен резервуар с идеями.
-      Редактор и журналист Уильям Зинсер писал, что сила текста — в
-      количестве идей, которые в него не вошли <span class="citation"
-      data-cites="zinsser2006">(<a href="#ref-zinsser2006"
-      role="doc-biblioref">Zinsser, 2006</a>)</span>. Если текст — это
-      чемодан, то ваша задача — аккуратно пополнять свой гардероб, чтобы
-      при необходимости класть в свой чемодан только подходящие и
-      сочетающиеся друг с другом вещи.</p>
-      <hr />
-      <div class="border plashka">
-      <p><strong>Цитировать этот текст можно вот так:</strong></p>
-      <blockquote>
-      <p>Шевченко Валерий, <em>Симметрия чтения и письма</em>. Москва,
-      2025. URL: https://vsblog.netlify.app/symmetry/</p>
-      </blockquote>
-      <p>Если используете <a href="https://www.zotero.org"
-      target="_blank" rel="noopener noreferrer">Zotero</a> и нужен
-      другой стиль цитирования, добавьте этот текст через
-      bib-запись:</p>
-      <div class="sourceCode" id="cb1"><pre
-      class="sourceCode bib"><code class="sourceCode bibtex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">@misc</span>{<span class="ot">shevchenko2025</span>,</span>
+</div>
+<script src="assets/explainer.js"></script>
+<input type="range" min="0" max="3" value="0" step="1" id="p5-slider" style="width:85%" >
+<figcaption style="margin: 10px 0px 20px;">
+<strong>Двигайте слайдер:</strong> больше связанных с читаемым словом
+понятий — чётче понимание
+</figcaption>
+</figure>
+<p><strong>Рабочая память и репрезентации, основанные на предыдущем
+знании — основные, как мне кажется, преграды к пониманию так называемых
+«сложных» текстов.</strong> Иногда такими текстами называют философию
+или близкие к ней дисциплины. Возьмите Канта, Хайдеггера, Селларса или
+Делёза, и вы увидите, что читать их «без подготовки» реально сложно.
+Однако философия философии, конечно, рознь.</p>
+<p>Хороших новости две — рабочую память можно развивать, а предыдущее
+знание (то есть долговременную память) — пополнять и обогащать как
+проездной. При этом два вида памяти тесно связаны. А именно, если
+повторять «загруженное» в рабочую память вскоре после прочтения, да ещё
+и несколько раз с перерывом, гиппокамп его проиндексирует и аккуратно
+положит в неокортекс — лобную долю, где новая информация задержится уже
+надолго <span class="citation" data-cites="oakley2021">(<a
+href="#ref-oakley2021" role="doc-biblioref">Oakley, Rogowsky, &amp;
+Sejnowski, 2021</a>)</span>. Основной механизм для этого — так
+называемая практика извлечения (retrieval practice) и конкретно <a
+href="https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B2%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5_%D0%BF%D0%BE%D0%B2%D1%82%D0%BE%D1%80%D0%B5%D0%BD%D0%B8%D1%8F"
+target="_blank" rel="noopener noreferrer">интервальное
+повторение</a>.</p>
+<p>Мы и сами не заметили, как подобрались к ответу на вопрос про «вход»
+и «выход». Линейный текст превращается в голове в ансамбль репрезентаций
+— сгусток смыслов <em>и эмоций</em>. Конечно, это запутанная философская
+проблема — является ли мышление семантическим или нет (то есть оперирует
+только словами или чем-то ещё, например, невыразимым или
+неосознаваемым)<a href="#fn3" class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a>. Для простоты скажем, что
+репрезентация — это «клубок» смыслов и эмоций, которая включает в себя
+помимо слов ещё и неосознаваемые «мысли».</p>
+<p>Проблема «глубокого» понимания текста и тесно связанного с ним письма
+— в распутывании этого клубка смыслов и эмоций. Нужно сориентироваться в
+нём, выделить важное и сформулировать эту важность в виде предложения. И
+да, вам не показалось: такое формулирование — это превращение
+многомерного «сгустка» мыслей в линейную последовательность, в мысль с
+подлежащим и сказуемым, началом и концом.</p>
+<p>Формулирование чужих идеи при чтении текста похоже на машинное
+обучение. Точнее, на процедуру уменьшения размерности данных. Это когда
+у вас есть большая таблица людей, где у каждого есть имя, возраст,
+местоположение, хобби и много другое. И вы пытаетесь понять что-то обо
+всех людях сразу — вычленить паттерн, стоящий за их свойствами, и
+убираете «лишние» характеристики<a href="#fn4" class="footnote-ref"
+id="fnref4" role="doc-noteref"><sup>4</sup></a>.</p>
+<p>Это как упаковывать сложносоставный человеческий опыт в строку текста
+— много информации о контексте и эмоциях потеряется, но мы всё равно
+находим способ пересказать прочитанное, увиденное или услышанное. Именно
+поэтому мы все зачитываемся хорошо написанной художественной
+литературой.</p>
+</section>
+<section id="слова-и-алгебра-понятий" class="level2">
+<h2>Слова и алгебра понятий</h2>
+<p>Мы упомянули, что понимание слов при чтении связано с двумя
+вещами:</p>
+<ol type="1">
+<li>объёмом рабочей памяти</li>
+<li>глубиной репрезентации этих слов «в голове».</li>
+</ol>
+<p>Репрезентируются в данном случае не просто слова, а
+<strong>понятия</strong>, которые они выражают. Йингшу Уонг <span
+class="citation" data-cites="wang2006">(<a href="#ref-wang2006"
+role="doc-biblioref">Wang, 2006</a>)</span> предлагает <strong>алгебру
+понятий</strong> — математическую структуру, помогающую формально
+определять отношения и содержания понятий.</p>
+<p>Главная идея — в модели OAR (Objects, Attributes, Relations —
+объекты, атрибуты, отношения). Каждое понятие отображает значение
+реального или абстрактного (воображаемого) объекта.</p>
+<p>У каждого понятия есть:</p>
+<ul>
+<li>референт (или <em>экстенсия</em>) — это объекты реального мира, на
+которые указывает понятие, например, физический стул 🪑</li>
+<li>атрибуты (или <em>интенсия</em>) — это свойства объектов, которые
+выражает понятие. Например, «стульность» стула — это наличие ножек и
+поверхности для сидения</li>
+<li>отношения — это, как ни странно, отношения между объектами и
+атрибутами (объект-объект, объект-атрибут, атрибут-атрибут и т.д.).</li>
+</ul>
+<figure>
+<img style="border:none;"src="assets/concept-algebra.png" alt="Соотношение свойств, понятий и отношений в алгебре понятий" style="width:100%;"/>
+<figcaption>
+Чтение и рой мыслей
+</figcaption>
+</figure>
+<!-- ![Соотношение свойств, понятий и отношений в алгебре понятий](assets/concept-algebra.png) -->
+<p>И хотя подобная модель выглядит слишком «компьютерной», чтобы мозг
+действительно по ней работал, она даёт представление о том, из чего
+состоит смысловая часть репрезентаций, когда вы читаете текст.</p>
+<p>Что интересно, эта модель согласуется с нашей интуицией: что
+«глубина» понимания текста связана с количеством и глубиной предыдущих
+знаний — что за каждым читаемым словом стоит глубокая сеть
+репрезентаций.</p>
+<p>Каждая точка сети — это понятие, у которого есть референт в мире, а
+также свойства и отношения с другими понятиями.</p>
+<p>В чём же тогда заключается симметрия чтения и письма? В простом
+смысле — в извлечении идей при чтении и их «запаковке» при письме. В
+более сложном смысле — в оперировании одним и тем же пространством
+репрезентаций (или понятий).</p>
+<p>Набор предыдущих знаний, то есть плотность и глубина связанных
+понятий в сети репрезентаций, может определять, насколько хорошо вы
+понимаете каждое прочитанное слово. А способность удержать в голове
+такую сеть для каждого слова, «сложить» их вместе и абстрагировать до
+уровня предложения и абзаца может составлять то самое многомерное
+пространство идей.</p>
+<figure>
+<img style="border:none;"src="assets/concept-sentence-parapgraph.png" alt="Текст как вложенный граф понятийЧтение и рой мыслей" style="width:100%;"/>
+<figcaption>
+Чтение и рой мыслей
+</figcaption>
+</figure>
+<!-- ![Текст как вложенный граф понятий](assets/concept-sentence-parapgraph.png) -->
+<p><strong>Именно поэтому, как я полагаю — в силу вычислительной
+сложности (computational complexity) и малой рабочей памяти — нам сложно
+формулировать собственные мысли: как при чтении чужого, так и при
+написании своего текста.</strong></p>
+<p>Каждое слово, а точнее — понятие, «рисует» в голове гроздь связанных
+с ним других понятий, в каждую из которых можно углубиться. Мы обычно
+охотно это делаем, и, возможно, поэтому «мысли скачут», и их трудно
+«собрать в кучу». Если рабочая память может «обработать» много больших
+сетей понятий — прекрасно формулируешь мысли и, следовательно, пишешь
+легче. А если рабочая память не может «обработать» много, то
+формулировать мысли становится заметно сложнее и даже больнее.</p>
+<p>В философских терминах, первый смысл симметрии чтения и письма —
+<em>онтический</em>, или сущностный. Он не зависит от наших когнитивных
+процессов. Это понимание любого текста как сжатой в форму линейной
+последовательности части некоторого общего многомерного «пространства
+идей». Это то, о чём я говорил в начале, упоминая Дениса Уотерса:
+социальный аспект идей.</p>
+<p>Второй смысл симметрии чтения и письма — <em>эпистемический</em> и
+когнитивный, то есть связанный с личным знанием. Это понимание текста
+как сгустка репрезентаций или пространства понятий, но уже не общего, а
+для одного человека — вас или автора текста, который вы читаете.</p>
+<p>Третий смысл симметрии чтения и письма — практический. Чтение — это
+извлечение отдельных идей из текста и их связывание с предыдущим знанием
+в мышлении. Письмо — это «сборка» текста из отдельных мыслей.</p>
+</section>
+<section id="промежуточные-результаты" class="level2">
+<h2>Промежуточные результаты</h2>
+<ol type="1">
+<li>у каждого из нас «в голове» есть личное пространство идей — эмоций и
+репрезентаций понятий, которые мы уже знаем</li>
+<li>между людьми есть общее «пространство идей», не так тесно связанных
+с личными репрезентациями. Благодаря ему мы используем одни и те же
+понятия и иногда интерпретируем их по-разному</li>
+<li>чтение «извлекает» идеи из текста и интерпретирует их согласно
+существующим репрезентациям понятий — личному пространству идей</li>
+<li>письмо «сжимает» части личного пространства идей в линейный
+текст</li>
+</ol>
+<p><strong>Симметрия чтения и письма подсвечивает и помогает понять две
+вещи:</strong></p>
+<ol type="1">
+<li>чтобы писать качественные тексты<a href="#fn5" class="footnote-ref"
+id="fnref5" role="doc-noteref"><sup>5</sup></a>, хорошо бы иметь
+объёмное личное пространство идей и уметь формулировать мысли —
+ориентироваться в своём пространстве идей и сжимать релевантную
+информацию оттуда в линейный текст. Это <strong>навык формулирования
+мыслей</strong>, а также начитанность или эрудиция, которая зависит от
+объёма рабочей памяти.</li>
+<li>чтобы «пополнять» своё пространство идей, нужно читать, слушать
+и/или смотреть, прицельно извлекая идеи из источника. Это всё тот же
+навык формулирования мыслей, та же начитанность/насмотренность и
+предыдущее знание (или глубина сети репрезентаций) и рабочая память,
+объём которой позволяет понимать многоступенчатые аргументы и «больше
+удерживать в голове».</li>
+</ol>
+<p>Получается, что <strong>чтение и письмо зависят от одного и того же
+навыка — формулирования мыслей</strong>, а также от объёма рабочей
+памяти и глубины предыдущего знания. Эти три параметра одинаковы для
+обеих активностей.</p>
+<p>Есть несколько способов работы с этими параметрами. Первый — учиться
+формулировать мысли и «качать» рабочую память. Это всегда пригодится, но
+такой путь может подходить не всем. Второй способ — использовать
+интерфейсы, упрощающие взаимодействие с текстом — пишете вы его или
+читаете.</p>
+</section>
+<section id="интерфейсы-для-чтения-и-письма" class="level2">
+<h2>Интерфейсы для чтения и письма</h2>
+<p>Как <a href="https://andymatuschak.org/books/" target="_blank"
+rel="noopener noreferrer">говорит</a> Энди Матусчак, интерфейсы для
+чтения должны преодолевать ограничение рабочей памяти — чтобы вы лучше
+понимали и запоминали прочитанное.</p>
+<p>Например, <a href="https://www.matthewsiu.com/Latticework"
+target="_blank" rel="noopener noreferrer">Latticework</a> — это прототип
+плагина для приложения <a href="https://obsidian.md" target="_blank"
+rel="noopener noreferrer">Obsidian</a>, чтобы аннотировать текст и сразу
+же делать из аннотаций заметки. Он помогает сделать заметку «на полях»,
+которая появится в отдельном документе. Это удобно, например, при
+обработке транскриптов интервью. И если изменить эту заметку «на полях»
+в новом документе, она автоматически изменится и в источнике (они
+связаны, да).</p>
+<figure>
+<img src="https://www.matthewsiu.com/Latticework/highlight.png"
+alt="Механика «захвата» идей в сервисе Latticework" />
+<figcaption aria-hidden="true">Механика «захвата» идей в сервисе
+Latticework</figcaption>
+</figure>
+<p>Другой неплохой пример — интерфейс сервиса <a
+href="https://protolyst.org/" target="_blank"
+rel="noopener noreferrer">Protolyst</a>, где можно читать, выделять
+нужное и сразу же создавать «атомы» — отдельные идеи, которые удобно
+группировать. По каждому источнику — свой список «атомов», а также их
+можно связывать между источниками. Так, например, удобно искать ключевые
+результаты (key results) чужих исследований, если вы делаете
+литературный обзор.</p>
+<figure>
+<video width="100%" src="https://protolyst.org/wp-content/uploads/2023/09/1920x1080-Landing-Page-Vids_capture.mp4" controls>
+</video>
+<figcaption>
+Механика «захвата» идей в сервисе Protolyst
+</figcaption>
+</figure>
+<p>Среди интерфейсов для письма можно выделить <a
+href="https://gingkowriter.com/" target="_blank"
+rel="noopener noreferrer">Ginkgo Writer</a>, который позволяет в одном
+месте видеть и организовывать отдельные идеи в черновик (очень быстро).
+Визуальная иерархия помогает организовывать идеи по двум осям — от
+«сырых» к готовым по горизонтали, и в логическом порядке текста — по
+вертикали. Прелесть интерфейса — в охвате большого контекста, которого
+так часто не хватает при работе с крупной формой. А ещё — в простоте
+взаимодействия. Просто перетащив идею в другое место, можно быстро
+собрать черновик.</p>
+<figure>
+<video width="100%" src="https://gingkowriter.com/img/drag-image-out-small.webm" controls>
+</video>
+<figcaption>
+Быстрая перестановка «идей» в Ginkgo Writer
+</figcaption>
+</figure>
+<p>Есть ещё много других приложений, но здесь хочу показать связанные с
+симметрией чтения и письма в моём представлении — «распаковкой» и
+«запаковкой» текста. Единого интерфейса для этого пока что нет. Но он,
+возможно, и не нужен (или нужен).</p>
+</section>
+<section id="вместо-заключения" class="level2">
+<h2>Вместо заключения</h2>
+<p>Симметрия чтения и письма приоткрывает кулису в «мир идей«, в котором
+мы находимся при работе с текстом. Она помогает понять, что идеи разной
+степени оформленности — это вещество мышления, и что, делая пометки при
+чтении, вы уже «пишете».</p>
+<p>Также симметрия чтения и письма помогает понять, что и «распаковка»,
+и «запаковка» идей зависит от вашей способности формулировать мысли. А
+она, в свою очередь, зависит от вашего предыдущего знания и объёма
+рабочей памяти.</p>
+<p>Иначе говоря, чтобы писать тексты, нужен резервуар с идеями. Редактор
+и журналист Уильям Зинсер писал, что сила текста — в количестве идей,
+которые в него не вошли <span class="citation"
+data-cites="zinsser2006">(<a href="#ref-zinsser2006"
+role="doc-biblioref">Zinsser, 2006</a>)</span>. Если текст — это
+чемодан, то ваша задача — аккуратно пополнять свой гардероб, чтобы при
+необходимости класть в свой чемодан только подходящие и сочетающиеся
+друг с другом вещи.</p>
+<hr />
+<div class="border plashka">
+<p><strong>Цитировать этот текст можно вот так:</strong></p>
+<blockquote>
+<p>Шевченко Валерий, <em>Симметрия чтения и письма</em>. Москва, 2025.
+URL: https://vsblog.netlify.app/symmetry/</p>
+</blockquote>
+<p>Если используете <a href="https://www.zotero.org" target="_blank"
+rel="noopener noreferrer">Zotero</a> и нужен другой стиль цитирования,
+добавьте этот текст через bib-запись:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bib"><code class="sourceCode bibtex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">@misc</span>{<span class="ot">shevchenko2025</span>,</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">author</span>       = {Валерий Шевченко},</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">title</span>        = {Симметрия чтения и письма},</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="dt">year</span>         = {2025},</span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">howpublished</span> = {<span class="ch">\url</span>{https://vsblog.netlify.app/symmetry/}},</span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">address</span>      = {Москва}</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
-      </div>
-      </section>
-      <section id="источники" class="level2 unnumbered">
-      <h2 class="unnumbered">Источники</h2>
-      <div id="refs" class="references csl-bib-body hanging-indent"
-      data-entry-spacing="0" data-line-spacing="2" role="list">
-      <div id="ref-butterfuss2020" class="csl-entry" role="listitem">
-      Butterfuss, R., Kim, J., &amp; Kendeou, P. (2020). Reading
-      Comprehension. <em>Oxford Research Encyclopedia of Education</em>.
-      Oxford University Press. Retrieved September 1, 2025, from <a
-      href="https://oxfordre.com/education/view/10.1093/acrefore/9780190264093.001.0001/acrefore-9780190264093-e-865"
-      target="_blank"
-      rel="noopener noreferrer">https://oxfordre.com/education/view/10.1093/acrefore/9780190264093.001.0001/acrefore-9780190264093-e-865</a>
-      <button class="footnote-back" onclick="history.back()" style="border: none; color: blue">↩︎</button>
-      </div>
-      <div id="ref-danks2014" class="csl-entry" role="listitem">
-      Danks, D. (2014). <em>Unifying the mind: cognitive representations
-      as graphical models</em>. Cambridge, Massachusetts: MIT Press.
-      <button class="footnote-back" onclick="history.back()" style="border: none; color: blue">↩︎</button>
-      </div>
-      <div id="ref-godfrey-smith2004" class="csl-entry" role="listitem">
-      Godfrey-Smith, P. (2004). Chapter 8 - On Folk Psychology and
-      Mental Representation. In H. Clapin, P. Staines, &amp; P. Slezak
-      (Eds.), <em>Representation in Mind</em>, Perspectives on Cognitive
-      Science (Vol. 1, pp. 147–162). Oxford: Elsevier. Retrieved
-      February 12, 2022, from <a
-      href="https://www.sciencedirect.com/science/article/pii/B9780080443942500117"
-      target="_blank"
-      rel="noopener noreferrer">https://www.sciencedirect.com/science/article/pii/B9780080443942500117</a>
-      <button class="footnote-back" onclick="history.back()" style="border: none; color: blue">↩︎</button>
-      </div>
-      <div id="ref-mcvay2012" class="csl-entry" role="listitem">
-      McVay, J. C., &amp; Kane, M. J. (2012). Why does working memory
-      capacity predict variation in reading comprehension? On the
-      influence of mind wandering and executive attention. <em>Journal
-      of Experimental Psychology: General</em>, <em>141</em>(2),
-      302–320. Retrieved September 1, 2025, from <a
-      href="https://doi.apa.org/doi/10.1037/a0025250" target="_blank"
-      rel="noopener noreferrer">https://doi.apa.org/doi/10.1037/a0025250</a>
-      <button class="footnote-back" onclick="history.back()" style="border: none; color: blue">↩︎</button>
-      </div>
-      <div id="ref-narayanan2022" class="csl-entry" role="listitem">
-      Narayanan, S., &amp; Jurafsky, D. (2022). Bayesian models of human
-      sentence processing. <em>Proceedings of the twentieth annual
-      conference of the cognitive science society</em> (pp. 752–757).
-      Routledge.
-      <button class="footnote-back" onclick="history.back()" style="border: none; color: blue">↩︎</button>
-      </div>
-      <div id="ref-oakley2021" class="csl-entry" role="listitem">
-      Oakley, B. A., Rogowsky, B., &amp; Sejnowski, T. J. (2021).
-      <em>Uncommon sense teaching: practical insights in brain science
-      to help students learn</em>. New York: TarcherPerigee, an imprint
-      of Penguin Random House LLC.
-      <button class="footnote-back" onclick="history.back()" style="border: none; color: blue">↩︎</button>
-      </div>
-      <div id="ref-shea2018a" class="csl-entry" role="listitem">
-      Shea, N. (2018). <em>Representation in cognitive science</em>
-      (First edition.). Oxford, United Kingdom: Oxford University Press.
-      <button class="footnote-back" onclick="history.back()" style="border: none; color: blue">↩︎</button>
-      </div>
-      <div id="ref-turner2018" class="csl-entry" role="listitem">
-      Turner. (2018). <em>Cognitive Science and the Social: A
-      Primer</em> (1st ed.). Routledge. Retrieved February 19, 2021,
-      from <a href="https://www.taylorfrancis.com/books/9781351180511"
-      target="_blank"
-      rel="noopener noreferrer">https://www.taylorfrancis.com/books/9781351180511</a>
-      <button class="footnote-back" onclick="history.back()" style="border: none; color: blue">↩︎</button>
-      </div>
-      <div id="ref-wang2006" class="csl-entry" role="listitem">
-      Wang, Y. (2006). On Concept Algebra and Knowledge Representation.
-      <em>2006 5th IEEE International Conference on Cognitive
-      Informatics</em> (Vol. 1, pp. 320–331). Presented at the 2006 5th
-      IEEE International Conference on Cognitive Informatics. Retrieved
-      April 23, 2025, from <a
-      href="https://ieeexplore.ieee.org/abstract/document/4216431"
-      target="_blank"
-      rel="noopener noreferrer">https://ieeexplore.ieee.org/abstract/document/4216431</a>
-      <button class="footnote-back" onclick="history.back()" style="border: none; color: blue">↩︎</button>
-      </div>
-      <div id="ref-waters2021" class="csl-entry" role="listitem">
-      Waters, D. (2021). <em>Behavior and culture in one dimension:
-      sequences, affordances, and the evolution of complexity</em>.
-      Routledge.
-      <button class="footnote-back" onclick="history.back()" style="border: none; color: blue">↩︎</button>
-      </div>
-      <div id="ref-zinsser2006" class="csl-entry" role="listitem">
-      Zinsser, W. (2006). <em>On writing well: the classic guide to
-      writing nonfiction</em> (30th anniversary ed., 7th ed., rev. and
-      updated.). New York: HarperCollins.
-      <button class="footnote-back" onclick="history.back()" style="border: none; color: blue">↩︎</button>
-      </div>
-      </div>
-      </section>
-      <section id="footnotes"
-      class="footnotes footnotes-end-of-document" role="doc-endnotes">
-      <hr />
-      <ol>
-      <li id="fn1"><p>Если вы здесь подумали про кибернетику, интуиция
-      вас не подвела: Уотерс пытается абстрагировать кибернетику от
-      управления информацией до понятия «последовательности».<a
-      href="#fnref1" class="footnote-back"
-      role="doc-backlink">↩︎</a></p></li>
-      <li id="fn2"><p>Конечно, репрезентации касаются не только чтения,
-      но и многих других когнитивных процессов. См., например, вводные
-      работы — <span class="citation"
-      data-cites="godfrey-smith2004">Godfrey-Smith (<a
-      href="#ref-godfrey-smith2004"
-      role="doc-biblioref">2004</a>)</span>, <span class="citation"
-      data-cites="danks2014">Danks (<a href="#ref-danks2014"
-      role="doc-biblioref">2014</a>)</span>, <span class="citation"
-      data-cites="shea2018a">Shea (<a href="#ref-shea2018a"
-      role="doc-biblioref">2018</a>)</span>.<a href="#fnref2"
-      class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-      <li id="fn3"><p>Хороший и доступный философский разбор этой
-      проблемы — в <span class="citation" data-cites="turner2018">Turner
-      (<a href="#ref-turner2018" role="doc-biblioref">2018</a>)</span>,
-      гл. 2.<a href="#fnref3" class="footnote-back"
-      role="doc-backlink">↩︎</a></p></li>
-      <li id="fn4"><p>Один из наиболее понятных механизмов уменьшения
-      размерности — метод главных компонент. А вот <a
-      href="https://practicum.yandex.ru/blog/metod-glavnyh-komponent/"
-      target="_blank" rel="noopener noreferrer">неплохое введение в него
-      на русском языке</a>.<a href="#fnref4" class="footnote-back"
-      role="doc-backlink">↩︎</a></p></li>
-      <li id="fn5"><p>Что такое «качественный» текст, каждый определяет
-      для себя сам, но базово — это работа, которой вы гордитесь и в
-      которую вложили максимум способностей и отдачи.<a href="#fnref5"
-      class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-      </ol>
-      </section>
-    </article>
+</div>
+</section>
+<section id="источники" class="level2 unnumbered">
+<h2 class="unnumbered">Источники</h2>
+<div id="refs" class="references csl-bib-body hanging-indent"
+data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-butterfuss2020" class="csl-entry" role="listitem">
+Butterfuss, R., Kim, J., &amp; Kendeou, P. (2020). Reading
+Comprehension. <em>Oxford Research Encyclopedia of Education</em>.
+Oxford University Press. Retrieved September 1, 2025, from <a
+href="https://oxfordre.com/education/view/10.1093/acrefore/9780190264093.001.0001/acrefore-9780190264093-e-865"
+target="_blank"
+rel="noopener noreferrer">https://oxfordre.com/education/view/10.1093/acrefore/9780190264093.001.0001/acrefore-9780190264093-e-865</a>
+<button class="footnote-back" onclick="history.back()" style="border: none; color: blue">↩︎</button>
+</div>
+<div id="ref-danks2014" class="csl-entry" role="listitem">
+Danks, D. (2014). <em>Unifying the mind: cognitive representations as
+graphical models</em>. Cambridge, Massachusetts: MIT Press.
+<button class="footnote-back" onclick="history.back()" style="border: none; color: blue">↩︎</button>
+</div>
+<div id="ref-godfrey-smith2004" class="csl-entry" role="listitem">
+Godfrey-Smith, P. (2004). Chapter 8 - On Folk Psychology and Mental
+Representation. In H. Clapin, P. Staines, &amp; P. Slezak (Eds.),
+<em>Representation in Mind</em>, Perspectives on Cognitive Science (Vol.
+1, pp. 147–162). Oxford: Elsevier. Retrieved February 12, 2022, from <a
+href="https://www.sciencedirect.com/science/article/pii/B9780080443942500117"
+target="_blank"
+rel="noopener noreferrer">https://www.sciencedirect.com/science/article/pii/B9780080443942500117</a>
+<button class="footnote-back" onclick="history.back()" style="border: none; color: blue">↩︎</button>
+</div>
+<div id="ref-mcvay2012" class="csl-entry" role="listitem">
+McVay, J. C., &amp; Kane, M. J. (2012). Why does working memory capacity
+predict variation in reading comprehension? On the influence of mind
+wandering and executive attention. <em>Journal of Experimental
+Psychology: General</em>, <em>141</em>(2), 302–320. Retrieved September
+1, 2025, from <a href="https://doi.apa.org/doi/10.1037/a0025250"
+target="_blank"
+rel="noopener noreferrer">https://doi.apa.org/doi/10.1037/a0025250</a>
+<button class="footnote-back" onclick="history.back()" style="border: none; color: blue">↩︎</button>
+</div>
+<div id="ref-narayanan2022" class="csl-entry" role="listitem">
+Narayanan, S., &amp; Jurafsky, D. (2022). Bayesian models of human
+sentence processing. <em>Proceedings of the twentieth annual conference
+of the cognitive science society</em> (pp. 752–757). Routledge.
+<button class="footnote-back" onclick="history.back()" style="border: none; color: blue">↩︎</button>
+</div>
+<div id="ref-oakley2021" class="csl-entry" role="listitem">
+Oakley, B. A., Rogowsky, B., &amp; Sejnowski, T. J. (2021). <em>Uncommon
+sense teaching: practical insights in brain science to help students
+learn</em>. New York: TarcherPerigee, an imprint of Penguin Random House
+LLC.
+<button class="footnote-back" onclick="history.back()" style="border: none; color: blue">↩︎</button>
+</div>
+<div id="ref-shea2018a" class="csl-entry" role="listitem">
+Shea, N. (2018). <em>Representation in cognitive science</em> (First
+edition.). Oxford, United Kingdom: Oxford University Press.
+<button class="footnote-back" onclick="history.back()" style="border: none; color: blue">↩︎</button>
+</div>
+<div id="ref-turner2018" class="csl-entry" role="listitem">
+Turner. (2018). <em>Cognitive Science and the Social: A Primer</em> (1st
+ed.). Routledge. Retrieved February 19, 2021, from <a
+href="https://www.taylorfrancis.com/books/9781351180511" target="_blank"
+rel="noopener noreferrer">https://www.taylorfrancis.com/books/9781351180511</a>
+<button class="footnote-back" onclick="history.back()" style="border: none; color: blue">↩︎</button>
+</div>
+<div id="ref-wang2006" class="csl-entry" role="listitem">
+Wang, Y. (2006). On Concept Algebra and Knowledge Representation.
+<em>2006 5th IEEE International Conference on Cognitive Informatics</em>
+(Vol. 1, pp. 320–331). Presented at the 2006 5th IEEE International
+Conference on Cognitive Informatics. Retrieved April 23, 2025, from <a
+href="https://ieeexplore.ieee.org/abstract/document/4216431"
+target="_blank"
+rel="noopener noreferrer">https://ieeexplore.ieee.org/abstract/document/4216431</a>
+<button class="footnote-back" onclick="history.back()" style="border: none; color: blue">↩︎</button>
+</div>
+<div id="ref-waters2021" class="csl-entry" role="listitem">
+Waters, D. (2021). <em>Behavior and culture in one dimension: sequences,
+affordances, and the evolution of complexity</em>. Routledge.
+<button class="footnote-back" onclick="history.back()" style="border: none; color: blue">↩︎</button>
+</div>
+<div id="ref-zinsser2006" class="csl-entry" role="listitem">
+Zinsser, W. (2006). <em>On writing well: the classic guide to writing
+nonfiction</em> (30th anniversary ed., 7th ed., rev. and updated.). New
+York: HarperCollins.
+<button class="footnote-back" onclick="history.back()" style="border: none; color: blue">↩︎</button>
+</div>
+</div>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Если вы здесь подумали про кибернетику, интуиция вас не
+подвела: Уотерс пытается абстрагировать кибернетику от управления
+информацией до понятия «последовательности».<a href="#fnref1"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Конечно, репрезентации касаются не только чтения, но и
+многих других когнитивных процессов. См., например, вводные работы —
+<span class="citation" data-cites="godfrey-smith2004">Godfrey-Smith (<a
+href="#ref-godfrey-smith2004" role="doc-biblioref">2004</a>)</span>,
+<span class="citation" data-cites="danks2014">Danks (<a
+href="#ref-danks2014" role="doc-biblioref">2014</a>)</span>, <span
+class="citation" data-cites="shea2018a">Shea (<a href="#ref-shea2018a"
+role="doc-biblioref">2018</a>)</span>.<a href="#fnref2"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Хороший и доступный философский разбор этой проблемы — в
+<span class="citation" data-cites="turner2018">Turner (<a
+href="#ref-turner2018" role="doc-biblioref">2018</a>)</span>, гл. 2.<a
+href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Один из наиболее понятных механизмов уменьшения
+размерности — метод главных компонент. А вот <a
+href="https://practicum.yandex.ru/blog/metod-glavnyh-komponent/"
+target="_blank" rel="noopener noreferrer">неплохое введение в него на
+русском языке</a>.<a href="#fnref4" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Что такое «качественный» текст, каждый определяет для
+себя сам, но базово — это работа, которой вы гордитесь и в которую
+вложили максимум способностей и отдачи.<a href="#fnref5"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+			</article>
+		</div>
+		<aside id="triple-map" class="triple-map">
+		</aside>
+		<script src="/assets/prop-map-rewritten.js" defer></script>
   </div>
-
-  <div id="triple-map" class="triple-map">
-    <svg preserveAspectRatio="xMidYMid meet"></svg>
-  </div>
-
-  <!-- <script src="/assets/propositional-map_MY.js" defer></script> -->
 
   </body>
 </html>

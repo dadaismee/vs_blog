@@ -46,7 +46,7 @@
   Beep Boop. As you were. -->
 
   <style>
-    /* $styles.html()$ */
+    $styles.html()$
     :root {
         --color: blue;
         --max-content-width: 900px;
@@ -57,6 +57,7 @@
       line-height: 1.5; 
 			justify-items: left;
 			margin: 0;
+			max-width: 100%;
     }
 		
 		p {
@@ -196,7 +197,7 @@
 
 
     .content {
-      width: 700px;
+      max-width: 700px;
       font-size: 15px;
 
       @media (max-width: 700px) {
@@ -318,13 +319,18 @@
       align-self: center;
     }
 
+		.divisor {
+     	margin: 30px 0px 0px;
+		 	margin-bottom: 10px;
+		}
+
     .triple-map {
-      position: fixed;
-      left: 760px;
-      top: 130px;
-      width: 480px;
+      position: sticky;
+			top: 130px;
+			laft: 760px;
+			margin-top: 30px;
+      width: 100%;
       height: calc(100vh - 180px);
-      min-height: 240px;
       overflow: visible;
       font-size: 12px;
       z-index: 20;
@@ -418,35 +424,35 @@
     </a>
   </header>
 
-  <div class="content">
-  $if(title)$
-    <h1>$title$</h1>
-    <div class="hypothesis">
-      <p>Чтобы прокомментировать любую фразу, выделите её и нажмите <i>Annotate</i></p>
-      <img class="border" src="/assets/annotate.png" alt="Annotate" style="display: flex; justify-self: center; width: 75%;"/>
-    </div>
-  $endif$
-    <article>
-      <div style="display: flex; flex-direction: column; gap: 0px; margin-top: 20px;">
-        $if(published)$
-        $if(last-modified)$
-            <p style="margin: 0px;">Опубликовано: <i>$published$</i></p>
-            <!-- , обновлено <i>$last-modified$</i></p> -->
-        $endif$
-        $endif$
-        $if(word_count)$
-        <p style="margin: 0px;"> Читать: <i>$word_count$</i></p>
-        $endif$
-      </div>
-      $body$
-    </article>
+	<div id="area" style="display: flex; 
+  width: 100%">
+		<div class="content">
+		$if(title)$
+			<h1>$title$</h1>
+			<div class="hypothesis">
+				<p>Чтобы прокомментировать любую фразу, выделите её и нажмите <i>Annotate</i></p>
+				<img class="border" src="/assets/annotate.png" alt="Annotate" style="display: flex; justify-self: center; width: 75%;"/>
+			</div>
+		$endif$
+			<article>
+				<div style="display: flex; flex-direction: column; gap: 0px; margin-top: 20px;">
+					$if(published)$
+					$if(last-modified)$
+							<p style="margin: 0px;">Опубликовано: <i>$published$</i></p>
+							<!-- , обновлено <i>$last-modified$</i></p> -->
+					$endif$
+					$endif$
+					$if(word_count)$
+					<p style="margin: 0px;"> Читать: <i>$word_count$</i></p>
+					$endif$
+				</div>
+				$body$
+			</article>
+		</div>
+		<aside id="triple-map" class="triple-map">
+		</aside>
+		<script src="/assets/prop-map-rewritten.js" defer></script>
   </div>
-
-  <div id="triple-map" class="triple-map">
-    <svg preserveAspectRatio="xMidYMid meet"></svg>
-  </div>
-
-  <!-- <script src="/assets/propositional-map_MY.js" defer></script> -->
 
   </body>
 </html>
