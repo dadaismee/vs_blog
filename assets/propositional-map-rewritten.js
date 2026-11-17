@@ -103,7 +103,7 @@ const buildLayout = (graph, width, height) => {
 		// const yStep = height / sortedEntries.length
 		const yStep = width / 4
 		point.x = width / 3 * (point.xOrder - 0.25)
-		point.y = width / 12 * (point.yOrder - 0.25)
+		point.y = height / triples.length * (point.yOrder - 0.25)
 	})
 	
 	return { 
@@ -167,7 +167,7 @@ const renderToDOM = (layout, parentDomEl) => {
     // draw rel labels 
     const relLable = createSVG('text')
     // tilt labels across lines
-    const angle = 90 - Math.atan2(dx, dy) * 180 / Math.PI
+    const angle = x1 === x2 ? 0 : 90 - Math.atan2(dx, dy) * 180 / Math.PI
     relLable.setAttribute('x', (x1 + x2) / 2)
     relLable.setAttribute('y', (y1 + y2) / 2 - 3)
     relLable.setAttribute('transform', `rotate(${angle} ${(x1+x2)/2} ${(y1+y2)/2})`)

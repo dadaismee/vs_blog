@@ -58,7 +58,6 @@
 | **Оформление** | Сдаёт файл → координатор перепроверяет | Титульный, нумерация, ГОСТ-библиография — автоматически |
 | **Правки** | Правки возвращаются 3–5 раз | Закончил писать → автоматически готов DOCX/PDF |
 
-<div style="display: flex;">
-<a href="https://github.com/dadaismee/lab-demo" class="lab-cta secondary" target="_blank">Код проекта на GitHub</a>
-<a href="https://calendar.app.google/vZyjjXtrXN5Sb2JN8" target="_blank"class="lab-cta">Обсудить пилот для вашей компании</a>
-</div>
+***
+
+[На главную](/)

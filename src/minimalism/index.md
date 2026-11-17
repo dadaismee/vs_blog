@@ -7,7 +7,7 @@ summary: "Или почему я перешёл на «звонилку»"
 
 <!-- Вы наверняка слышали про *«цифровой минимализм»*. Если нет, то это движение за «освобождение внимания» от цифровых технологий: [книги Кэла Ньюпорта](https://www.amazon.com/stores/Cal-Newport/author/B001IGNR0U?ref=ap_rdr&shoppingPortalEnabled=true&ccs_id=ac489d71-db51-44ab-bfff-8e5ea7276366){target="blank"}, отказ от соцсетей и телефоны-«звонилки». -->
 
-Вы наверняка слышали про <span data-triple="digital_minimalism, is_a, social_movement, FACT">*«цифровой минимализм»*. Если нет, то это движение</span><span data-triple="digital_minimalism, is_about, freeing_attention_fromtech, FACT">за «освобождение внимания» от цифровых технологий</span>: <span data-triple="Cal_Newport, is_example_of, digital_minimalism, FACT">[книги Кэла Ньюпорта](https://www.amazon.com/stores/Cal-Newport/author/B001IGNR0U?ref=ap_rdr&amp;shoppingPortalEnabled=true&amp;ccs_id=ac489d71-db51-44ab-bfff-8e5ea7276366){target="blank"}</span>, отказ от соцсетей и телефоны-«звонилки».
+<span data-triple="digital_minimalism, is_a, social_movement, FACT">Вы наверняка слышали про *«цифровой минимализм»*. Если нет, то это движение</span> <span data-triple="digital_minimalism, is_about, freeing_attention_fromtech, FACT">за «освобождение внимания» от цифровых технологий</span>: <span data-triple="Cal_Newport, is_example_of, digital_minimalism, FACT">[книги Кэла Ньюпорта](https://www.amazon.com/stores/Cal-Newport/author/B001IGNR0U?ref=ap_rdr&amp;shoppingPortalEnabled=true&amp;ccs_id=ac489d71-db51-44ab-bfff-8e5ea7276366){target="blank"}</span>, отказ от соцсетей и телефоны-«звонилки».
 <!-- [digital_minimalism, is_a, social_movement, DESCRIPTION] -->
 <!-- [Cal_Newport, exemplifies, digital_minimalism, EXAMPLE] -->
 

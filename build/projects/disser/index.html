@@ -225,6 +225,11 @@
 			margin: 0px;
 		}
 
+		.spanHighlight span {
+			text-decoration: underline;
+			text-decoration-color: yellow;
+		}
+
     .plashka {
       background-color: #bbb; 
       padding: 10px; 
@@ -480,7 +485,7 @@
 			margin-top: 30px;
       width: 100%;
       height: calc(100vh - 180px);
-      overflow: visible;
+      /* overflow: visible; */
       font-size: 12px;
       z-index: 20;
 
@@ -576,15 +581,15 @@
 					<article>
 				<div style="display: flex; flex-direction: column; gap: 0px; margin-top: 20px;">
 														</div>
-				<section id="проект-интерфейс-для-написания-диссертации" class="level2">
-<h2>Проект: интерфейс для написания диссертации</h2>
-<section id="задача" class="level4">
-<h4>Задача</h4>
+				<section id="tmux-интерфейс-для-написания-диссертации" class="level1">
+<h1>tmux-интерфейс для написания диссертации</h1>
+<section id="задача" class="level2">
+<h2>Задача</h2>
 <p>Собрать контекст работы в одном месте, чтобы упростить доработку
 диссертации по комментариям научного руководителя.</p>
 </section>
-<section id="решение" class="level4">
-<h4>Решение</h4>
+<section id="решение" class="level2">
+<h2>Решение</h2>
 <p>Подручный инструмент, который одной командой:</p>
 <ul>
 <li><strong>открывает текст</strong> в месте, где я остановился</li>
@@ -603,8 +608,8 @@ alt="Интерфейс для работы над диссертацией" />
 диссертацией</figcaption>
 </figure>
 </section>
-<section id="результат" class="level4">
-<h4>Результат</h4>
+<section id="результат" class="level2">
+<h2>Результат</h2>
 <ul>
 <li>Диссертация дописана за 2 недели</li>
 <li>Работа начинается мгновенно: контекст, задачи и таймер — в одном
@@ -612,17 +617,14 @@ alt="Интерфейс для работы над диссертацией" />
 <li>Каждая версия текста сохранена и восстановима</li>
 </ul>
 <hr />
-<p><strong>Похожая задача?</strong> Чтобы обсудить, <strong><a
-href="https://calendar.app.google/vZyjjXtrXN5Sb2JN8" target="_blank"
-rel="noopener noreferrer">выберите время</a></strong>.</p>
-</div>
+<p><a href="/">На главную</a></p>
 </section>
 </section>
 			</article>
 		</div>
 		<aside id="triple-map" class="triple-map">
 		</aside>
-		<!-- <script src="/assets/propositional-map-rewritten.js" defer></script> -->
+		<script src="/assets/propositional-map-rewritten_no-circles.js" defer></script>
   </div>
 
   </body>
